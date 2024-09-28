@@ -1145,3 +1145,51 @@
 - Sat, 28 Sep 2024 21:29:33 GMT - [How To Call an Intent Within Intent](https://freedium.cfd/https://medium.com/p/4300c2dd946d)
 - Sat, 28 Sep 2024 21:25:23 GMT - [Challenge Name: Big Number](https://freedium.cfd/https://medium.com/p/e5efc684e163)
 
+## https://medium.com/feed/tag/bug-bounty
+- Sat, 28 Sep 2024 22:09:12 GMT - [P4 bug’s and their POC steps | Part 5](https://freedium.cfd/https://medium.com/p/242eddd02fd0)
+- Sat, 28 Sep 2024 17:39:43 GMT - [Why Go is the Perfect Choice for CLIs](https://freedium.cfd/https://medium.com/p/477281989ace)
+- Sat, 28 Sep 2024 17:04:59 GMT - [Exposed private key leads to Google cloud service account takeover — Privilege Escalation](https://freedium.cfd/https://medium.com/p/6f031e20c819)
+- Sat, 28 Sep 2024 16:17:14 GMT - [Broken Authentication: A Common Vulnerability Exposing User Accounts](https://freedium.cfd/https://medium.com/p/2b48b6f9b644)
+- Sat, 28 Sep 2024 16:11:01 GMT - [Nuclei ile Zafiyet Tespiti](https://freedium.cfd/https://medium.com/p/ec94aa180aab)
+- Sat, 28 Sep 2024 15:44:16 GMT - [HackTheBox Broken Authentication (Skills Assessment)](https://freedium.cfd/https://medium.com/p/c43feaab1a52)
+- Sat, 28 Sep 2024 14:50:44 GMT - [How to google dork effectively for private and other bug bounty programs](https://freedium.cfd/https://medium.com/p/d54f9e7b4d57)
+- Sat, 28 Sep 2024 13:46:29 GMT - [Full Account Takeover via Facebook OAuth Misconfiguration](https://freedium.cfd/https://medium.com/p/9e30fe1c1da1)
+- Sat, 28 Sep 2024 13:45:39 GMT - [SQL injection attack, querying the database type and version on MySQL and Microsoft](https://freedium.cfd/https://medium.com/p/162715c6cd0e)
+- Sat, 28 Sep 2024 13:39:51 GMT - [SQL injection attack, querying the database type and version on Oracle](https://freedium.cfd/https://medium.com/p/f78a035c654d)
+
+## https://medium.com/feed/tag/security
+- Sat, 28 Sep 2024 23:02:17 GMT - [The Tranquil City](https://freedium.cfd/https://medium.com/p/ac0941eb81d7)
+- Sat, 28 Sep 2024 23:02:16 GMT - [Four Mind-Bending Psychological Thrillers I Can’t Forget](https://freedium.cfd/https://medium.com/p/19c0fbb48c8a)
+- Sat, 28 Sep 2024 22:41:41 GMT - [Whispers of Conflict](https://freedium.cfd/https://medium.com/p/3b77d393708e)
+- Sat, 28 Sep 2024 22:41:41 GMT - [Choosing Growth](https://freedium.cfd/https://medium.com/p/2d97b179ab7f)
+- Sat, 28 Sep 2024 22:15:01 GMT - [How to Create a Reading Access URL to Your NightScout](https://freedium.cfd/https://medium.com/p/87e426ba80cc)
+- Sat, 28 Sep 2024 22:02:52 GMT - [Reclaim Your Journey](https://freedium.cfd/https://medium.com/p/3e312358214b)
+- Sat, 28 Sep 2024 22:02:52 GMT - [The Union’s Lamen](https://freedium.cfd/https://medium.com/p/9867bad96b40)
+- Sat, 28 Sep 2024 21:42:03 GMT - [Sana’s Journey](https://freedium.cfd/https://medium.com/p/e288b72f08f6)
+- Sat, 28 Sep 2024 21:37:31 GMT - [Softly Spoken](https://freedium.cfd/https://medium.com/p/3b7b8cbd9bfc)
+- Sat, 28 Sep 2024 21:32:03 GMT - [My Broken dreams and burning Hopes!](https://freedium.cfd/https://medium.com/p/3caae7ca30d2)
+
+## https://medium.com/feed/tag/vulnerability
+- Sat, 28 Sep 2024 20:44:07 GMT - [Injection Vulnerabilities: More Than You Think!! ](https://freedium.cfd/https://medium.com/p/e926332d4907)
+- Sat, 28 Sep 2024 18:15:19 GMT - [The Quiet Power of Vulnerability and Strength: A pathway to Growth](https://freedium.cfd/https://medium.com/p/73f4c817e87b)
+- Sat, 28 Sep 2024 17:15:48 GMT - [Progress urges admins to patch critical WhatsUp Gold bugs ASAP](https://freedium.cfd/https://medium.com/p/71234ef898bd)
+- Sat, 28 Sep 2024 15:36:53 GMT - [20 Commands to Exploit Vulnerabilities Like a Pro](https://freedium.cfd/https://medium.com/p/1145291df899)
+- Sat, 28 Sep 2024 13:11:50 GMT - [My Perfect Housemate](https://freedium.cfd/https://medium.com/p/ea4ee739a2b1)
+- Sat, 28 Sep 2024 09:36:35 GMT - [Our Deepest Fear… A Lesson From Marianne Williamson](https://freedium.cfd/https://medium.com/p/df2b4cb16950)
+- Sat, 28 Sep 2024 09:35:35 GMT - [The Gloaming: The Comeback Kid](https://freedium.cfd/https://medium.com/p/b66b38698c98)
+- Sat, 28 Sep 2024 09:21:42 GMT - [Security Misconfiguration: Identifying and Preventing This Common Vulnerability](https://freedium.cfd/https://medium.com/p/14ab1c4989ac)
+- Sat, 28 Sep 2024 09:17:30 GMT - [Insecure Direct Object References (IDOR): Understanding and Preventing This Vulnerability](https://freedium.cfd/https://medium.com/p/4c8e831f17b4)
+- Sat, 28 Sep 2024 08:24:07 GMT - [Towards better data science projects, part 4: searching unused Python packages and package…](https://freedium.cfd/https://medium.com/p/fbac9a6f8911)
+
+## https://medium.com/feed/tag/cybersecurity
+- Sat, 28 Sep 2024 22:57:19 GMT - [Terraform Security 101: Protecting Your Cloud Resources](https://freedium.cfd/https://medium.com/p/f12927f03e7d)
+- Sat, 28 Sep 2024 22:42:16 GMT - [How can I recover my money from Capitals gain](https://freedium.cfd/https://medium.com/p/e045990ae7aa)
+- Sat, 28 Sep 2024 22:38:19 GMT - [Capitals gain reviews](https://freedium.cfd/https://medium.com/p/3cb89a50c7a6)
+- Sat, 28 Sep 2024 22:35:22 GMT - [How can I withdraw my money from Capitals gain](https://freedium.cfd/https://medium.com/p/ce2c7ae12bbc)
+- Sat, 28 Sep 2024 22:31:42 GMT - [TryHackMe — Diamond Model](https://freedium.cfd/https://medium.com/p/f79064c842c3)
+- Sat, 28 Sep 2024 22:21:36 GMT - [How can I recover my money from Tpcinvest](https://freedium.cfd/https://medium.com/p/edf47ea371fc)
+- Sat, 28 Sep 2024 22:20:08 GMT - [Day 27: Investigating RDP Brute Force Attack ](https://freedium.cfd/https://medium.com/p/ddc918010783)
+- Sat, 28 Sep 2024 22:19:36 GMT - [Tpcinvest reviews](https://freedium.cfd/https://medium.com/p/30cf17f8cee8)
+- Sat, 28 Sep 2024 22:17:45 GMT - [How can I withdraw my money from Tpcinvest](https://freedium.cfd/https://medium.com/p/de190025a799)
+- Sat, 28 Sep 2024 21:29:33 GMT - [How To Call an Intent Within Intent](https://freedium.cfd/https://medium.com/p/4300c2dd946d)
+
