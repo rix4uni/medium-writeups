@@ -12,7 +12,7 @@ permissions:
   contents: write
 
 jobs:
-  proxy_check:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -31,7 +31,7 @@ jobs:
       run: |
         git config --global user.name 'GitHub Actions'
         git config --global user.email 'actions@users.noreply.github.com'
-        git add .github/workflows/actions.yml
+        git add README.md
         IST_DATE=$(TZ='Asia/Kolkata' date +'%a %b %d %H:%M:%S IST %Y')
         git commit -m "Updated List: $IST_DATE"
         git push
