@@ -286,3 +286,51 @@
 - Sat, 28 Sep 2024 18:14:37 GMT - [I will craft cybersecurity, tech, IT manager, data analyst, and business analyst resume](https://freedium.cfd/https://medium.com/p/3c392be4247f)
 - Sat, 28 Sep 2024 18:13:11 GMT - [Windows Network Analysis](https://freedium.cfd/https://medium.com/p/b0845596c287)
 
+## https://medium.com/feed/tag/bug-bounty
+- Sat, 28 Sep 2024 17:39:43 GMT - [Why Go is the Perfect Choice for CLIs](https://freedium.cfd/https://medium.com/p/477281989ace)
+- Sat, 28 Sep 2024 17:04:59 GMT - [Exposed private key leads to Google cloud service account takeover — Privilege Escalation](https://freedium.cfd/https://medium.com/p/6f031e20c819)
+- Sat, 28 Sep 2024 16:17:14 GMT - [Broken Authentication: A Common Vulnerability Exposing User Accounts](https://freedium.cfd/https://medium.com/p/2b48b6f9b644)
+- Sat, 28 Sep 2024 16:11:01 GMT - [Nuclei ile Zafiyet Tespiti](https://freedium.cfd/https://medium.com/p/ec94aa180aab)
+- Sat, 28 Sep 2024 15:44:16 GMT - [HackTheBox Broken Authentication (Skills Assessment)](https://freedium.cfd/https://medium.com/p/c43feaab1a52)
+- Sat, 28 Sep 2024 14:50:44 GMT - [How to google dork effectively for private and other bug bounty programs](https://freedium.cfd/https://medium.com/p/d54f9e7b4d57)
+- Sat, 28 Sep 2024 13:46:29 GMT - [Full Account Takeover via Facebook OAuth Misconfiguration](https://freedium.cfd/https://medium.com/p/9e30fe1c1da1)
+- Sat, 28 Sep 2024 13:45:39 GMT - [SQL injection attack, querying the database type and version on MySQL and Microsoft](https://freedium.cfd/https://medium.com/p/162715c6cd0e)
+- Sat, 28 Sep 2024 13:39:51 GMT - [SQL injection attack, querying the database type and version on Oracle](https://freedium.cfd/https://medium.com/p/f78a035c654d)
+- Sat, 28 Sep 2024 13:10:09 GMT - [ORM HQL Injection](https://freedium.cfd/https://medium.com/p/e072207e8942)
+
+## https://medium.com/feed/tag/security
+- Sat, 28 Sep 2024 19:31:29 GMT - [Love and Loss](https://freedium.cfd/https://medium.com/p/7cb533b24cbe)
+- Sat, 28 Sep 2024 19:31:29 GMT - [The Feeling of Lingering Pain](https://freedium.cfd/https://medium.com/p/9fb2e624ee47)
+- Sat, 28 Sep 2024 19:26:54 GMT - [From Darkness to Light](https://freedium.cfd/https://medium.com/p/263311110728)
+- Sat, 28 Sep 2024 19:16:55 GMT - [Rediscovering the Enchantment of Classic Cinema](https://freedium.cfd/https://medium.com/p/3b0997c8e0c2)
+- Sat, 28 Sep 2024 19:01:30 GMT - [Crafting Fear](https://freedium.cfd/https://medium.com/p/9772d84d560e)
+- Sat, 28 Sep 2024 19:01:30 GMT - [Silent Bloom](https://freedium.cfd/https://medium.com/p/d1ab4183e2e8)
+- Sat, 28 Sep 2024 18:51:31 GMT - [The Rich Landscape of Adult Friendships](https://freedium.cfd/https://medium.com/p/12e75ad90971)
+- Sat, 28 Sep 2024 18:51:31 GMT - [Lessons Learned](https://freedium.cfd/https://medium.com/p/66fd291d98ea)
+- Sat, 28 Sep 2024 18:51:31 GMT - [Shadows Beneath](https://freedium.cfd/https://medium.com/p/5c9fda263058)
+- Sat, 28 Sep 2024 18:48:29 GMT - [Install Redis on Ubuntu in Minutes: Secure Configuration with Strong Password](https://freedium.cfd/https://medium.com/p/e6da9a870478)
+
+## https://medium.com/feed/tag/vulnerability
+- Sat, 28 Sep 2024 18:15:19 GMT - [The Quiet Power of Vulnerability and Strength: A pathway to Growth](https://freedium.cfd/https://medium.com/p/73f4c817e87b)
+- Sat, 28 Sep 2024 17:15:48 GMT - [Progress urges admins to patch critical WhatsUp Gold bugs ASAP](https://freedium.cfd/https://medium.com/p/71234ef898bd)
+- Sat, 28 Sep 2024 15:36:53 GMT - [20 Commands to Exploit Vulnerabilities Like a Pro](https://freedium.cfd/https://medium.com/p/1145291df899)
+- Sat, 28 Sep 2024 13:11:50 GMT - [My Perfect Housemate](https://freedium.cfd/https://medium.com/p/ea4ee739a2b1)
+- Sat, 28 Sep 2024 09:36:35 GMT - [Our Deepest Fear… A Lesson From Marianne Williamson](https://freedium.cfd/https://medium.com/p/df2b4cb16950)
+- Sat, 28 Sep 2024 09:35:35 GMT - [The Gloaming: The Comeback Kid](https://freedium.cfd/https://medium.com/p/b66b38698c98)
+- Sat, 28 Sep 2024 09:21:42 GMT - [Security Misconfiguration: Identifying and Preventing This Common Vulnerability](https://freedium.cfd/https://medium.com/p/14ab1c4989ac)
+- Sat, 28 Sep 2024 09:17:30 GMT - [Insecure Direct Object References (IDOR): Understanding and Preventing This Vulnerability](https://freedium.cfd/https://medium.com/p/4c8e831f17b4)
+- Sat, 28 Sep 2024 08:24:07 GMT - [Towards better data science projects, part 4: searching unused Python packages and package…](https://freedium.cfd/https://medium.com/p/fbac9a6f8911)
+- Sat, 28 Sep 2024 07:39:14 GMT - [ATTENTION LINUX USERS!!](https://freedium.cfd/https://medium.com/p/8853d170b782)
+
+## https://medium.com/feed/tag/cybersecurity
+- Sat, 28 Sep 2024 19:23:14 GMT - [How can I withdraw my money from Royaldiam](https://freedium.cfd/https://medium.com/p/b83bf189c37c)
+- Sat, 28 Sep 2024 19:18:54 GMT - [Royaldiam reviews](https://freedium.cfd/https://medium.com/p/20449b7b4158)
+- Sat, 28 Sep 2024 19:10:59 GMT - [Detecting and Mitigating Active Directory Compromises —  Part I, Prevention](https://freedium.cfd/https://medium.com/p/5c9a75c90f0c)
+- Sat, 28 Sep 2024 19:04:12 GMT - [Cybersecurity MythBusters: Debunking Common Misconceptions in Digital Security](https://freedium.cfd/https://medium.com/p/d52e0b11e43c)
+- Sat, 28 Sep 2024 19:00:08 GMT - [Day 28 of 30 Days MyDFIR SOC Analyst Challenge](https://freedium.cfd/https://medium.com/p/6770c4afdb4b)
+- Sat, 28 Sep 2024 18:55:01 GMT - [Why Cybersecurity Awareness Training is Essential for Every Employee](https://freedium.cfd/https://medium.com/p/de67b99ed9d8)
+- Sat, 28 Sep 2024 18:50:40 GMT - [The Ultimate Guide to Zero Trust Architecture: Key Concepts, Pillars, Benefits, and Examples](https://freedium.cfd/https://medium.com/p/055877207fac)
+- Sat, 28 Sep 2024 18:48:20 GMT - [Thailand Cyber Top Talent 2024 Junior Writeup #Mobile Security](https://freedium.cfd/https://medium.com/p/c01562124cbc)
+- Sat, 28 Sep 2024 18:36:12 GMT - [Hackers Use GitHub for Malware: A Growing Threat](https://freedium.cfd/https://medium.com/p/981f1b826e45)
+- Sat, 28 Sep 2024 18:34:51 GMT - [Understanding DDoS Attacks](https://freedium.cfd/https://medium.com/p/a83371d77365)
+
