@@ -857,3 +857,51 @@
 - Sat, 28 Sep 2024 20:10:09 GMT - [Hello, World: My Journey Begins on Medium :)](https://freedium.cfd/https://medium.com/p/0916f94f980c)
 - Sat, 28 Sep 2024 20:06:37 GMT - [Upcoming artist/writer/entrepreneur intro](https://freedium.cfd/https://medium.com/p/e5618838514c)
 
+## https://medium.com/feed/tag/bug-bounty
+- Sat, 28 Sep 2024 17:39:43 GMT - [Why Go is the Perfect Choice for CLIs](https://freedium.cfd/https://medium.com/p/477281989ace)
+- Sat, 28 Sep 2024 17:04:59 GMT - [Exposed private key leads to Google cloud service account takeover — Privilege Escalation](https://freedium.cfd/https://medium.com/p/6f031e20c819)
+- Sat, 28 Sep 2024 16:17:14 GMT - [Broken Authentication: A Common Vulnerability Exposing User Accounts](https://freedium.cfd/https://medium.com/p/2b48b6f9b644)
+- Sat, 28 Sep 2024 16:11:01 GMT - [Nuclei ile Zafiyet Tespiti](https://freedium.cfd/https://medium.com/p/ec94aa180aab)
+- Sat, 28 Sep 2024 15:44:16 GMT - [HackTheBox Broken Authentication (Skills Assessment)](https://freedium.cfd/https://medium.com/p/c43feaab1a52)
+- Sat, 28 Sep 2024 14:50:44 GMT - [How to google dork effectively for private and other bug bounty programs](https://freedium.cfd/https://medium.com/p/d54f9e7b4d57)
+- Sat, 28 Sep 2024 13:46:29 GMT - [Full Account Takeover via Facebook OAuth Misconfiguration](https://freedium.cfd/https://medium.com/p/9e30fe1c1da1)
+- Sat, 28 Sep 2024 13:45:39 GMT - [SQL injection attack, querying the database type and version on MySQL and Microsoft](https://freedium.cfd/https://medium.com/p/162715c6cd0e)
+- Sat, 28 Sep 2024 13:39:51 GMT - [SQL injection attack, querying the database type and version on Oracle](https://freedium.cfd/https://medium.com/p/f78a035c654d)
+- Sat, 28 Sep 2024 13:10:09 GMT - [ORM HQL Injection](https://freedium.cfd/https://medium.com/p/e072207e8942)
+
+## https://medium.com/feed/tag/security
+- Sat, 28 Sep 2024 21:42:03 GMT - [Sana’s Journey](https://freedium.cfd/https://medium.com/p/e288b72f08f6)
+- Sat, 28 Sep 2024 21:37:31 GMT - [Softly Spoken](https://freedium.cfd/https://medium.com/p/3b7b8cbd9bfc)
+- Sat, 28 Sep 2024 21:32:03 GMT - [My Broken dreams and burning Hopes!](https://freedium.cfd/https://medium.com/p/3caae7ca30d2)
+- Sat, 28 Sep 2024 21:26:54 GMT - [A Battle against the Will!](https://freedium.cfd/https://medium.com/p/d039a3d7f73a)
+- Sat, 28 Sep 2024 21:06:53 GMT - [Falling Grace](https://freedium.cfd/https://medium.com/p/baf68cf5c2e7)
+- Sat, 28 Sep 2024 21:02:06 GMT - [Transform Your Screen Time](https://freedium.cfd/https://medium.com/p/fb5a2ac6bb7b)
+- Sat, 28 Sep 2024 21:01:25 GMT - [Hosting a Web App on Azure with Key Vault: Secure and Scalable](https://freedium.cfd/https://medium.com/p/7aa8f5b639b5)
+- Sat, 28 Sep 2024 20:59:42 GMT - [The Importance of Hiring Security Guards in Irving, TX: Ensuring Safety and Peace of Mind](https://freedium.cfd/https://medium.com/p/3123df910cac)
+- Sat, 28 Sep 2024 20:52:03 GMT - [Chapters of the Heart](https://freedium.cfd/https://medium.com/p/f51f3aa5bccd)
+- Sat, 28 Sep 2024 20:44:07 GMT - [Injection Vulnerabilities: More Than You Think!! ](https://freedium.cfd/https://medium.com/p/e926332d4907)
+
+## https://medium.com/feed/tag/vulnerability
+- Sat, 28 Sep 2024 20:44:07 GMT - [Injection Vulnerabilities: More Than You Think!! ](https://freedium.cfd/https://medium.com/p/e926332d4907)
+- Sat, 28 Sep 2024 18:15:19 GMT - [The Quiet Power of Vulnerability and Strength: A pathway to Growth](https://freedium.cfd/https://medium.com/p/73f4c817e87b)
+- Sat, 28 Sep 2024 17:15:48 GMT - [Progress urges admins to patch critical WhatsUp Gold bugs ASAP](https://freedium.cfd/https://medium.com/p/71234ef898bd)
+- Sat, 28 Sep 2024 15:36:53 GMT - [20 Commands to Exploit Vulnerabilities Like a Pro](https://freedium.cfd/https://medium.com/p/1145291df899)
+- Sat, 28 Sep 2024 13:11:50 GMT - [My Perfect Housemate](https://freedium.cfd/https://medium.com/p/ea4ee739a2b1)
+- Sat, 28 Sep 2024 09:36:35 GMT - [Our Deepest Fear… A Lesson From Marianne Williamson](https://freedium.cfd/https://medium.com/p/df2b4cb16950)
+- Sat, 28 Sep 2024 09:35:35 GMT - [The Gloaming: The Comeback Kid](https://freedium.cfd/https://medium.com/p/b66b38698c98)
+- Sat, 28 Sep 2024 09:21:42 GMT - [Security Misconfiguration: Identifying and Preventing This Common Vulnerability](https://freedium.cfd/https://medium.com/p/14ab1c4989ac)
+- Sat, 28 Sep 2024 09:17:30 GMT - [Insecure Direct Object References (IDOR): Understanding and Preventing This Vulnerability](https://freedium.cfd/https://medium.com/p/4c8e831f17b4)
+- Sat, 28 Sep 2024 08:24:07 GMT - [Towards better data science projects, part 4: searching unused Python packages and package…](https://freedium.cfd/https://medium.com/p/fbac9a6f8911)
+
+## https://medium.com/feed/tag/cybersecurity
+- Sat, 28 Sep 2024 21:29:33 GMT - [How To Call an Intent Within Intent](https://freedium.cfd/https://medium.com/p/4300c2dd946d)
+- Sat, 28 Sep 2024 21:25:23 GMT - [Challenge Name: Big Number](https://freedium.cfd/https://medium.com/p/e5efc684e163)
+- Sat, 28 Sep 2024 21:08:35 GMT - [LetsDefend SA Event ID: 197, SOC235 — Atlassian Confluence Broken Access Control 0-Day…](https://freedium.cfd/https://medium.com/p/e46527ac727a)
+- Sat, 28 Sep 2024 20:58:04 GMT - [IEEE 3.0 CTF (W3lcome) Reverse Engineering](https://freedium.cfd/https://medium.com/p/804714f1e5a9)
+- Sat, 28 Sep 2024 20:47:09 GMT - [Ramblings from the Nutthouse](https://freedium.cfd/https://medium.com/p/29d54f669f89)
+- Sat, 28 Sep 2024 20:45:46 GMT - [Understanding URLs and Making Web Requests](https://freedium.cfd/https://medium.com/p/feec07d35a32)
+- Sat, 28 Sep 2024 20:44:07 GMT - [Injection Vulnerabilities: More Than You Think!! ](https://freedium.cfd/https://medium.com/p/e926332d4907)
+- Sat, 28 Sep 2024 20:25:48 GMT - [The Importance of Multi-Factor Authentication (MFA) in Cybersecurity](https://freedium.cfd/https://medium.com/p/94270044d2e4)
+- Sat, 28 Sep 2024 20:10:09 GMT - [Hello, World: My Journey Begins on Medium :)](https://freedium.cfd/https://medium.com/p/0916f94f980c)
+- Sat, 28 Sep 2024 20:06:37 GMT - [Upcoming artist/writer/entrepreneur intro](https://freedium.cfd/https://medium.com/p/e5618838514c)
+
