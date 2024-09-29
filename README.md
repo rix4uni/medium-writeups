@@ -11,6 +11,9 @@
 - Sun, 29 Sep 2024 09:42:18 GMT - [SMTP/s — Port 25,465,587 For pentesters](https://freedium.cfd/https://medium.com/p/3e5706e081e9)
 
 ## https://medium.com/feed/tag/security
+- Sun, 29 Sep 2024 19:06:54 GMT - [Six Months of Surprises](https://freedium.cfd/https://medium.com/p/1ee700e25b9e)
+- Sun, 29 Sep 2024 19:06:02 GMT - [Designing Your Journey to Success](https://freedium.cfd/https://medium.com/p/2149b33281e4)
+- Sun, 29 Sep 2024 19:01:32 GMT - [From Batter to Brand](https://freedium.cfd/https://medium.com/p/a3e6ab56f1df)
 - Sun, 29 Sep 2024 18:51:30 GMT - [Property Ads and Design](https://freedium.cfd/https://medium.com/p/626c96db805b)
 - Sun, 29 Sep 2024 18:50:17 GMT - [Understanding Persuasion](https://freedium.cfd/https://medium.com/p/29fbe1972217)
 - Sun, 29 Sep 2024 18:45:29 GMT - [Set Yourself Up for Success:](https://freedium.cfd/https://medium.com/p/fa14eee49917)
@@ -18,11 +21,9 @@
 - Sun, 29 Sep 2024 18:29:26 GMT - [Experience Speaks](https://freedium.cfd/https://medium.com/p/eb671e9b7fde)
 - Sun, 29 Sep 2024 18:21:33 GMT - [Understanding Meta Descriptions](https://freedium.cfd/https://medium.com/p/06d0a1d67a88)
 - Sun, 29 Sep 2024 18:16:19 GMT - [StaticKuber:Enhancing Kubernetes Security and Best Practices with Real-Time VS Code Extension](https://freedium.cfd/https://medium.com/p/b68f0da26c1b)
-- Sun, 29 Sep 2024 18:01:31 GMT - [Le NIST recommande de nouvelles règles pour la sécurité des mots de passe](https://freedium.cfd/https://medium.com/p/8b2a95f60f83)
-- Sun, 29 Sep 2024 18:00:04 GMT - [Great Ocean Road Gone Wrong](https://freedium.cfd/https://medium.com/p/e96a262f260f)
-- Sun, 29 Sep 2024 17:56:56 GMT - [More Than a Symbol](https://freedium.cfd/https://medium.com/p/69ed24c492d1)
 
 ## https://medium.com/feed/tag/vulnerability
+- Sun, 29 Sep 2024 19:07:49 GMT - [Goosebumps…Sexy Goosebumps.](https://freedium.cfd/https://medium.com/p/ae7b393f3517)
 - Sun, 29 Sep 2024 17:33:27 GMT - [How I Learned to Have Uncomfortable Conversations](https://freedium.cfd/https://medium.com/p/549126cbdd19)
 - Sun, 29 Sep 2024 17:05:41 GMT - [DC-1](https://freedium.cfd/https://medium.com/p/42e3eeaa5363)
 - Sun, 29 Sep 2024 16:36:53 GMT - [Embrace Your Imperfections: How Vulnerability Can Make You More Attractive](https://freedium.cfd/https://medium.com/p/73ecd68f5dce)
@@ -32,16 +33,16 @@
 - Sun, 29 Sep 2024 08:08:54 GMT - [How Hackers Are Exploiting SS7: The Weak Link in Our Phone Networks](https://freedium.cfd/https://medium.com/p/f37e063b6493)
 - Sun, 29 Sep 2024 08:03:07 GMT - [We Are Similar but Different.](https://freedium.cfd/https://medium.com/p/9a1b1282d5c7)
 - Sun, 29 Sep 2024 07:14:10 GMT - [Programming Languages: Scope, Advantages, and Vulnerabilities](https://freedium.cfd/https://medium.com/p/efefd580d85a)
-- Sun, 29 Sep 2024 06:41:26 GMT - [To the avoidants out there.](https://freedium.cfd/https://medium.com/p/5ed96363241b)
 
 ## https://medium.com/feed/tag/cybersecurity
+- Sun, 29 Sep 2024 19:10:17 GMT - [Web Security Academy: CSRF — Broken Referer validation](https://freedium.cfd/https://medium.com/p/e9f7e6f7d4a7)
+- Sun, 29 Sep 2024 19:06:03 GMT - [Belajar IT Tidak Semudah Membalikkan Telapak Kaki Gajah](https://freedium.cfd/https://medium.com/p/eaeffe52a5de)
+- Sun, 29 Sep 2024 19:03:31 GMT - [Day 29 of 30 Days MyDFIR SOC Analyst Challenge](https://freedium.cfd/https://medium.com/p/d348b8e8f2fc)
+- Sun, 29 Sep 2024 19:01:12 GMT - [My eCPPTv3 Journey: What to Expect and How to Succeed (VALUABLE TIPS!)](https://freedium.cfd/https://medium.com/p/6ccbcfad3a37)
 - Sun, 29 Sep 2024 18:47:10 GMT - [The Apex of Global Cybersecurity: A Zero Trust, AI-Powered, Self-Replicating Defense System for G7…](https://freedium.cfd/https://medium.com/p/bb2134fae61d)
 - Sun, 29 Sep 2024 18:35:57 GMT - [Mayor of London Launches iREPORTit Mobile App Developed by Raven Science in Collaboration with MIT…](https://freedium.cfd/https://medium.com/p/3c2eb6ff4a36)
 - Sun, 29 Sep 2024 18:32:11 GMT - [Top IT Challenges: Navigating the Modern Business Landscape](https://freedium.cfd/https://medium.com/p/27c4c9aba7f1)
 - Sun, 29 Sep 2024 18:23:53 GMT - [COMPTIA Security+ Questions](https://freedium.cfd/https://medium.com/p/f063bf2f9e4e)
 - Sun, 29 Sep 2024 18:23:23 GMT - [Influencers Under Attack : Hackers Target YouTubers for Political and Crypto Campaigns](https://freedium.cfd/https://medium.com/p/c8da2174bf6b)
 - Sun, 29 Sep 2024 18:21:03 GMT - [Understanding Keyloggers :](https://freedium.cfd/https://medium.com/p/e2a9fe9ea89e)
-- Sun, 29 Sep 2024 18:19:27 GMT - [First easy and unique 2FA bypass in a private bug bounty program, another interesting story of 2FA…](https://freedium.cfd/https://medium.com/p/05c98d103c9c)
-- Sun, 29 Sep 2024 18:09:32 GMT - [Where Can You Learn Cybersecurity in 2024 ? A Global Guide](https://freedium.cfd/https://medium.com/p/1632fe8cfec5)
-- Sun, 29 Sep 2024 18:01:31 GMT - [Le NIST recommande de nouvelles règles pour la sécurité des mots de passe](https://freedium.cfd/https://medium.com/p/8b2a95f60f83)
 
