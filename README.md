@@ -35,13 +35,13 @@
 - Sun, 29 Sep 2024 06:41:26 GMT - [To the avoidants out there.](https://freedium.cfd/https://medium.com/p/5ed96363241b)
 
 ## https://medium.com/feed/tag/cybersecurity
+- Sun, 29 Sep 2024 18:35:57 GMT - [Mayor of London Launches iREPORTit Mobile App Developed by Raven Science in Collaboration with MIT…](https://freedium.cfd/https://medium.com/p/3c2eb6ff4a36)
+- Sun, 29 Sep 2024 18:32:11 GMT - [Top IT Challenges: Navigating the Modern Business Landscape](https://freedium.cfd/https://medium.com/p/27c4c9aba7f1)
 - Sun, 29 Sep 2024 18:23:53 GMT - [COMPTIA Security+ Questions](https://freedium.cfd/https://medium.com/p/f063bf2f9e4e)
 - Sun, 29 Sep 2024 18:23:23 GMT - [Influencers Under Attack : Hackers Target YouTubers for Political and Crypto Campaigns](https://freedium.cfd/https://medium.com/p/c8da2174bf6b)
 - Sun, 29 Sep 2024 18:21:03 GMT - [Understanding Keyloggers :](https://freedium.cfd/https://medium.com/p/e2a9fe9ea89e)
-- Sun, 29 Sep 2024 18:19:27 GMT - [easy and unique 2FA bypass in a private bug bounty program, another interesting story of 2FA…](https://freedium.cfd/https://medium.com/p/05c98d103c9c)
+- Sun, 29 Sep 2024 18:19:27 GMT - [First easy and unique 2FA bypass in a private bug bounty program, another interesting story of 2FA…](https://freedium.cfd/https://medium.com/p/05c98d103c9c)
 - Sun, 29 Sep 2024 18:09:32 GMT - [Where Can You Learn Cybersecurity in 2024 ? A Global Guide](https://freedium.cfd/https://medium.com/p/1632fe8cfec5)
 - Sun, 29 Sep 2024 18:01:31 GMT - [Le NIST recommande de nouvelles règles pour la sécurité des mots de passe](https://freedium.cfd/https://medium.com/p/8b2a95f60f83)
 - Sun, 29 Sep 2024 18:01:31 GMT - [“Canadian Spectrum Repurposing: Mining for Gold with ISED Tech”](https://freedium.cfd/https://medium.com/p/e610a4391194)
-- Sun, 29 Sep 2024 17:44:54 GMT - [Life Sucks P-1](https://freedium.cfd/https://medium.com/p/182d702bab02)
-- Sun, 29 Sep 2024 17:44:21 GMT - [My Journey into Cybersecurity: From COBOL to Cloud Security](https://freedium.cfd/https://medium.com/p/33453f74bc3e)
 
