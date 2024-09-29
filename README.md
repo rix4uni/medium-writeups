@@ -11,16 +11,16 @@
 - Sun, 29 Sep 2024 10:24:58 GMT - [Mastering Advanced Google Dorks for Ethical Hacking and Vulnerability Discovery](https://freedium.cfd/https://medium.com/p/6d9e3dde0433)
 
 ## https://medium.com/feed/tag/security
+- Sun, 29 Sep 2024 21:11:30 GMT - [Running Through Wonders](https://freedium.cfd/https://medium.com/p/047d96ee51f5)
+- Sun, 29 Sep 2024 21:06:54 GMT - [The Question of Effort](https://freedium.cfd/https://medium.com/p/178abc76b457)
+- Sun, 29 Sep 2024 21:01:31 GMT - [The Unity of Ingredients](https://freedium.cfd/https://medium.com/p/53c0f831cd62)
+- Sun, 29 Sep 2024 20:58:06 GMT - [Roku Smart Home Indoor Camera SE : A Comprehensive Review](https://freedium.cfd/https://medium.com/p/2859b2a1eaee)
+- Sun, 29 Sep 2024 20:51:35 GMT - [From Zero to One](https://freedium.cfd/https://medium.com/p/da29f6645a65)
+- Sun, 29 Sep 2024 20:47:30 GMT - [Mastering Discipline](https://freedium.cfd/https://medium.com/p/31f344d06cbf)
 - Sun, 29 Sep 2024 20:41:33 GMT - [The Secrets of the Sea](https://freedium.cfd/https://medium.com/p/d2c05bf4d262)
 - Sun, 29 Sep 2024 20:36:52 GMT - [Dear Younger Me](https://freedium.cfd/https://medium.com/p/ae455ad85d1c)
 - Sun, 29 Sep 2024 20:31:30 GMT - [Pages of Friendship](https://freedium.cfd/https://medium.com/p/5b47cc542791)
 - Sun, 29 Sep 2024 20:26:52 GMT - [Get to the Top of Google](https://freedium.cfd/https://medium.com/p/2de11af777db)
-- Sun, 29 Sep 2024 20:16:54 GMT - [Transforming Business](https://freedium.cfd/https://medium.com/p/84cf721db4ec)
-- Sun, 29 Sep 2024 20:11:23 GMT - [Why the P vs NP problem is crucial to cybersecurity](https://freedium.cfd/https://medium.com/p/8208c3457e2a)
-- Sun, 29 Sep 2024 20:06:56 GMT - [The Road Less Traveled:](https://freedium.cfd/https://medium.com/p/c4d400c83379)
-- Sun, 29 Sep 2024 20:06:55 GMT - [On-Page SEO in 2024](https://freedium.cfd/https://medium.com/p/dfff719332c3)
-- Sun, 29 Sep 2024 20:06:55 GMT - [30 Days of Silence](https://freedium.cfd/https://medium.com/p/2c953d25935d)
-- Sun, 29 Sep 2024 20:01:41 GMT - [Rooted and Resilient](https://freedium.cfd/https://medium.com/p/41c4c6fa97e1)
 
 ## https://medium.com/feed/tag/vulnerability
 - Sun, 29 Sep 2024 19:07:49 GMT - [Goosebumps…Sexy Goosebumps.](https://freedium.cfd/https://medium.com/p/ae7b393f3517)
@@ -35,6 +35,8 @@
 - Sun, 29 Sep 2024 07:14:10 GMT - [Programming Languages: Scope, Advantages, and Vulnerabilities](https://freedium.cfd/https://medium.com/p/efefd580d85a)
 
 ## https://medium.com/feed/tag/cybersecurity
+- Sun, 29 Sep 2024 20:52:37 GMT - [The Rise of Device Tampering: Analyzing the Lebanon Pager Explosions…](https://freedium.cfd/https://medium.com/p/2430429f7a46)
+- Sun, 29 Sep 2024 20:50:29 GMT - [The Death of the Password: Are Biometrics the Future of Authentication?](https://freedium.cfd/https://medium.com/p/286f2f5cec59)
 - Sun, 29 Sep 2024 20:31:09 GMT - [I will write pro resumes in 24hrs for sales, tech, engineering, IT, SDR, banking, executives, and…](https://freedium.cfd/https://medium.com/p/0dfeab00b05f)
 - Sun, 29 Sep 2024 20:15:19 GMT - [Hack The Box: BoardLight Walkthrough](https://freedium.cfd/https://medium.com/p/f3949e54c71a)
 - Sun, 29 Sep 2024 20:13:38 GMT - [So what exactly is a network?](https://freedium.cfd/https://medium.com/p/7619d7f0da4a)
@@ -43,8 +45,6 @@
 - Sun, 29 Sep 2024 20:03:25 GMT - [Comparing Popular SIEM Data Pipeline Designs: Elastic , ArcSight, QRadar, and Splunk — Part 3](https://freedium.cfd/https://medium.com/p/9028662b1ce5)
 - Sun, 29 Sep 2024 19:48:38 GMT - [TryHackMe: Net Sec Challenge](https://freedium.cfd/https://medium.com/p/7bed449bb2ee)
 - Sun, 29 Sep 2024 19:38:57 GMT - [Understanding Online Friendship Fraud: Step-by-Step Guide To Protect Yourself](https://freedium.cfd/https://medium.com/p/fe48c8a48d1b)
-- Sun, 29 Sep 2024 19:32:22 GMT - [Why You Still Need a VPN on Your Cellular Network](https://freedium.cfd/https://medium.com/p/c02cb73051b3)
-- Sun, 29 Sep 2024 19:27:51 GMT - [Zscaler Brings Clarity to Cybersecurity with Zero Trust and AI](https://freedium.cfd/https://medium.com/p/667ef7d7fdc7)
 
 ## https://medium.com/feed/tag/penetration-testing
 - Sun, 29 Sep 2024 20:15:19 GMT - [Hack The Box: BoardLight Walkthrough](https://freedium.cfd/https://medium.com/p/f3949e54c71a)
@@ -289,6 +289,7 @@
 - Tue, 16 Jul 2024 11:42:48 GMT - [Footprinting and Reconnaissance — Advanced Google Hacking](https://freedium.cfd/https://medium.com/p/e9870c70fc30)
 
 ## https://medium.com/feed/tag/cyber-security-awareness
+- Sun, 29 Sep 2024 21:14:30 GMT - [Mental Health and the Law: How to Protect Your Business from Cyber Threats — A Legal Perspective](https://freedium.cfd/https://medium.com/p/5eeee1a34144)
 - Sun, 29 Sep 2024 19:38:57 GMT - [Understanding Online Friendship Fraud: Step-by-Step Guide To Protect Yourself](https://freedium.cfd/https://medium.com/p/fe48c8a48d1b)
 - Sun, 29 Sep 2024 19:17:50 GMT - [Europol Takes Down Massive Phishing Network Targeting Over 480,000 Victims](https://freedium.cfd/https://medium.com/p/4547b6ef96ed)
 - Sun, 29 Sep 2024 18:35:57 GMT - [Mayor of London Launches iREPORTit Mobile App Developed by Raven Science in Collaboration with MIT…](https://freedium.cfd/https://medium.com/p/3c2eb6ff4a36)
@@ -298,7 +299,6 @@
 - Sun, 29 Sep 2024 11:59:43 GMT - [Best Cyber Security Companies in Delhi: A Guide to Nishaj Infosolutions’ Expertise](https://freedium.cfd/https://medium.com/p/e1194f7ae884)
 - Sun, 29 Sep 2024 11:37:40 GMT - [how i found union based sql injection in hackerone public vdp program?](https://freedium.cfd/https://medium.com/p/7c76d61f6c77)
 - Sun, 29 Sep 2024 11:31:43 GMT - [Essential Cybersecurity Practices for Businesses](https://freedium.cfd/https://medium.com/p/2c6ea70b2fd0)
-- Sun, 29 Sep 2024 10:10:31 GMT - [Understanding Ransomware: A Growing Cybersecurity Threat — Deghar Wissem](https://freedium.cfd/https://medium.com/p/094fc0c37017)
 
 ## https://medium.com/feed/tag/google-dork
 - Sun, 29 Sep 2024 10:24:58 GMT - [Mastering Advanced Google Dorks for Ethical Hacking and Vulnerability Discovery](https://freedium.cfd/https://medium.com/p/6d9e3dde0433)
