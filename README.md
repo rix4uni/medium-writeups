@@ -1,4 +1,5 @@
 ## https://medium.com/feed/tag/bug-bounty
+- Sun, 29 Sep 2024 13:28:28 GMT - [Why is Bug Triage Important in Software Testing?](https://freedium.cfd/https://medium.com/p/678decfb727f)
 - Sun, 29 Sep 2024 13:20:38 GMT - [Understanding Bug Triage: A Crucial Process for Efficient Software Testing](https://freedium.cfd/https://medium.com/p/790b9b353177)
 - Sun, 29 Sep 2024 13:18:16 GMT - [DVWA : Cross Site Scripting (XSS) Vulnerability Solution (Low Security Level)](https://freedium.cfd/https://medium.com/p/452396997b5a)
 - Sun, 29 Sep 2024 11:37:40 GMT - [how i found union based sql injection in hackerone public vdp program?](https://freedium.cfd/https://medium.com/p/7c76d61f6c77)
@@ -8,7 +9,6 @@
 - Sun, 29 Sep 2024 07:02:25 GMT - [Critical bug in MediaTek Chips:CVE-2024–20017](https://freedium.cfd/https://medium.com/p/6e955ad56923)
 - Sun, 29 Sep 2024 06:50:44 GMT - [OWASP juice-shop login as an admin using SQLi and OSINT](https://freedium.cfd/https://medium.com/p/90c4abc4322b)
 - Sun, 29 Sep 2024 06:38:01 GMT - [H7CTF — WEB CHALLENGES](https://freedium.cfd/https://medium.com/p/db1883775dfd)
-- Sun, 29 Sep 2024 06:33:14 GMT - [Essential Port Scanning Skills for Bug Bounty Hunters](https://freedium.cfd/https://medium.com/p/f0e09f3612ce)
 
 ## https://medium.com/feed/tag/security
 - Sun, 29 Sep 2024 13:07:09 GMT - [Understanding Inconsistencies in IP Address Classification Across Programming Languages](https://freedium.cfd/https://medium.com/p/19b2645b10a9)
