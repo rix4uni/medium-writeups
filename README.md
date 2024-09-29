@@ -11,6 +11,8 @@
 - Sun, 29 Sep 2024 04:48:56 GMT - [Find Vulnerabilities With This Single Nmap Command](https://freedium.cfd/https://medium.com/p/a4476c16c82c)
 
 ## https://medium.com/feed/tag/security
+- Sun, 29 Sep 2024 09:55:44 GMT - [Watch Out: How Scammers on LinkedIn and Telegram Are Targeting Blockchain Devs](https://freedium.cfd/https://medium.com/p/1af431cb9217)
+- Sun, 29 Sep 2024 09:54:24 GMT - [Ring Security Cameras: Protect Your Home with Smart Features and 24/7 Monitoring](https://freedium.cfd/https://medium.com/p/083d9d96b166)
 - Sun, 29 Sep 2024 09:11:55 GMT - [Privacy Concerns: Dark Side of Social Media](https://freedium.cfd/https://medium.com/p/3c7cf5f9d911)
 - Sun, 29 Sep 2024 09:07:02 GMT - [Is Your Phone Hacked? Signs and Steps to Take](https://freedium.cfd/https://medium.com/p/5ee394a8ed72)
 - Sun, 29 Sep 2024 09:01:46 GMT - [Weaving the Fabric of Life](https://freedium.cfd/https://medium.com/p/52db6a4debc6)
@@ -19,8 +21,6 @@
 - Sun, 29 Sep 2024 07:42:12 GMT - [Navigating Compliance: How to meet cybersecurity requirements for GDPR and CCPA](https://freedium.cfd/https://medium.com/p/2e5205671a66)
 - Sun, 29 Sep 2024 07:27:22 GMT - [From Phishing to Malware: Defending Your Digital Life End](https://freedium.cfd/https://medium.com/p/e58de60c9049)
 - Sun, 29 Sep 2024 07:10:22 GMT - [Top 15 Challenges of Artificial Intelligence in 2024](https://freedium.cfd/https://medium.com/p/983f5f1ed1f6)
-- Sun, 29 Sep 2024 07:09:43 GMT - [Four ways to bypass Android SSL Verification and Certificate Pinning](https://freedium.cfd/https://medium.com/p/97f3abc2ef4c)
-- Sun, 29 Sep 2024 06:46:22 GMT - [Boiler Safety: Key Practices for Ensuring Operational Security](https://freedium.cfd/https://medium.com/p/0213a8776b97)
 
 ## https://medium.com/feed/tag/vulnerability
 - Sun, 29 Sep 2024 09:48:31 GMT - [I’m the best at giving advice, but terrible at taking it…](https://freedium.cfd/https://medium.com/p/c6aa34799ce0)
@@ -32,9 +32,11 @@
 - Sun, 29 Sep 2024 04:48:56 GMT - [Find Vulnerabilities With This Single Nmap Command](https://freedium.cfd/https://medium.com/p/a4476c16c82c)
 - Sun, 29 Sep 2024 01:46:53 GMT - [Google Gemini AI Vulnerability: The Rise of Prompt Injection Attacks](https://freedium.cfd/https://medium.com/p/8d2c48a65210)
 - Sun, 29 Sep 2024 00:47:51 GMT - [The Power of Storytelling in Research and Academia](https://freedium.cfd/https://medium.com/p/3885f393b869)
-- Sat, 28 Sep 2024 20:44:07 GMT - [Injection Vulnerabilities: More Than You Think!! ](https://freedium.cfd/https://medium.com/p/e926332d4907)
+- Sat, 28 Sep 2024 20:44:07 GMT - [Injection Vulnerabilities: More Than You Think](https://freedium.cfd/https://medium.com/p/e926332d4907)
 
 ## https://medium.com/feed/tag/cybersecurity
+- Sun, 29 Sep 2024 10:10:31 GMT - [Understanding Ransomware: A Growing Cybersecurity Threat — Deghar Wissem](https://freedium.cfd/https://medium.com/p/094fc0c37017)
+- Sun, 29 Sep 2024 10:01:59 GMT - [Wireshark Temelleri — 7](https://freedium.cfd/https://medium.com/p/1669f6b86d3b)
 - Sun, 29 Sep 2024 09:51:30 GMT - [97 GPTs You Should Be Using Right Now for AI Excellence](https://freedium.cfd/https://medium.com/p/70fcf36f15cb)
 - Sun, 29 Sep 2024 09:43:18 GMT - [[CyberThreat] APT — Lazarus Group overview](https://freedium.cfd/https://medium.com/p/da4e898f1244)
 - Sun, 29 Sep 2024 09:42:18 GMT - [SMTP/s — Port 25,465,587 For pentesters](https://freedium.cfd/https://medium.com/p/3e5706e081e9)
@@ -43,6 +45,4 @@
 - Sun, 29 Sep 2024 09:21:40 GMT - [Shocking Kia Vulnerability Exposed: Hackers Could Remotely Control Cars Using Just a License Plate!](https://freedium.cfd/https://medium.com/p/da94db91df30)
 - Sun, 29 Sep 2024 09:16:45 GMT - [US Justice Department Offers Reward for Information on Russian Cybercriminals](https://freedium.cfd/https://medium.com/p/3176328c7087)
 - Sun, 29 Sep 2024 09:11:01 GMT - [Let’s Defend SOC239 — Remote Code Execution Detected in Splunk Enterprise Write Up](https://freedium.cfd/https://medium.com/p/9d6dbf18747a)
-- Sun, 29 Sep 2024 09:05:38 GMT - [How BeerBiceps Beat the Hack](https://freedium.cfd/https://medium.com/p/b78358ed2571)
-- Sun, 29 Sep 2024 08:48:14 GMT - [LetsDefend SA Event ID: 153, SOC202 — FakeGPT Malicious Chrome Extension](https://freedium.cfd/https://medium.com/p/ba065f242c6b)
 
