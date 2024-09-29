@@ -35,14 +35,14 @@
 - Sat, 28 Sep 2024 20:44:07 GMT - [Injection Vulnerabilities: More Than You Think](https://freedium.cfd/https://medium.com/p/e926332d4907)
 
 ## https://medium.com/feed/tag/cybersecurity
+- Sun, 29 Sep 2024 11:37:40 GMT - [how i found union based sql injection in hackerone public vdp program?](https://freedium.cfd/https://medium.com/p/7c76d61f6c77)
+- Sun, 29 Sep 2024 11:36:52 GMT - [Step-by-Step Guide: Installing and Configuring a YUM/DNF Server for Local on Red Hat Linux](https://freedium.cfd/https://medium.com/p/aca101df1b81)
+- Sun, 29 Sep 2024 11:33:52 GMT - [Getting Preventive Security Right with Protect Function of NIST Cybersecurity Framework 2.0](https://freedium.cfd/https://medium.com/p/f84b847f5971)
+- Sun, 29 Sep 2024 11:31:43 GMT - [Essential Cybersecurity Practices for Businesses](https://freedium.cfd/https://medium.com/p/2c6ea70b2fd0)
 - Sun, 29 Sep 2024 11:24:44 GMT - [Hacking a Nuclear Warhead by Whisper](https://freedium.cfd/https://medium.com/p/2c21cf755b51)
 - Sun, 29 Sep 2024 11:15:35 GMT - [Kemudahan VS Keamanan dalam Usable Encryption](https://freedium.cfd/https://medium.com/p/688c009fbd55)
 - Sun, 29 Sep 2024 11:11:53 GMT - [Server Security with IIS Crypto](https://freedium.cfd/https://medium.com/p/8c27587e441a)
 - Sun, 29 Sep 2024 10:52:04 GMT - [Defense for Defense Contractors](https://freedium.cfd/https://medium.com/p/f40da2b4a3e0)
 - Sun, 29 Sep 2024 10:42:29 GMT - [CREST CPSA Review & OSCP-CRT Equivalency Program](https://freedium.cfd/https://medium.com/p/17c604446381)
 - Sun, 29 Sep 2024 10:27:37 GMT - [The Reality of Cyber Harassment!](https://freedium.cfd/https://medium.com/p/11d93ae53f72)
-- Sun, 29 Sep 2024 10:24:58 GMT - [Mastering Advanced Google Dorks for Ethical Hacking and Vulnerability Discovery](https://freedium.cfd/https://medium.com/p/6d9e3dde0433)
-- Sun, 29 Sep 2024 10:10:31 GMT - [Understanding Ransomware: A Growing Cybersecurity Threat — Deghar Wissem](https://freedium.cfd/https://medium.com/p/094fc0c37017)
-- Sun, 29 Sep 2024 10:01:59 GMT - [Wireshark Temelleri — 7](https://freedium.cfd/https://medium.com/p/1669f6b86d3b)
-- Sun, 29 Sep 2024 09:51:30 GMT - [97 GPTs You Should Be Using Right Now for AI Excellence](https://freedium.cfd/https://medium.com/p/70fcf36f15cb)
 
