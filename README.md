@@ -35,6 +35,8 @@
 - Sat, 28 Sep 2024 20:44:07 GMT - [Injection Vulnerabilities: More Than You Think](https://freedium.cfd/https://medium.com/p/e926332d4907)
 
 ## https://medium.com/feed/tag/cybersecurity
+- Sun, 29 Sep 2024 10:52:04 GMT - [Defense for Defense Contractors](https://freedium.cfd/https://medium.com/p/f40da2b4a3e0)
+- Sun, 29 Sep 2024 10:42:29 GMT - [CREST CPSA Review & OSCP-CRT Equivalency Program](https://freedium.cfd/https://medium.com/p/17c604446381)
 - Sun, 29 Sep 2024 10:27:37 GMT - [The Reality of Cyber Harassment!](https://freedium.cfd/https://medium.com/p/11d93ae53f72)
 - Sun, 29 Sep 2024 10:24:58 GMT - [Mastering Advanced Google Dorks for Ethical Hacking and Vulnerability Discovery](https://freedium.cfd/https://medium.com/p/6d9e3dde0433)
 - Sun, 29 Sep 2024 10:10:31 GMT - [Understanding Ransomware: A Growing Cybersecurity Threat — Deghar Wissem](https://freedium.cfd/https://medium.com/p/094fc0c37017)
@@ -43,6 +45,4 @@
 - Sun, 29 Sep 2024 09:43:18 GMT - [[CyberThreat] APT — Lazarus Group overview](https://freedium.cfd/https://medium.com/p/da4e898f1244)
 - Sun, 29 Sep 2024 09:42:18 GMT - [SMTP/s — Port 25,465,587 For pentesters](https://freedium.cfd/https://medium.com/p/3e5706e081e9)
 - Sun, 29 Sep 2024 09:36:29 GMT - [Beginners’ Guide to Understand Web Crawlers and Bots (1)](https://freedium.cfd/https://medium.com/p/99dae68bf97a)
-- Sun, 29 Sep 2024 09:30:38 GMT - [Prompt Injection in GenAI Apps: Types & Mitigation Techniques](https://freedium.cfd/https://medium.com/p/ad96f268f98a)
-- Sun, 29 Sep 2024 09:21:40 GMT - [Shocking Kia Vulnerability Exposed: Hackers Could Remotely Control Cars Using Just a License Plate!](https://freedium.cfd/https://medium.com/p/da94db91df30)
 
