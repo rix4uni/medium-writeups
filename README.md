@@ -35,6 +35,7 @@
 - Sat, 28 Sep 2024 20:44:07 GMT - [Injection Vulnerabilities: More Than You Think](https://freedium.cfd/https://medium.com/p/e926332d4907)
 
 ## https://medium.com/feed/tag/cybersecurity
+- Sun, 29 Sep 2024 13:29:10 GMT - [The Beginning](https://freedium.cfd/https://medium.com/p/5ffcf63f94ca)
 - Sun, 29 Sep 2024 12:53:44 GMT - [Stay Safe Online with Telegtam’s Scam Prevention Initiative!](https://freedium.cfd/https://medium.com/p/e2229e4bdb2d)
 - Sun, 29 Sep 2024 12:06:37 GMT - [Cyber Hygiene: Building a Culture of Security Awareness in Organizations](https://freedium.cfd/https://medium.com/p/f0b06868f1fe)
 - Sun, 29 Sep 2024 12:04:30 GMT - [The Rise of Cybersecurity Automation: Can AI Replace Human Analysts?](https://freedium.cfd/https://medium.com/p/3852a93ae3ca)
@@ -44,5 +45,4 @@
 - Sun, 29 Sep 2024 11:58:52 GMT - [The Rise of AI-Powered Cyber Threats: Understanding Adversarial Attacks and Defense Mechanisms](https://freedium.cfd/https://medium.com/p/82a1f62a573b)
 - Sun, 29 Sep 2024 11:37:40 GMT - [how i found union based sql injection in hackerone public vdp program?](https://freedium.cfd/https://medium.com/p/7c76d61f6c77)
 - Sun, 29 Sep 2024 11:36:52 GMT - [Step-by-Step Guide: Installing and Configuring a YUM/DNF Server for Local on Red Hat Linux](https://freedium.cfd/https://medium.com/p/aca101df1b81)
-- Sun, 29 Sep 2024 11:33:52 GMT - [Getting Preventive Security Right with Protect Function of NIST Cybersecurity Framework 2.0](https://freedium.cfd/https://medium.com/p/f84b847f5971)
 
