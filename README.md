@@ -11,6 +11,9 @@
 - Sun, 29 Sep 2024 10:24:58 GMT - [Mastering Advanced Google Dorks for Ethical Hacking and Vulnerability Discovery](https://freedium.cfd/https://medium.com/p/6d9e3dde0433)
 
 ## https://medium.com/feed/tag/security
+- Sun, 29 Sep 2024 21:47:01 GMT - [Wisdom from the Sidelines:](https://freedium.cfd/https://medium.com/p/4914ce4468eb)
+- Sun, 29 Sep 2024 21:41:42 GMT - [Facing the Storm](https://freedium.cfd/https://medium.com/p/fdd0f344e8d8)
+- Sun, 29 Sep 2024 21:41:42 GMT - [Seeing with Fresh Eyes](https://freedium.cfd/https://medium.com/p/cb03688071d3)
 - Sun, 29 Sep 2024 21:31:41 GMT - [The Magnetic Soul](https://freedium.cfd/https://medium.com/p/d8d125cf9405)
 - Sun, 29 Sep 2024 21:26:53 GMT - [Unlock Google Rankings](https://freedium.cfd/https://medium.com/p/bd395d473a81)
 - Sun, 29 Sep 2024 21:17:32 GMT - [Maximize Your Earnings](https://freedium.cfd/https://medium.com/p/64f7d0d2561c)
@@ -18,9 +21,6 @@
 - Sun, 29 Sep 2024 21:06:54 GMT - [The Question of Effort](https://freedium.cfd/https://medium.com/p/178abc76b457)
 - Sun, 29 Sep 2024 21:01:31 GMT - [The Unity of Ingredients](https://freedium.cfd/https://medium.com/p/53c0f831cd62)
 - Sun, 29 Sep 2024 20:58:06 GMT - [Roku Smart Home Indoor Camera SE : A Comprehensive Review](https://freedium.cfd/https://medium.com/p/2859b2a1eaee)
-- Sun, 29 Sep 2024 20:51:35 GMT - [From Zero to One](https://freedium.cfd/https://medium.com/p/da29f6645a65)
-- Sun, 29 Sep 2024 20:47:30 GMT - [Mastering Discipline](https://freedium.cfd/https://medium.com/p/31f344d06cbf)
-- Sun, 29 Sep 2024 20:41:33 GMT - [The Secrets of the Sea](https://freedium.cfd/https://medium.com/p/d2c05bf4d262)
 
 ## https://medium.com/feed/tag/vulnerability
 - Sun, 29 Sep 2024 19:07:49 GMT - [Goosebumps…Sexy Goosebumps.](https://freedium.cfd/https://medium.com/p/ae7b393f3517)
@@ -71,6 +71,7 @@
 - Sun, 29 Sep 2024 15:15:07 GMT - [Cheese CTF TryHackMe Walkthrough](https://freedium.cfd/https://medium.com/p/a662fb62e017)
 
 ## https://medium.com/feed/tag/information-technology
+- Sun, 29 Sep 2024 21:45:21 GMT - [Scala Dreams, Go Realities, and Rusty AI Futures](https://freedium.cfd/https://medium.com/p/ab509cc08ef0)
 - Sun, 29 Sep 2024 18:32:11 GMT - [Top IT Challenges: Navigating the Modern Business Landscape](https://freedium.cfd/https://medium.com/p/27c4c9aba7f1)
 - Sun, 29 Sep 2024 16:02:40 GMT - [Preamble](https://freedium.cfd/https://medium.com/p/da884cd6df0e)
 - Sun, 29 Sep 2024 15:48:11 GMT - [**Technology Changes and the Fourth Industrial Revolution: Shaping the Future of Humanity**](https://freedium.cfd/https://medium.com/p/838d14340804)
@@ -80,7 +81,6 @@
 - Sun, 29 Sep 2024 09:11:01 GMT - [Let’s Defend SOC239 — Remote Code Execution Detected in Splunk Enterprise Write Up](https://freedium.cfd/https://medium.com/p/9d6dbf18747a)
 - Sun, 29 Sep 2024 09:03:20 GMT - [Valve Boosts Arch Linux: A Game-Changing Partnership for the Future of Open-Source Infrastructure](https://freedium.cfd/https://medium.com/p/2ac803f2a808)
 - Sun, 29 Sep 2024 08:51:24 GMT - [VirtualBox 7.1.2: Boosting Windows VM Performance and Enhancing Virtualization Across Platforms](https://freedium.cfd/https://medium.com/p/6aefdfdc6ccc)
-- Sun, 29 Sep 2024 08:40:54 GMT - [Addressing Workplace Discrimination for Indian Employees in Europe: Professional, Legal, and…](https://freedium.cfd/https://medium.com/p/12d66f6c6373)
 
 ## https://medium.com/feed/tag/infosec
 - Sun, 29 Sep 2024 20:15:19 GMT - [Hack The Box: BoardLight Walkthrough](https://freedium.cfd/https://medium.com/p/f3949e54c71a)
