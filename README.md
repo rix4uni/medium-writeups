@@ -1,4 +1,5 @@
 ## https://medium.com/feed/tag/bug-bounty
+- Sun, 29 Sep 2024 20:10:33 GMT - [Mac Spoofing](https://freedium.cfd/https://medium.com/p/ad0b180f3fad)
 - Sun, 29 Sep 2024 17:44:54 GMT - [Life Sucks P-1](https://freedium.cfd/https://medium.com/p/182d702bab02)
 - Sun, 29 Sep 2024 16:51:52 GMT - [KidRecon: The Ultimate Automated Subdomain Reconnaissance Tool for Ethical Hackers](https://freedium.cfd/https://medium.com/p/afb8ed8ea883)
 - Sun, 29 Sep 2024 16:48:57 GMT - [Server-Side Request Forgery (SSRF): How Attackers Can Exploit Internal Networks](https://freedium.cfd/https://medium.com/p/417ed78ae69b)
@@ -8,19 +9,18 @@
 - Sun, 29 Sep 2024 13:18:16 GMT - [DVWA : Cross Site Scripting (XSS) Vulnerability Solution (Low Security Level)](https://freedium.cfd/https://medium.com/p/452396997b5a)
 - Sun, 29 Sep 2024 11:37:40 GMT - [how i found union based sql injection in hackerone public vdp program?](https://freedium.cfd/https://medium.com/p/7c76d61f6c77)
 - Sun, 29 Sep 2024 10:24:58 GMT - [Mastering Advanced Google Dorks for Ethical Hacking and Vulnerability Discovery](https://freedium.cfd/https://medium.com/p/6d9e3dde0433)
-- Sun, 29 Sep 2024 09:42:18 GMT - [SMTP/s — Port 25,465,587 For pentesters](https://freedium.cfd/https://medium.com/p/3e5706e081e9)
 
 ## https://medium.com/feed/tag/security
+- Sun, 29 Sep 2024 20:11:23 GMT - [Why the P vs NP problem is crucial to cybersecurity](https://freedium.cfd/https://medium.com/p/8208c3457e2a)
+- Sun, 29 Sep 2024 20:06:56 GMT - [The Road Less Traveled:](https://freedium.cfd/https://medium.com/p/c4d400c83379)
+- Sun, 29 Sep 2024 20:06:55 GMT - [On-Page SEO in 2024](https://freedium.cfd/https://medium.com/p/dfff719332c3)
+- Sun, 29 Sep 2024 20:06:55 GMT - [30 Days of Silence](https://freedium.cfd/https://medium.com/p/2c953d25935d)
+- Sun, 29 Sep 2024 20:01:41 GMT - [Rooted and Resilient](https://freedium.cfd/https://medium.com/p/41c4c6fa97e1)
 - Sun, 29 Sep 2024 19:52:01 GMT - [Two Faces of Ambition](https://freedium.cfd/https://medium.com/p/87c0a81ce800)
 - Sun, 29 Sep 2024 19:51:28 GMT - [Get Your Ducks in a Row: Analyzing AWS VPC flow logs with DuckDB](https://freedium.cfd/https://medium.com/p/0ef3d3465a67)
 - Sun, 29 Sep 2024 19:46:55 GMT - [15 Uplifting Affirmations to Ignite Your Day](https://freedium.cfd/https://medium.com/p/f7753d2cda9b)
 - Sun, 29 Sep 2024 19:41:40 GMT - [The Heart of the Pride](https://freedium.cfd/https://medium.com/p/2be53b0af2f4)
 - Sun, 29 Sep 2024 19:36:54 GMT - [Breaking Free](https://freedium.cfd/https://medium.com/p/fa5aeb1cae04)
-- Sun, 29 Sep 2024 19:31:30 GMT - [The Reality of Fashion](https://freedium.cfd/https://medium.com/p/b216a1645170)
-- Sun, 29 Sep 2024 19:23:08 GMT - [Threat Modeling for Non-Security Experts](https://freedium.cfd/https://medium.com/p/f31bd58d309d)
-- Sun, 29 Sep 2024 19:21:30 GMT - [Out with the Old](https://freedium.cfd/https://medium.com/p/e2dece5fb6a3)
-- Sun, 29 Sep 2024 19:17:50 GMT - [Europol Takes Down Massive Phishing Network Targeting Over 480,000 Victims](https://freedium.cfd/https://medium.com/p/4547b6ef96ed)
-- Sun, 29 Sep 2024 19:13:02 GMT - [WEDNESDAY](https://freedium.cfd/https://medium.com/p/2bc8073b94d2)
 
 ## https://medium.com/feed/tag/vulnerability
 - Sun, 29 Sep 2024 19:07:49 GMT - [Goosebumps…Sexy Goosebumps.](https://freedium.cfd/https://medium.com/p/ae7b393f3517)
@@ -35,6 +35,9 @@
 - Sun, 29 Sep 2024 07:14:10 GMT - [Programming Languages: Scope, Advantages, and Vulnerabilities](https://freedium.cfd/https://medium.com/p/efefd580d85a)
 
 ## https://medium.com/feed/tag/cybersecurity
+- Sun, 29 Sep 2024 20:11:23 GMT - [Why the P vs NP problem is crucial to cybersecurity](https://freedium.cfd/https://medium.com/p/8208c3457e2a)
+- Sun, 29 Sep 2024 20:10:33 GMT - [Mac Spoofing](https://freedium.cfd/https://medium.com/p/ad0b180f3fad)
+- Sun, 29 Sep 2024 20:03:25 GMT - [Comparing Popular SIEM Data Pipeline Designs: Elastic , ArcSight, QRadar, and Splunk — Part 3](https://freedium.cfd/https://medium.com/p/9028662b1ce5)
 - Sun, 29 Sep 2024 19:48:38 GMT - [TryHackMe: Net Sec Challenge](https://freedium.cfd/https://medium.com/p/7bed449bb2ee)
 - Sun, 29 Sep 2024 19:38:57 GMT - [Understanding Online Friendship Fraud: Step-by-Step Guide To Protect Yourself](https://freedium.cfd/https://medium.com/p/fe48c8a48d1b)
 - Sun, 29 Sep 2024 19:32:22 GMT - [Why You Still Need a VPN on Your Cellular Network](https://freedium.cfd/https://medium.com/p/c02cb73051b3)
@@ -42,7 +45,4 @@
 - Sun, 29 Sep 2024 19:24:26 GMT - [NHI Use Case-1: Cross-Organization API Acess using API Keys](https://freedium.cfd/https://medium.com/p/0c9952e706a1)
 - Sun, 29 Sep 2024 19:20:52 GMT - [I will craft cybersecurity, tech, IT manager, data analyst, and business analyst resume](https://freedium.cfd/https://medium.com/p/2844150f4cfb)
 - Sun, 29 Sep 2024 19:15:36 GMT - [Data Science VS Project Management VS Cyber Security](https://freedium.cfd/https://medium.com/p/3f22bf4dc106)
-- Sun, 29 Sep 2024 19:10:17 GMT - [Web Security Academy: CSRF — Broken Referer validation](https://freedium.cfd/https://medium.com/p/e9f7e6f7d4a7)
-- Sun, 29 Sep 2024 19:06:03 GMT - [Belajar IT Tidak Semudah Membalikkan Telapak Kaki Gajah](https://freedium.cfd/https://medium.com/p/eaeffe52a5de)
-- Sun, 29 Sep 2024 19:03:31 GMT - [Day 29 of 30 Days MyDFIR SOC Analyst Challenge](https://freedium.cfd/https://medium.com/p/d348b8e8f2fc)
 
