@@ -11,6 +11,7 @@
 - Sun, 29 Sep 2024 06:50:44 GMT - [OWASP juice-shop login as an admin using SQLi and OSINT](https://freedium.cfd/https://medium.com/p/90c4abc4322b)
 
 ## https://medium.com/feed/tag/security
+- Sun, 29 Sep 2024 16:46:53 GMT - [The Comfort Debate](https://freedium.cfd/https://medium.com/p/4ae4f3d83ae7)
 - Sun, 29 Sep 2024 16:26:55 GMT - [In the Hands of Fate](https://freedium.cfd/https://medium.com/p/83e70bd8b41d)
 - Sun, 29 Sep 2024 16:24:10 GMT - [The Noodle Corner](https://freedium.cfd/https://medium.com/p/7f6fb121f7f4)
 - Sun, 29 Sep 2024 16:19:36 GMT - [Two Realities, One Illusion](https://freedium.cfd/https://medium.com/p/842069a6ff80)
@@ -20,7 +21,6 @@
 - Sun, 29 Sep 2024 15:42:33 GMT - [The Sofa-Buying Rule](https://freedium.cfd/https://medium.com/p/6ec5acd30074)
 - Sun, 29 Sep 2024 15:10:04 GMT - [Brevity Speaks Volumes](https://freedium.cfd/https://medium.com/p/eb8c74fdc0bf)
 - Sun, 29 Sep 2024 15:07:01 GMT - [SEO Simplified](https://freedium.cfd/https://medium.com/p/017692e9f3a5)
-- Sun, 29 Sep 2024 15:01:52 GMT - [How to Write a High-Impact Transactional Blog Post:](https://freedium.cfd/https://medium.com/p/9e83d6958775)
 
 ## https://medium.com/feed/tag/vulnerability
 - Sun, 29 Sep 2024 16:36:53 GMT - [Embrace Your Imperfections: How Vulnerability Can Make You More Attractive](https://freedium.cfd/https://medium.com/p/73ecd68f5dce)
@@ -35,6 +35,9 @@
 - Sun, 29 Sep 2024 01:46:53 GMT - [Google Gemini AI Vulnerability: The Rise of Prompt Injection Attacks](https://freedium.cfd/https://medium.com/p/8d2c48a65210)
 
 ## https://medium.com/feed/tag/cybersecurity
+- Sun, 29 Sep 2024 16:35:49 GMT - [Homelab, weekend update](https://freedium.cfd/https://medium.com/p/3b1e16452e86)
+- Sun, 29 Sep 2024 16:29:11 GMT - [Identifying Security Gaps and Compliance Issues in Cybersecurity Audits](https://freedium.cfd/https://medium.com/p/fcace7027941)
+- Sun, 29 Sep 2024 16:28:51 GMT - [Hello Valued Customer,](https://freedium.cfd/https://medium.com/p/537cceb58953)
 - Sun, 29 Sep 2024 16:26:06 GMT - [Homelab, cont’d](https://freedium.cfd/https://medium.com/p/b42f3bc72786)
 - Sun, 29 Sep 2024 16:24:44 GMT - [Why Choose the Top Cyber Security Course in India?](https://freedium.cfd/https://medium.com/p/d900caf10b30)
 - Sun, 29 Sep 2024 16:21:59 GMT - [Laika AI: Redefining Blockchain Analytics with AI-Powered Precision and User-Centric Design](https://freedium.cfd/https://medium.com/p/0a7266bbab05)
@@ -42,7 +45,4 @@
 - Sun, 29 Sep 2024 16:19:41 GMT - [Unlock Peace of Mind with SentryPC The Ultimate Computer Monitoring Solution](https://freedium.cfd/https://medium.com/p/7e29733c7675)
 - Sun, 29 Sep 2024 16:16:18 GMT - [Open Authorization.](https://freedium.cfd/https://medium.com/p/ab2a4d59c0ba)
 - Sun, 29 Sep 2024 16:15:43 GMT - [Best Bug Bounty and VA/PT Tools in 2024: Use Cases & Commands](https://freedium.cfd/https://medium.com/p/42986d594190)
-- Sun, 29 Sep 2024 16:13:36 GMT - [ Protégez votre entreprise des cyberattaques avant qu’il ne soit trop tard !](https://freedium.cfd/https://medium.com/p/3028cb42e346)
-- Sun, 29 Sep 2024 16:05:56 GMT - [Critical CUPS vulnerability compromises Linux systems](https://freedium.cfd/https://medium.com/p/c91ad94c100e)
-- Sun, 29 Sep 2024 16:02:40 GMT - [Preamble](https://freedium.cfd/https://medium.com/p/da884cd6df0e)
 
