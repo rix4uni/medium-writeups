@@ -1,4 +1,5 @@
 ## https://medium.com/feed/tag/bug-bounty
+- Sun, 29 Sep 2024 05:39:53 GMT - [Privacy concern bug](https://freedium.cfd/https://medium.com/p/72b30aead215)
 - Sun, 29 Sep 2024 05:02:04 GMT - [How to Find Bugs and Vulnerabilities Using ChatGPT: Guaranteed Results](https://freedium.cfd/https://medium.com/p/3b630fae4691)
 - Sun, 29 Sep 2024 04:48:56 GMT - [Find Vulnerabilities With This Single Nmap Command](https://freedium.cfd/https://medium.com/p/a4476c16c82c)
 - Sun, 29 Sep 2024 02:14:00 GMT - [OWASP juice shop -How I get account takeover from XSS](https://freedium.cfd/https://medium.com/p/ae3cfc978381)
@@ -8,7 +9,6 @@
 - Sat, 28 Sep 2024 17:39:43 GMT - [Why Go is the Perfect Choice for CLIs](https://freedium.cfd/https://medium.com/p/477281989ace)
 - Sat, 28 Sep 2024 17:04:59 GMT - [Exposed private key leads to Google cloud service account takeover — Privilege Escalation](https://freedium.cfd/https://medium.com/p/6f031e20c819)
 - Sat, 28 Sep 2024 16:17:14 GMT - [Broken Authentication: A Common Vulnerability Exposing User Accounts](https://freedium.cfd/https://medium.com/p/2b48b6f9b644)
-- Sat, 28 Sep 2024 16:11:01 GMT - [Nuclei ile Zafiyet Tespiti](https://freedium.cfd/https://medium.com/p/ec94aa180aab)
 
 ## https://medium.com/feed/tag/security
 - Sun, 29 Sep 2024 05:12:11 GMT - [Moments of Tranquility](https://freedium.cfd/https://medium.com/p/f39f67b238f2)
