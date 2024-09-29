@@ -35,6 +35,8 @@
 - Sat, 28 Sep 2024 09:21:42 GMT - [Security Misconfiguration: Identifying and Preventing This Common Vulnerability](https://freedium.cfd/https://medium.com/p/14ab1c4989ac)
 
 ## https://medium.com/feed/tag/cybersecurity
+- Sun, 29 Sep 2024 04:06:22 GMT - [Where Should I Start with Cybersecurity](https://freedium.cfd/https://medium.com/p/be0dd45bf403)
+- Sun, 29 Sep 2024 04:02:11 GMT - [Advanced Persistent Threats (APTs) from China, Russia, Iran, North Korea, and India: A Threat to…](https://freedium.cfd/https://medium.com/p/f64c2f9113d9)
 - Sun, 29 Sep 2024 03:48:28 GMT - [Bulan September, Belajar + Dapet Uang.](https://freedium.cfd/https://medium.com/p/9eddbc1f1071)
 - Sun, 29 Sep 2024 03:42:20 GMT - [How I passed CompTIA A+](https://freedium.cfd/https://medium.com/p/fed456f8a4ec)
 - Sun, 29 Sep 2024 03:41:22 GMT - [How To Report Whale Crypto Scams to ZachXBT](https://freedium.cfd/https://medium.com/p/5e55529a8e9b)
@@ -43,6 +45,4 @@
 - Sun, 29 Sep 2024 01:46:53 GMT - [Google Gemini AI Vulnerability: The Rise of Prompt Injection Attacks](https://freedium.cfd/https://medium.com/p/8d2c48a65210)
 - Sun, 29 Sep 2024 01:46:53 GMT - [‘SloppyLemming’ APT Abuses Cloudflare Service in Pakistan](https://freedium.cfd/https://medium.com/p/27847d3a03fd)
 - Sun, 29 Sep 2024 01:38:45 GMT - [Symmetric and Asymmetric Encryption: We Pay Companies To Hack Our Cars!](https://freedium.cfd/https://medium.com/p/e1d938d1c7c8)
-- Sun, 29 Sep 2024 01:32:55 GMT - [7 Shocking Cybersecurity Myths Exposed](https://freedium.cfd/https://medium.com/p/ac864dfbb5dc)
-- Sun, 29 Sep 2024 01:23:19 GMT - [SOC Home Lab — 30 Day SOC Analyst Challenge](https://freedium.cfd/https://medium.com/p/128d2285a4b6)
 
