@@ -397,58 +397,11 @@
 - Sun, 15 Sep 2024 13:06:49 GMT - [POC — Unauthenticated RCE Flaw in Rejetto HTTP File Server — CVE-2024–23692](https://freedium.cfd/https://medium.com/p/d014c26ab5e4)
 - Wed, 11 Sep 2024 20:59:20 GMT - [Hack the Box — Pennyworth](https://freedium.cfd/https://medium.com/p/4aa67975bb08)
 
-## https://medium.com/feed/tag/local-file-inclusion
-- Sun, 29 Sep 2024 11:31:17 GMT - [Root Me Local File Inclusion — Double encoding](https://freedium.cfd/https://medium.com/p/59b35b9ff5e9)
-- Sun, 29 Sep 2024 10:48:49 GMT - [Rootme Local File Inclusion](https://freedium.cfd/https://medium.com/p/8debbc194ab6)
-- Mon, 16 Sep 2024 21:33:13 GMT - [HackTheBox [22] : UpDown-Writeup](https://freedium.cfd/https://medium.com/p/0525e4c69b95)
-- Mon, 09 Sep 2024 08:42:57 GMT - [Write-Up: SOC170 — Passwd Found in Requested URL — Possible LFI Attack | LetsDefend](https://freedium.cfd/https://medium.com/p/16295e443021)
-- Sun, 08 Sep 2024 17:46:55 GMT - [Local File Inclusion (LFI) in Penetration Testing](https://freedium.cfd/https://medium.com/p/bcf4b33ccb3d)
-- Sat, 07 Sep 2024 09:35:20 GMT - [ROOT-ME. Flask — Development server writeup](https://freedium.cfd/https://medium.com/p/59e6117ff708)
-- Tue, 27 Aug 2024 11:03:53 GMT - [$15k RCE Through Monitoring Debug Mode](https://freedium.cfd/https://medium.com/p/4f474d8549d5)
-- Tue, 13 Aug 2024 16:13:33 GMT - [Day 11 0f 30 Days — 30 Vulnerabilities | File Upload Vulnerability](https://freedium.cfd/https://medium.com/p/0070c5fa4a61)
-- Tue, 13 Aug 2024 14:42:13 GMT - [Day 11 0f 30 Days — 30 Vulnerabilities | File Upload Vulnerability](https://freedium.cfd/https://medium.com/p/f2e469b93cbb)
-- Tue, 13 Aug 2024 12:03:02 GMT - [Case: Local File Inclusion-SQLi](https://freedium.cfd/https://medium.com/p/76624bba7919)
-
-## https://medium.com/feed/tag/vapt
-- Sun, 29 Sep 2024 11:59:43 GMT - [Best Cyber Security Companies in Delhi: A Guide to Nishaj Infosolutions’ Expertise](https://freedium.cfd/https://medium.com/p/e1194f7ae884)
-- Sun, 29 Sep 2024 07:13:24 GMT - [Performing a Dependency Confusion Attack with Remote Code Execution (RCE): A Step-by-Step Guide](https://freedium.cfd/https://medium.com/p/8d6055aa53e4)
-- Tue, 24 Sep 2024 04:48:22 GMT - [LLMNR poisoning (Practical)](https://freedium.cfd/https://medium.com/p/53737772810f)
-- Sun, 22 Sep 2024 09:26:38 GMT - [How Entity Swap Adversarial Attacks Can Disrupt AI Model.](https://freedium.cfd/https://medium.com/p/815de9babe87)
-- Sat, 21 Sep 2024 19:47:39 GMT - [The Silent Intruder: How h2c Smuggling Redefines HTTP/2 Security](https://freedium.cfd/https://medium.com/p/0a018a4c9e54)
-- Sat, 21 Sep 2024 05:58:23 GMT - [Advance Prompt Injection for LLM Pentesting](https://freedium.cfd/https://medium.com/p/0a26176c9fb6)
-- Wed, 18 Sep 2024 11:04:45 GMT - [VAPT Report](https://freedium.cfd/https://medium.com/p/7ef5317ff904)
-- Wed, 18 Sep 2024 11:04:25 GMT - [VAPT 大小事](https://freedium.cfd/https://medium.com/p/6c10814a099c)
-- Tue, 17 Sep 2024 14:50:04 GMT - [Exploiting the Vulnerability of Cybox 1.1: A Step-by-Step Guide](https://freedium.cfd/https://medium.com/p/2455ae951997)
-- Tue, 17 Sep 2024 06:07:36 GMT - [Leveraging enum4linux for Network Infrastructure VAPT](https://freedium.cfd/https://medium.com/p/a8631bbb2243)
-
-## https://medium.com/feed/tag/dorks
-- Thu, 12 Sep 2024 16:14:44 GMT - [Hack Google Like a Pro: Automate Google Dorks with Bash for Bug Bounties!](https://freedium.cfd/https://medium.com/p/7611818a4bf0)
-- Tue, 03 Sep 2024 18:54:29 GMT - [OSINT: A Dive into Google Dorks](https://freedium.cfd/https://medium.com/p/b9347c44691c)
-- Fri, 30 Aug 2024 20:46:35 GMT - [Kolay Bir Şekilde Çoklu Dork Oluşturma Rehberi](https://freedium.cfd/https://medium.com/p/02cff9c279a5)
-- Fri, 30 Aug 2024 15:55:03 GMT - [Why Google Dorks Are Dangerous: An In-Depth Analysis](https://freedium.cfd/https://medium.com/p/6ebe9c496fad)
-- Thu, 29 Aug 2024 17:47:20 GMT - [The Dork Community’s Impact and Future on the Voi Network](https://freedium.cfd/https://medium.com/p/30a322ab261c)
-- Tue, 20 Aug 2024 16:20:43 GMT - [The 20 Google Dorks That Actually Made Me a Google Search Expert](https://freedium.cfd/https://medium.com/p/8f7bd4c9974a)
-- Thu, 01 Aug 2024 22:20:04 GMT - [The Art of Geoint: How to Geolocate Any Place from a Photo (Basic Geoint Exercise)](https://freedium.cfd/https://medium.com/p/86ee811dd7c5)
-- Wed, 10 Jul 2024 08:51:21 GMT - [Advanced Google Dorks for Finding Sites with Open Comment Sections](https://freedium.cfd/https://medium.com/p/34fad2a4998f)
-- Thu, 27 Jun 2024 23:26:03 GMT - [Google Dork Untuk Memudahkan Pencarian Kostum Cosplay](https://freedium.cfd/https://medium.com/p/ae0e983addf8)
-
-## https://medium.com/feed/tag/github-dorking
-- Fri, 13 Sep 2024 20:07:54 GMT - [Unleashing GitHub Dorks: The Ultimate Hack for Finding Hidden Secrets in Bug Bounties!](https://freedium.cfd/https://medium.com/p/125b83fd9c93)
-- Sat, 07 Sep 2024 07:42:54 GMT - [The Easiest Way to Find CVEs at the Moment? GitHub Dorks!](https://freedium.cfd/https://medium.com/p/123d0fb20b26)
-- Thu, 15 Feb 2024 14:36:19 GMT - [Github Dorking: A Beginner’s Guide to Finding Secrets in Repositories](https://freedium.cfd/https://medium.com/p/2d4d36287913)
-- Sat, 09 Sep 2023 09:26:12 GMT - [GitHub Dorking](https://freedium.cfd/https://medium.com/p/60809d74832f)
-
-## https://medium.com/feed/tag/lfi
-- Mon, 23 Sep 2024 13:21:23 GMT - [LFI and SSRF + IDOR in admin panel file download method real cases found during recent audit](https://freedium.cfd/https://medium.com/p/6e934ae8cfa7)
-- Sat, 21 Sep 2024 10:36:33 GMT - [Local File Inclusion — Wrappers [RootMe]](https://freedium.cfd/https://medium.com/p/ccd3f640b558)
-- Sun, 15 Sep 2024 10:46:35 GMT - [Automating Subdomain Enumeration to Discover Critical Vulnerabilities](https://freedium.cfd/https://medium.com/p/aa6158d35a8f)
-- Sun, 08 Sep 2024 17:46:55 GMT - [Local File Inclusion (LFI) in Penetration Testing](https://freedium.cfd/https://medium.com/p/bcf4b33ccb3d)
-- Wed, 04 Sep 2024 16:59:23 GMT - [Decoding the Enigma: A Deep Dive into the /home/000~ROOT~000/ Directory](https://freedium.cfd/https://medium.com/p/3be592f05525)
-- Wed, 04 Sep 2024 10:29:31 GMT - [Writeup BlackHat MEA Qualification CTF 2024 [Free Flag]](https://freedium.cfd/https://medium.com/p/a6482cf61128)
-- Fri, 30 Aug 2024 04:56:04 GMT - [Part 2-5. Authorization testing](https://freedium.cfd/https://medium.com/p/f8a9e7debea1)
-- Wed, 14 Aug 2024 00:10:43 GMT - [Hacking websites with PHP Deserialization + LFI + PHP](https://freedium.cfd/https://medium.com/p/6e705d3f2dc1)
-- Mon, 05 Aug 2024 20:48:08 GMT - [Lets Defend: Passwd Found in Requested URL — Possible LFI Attack](https://freedium.cfd/https://medium.com/p/a9510eb78e9d)
-
+Error parsing XML from https://medium.com/feed/tag/local-file-inclusion: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/vapt: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/dorks: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/github-dorking: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/lfi: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/vulnerability-scanning: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/subdomain-enumeration: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/cybersecurity-tools: XML syntax error on line 1: expected element name after <
