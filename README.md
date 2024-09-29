@@ -1,4 +1,6 @@
 ## https://medium.com/feed/tag/bug-bounty
+- Sun, 29 Sep 2024 16:51:52 GMT - [KidRecon: The Ultimate Automated Subdomain Reconnaissance Tool for Ethical Hackers](https://freedium.cfd/https://medium.com/p/afb8ed8ea883)
+- Sun, 29 Sep 2024 16:48:57 GMT - [Server-Side Request Forgery (SSRF): How Attackers Can Exploit Internal Networks](https://freedium.cfd/https://medium.com/p/417ed78ae69b)
 - Sun, 29 Sep 2024 16:15:43 GMT - [Best Bug Bounty and VA/PT Tools in 2024: Use Cases & Commands](https://freedium.cfd/https://medium.com/p/42986d594190)
 - Sun, 29 Sep 2024 13:28:28 GMT - [Why is Bug Triage Important in Software Testing?](https://freedium.cfd/https://medium.com/p/678decfb727f)
 - Sun, 29 Sep 2024 13:20:38 GMT - [Understanding Bug Triage: A Crucial Process for Efficient Software Testing](https://freedium.cfd/https://medium.com/p/790b9b353177)
@@ -7,8 +9,6 @@
 - Sun, 29 Sep 2024 10:24:58 GMT - [Mastering Advanced Google Dorks for Ethical Hacking and Vulnerability Discovery](https://freedium.cfd/https://medium.com/p/6d9e3dde0433)
 - Sun, 29 Sep 2024 09:42:18 GMT - [SMTP/s — Port 25,465,587 For pentesters](https://freedium.cfd/https://medium.com/p/3e5706e081e9)
 - Sun, 29 Sep 2024 07:13:24 GMT - [Performing a Dependency Confusion Attack with Remote Code Execution (RCE): A Step-by-Step Guide](https://freedium.cfd/https://medium.com/p/8d6055aa53e4)
-- Sun, 29 Sep 2024 07:02:25 GMT - [Critical bug in MediaTek Chips:CVE-2024–20017](https://freedium.cfd/https://medium.com/p/6e955ad56923)
-- Sun, 29 Sep 2024 06:50:44 GMT - [OWASP juice-shop login as an admin using SQLi and OSINT](https://freedium.cfd/https://medium.com/p/90c4abc4322b)
 
 ## https://medium.com/feed/tag/security
 - Sun, 29 Sep 2024 16:46:53 GMT - [The Comfort Debate](https://freedium.cfd/https://medium.com/p/4ae4f3d83ae7)
@@ -35,14 +35,14 @@
 - Sun, 29 Sep 2024 01:46:53 GMT - [Google Gemini AI Vulnerability: The Rise of Prompt Injection Attacks](https://freedium.cfd/https://medium.com/p/8d2c48a65210)
 
 ## https://medium.com/feed/tag/cybersecurity
+- Sun, 29 Sep 2024 16:55:08 GMT - [How to Install and Use the Flash USDT Transfer App](https://freedium.cfd/https://medium.com/p/8d1d5c716c5d)
+- Sun, 29 Sep 2024 16:49:18 GMT - [1) What Is Flash BTC (Core Transaction) ?](https://freedium.cfd/https://medium.com/p/57bc81ea7f08)
+- Sun, 29 Sep 2024 16:48:57 GMT - [Server-Side Request Forgery (SSRF): How Attackers Can Exploit Internal Networks](https://freedium.cfd/https://medium.com/p/417ed78ae69b)
+- Sun, 29 Sep 2024 16:48:40 GMT - [Ti Hanno Svuotato il Conto Corrente? Ecco Cosa Fare Legalmente](https://freedium.cfd/https://medium.com/p/bf647cd77e95)
+- Sun, 29 Sep 2024 16:48:26 GMT - [What Is Flash BTC (Core Transaction)](https://freedium.cfd/https://medium.com/p/7dd93d023577)
 - Sun, 29 Sep 2024 16:35:49 GMT - [Homelab, weekend update](https://freedium.cfd/https://medium.com/p/3b1e16452e86)
 - Sun, 29 Sep 2024 16:29:11 GMT - [Identifying Security Gaps and Compliance Issues in Cybersecurity Audits](https://freedium.cfd/https://medium.com/p/fcace7027941)
 - Sun, 29 Sep 2024 16:28:51 GMT - [Hello Valued Customer,](https://freedium.cfd/https://medium.com/p/537cceb58953)
 - Sun, 29 Sep 2024 16:26:06 GMT - [Homelab, cont’d](https://freedium.cfd/https://medium.com/p/b42f3bc72786)
 - Sun, 29 Sep 2024 16:24:44 GMT - [Why Choose the Top Cyber Security Course in India?](https://freedium.cfd/https://medium.com/p/d900caf10b30)
-- Sun, 29 Sep 2024 16:21:59 GMT - [Laika AI: Redefining Blockchain Analytics with AI-Powered Precision and User-Centric Design](https://freedium.cfd/https://medium.com/p/0a7266bbab05)
-- Sun, 29 Sep 2024 16:21:21 GMT - [Discover the Future of Flash Coins: A Comprehensive Guide to Flashing Bitcoin](https://freedium.cfd/https://medium.com/p/22e3f4abb68a)
-- Sun, 29 Sep 2024 16:19:41 GMT - [Unlock Peace of Mind with SentryPC The Ultimate Computer Monitoring Solution](https://freedium.cfd/https://medium.com/p/7e29733c7675)
-- Sun, 29 Sep 2024 16:16:18 GMT - [Open Authorization.](https://freedium.cfd/https://medium.com/p/ab2a4d59c0ba)
-- Sun, 29 Sep 2024 16:15:43 GMT - [Best Bug Bounty and VA/PT Tools in 2024: Use Cases & Commands](https://freedium.cfd/https://medium.com/p/42986d594190)
 
