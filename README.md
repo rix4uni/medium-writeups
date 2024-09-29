@@ -1,4 +1,5 @@
 ## https://medium.com/feed/tag/bug-bounty
+- Sun, 29 Sep 2024 05:02:04 GMT - [How to Find Bugs and Vulnerabilities Using ChatGPT: Guaranteed Results](https://freedium.cfd/https://medium.com/p/3b630fae4691)
 - Sun, 29 Sep 2024 04:48:56 GMT - [Find Vulnerabilities With This Single Nmap Command](https://freedium.cfd/https://medium.com/p/a4476c16c82c)
 - Sun, 29 Sep 2024 02:14:00 GMT - [OWASP juice shop -How I get account takeover from XSS](https://freedium.cfd/https://medium.com/p/ae3cfc978381)
 - Sun, 29 Sep 2024 02:01:40 GMT - [Hacking with Linux: Your Ultimate Guide to Cyber Security Mastery](https://freedium.cfd/https://medium.com/p/e8f8bb38510c)
@@ -8,9 +9,10 @@
 - Sat, 28 Sep 2024 17:04:59 GMT - [Exposed private key leads to Google cloud service account takeover — Privilege Escalation](https://freedium.cfd/https://medium.com/p/6f031e20c819)
 - Sat, 28 Sep 2024 16:17:14 GMT - [Broken Authentication: A Common Vulnerability Exposing User Accounts](https://freedium.cfd/https://medium.com/p/2b48b6f9b644)
 - Sat, 28 Sep 2024 16:11:01 GMT - [Nuclei ile Zafiyet Tespiti](https://freedium.cfd/https://medium.com/p/ec94aa180aab)
-- Sat, 28 Sep 2024 15:44:16 GMT - [HackTheBox Broken Authentication (Skills Assessment)](https://freedium.cfd/https://medium.com/p/c43feaab1a52)
 
 ## https://medium.com/feed/tag/security
+- Sun, 29 Sep 2024 05:12:11 GMT - [Moments of Tranquility](https://freedium.cfd/https://medium.com/p/f39f67b238f2)
+- Sun, 29 Sep 2024 05:05:21 GMT - [Unlock Free Pokémon Brick Bronze Codes 2024](https://freedium.cfd/https://medium.com/p/39fb4c445de2)
 - Sun, 29 Sep 2024 04:45:58 GMT - [The Ultimate Comparison of Solar Security Cameras: Find the Best Fit for Your Home](https://freedium.cfd/https://medium.com/p/8179528e8218)
 - Sun, 29 Sep 2024 04:34:23 GMT - [The Invisible Threat Lurking in Your Code: How Simple Scripts Can Destroy Your Cloud](https://freedium.cfd/https://medium.com/p/f4bff47f8429)
 - Sun, 29 Sep 2024 04:26:59 GMT - [The Windows Concept Journey — PCA (Program Compatibility Assistant)](https://freedium.cfd/https://medium.com/p/bb996edb22c9)
@@ -19,8 +21,6 @@
 - Sun, 29 Sep 2024 03:15:39 GMT - [The Benefits of Not Having Replace-by-Fee (RBF) in Radiant](https://freedium.cfd/https://medium.com/p/046fb0351a36)
 - Sun, 29 Sep 2024 03:07:01 GMT - [“Joy Without Limits](https://freedium.cfd/https://medium.com/p/503761ad36d6)
 - Sun, 29 Sep 2024 03:05:48 GMT - [All my friends were about to block me — I wrote a semi virus](https://freedium.cfd/https://medium.com/p/fe408d8de801)
-- Sun, 29 Sep 2024 02:53:40 GMT - [Streamline Keyper CI/CD Pipeline with Keyper’s Github Action](https://freedium.cfd/https://medium.com/p/ed075f80f9b5)
-- Sun, 29 Sep 2024 02:14:55 GMT - [X-10 Voice Dialer Security Console (Base Only) — Model PS561](https://freedium.cfd/https://medium.com/p/551464d799a5)
 
 ## https://medium.com/feed/tag/vulnerability
 - Sun, 29 Sep 2024 04:48:56 GMT - [Find Vulnerabilities With This Single Nmap Command](https://freedium.cfd/https://medium.com/p/a4476c16c82c)
@@ -35,6 +35,7 @@
 - Sat, 28 Sep 2024 09:35:35 GMT - [The Gloaming: The Comeback Kid](https://freedium.cfd/https://medium.com/p/b66b38698c98)
 
 ## https://medium.com/feed/tag/cybersecurity
+- Sun, 29 Sep 2024 05:02:04 GMT - [How to Find Bugs and Vulnerabilities Using ChatGPT: Guaranteed Results](https://freedium.cfd/https://medium.com/p/3b630fae4691)
 - Sun, 29 Sep 2024 04:48:56 GMT - [Find Vulnerabilities With This Single Nmap Command](https://freedium.cfd/https://medium.com/p/a4476c16c82c)
 - Sun, 29 Sep 2024 04:42:18 GMT - [Basics of Nmap for hackers](https://freedium.cfd/https://medium.com/p/90bbdbd8a3bf)
 - Sun, 29 Sep 2024 04:39:35 GMT - [LetsDefend SA Event ID: 162, SOC210 — Possible Brute Force Detected on VPN](https://freedium.cfd/https://medium.com/p/2c05e57ea3c2)
@@ -44,5 +45,4 @@
 - Sun, 29 Sep 2024 03:48:28 GMT - [Bulan September, Belajar + Dapet Uang.](https://freedium.cfd/https://medium.com/p/9eddbc1f1071)
 - Sun, 29 Sep 2024 03:42:20 GMT - [How I passed CompTIA A+](https://freedium.cfd/https://medium.com/p/fed456f8a4ec)
 - Sun, 29 Sep 2024 03:41:22 GMT - [How To Report Whale Crypto Scams to ZachXBT](https://freedium.cfd/https://medium.com/p/5e55529a8e9b)
-- Sun, 29 Sep 2024 02:31:41 GMT - [Cloud Security Best Practices](https://freedium.cfd/https://medium.com/p/a73a69523049)
 
