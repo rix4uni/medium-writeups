@@ -35,16 +35,16 @@
 - Sun, 29 Sep 2024 07:14:10 GMT - [Programming Languages: Scope, Advantages, and Vulnerabilities](https://freedium.cfd/https://medium.com/p/efefd580d85a)
 
 ## https://medium.com/feed/tag/cybersecurity
+- Sun, 29 Sep 2024 21:25:44 GMT - [Darktrace: An In-Depth Overview](https://freedium.cfd/https://medium.com/p/2b61eb7bd308)
+- Sun, 29 Sep 2024 21:24:54 GMT - [LetsDefend SA Event ID: 123, SOC173 — Follina 0-Day Detected](https://freedium.cfd/https://medium.com/p/63423200d6c2)
+- Sun, 29 Sep 2024 21:23:02 GMT - [Security’s Weakest Link](https://freedium.cfd/https://medium.com/p/2c6be6ba9993)
+- Sun, 29 Sep 2024 21:21:00 GMT - [Gang stalking tacticas que usan](https://freedium.cfd/https://medium.com/p/80e18569aac2)
+- Sun, 29 Sep 2024 21:14:30 GMT - [Mental Health and the Law: How to Protect Your Business from Cyber Threats — A Legal Perspective](https://freedium.cfd/https://medium.com/p/5eeee1a34144)
 - Sun, 29 Sep 2024 20:52:37 GMT - [The Rise of Device Tampering: Analyzing the Lebanon Pager Explosions…](https://freedium.cfd/https://medium.com/p/2430429f7a46)
 - Sun, 29 Sep 2024 20:50:29 GMT - [The Death of the Password: Are Biometrics the Future of Authentication?](https://freedium.cfd/https://medium.com/p/286f2f5cec59)
 - Sun, 29 Sep 2024 20:31:09 GMT - [I will write pro resumes in 24hrs for sales, tech, engineering, IT, SDR, banking, executives, and…](https://freedium.cfd/https://medium.com/p/0dfeab00b05f)
 - Sun, 29 Sep 2024 20:15:19 GMT - [Hack The Box: BoardLight Walkthrough](https://freedium.cfd/https://medium.com/p/f3949e54c71a)
 - Sun, 29 Sep 2024 20:13:38 GMT - [So what exactly is a network?](https://freedium.cfd/https://medium.com/p/7619d7f0da4a)
-- Sun, 29 Sep 2024 20:11:23 GMT - [Why the P vs NP problem is crucial to cybersecurity](https://freedium.cfd/https://medium.com/p/8208c3457e2a)
-- Sun, 29 Sep 2024 20:10:33 GMT - [Mac Spoofing](https://freedium.cfd/https://medium.com/p/ad0b180f3fad)
-- Sun, 29 Sep 2024 20:03:25 GMT - [Comparing Popular SIEM Data Pipeline Designs: Elastic , ArcSight, QRadar, and Splunk — Part 3](https://freedium.cfd/https://medium.com/p/9028662b1ce5)
-- Sun, 29 Sep 2024 19:48:38 GMT - [TryHackMe: Net Sec Challenge](https://freedium.cfd/https://medium.com/p/7bed449bb2ee)
-- Sun, 29 Sep 2024 19:38:57 GMT - [Understanding Online Friendship Fraud: Step-by-Step Guide To Protect Yourself](https://freedium.cfd/https://medium.com/p/fe48c8a48d1b)
 
 ## https://medium.com/feed/tag/penetration-testing
 - Sun, 29 Sep 2024 20:15:19 GMT - [Hack The Box: BoardLight Walkthrough](https://freedium.cfd/https://medium.com/p/f3949e54c71a)
