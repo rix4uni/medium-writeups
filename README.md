@@ -11,6 +11,8 @@
 - Sun, 29 Sep 2024 02:14:00 GMT - [OWASP juice shop -How I get account takeover from XSS](https://freedium.cfd/https://medium.com/p/ae3cfc978381)
 
 ## https://medium.com/feed/tag/security
+- Sun, 29 Sep 2024 07:10:22 GMT - [Top 15 Challenges of Artificial Intelligence in 2024](https://freedium.cfd/https://medium.com/p/983f5f1ed1f6)
+- Sun, 29 Sep 2024 07:09:43 GMT - [Four ways to bypass Android SSL Verification and Certificate Pinning](https://freedium.cfd/https://medium.com/p/97f3abc2ef4c)
 - Sun, 29 Sep 2024 06:46:22 GMT - [Boiler Safety: Key Practices for Ensuring Operational Security](https://freedium.cfd/https://medium.com/p/0213a8776b97)
 - Sun, 29 Sep 2024 06:42:19 GMT - [Recovering Lost Key Pair in an AWS EC2 Instance](https://freedium.cfd/https://medium.com/p/f2ffd4f5843a)
 - Sun, 29 Sep 2024 06:23:26 GMT - [5 Reasons why NordVPN Is Best Streaming VPN in 2024](https://freedium.cfd/https://medium.com/p/8bd3abfd31b4)
@@ -19,8 +21,6 @@
 - Sun, 29 Sep 2024 06:09:45 GMT - [Seed4.Me VPN Lifetime Subscription: Unlimited Secure Browsing](https://freedium.cfd/https://medium.com/p/496e91900ae2)
 - Sun, 29 Sep 2024 05:12:11 GMT - [Moments of Tranquility](https://freedium.cfd/https://medium.com/p/f39f67b238f2)
 - Sun, 29 Sep 2024 05:05:21 GMT - [Unlock Free Pokémon Brick Bronze Codes 2024](https://freedium.cfd/https://medium.com/p/39fb4c445de2)
-- Sun, 29 Sep 2024 04:45:58 GMT - [The Ultimate Comparison of Solar Security Cameras: Find the Best Fit for Your Home](https://freedium.cfd/https://medium.com/p/8179528e8218)
-- Sun, 29 Sep 2024 04:34:23 GMT - [The Invisible Threat Lurking in Your Code: How Simple Scripts Can Destroy Your Cloud](https://freedium.cfd/https://medium.com/p/f4bff47f8429)
 
 ## https://medium.com/feed/tag/vulnerability
 - Sun, 29 Sep 2024 07:14:10 GMT - [Programming Languages: Scope, Advantages, and Vulnerabilities](https://freedium.cfd/https://medium.com/p/efefd580d85a)
@@ -35,6 +35,7 @@
 - Sat, 28 Sep 2024 13:11:50 GMT - [My Perfect Housemate](https://freedium.cfd/https://medium.com/p/ea4ee739a2b1)
 
 ## https://medium.com/feed/tag/cybersecurity
+- Sun, 29 Sep 2024 07:13:24 GMT - [Performing a Dependency Confusion Attack with Remote Code Execution (RCE): A Step-by-Step Guide](https://freedium.cfd/https://medium.com/p/8d6055aa53e4)
 - Sun, 29 Sep 2024 07:06:02 GMT - [Cyber Security Threats and Solutions for Modern Business](https://freedium.cfd/https://medium.com/p/c11063673f16)
 - Sun, 29 Sep 2024 07:02:25 GMT - [Critical bug in MediaTek Chips:CVE-2024–20017](https://freedium.cfd/https://medium.com/p/6e955ad56923)
 - Sun, 29 Sep 2024 06:57:26 GMT - [Coding Criminality: My Experience in Ransomware Development](https://freedium.cfd/https://medium.com/p/55f7d61c06b4)
@@ -44,5 +45,4 @@
 - Sun, 29 Sep 2024 06:22:57 GMT - [My Progress at Warren Tech](https://freedium.cfd/https://medium.com/p/5f65a5c6f995)
 - Sun, 29 Sep 2024 06:22:06 GMT - [What is a Trojan Horse Attack?](https://freedium.cfd/https://medium.com/p/478a63b786b8)
 - Sun, 29 Sep 2024 06:14:02 GMT - [Boostez Votre Projet E-Commerce: Les Clés du Succès en 2024](https://freedium.cfd/https://medium.com/p/e9c3e8f9fb3a)
-- Sun, 29 Sep 2024 06:00:23 GMT - [Today’s Top Cyber Intelligence Highlights — Sep 29, 2024](https://freedium.cfd/https://medium.com/p/f9a9f7c37c5b)
 
