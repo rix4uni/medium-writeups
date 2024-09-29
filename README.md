@@ -1,4 +1,5 @@
 ## https://medium.com/feed/tag/bug-bounty
+- Sun, 29 Sep 2024 09:42:18 GMT - [SMTP/s — Port 25,465,587 For pentesters](https://freedium.cfd/https://medium.com/p/3e5706e081e9)
 - Sun, 29 Sep 2024 07:13:24 GMT - [Performing a Dependency Confusion Attack with Remote Code Execution (RCE): A Step-by-Step Guide](https://freedium.cfd/https://medium.com/p/8d6055aa53e4)
 - Sun, 29 Sep 2024 07:02:25 GMT - [Critical bug in MediaTek Chips:CVE-2024–20017](https://freedium.cfd/https://medium.com/p/6e955ad56923)
 - Sun, 29 Sep 2024 06:50:44 GMT - [OWASP juice-shop login as an admin using SQLi and OSINT](https://freedium.cfd/https://medium.com/p/90c4abc4322b)
@@ -8,7 +9,6 @@
 - Sun, 29 Sep 2024 05:39:53 GMT - [Privacy concern bug](https://freedium.cfd/https://medium.com/p/72b30aead215)
 - Sun, 29 Sep 2024 05:02:04 GMT - [How to Find Bugs and Vulnerabilities Using ChatGPT: Guaranteed Results](https://freedium.cfd/https://medium.com/p/3b630fae4691)
 - Sun, 29 Sep 2024 04:48:56 GMT - [Find Vulnerabilities With This Single Nmap Command](https://freedium.cfd/https://medium.com/p/a4476c16c82c)
-- Sun, 29 Sep 2024 02:14:00 GMT - [OWASP juice shop -How I get account takeover from XSS](https://freedium.cfd/https://medium.com/p/ae3cfc978381)
 
 ## https://medium.com/feed/tag/security
 - Sun, 29 Sep 2024 09:11:55 GMT - [Privacy Concerns: Dark Side of Social Media](https://freedium.cfd/https://medium.com/p/3c7cf5f9d911)
