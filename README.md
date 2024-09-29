@@ -35,6 +35,9 @@
 - Sat, 28 Sep 2024 09:21:42 GMT - [Security Misconfiguration: Identifying and Preventing This Common Vulnerability](https://freedium.cfd/https://medium.com/p/14ab1c4989ac)
 
 ## https://medium.com/feed/tag/cybersecurity
+- Sun, 29 Sep 2024 03:48:28 GMT - [Bulan September, Belajar + Dapet Uang.](https://freedium.cfd/https://medium.com/p/9eddbc1f1071)
+- Sun, 29 Sep 2024 03:42:20 GMT - [How I passed CompTIA A+](https://freedium.cfd/https://medium.com/p/fed456f8a4ec)
+- Sun, 29 Sep 2024 03:41:22 GMT - [How To Report Whale Crypto Scams to ZachXBT](https://freedium.cfd/https://medium.com/p/5e55529a8e9b)
 - Sun, 29 Sep 2024 02:31:41 GMT - [Cloud Security Best Practices](https://freedium.cfd/https://medium.com/p/a73a69523049)
 - Sun, 29 Sep 2024 02:01:40 GMT - [Hacking with Linux: Your Ultimate Guide to Cyber Security Mastery](https://freedium.cfd/https://medium.com/p/e8f8bb38510c)
 - Sun, 29 Sep 2024 01:46:53 GMT - [Google Gemini AI Vulnerability: The Rise of Prompt Injection Attacks](https://freedium.cfd/https://medium.com/p/8d2c48a65210)
@@ -42,7 +45,4 @@
 - Sun, 29 Sep 2024 01:38:45 GMT - [Symmetric and Asymmetric Encryption: We Pay Companies To Hack Our Cars!](https://freedium.cfd/https://medium.com/p/e1d938d1c7c8)
 - Sun, 29 Sep 2024 01:32:55 GMT - [7 Shocking Cybersecurity Myths Exposed](https://freedium.cfd/https://medium.com/p/ac864dfbb5dc)
 - Sun, 29 Sep 2024 01:23:19 GMT - [SOC Home Lab — 30 Day SOC Analyst Challenge](https://freedium.cfd/https://medium.com/p/128d2285a4b6)
-- Sun, 29 Sep 2024 01:16:52 GMT - [CYBERSECRUITY | PAM | FUTURE TECHNOLOGY |](https://freedium.cfd/https://medium.com/p/dab7208c34ca)
-- Sun, 29 Sep 2024 00:50:12 GMT - [Linux — CUPS Printer Vulnerability](https://freedium.cfd/https://medium.com/p/204d659a9c45)
-- Sun, 29 Sep 2024 00:08:43 GMT - [Cybersecurity Threats in 2024: How to Protect Your Data](https://freedium.cfd/https://medium.com/p/3f2a1df0be70)
 
