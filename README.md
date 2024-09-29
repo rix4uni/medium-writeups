@@ -35,6 +35,7 @@
 - Sat, 28 Sep 2024 20:44:07 GMT - [Injection Vulnerabilities: More Than You Think](https://freedium.cfd/https://medium.com/p/e926332d4907)
 
 ## https://medium.com/feed/tag/cybersecurity
+- Sun, 29 Sep 2024 14:38:01 GMT - [Cybersecurity Trends to Watch in 2024](https://freedium.cfd/https://medium.com/p/24973dce45a2)
 - Sun, 29 Sep 2024 14:13:15 GMT - [Honest Guide offers Surfshark VPN with a discount — use today!](https://freedium.cfd/https://medium.com/p/61679f5dbb38)
 - Sun, 29 Sep 2024 14:04:17 GMT - [Hidden Malware Hackers Are Recording The Screen Of Android Phones](https://freedium.cfd/https://medium.com/p/8826f43464da)
 - Sun, 29 Sep 2024 13:53:32 GMT - [How to Easily Find Your IMEI Number?](https://freedium.cfd/https://medium.com/p/0bdb4c38d941)
@@ -44,5 +45,4 @@
 - Sun, 29 Sep 2024 12:04:30 GMT - [The Rise of Cybersecurity Automation: Can AI Replace Human Analysts?](https://freedium.cfd/https://medium.com/p/3852a93ae3ca)
 - Sun, 29 Sep 2024 12:02:11 GMT - [The Role of Blockchain in Strengthening Cybersecurity: Hype or Hope?](https://freedium.cfd/https://medium.com/p/42e592c8dd69)
 - Sun, 29 Sep 2024 12:01:29 GMT - [Powershell Network Commandes](https://freedium.cfd/https://medium.com/p/63bf4f612ef9)
-- Sun, 29 Sep 2024 11:59:43 GMT - [Best Cyber Security Companies in Delhi: A Guide to Nishaj Infosolutions’ Expertise](https://freedium.cfd/https://medium.com/p/e1194f7ae884)
 
