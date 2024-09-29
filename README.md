@@ -11,6 +11,8 @@
 - Sat, 28 Sep 2024 22:09:12 GMT - [P4 bug’s and their POC steps | Part 5](https://freedium.cfd/https://medium.com/p/242eddd02fd0)
 
 ## https://medium.com/feed/tag/security
+- Sun, 29 Sep 2024 06:46:22 GMT - [Boiler Safety: Key Practices for Ensuring Operational Security](https://freedium.cfd/https://medium.com/p/0213a8776b97)
+- Sun, 29 Sep 2024 06:42:19 GMT - [Recovering Lost Key Pair in an AWS EC2 Instance](https://freedium.cfd/https://medium.com/p/f2ffd4f5843a)
 - Sun, 29 Sep 2024 06:23:26 GMT - [5 Reasons why NordVPN Is Best Streaming VPN in 2024](https://freedium.cfd/https://medium.com/p/8bd3abfd31b4)
 - Sun, 29 Sep 2024 06:23:23 GMT - [Types of Coverage Available Through Insurance Companies](https://freedium.cfd/https://medium.com/p/f4958ab174d5)
 - Sun, 29 Sep 2024 06:20:13 GMT - [How to Strengthen Kubernetes Security with Kube-bench](https://freedium.cfd/https://medium.com/p/86a2093e5639)
@@ -19,8 +21,6 @@
 - Sun, 29 Sep 2024 05:05:21 GMT - [Unlock Free Pokémon Brick Bronze Codes 2024](https://freedium.cfd/https://medium.com/p/39fb4c445de2)
 - Sun, 29 Sep 2024 04:45:58 GMT - [The Ultimate Comparison of Solar Security Cameras: Find the Best Fit for Your Home](https://freedium.cfd/https://medium.com/p/8179528e8218)
 - Sun, 29 Sep 2024 04:34:23 GMT - [The Invisible Threat Lurking in Your Code: How Simple Scripts Can Destroy Your Cloud](https://freedium.cfd/https://medium.com/p/f4bff47f8429)
-- Sun, 29 Sep 2024 04:26:59 GMT - [The Windows Concept Journey — PCA (Program Compatibility Assistant)](https://freedium.cfd/https://medium.com/p/bb996edb22c9)
-- Sun, 29 Sep 2024 03:48:01 GMT - [What is the Zero Trust Security Model, How Does It Work, and Why Is It Important for Cloud, IoT…](https://freedium.cfd/https://medium.com/p/0d98eaf3b10b)
 
 ## https://medium.com/feed/tag/vulnerability
 - Sun, 29 Sep 2024 06:41:26 GMT - [To the avoidants out there.](https://freedium.cfd/https://medium.com/p/5ed96363241b)
