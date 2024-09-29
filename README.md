@@ -1,4 +1,5 @@
 ## https://medium.com/feed/tag/bug-bounty
+- Sun, 29 Sep 2024 16:15:43 GMT - [Best Bug Bounty and VA/PT Tools in 2024: Use Cases & Commands](https://freedium.cfd/https://medium.com/p/42986d594190)
 - Sun, 29 Sep 2024 13:28:28 GMT - [Why is Bug Triage Important in Software Testing?](https://freedium.cfd/https://medium.com/p/678decfb727f)
 - Sun, 29 Sep 2024 13:20:38 GMT - [Understanding Bug Triage: A Crucial Process for Efficient Software Testing](https://freedium.cfd/https://medium.com/p/790b9b353177)
 - Sun, 29 Sep 2024 13:18:16 GMT - [DVWA : Cross Site Scripting (XSS) Vulnerability Solution (Low Security Level)](https://freedium.cfd/https://medium.com/p/452396997b5a)
@@ -8,9 +9,11 @@
 - Sun, 29 Sep 2024 07:13:24 GMT - [Performing a Dependency Confusion Attack with Remote Code Execution (RCE): A Step-by-Step Guide](https://freedium.cfd/https://medium.com/p/8d6055aa53e4)
 - Sun, 29 Sep 2024 07:02:25 GMT - [Critical bug in MediaTek Chips:CVE-2024–20017](https://freedium.cfd/https://medium.com/p/6e955ad56923)
 - Sun, 29 Sep 2024 06:50:44 GMT - [OWASP juice-shop login as an admin using SQLi and OSINT](https://freedium.cfd/https://medium.com/p/90c4abc4322b)
-- Sun, 29 Sep 2024 06:38:01 GMT - [H7CTF — WEB CHALLENGES](https://freedium.cfd/https://medium.com/p/db1883775dfd)
 
 ## https://medium.com/feed/tag/security
+- Sun, 29 Sep 2024 16:26:55 GMT - [In the Hands of Fate](https://freedium.cfd/https://medium.com/p/83e70bd8b41d)
+- Sun, 29 Sep 2024 16:24:10 GMT - [The Noodle Corner](https://freedium.cfd/https://medium.com/p/7f6fb121f7f4)
+- Sun, 29 Sep 2024 16:19:36 GMT - [Two Realities, One Illusion](https://freedium.cfd/https://medium.com/p/842069a6ff80)
 - Sun, 29 Sep 2024 16:15:11 GMT - [The Game of Truths and Lies](https://freedium.cfd/https://medium.com/p/0d496122fcb4)
 - Sun, 29 Sep 2024 16:09:06 GMT - [Security 4 Nø0bs — Pen Testing in a pinch!](https://freedium.cfd/https://medium.com/p/f29e0682f7f5)
 - Sun, 29 Sep 2024 16:06:00 GMT - [Are SearchGPT and Google Competing for Your Attention](https://freedium.cfd/https://medium.com/p/1d862d713022)
@@ -18,11 +21,9 @@
 - Sun, 29 Sep 2024 15:10:04 GMT - [Brevity Speaks Volumes](https://freedium.cfd/https://medium.com/p/eb8c74fdc0bf)
 - Sun, 29 Sep 2024 15:07:01 GMT - [SEO Simplified](https://freedium.cfd/https://medium.com/p/017692e9f3a5)
 - Sun, 29 Sep 2024 15:01:52 GMT - [How to Write a High-Impact Transactional Blog Post:](https://freedium.cfd/https://medium.com/p/9e83d6958775)
-- Sun, 29 Sep 2024 15:00:17 GMT - [Keamanan tanpa Mengorbankan Kenyamanan Pengguna](https://freedium.cfd/https://medium.com/p/3e59ffd70ffa)
-- Sun, 29 Sep 2024 14:13:39 GMT - [Ranking High in 2024](https://freedium.cfd/https://medium.com/p/02f57dfc628a)
-- Sun, 29 Sep 2024 13:57:13 GMT - [Traffic Boost](https://freedium.cfd/https://medium.com/p/e8bac57c8c28)
 
 ## https://medium.com/feed/tag/vulnerability
+- Sun, 29 Sep 2024 16:36:53 GMT - [Embrace Your Imperfections: How Vulnerability Can Make You More Attractive](https://freedium.cfd/https://medium.com/p/73ecd68f5dce)
 - Sun, 29 Sep 2024 16:04:45 GMT - [Leading with Fearless Vulnerability: The Brand Revolution](https://freedium.cfd/https://medium.com/p/f755c13dc8c7)
 - Sun, 29 Sep 2024 09:48:31 GMT - [I’m the best at giving advice, but terrible at taking it…](https://freedium.cfd/https://medium.com/p/c6aa34799ce0)
 - Sun, 29 Sep 2024 09:21:40 GMT - [Shocking Kia Vulnerability Exposed: Hackers Could Remotely Control Cars Using Just a License Plate!](https://freedium.cfd/https://medium.com/p/da94db91df30)
@@ -32,7 +33,6 @@
 - Sun, 29 Sep 2024 06:41:26 GMT - [To the avoidants out there.](https://freedium.cfd/https://medium.com/p/5ed96363241b)
 - Sun, 29 Sep 2024 04:48:56 GMT - [Find Vulnerabilities With This Single Nmap Command](https://freedium.cfd/https://medium.com/p/a4476c16c82c)
 - Sun, 29 Sep 2024 01:46:53 GMT - [Google Gemini AI Vulnerability: The Rise of Prompt Injection Attacks](https://freedium.cfd/https://medium.com/p/8d2c48a65210)
-- Sun, 29 Sep 2024 00:47:51 GMT - [The Power of Storytelling in Research and Academia](https://freedium.cfd/https://medium.com/p/3885f393b869)
 
 ## https://medium.com/feed/tag/cybersecurity
 - Sun, 29 Sep 2024 16:26:06 GMT - [Homelab, cont’d](https://freedium.cfd/https://medium.com/p/b42f3bc72786)
