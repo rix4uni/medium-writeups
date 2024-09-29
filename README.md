@@ -35,6 +35,8 @@
 - Sat, 28 Sep 2024 18:15:19 GMT - [The Quiet Power of Vulnerability and Strength: A pathway to Growth](https://freedium.cfd/https://medium.com/p/73f4c817e87b)
 
 ## https://medium.com/feed/tag/cybersecurity
+- Sun, 29 Sep 2024 09:36:29 GMT - [Beginners’ Guide to Understand Web Crawlers and Bots (1)](https://freedium.cfd/https://medium.com/p/99dae68bf97a)
+- Sun, 29 Sep 2024 09:30:38 GMT - [Prompt Injection in GenAI Apps: Types & Mitigation Techniques](https://freedium.cfd/https://medium.com/p/ad96f268f98a)
 - Sun, 29 Sep 2024 09:21:40 GMT - [Shocking Kia Vulnerability Exposed: Hackers Could Remotely Control Cars Using Just a License Plate!](https://freedium.cfd/https://medium.com/p/da94db91df30)
 - Sun, 29 Sep 2024 09:16:45 GMT - [US Justice Department Offers Reward for Information on Russian Cybercriminals](https://freedium.cfd/https://medium.com/p/3176328c7087)
 - Sun, 29 Sep 2024 09:11:01 GMT - [Let’s Defend SOC239 — Remote Code Execution Detected in Splunk Enterprise Write Up](https://freedium.cfd/https://medium.com/p/9d6dbf18747a)
@@ -43,6 +45,4 @@
 - Sun, 29 Sep 2024 08:42:39 GMT - [[CyberSec] Semantic and Ontology in Cybersecurity](https://freedium.cfd/https://medium.com/p/442646ae0c36)
 - Sun, 29 Sep 2024 08:37:42 GMT - [My CISSP Journey](https://freedium.cfd/https://medium.com/p/cfaff3bdbe7b)
 - Sun, 29 Sep 2024 08:29:11 GMT - [What is Rate limit in .Net core?](https://freedium.cfd/https://medium.com/p/6a458db6fb80)
-- Sun, 29 Sep 2024 08:16:38 GMT - [BTLO Walkthrough | Digital Forensics |Detailed Guide Step by Step](https://freedium.cfd/https://medium.com/p/b4325e22930a)
-- Sun, 29 Sep 2024 08:15:34 GMT - [How AI is Revolutionizing Protection from Cyber Threats](https://freedium.cfd/https://medium.com/p/52fb28e140ed)
 
