@@ -11,6 +11,7 @@
 - Sun, 29 Sep 2024 06:38:01 GMT - [H7CTF — WEB CHALLENGES](https://freedium.cfd/https://medium.com/p/db1883775dfd)
 
 ## https://medium.com/feed/tag/security
+- Sun, 29 Sep 2024 14:13:39 GMT - [Ranking High in 2024](https://freedium.cfd/https://medium.com/p/02f57dfc628a)
 - Sun, 29 Sep 2024 13:57:13 GMT - [Traffic Boost](https://freedium.cfd/https://medium.com/p/e8bac57c8c28)
 - Sun, 29 Sep 2024 13:07:09 GMT - [Understanding Inconsistencies in IP Address Classification Across Programming Languages](https://freedium.cfd/https://medium.com/p/19b2645b10a9)
 - Sun, 29 Sep 2024 13:06:23 GMT - [Enhancing Terraform Security: Best Practices, Tools, and Automation](https://freedium.cfd/https://medium.com/p/ed950cac1754)
@@ -20,7 +21,6 @@
 - Sun, 29 Sep 2024 10:58:32 GMT - [Understanding OAuth2 in Large-Scale Applications: A Deep Dive](https://freedium.cfd/https://medium.com/p/467a3a783fa4)
 - Sun, 29 Sep 2024 09:55:44 GMT - [Watch Out: How Scammers on LinkedIn and Telegram Are Targeting Blockchain Devs](https://freedium.cfd/https://medium.com/p/1af431cb9217)
 - Sun, 29 Sep 2024 09:54:24 GMT - [Ring Security Cameras: Protect Your Home with Smart Features and 24/7 Monitoring](https://freedium.cfd/https://medium.com/p/083d9d96b166)
-- Sun, 29 Sep 2024 09:11:55 GMT - [Privacy Concerns: Dark Side of Social Media](https://freedium.cfd/https://medium.com/p/3c7cf5f9d911)
 
 ## https://medium.com/feed/tag/vulnerability
 - Sun, 29 Sep 2024 09:48:31 GMT - [I’m the best at giving advice, but terrible at taking it…](https://freedium.cfd/https://medium.com/p/c6aa34799ce0)
@@ -35,6 +35,7 @@
 - Sat, 28 Sep 2024 20:44:07 GMT - [Injection Vulnerabilities: More Than You Think](https://freedium.cfd/https://medium.com/p/e926332d4907)
 
 ## https://medium.com/feed/tag/cybersecurity
+- Sun, 29 Sep 2024 14:13:15 GMT - [Honest Guide offers Surfshark VPN with a discount — use today!](https://freedium.cfd/https://medium.com/p/61679f5dbb38)
 - Sun, 29 Sep 2024 14:04:17 GMT - [Hidden Malware Hackers Are Recording The Screen Of Android Phones](https://freedium.cfd/https://medium.com/p/8826f43464da)
 - Sun, 29 Sep 2024 13:53:32 GMT - [How to Easily Find Your IMEI Number?](https://freedium.cfd/https://medium.com/p/0bdb4c38d941)
 - Sun, 29 Sep 2024 13:29:10 GMT - [The Beginning](https://freedium.cfd/https://medium.com/p/5ffcf63f94ca)
@@ -44,5 +45,4 @@
 - Sun, 29 Sep 2024 12:02:11 GMT - [The Role of Blockchain in Strengthening Cybersecurity: Hype or Hope?](https://freedium.cfd/https://medium.com/p/42e592c8dd69)
 - Sun, 29 Sep 2024 12:01:29 GMT - [Powershell Network Commandes](https://freedium.cfd/https://medium.com/p/63bf4f612ef9)
 - Sun, 29 Sep 2024 11:59:43 GMT - [Best Cyber Security Companies in Delhi: A Guide to Nishaj Infosolutions’ Expertise](https://freedium.cfd/https://medium.com/p/e1194f7ae884)
-- Sun, 29 Sep 2024 11:58:52 GMT - [The Rise of AI-Powered Cyber Threats: Understanding Adversarial Attacks and Defense Mechanisms](https://freedium.cfd/https://medium.com/p/82a1f62a573b)
 
