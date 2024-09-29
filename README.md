@@ -35,6 +35,8 @@
 - Sat, 28 Sep 2024 17:15:48 GMT - [Progress urges admins to patch critical WhatsUp Gold bugs ASAP](https://freedium.cfd/https://medium.com/p/71234ef898bd)
 
 ## https://medium.com/feed/tag/cybersecurity
+- Sun, 29 Sep 2024 08:37:42 GMT - [My CISSP Journey](https://freedium.cfd/https://medium.com/p/cfaff3bdbe7b)
+- Sun, 29 Sep 2024 08:29:11 GMT - [What is Rate limit in .Net core?](https://freedium.cfd/https://medium.com/p/6a458db6fb80)
 - Sun, 29 Sep 2024 08:16:38 GMT - [BTLO Walkthrough | Digital Forensics |Detailed Guide Step by Step](https://freedium.cfd/https://medium.com/p/b4325e22930a)
 - Sun, 29 Sep 2024 08:15:34 GMT - [How AI is Revolutionizing Protection from Cyber Threats](https://freedium.cfd/https://medium.com/p/52fb28e140ed)
 - Sun, 29 Sep 2024 08:06:39 GMT - [How to Use OpenCTI to Gather Threat Intelligence | TryHackMe Trooper](https://freedium.cfd/https://medium.com/p/96d770f4232e)
@@ -43,6 +45,4 @@
 - Sun, 29 Sep 2024 07:56:59 GMT - [Teach Your Kids to Protect Their Digital World](https://freedium.cfd/https://medium.com/p/c783e62d18d3)
 - Sun, 29 Sep 2024 07:56:27 GMT - [Windows Network Analysis](https://freedium.cfd/https://medium.com/p/9d4fe4085699)
 - Sun, 29 Sep 2024 07:53:38 GMT - [The “Peaklight” Trap: A Warning About Movie Download Malware](https://freedium.cfd/https://medium.com/p/1a0b1b1ef67f)
-- Sun, 29 Sep 2024 07:50:19 GMT - [74 Cybersecurity Tools for Modern Threat Defense by Category](https://freedium.cfd/https://medium.com/p/43a970c20baa)
-- Sun, 29 Sep 2024 07:49:21 GMT - [Benefits of Partnering with a Barracuda Distributor UAE with Meta-Techs](https://freedium.cfd/https://medium.com/p/b0cead5e8688)
 
