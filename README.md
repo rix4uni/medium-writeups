@@ -35,6 +35,9 @@
 - Sat, 28 Sep 2024 20:44:07 GMT - [Injection Vulnerabilities: More Than You Think](https://freedium.cfd/https://medium.com/p/e926332d4907)
 
 ## https://medium.com/feed/tag/cybersecurity
+- Sun, 29 Sep 2024 15:24:01 GMT - [The Impact of 5G on Cybersecurity](https://freedium.cfd/https://medium.com/p/f76f32173207)
+- Sun, 29 Sep 2024 15:18:09 GMT - [SOFT SKILLS FOR THE JOB MARKET: WHAT I LEARNED FROM TCM SECURITY’S COURSE](https://freedium.cfd/https://medium.com/p/18f5ad1eab77)
+- Sun, 29 Sep 2024 15:14:53 GMT - [Unlocking AI Potential in RFPs](https://freedium.cfd/https://medium.com/p/d398ea145d38)
 - Sun, 29 Sep 2024 15:04:08 GMT - [Building Your Own SIEM Lab Using Wazuh: Part II](https://freedium.cfd/https://medium.com/p/24e322f58f83)
 - Sun, 29 Sep 2024 15:02:03 GMT - [Building Security into Infrastructure as Code from the Start](https://freedium.cfd/https://medium.com/p/9c6c74de12eb)
 - Sun, 29 Sep 2024 14:41:12 GMT - [Caue Moura is here to offer Surfshark VPN with a discount!](https://freedium.cfd/https://medium.com/p/ff63999f0024)
@@ -42,7 +45,4 @@
 - Sun, 29 Sep 2024 14:13:15 GMT - [Honest Guide offers Surfshark VPN with a discount — use today!](https://freedium.cfd/https://medium.com/p/61679f5dbb38)
 - Sun, 29 Sep 2024 14:04:17 GMT - [Hidden Malware Hackers Are Recording The Screen Of Android Phones](https://freedium.cfd/https://medium.com/p/8826f43464da)
 - Sun, 29 Sep 2024 13:53:32 GMT - [How to Easily Find Your IMEI Number?](https://freedium.cfd/https://medium.com/p/0bdb4c38d941)
-- Sun, 29 Sep 2024 13:29:10 GMT - [The Beginning](https://freedium.cfd/https://medium.com/p/5ffcf63f94ca)
-- Sun, 29 Sep 2024 12:53:44 GMT - [Stay Safe Online with Telegtam’s Scam Prevention Initiative!](https://freedium.cfd/https://medium.com/p/e2229e4bdb2d)
-- Sun, 29 Sep 2024 12:06:37 GMT - [Cyber Hygiene: Building a Culture of Security Awareness in Organizations](https://freedium.cfd/https://medium.com/p/f0b06868f1fe)
 
