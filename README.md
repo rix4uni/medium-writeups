@@ -1,4 +1,5 @@
 ## https://medium.com/feed/tag/bug-bounty
+- Sun, 29 Sep 2024 17:44:54 GMT - [Life Sucks P-1](https://freedium.cfd/https://medium.com/p/182d702bab02)
 - Sun, 29 Sep 2024 16:51:52 GMT - [KidRecon: The Ultimate Automated Subdomain Reconnaissance Tool for Ethical Hackers](https://freedium.cfd/https://medium.com/p/afb8ed8ea883)
 - Sun, 29 Sep 2024 16:48:57 GMT - [Server-Side Request Forgery (SSRF): How Attackers Can Exploit Internal Networks](https://freedium.cfd/https://medium.com/p/417ed78ae69b)
 - Sun, 29 Sep 2024 16:15:43 GMT - [Best Bug Bounty and VA/PT Tools in 2024: Use Cases & Commands](https://freedium.cfd/https://medium.com/p/42986d594190)
@@ -8,7 +9,6 @@
 - Sun, 29 Sep 2024 11:37:40 GMT - [how i found union based sql injection in hackerone public vdp program?](https://freedium.cfd/https://medium.com/p/7c76d61f6c77)
 - Sun, 29 Sep 2024 10:24:58 GMT - [Mastering Advanced Google Dorks for Ethical Hacking and Vulnerability Discovery](https://freedium.cfd/https://medium.com/p/6d9e3dde0433)
 - Sun, 29 Sep 2024 09:42:18 GMT - [SMTP/s — Port 25,465,587 For pentesters](https://freedium.cfd/https://medium.com/p/3e5706e081e9)
-- Sun, 29 Sep 2024 07:13:24 GMT - [Performing a Dependency Confusion Attack with Remote Code Execution (RCE): A Step-by-Step Guide](https://freedium.cfd/https://medium.com/p/8d6055aa53e4)
 
 ## https://medium.com/feed/tag/security
 - Sun, 29 Sep 2024 17:11:31 GMT - [Understanding SEO Costs in 2024](https://freedium.cfd/https://medium.com/p/600a9a13e30e)
@@ -23,6 +23,7 @@
 - Sun, 29 Sep 2024 15:42:33 GMT - [The Sofa-Buying Rule](https://freedium.cfd/https://medium.com/p/6ec5acd30074)
 
 ## https://medium.com/feed/tag/vulnerability
+- Sun, 29 Sep 2024 17:33:27 GMT - [How I Learned to Have Uncomfortable Conversations](https://freedium.cfd/https://medium.com/p/549126cbdd19)
 - Sun, 29 Sep 2024 17:05:41 GMT - [DC-1](https://freedium.cfd/https://medium.com/p/42e3eeaa5363)
 - Sun, 29 Sep 2024 16:36:53 GMT - [Embrace Your Imperfections: How Vulnerability Can Make You More Attractive](https://freedium.cfd/https://medium.com/p/73ecd68f5dce)
 - Sun, 29 Sep 2024 16:04:45 GMT - [Leading with Fearless Vulnerability: The Brand Revolution](https://freedium.cfd/https://medium.com/p/f755c13dc8c7)
@@ -32,7 +33,6 @@
 - Sun, 29 Sep 2024 08:03:07 GMT - [We Are Similar but Different.](https://freedium.cfd/https://medium.com/p/9a1b1282d5c7)
 - Sun, 29 Sep 2024 07:14:10 GMT - [Programming Languages: Scope, Advantages, and Vulnerabilities](https://freedium.cfd/https://medium.com/p/efefd580d85a)
 - Sun, 29 Sep 2024 06:41:26 GMT - [To the avoidants out there.](https://freedium.cfd/https://medium.com/p/5ed96363241b)
-- Sun, 29 Sep 2024 04:48:56 GMT - [Find Vulnerabilities With This Single Nmap Command](https://freedium.cfd/https://medium.com/p/a4476c16c82c)
 
 ## https://medium.com/feed/tag/cybersecurity
 - Sun, 29 Sep 2024 17:23:59 GMT - [Steganography Writeups | TCT CTF 2024](https://freedium.cfd/https://medium.com/p/345fe8479475)
