@@ -11,16 +11,16 @@
 - Sun, 29 Sep 2024 10:24:58 GMT - [Mastering Advanced Google Dorks for Ethical Hacking and Vulnerability Discovery](https://freedium.cfd/https://medium.com/p/6d9e3dde0433)
 
 ## https://medium.com/feed/tag/security
+- Sun, 29 Sep 2024 23:42:02 GMT - [The Legacy of JFK](https://freedium.cfd/https://medium.com/p/a22d8997c86a)
+- Sun, 29 Sep 2024 23:36:56 GMT - [Finding My Path](https://freedium.cfd/https://medium.com/p/fbbf8ad5407b)
+- Sun, 29 Sep 2024 23:31:42 GMT - [Saying Goodbye with Grace](https://freedium.cfd/https://medium.com/p/87e9851c44f3)
+- Sun, 29 Sep 2024 23:31:42 GMT - [Truth in Connection](https://freedium.cfd/https://medium.com/p/f79c2115494b)
+- Sun, 29 Sep 2024 23:27:30 GMT - [Intense Motivation:](https://freedium.cfd/https://medium.com/p/f75641012cb0)
 - Sun, 29 Sep 2024 23:16:55 GMT - [Navigating Knowledge](https://freedium.cfd/https://medium.com/p/ac8abbecfd2e)
 - Sun, 29 Sep 2024 23:16:55 GMT - [Your First Steps in Content Writing](https://freedium.cfd/https://medium.com/p/5ece1995020c)
 - Sun, 29 Sep 2024 23:16:54 GMT - [Miles of Discovery](https://freedium.cfd/https://medium.com/p/377ecd297ee0)
 - Sun, 29 Sep 2024 23:07:33 GMT - [No Turning Back](https://freedium.cfd/https://medium.com/p/e3839d648fb2)
 - Sun, 29 Sep 2024 22:51:43 GMT - [Unveiling the Secrets](https://freedium.cfd/https://medium.com/p/186fece0e596)
-- Sun, 29 Sep 2024 22:46:52 GMT - [From Beans to Branding](https://freedium.cfd/https://medium.com/p/b36320192418)
-- Sun, 29 Sep 2024 22:46:52 GMT - [3 Ways Social Media Could Be Sabotaging Your Happiness](https://freedium.cfd/https://medium.com/p/5219687de2f5)
-- Sun, 29 Sep 2024 22:41:40 GMT - [Echoes of Betrayal](https://freedium.cfd/https://medium.com/p/da4030321ae6)
-- Sun, 29 Sep 2024 22:37:30 GMT - [The Quest for Meaning](https://freedium.cfd/https://medium.com/p/07f725ae5097)
-- Sun, 29 Sep 2024 22:31:41 GMT - [The Last Goodbye](https://freedium.cfd/https://medium.com/p/eb2d9da0066b)
 
 ## https://medium.com/feed/tag/vulnerability
 - Sun, 29 Sep 2024 19:07:49 GMT - [Goosebumps…Sexy Goosebumps.](https://freedium.cfd/https://medium.com/p/ae7b393f3517)
@@ -35,6 +35,7 @@
 - Sun, 29 Sep 2024 07:14:10 GMT - [Programming Languages: Scope, Advantages, and Vulnerabilities](https://freedium.cfd/https://medium.com/p/efefd580d85a)
 
 ## https://medium.com/feed/tag/cybersecurity
+- Sun, 29 Sep 2024 23:42:38 GMT - [Tor’s Anonymity Exposed: The Alarming Truth About Online Privacy](https://freedium.cfd/https://medium.com/p/09817fd548de)
 - Sun, 29 Sep 2024 23:28:10 GMT - [Docker For Security Researchers xyz: y](https://freedium.cfd/https://medium.com/p/a3047bb3fee9)
 - Sun, 29 Sep 2024 23:11:04 GMT - [شماره خاله تهران](https://freedium.cfd/https://medium.com/p/756da5e81199)
 - Sun, 29 Sep 2024 23:06:52 GMT - [How can I recover my money from Trilonex](https://freedium.cfd/https://medium.com/p/19a8bc08e189)
@@ -44,9 +45,9 @@
 - Sun, 29 Sep 2024 22:49:35 GMT - [️Day 29: Elastic Defend Setup Tutorial](https://freedium.cfd/https://medium.com/p/ac40a934105d)
 - Sun, 29 Sep 2024 22:48:43 GMT - [No-1 Amil Baba In Pakiatan, Amil Baba In Dubai, Amil Baba In UK, 03171144616 Kala Jadu Expert, Kala…](https://freedium.cfd/https://medium.com/p/f5c7f90595d2)
 - Sun, 29 Sep 2024 22:46:59 GMT - [No-1 Amil Baba In Pakiatan, Amil Baba In Dubai, Amil Baba In UK, 03171144616 Kala Jadu Expert, Kala…](https://freedium.cfd/https://medium.com/p/60d353482e2b)
-- Sun, 29 Sep 2024 22:35:52 GMT - [As professionals in the fields of computer science, we now face great challenges which were not on…](https://freedium.cfd/https://medium.com/p/d08ca8df4993)
 
 ## https://medium.com/feed/tag/penetration-testing
+- Sun, 29 Sep 2024 23:49:03 GMT - [Getting a Havoc agent past Windows Defender (2024)](https://freedium.cfd/https://medium.com/p/dad51f7e5c79)
 - Sun, 29 Sep 2024 20:15:19 GMT - [Hack The Box: BoardLight Walkthrough](https://freedium.cfd/https://medium.com/p/f3949e54c71a)
 - Sun, 29 Sep 2024 19:01:12 GMT - [My eCPPTv3 Journey: What to Expect and How to Succeed (VALUABLE TIPS!)](https://freedium.cfd/https://medium.com/p/6ccbcfad3a37)
 - Sun, 29 Sep 2024 17:51:06 GMT - [COVID 19 ?](https://freedium.cfd/https://medium.com/p/472b4b4a974b)
@@ -56,7 +57,6 @@
 - Sun, 29 Sep 2024 14:02:38 GMT - [Daily Bugle-Try Hack Me](https://freedium.cfd/https://medium.com/p/a35ffc639519)
 - Sun, 29 Sep 2024 10:42:29 GMT - [CREST CPSA Review & OSCP-CRT Equivalency Program](https://freedium.cfd/https://medium.com/p/17c604446381)
 - Sun, 29 Sep 2024 09:42:18 GMT - [SMTP/s — Port 25,465,587 For pentesters](https://freedium.cfd/https://medium.com/p/3e5706e081e9)
-- Sun, 29 Sep 2024 06:50:44 GMT - [OWASP juice-shop login as an admin using SQLi and OSINT](https://freedium.cfd/https://medium.com/p/90c4abc4322b)
 
 ## https://medium.com/feed/tag/hacking
 - Sun, 29 Sep 2024 22:37:12 GMT - [DockerLabs | AguaDeMayo | by C4t0v3rfl0w](https://freedium.cfd/https://medium.com/p/ed11624dfa6a)
