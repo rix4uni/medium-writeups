@@ -35,6 +35,9 @@
 - Sun, 29 Sep 2024 06:41:26 GMT - [To the avoidants out there.](https://freedium.cfd/https://medium.com/p/5ed96363241b)
 
 ## https://medium.com/feed/tag/cybersecurity
+- Sun, 29 Sep 2024 17:44:54 GMT - [Life Sucks P-1](https://freedium.cfd/https://medium.com/p/182d702bab02)
+- Sun, 29 Sep 2024 17:44:21 GMT - [My Journey into Cybersecurity: From COBOL to Cloud Security](https://freedium.cfd/https://medium.com/p/33453f74bc3e)
+- Sun, 29 Sep 2024 17:42:29 GMT - [The September 17, 2024 Lebanon Pager Explosion Incident: A Convergence of Technology…](https://freedium.cfd/https://medium.com/p/418997592a34)
 - Sun, 29 Sep 2024 17:23:59 GMT - [Steganography Writeups | TCT CTF 2024](https://freedium.cfd/https://medium.com/p/345fe8479475)
 - Sun, 29 Sep 2024 17:17:48 GMT - [Behind the Scenes: How Info-Stealing Malware Could Possibly Target Prominent YouTube Accounts](https://freedium.cfd/https://medium.com/p/1a7cc449cfd6)
 - Sun, 29 Sep 2024 17:11:57 GMT - [Whether you’ve lost access to Bitcoin, Ethereum, or any other cryptocurrency, we have the skills…](https://freedium.cfd/https://medium.com/p/7a51f6c80aa9)
@@ -42,7 +45,4 @@
 - Sun, 29 Sep 2024 17:04:33 GMT - [▎Unlock the Future of Crypto Transactions with GLOBALFLASHCO](https://freedium.cfd/https://medium.com/p/b41c76d1196f)
 - Sun, 29 Sep 2024 17:04:23 GMT - [Secure Your Code With GitHub Actions & Open-Source Tools](https://freedium.cfd/https://medium.com/p/6ecb524e3bb3)
 - Sun, 29 Sep 2024 17:01:43 GMT - [“Frequency Warfare: Repurposing G7 Spectrum Analysis Agencies for Offensive Operations”](https://freedium.cfd/https://medium.com/p/0632ef215893)
-- Sun, 29 Sep 2024 17:00:25 GMT - [Are you interested in learning how to flash coins on blockchain networks such as Binance, Coinbase…](https://freedium.cfd/https://medium.com/p/81ed43a06214)
-- Sun, 29 Sep 2024 16:57:09 GMT - [Brute Force](https://freedium.cfd/https://medium.com/p/e35ae978e421)
-- Sun, 29 Sep 2024 16:57:04 GMT - [Trickster — HTB (No spoiler)](https://freedium.cfd/https://medium.com/p/046663d716dc)
 
