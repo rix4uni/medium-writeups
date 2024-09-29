@@ -11,6 +11,8 @@
 - Sun, 29 Sep 2024 07:13:24 GMT - [Performing a Dependency Confusion Attack with Remote Code Execution (RCE): A Step-by-Step Guide](https://freedium.cfd/https://medium.com/p/8d6055aa53e4)
 
 ## https://medium.com/feed/tag/security
+- Sun, 29 Sep 2024 17:11:31 GMT - [Understanding SEO Costs in 2024](https://freedium.cfd/https://medium.com/p/600a9a13e30e)
+- Sun, 29 Sep 2024 17:07:32 GMT - [ChatGPT for Keyword Discovery](https://freedium.cfd/https://medium.com/p/48e0fa6af8ab)
 - Sun, 29 Sep 2024 16:46:53 GMT - [The Comfort Debate](https://freedium.cfd/https://medium.com/p/4ae4f3d83ae7)
 - Sun, 29 Sep 2024 16:26:55 GMT - [In the Hands of Fate](https://freedium.cfd/https://medium.com/p/83e70bd8b41d)
 - Sun, 29 Sep 2024 16:24:10 GMT - [The Noodle Corner](https://freedium.cfd/https://medium.com/p/7f6fb121f7f4)
@@ -19,10 +21,9 @@
 - Sun, 29 Sep 2024 16:09:06 GMT - [Security 4 Nø0bs — Pen Testing in a pinch!](https://freedium.cfd/https://medium.com/p/f29e0682f7f5)
 - Sun, 29 Sep 2024 16:06:00 GMT - [Are SearchGPT and Google Competing for Your Attention](https://freedium.cfd/https://medium.com/p/1d862d713022)
 - Sun, 29 Sep 2024 15:42:33 GMT - [The Sofa-Buying Rule](https://freedium.cfd/https://medium.com/p/6ec5acd30074)
-- Sun, 29 Sep 2024 15:10:04 GMT - [Brevity Speaks Volumes](https://freedium.cfd/https://medium.com/p/eb8c74fdc0bf)
-- Sun, 29 Sep 2024 15:07:01 GMT - [SEO Simplified](https://freedium.cfd/https://medium.com/p/017692e9f3a5)
 
 ## https://medium.com/feed/tag/vulnerability
+- Sun, 29 Sep 2024 17:05:41 GMT - [DC-1](https://freedium.cfd/https://medium.com/p/42e3eeaa5363)
 - Sun, 29 Sep 2024 16:36:53 GMT - [Embrace Your Imperfections: How Vulnerability Can Make You More Attractive](https://freedium.cfd/https://medium.com/p/73ecd68f5dce)
 - Sun, 29 Sep 2024 16:04:45 GMT - [Leading with Fearless Vulnerability: The Brand Revolution](https://freedium.cfd/https://medium.com/p/f755c13dc8c7)
 - Sun, 29 Sep 2024 09:48:31 GMT - [I’m the best at giving advice, but terrible at taking it…](https://freedium.cfd/https://medium.com/p/c6aa34799ce0)
@@ -32,17 +33,16 @@
 - Sun, 29 Sep 2024 07:14:10 GMT - [Programming Languages: Scope, Advantages, and Vulnerabilities](https://freedium.cfd/https://medium.com/p/efefd580d85a)
 - Sun, 29 Sep 2024 06:41:26 GMT - [To the avoidants out there.](https://freedium.cfd/https://medium.com/p/5ed96363241b)
 - Sun, 29 Sep 2024 04:48:56 GMT - [Find Vulnerabilities With This Single Nmap Command](https://freedium.cfd/https://medium.com/p/a4476c16c82c)
-- Sun, 29 Sep 2024 01:46:53 GMT - [Google Gemini AI Vulnerability: The Rise of Prompt Injection Attacks](https://freedium.cfd/https://medium.com/p/8d2c48a65210)
 
 ## https://medium.com/feed/tag/cybersecurity
+- Sun, 29 Sep 2024 17:11:57 GMT - [Whether you’ve lost access to Bitcoin, Ethereum, or any other cryptocurrency, we have the skills…](https://freedium.cfd/https://medium.com/p/7a51f6c80aa9)
+- Sun, 29 Sep 2024 17:05:41 GMT - [DC-1](https://freedium.cfd/https://medium.com/p/42e3eeaa5363)
+- Sun, 29 Sep 2024 17:04:33 GMT - [▎Unlock the Future of Crypto Transactions with GLOBALFLASHCO](https://freedium.cfd/https://medium.com/p/b41c76d1196f)
+- Sun, 29 Sep 2024 17:04:23 GMT - [Secure Your Code With GitHub Actions & Open-Source Tools](https://freedium.cfd/https://medium.com/p/6ecb524e3bb3)
+- Sun, 29 Sep 2024 17:01:43 GMT - [“Frequency Warfare: Repurposing G7 Spectrum Analysis Agencies for Offensive Operations”](https://freedium.cfd/https://medium.com/p/0632ef215893)
+- Sun, 29 Sep 2024 17:00:25 GMT - [Are you interested in learning how to flash coins on blockchain networks such as Binance, Coinbase…](https://freedium.cfd/https://medium.com/p/81ed43a06214)
+- Sun, 29 Sep 2024 16:57:09 GMT - [Brute Force](https://freedium.cfd/https://medium.com/p/e35ae978e421)
+- Sun, 29 Sep 2024 16:57:04 GMT - [Trickster — HTB (No spoiler)](https://freedium.cfd/https://medium.com/p/046663d716dc)
 - Sun, 29 Sep 2024 16:55:08 GMT - [How to Install and Use the Flash USDT Transfer App](https://freedium.cfd/https://medium.com/p/8d1d5c716c5d)
 - Sun, 29 Sep 2024 16:49:18 GMT - [1) What Is Flash BTC (Core Transaction) ?](https://freedium.cfd/https://medium.com/p/57bc81ea7f08)
-- Sun, 29 Sep 2024 16:48:57 GMT - [Server-Side Request Forgery (SSRF): How Attackers Can Exploit Internal Networks](https://freedium.cfd/https://medium.com/p/417ed78ae69b)
-- Sun, 29 Sep 2024 16:48:40 GMT - [Ti Hanno Svuotato il Conto Corrente? Ecco Cosa Fare Legalmente](https://freedium.cfd/https://medium.com/p/bf647cd77e95)
-- Sun, 29 Sep 2024 16:48:26 GMT - [What Is Flash BTC (Core Transaction)](https://freedium.cfd/https://medium.com/p/7dd93d023577)
-- Sun, 29 Sep 2024 16:35:49 GMT - [Homelab, weekend update](https://freedium.cfd/https://medium.com/p/3b1e16452e86)
-- Sun, 29 Sep 2024 16:29:11 GMT - [Identifying Security Gaps and Compliance Issues in Cybersecurity Audits](https://freedium.cfd/https://medium.com/p/fcace7027941)
-- Sun, 29 Sep 2024 16:28:51 GMT - [Hello Valued Customer,](https://freedium.cfd/https://medium.com/p/537cceb58953)
-- Sun, 29 Sep 2024 16:26:06 GMT - [Homelab, cont’d](https://freedium.cfd/https://medium.com/p/b42f3bc72786)
-- Sun, 29 Sep 2024 16:24:44 GMT - [Why Choose the Top Cyber Security Course in India?](https://freedium.cfd/https://medium.com/p/d900caf10b30)
 
