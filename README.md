@@ -11,6 +11,7 @@
 - Sun, 29 Sep 2024 05:02:04 GMT - [How to Find Bugs and Vulnerabilities Using ChatGPT: Guaranteed Results](https://freedium.cfd/https://medium.com/p/3b630fae4691)
 
 ## https://medium.com/feed/tag/security
+- Sun, 29 Sep 2024 10:58:32 GMT - [Understanding OAuth2 in Large-Scale Applications: A Deep Dive](https://freedium.cfd/https://medium.com/p/467a3a783fa4)
 - Sun, 29 Sep 2024 09:55:44 GMT - [Watch Out: How Scammers on LinkedIn and Telegram Are Targeting Blockchain Devs](https://freedium.cfd/https://medium.com/p/1af431cb9217)
 - Sun, 29 Sep 2024 09:54:24 GMT - [Ring Security Cameras: Protect Your Home with Smart Features and 24/7 Monitoring](https://freedium.cfd/https://medium.com/p/083d9d96b166)
 - Sun, 29 Sep 2024 09:11:55 GMT - [Privacy Concerns: Dark Side of Social Media](https://freedium.cfd/https://medium.com/p/3c7cf5f9d911)
@@ -20,7 +21,6 @@
 - Sun, 29 Sep 2024 08:15:34 GMT - [How AI is Revolutionizing Protection from Cyber Threats](https://freedium.cfd/https://medium.com/p/52fb28e140ed)
 - Sun, 29 Sep 2024 07:42:12 GMT - [Navigating Compliance: How to meet cybersecurity requirements for GDPR and CCPA](https://freedium.cfd/https://medium.com/p/2e5205671a66)
 - Sun, 29 Sep 2024 07:27:22 GMT - [From Phishing to Malware: Defending Your Digital Life End](https://freedium.cfd/https://medium.com/p/e58de60c9049)
-- Sun, 29 Sep 2024 07:10:22 GMT - [Top 15 Challenges of Artificial Intelligence in 2024](https://freedium.cfd/https://medium.com/p/983f5f1ed1f6)
 
 ## https://medium.com/feed/tag/vulnerability
 - Sun, 29 Sep 2024 09:48:31 GMT - [I’m the best at giving advice, but terrible at taking it…](https://freedium.cfd/https://medium.com/p/c6aa34799ce0)
