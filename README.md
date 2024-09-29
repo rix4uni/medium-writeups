@@ -11,6 +11,9 @@
 - Sun, 29 Sep 2024 09:42:18 GMT - [SMTP/s — Port 25,465,587 For pentesters](https://freedium.cfd/https://medium.com/p/3e5706e081e9)
 
 ## https://medium.com/feed/tag/security
+- Sun, 29 Sep 2024 19:41:40 GMT - [The Heart of the Pride](https://freedium.cfd/https://medium.com/p/2be53b0af2f4)
+- Sun, 29 Sep 2024 19:36:54 GMT - [Breaking Free](https://freedium.cfd/https://medium.com/p/fa5aeb1cae04)
+- Sun, 29 Sep 2024 19:31:30 GMT - [The Reality of Fashion](https://freedium.cfd/https://medium.com/p/b216a1645170)
 - Sun, 29 Sep 2024 19:23:08 GMT - [Threat Modeling for Non-Security Experts](https://freedium.cfd/https://medium.com/p/f31bd58d309d)
 - Sun, 29 Sep 2024 19:21:30 GMT - [Out with the Old](https://freedium.cfd/https://medium.com/p/e2dece5fb6a3)
 - Sun, 29 Sep 2024 19:17:50 GMT - [Europol Takes Down Massive Phishing Network Targeting Over 480,000 Victims](https://freedium.cfd/https://medium.com/p/4547b6ef96ed)
@@ -18,9 +21,6 @@
 - Sun, 29 Sep 2024 19:12:58 GMT - [Women in Leadership](https://freedium.cfd/https://medium.com/p/4f932cc1eeb7)
 - Sun, 29 Sep 2024 19:06:54 GMT - [Six Months of Surprises](https://freedium.cfd/https://medium.com/p/1ee700e25b9e)
 - Sun, 29 Sep 2024 19:06:02 GMT - [Designing Your Journey to Success](https://freedium.cfd/https://medium.com/p/2149b33281e4)
-- Sun, 29 Sep 2024 19:01:32 GMT - [From Batter to Brand](https://freedium.cfd/https://medium.com/p/a3e6ab56f1df)
-- Sun, 29 Sep 2024 18:51:30 GMT - [Property Ads and Design](https://freedium.cfd/https://medium.com/p/626c96db805b)
-- Sun, 29 Sep 2024 18:50:17 GMT - [Understanding Persuasion](https://freedium.cfd/https://medium.com/p/29fbe1972217)
 
 ## https://medium.com/feed/tag/vulnerability
 - Sun, 29 Sep 2024 19:07:49 GMT - [Goosebumps…Sexy Goosebumps.](https://freedium.cfd/https://medium.com/p/ae7b393f3517)
@@ -35,6 +35,9 @@
 - Sun, 29 Sep 2024 07:14:10 GMT - [Programming Languages: Scope, Advantages, and Vulnerabilities](https://freedium.cfd/https://medium.com/p/efefd580d85a)
 
 ## https://medium.com/feed/tag/cybersecurity
+- Sun, 29 Sep 2024 19:38:57 GMT - [Understanding Online Friendship Fraud: Step-by-Step Guide To Protect Yourself](https://freedium.cfd/https://medium.com/p/fe48c8a48d1b)
+- Sun, 29 Sep 2024 19:32:22 GMT - [Why You Still Need a VPN on Your Cellular Network](https://freedium.cfd/https://medium.com/p/c02cb73051b3)
+- Sun, 29 Sep 2024 19:27:51 GMT - [Zscaler Brings Clarity to Cybersecurity with Zero Trust and AI](https://freedium.cfd/https://medium.com/p/667ef7d7fdc7)
 - Sun, 29 Sep 2024 19:24:26 GMT - [NHI Use Case-1: Cross-Organization API Acess using API Keys](https://freedium.cfd/https://medium.com/p/0c9952e706a1)
 - Sun, 29 Sep 2024 19:20:52 GMT - [I will craft cybersecurity, tech, IT manager, data analyst, and business analyst resume](https://freedium.cfd/https://medium.com/p/2844150f4cfb)
 - Sun, 29 Sep 2024 19:15:36 GMT - [Data Science VS Project Management VS Cyber Security](https://freedium.cfd/https://medium.com/p/3f22bf4dc106)
@@ -42,7 +45,4 @@
 - Sun, 29 Sep 2024 19:06:03 GMT - [Belajar IT Tidak Semudah Membalikkan Telapak Kaki Gajah](https://freedium.cfd/https://medium.com/p/eaeffe52a5de)
 - Sun, 29 Sep 2024 19:03:31 GMT - [Day 29 of 30 Days MyDFIR SOC Analyst Challenge](https://freedium.cfd/https://medium.com/p/d348b8e8f2fc)
 - Sun, 29 Sep 2024 19:01:12 GMT - [My eCPPTv3 Journey: What to Expect and How to Succeed (VALUABLE TIPS!)](https://freedium.cfd/https://medium.com/p/6ccbcfad3a37)
-- Sun, 29 Sep 2024 18:47:10 GMT - [The Apex of Global Cybersecurity: A Zero Trust, AI-Powered, Self-Replicating Defense System for G7…](https://freedium.cfd/https://medium.com/p/bb2134fae61d)
-- Sun, 29 Sep 2024 18:35:57 GMT - [Mayor of London Launches iREPORTit Mobile App Developed by Raven Science in Collaboration with MIT…](https://freedium.cfd/https://medium.com/p/3c2eb6ff4a36)
-- Sun, 29 Sep 2024 18:32:11 GMT - [Top IT Challenges: Navigating the Modern Business Landscape](https://freedium.cfd/https://medium.com/p/27c4c9aba7f1)
 
