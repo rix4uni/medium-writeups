@@ -1385,3 +1385,51 @@
 - Sat, 28 Sep 2024 22:31:42 GMT - [TryHackMe — Diamond Model](https://freedium.cfd/https://medium.com/p/f79064c842c3)
 - Sat, 28 Sep 2024 22:21:36 GMT - [How can I recover my money from Tpcinvest](https://freedium.cfd/https://medium.com/p/edf47ea371fc)
 
+## https://medium.com/feed/tag/bug-bounty
+- Sun, 29 Sep 2024 02:01:40 GMT - [Hacking with Linux: Your Ultimate Guide to Cyber Security Mastery](https://freedium.cfd/https://medium.com/p/e8f8bb38510c)
+- Sat, 28 Sep 2024 23:31:21 GMT - [How to use built with for bugbounty](https://freedium.cfd/https://medium.com/p/9f58ba501f5a)
+- Sat, 28 Sep 2024 22:09:12 GMT - [P4 bug’s and their POC steps | Part 5](https://freedium.cfd/https://medium.com/p/242eddd02fd0)
+- Sat, 28 Sep 2024 17:39:43 GMT - [Why Go is the Perfect Choice for CLIs](https://freedium.cfd/https://medium.com/p/477281989ace)
+- Sat, 28 Sep 2024 17:04:59 GMT - [Exposed private key leads to Google cloud service account takeover — Privilege Escalation](https://freedium.cfd/https://medium.com/p/6f031e20c819)
+- Sat, 28 Sep 2024 16:17:14 GMT - [Broken Authentication: A Common Vulnerability Exposing User Accounts](https://freedium.cfd/https://medium.com/p/2b48b6f9b644)
+- Sat, 28 Sep 2024 16:11:01 GMT - [Nuclei ile Zafiyet Tespiti](https://freedium.cfd/https://medium.com/p/ec94aa180aab)
+- Sat, 28 Sep 2024 15:44:16 GMT - [HackTheBox Broken Authentication (Skills Assessment)](https://freedium.cfd/https://medium.com/p/c43feaab1a52)
+- Sat, 28 Sep 2024 14:50:44 GMT - [How to google dork effectively for private and other bug bounty programs](https://freedium.cfd/https://medium.com/p/d54f9e7b4d57)
+- Sat, 28 Sep 2024 13:46:29 GMT - [Full Account Takeover via Facebook OAuth Misconfiguration](https://freedium.cfd/https://medium.com/p/9e30fe1c1da1)
+
+## https://medium.com/feed/tag/security
+- Sun, 29 Sep 2024 02:01:48 GMT - [Whispers of Emptiness:](https://freedium.cfd/https://medium.com/p/1a70a16e3475)
+- Sun, 29 Sep 2024 01:56:53 GMT - [Finding Light in Farewell](https://freedium.cfd/https://medium.com/p/25916c6bc8c5)
+- Sun, 29 Sep 2024 01:36:53 GMT - [The Portraits of Women](https://freedium.cfd/https://medium.com/p/ee1178660be6)
+- Sun, 29 Sep 2024 01:11:40 GMT - [The Healing I Never Imagined](https://freedium.cfd/https://medium.com/p/d4e5716f603b)
+- Sun, 29 Sep 2024 01:11:40 GMT - [Three Thrilling Yet Chilling Movies I Can’t Bear to Rewatch](https://freedium.cfd/https://medium.com/p/873a9daf0c63)
+- Sun, 29 Sep 2024 01:06:53 GMT - [Unexpected Bliss](https://freedium.cfd/https://medium.com/p/bca47d21612f)
+- Sun, 29 Sep 2024 01:01:42 GMT - [The Dimming Light](https://freedium.cfd/https://medium.com/p/c46a6cc92141)
+- Sun, 29 Sep 2024 00:46:52 GMT - [“What Does It Feel Like to Be Alive?”](https://freedium.cfd/https://medium.com/p/ac672415c517)
+- Sun, 29 Sep 2024 00:36:53 GMT - [In Search of Serenity](https://freedium.cfd/https://medium.com/p/4d0ad443cc8d)
+- Sun, 29 Sep 2024 00:07:28 GMT - [Understanding PTSD](https://freedium.cfd/https://medium.com/p/4f116ce65fd3)
+
+## https://medium.com/feed/tag/vulnerability
+- Sun, 29 Sep 2024 01:46:53 GMT - [Google Gemini AI Vulnerability: The Rise of Prompt Injection Attacks](https://freedium.cfd/https://medium.com/p/8d2c48a65210)
+- Sun, 29 Sep 2024 00:47:51 GMT - [The Power of Storytelling in Research and Academia](https://freedium.cfd/https://medium.com/p/3885f393b869)
+- Sat, 28 Sep 2024 20:44:07 GMT - [Injection Vulnerabilities: More Than You Think!! ](https://freedium.cfd/https://medium.com/p/e926332d4907)
+- Sat, 28 Sep 2024 18:15:19 GMT - [The Quiet Power of Vulnerability and Strength: A pathway to Growth](https://freedium.cfd/https://medium.com/p/73f4c817e87b)
+- Sat, 28 Sep 2024 17:15:48 GMT - [Progress urges admins to patch critical WhatsUp Gold bugs ASAP](https://freedium.cfd/https://medium.com/p/71234ef898bd)
+- Sat, 28 Sep 2024 15:36:53 GMT - [20 Commands to Exploit Vulnerabilities Like a Pro](https://freedium.cfd/https://medium.com/p/1145291df899)
+- Sat, 28 Sep 2024 13:11:50 GMT - [My Perfect Housemate](https://freedium.cfd/https://medium.com/p/ea4ee739a2b1)
+- Sat, 28 Sep 2024 09:36:35 GMT - [Our Deepest Fear… A Lesson From Marianne Williamson](https://freedium.cfd/https://medium.com/p/df2b4cb16950)
+- Sat, 28 Sep 2024 09:35:35 GMT - [The Gloaming: The Comeback Kid](https://freedium.cfd/https://medium.com/p/b66b38698c98)
+- Sat, 28 Sep 2024 09:21:42 GMT - [Security Misconfiguration: Identifying and Preventing This Common Vulnerability](https://freedium.cfd/https://medium.com/p/14ab1c4989ac)
+
+## https://medium.com/feed/tag/cybersecurity
+- Sun, 29 Sep 2024 02:01:40 GMT - [Hacking with Linux: Your Ultimate Guide to Cyber Security Mastery](https://freedium.cfd/https://medium.com/p/e8f8bb38510c)
+- Sun, 29 Sep 2024 01:46:53 GMT - [Google Gemini AI Vulnerability: The Rise of Prompt Injection Attacks](https://freedium.cfd/https://medium.com/p/8d2c48a65210)
+- Sun, 29 Sep 2024 01:46:53 GMT - [‘SloppyLemming’ APT Abuses Cloudflare Service in Pakistan](https://freedium.cfd/https://medium.com/p/27847d3a03fd)
+- Sun, 29 Sep 2024 01:38:45 GMT - [Symmetric and Asymmetric Encryption: We Pay Companies To Hack Our Cars!](https://freedium.cfd/https://medium.com/p/e1d938d1c7c8)
+- Sun, 29 Sep 2024 01:32:55 GMT - [7 Shocking Cybersecurity Myths Exposed](https://freedium.cfd/https://medium.com/p/ac864dfbb5dc)
+- Sun, 29 Sep 2024 01:23:19 GMT - [SOC Home Lab — 30 Day SOC Analyst Challenge](https://freedium.cfd/https://medium.com/p/128d2285a4b6)
+- Sun, 29 Sep 2024 01:16:52 GMT - [CYBERSECRUITY | PAM | FUTURE TECHNOLOGY |](https://freedium.cfd/https://medium.com/p/dab7208c34ca)
+- Sun, 29 Sep 2024 00:50:12 GMT - [Linux — CUPS Printer Vulnerability](https://freedium.cfd/https://medium.com/p/204d659a9c45)
+- Sun, 29 Sep 2024 00:08:43 GMT - [Cybersecurity Threats in 2024: How to Protect Your Data](https://freedium.cfd/https://medium.com/p/3f2a1df0be70)
+- Sun, 29 Sep 2024 00:06:18 GMT - [GrrCON 2024 Review: A Comprehensive Cybersecurity Conference](https://freedium.cfd/https://medium.com/p/5846a6dc2e7d)
+
