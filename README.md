@@ -11,6 +11,9 @@
 - Sun, 29 Sep 2024 09:42:18 GMT - [SMTP/s — Port 25,465,587 For pentesters](https://freedium.cfd/https://medium.com/p/3e5706e081e9)
 
 ## https://medium.com/feed/tag/security
+- Sun, 29 Sep 2024 19:52:01 GMT - [Two Faces of Ambition](https://freedium.cfd/https://medium.com/p/87c0a81ce800)
+- Sun, 29 Sep 2024 19:51:28 GMT - [Get Your Ducks in a Row: Analyzing AWS VPC flow logs with DuckDB](https://freedium.cfd/https://medium.com/p/0ef3d3465a67)
+- Sun, 29 Sep 2024 19:46:55 GMT - [15 Uplifting Affirmations to Ignite Your Day](https://freedium.cfd/https://medium.com/p/f7753d2cda9b)
 - Sun, 29 Sep 2024 19:41:40 GMT - [The Heart of the Pride](https://freedium.cfd/https://medium.com/p/2be53b0af2f4)
 - Sun, 29 Sep 2024 19:36:54 GMT - [Breaking Free](https://freedium.cfd/https://medium.com/p/fa5aeb1cae04)
 - Sun, 29 Sep 2024 19:31:30 GMT - [The Reality of Fashion](https://freedium.cfd/https://medium.com/p/b216a1645170)
@@ -18,9 +21,6 @@
 - Sun, 29 Sep 2024 19:21:30 GMT - [Out with the Old](https://freedium.cfd/https://medium.com/p/e2dece5fb6a3)
 - Sun, 29 Sep 2024 19:17:50 GMT - [Europol Takes Down Massive Phishing Network Targeting Over 480,000 Victims](https://freedium.cfd/https://medium.com/p/4547b6ef96ed)
 - Sun, 29 Sep 2024 19:13:02 GMT - [WEDNESDAY](https://freedium.cfd/https://medium.com/p/2bc8073b94d2)
-- Sun, 29 Sep 2024 19:12:58 GMT - [Women in Leadership](https://freedium.cfd/https://medium.com/p/4f932cc1eeb7)
-- Sun, 29 Sep 2024 19:06:54 GMT - [Six Months of Surprises](https://freedium.cfd/https://medium.com/p/1ee700e25b9e)
-- Sun, 29 Sep 2024 19:06:02 GMT - [Designing Your Journey to Success](https://freedium.cfd/https://medium.com/p/2149b33281e4)
 
 ## https://medium.com/feed/tag/vulnerability
 - Sun, 29 Sep 2024 19:07:49 GMT - [Goosebumps…Sexy Goosebumps.](https://freedium.cfd/https://medium.com/p/ae7b393f3517)
@@ -35,6 +35,7 @@
 - Sun, 29 Sep 2024 07:14:10 GMT - [Programming Languages: Scope, Advantages, and Vulnerabilities](https://freedium.cfd/https://medium.com/p/efefd580d85a)
 
 ## https://medium.com/feed/tag/cybersecurity
+- Sun, 29 Sep 2024 19:48:38 GMT - [TryHackMe: Net Sec Challenge](https://freedium.cfd/https://medium.com/p/7bed449bb2ee)
 - Sun, 29 Sep 2024 19:38:57 GMT - [Understanding Online Friendship Fraud: Step-by-Step Guide To Protect Yourself](https://freedium.cfd/https://medium.com/p/fe48c8a48d1b)
 - Sun, 29 Sep 2024 19:32:22 GMT - [Why You Still Need a VPN on Your Cellular Network](https://freedium.cfd/https://medium.com/p/c02cb73051b3)
 - Sun, 29 Sep 2024 19:27:51 GMT - [Zscaler Brings Clarity to Cybersecurity with Zero Trust and AI](https://freedium.cfd/https://medium.com/p/667ef7d7fdc7)
@@ -44,5 +45,4 @@
 - Sun, 29 Sep 2024 19:10:17 GMT - [Web Security Academy: CSRF — Broken Referer validation](https://freedium.cfd/https://medium.com/p/e9f7e6f7d4a7)
 - Sun, 29 Sep 2024 19:06:03 GMT - [Belajar IT Tidak Semudah Membalikkan Telapak Kaki Gajah](https://freedium.cfd/https://medium.com/p/eaeffe52a5de)
 - Sun, 29 Sep 2024 19:03:31 GMT - [Day 29 of 30 Days MyDFIR SOC Analyst Challenge](https://freedium.cfd/https://medium.com/p/d348b8e8f2fc)
-- Sun, 29 Sep 2024 19:01:12 GMT - [My eCPPTv3 Journey: What to Expect and How to Succeed (VALUABLE TIPS!)](https://freedium.cfd/https://medium.com/p/6ccbcfad3a37)
 
