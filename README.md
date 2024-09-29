@@ -35,14 +35,14 @@
 - Sat, 28 Sep 2024 09:35:35 GMT - [The Gloaming: The Comeback Kid](https://freedium.cfd/https://medium.com/p/b66b38698c98)
 
 ## https://medium.com/feed/tag/cybersecurity
+- Sun, 29 Sep 2024 05:51:13 GMT - [How to Find Past Wi-Fi Connections on Windows in Python](https://freedium.cfd/https://medium.com/p/e7c14fdcbab8)
+- Sun, 29 Sep 2024 05:47:44 GMT - [Digital Forensics Basics: Metadata Extraction with pdfinfo and exiftool](https://freedium.cfd/https://medium.com/p/ae812dff2a9c)
+- Sun, 29 Sep 2024 05:40:04 GMT - [How robots.txt Misconfigurations Can Expose Your Site](https://freedium.cfd/https://medium.com/p/3f173a81e813)
+- Sun, 29 Sep 2024 05:39:53 GMT - [Privacy concern bug](https://freedium.cfd/https://medium.com/p/72b30aead215)
 - Sun, 29 Sep 2024 05:02:04 GMT - [How to Find Bugs and Vulnerabilities Using ChatGPT: Guaranteed Results](https://freedium.cfd/https://medium.com/p/3b630fae4691)
 - Sun, 29 Sep 2024 04:48:56 GMT - [Find Vulnerabilities With This Single Nmap Command](https://freedium.cfd/https://medium.com/p/a4476c16c82c)
 - Sun, 29 Sep 2024 04:42:18 GMT - [Basics of Nmap for hackers](https://freedium.cfd/https://medium.com/p/90bbdbd8a3bf)
 - Sun, 29 Sep 2024 04:39:35 GMT - [LetsDefend SA Event ID: 162, SOC210 — Possible Brute Force Detected on VPN](https://freedium.cfd/https://medium.com/p/2c05e57ea3c2)
 - Sun, 29 Sep 2024 04:34:23 GMT - [The Invisible Threat Lurking in Your Code: How Simple Scripts Can Destroy Your Cloud](https://freedium.cfd/https://medium.com/p/f4bff47f8429)
 - Sun, 29 Sep 2024 04:06:22 GMT - [Where Should I Start with Cybersecurity](https://freedium.cfd/https://medium.com/p/be0dd45bf403)
-- Sun, 29 Sep 2024 04:02:11 GMT - [Advanced Persistent Threats (APTs) from China, Russia, Iran, North Korea, and India: A Threat to…](https://freedium.cfd/https://medium.com/p/f64c2f9113d9)
-- Sun, 29 Sep 2024 03:48:28 GMT - [Bulan September, Belajar + Dapet Uang.](https://freedium.cfd/https://medium.com/p/9eddbc1f1071)
-- Sun, 29 Sep 2024 03:42:20 GMT - [How I passed CompTIA A+](https://freedium.cfd/https://medium.com/p/fed456f8a4ec)
-- Sun, 29 Sep 2024 03:41:22 GMT - [How To Report Whale Crypto Scams to ZachXBT](https://freedium.cfd/https://medium.com/p/5e55529a8e9b)
 
