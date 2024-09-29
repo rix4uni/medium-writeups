@@ -11,6 +11,9 @@
 - Sun, 29 Sep 2024 02:14:00 GMT - [OWASP juice shop -How I get account takeover from XSS](https://freedium.cfd/https://medium.com/p/ae3cfc978381)
 
 ## https://medium.com/feed/tag/security
+- Sun, 29 Sep 2024 09:11:55 GMT - [Privacy Concerns: Dark Side of Social Media](https://freedium.cfd/https://medium.com/p/3c7cf5f9d911)
+- Sun, 29 Sep 2024 09:07:02 GMT - [Is Your Phone Hacked? Signs and Steps to Take](https://freedium.cfd/https://medium.com/p/5ee394a8ed72)
+- Sun, 29 Sep 2024 09:01:46 GMT - [Weaving the Fabric of Life](https://freedium.cfd/https://medium.com/p/52db6a4debc6)
 - Sun, 29 Sep 2024 08:46:52 GMT - [“Blooming Dreams](https://freedium.cfd/https://medium.com/p/deb7c32c093e)
 - Sun, 29 Sep 2024 08:15:34 GMT - [How AI is Revolutionizing Protection from Cyber Threats](https://freedium.cfd/https://medium.com/p/52fb28e140ed)
 - Sun, 29 Sep 2024 07:42:12 GMT - [Navigating Compliance: How to meet cybersecurity requirements for GDPR and CCPA](https://freedium.cfd/https://medium.com/p/2e5205671a66)
@@ -18,11 +21,9 @@
 - Sun, 29 Sep 2024 07:10:22 GMT - [Top 15 Challenges of Artificial Intelligence in 2024](https://freedium.cfd/https://medium.com/p/983f5f1ed1f6)
 - Sun, 29 Sep 2024 07:09:43 GMT - [Four ways to bypass Android SSL Verification and Certificate Pinning](https://freedium.cfd/https://medium.com/p/97f3abc2ef4c)
 - Sun, 29 Sep 2024 06:46:22 GMT - [Boiler Safety: Key Practices for Ensuring Operational Security](https://freedium.cfd/https://medium.com/p/0213a8776b97)
-- Sun, 29 Sep 2024 06:42:19 GMT - [Recovering Lost Key Pair in an AWS EC2 Instance](https://freedium.cfd/https://medium.com/p/f2ffd4f5843a)
-- Sun, 29 Sep 2024 06:23:26 GMT - [5 Reasons why NordVPN Is Best Streaming VPN in 2024](https://freedium.cfd/https://medium.com/p/8bd3abfd31b4)
-- Sun, 29 Sep 2024 06:23:23 GMT - [Types of Coverage Available Through Insurance Companies](https://freedium.cfd/https://medium.com/p/f4958ab174d5)
 
 ## https://medium.com/feed/tag/vulnerability
+- Sun, 29 Sep 2024 09:21:40 GMT - [Shocking Kia Vulnerability Exposed: Hackers Could Remotely Control Cars Using Just a License Plate!](https://freedium.cfd/https://medium.com/p/da94db91df30)
 - Sun, 29 Sep 2024 08:08:54 GMT - [How Hackers Are Exploiting SS7: The Weak Link in Our Phone Networks](https://freedium.cfd/https://medium.com/p/f37e063b6493)
 - Sun, 29 Sep 2024 08:03:07 GMT - [We Are Similar but Different.](https://freedium.cfd/https://medium.com/p/9a1b1282d5c7)
 - Sun, 29 Sep 2024 07:14:10 GMT - [Programming Languages: Scope, Advantages, and Vulnerabilities](https://freedium.cfd/https://medium.com/p/efefd580d85a)
@@ -32,17 +33,16 @@
 - Sun, 29 Sep 2024 00:47:51 GMT - [The Power of Storytelling in Research and Academia](https://freedium.cfd/https://medium.com/p/3885f393b869)
 - Sat, 28 Sep 2024 20:44:07 GMT - [Injection Vulnerabilities: More Than You Think!! ](https://freedium.cfd/https://medium.com/p/e926332d4907)
 - Sat, 28 Sep 2024 18:15:19 GMT - [The Quiet Power of Vulnerability and Strength: A pathway to Growth](https://freedium.cfd/https://medium.com/p/73f4c817e87b)
-- Sat, 28 Sep 2024 17:15:48 GMT - [Progress urges admins to patch critical WhatsUp Gold bugs ASAP](https://freedium.cfd/https://medium.com/p/71234ef898bd)
 
 ## https://medium.com/feed/tag/cybersecurity
+- Sun, 29 Sep 2024 09:21:40 GMT - [Shocking Kia Vulnerability Exposed: Hackers Could Remotely Control Cars Using Just a License Plate!](https://freedium.cfd/https://medium.com/p/da94db91df30)
+- Sun, 29 Sep 2024 09:16:45 GMT - [US Justice Department Offers Reward for Information on Russian Cybercriminals](https://freedium.cfd/https://medium.com/p/3176328c7087)
+- Sun, 29 Sep 2024 09:11:01 GMT - [Let’s Defend SOC239 — Remote Code Execution Detected in Splunk Enterprise Write Up](https://freedium.cfd/https://medium.com/p/9d6dbf18747a)
+- Sun, 29 Sep 2024 09:05:38 GMT - [How BeerBiceps Beat the Hack](https://freedium.cfd/https://medium.com/p/b78358ed2571)
 - Sun, 29 Sep 2024 08:48:14 GMT - [LetsDefend SA Event ID: 153, SOC202 — FakeGPT Malicious Chrome Extension](https://freedium.cfd/https://medium.com/p/ba065f242c6b)
 - Sun, 29 Sep 2024 08:42:39 GMT - [[CyberSec] Semantic and Ontology in Cybersecurity](https://freedium.cfd/https://medium.com/p/442646ae0c36)
 - Sun, 29 Sep 2024 08:37:42 GMT - [My CISSP Journey](https://freedium.cfd/https://medium.com/p/cfaff3bdbe7b)
 - Sun, 29 Sep 2024 08:29:11 GMT - [What is Rate limit in .Net core?](https://freedium.cfd/https://medium.com/p/6a458db6fb80)
 - Sun, 29 Sep 2024 08:16:38 GMT - [BTLO Walkthrough | Digital Forensics |Detailed Guide Step by Step](https://freedium.cfd/https://medium.com/p/b4325e22930a)
 - Sun, 29 Sep 2024 08:15:34 GMT - [How AI is Revolutionizing Protection from Cyber Threats](https://freedium.cfd/https://medium.com/p/52fb28e140ed)
-- Sun, 29 Sep 2024 08:06:39 GMT - [How to Use OpenCTI to Gather Threat Intelligence | TryHackMe Trooper](https://freedium.cfd/https://medium.com/p/96d770f4232e)
-- Sun, 29 Sep 2024 08:05:55 GMT - [Cross-Site Scripting (XSS) & SQL Injection Risks and Mitigations](https://freedium.cfd/https://medium.com/p/d078ebec3ad7)
-- Sun, 29 Sep 2024 08:02:39 GMT - [Meta Techs: Your Trusted Partner for Symantec Server Protection](https://freedium.cfd/https://medium.com/p/fbc16d34c08b)
-- Sun, 29 Sep 2024 07:56:59 GMT - [Teach Your Kids to Protect Their Digital World](https://freedium.cfd/https://medium.com/p/c783e62d18d3)
 
