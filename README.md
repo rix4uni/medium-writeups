@@ -1,4 +1,6 @@
 ## https://medium.com/feed/tag/bug-bounty
+- Sun, 29 Sep 2024 13:20:38 GMT - [Understanding Bug Triage: A Crucial Process for Efficient Software Testing](https://freedium.cfd/https://medium.com/p/790b9b353177)
+- Sun, 29 Sep 2024 13:18:16 GMT - [DVWA : Cross Site Scripting (XSS) Vulnerability Solution (Low Security Level)](https://freedium.cfd/https://medium.com/p/452396997b5a)
 - Sun, 29 Sep 2024 11:37:40 GMT - [how i found union based sql injection in hackerone public vdp program?](https://freedium.cfd/https://medium.com/p/7c76d61f6c77)
 - Sun, 29 Sep 2024 10:24:58 GMT - [Mastering Advanced Google Dorks for Ethical Hacking and Vulnerability Discovery](https://freedium.cfd/https://medium.com/p/6d9e3dde0433)
 - Sun, 29 Sep 2024 09:42:18 GMT - [SMTP/s — Port 25,465,587 For pentesters](https://freedium.cfd/https://medium.com/p/3e5706e081e9)
@@ -7,10 +9,10 @@
 - Sun, 29 Sep 2024 06:50:44 GMT - [OWASP juice-shop login as an admin using SQLi and OSINT](https://freedium.cfd/https://medium.com/p/90c4abc4322b)
 - Sun, 29 Sep 2024 06:38:01 GMT - [H7CTF — WEB CHALLENGES](https://freedium.cfd/https://medium.com/p/db1883775dfd)
 - Sun, 29 Sep 2024 06:33:14 GMT - [Essential Port Scanning Skills for Bug Bounty Hunters](https://freedium.cfd/https://medium.com/p/f0e09f3612ce)
-- Sun, 29 Sep 2024 06:23:25 GMT - [Bypassing Filters: SSRF Exploitation via DNS Rebinding with Just 1 in 30 Successful Requests](https://freedium.cfd/https://medium.com/p/2fdc3a9cfd7d)
-- Sun, 29 Sep 2024 05:39:53 GMT - [Privacy concern bug](https://freedium.cfd/https://medium.com/p/72b30aead215)
 
 ## https://medium.com/feed/tag/security
+- Sun, 29 Sep 2024 13:07:09 GMT - [Understanding Inconsistencies in IP Address Classification Across Programming Languages](https://freedium.cfd/https://medium.com/p/19b2645b10a9)
+- Sun, 29 Sep 2024 13:06:23 GMT - [Enhancing Terraform Security: Best Practices, Tools, and Automation](https://freedium.cfd/https://medium.com/p/ed950cac1754)
 - Sun, 29 Sep 2024 12:43:11 GMT - [Programmable Privacy vs Centralized Control: Is Swisstronik the solution or sacrifice?](https://freedium.cfd/https://medium.com/p/0815cf239d74)
 - Sun, 29 Sep 2024 12:01:41 GMT - [Defending WordPress Security Against Cross-Site Scripting (XSS) Attacks](https://freedium.cfd/https://medium.com/p/0b488d2d1a5f)
 - Sun, 29 Sep 2024 12:01:40 GMT - [Understanding JavaScript Prototype Pollution and How to Prevent It](https://freedium.cfd/https://medium.com/p/363c5adc6768)
@@ -19,8 +21,6 @@
 - Sun, 29 Sep 2024 09:54:24 GMT - [Ring Security Cameras: Protect Your Home with Smart Features and 24/7 Monitoring](https://freedium.cfd/https://medium.com/p/083d9d96b166)
 - Sun, 29 Sep 2024 09:11:55 GMT - [Privacy Concerns: Dark Side of Social Media](https://freedium.cfd/https://medium.com/p/3c7cf5f9d911)
 - Sun, 29 Sep 2024 09:07:02 GMT - [Is Your Phone Hacked? Signs and Steps to Take](https://freedium.cfd/https://medium.com/p/5ee394a8ed72)
-- Sun, 29 Sep 2024 09:01:46 GMT - [Weaving the Fabric of Life](https://freedium.cfd/https://medium.com/p/52db6a4debc6)
-- Sun, 29 Sep 2024 08:46:52 GMT - [“Blooming Dreams](https://freedium.cfd/https://medium.com/p/deb7c32c093e)
 
 ## https://medium.com/feed/tag/vulnerability
 - Sun, 29 Sep 2024 09:48:31 GMT - [I’m the best at giving advice, but terrible at taking it…](https://freedium.cfd/https://medium.com/p/c6aa34799ce0)
