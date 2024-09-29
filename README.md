@@ -11,16 +11,16 @@
 - Sun, 29 Sep 2024 10:24:58 GMT - [Mastering Advanced Google Dorks for Ethical Hacking and Vulnerability Discovery](https://freedium.cfd/https://medium.com/p/6d9e3dde0433)
 
 ## https://medium.com/feed/tag/security
+- Sun, 29 Sep 2024 22:51:43 GMT - [Unveiling the Secrets](https://freedium.cfd/https://medium.com/p/186fece0e596)
+- Sun, 29 Sep 2024 22:46:52 GMT - [From Beans to Branding](https://freedium.cfd/https://medium.com/p/b36320192418)
+- Sun, 29 Sep 2024 22:46:52 GMT - [3 Ways Social Media Could Be Sabotaging Your Happiness](https://freedium.cfd/https://medium.com/p/5219687de2f5)
+- Sun, 29 Sep 2024 22:41:40 GMT - [Echoes of Betrayal](https://freedium.cfd/https://medium.com/p/da4030321ae6)
 - Sun, 29 Sep 2024 22:37:30 GMT - [The Quest for Meaning](https://freedium.cfd/https://medium.com/p/07f725ae5097)
 - Sun, 29 Sep 2024 22:31:41 GMT - [The Last Goodbye](https://freedium.cfd/https://medium.com/p/eb2d9da0066b)
 - Sun, 29 Sep 2024 22:26:54 GMT - [My Quest for Identity](https://freedium.cfd/https://medium.com/p/ac22267db574)
 - Sun, 29 Sep 2024 22:26:54 GMT - [The Strength to Choose:](https://freedium.cfd/https://medium.com/p/53d7e2e07573)
 - Sun, 29 Sep 2024 22:17:43 GMT - [WEDNESDAY: Episode 2 — Into the Shadows](https://freedium.cfd/https://medium.com/p/100d60fb079d)
 - Sun, 29 Sep 2024 22:11:40 GMT - [Lost and Found](https://freedium.cfd/https://medium.com/p/1ec0931307e5)
-- Sun, 29 Sep 2024 22:11:40 GMT - [The Language of Design](https://freedium.cfd/https://medium.com/p/31a91d4ef0f9)
-- Sun, 29 Sep 2024 22:07:01 GMT - [Speed Matters](https://freedium.cfd/https://medium.com/p/14d1278410e0)
-- Sun, 29 Sep 2024 22:02:55 GMT - [Creating Engaging Content](https://freedium.cfd/https://medium.com/p/f5ba4cdabc86)
-- Sun, 29 Sep 2024 21:51:45 GMT - [Ranking the Best Vegetarian Dishes](https://freedium.cfd/https://medium.com/p/caddea97c7a3)
 
 ## https://medium.com/feed/tag/vulnerability
 - Sun, 29 Sep 2024 19:07:49 GMT - [Goosebumps…Sexy Goosebumps.](https://freedium.cfd/https://medium.com/p/ae7b393f3517)
@@ -35,16 +35,16 @@
 - Sun, 29 Sep 2024 07:14:10 GMT - [Programming Languages: Scope, Advantages, and Vulnerabilities](https://freedium.cfd/https://medium.com/p/efefd580d85a)
 
 ## https://medium.com/feed/tag/cybersecurity
+- Sun, 29 Sep 2024 22:50:34 GMT - [Centos 7' ye Splunk Nasıl Kurlur ? Windows’a MobaXtream Nasıl Kurlur ?](https://freedium.cfd/https://medium.com/p/6541024dddae)
+- Sun, 29 Sep 2024 22:49:35 GMT - [️Day 29: Elastic Defend Setup Tutorial](https://freedium.cfd/https://medium.com/p/ac40a934105d)
+- Sun, 29 Sep 2024 22:48:43 GMT - [No-1 Amil Baba In Pakiatan, Amil Baba In Dubai, Amil Baba In UK, 03171144616 Kala Jadu Expert, Kala…](https://freedium.cfd/https://medium.com/p/f5c7f90595d2)
+- Sun, 29 Sep 2024 22:46:59 GMT - [No-1 Amil Baba In Pakiatan, Amil Baba In Dubai, Amil Baba In UK, 03171144616 Kala Jadu Expert, Kala…](https://freedium.cfd/https://medium.com/p/60d353482e2b)
 - Sun, 29 Sep 2024 22:35:52 GMT - [As professionals in the fields of computer science, we now face great challenges which were not on…](https://freedium.cfd/https://medium.com/p/d08ca8df4993)
 - Sun, 29 Sep 2024 22:35:00 GMT - [Conscious Delivery With DevSecOps](https://freedium.cfd/https://medium.com/p/5b6fa65535ec)
 - Sun, 29 Sep 2024 22:27:40 GMT - [HackTheBox Sherlock Writeup: Subatomic](https://freedium.cfd/https://medium.com/p/d0c9bd320c73)
 - Sun, 29 Sep 2024 22:21:19 GMT - [Protecting Yourself ONLINE](https://freedium.cfd/https://medium.com/p/ae739db6da77)
 - Sun, 29 Sep 2024 22:10:55 GMT - [Building “Quantum Key”: A Local Password Manager](https://freedium.cfd/https://medium.com/p/2ab8bc14ebf4)
 - Sun, 29 Sep 2024 21:25:44 GMT - [Darktrace: An In-Depth Overview](https://freedium.cfd/https://medium.com/p/2b61eb7bd308)
-- Sun, 29 Sep 2024 21:24:54 GMT - [LetsDefend SA Event ID: 123, SOC173 — Follina 0-Day Detected](https://freedium.cfd/https://medium.com/p/63423200d6c2)
-- Sun, 29 Sep 2024 21:23:02 GMT - [Security’s Weakest Link](https://freedium.cfd/https://medium.com/p/2c6be6ba9993)
-- Sun, 29 Sep 2024 21:21:00 GMT - [Gang stalking tacticas que usan](https://freedium.cfd/https://medium.com/p/80e18569aac2)
-- Sun, 29 Sep 2024 21:14:30 GMT - [Mental Health and the Law: How to Protect Your Business from Cyber Threats — A Legal Perspective](https://freedium.cfd/https://medium.com/p/5eeee1a34144)
 
 ## https://medium.com/feed/tag/penetration-testing
 - Sun, 29 Sep 2024 20:15:19 GMT - [Hack The Box: BoardLight Walkthrough](https://freedium.cfd/https://medium.com/p/f3949e54c71a)
