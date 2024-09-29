@@ -11,6 +11,7 @@
 - Sun, 29 Sep 2024 09:42:18 GMT - [SMTP/s — Port 25,465,587 For pentesters](https://freedium.cfd/https://medium.com/p/3e5706e081e9)
 
 ## https://medium.com/feed/tag/security
+- Sun, 29 Sep 2024 18:29:26 GMT - [Experience Speaks](https://freedium.cfd/https://medium.com/p/eb671e9b7fde)
 - Sun, 29 Sep 2024 18:21:33 GMT - [Understanding Meta Descriptions](https://freedium.cfd/https://medium.com/p/06d0a1d67a88)
 - Sun, 29 Sep 2024 18:16:19 GMT - [StaticKuber:Enhancing Kubernetes Security and Best Practices with Real-Time VS Code Extension](https://freedium.cfd/https://medium.com/p/b68f0da26c1b)
 - Sun, 29 Sep 2024 18:01:31 GMT - [Le NIST recommande de nouvelles règles pour la sécurité des mots de passe](https://freedium.cfd/https://medium.com/p/8b2a95f60f83)
@@ -20,7 +21,6 @@
 - Sun, 29 Sep 2024 17:11:31 GMT - [Understanding SEO Costs in 2024](https://freedium.cfd/https://medium.com/p/600a9a13e30e)
 - Sun, 29 Sep 2024 17:07:32 GMT - [ChatGPT for Keyword Discovery](https://freedium.cfd/https://medium.com/p/48e0fa6af8ab)
 - Sun, 29 Sep 2024 16:46:53 GMT - [The Comfort Debate](https://freedium.cfd/https://medium.com/p/4ae4f3d83ae7)
-- Sun, 29 Sep 2024 16:26:55 GMT - [In the Hands of Fate](https://freedium.cfd/https://medium.com/p/83e70bd8b41d)
 
 ## https://medium.com/feed/tag/vulnerability
 - Sun, 29 Sep 2024 17:33:27 GMT - [How I Learned to Have Uncomfortable Conversations](https://freedium.cfd/https://medium.com/p/549126cbdd19)
