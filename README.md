@@ -11,6 +11,8 @@
 - Sat, 28 Sep 2024 14:50:44 GMT - [How to google dork effectively for private and other bug bounty programs](https://freedium.cfd/https://medium.com/p/d54f9e7b4d57)
 
 ## https://medium.com/feed/tag/security
+- Sun, 29 Sep 2024 03:48:01 GMT - [What is the Zero Trust Security Model, How Does It Work, and Why Is It Important for Cloud, IoT…](https://freedium.cfd/https://medium.com/p/0d98eaf3b10b)
+- Sun, 29 Sep 2024 03:44:08 GMT - [Excalibur (Sentinel Security Book 5)](https://freedium.cfd/https://medium.com/p/951e0f3ba4e7)
 - Sun, 29 Sep 2024 03:15:39 GMT - [The Benefits of Not Having Replace-by-Fee (RBF) in Radiant](https://freedium.cfd/https://medium.com/p/046fb0351a36)
 - Sun, 29 Sep 2024 03:07:01 GMT - [“Joy Without Limits](https://freedium.cfd/https://medium.com/p/503761ad36d6)
 - Sun, 29 Sep 2024 03:05:48 GMT - [All my friends were about to block me — I wrote a semi virus](https://freedium.cfd/https://medium.com/p/fe408d8de801)
@@ -19,8 +21,6 @@
 - Sun, 29 Sep 2024 02:07:00 GMT - [Navigating Change:](https://freedium.cfd/https://medium.com/p/e4bb13f549d4)
 - Sun, 29 Sep 2024 02:01:48 GMT - [Whispers of Emptiness:](https://freedium.cfd/https://medium.com/p/1a70a16e3475)
 - Sun, 29 Sep 2024 01:56:53 GMT - [Finding Light in Farewell](https://freedium.cfd/https://medium.com/p/25916c6bc8c5)
-- Sun, 29 Sep 2024 01:36:53 GMT - [The Portraits of Women](https://freedium.cfd/https://medium.com/p/ee1178660be6)
-- Sun, 29 Sep 2024 01:11:40 GMT - [The Healing I Never Imagined](https://freedium.cfd/https://medium.com/p/d4e5716f603b)
 
 ## https://medium.com/feed/tag/vulnerability
 - Sun, 29 Sep 2024 01:46:53 GMT - [Google Gemini AI Vulnerability: The Rise of Prompt Injection Attacks](https://freedium.cfd/https://medium.com/p/8d2c48a65210)
