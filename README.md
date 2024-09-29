@@ -1,4 +1,5 @@
 ## https://medium.com/feed/tag/bug-bounty
+- Sun, 29 Sep 2024 11:37:40 GMT - [how i found union based sql injection in hackerone public vdp program?](https://freedium.cfd/https://medium.com/p/7c76d61f6c77)
 - Sun, 29 Sep 2024 10:24:58 GMT - [Mastering Advanced Google Dorks for Ethical Hacking and Vulnerability Discovery](https://freedium.cfd/https://medium.com/p/6d9e3dde0433)
 - Sun, 29 Sep 2024 09:42:18 GMT - [SMTP/s — Port 25,465,587 For pentesters](https://freedium.cfd/https://medium.com/p/3e5706e081e9)
 - Sun, 29 Sep 2024 07:13:24 GMT - [Performing a Dependency Confusion Attack with Remote Code Execution (RCE): A Step-by-Step Guide](https://freedium.cfd/https://medium.com/p/8d6055aa53e4)
@@ -8,9 +9,10 @@
 - Sun, 29 Sep 2024 06:33:14 GMT - [Essential Port Scanning Skills for Bug Bounty Hunters](https://freedium.cfd/https://medium.com/p/f0e09f3612ce)
 - Sun, 29 Sep 2024 06:23:25 GMT - [Bypassing Filters: SSRF Exploitation via DNS Rebinding with Just 1 in 30 Successful Requests](https://freedium.cfd/https://medium.com/p/2fdc3a9cfd7d)
 - Sun, 29 Sep 2024 05:39:53 GMT - [Privacy concern bug](https://freedium.cfd/https://medium.com/p/72b30aead215)
-- Sun, 29 Sep 2024 05:02:04 GMT - [How to Find Bugs and Vulnerabilities Using ChatGPT: Guaranteed Results](https://freedium.cfd/https://medium.com/p/3b630fae4691)
 
 ## https://medium.com/feed/tag/security
+- Sun, 29 Sep 2024 12:01:41 GMT - [Defending WordPress Security Against Cross-Site Scripting (XSS) Attacks](https://freedium.cfd/https://medium.com/p/0b488d2d1a5f)
+- Sun, 29 Sep 2024 12:01:40 GMT - [Understanding JavaScript Prototype Pollution and How to Prevent It](https://freedium.cfd/https://medium.com/p/363c5adc6768)
 - Sun, 29 Sep 2024 10:58:32 GMT - [Understanding OAuth2 in Large-Scale Applications: A Deep Dive](https://freedium.cfd/https://medium.com/p/467a3a783fa4)
 - Sun, 29 Sep 2024 09:55:44 GMT - [Watch Out: How Scammers on LinkedIn and Telegram Are Targeting Blockchain Devs](https://freedium.cfd/https://medium.com/p/1af431cb9217)
 - Sun, 29 Sep 2024 09:54:24 GMT - [Ring Security Cameras: Protect Your Home with Smart Features and 24/7 Monitoring](https://freedium.cfd/https://medium.com/p/083d9d96b166)
@@ -19,8 +21,6 @@
 - Sun, 29 Sep 2024 09:01:46 GMT - [Weaving the Fabric of Life](https://freedium.cfd/https://medium.com/p/52db6a4debc6)
 - Sun, 29 Sep 2024 08:46:52 GMT - [“Blooming Dreams](https://freedium.cfd/https://medium.com/p/deb7c32c093e)
 - Sun, 29 Sep 2024 08:15:34 GMT - [How AI is Revolutionizing Protection from Cyber Threats](https://freedium.cfd/https://medium.com/p/52fb28e140ed)
-- Sun, 29 Sep 2024 07:42:12 GMT - [Navigating Compliance: How to meet cybersecurity requirements for GDPR and CCPA](https://freedium.cfd/https://medium.com/p/2e5205671a66)
-- Sun, 29 Sep 2024 07:27:22 GMT - [From Phishing to Malware: Defending Your Digital Life End](https://freedium.cfd/https://medium.com/p/e58de60c9049)
 
 ## https://medium.com/feed/tag/vulnerability
 - Sun, 29 Sep 2024 09:48:31 GMT - [I’m the best at giving advice, but terrible at taking it…](https://freedium.cfd/https://medium.com/p/c6aa34799ce0)
@@ -35,14 +35,14 @@
 - Sat, 28 Sep 2024 20:44:07 GMT - [Injection Vulnerabilities: More Than You Think](https://freedium.cfd/https://medium.com/p/e926332d4907)
 
 ## https://medium.com/feed/tag/cybersecurity
+- Sun, 29 Sep 2024 12:06:37 GMT - [Cyber Hygiene: Building a Culture of Security Awareness in Organizations](https://freedium.cfd/https://medium.com/p/f0b06868f1fe)
+- Sun, 29 Sep 2024 12:04:30 GMT - [The Rise of Cybersecurity Automation: Can AI Replace Human Analysts?](https://freedium.cfd/https://medium.com/p/3852a93ae3ca)
+- Sun, 29 Sep 2024 12:02:11 GMT - [The Role of Blockchain in Strengthening Cybersecurity: Hype or Hope?](https://freedium.cfd/https://medium.com/p/42e592c8dd69)
+- Sun, 29 Sep 2024 12:01:29 GMT - [Powershell Network Commandes](https://freedium.cfd/https://medium.com/p/63bf4f612ef9)
+- Sun, 29 Sep 2024 11:59:43 GMT - [Best Cyber Security Companies in Delhi: A Guide to Nishaj Infosolutions’ Expertise](https://freedium.cfd/https://medium.com/p/e1194f7ae884)
+- Sun, 29 Sep 2024 11:58:52 GMT - [The Rise of AI-Powered Cyber Threats: Understanding Adversarial Attacks and Defense Mechanisms](https://freedium.cfd/https://medium.com/p/82a1f62a573b)
 - Sun, 29 Sep 2024 11:37:40 GMT - [how i found union based sql injection in hackerone public vdp program?](https://freedium.cfd/https://medium.com/p/7c76d61f6c77)
 - Sun, 29 Sep 2024 11:36:52 GMT - [Step-by-Step Guide: Installing and Configuring a YUM/DNF Server for Local on Red Hat Linux](https://freedium.cfd/https://medium.com/p/aca101df1b81)
 - Sun, 29 Sep 2024 11:33:52 GMT - [Getting Preventive Security Right with Protect Function of NIST Cybersecurity Framework 2.0](https://freedium.cfd/https://medium.com/p/f84b847f5971)
 - Sun, 29 Sep 2024 11:31:43 GMT - [Essential Cybersecurity Practices for Businesses](https://freedium.cfd/https://medium.com/p/2c6ea70b2fd0)
-- Sun, 29 Sep 2024 11:24:44 GMT - [Hacking a Nuclear Warhead by Whisper](https://freedium.cfd/https://medium.com/p/2c21cf755b51)
-- Sun, 29 Sep 2024 11:15:35 GMT - [Kemudahan VS Keamanan dalam Usable Encryption](https://freedium.cfd/https://medium.com/p/688c009fbd55)
-- Sun, 29 Sep 2024 11:11:53 GMT - [Server Security with IIS Crypto](https://freedium.cfd/https://medium.com/p/8c27587e441a)
-- Sun, 29 Sep 2024 10:52:04 GMT - [Defense for Defense Contractors](https://freedium.cfd/https://medium.com/p/f40da2b4a3e0)
-- Sun, 29 Sep 2024 10:42:29 GMT - [CREST CPSA Review & OSCP-CRT Equivalency Program](https://freedium.cfd/https://medium.com/p/17c604446381)
-- Sun, 29 Sep 2024 10:27:37 GMT - [The Reality of Cyber Harassment!](https://freedium.cfd/https://medium.com/p/11d93ae53f72)
 
