@@ -35,6 +35,8 @@
 - Sun, 29 Sep 2024 07:14:10 GMT - [Programming Languages: Scope, Advantages, and Vulnerabilities](https://freedium.cfd/https://medium.com/p/efefd580d85a)
 
 ## https://medium.com/feed/tag/cybersecurity
+- Sun, 29 Sep 2024 22:35:52 GMT - [As professionals in the fields of computer science, we now face great challenges which were not on…](https://freedium.cfd/https://medium.com/p/d08ca8df4993)
+- Sun, 29 Sep 2024 22:35:00 GMT - [Conscious Delivery With DevSecOps](https://freedium.cfd/https://medium.com/p/5b6fa65535ec)
 - Sun, 29 Sep 2024 22:27:40 GMT - [HackTheBox Sherlock Writeup: Subatomic](https://freedium.cfd/https://medium.com/p/d0c9bd320c73)
 - Sun, 29 Sep 2024 22:21:19 GMT - [Protecting Yourself ONLINE](https://freedium.cfd/https://medium.com/p/ae739db6da77)
 - Sun, 29 Sep 2024 22:10:55 GMT - [Building “Quantum Key”: A Local Password Manager](https://freedium.cfd/https://medium.com/p/2ab8bc14ebf4)
@@ -43,8 +45,6 @@
 - Sun, 29 Sep 2024 21:23:02 GMT - [Security’s Weakest Link](https://freedium.cfd/https://medium.com/p/2c6be6ba9993)
 - Sun, 29 Sep 2024 21:21:00 GMT - [Gang stalking tacticas que usan](https://freedium.cfd/https://medium.com/p/80e18569aac2)
 - Sun, 29 Sep 2024 21:14:30 GMT - [Mental Health and the Law: How to Protect Your Business from Cyber Threats — A Legal Perspective](https://freedium.cfd/https://medium.com/p/5eeee1a34144)
-- Sun, 29 Sep 2024 20:52:37 GMT - [The Rise of Device Tampering: Analyzing the Lebanon Pager Explosions…](https://freedium.cfd/https://medium.com/p/2430429f7a46)
-- Sun, 29 Sep 2024 20:50:29 GMT - [The Death of the Password: Are Biometrics the Future of Authentication?](https://freedium.cfd/https://medium.com/p/286f2f5cec59)
 
 ## https://medium.com/feed/tag/penetration-testing
 - Sun, 29 Sep 2024 20:15:19 GMT - [Hack The Box: BoardLight Walkthrough](https://freedium.cfd/https://medium.com/p/f3949e54c71a)
@@ -59,6 +59,7 @@
 - Sun, 29 Sep 2024 06:50:44 GMT - [OWASP juice-shop login as an admin using SQLi and OSINT](https://freedium.cfd/https://medium.com/p/90c4abc4322b)
 
 ## https://medium.com/feed/tag/hacking
+- Sun, 29 Sep 2024 22:37:12 GMT - [DockerLabs | AguaDeMayo | by C4t0v3rfl0w](https://freedium.cfd/https://medium.com/p/ed11624dfa6a)
 - Sun, 29 Sep 2024 22:23:49 GMT - [The Art of Ha](https://freedium.cfd/https://medium.com/p/92ca23d1b174)
 - Sun, 29 Sep 2024 22:06:03 GMT - [When Programming Language Choice Determines the Survival of The City](https://freedium.cfd/https://medium.com/p/73ddc893b302)
 - Sun, 29 Sep 2024 20:15:19 GMT - [Hack The Box: BoardLight Walkthrough](https://freedium.cfd/https://medium.com/p/f3949e54c71a)
@@ -68,7 +69,6 @@
 - Sun, 29 Sep 2024 18:23:23 GMT - [Influencers Under Attack : Hackers Target YouTubers for Political and Crypto Campaigns](https://freedium.cfd/https://medium.com/p/c8da2174bf6b)
 - Sun, 29 Sep 2024 17:05:41 GMT - [DC-1](https://freedium.cfd/https://medium.com/p/42e3eeaa5363)
 - Sun, 29 Sep 2024 16:48:57 GMT - [Server-Side Request Forgery (SSRF): How Attackers Can Exploit Internal Networks](https://freedium.cfd/https://medium.com/p/417ed78ae69b)
-- Sun, 29 Sep 2024 16:28:06 GMT - [Understanding the DOM Clobbering Vulnerability in Rollup and How to Fix It](https://freedium.cfd/https://medium.com/p/d44d6cede3f1)
 
 ## https://medium.com/feed/tag/information-technology
 - Sun, 29 Sep 2024 21:45:21 GMT - [Scala Dreams, Go Realities, and Rusty AI Futures](https://freedium.cfd/https://medium.com/p/ab509cc08ef0)
