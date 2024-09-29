@@ -35,6 +35,7 @@
 - Sat, 28 Sep 2024 20:44:07 GMT - [Injection Vulnerabilities: More Than You Think](https://freedium.cfd/https://medium.com/p/e926332d4907)
 
 ## https://medium.com/feed/tag/cybersecurity
+- Sun, 29 Sep 2024 15:42:25 GMT - [Thailand Cyber Top Talent 2024 OPEN [Qualifier] — Reverse/Crypto/Programming — MaAowHa (มาเอาฮา)…](https://freedium.cfd/https://medium.com/p/1d08d6599bbd)
 - Sun, 29 Sep 2024 15:38:38 GMT - [Here I was wondering.](https://freedium.cfd/https://medium.com/p/ade08c28f9f8)
 - Sun, 29 Sep 2024 15:31:07 GMT - [GZR Observer Daily — Sep 29, 2024](https://freedium.cfd/https://medium.com/p/d0c0dc949dac)
 - Sun, 29 Sep 2024 15:24:01 GMT - [The Impact of 5G on Cybersecurity](https://freedium.cfd/https://medium.com/p/f76f32173207)
@@ -44,5 +45,4 @@
 - Sun, 29 Sep 2024 15:02:03 GMT - [Building Security into Infrastructure as Code from the Start](https://freedium.cfd/https://medium.com/p/9c6c74de12eb)
 - Sun, 29 Sep 2024 14:41:12 GMT - [Caue Moura is here to offer Surfshark VPN with a discount!](https://freedium.cfd/https://medium.com/p/ff63999f0024)
 - Sun, 29 Sep 2024 14:38:01 GMT - [Cybersecurity Trends to Watch in 2024](https://freedium.cfd/https://medium.com/p/24973dce45a2)
-- Sun, 29 Sep 2024 14:13:15 GMT - [Honest Guide offers Surfshark VPN with a discount — use today!](https://freedium.cfd/https://medium.com/p/61679f5dbb38)
 
