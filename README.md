@@ -11,6 +11,9 @@
 - Sat, 28 Sep 2024 17:04:59 GMT - [Exposed private key leads to Google cloud service account takeover — Privilege Escalation](https://freedium.cfd/https://medium.com/p/6f031e20c819)
 
 ## https://medium.com/feed/tag/security
+- Sun, 29 Sep 2024 06:23:26 GMT - [5 Reasons why NordVPN Is Best Streaming VPN in 2024](https://freedium.cfd/https://medium.com/p/8bd3abfd31b4)
+- Sun, 29 Sep 2024 06:23:23 GMT - [Types of Coverage Available Through Insurance Companies](https://freedium.cfd/https://medium.com/p/f4958ab174d5)
+- Sun, 29 Sep 2024 06:20:13 GMT - [How to Strengthen Kubernetes Security with Kube-bench](https://freedium.cfd/https://medium.com/p/86a2093e5639)
 - Sun, 29 Sep 2024 06:09:45 GMT - [Seed4.Me VPN Lifetime Subscription: Unlimited Secure Browsing](https://freedium.cfd/https://medium.com/p/496e91900ae2)
 - Sun, 29 Sep 2024 05:12:11 GMT - [Moments of Tranquility](https://freedium.cfd/https://medium.com/p/f39f67b238f2)
 - Sun, 29 Sep 2024 05:05:21 GMT - [Unlock Free Pokémon Brick Bronze Codes 2024](https://freedium.cfd/https://medium.com/p/39fb4c445de2)
@@ -18,8 +21,6 @@
 - Sun, 29 Sep 2024 04:34:23 GMT - [The Invisible Threat Lurking in Your Code: How Simple Scripts Can Destroy Your Cloud](https://freedium.cfd/https://medium.com/p/f4bff47f8429)
 - Sun, 29 Sep 2024 04:26:59 GMT - [The Windows Concept Journey — PCA (Program Compatibility Assistant)](https://freedium.cfd/https://medium.com/p/bb996edb22c9)
 - Sun, 29 Sep 2024 03:48:01 GMT - [What is the Zero Trust Security Model, How Does It Work, and Why Is It Important for Cloud, IoT…](https://freedium.cfd/https://medium.com/p/0d98eaf3b10b)
-- Sun, 29 Sep 2024 03:15:39 GMT - [The Benefits of Not Having Replace-by-Fee (RBF) in Radiant](https://freedium.cfd/https://medium.com/p/046fb0351a36)
-- Sun, 29 Sep 2024 03:07:01 GMT - [“Joy Without Limits](https://freedium.cfd/https://medium.com/p/503761ad36d6)
 
 ## https://medium.com/feed/tag/vulnerability
 - Sun, 29 Sep 2024 04:48:56 GMT - [Find Vulnerabilities With This Single Nmap Command](https://freedium.cfd/https://medium.com/p/a4476c16c82c)
@@ -34,14 +35,14 @@
 - Sat, 28 Sep 2024 09:35:35 GMT - [The Gloaming: The Comeback Kid](https://freedium.cfd/https://medium.com/p/b66b38698c98)
 
 ## https://medium.com/feed/tag/cybersecurity
+- Sun, 29 Sep 2024 06:38:01 GMT - [H7CTF — WEB CHALLENGES](https://freedium.cfd/https://medium.com/p/db1883775dfd)
+- Sun, 29 Sep 2024 06:29:04 GMT - [Let's find out if maths can Jailbreak AI through MathPrompts](https://freedium.cfd/https://medium.com/p/acffa0cc8b96)
+- Sun, 29 Sep 2024 06:28:48 GMT - [Why Future-Proof Security Is Essential for Modern Businesses](https://freedium.cfd/https://medium.com/p/7e675075b617)
+- Sun, 29 Sep 2024 06:22:57 GMT - [My Progress at Warren Tech](https://freedium.cfd/https://medium.com/p/5f65a5c6f995)
 - Sun, 29 Sep 2024 06:22:06 GMT - [What is a Trojan Horse Attack?](https://freedium.cfd/https://medium.com/p/478a63b786b8)
 - Sun, 29 Sep 2024 06:14:02 GMT - [Boostez Votre Projet E-Commerce: Les Clés du Succès en 2024](https://freedium.cfd/https://medium.com/p/e9c3e8f9fb3a)
 - Sun, 29 Sep 2024 06:00:23 GMT - [Today’s Top Cyber Intelligence Highlights — Sep 29, 2024](https://freedium.cfd/https://medium.com/p/f9a9f7c37c5b)
 - Sun, 29 Sep 2024 05:58:23 GMT - [️Day 28: Investigate Mythic Agent](https://freedium.cfd/https://medium.com/p/5728074bf8e0)
 - Sun, 29 Sep 2024 05:51:13 GMT - [How to Find Past Wi-Fi Connections on Windows in Python](https://freedium.cfd/https://medium.com/p/e7c14fdcbab8)
 - Sun, 29 Sep 2024 05:47:44 GMT - [Digital Forensics Basics: Metadata Extraction with pdfinfo and exiftool](https://freedium.cfd/https://medium.com/p/ae812dff2a9c)
-- Sun, 29 Sep 2024 05:40:04 GMT - [How robots.txt Misconfigurations Can Expose Your Site](https://freedium.cfd/https://medium.com/p/3f173a81e813)
-- Sun, 29 Sep 2024 05:39:53 GMT - [Privacy concern bug](https://freedium.cfd/https://medium.com/p/72b30aead215)
-- Sun, 29 Sep 2024 05:02:04 GMT - [How to Find Bugs and Vulnerabilities Using ChatGPT: Guaranteed Results](https://freedium.cfd/https://medium.com/p/3b630fae4691)
-- Sun, 29 Sep 2024 04:48:56 GMT - [Find Vulnerabilities With This Single Nmap Command](https://freedium.cfd/https://medium.com/p/a4476c16c82c)
 
