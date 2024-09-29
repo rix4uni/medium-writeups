@@ -289,6 +289,7 @@
 - Tue, 16 Jul 2024 11:42:48 GMT - [Footprinting and Reconnaissance — Advanced Google Hacking](https://freedium.cfd/https://medium.com/p/e9870c70fc30)
 
 ## https://medium.com/feed/tag/cyber-security-awareness
+- Sun, 29 Sep 2024 21:43:44 GMT - [Pentingnya Cyber Security! Melindungi Bisnis Anda dari Ancaman Digital](https://freedium.cfd/https://medium.com/p/a6df45de02e3)
 - Sun, 29 Sep 2024 21:23:02 GMT - [Security’s Weakest Link](https://freedium.cfd/https://medium.com/p/2c6be6ba9993)
 - Sun, 29 Sep 2024 21:14:30 GMT - [Mental Health and the Law: How to Protect Your Business from Cyber Threats — A Legal Perspective](https://freedium.cfd/https://medium.com/p/5eeee1a34144)
 - Sun, 29 Sep 2024 19:38:57 GMT - [Understanding Online Friendship Fraud: Step-by-Step Guide To Protect Yourself](https://freedium.cfd/https://medium.com/p/fe48c8a48d1b)
@@ -298,7 +299,6 @@
 - Sun, 29 Sep 2024 16:20:55 GMT - [Zero Trust !](https://freedium.cfd/https://medium.com/p/5acdafdf1c78)
 - Sun, 29 Sep 2024 14:04:17 GMT - [Hidden Malware Hackers Are Recording The Screen Of Android Phones](https://freedium.cfd/https://medium.com/p/8826f43464da)
 - Sun, 29 Sep 2024 11:59:43 GMT - [Best Cyber Security Companies in Delhi: A Guide to Nishaj Infosolutions’ Expertise](https://freedium.cfd/https://medium.com/p/e1194f7ae884)
-- Sun, 29 Sep 2024 11:37:40 GMT - [how i found union based sql injection in hackerone public vdp program?](https://freedium.cfd/https://medium.com/p/7c76d61f6c77)
 
 ## https://medium.com/feed/tag/google-dork
 - Sun, 29 Sep 2024 10:24:58 GMT - [Mastering Advanced Google Dorks for Ethical Hacking and Vulnerability Discovery](https://freedium.cfd/https://medium.com/p/6d9e3dde0433)
