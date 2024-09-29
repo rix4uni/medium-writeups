@@ -11,16 +11,16 @@
 - Sun, 29 Sep 2024 10:24:58 GMT - [Mastering Advanced Google Dorks for Ethical Hacking and Vulnerability Discovery](https://freedium.cfd/https://medium.com/p/6d9e3dde0433)
 
 ## https://medium.com/feed/tag/security
+- Sun, 29 Sep 2024 22:37:30 GMT - [The Quest for Meaning](https://freedium.cfd/https://medium.com/p/07f725ae5097)
+- Sun, 29 Sep 2024 22:31:41 GMT - [The Last Goodbye](https://freedium.cfd/https://medium.com/p/eb2d9da0066b)
+- Sun, 29 Sep 2024 22:26:54 GMT - [My Quest for Identity](https://freedium.cfd/https://medium.com/p/ac22267db574)
+- Sun, 29 Sep 2024 22:26:54 GMT - [The Strength to Choose:](https://freedium.cfd/https://medium.com/p/53d7e2e07573)
 - Sun, 29 Sep 2024 22:17:43 GMT - [WEDNESDAY: Episode 2 — Into the Shadows](https://freedium.cfd/https://medium.com/p/100d60fb079d)
 - Sun, 29 Sep 2024 22:11:40 GMT - [Lost and Found](https://freedium.cfd/https://medium.com/p/1ec0931307e5)
 - Sun, 29 Sep 2024 22:11:40 GMT - [The Language of Design](https://freedium.cfd/https://medium.com/p/31a91d4ef0f9)
 - Sun, 29 Sep 2024 22:07:01 GMT - [Speed Matters](https://freedium.cfd/https://medium.com/p/14d1278410e0)
 - Sun, 29 Sep 2024 22:02:55 GMT - [Creating Engaging Content](https://freedium.cfd/https://medium.com/p/f5ba4cdabc86)
 - Sun, 29 Sep 2024 21:51:45 GMT - [Ranking the Best Vegetarian Dishes](https://freedium.cfd/https://medium.com/p/caddea97c7a3)
-- Sun, 29 Sep 2024 21:47:01 GMT - [Wisdom from the Sidelines:](https://freedium.cfd/https://medium.com/p/4914ce4468eb)
-- Sun, 29 Sep 2024 21:41:42 GMT - [Facing the Storm](https://freedium.cfd/https://medium.com/p/fdd0f344e8d8)
-- Sun, 29 Sep 2024 21:41:42 GMT - [Seeing with Fresh Eyes](https://freedium.cfd/https://medium.com/p/cb03688071d3)
-- Sun, 29 Sep 2024 21:31:41 GMT - [The Magnetic Soul](https://freedium.cfd/https://medium.com/p/d8d125cf9405)
 
 ## https://medium.com/feed/tag/vulnerability
 - Sun, 29 Sep 2024 19:07:49 GMT - [Goosebumps…Sexy Goosebumps.](https://freedium.cfd/https://medium.com/p/ae7b393f3517)
