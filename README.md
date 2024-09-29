@@ -11,16 +11,16 @@
 - Sun, 29 Sep 2024 09:42:18 GMT - [SMTP/s — Port 25,465,587 For pentesters](https://freedium.cfd/https://medium.com/p/3e5706e081e9)
 
 ## https://medium.com/feed/tag/security
+- Sun, 29 Sep 2024 19:23:08 GMT - [Threat Modeling for Non-Security Experts](https://freedium.cfd/https://medium.com/p/f31bd58d309d)
+- Sun, 29 Sep 2024 19:21:30 GMT - [Out with the Old](https://freedium.cfd/https://medium.com/p/e2dece5fb6a3)
+- Sun, 29 Sep 2024 19:17:50 GMT - [Europol Takes Down Massive Phishing Network Targeting Over 480,000 Victims](https://freedium.cfd/https://medium.com/p/4547b6ef96ed)
+- Sun, 29 Sep 2024 19:13:02 GMT - [WEDNESDAY](https://freedium.cfd/https://medium.com/p/2bc8073b94d2)
+- Sun, 29 Sep 2024 19:12:58 GMT - [Women in Leadership](https://freedium.cfd/https://medium.com/p/4f932cc1eeb7)
 - Sun, 29 Sep 2024 19:06:54 GMT - [Six Months of Surprises](https://freedium.cfd/https://medium.com/p/1ee700e25b9e)
 - Sun, 29 Sep 2024 19:06:02 GMT - [Designing Your Journey to Success](https://freedium.cfd/https://medium.com/p/2149b33281e4)
 - Sun, 29 Sep 2024 19:01:32 GMT - [From Batter to Brand](https://freedium.cfd/https://medium.com/p/a3e6ab56f1df)
 - Sun, 29 Sep 2024 18:51:30 GMT - [Property Ads and Design](https://freedium.cfd/https://medium.com/p/626c96db805b)
 - Sun, 29 Sep 2024 18:50:17 GMT - [Understanding Persuasion](https://freedium.cfd/https://medium.com/p/29fbe1972217)
-- Sun, 29 Sep 2024 18:45:29 GMT - [Set Yourself Up for Success:](https://freedium.cfd/https://medium.com/p/fa14eee49917)
-- Sun, 29 Sep 2024 18:41:26 GMT - [Facing Fear:](https://freedium.cfd/https://medium.com/p/a2642ee5fbb3)
-- Sun, 29 Sep 2024 18:29:26 GMT - [Experience Speaks](https://freedium.cfd/https://medium.com/p/eb671e9b7fde)
-- Sun, 29 Sep 2024 18:21:33 GMT - [Understanding Meta Descriptions](https://freedium.cfd/https://medium.com/p/06d0a1d67a88)
-- Sun, 29 Sep 2024 18:16:19 GMT - [StaticKuber:Enhancing Kubernetes Security and Best Practices with Real-Time VS Code Extension](https://freedium.cfd/https://medium.com/p/b68f0da26c1b)
 
 ## https://medium.com/feed/tag/vulnerability
 - Sun, 29 Sep 2024 19:07:49 GMT - [Goosebumps…Sexy Goosebumps.](https://freedium.cfd/https://medium.com/p/ae7b393f3517)
@@ -35,6 +35,9 @@
 - Sun, 29 Sep 2024 07:14:10 GMT - [Programming Languages: Scope, Advantages, and Vulnerabilities](https://freedium.cfd/https://medium.com/p/efefd580d85a)
 
 ## https://medium.com/feed/tag/cybersecurity
+- Sun, 29 Sep 2024 19:24:26 GMT - [NHI Use Case-1: Cross-Organization API Acess using API Keys](https://freedium.cfd/https://medium.com/p/0c9952e706a1)
+- Sun, 29 Sep 2024 19:20:52 GMT - [I will craft cybersecurity, tech, IT manager, data analyst, and business analyst resume](https://freedium.cfd/https://medium.com/p/2844150f4cfb)
+- Sun, 29 Sep 2024 19:15:36 GMT - [Data Science VS Project Management VS Cyber Security](https://freedium.cfd/https://medium.com/p/3f22bf4dc106)
 - Sun, 29 Sep 2024 19:10:17 GMT - [Web Security Academy: CSRF — Broken Referer validation](https://freedium.cfd/https://medium.com/p/e9f7e6f7d4a7)
 - Sun, 29 Sep 2024 19:06:03 GMT - [Belajar IT Tidak Semudah Membalikkan Telapak Kaki Gajah](https://freedium.cfd/https://medium.com/p/eaeffe52a5de)
 - Sun, 29 Sep 2024 19:03:31 GMT - [Day 29 of 30 Days MyDFIR SOC Analyst Challenge](https://freedium.cfd/https://medium.com/p/d348b8e8f2fc)
@@ -42,7 +45,4 @@
 - Sun, 29 Sep 2024 18:47:10 GMT - [The Apex of Global Cybersecurity: A Zero Trust, AI-Powered, Self-Replicating Defense System for G7…](https://freedium.cfd/https://medium.com/p/bb2134fae61d)
 - Sun, 29 Sep 2024 18:35:57 GMT - [Mayor of London Launches iREPORTit Mobile App Developed by Raven Science in Collaboration with MIT…](https://freedium.cfd/https://medium.com/p/3c2eb6ff4a36)
 - Sun, 29 Sep 2024 18:32:11 GMT - [Top IT Challenges: Navigating the Modern Business Landscape](https://freedium.cfd/https://medium.com/p/27c4c9aba7f1)
-- Sun, 29 Sep 2024 18:23:53 GMT - [COMPTIA Security+ Questions](https://freedium.cfd/https://medium.com/p/f063bf2f9e4e)
-- Sun, 29 Sep 2024 18:23:23 GMT - [Influencers Under Attack : Hackers Target YouTubers for Political and Crypto Campaigns](https://freedium.cfd/https://medium.com/p/c8da2174bf6b)
-- Sun, 29 Sep 2024 18:21:03 GMT - [Understanding Keyloggers :](https://freedium.cfd/https://medium.com/p/e2a9fe9ea89e)
 
