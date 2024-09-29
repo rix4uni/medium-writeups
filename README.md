@@ -11,6 +11,8 @@
 - Sun, 29 Sep 2024 10:24:58 GMT - [Mastering Advanced Google Dorks for Ethical Hacking and Vulnerability Discovery](https://freedium.cfd/https://medium.com/p/6d9e3dde0433)
 
 ## https://medium.com/feed/tag/security
+- Sun, 29 Sep 2024 20:41:33 GMT - [The Secrets of the Sea](https://freedium.cfd/https://medium.com/p/d2c05bf4d262)
+- Sun, 29 Sep 2024 20:36:52 GMT - [Dear Younger Me](https://freedium.cfd/https://medium.com/p/ae455ad85d1c)
 - Sun, 29 Sep 2024 20:31:30 GMT - [Pages of Friendship](https://freedium.cfd/https://medium.com/p/5b47cc542791)
 - Sun, 29 Sep 2024 20:26:52 GMT - [Get to the Top of Google](https://freedium.cfd/https://medium.com/p/2de11af777db)
 - Sun, 29 Sep 2024 20:16:54 GMT - [Transforming Business](https://freedium.cfd/https://medium.com/p/84cf721db4ec)
@@ -19,8 +21,6 @@
 - Sun, 29 Sep 2024 20:06:55 GMT - [On-Page SEO in 2024](https://freedium.cfd/https://medium.com/p/dfff719332c3)
 - Sun, 29 Sep 2024 20:06:55 GMT - [30 Days of Silence](https://freedium.cfd/https://medium.com/p/2c953d25935d)
 - Sun, 29 Sep 2024 20:01:41 GMT - [Rooted and Resilient](https://freedium.cfd/https://medium.com/p/41c4c6fa97e1)
-- Sun, 29 Sep 2024 19:52:01 GMT - [Two Faces of Ambition](https://freedium.cfd/https://medium.com/p/87c0a81ce800)
-- Sun, 29 Sep 2024 19:51:28 GMT - [Get Your Ducks in a Row: Analyzing AWS VPC flow logs with DuckDB](https://freedium.cfd/https://medium.com/p/0ef3d3465a67)
 
 ## https://medium.com/feed/tag/vulnerability
 - Sun, 29 Sep 2024 19:07:49 GMT - [Goosebumps…Sexy Goosebumps.](https://freedium.cfd/https://medium.com/p/ae7b393f3517)
@@ -35,6 +35,7 @@
 - Sun, 29 Sep 2024 07:14:10 GMT - [Programming Languages: Scope, Advantages, and Vulnerabilities](https://freedium.cfd/https://medium.com/p/efefd580d85a)
 
 ## https://medium.com/feed/tag/cybersecurity
+- Sun, 29 Sep 2024 20:31:09 GMT - [I will write pro resumes in 24hrs for sales, tech, engineering, IT, SDR, banking, executives, and…](https://freedium.cfd/https://medium.com/p/0dfeab00b05f)
 - Sun, 29 Sep 2024 20:15:19 GMT - [Hack The Box: BoardLight Walkthrough](https://freedium.cfd/https://medium.com/p/f3949e54c71a)
 - Sun, 29 Sep 2024 20:13:38 GMT - [So what exactly is a network?](https://freedium.cfd/https://medium.com/p/7619d7f0da4a)
 - Sun, 29 Sep 2024 20:11:23 GMT - [Why the P vs NP problem is crucial to cybersecurity](https://freedium.cfd/https://medium.com/p/8208c3457e2a)
@@ -44,7 +45,6 @@
 - Sun, 29 Sep 2024 19:38:57 GMT - [Understanding Online Friendship Fraud: Step-by-Step Guide To Protect Yourself](https://freedium.cfd/https://medium.com/p/fe48c8a48d1b)
 - Sun, 29 Sep 2024 19:32:22 GMT - [Why You Still Need a VPN on Your Cellular Network](https://freedium.cfd/https://medium.com/p/c02cb73051b3)
 - Sun, 29 Sep 2024 19:27:51 GMT - [Zscaler Brings Clarity to Cybersecurity with Zero Trust and AI](https://freedium.cfd/https://medium.com/p/667ef7d7fdc7)
-- Sun, 29 Sep 2024 19:24:26 GMT - [NHI Use Case-1: Cross-Organization API Acess using API Keys](https://freedium.cfd/https://medium.com/p/0c9952e706a1)
 
 ## https://medium.com/feed/tag/penetration-testing
 - Sun, 29 Sep 2024 20:15:19 GMT - [Hack The Box: BoardLight Walkthrough](https://freedium.cfd/https://medium.com/p/f3949e54c71a)
@@ -312,91 +312,14 @@
 - Fri, 30 Aug 2024 09:01:38 GMT - [Google Dorks](https://freedium.cfd/https://medium.com/p/c83abf0918ef)
 - Thu, 29 Aug 2024 09:28:56 GMT - [Top Google Dorks Explained ](https://freedium.cfd/https://medium.com/p/4d6125077ef0)
 
-## https://medium.com/feed/tag/web-pentest
-- Sun, 14 Jul 2024 11:56:11 GMT - [How I Can Get P1 Nasa easily — Dorking](https://freedium.cfd/https://medium.com/p/c9c4a4cee251)
-- Mon, 21 Nov 2022 22:42:17 GMT - [Explorando XSS no lugar do meu nome.](https://freedium.cfd/https://medium.com/p/4a480c474b55)
-- Sun, 17 Nov 2019 17:19:06 GMT - [ASIS CTF — Protected Area 1 & 2 Walkthrough](https://freedium.cfd/https://medium.com/p/5e6db7869658)
-
-## https://medium.com/feed/tag/vdp
-- Mon, 16 Sep 2024 16:59:52 GMT - [A VDP szerepe a NIS 2 megfelelésben: Amit a sérülékenység közzétételi irányelvről tudni kell](https://freedium.cfd/https://medium.com/p/8d9eecf64625)
-- Fri, 06 Sep 2024 15:36:42 GMT - [NIS 2 irányelv — Mit kell tudnia a magyar cégeknek?](https://freedium.cfd/https://medium.com/p/fb9c2003afe9)
-- Fri, 05 Jul 2024 14:49:02 GMT - [How I Found Critical Bugs :: SQL Injection → Compromised 10+ Govt. website’s Whole Databases !!](https://freedium.cfd/https://medium.com/p/ad55899ff5db)
-- Mon, 10 Jun 2024 10:41:48 GMT - [Voice-Directed Picking Systems Enhance Efficiency in Supply Chain Management](https://freedium.cfd/https://medium.com/p/169e47cb4fae)
-- Sun, 09 Jun 2024 17:25:57 GMT - [HOW I HACKED NASA?](https://freedium.cfd/https://medium.com/p/0715b6b5d7b8)
-- Sat, 13 Apr 2024 14:57:04 GMT - [information disclosure leads to accessing “access log” file](https://freedium.cfd/https://medium.com/p/da8f983de499)
-- Sun, 07 Apr 2024 00:03:55 GMT - [Navigating Vulnerability Disclosure Programs: A Researcher’s Responsibility](https://freedium.cfd/https://medium.com/p/43b8e7c1b556)
-- Mon, 18 Mar 2024 00:23:13 GMT - [海外FXのVDPとは？](https://freedium.cfd/https://medium.com/p/ebabd852f02e)
-- Wed, 13 Mar 2024 21:57:04 GMT - [Revealing Hidden Gems: Sneak Peek into Offline Publication Secrets](https://freedium.cfd/https://medium.com/p/b67ef884391b)
-- Mon, 04 Dec 2023 10:14:16 GMT - [Elevating Security: Whatfix Transition to a Custom Vulnerability Disclosure Program (VDP)](https://freedium.cfd/https://medium.com/p/e6d5a7e11c9d)
-
-## https://medium.com/feed/tag/information-disclosure
-- Fri, 27 Sep 2024 19:50:18 GMT - [Portswigger Information disclosure in version control history](https://freedium.cfd/https://medium.com/p/54d0fcdd6f76)
-- Fri, 27 Sep 2024 18:29:41 GMT - [PortSwigger Authentication bypass via information disclosure](https://freedium.cfd/https://medium.com/p/60bb98e92359)
-- Fri, 27 Sep 2024 18:05:11 GMT - [PortSwigger Source code disclosure via backup files](https://freedium.cfd/https://medium.com/p/113b87d20445)
-- Fri, 27 Sep 2024 17:43:50 GMT - [Portswigger Information disclosure on debug page](https://freedium.cfd/https://medium.com/p/eeb2498a436b)
-- Fri, 27 Sep 2024 17:26:33 GMT - [Portswigger information disclosure](https://freedium.cfd/https://medium.com/p/862d03567fab)
-- Fri, 27 Sep 2024 14:32:00 GMT - [HTML — Source code Root Me](https://freedium.cfd/https://medium.com/p/ababa3c98505)
-- Fri, 27 Sep 2024 14:20:45 GMT - [Backup File Root me](https://freedium.cfd/https://medium.com/p/6a6f9a16d6d3)
-- Fri, 27 Sep 2024 09:51:07 GMT - [️ Information Disclosure Vulnerability: Exposing API Keys and Tokens in a Private Program](https://freedium.cfd/https://medium.com/p/e06c4d110552)
-- Sat, 21 Sep 2024 18:31:38 GMT - [Accessing full history of Firepad users.](https://freedium.cfd/https://medium.com/p/ddc889e73936)
-- Wed, 18 Sep 2024 14:19:18 GMT - [Strategi Menghadapi Information Disclosure: Kunci Keamanan Aplikasi Web yang Efektif](https://freedium.cfd/https://medium.com/p/bad511031986)
-
-## https://medium.com/feed/tag/exploit
-- Sat, 28 Sep 2024 11:02:55 GMT - [Dragon](https://freedium.cfd/https://medium.com/p/b2a2f2e62abd)
-- Fri, 27 Sep 2024 21:32:45 GMT - [The Art of the Phantom Deposit: a study on vulnerabilities in crypto exchanges](https://freedium.cfd/https://medium.com/p/3a356153bfe2)
-- Thu, 26 Sep 2024 19:39:38 GMT - [PentesterLab CVE-2014–6271](https://freedium.cfd/https://medium.com/p/1f7acba07af1)
-- Thu, 26 Sep 2024 09:32:56 GMT - [SSH Hacking: How to Exploit Port 22 Vulnerabilities for Penetration Testing](https://freedium.cfd/https://medium.com/p/601d257ee491)
-- Thu, 26 Sep 2024 08:45:23 GMT - [Simulating EternalBlue: A Hands-on Approach to Understanding Exploits](https://freedium.cfd/https://medium.com/p/9419b68e5e0b)
-- Thu, 26 Sep 2024 08:24:26 GMT - [WAF Bypass Techniques: How to Exploit SQL Injection Vulnerabilities Like a Pro](https://freedium.cfd/https://medium.com/p/20d9e741a728)
-- Wed, 25 Sep 2024 16:06:38 GMT - [Kerentanan Kritis : Bypass Autentikasi (CVE-2024–7593) pada Ivanti vTM: Penjelasan dan Tindakan…](https://freedium.cfd/https://medium.com/p/77d159f53199)
-- Tue, 24 Sep 2024 14:30:45 GMT - [EternalBlue (MS17–010/CVE-2017–0144): Exploit and Vulnerability Overview](https://freedium.cfd/https://medium.com/p/e9e22b84534f)
-- Tue, 24 Sep 2024 10:13:43 GMT - [Security Audit Report on LBANK Exchange](https://freedium.cfd/https://medium.com/p/3918ec7a6d2f)
-- Sat, 21 Sep 2024 15:14:29 GMT - [Astaroth Saldırısı Nedir?](https://freedium.cfd/https://medium.com/p/71e3b16ffba9)
-
-## https://medium.com/feed/tag/vulnerability-disclosure
-- Sun, 08 Sep 2024 14:59:02 GMT - [Why choose managed Vulnerability Disclosure Programs (mVDP)?](https://freedium.cfd/https://medium.com/p/9c3dab6239e1)
-- Fri, 06 Sep 2024 15:36:42 GMT - [NIS 2 irányelv — Mit kell tudnia a magyar cégeknek?](https://freedium.cfd/https://medium.com/p/fb9c2003afe9)
-- Tue, 13 Aug 2024 15:14:05 GMT - [How I Discovered a Directory Listing Vulnerability on a NASA Subdomain](https://freedium.cfd/https://medium.com/p/979883e47874)
-- Sun, 30 Jun 2024 17:38:55 GMT - [Exploiting Cache Poisoning via Unkeyed Parameters and Headers in a Drupal Application](https://freedium.cfd/https://medium.com/p/db7a49a67ed4)
-- Sat, 01 Jun 2024 18:27:24 GMT - [Unveiling the Sneaky CSV Injection: VDP vs. Objective-Based Offensive Tactics](https://freedium.cfd/https://medium.com/p/208b22b8bba1)
-- Thu, 21 Mar 2024 12:43:13 GMT - [Vulnerability Disclosure vs Bug Bounty: What’s the difference and why it matters](https://freedium.cfd/https://medium.com/p/ce99be906b1c)
-- Tue, 06 Feb 2024 17:01:45 GMT - [Social Cyber Lab: Vulnerability Management and Bug Bounties](https://freedium.cfd/https://medium.com/p/d2621e2cd356)
-- Mon, 22 Jan 2024 21:50:24 GMT - [The UK’s new PSTI Act for IoT devices: how it impacts you & how Hackrate can help](https://freedium.cfd/https://medium.com/p/0593b07f7327)
-- Mon, 04 Dec 2023 10:14:16 GMT - [Elevating Security: Whatfix Transition to a Custom Vulnerability Disclosure Program (VDP)](https://freedium.cfd/https://medium.com/p/e6d5a7e11c9d)
-
-## https://medium.com/feed/tag/web-cache-poisoning
-- Wed, 21 Aug 2024 06:39:23 GMT - [Advanced Web Cache Poisoning Techniques (Part 2): Tools, Methods, and Exploits](https://freedium.cfd/https://medium.com/p/d35619d4bd75)
-- Wed, 14 Aug 2024 23:50:11 GMT - [HTTP Request Smuggling ile Web Cache Poisoning | Deception Saldırıları](https://freedium.cfd/https://medium.com/p/0f77746a9793)
-- Wed, 07 Aug 2024 04:47:50 GMT - [Unraveling Web Cache Poisoning: A Deep Dive (Part 1)](https://freedium.cfd/https://medium.com/p/027907222bd6)
-- Wed, 24 Jul 2024 20:52:37 GMT - [Web Cache Poisoning: What It Is and How to Protect Against It](https://freedium.cfd/https://medium.com/p/34f31bd516f3)
-- Sun, 30 Jun 2024 17:38:55 GMT - [Exploiting Cache Poisoning via Unkeyed Parameters and Headers in a Drupal Application](https://freedium.cfd/https://medium.com/p/db7a49a67ed4)
-- Wed, 12 Jun 2024 09:33:36 GMT - [Web Cache Poisoning Attack](https://freedium.cfd/https://medium.com/p/1459e65e3774)
-- Fri, 31 May 2024 22:36:34 GMT - [Advanced Web Cache Poisoning](https://freedium.cfd/https://medium.com/p/e6e17d5290ce)
-- Sun, 07 Apr 2024 22:43:23 GMT - [Web Uygulamalarında Web Cache Zafiyeti ve Etkileri](https://freedium.cfd/https://medium.com/p/64e62cd80d9b)
-- Wed, 28 Feb 2024 07:28:36 GMT - [Web Cache Poisoning](https://freedium.cfd/https://medium.com/p/1558f2aa41ef)
-- Thu, 25 Jan 2024 19:54:58 GMT - [İleri Seviye Web Cache Poisoning Zafiyetlerinin Tespiti ve Exploit Edilmesi](https://freedium.cfd/https://medium.com/p/176a1f6069d1)
-
-## https://medium.com/feed/tag/rce
-- Sun, 29 Sep 2024 07:13:24 GMT - [Performing a Dependency Confusion Attack with Remote Code Execution (RCE): A Step-by-Step Guide](https://freedium.cfd/https://medium.com/p/8d6055aa53e4)
-- Mon, 23 Sep 2024 12:52:54 GMT - [Critical Vulnerability discovered in Microchip ASF leads IoT Devices at Risk of Remote Code…](https://freedium.cfd/https://medium.com/p/11e431c7d7df)
-- Wed, 18 Sep 2024 18:21:08 GMT - [Broadcom fixes critical RCE bug in VMware vCenter Server](https://freedium.cfd/https://medium.com/p/1311c1d5eb80)
-- Fri, 13 Sep 2024 11:12:52 GMT - [SQL injection to RCE exploitation](https://freedium.cfd/https://medium.com/p/0a5048e592be)
-- Tue, 10 Sep 2024 23:24:25 GMT - [How I got RCE on an Indian university without admin credentials Tale of directory listing, SQL…](https://freedium.cfd/https://medium.com/p/1f77e2933011)
-- Sat, 07 Sep 2024 10:37:40 GMT - [Day 29 of 30 Day — 30 Vulnerabilities | Remote Code Execution (RCE)](https://freedium.cfd/https://medium.com/p/eb3f8f7ccf62)
-- Thu, 05 Sep 2024 09:21:42 GMT - [What is Remote Code Execution? Types, Impact, Technique, and Prevention to Know](https://freedium.cfd/https://medium.com/p/32bd7387ff74)
-- Mon, 02 Sep 2024 12:54:55 GMT - [TryHackMe : Publisher (easy)](https://freedium.cfd/https://medium.com/p/c73ba2e8fa57)
-- Fri, 30 Aug 2024 20:40:09 GMT - [CVE-2024–44809: Remote Code Execution in Raspberry Pi Camera Project](https://freedium.cfd/https://medium.com/p/4b8e3486a628)
-
-## https://medium.com/feed/tag/remote-code-execution
-- Mon, 23 Sep 2024 12:52:54 GMT - [Critical Vulnerability discovered in Microchip ASF leads IoT Devices at Risk of Remote Code…](https://freedium.cfd/https://medium.com/p/11e431c7d7df)
-- Sun, 22 Sep 2024 23:17:22 GMT - [RCE (Remote Code Execution)in Zoneminder up to 1.36.33](https://freedium.cfd/https://medium.com/p/0686f5bcd370)
-- Sat, 21 Sep 2024 05:00:41 GMT - [Exploring PsExec.py: A Powerful Tool for Remote Code Execution](https://freedium.cfd/https://medium.com/p/820c6296d28a)
-- Thu, 19 Sep 2024 16:12:35 GMT - [“Flimsy” — Proving Grounds(Offsec)](https://freedium.cfd/https://medium.com/p/5f18318b2750)
-- Wed, 18 Sep 2024 18:21:08 GMT - [Broadcom fixes critical RCE bug in VMware vCenter Server](https://freedium.cfd/https://medium.com/p/1311c1d5eb80)
-- Wed, 18 Sep 2024 00:55:18 GMT - [[2,500$ Bug Bounty Write-Up] Remote Code Execution (RCE) via unclaimed Node package](https://freedium.cfd/https://medium.com/p/6b9108d10643)
-- Sun, 15 Sep 2024 13:06:49 GMT - [POC — Unauthenticated RCE Flaw in Rejetto HTTP File Server — CVE-2024–23692](https://freedium.cfd/https://medium.com/p/d014c26ab5e4)
-- Wed, 11 Sep 2024 20:59:20 GMT - [Hack the Box — Pennyworth](https://freedium.cfd/https://medium.com/p/4aa67975bb08)
-
+Error parsing XML from https://medium.com/feed/tag/web-pentest: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/vdp: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/information-disclosure: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/exploit: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/vulnerability-disclosure: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/web-cache-poisoning: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/rce: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/remote-code-execution: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/local-file-inclusion: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/vapt: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/dorks: XML syntax error on line 1: expected element name after <
