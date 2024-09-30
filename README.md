@@ -11,6 +11,8 @@
 - Sun, 29 Sep 2024 10:24:58 GMT - [Mastering Advanced Google Dorks for Ethical Hacking and Vulnerability Discovery](https://freedium.cfd/https://medium.com/p/6d9e3dde0433)
 
 ## https://medium.com/feed/tag/security
+- Mon, 30 Sep 2024 04:52:11 GMT - [The Content Debate](https://freedium.cfd/https://medium.com/p/2a9d7907319e)
+- Mon, 30 Sep 2024 04:46:54 GMT - [The Discipline Toolkit:](https://freedium.cfd/https://medium.com/p/0abc2efddaf0)
 - Mon, 30 Sep 2024 04:42:04 GMT - [Everyday Happiness](https://freedium.cfd/https://medium.com/p/42a9a1466dd5)
 - Mon, 30 Sep 2024 04:37:01 GMT - [Majesty of the Wild](https://freedium.cfd/https://medium.com/p/fa7edc16fefe)
 - Mon, 30 Sep 2024 04:37:01 GMT - [Iced Coffee](https://freedium.cfd/https://medium.com/p/5c7fe1b9b25f)
@@ -19,8 +21,6 @@
 - Mon, 30 Sep 2024 04:31:58 GMT - [Unlocking Potential:](https://freedium.cfd/https://medium.com/p/f3b518680689)
 - Mon, 30 Sep 2024 04:31:46 GMT - [In-Depth Analysis: Wednesday Episode 3](https://freedium.cfd/https://medium.com/p/0f1c8c3cec42)
 - Mon, 30 Sep 2024 04:30:27 GMT - [Wyndham Hotel & Resorts In Carson City1–844–987–7017](https://freedium.cfd/https://medium.com/p/e0a0015753d2)
-- Mon, 30 Sep 2024 04:30:25 GMT - [Breaking the Chains: How FreeBnk is Redefining Financial Freedom](https://freedium.cfd/https://medium.com/p/c2242dd81296)
-- Mon, 30 Sep 2024 04:21:58 GMT - [Embassy Suites In Georgia1–844–987–7017](https://freedium.cfd/https://medium.com/p/e0d4464efe4c)
 
 ## https://medium.com/feed/tag/vulnerability
 - Mon, 30 Sep 2024 04:19:25 GMT - [The Paradox of Love: A Battle of Emotions](https://freedium.cfd/https://medium.com/p/73e83bfd0dc9)
@@ -35,6 +35,7 @@
 - Sun, 29 Sep 2024 09:48:31 GMT - [I’m the best at giving advice, but terrible at taking it…](https://freedium.cfd/https://medium.com/p/c6aa34799ce0)
 
 ## https://medium.com/feed/tag/cybersecurity
+- Mon, 30 Sep 2024 04:57:50 GMT - [Shiftleft and Segregation of Duties Policies for Minimizing NHI Exposure](https://freedium.cfd/https://medium.com/p/4da584c0a018)
 - Mon, 30 Sep 2024 04:21:37 GMT - [8420188104//how do i complain to blinkit?you](https://freedium.cfd/https://medium.com/p/6ceebb31a95a)
 - Mon, 30 Sep 2024 04:19:42 GMT - [8420188104//how do i complain to blinkit?you](https://freedium.cfd/https://medium.com/p/1258e0e69291)
 - Mon, 30 Sep 2024 04:07:46 GMT - [Cybersecurity in 2024: Navigating the New Threat Landscape](https://freedium.cfd/https://medium.com/p/2dfc8145350a)
@@ -43,9 +44,9 @@
 - Mon, 30 Sep 2024 03:46:27 GMT - [North Korean IT workers earn at least $6.8 million by working with US collaborators](https://freedium.cfd/https://medium.com/p/9cef2f02a14d)
 - Mon, 30 Sep 2024 03:44:56 GMT - [Hacking the hackers: The “cURL” command.](https://freedium.cfd/https://medium.com/p/1f9c8b1963ae)
 - Mon, 30 Sep 2024 03:31:35 GMT - [ Microsoft Exposes Storm-0501: A Rising Threat in Hybrid Cloud Ransomware Attacks!](https://freedium.cfd/https://medium.com/p/66a1750eb457)
-- Mon, 30 Sep 2024 03:09:58 GMT - [Understanding Data Destruction: Safeguarding Your Information](https://freedium.cfd/https://medium.com/p/634f9ddeefc0)
 
 ## https://medium.com/feed/tag/penetration-testing
+- Mon, 30 Sep 2024 04:53:32 GMT - [Lampião: 1 | Vulnhub Walkthrough](https://freedium.cfd/https://medium.com/p/1abe0cc9087b)
 - Mon, 30 Sep 2024 03:44:56 GMT - [Hacking the hackers: The “cURL” command.](https://freedium.cfd/https://medium.com/p/1f9c8b1963ae)
 - Sun, 29 Sep 2024 23:55:04 GMT - [The Hidden Gem of Pentest Certifications in 2024](https://freedium.cfd/https://medium.com/p/67fa7a5b57cc)
 - Sun, 29 Sep 2024 23:49:03 GMT - [Getting a Havoc agent past Windows Defender (2024)](https://freedium.cfd/https://medium.com/p/dad51f7e5c79)
@@ -55,7 +56,6 @@
 - Sun, 29 Sep 2024 17:05:41 GMT - [DC-1](https://freedium.cfd/https://medium.com/p/42e3eeaa5363)
 - Sun, 29 Sep 2024 16:57:04 GMT - [Trickster — HTB (No spoiler)](https://freedium.cfd/https://medium.com/p/046663d716dc)
 - Sun, 29 Sep 2024 16:09:06 GMT - [Security 4 Nø0bs — Pen Testing in a pinch!](https://freedium.cfd/https://medium.com/p/f29e0682f7f5)
-- Sun, 29 Sep 2024 14:02:38 GMT - [Daily Bugle-Try Hack Me](https://freedium.cfd/https://medium.com/p/a35ffc639519)
 
 ## https://medium.com/feed/tag/hacking
 - Mon, 30 Sep 2024 03:46:27 GMT - [North Korean IT workers earn at least $6.8 million by working with US collaborators](https://freedium.cfd/https://medium.com/p/9cef2f02a14d)
