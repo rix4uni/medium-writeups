@@ -25,7 +25,10 @@ jobs:
         go-version: '1.20'  # Specify the version of Go you want to use
 
     - name: Scraping Medium Writeups
-      run: go run main.go | tee README.md
+      run: go run main.go | tee NEW-README.md
+
+    - name: Deleting old README.md and rename NEW-README.md
+      run: rm -rf README.md | mv NEW-README.md README.md
 
     - name: Commit and push changes if there are any
       run: |
