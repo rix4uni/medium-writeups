@@ -133,7 +133,7 @@ func main() {
 
         fmt.Println() // Add a blank line between sections
 
-        // Sleep for 5 seconds before fetching the next URL
-        time.Sleep(5 * time.Second)
+        // Sleep for 2 seconds before fetching the next URL
+        time.Sleep(2 * time.Second)
     }
 }
