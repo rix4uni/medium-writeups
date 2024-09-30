@@ -241,6 +241,7 @@
 - Sun, 30 Jun 2024 08:12:23 GMT - [Bug Bounty Hunting — Complete Guide (Part-26)](https://freedium.cfd/https://medium.com/p/49760a380496)
 
 ## https://medium.com/feed/tag/ethical-hacking
+- Mon, 30 Sep 2024 03:44:56 GMT - [Hacking the hackers: The “cURL” command.](https://freedium.cfd/https://medium.com/p/1f9c8b1963ae)
 - Sun, 29 Sep 2024 20:13:38 GMT - [So what exactly is a network?](https://freedium.cfd/https://medium.com/p/7619d7f0da4a)
 - Sun, 29 Sep 2024 19:48:38 GMT - [TryHackMe: Net Sec Challenge](https://freedium.cfd/https://medium.com/p/7bed449bb2ee)
 - Sun, 29 Sep 2024 18:21:03 GMT - [Understanding Keyloggers :](https://freedium.cfd/https://medium.com/p/e2a9fe9ea89e)
@@ -250,7 +251,6 @@
 - Sun, 29 Sep 2024 13:53:32 GMT - [How to Easily Find Your IMEI Number?](https://freedium.cfd/https://medium.com/p/0bdb4c38d941)
 - Sun, 29 Sep 2024 11:37:40 GMT - [how i found union based sql injection in hackerone public vdp program?](https://freedium.cfd/https://medium.com/p/7c76d61f6c77)
 - Sun, 29 Sep 2024 08:05:55 GMT - [Cross-Site Scripting (XSS) & SQL Injection Risks and Mitigations](https://freedium.cfd/https://medium.com/p/d078ebec3ad7)
-- Sun, 29 Sep 2024 06:50:44 GMT - [OWASP juice-shop login as an admin using SQLi and OSINT](https://freedium.cfd/https://medium.com/p/90c4abc4322b)
 
 ## https://medium.com/feed/tag/application-security
 - Mon, 30 Sep 2024 03:02:02 GMT - [Secure WhatsApp from Hackers](https://freedium.cfd/https://medium.com/p/ff426de9a224)
