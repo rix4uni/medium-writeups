@@ -5,6 +5,8 @@ import (
     "fmt"
     "io/ioutil"
     "net/http"
+    "os"
+    "strings"
     "time"
 )
 
@@ -21,6 +23,8 @@ type Item struct {
     GUID    string `xml:"guid"`
     PubDate string `xml:"pubDate"`
 }
+
+const maxTitleLength = 65 // Set the maximum title length for display
 
 func fetchRSSFeed(url string) (*RSS, error) {
     // Fetch the RSS feed
@@ -115,6 +119,17 @@ func main() {
         "https://medium.com/feed/tag/cyber-sec",
     }
 
+    // Read the content of README.md
+    readmeContent, err := ioutil.ReadFile("README.md")
+    if err != nil && !os.IsNotExist(err) {
+        fmt.Printf("Error reading README.md: %v\n", err)
+        return
+    }
+    readmeText := string(readmeContent)
+
+    // A map to track GUIDs and their associated feed tags
+    entries := make(map[string]map[string]string)
+
     for _, url := range urls {
         // Fetch and parse each feed
         rss, err := fetchRSSFeed(url)
@@ -123,17 +138,66 @@ func main() {
             continue
         }
 
-        // Print the URL as a header
-        fmt.Printf("## %s\n", url)
+        feedName := extractFeedName(url) // Function to get the feed name from the URL
 
-        // Print the required fields in the markdown format
+        // Process each feed item
         for _, item := range rss.Channel.Items {
-            fmt.Printf("- %s - [%s](https://freedium.cfd/%s)\n", item.PubDate, item.Title, item.GUID)
-        }
+            if _, found := entries[item.GUID]; !found {
+                // Initialize entry if not already in the map
+                entries[item.GUID] = map[string]string{
+                    "title":   item.Title,
+                    "guid":    item.GUID,
+                    "pubDate": item.PubDate,
+                    "feeds":   fmt.Sprintf("[%s](%s)", feedName, url),
+                    "isNew":   "Yes",
+                }
 
-        fmt.Println() // Add a blank line between sections
+                // Check if the item already exists in README.md
+                if strings.Contains(readmeText, item.GUID) {
+                    entries[item.GUID]["isNew"] = ""
+                }
+            } else {
+                // If GUID already exists, append the new feed tag
+                existingFeeds := entries[item.GUID]["feeds"]
+                entries[item.GUID]["feeds"] = existingFeeds + fmt.Sprintf(", [%s](%s)", feedName, url)
+            }
+        }
 
         // Sleep for 3 seconds before fetching the next URL
         time.Sleep(3 * time.Second)
     }
+
+    // Print the table header
+    fmt.Println("| Time | Title | Feed | IsNew |")
+    fmt.Println("|-----------|-----|-----|-----|")
+
+    // Print the consolidated entries
+    for _, entry := range entries {
+        // Sanitize and format the title
+        title := sanitizeTitle(entry["title"])
+
+        fmt.Printf("| %s | [%s](https://freedium.cfd/%s) | %s | %s |\n",
+            entry["pubDate"], title, entry["guid"], entry["feeds"], entry["isNew"])
+    }
+}
+
+// Helper function to extract the feed name from the URL
+func extractFeedName(url string) string {
+    parts := strings.Split(url, "/")
+    return parts[len(parts)-1]
+}
+
+// Helper function to sanitize the title (limit length and handle special characters)
+func sanitizeTitle(title string) string {
+    // Escape brackets inside the title to prevent issues in Markdown links
+    title = strings.ReplaceAll(title, "|", "\\|")
+    title = strings.ReplaceAll(title, "[", "\\[")
+    title = strings.ReplaceAll(title, "]", "\\]")
+
+    // Trim the title if it exceeds max length
+    if len(title) > maxTitleLength {
+        title = title[:maxTitleLength] + "..."
+    }
+
+    return title
 }
