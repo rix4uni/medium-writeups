@@ -11,18 +11,19 @@
 - Sun, 29 Sep 2024 10:24:58 GMT - [Mastering Advanced Google Dorks for Ethical Hacking and Vulnerability Discovery](https://freedium.cfd/https://medium.com/p/6d9e3dde0433)
 
 ## https://medium.com/feed/tag/security
+- Mon, 30 Sep 2024 03:52:04 GMT - [Building for Millions](https://freedium.cfd/https://medium.com/p/fb1f8869696a)
+- Mon, 30 Sep 2024 03:46:59 GMT - [Tending to Creativity](https://freedium.cfd/https://medium.com/p/dd963c44aff4)
+- Mon, 30 Sep 2024 03:46:59 GMT - [Fascinating Insights into Baby Psychology](https://freedium.cfd/https://medium.com/p/1df5e7831b4a)
+- Mon, 30 Sep 2024 03:41:34 GMT - [The Sumatran Orangutan](https://freedium.cfd/https://medium.com/p/e3e23a6e25f6)
 - Mon, 30 Sep 2024 03:36:56 GMT - [Claiming My Right to Happiness:](https://freedium.cfd/https://medium.com/p/abd15f8c79dc)
 - Mon, 30 Sep 2024 03:36:56 GMT - [Life on the Tracks](https://freedium.cfd/https://medium.com/p/0385440f7391)
 - Mon, 30 Sep 2024 03:31:35 GMT - [The Power of One](https://freedium.cfd/https://medium.com/p/7328e6272701)
 - Mon, 30 Sep 2024 03:26:47 GMT - [What Are the Security Levels of FIPS 140–2 Standard?](https://freedium.cfd/https://medium.com/p/e9c2b491685f)
 - Mon, 30 Sep 2024 03:16:58 GMT - [Navigating Your First Investments](https://freedium.cfd/https://medium.com/p/eec1472e9191)
 - Mon, 30 Sep 2024 03:12:54 GMT - [Beyond Focus](https://freedium.cfd/https://medium.com/p/8067516d8275)
-- Mon, 30 Sep 2024 02:52:30 GMT - [Mastering Django: Finalizing the Secure Student Dashboard (Part 3)](https://freedium.cfd/https://medium.com/p/0c0e46070038)
-- Mon, 30 Sep 2024 02:47:01 GMT - [Unexpected Strategies for Life-Saving Impact](https://freedium.cfd/https://medium.com/p/2e42dbb0a990)
-- Mon, 30 Sep 2024 02:43:01 GMT - [Follow Your Passion](https://freedium.cfd/https://medium.com/p/ed4d86f38a25)
-- Mon, 30 Sep 2024 02:43:00 GMT - [To Co-found or Not to Co-found](https://freedium.cfd/https://medium.com/p/acaeb7236f90)
 
 ## https://medium.com/feed/tag/vulnerability
+- Mon, 30 Sep 2024 03:56:23 GMT - [How Vulnerable Are You?](https://freedium.cfd/https://medium.com/p/7113d90e3d25)
 - Mon, 30 Sep 2024 00:54:23 GMT - [Welcome vulnerability to welcome intimacy.](https://freedium.cfd/https://medium.com/p/400ad0983dfa)
 - Mon, 30 Sep 2024 00:52:52 GMT - [the unseen son](https://freedium.cfd/https://medium.com/p/d5bfbaab1ceb)
 - Sun, 29 Sep 2024 19:07:49 GMT - [Goosebumps…Sexy Goosebumps.](https://freedium.cfd/https://medium.com/p/ae7b393f3517)
@@ -32,9 +33,9 @@
 - Sun, 29 Sep 2024 16:04:45 GMT - [Leading with Fearless Vulnerability: The Brand Revolution](https://freedium.cfd/https://medium.com/p/f755c13dc8c7)
 - Sun, 29 Sep 2024 09:48:31 GMT - [I’m the best at giving advice, but terrible at taking it…](https://freedium.cfd/https://medium.com/p/c6aa34799ce0)
 - Sun, 29 Sep 2024 09:21:40 GMT - [Shocking Kia Vulnerability Exposed: Hackers Could Remotely Control Cars Using Just a License Plate!](https://freedium.cfd/https://medium.com/p/da94db91df30)
-- Sun, 29 Sep 2024 08:08:54 GMT - [How Hackers Are Exploiting SS7: The Weak Link in Our Phone Networks](https://freedium.cfd/https://medium.com/p/f37e063b6493)
 
 ## https://medium.com/feed/tag/cybersecurity
+- Mon, 30 Sep 2024 03:46:27 GMT - [North Korean IT workers earn at least $6.8 million by working with US collaborators](https://freedium.cfd/https://medium.com/p/9cef2f02a14d)
 - Mon, 30 Sep 2024 03:44:56 GMT - [Hacking the hackers: The “cURL” command.](https://freedium.cfd/https://medium.com/p/1f9c8b1963ae)
 - Mon, 30 Sep 2024 03:31:35 GMT - [ Microsoft Exposes Storm-0501: A Rising Threat in Hybrid Cloud Ransomware Attacks!](https://freedium.cfd/https://medium.com/p/66a1750eb457)
 - Mon, 30 Sep 2024 03:09:58 GMT - [Understanding Data Destruction: Safeguarding Your Information](https://freedium.cfd/https://medium.com/p/634f9ddeefc0)
@@ -44,9 +45,9 @@
 - Mon, 30 Sep 2024 02:55:56 GMT - [Cowrie Honeypot on Ubuntu Server](https://freedium.cfd/https://medium.com/p/ba69f5e19752)
 - Mon, 30 Sep 2024 02:55:47 GMT - [HackTheBox Sherlock Writeup: OpTinselTrace-5](https://freedium.cfd/https://medium.com/p/15e1dd2b4d43)
 - Mon, 30 Sep 2024 02:50:59 GMT - [شماره خاله یزد شماره خاله مهریز شماره خاله قم شماره خاله ابرکوه شماره خاله اردکان شماره خاله کاریز…](https://freedium.cfd/https://medium.com/p/75ba91bee6d0)
-- Mon, 30 Sep 2024 02:50:40 GMT - [LetsDefend SA Event ID: 114, SOC164 — Suspicious Mshta Behavior](https://freedium.cfd/https://medium.com/p/7a2ae789dfab)
 
 ## https://medium.com/feed/tag/penetration-testing
+- Mon, 30 Sep 2024 03:44:56 GMT - [Hacking the hackers: The “cURL” command.](https://freedium.cfd/https://medium.com/p/1f9c8b1963ae)
 - Sun, 29 Sep 2024 23:55:04 GMT - [The Hidden Gem of Pentest Certifications in 2024](https://freedium.cfd/https://medium.com/p/67fa7a5b57cc)
 - Sun, 29 Sep 2024 23:49:03 GMT - [Getting a Havoc agent past Windows Defender (2024)](https://freedium.cfd/https://medium.com/p/dad51f7e5c79)
 - Sun, 29 Sep 2024 20:15:19 GMT - [Hack The Box: BoardLight Walkthrough](https://freedium.cfd/https://medium.com/p/f3949e54c71a)
@@ -56,7 +57,6 @@
 - Sun, 29 Sep 2024 16:57:04 GMT - [Trickster — HTB (No spoiler)](https://freedium.cfd/https://medium.com/p/046663d716dc)
 - Sun, 29 Sep 2024 16:09:06 GMT - [Security 4 Nø0bs — Pen Testing in a pinch!](https://freedium.cfd/https://medium.com/p/f29e0682f7f5)
 - Sun, 29 Sep 2024 14:02:38 GMT - [Daily Bugle-Try Hack Me](https://freedium.cfd/https://medium.com/p/a35ffc639519)
-- Sun, 29 Sep 2024 10:42:29 GMT - [CREST CPSA Review & OSCP-CRT Equivalency Program](https://freedium.cfd/https://medium.com/p/17c604446381)
 
 ## https://medium.com/feed/tag/hacking
 - Mon, 30 Sep 2024 03:46:27 GMT - [North Korean IT workers earn at least $6.8 million by working with US collaborators](https://freedium.cfd/https://medium.com/p/9cef2f02a14d)
@@ -71,6 +71,8 @@
 - Sun, 29 Sep 2024 22:37:12 GMT - [DockerLabs | AguaDeMayo | by C4t0v3rfl0w](https://freedium.cfd/https://medium.com/p/ed11624dfa6a)
 
 ## https://medium.com/feed/tag/information-technology
+- Mon, 30 Sep 2024 03:56:23 GMT - [How Vulnerable Are You?](https://freedium.cfd/https://medium.com/p/7113d90e3d25)
+- Mon, 30 Sep 2024 03:50:11 GMT - [Testing some PowerShell commands about recent event log entries, renaming the local computer…](https://freedium.cfd/https://medium.com/p/bce583f5157b)
 - Mon, 30 Sep 2024 03:09:58 GMT - [Understanding Data Destruction: Safeguarding Your Information](https://freedium.cfd/https://medium.com/p/634f9ddeefc0)
 - Sun, 29 Sep 2024 21:45:21 GMT - [Scala Dreams, Go Realities, and Rusty AI Futures](https://freedium.cfd/https://medium.com/p/ab509cc08ef0)
 - Sun, 29 Sep 2024 18:32:11 GMT - [Top IT Challenges: Navigating the Modern Business Landscape](https://freedium.cfd/https://medium.com/p/27c4c9aba7f1)
@@ -79,8 +81,6 @@
 - Sun, 29 Sep 2024 15:18:09 GMT - [SOFT SKILLS FOR THE JOB MARKET: WHAT I LEARNED FROM TCM SECURITY’S COURSE](https://freedium.cfd/https://medium.com/p/18f5ad1eab77)
 - Sun, 29 Sep 2024 15:00:01 GMT - [IT Projects Failing? Here’s What’s Going Wrong](https://freedium.cfd/https://medium.com/p/02748aeccd9e)
 - Sun, 29 Sep 2024 14:11:13 GMT - [Humans Can Have a Second Brain, and Here’s How You Do It](https://freedium.cfd/https://medium.com/p/cc48f696f82a)
-- Sun, 29 Sep 2024 09:11:01 GMT - [Let’s Defend SOC239 — Remote Code Execution Detected in Splunk Enterprise Write Up](https://freedium.cfd/https://medium.com/p/9d6dbf18747a)
-- Sun, 29 Sep 2024 09:03:20 GMT - [Valve Boosts Arch Linux: A Game-Changing Partnership for the Future of Open-Source Infrastructure](https://freedium.cfd/https://medium.com/p/2ac803f2a808)
 
 ## https://medium.com/feed/tag/infosec
 - Mon, 30 Sep 2024 02:35:56 GMT - [FeatureUsage — Evidence of Execution ?? || AppSwitched](https://freedium.cfd/https://medium.com/p/8df98ac0ddc2)
@@ -387,6 +387,7 @@
 - Fri, 30 Aug 2024 20:40:09 GMT - [CVE-2024–44809: Remote Code Execution in Raspberry Pi Camera Project](https://freedium.cfd/https://medium.com/p/4b8e3486a628)
 
 ## https://medium.com/feed/tag/remote-code-execution
+- Mon, 30 Sep 2024 04:05:19 GMT - [Jenkins RCE via CVE-2024-23897](https://freedium.cfd/https://medium.com/p/1c37201f53b8)
 - Mon, 23 Sep 2024 12:52:54 GMT - [Critical Vulnerability discovered in Microchip ASF leads IoT Devices at Risk of Remote Code…](https://freedium.cfd/https://medium.com/p/11e431c7d7df)
 - Sun, 22 Sep 2024 23:17:22 GMT - [RCE (Remote Code Execution)in Zoneminder up to 1.36.33](https://freedium.cfd/https://medium.com/p/0686f5bcd370)
 - Sat, 21 Sep 2024 05:00:41 GMT - [Exploring PsExec.py: A Powerful Tool for Remote Code Execution](https://freedium.cfd/https://medium.com/p/820c6296d28a)
@@ -394,7 +395,6 @@
 - Wed, 18 Sep 2024 18:21:08 GMT - [Broadcom fixes critical RCE bug in VMware vCenter Server](https://freedium.cfd/https://medium.com/p/1311c1d5eb80)
 - Wed, 18 Sep 2024 00:55:18 GMT - [[2,500$ Bug Bounty Write-Up] Remote Code Execution (RCE) via unclaimed Node package](https://freedium.cfd/https://medium.com/p/6b9108d10643)
 - Sun, 15 Sep 2024 13:06:49 GMT - [POC — Unauthenticated RCE Flaw in Rejetto HTTP File Server — CVE-2024–23692](https://freedium.cfd/https://medium.com/p/d014c26ab5e4)
-- Wed, 11 Sep 2024 20:59:20 GMT - [Hack the Box — Pennyworth](https://freedium.cfd/https://medium.com/p/4aa67975bb08)
 
 ## https://medium.com/feed/tag/local-file-inclusion
 - Sun, 29 Sep 2024 11:31:17 GMT - [Root Me Local File Inclusion — Double encoding](https://freedium.cfd/https://medium.com/p/59b35b9ff5e9)
