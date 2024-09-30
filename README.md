@@ -11,16 +11,16 @@
 - Sun, 29 Sep 2024 10:24:58 GMT - [Mastering Advanced Google Dorks for Ethical Hacking and Vulnerability Discovery](https://freedium.cfd/https://medium.com/p/6d9e3dde0433)
 
 ## https://medium.com/feed/tag/security
-- Mon, 30 Sep 2024 01:57:32 GMT - [Why Delta Storage is a Game-Changer for Secure and Scalable Web3 Storage Solutions](https://freedium.cfd/https://medium.com/p/008b73f2b70c)
-- Mon, 30 Sep 2024 01:51:43 GMT - [Step-by-Step Guide](https://freedium.cfd/https://medium.com/p/d6153636b16a)
-- Mon, 30 Sep 2024 01:46:57 GMT - [The Life-Changing Habit You Can Start Today](https://freedium.cfd/https://medium.com/p/e412236fd99b)
-- Mon, 30 Sep 2024 01:41:44 GMT - [Navigating Tough Times](https://freedium.cfd/https://medium.com/p/9e7847a752cc)
-- Mon, 30 Sep 2024 01:41:44 GMT - [The Pursuit of Happiness](https://freedium.cfd/https://medium.com/p/0b2573d3c667)
-- Mon, 30 Sep 2024 01:37:31 GMT - [Dreaming of Bridgerton](https://freedium.cfd/https://medium.com/p/3431832bcf48)
-- Mon, 30 Sep 2024 01:37:30 GMT - [July’s Arrival](https://freedium.cfd/https://medium.com/p/a91b5f231b9e)
-- Mon, 30 Sep 2024 01:31:42 GMT - [The AI Paradox](https://freedium.cfd/https://medium.com/p/4d0903b350f3)
-- Mon, 30 Sep 2024 01:27:32 GMT - [First Breath Underwater](https://freedium.cfd/https://medium.com/p/abe80d0c1635)
-- Mon, 30 Sep 2024 01:16:53 GMT - [Types of Content Writing](https://freedium.cfd/https://medium.com/p/764496e40b00)
+- Mon, 30 Sep 2024 02:47:01 GMT - [Unexpected Strategies for Life-Saving Impact](https://freedium.cfd/https://medium.com/p/2e42dbb0a990)
+- Mon, 30 Sep 2024 02:43:01 GMT - [Follow Your Passion](https://freedium.cfd/https://medium.com/p/ed4d86f38a25)
+- Mon, 30 Sep 2024 02:43:00 GMT - [To Co-found or Not to Co-found](https://freedium.cfd/https://medium.com/p/acaeb7236f90)
+- Mon, 30 Sep 2024 02:36:54 GMT - [Longing for the Past](https://freedium.cfd/https://medium.com/p/a2bfaefb9349)
+- Mon, 30 Sep 2024 02:31:30 GMT - [The AI Privacy Paradox: Are We Sacrificing Security for Convenience?](https://freedium.cfd/https://medium.com/p/4c097415b6f4)
+- Mon, 30 Sep 2024 02:31:30 GMT - [Distance is Just a Number](https://freedium.cfd/https://medium.com/p/ab61938bf02d)
+- Mon, 30 Sep 2024 02:26:55 GMT - [The Soul of Business:](https://freedium.cfd/https://medium.com/p/fd2bfdad6e29)
+- Mon, 30 Sep 2024 02:26:55 GMT - [The Canvas of Me](https://freedium.cfd/https://medium.com/p/a64541caef92)
+- Mon, 30 Sep 2024 02:16:52 GMT - [Harmonizing Sales](https://freedium.cfd/https://medium.com/p/f799dd73f0c0)
+- Mon, 30 Sep 2024 02:16:52 GMT - [Career Path Discovery](https://freedium.cfd/https://medium.com/p/2c1692b6a6b1)
 
 ## https://medium.com/feed/tag/vulnerability
 - Mon, 30 Sep 2024 00:54:23 GMT - [Welcome vulnerability to welcome intimacy.](https://freedium.cfd/https://medium.com/p/400ad0983dfa)
@@ -35,16 +35,16 @@
 - Sun, 29 Sep 2024 08:08:54 GMT - [How Hackers Are Exploiting SS7: The Weak Link in Our Phone Networks](https://freedium.cfd/https://medium.com/p/f37e063b6493)
 
 ## https://medium.com/feed/tag/cybersecurity
-- Mon, 30 Sep 2024 01:50:21 GMT - [شماره خاله کنگاور](https://freedium.cfd/https://medium.com/p/8e1a710d2bd4)
-- Mon, 30 Sep 2024 01:45:12 GMT - [️ The Ultimate Cybersecurity Threat Intelligence Dashboard: 108 Feeds of Pure Data Excess ️](https://freedium.cfd/https://medium.com/p/4d8594e333a9)
-- Mon, 30 Sep 2024 01:14:47 GMT - [Kerberos: A Simple Python Simulation of Network Authentication](https://freedium.cfd/https://medium.com/p/560f4418dae3)
-- Mon, 30 Sep 2024 01:02:27 GMT - [The Rising Tide of Cybersecurity Threats: Strategies for Mitigation](https://freedium.cfd/https://medium.com/p/42f4cf31c27f)
-- Mon, 30 Sep 2024 00:59:25 GMT - [Unique Challenges of IoT Cybersecurity](https://freedium.cfd/https://medium.com/p/cb632d148898)
-- Mon, 30 Sep 2024 00:54:49 GMT - [Social Engineering: The Human Side of Cybersecurity Threats](https://freedium.cfd/https://medium.com/p/eeb9abe806e5)
-- Mon, 30 Sep 2024 00:49:30 GMT - [Zero-Day Vulnerabilities: A Persistent Threat in the Cybersecurity Landscape](https://freedium.cfd/https://medium.com/p/0066f1f7b70d)
-- Mon, 30 Sep 2024 00:46:17 GMT - [Supply Chain Attacks: The Next Frontier in Cybersecurity Threats](https://freedium.cfd/https://medium.com/p/afb221c1c72a)
-- Mon, 30 Sep 2024 00:42:33 GMT - [The Role of Artificial Intelligence in Modern Cybersecurity: Opportunities and Challenges](https://freedium.cfd/https://medium.com/p/1421325f669a)
-- Mon, 30 Sep 2024 00:39:14 GMT - [The Rise of Ransomware-as-a-Service (RaaS): What It Is and How to Defend Against It](https://freedium.cfd/https://medium.com/p/3c0254648804)
+- Mon, 30 Sep 2024 02:55:56 GMT - [Cowrie Honeypot on Ubuntu Server](https://freedium.cfd/https://medium.com/p/ba69f5e19752)
+- Mon, 30 Sep 2024 02:55:47 GMT - [HackTheBox Sherlock Writeup: OpTinselTrace-5](https://freedium.cfd/https://medium.com/p/15e1dd2b4d43)
+- Mon, 30 Sep 2024 02:50:59 GMT - [شماره خاله یزد شماره خاله مهریز شماره خاله قم شماره خاله ابرکوه شماره خاله اردکان شماره خاله کاریز…](https://freedium.cfd/https://medium.com/p/75ba91bee6d0)
+- Mon, 30 Sep 2024 02:50:40 GMT - [LetsDefend SA Event ID: 114, SOC164 — Suspicious Mshta Behavior](https://freedium.cfd/https://medium.com/p/7a2ae789dfab)
+- Mon, 30 Sep 2024 02:36:55 GMT - [شماره خاله تهران شماره تماس اسلامشهر شماره خاله شهریار شماره خاله ورامین شماره خاله رباط کریم شماره…](https://freedium.cfd/https://medium.com/p/22b31f158bd0)
+- Mon, 30 Sep 2024 02:36:29 GMT - [شماره خاله سمنان شماره خاله گرمسار شماره خاله دامغان شماره خاله شاهرود شماره خاله میامی شماره خاله…](https://freedium.cfd/https://medium.com/p/801f15c21ebf)
+- Mon, 30 Sep 2024 02:34:26 GMT - [Analyzed Fileless Malware and Deobfuscated PowerShell — Here’s How You Can Do It Too](https://freedium.cfd/https://medium.com/p/b0c70ad19b7a)
+- Mon, 30 Sep 2024 02:31:56 GMT - [I will write resume for grc analyst resume, data analyst, cybersecurity, compliance soc](https://freedium.cfd/https://medium.com/p/5b57c8aad882)
+- Mon, 30 Sep 2024 02:25:22 GMT - ["The journey of a thousand miles begins with a single step. Take yours today!"](https://freedium.cfd/https://medium.com/p/a8b564c8b5ff)
+- Mon, 30 Sep 2024 02:06:01 GMT - [ANOM — En Sıra Dışı Siber Güvenlik Hikayeleri](https://freedium.cfd/https://medium.com/p/e75b93d48b69)
 
 ## https://medium.com/feed/tag/penetration-testing
 - Sun, 29 Sep 2024 23:55:04 GMT - [The Hidden Gem of Pentest Certifications in 2024](https://freedium.cfd/https://medium.com/p/67fa7a5b57cc)
@@ -59,6 +59,7 @@
 - Sun, 29 Sep 2024 10:42:29 GMT - [CREST CPSA Review & OSCP-CRT Equivalency Program](https://freedium.cfd/https://medium.com/p/17c604446381)
 
 ## https://medium.com/feed/tag/hacking
+- Mon, 30 Sep 2024 02:10:42 GMT - [Hack The Box — Permx](https://freedium.cfd/https://medium.com/p/455bef84bd2f)
 - Sun, 29 Sep 2024 23:55:04 GMT - [The Hidden Gem of Pentest Certifications in 2024](https://freedium.cfd/https://medium.com/p/67fa7a5b57cc)
 - Sun, 29 Sep 2024 23:54:28 GMT - [Setup Guide for OffSec’s Free Play Lab](https://freedium.cfd/https://medium.com/p/da9bfd004674)
 - Sun, 29 Sep 2024 23:49:54 GMT - [Modded Versions of Popular Android Apps Used to Distribute New Variant of Necro Malware](https://freedium.cfd/https://medium.com/p/ccb3ccd8c57d)
@@ -68,7 +69,6 @@
 - Sun, 29 Sep 2024 22:06:03 GMT - [When Programming Language Choice Determines the Survival of The City](https://freedium.cfd/https://medium.com/p/73ddc893b302)
 - Sun, 29 Sep 2024 20:15:19 GMT - [Hack The Box: BoardLight Walkthrough](https://freedium.cfd/https://medium.com/p/f3949e54c71a)
 - Sun, 29 Sep 2024 20:13:38 GMT - [So what exactly is a network?](https://freedium.cfd/https://medium.com/p/7619d7f0da4a)
-- Sun, 29 Sep 2024 19:10:17 GMT - [Web Security Academy: CSRF — Broken Referer validation](https://freedium.cfd/https://medium.com/p/e9f7e6f7d4a7)
 
 ## https://medium.com/feed/tag/information-technology
 - Sun, 29 Sep 2024 21:45:21 GMT - [Scala Dreams, Go Realities, and Rusty AI Futures](https://freedium.cfd/https://medium.com/p/ab509cc08ef0)
@@ -83,6 +83,7 @@
 - Sun, 29 Sep 2024 08:51:24 GMT - [VirtualBox 7.1.2: Boosting Windows VM Performance and Enhancing Virtualization Across Platforms](https://freedium.cfd/https://medium.com/p/6aefdfdc6ccc)
 
 ## https://medium.com/feed/tag/infosec
+- Mon, 30 Sep 2024 02:35:56 GMT - [FeatureUsage — Evidence of Execution ?? || AppSwitched](https://freedium.cfd/https://medium.com/p/8df98ac0ddc2)
 - Sun, 29 Sep 2024 20:15:19 GMT - [Hack The Box: BoardLight Walkthrough](https://freedium.cfd/https://medium.com/p/f3949e54c71a)
 - Sun, 29 Sep 2024 16:51:52 GMT - [KidRecon: The Ultimate Automated Subdomain Reconnaissance Tool for Ethical Hackers](https://freedium.cfd/https://medium.com/p/afb8ed8ea883)
 - Sun, 29 Sep 2024 05:51:13 GMT - [How to Find Past Wi-Fi Connections on Windows in Python](https://freedium.cfd/https://medium.com/p/e7c14fdcbab8)
@@ -92,7 +93,6 @@
 - Sat, 28 Sep 2024 13:10:09 GMT - [ORM HQL Injection](https://freedium.cfd/https://medium.com/p/e072207e8942)
 - Sat, 28 Sep 2024 13:02:17 GMT - [Plan Ristriction Bypass for Slack Integration: 500$ Improper Validation Check Bug](https://freedium.cfd/https://medium.com/p/0c1acf6f01d3)
 - Sat, 28 Sep 2024 11:37:23 GMT - [Obfuscation vs Encryption](https://freedium.cfd/https://medium.com/p/422019c12e53)
-- Sat, 28 Sep 2024 07:51:19 GMT - [Account Takeover and DoS: Weaponizing Enumeration, IDOR, and Registration Flooding](https://freedium.cfd/https://medium.com/p/4b88fce20f4b)
 
 ## https://medium.com/feed/tag/web-security
 - Sun, 29 Sep 2024 19:10:17 GMT - [Web Security Academy: CSRF — Broken Referer validation](https://freedium.cfd/https://medium.com/p/e9f7e6f7d4a7)
@@ -111,7 +111,6 @@
 - Sun, 29 Sep 2024 06:33:14 GMT - [Essential Port Scanning Skills for Bug Bounty Hunters](https://freedium.cfd/https://medium.com/p/f0e09f3612ce)
 - Sun, 29 Sep 2024 06:28:11 GMT - [Seri Belajar APT (Advanced Persistent Threat) Secara Sederhana Pada Target OS Linux — Pengumpulan…](https://freedium.cfd/https://medium.com/p/003c759e4b53)
 - Sun, 29 Sep 2024 06:23:25 GMT - [Bypassing Filters: SSRF Exploitation via DNS Rebinding with Just 1 in 30 Successful Requests](https://freedium.cfd/https://medium.com/p/2fdc3a9cfd7d)
-- Sun, 29 Sep 2024 05:39:53 GMT - [Privacy concern bug](https://freedium.cfd/https://medium.com/p/72b30aead215)
 - Sun, 29 Sep 2024 04:48:56 GMT - [Find Vulnerabilities With This Single Nmap Command](https://freedium.cfd/https://medium.com/p/a4476c16c82c)
 - Sun, 29 Sep 2024 03:51:28 GMT - [Seri Belajar APT (Advanced Persistent Threat) Secara Sederhana Pada Target OS Linux — Pengumpulan…](https://freedium.cfd/https://medium.com/p/bb259391002b)
 - Sat, 28 Sep 2024 23:31:21 GMT - [How to use built with for bugbounty](https://freedium.cfd/https://medium.com/p/9f58ba501f5a)
@@ -131,6 +130,7 @@
 - Sat, 28 Sep 2024 06:21:10 GMT - [The Fascinating Bug Book for Kids: 500 Startling Facts! (Fascinating Facts)](https://freedium.cfd/https://medium.com/p/1b2400e99014)
 
 ## https://medium.com/feed/tag/pentesting
+- Mon, 30 Sep 2024 02:10:42 GMT - [Hack The Box — Permx](https://freedium.cfd/https://medium.com/p/455bef84bd2f)
 - Sun, 29 Sep 2024 23:55:04 GMT - [The Hidden Gem of Pentest Certifications in 2024](https://freedium.cfd/https://medium.com/p/67fa7a5b57cc)
 - Sun, 29 Sep 2024 16:15:43 GMT - [Best Bug Bounty and VA/PT Tools in 2024: Use Cases & Commands](https://freedium.cfd/https://medium.com/p/42986d594190)
 - Sun, 29 Sep 2024 16:13:36 GMT - [ Protégez votre entreprise des cyberattaques avant qu’il ne soit trop tard !](https://freedium.cfd/https://medium.com/p/3028cb42e346)
@@ -140,7 +140,6 @@
 - Sat, 28 Sep 2024 22:57:28 GMT - [HacktheBox — BoardLight Walkthrough](https://freedium.cfd/https://medium.com/p/0a239d855646)
 - Sat, 28 Sep 2024 20:25:48 GMT - [The Importance of Multi-Factor Authentication (MFA) in Cybersecurity](https://freedium.cfd/https://medium.com/p/94270044d2e4)
 - Sat, 28 Sep 2024 17:04:59 GMT - [Exposed private key leads to Google cloud service account takeover — Privilege Escalation](https://freedium.cfd/https://medium.com/p/6f031e20c819)
-- Sat, 28 Sep 2024 11:26:13 GMT - [nodeclimb dockerlabs](https://freedium.cfd/https://medium.com/p/2a33a6f61594)
 
 ## https://medium.com/feed/tag/xss-attack
 - Sun, 29 Sep 2024 10:25:59 GMT - [Part 1 : Introduction](https://freedium.cfd/https://medium.com/p/86d92b4f1bed)
