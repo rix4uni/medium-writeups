@@ -6,6 +6,7 @@ import (
     "io/ioutil"
     "net/http"
     "os"
+    "sort"
     "strings"
     "time"
 )
@@ -167,12 +168,23 @@ func main() {
         time.Sleep(3 * time.Second)
     }
 
+    // Convert the entries map to a slice for sorting
+    entryList := make([]map[string]string, 0, len(entries))
+    for _, entry := range entries {
+        entryList = append(entryList, entry)
+    }
+
+    // Sort entries: "Yes" for `IsNew` comes first
+    sort.SliceStable(entryList, func(i, j int) bool {
+        return entryList[i]["isNew"] > entryList[j]["isNew"]
+    })
+
     // Print the table header
     fmt.Println("| Time | Title | Feed | IsNew |")
     fmt.Println("|-----------|-----|-----|-----|")
 
-    // Print the consolidated entries
-    for _, entry := range entries {
+    // Print the sorted entries
+    for _, entry := range entryList {
         // Sanitize and format the title
         title := sanitizeTitle(entry["title"])
 
@@ -187,7 +199,7 @@ func extractFeedName(url string) string {
     return parts[len(parts)-1]
 }
 
-// Helper function to sanitize the title (limit length and handle special characters)
+// Helper function to sanitize the title (limit length and escape special characters)
 func sanitizeTitle(title string) string {
     // Escape brackets inside the title to prevent issues in Markdown links
     title = strings.ReplaceAll(title, "|", "\\|")
