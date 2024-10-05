@@ -128,6 +128,9 @@ func main() {
     }
     readmeText := string(readmeContent)
 
+    // Get the current date in GMT
+    currentDate := time.Now().In(time.UTC).Format("Mon, 02 Jan 2006")
+
     // A map to track GUIDs and their associated feed tags
     entries := make(map[string]map[string]string)
 
@@ -151,6 +154,7 @@ func main() {
                     "pubDate": item.PubDate,
                     "feeds":   fmt.Sprintf("[%s](%s)", feedName, url),
                     "isNew":   "Yes",
+                    "isToday": isToday(item.PubDate, currentDate),
                 }
 
                 // Check if the item already exists in README.md
@@ -174,22 +178,25 @@ func main() {
         entryList = append(entryList, entry)
     }
 
-    // Sort entries: "Yes" for `IsNew` comes first
+    // Sort entries: prioritize "Yes" for `IsNew`, then "Yes" for `IsToday`
     sort.SliceStable(entryList, func(i, j int) bool {
+        if entryList[i]["isNew"] == entryList[j]["isNew"] {
+            return entryList[i]["isToday"] > entryList[j]["isToday"]
+        }
         return entryList[i]["isNew"] > entryList[j]["isNew"]
     })
 
     // Print the table header
-    fmt.Println("| Time | Title | Feed | IsNew |")
-    fmt.Println("|-----------|-----|-----|-----|")
+    fmt.Println("| Time | Title | Feed | IsNew | IsToday |")
+    fmt.Println("|-----------|-----|-----|-----|-----|")
 
     // Print the sorted entries
     for _, entry := range entryList {
         // Sanitize and format the title
         title := sanitizeTitle(entry["title"])
 
-        fmt.Printf("| %s | [%s](https://freedium.cfd/%s) | %s | %s |\n",
-            entry["pubDate"], title, entry["guid"], entry["feeds"], entry["isNew"])
+        fmt.Printf("| %s | [%s](https://freedium.cfd/%s) | %s | %s | %s |\n",
+            entry["pubDate"], title, entry["guid"], entry["feeds"], entry["isNew"], entry["isToday"])
     }
 }
 
@@ -212,4 +219,23 @@ func sanitizeTitle(title string) string {
     }
 
     return title
+}
+
+// Helper function to check if the PubDate matches the current date
+func isToday(pubDate, currentDate string) string {
+    // Parse the pubDate
+    pubTime, err := time.Parse(time.RFC1123, pubDate)
+    if err != nil {
+        fmt.Printf("Error parsing date %s: %v\n", pubDate, err)
+        return ""
+    }
+
+    // Format the parsed time to match the current date format
+    pubDateFormatted := pubTime.Format("Mon, 02 Jan 2006")
+
+    // Return "Yes" if pubDate is today, otherwise return an empty string
+    if pubDateFormatted == currentDate {
+        return "Yes"
+    }
+    return ""
 }
