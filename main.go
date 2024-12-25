@@ -208,6 +208,10 @@ func extractFeedName(url string) string {
 
 // Helper function to sanitize the title (limit length and escape special characters)
 func sanitizeTitle(title string) string {
+    // Remove newline and carriage return characters
+    title = strings.ReplaceAll(title, "\n", " ")
+    title = strings.ReplaceAll(title, "\r", " ")
+
     // Escape brackets inside the title to prevent issues in Markdown links
     title = strings.ReplaceAll(title, "|", "\\|")
     title = strings.ReplaceAll(title, "[", "\\[")

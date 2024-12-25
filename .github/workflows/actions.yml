@@ -25,10 +25,22 @@ jobs:
         go-version: '1.20'  # Specify the version of Go you want to use
 
     - name: Scraping Medium Writeups
-      run: go run main.go | tee NEW-README.md
+      run: |
+        go run main.go | tee NEW-README.md
 
     - name: Deleting old README.md and rename NEW-README.md
-      run: rm -rf README.md | mv NEW-README.md README.md
+      run: |
+        rm -rf README.md | mv NEW-README.md README.md
+
+    - name: Generating MINIMAL-INFO-README.md
+      run: |
+        # New Writeups:
+        sed -i '/## New Writeups:/q' MINIMAL-INFO-README.md
+        sed -i "/## New Writeups:/a $(cat tmp.md | grep "| Yes | Yes |" | cut -d"|" -f1-3 | sed 's/|/-/g' | sed 's/[&/\]/\\&/g' | tr '\n' '\0' | sed 's/\x0/\\n/g')" MINIMAL-INFO-README.md
+
+        # Today Writeups:
+        echo -e "## Today Writeups:" >> MINIMAL-INFO-README.md
+        sed -i "/## Today Writeups:/a $(cat tmp.md | grep "| Yes |$" | cut -d"|" -f1-3 | sed 's/|/-/g' | sed 's/[&/\]/\\&/g' | tr '\n' '\0' | sed 's/\x0/\\n/g')" MINIMAL-INFO-README.md
 
     - name: Commit and push changes if there are any
       run: |
