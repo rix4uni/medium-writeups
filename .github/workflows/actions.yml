@@ -36,11 +36,11 @@ jobs:
       run: |
         # New Writeups:
         sed -i '/## New Writeups:/q' MINIMAL-INFO-README.md
-        sed -i "/## New Writeups:/a $(cat README.md | grep "| Yes | Yes |" | cut -d"|" -f1-3 | sed 's/|/-/g' | sed 's/[&/\]/\\&/g' | tr '\n' '\0' | sed 's/\x0/\\n/g')" MINIMAL-INFO-README.md
+        sed -i "/## New Writeups:/a $(cat README.md | grep -a "| Yes | Yes |" | cut -d"|" -f1-3 | sed 's/|/-/g' | sed 's/[&/\]/\\&/g' | tr '\n' '\0' | sed 's/\x0/\\n/g')" MINIMAL-INFO-README.md
 
         # Today Writeups:
         echo -e "## Today Writeups:" >> MINIMAL-INFO-README.md
-        sed -i "/## Today Writeups:/a $(cat README.md | grep "| Yes |$" | cut -d"|" -f1-3 | sed 's/|/-/g' | sed 's/[&/\]/\\&/g' | tr '\n' '\0' | sed 's/\x0/\\n/g')" MINIMAL-INFO-README.md
+        sed -i "/## Today Writeups:/a $(cat README.md | grep -a "| Yes |$" | cut -d"|" -f1-3 | sed 's/|/-/g' | sed 's/[&/\]/\\&/g' | tr '\n' '\0' | sed 's/\x0/\\n/g')" MINIMAL-INFO-README.md
 
     - name: Commit and push changes if there are any
       run: |
