@@ -22,7 +22,7 @@ jobs:
     - name: Set up Go
       uses: actions/setup-go@v4
       with:
-        go-version: '1.20'  # Specify the version of Go you want to use
+        go-version: '1.23.4'  # Specify the version of Go you want to use
 
     - name: Scraping Medium Writeups
       run: |
