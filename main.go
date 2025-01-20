@@ -195,8 +195,16 @@ func main() {
         // Sanitize and format the title
         title := sanitizeTitle(entry["title"])
 
-        fmt.Printf("| %s | [%s](https://freedium.cfd/%s) | %s | %s | %s |\n",
-            entry["pubDate"], title, entry["guid"], entry["feeds"], entry["isNew"], entry["isToday"])
+        // Extract the GUID and format it to match the required URL structure
+        guid := entry["guid"]
+        guidParts := strings.Split(guid, "/p/")
+        if len(guidParts) > 1 {
+            guid = guidParts[1]
+        }
+
+        // Print the formatted output with the correct URL
+        fmt.Printf("| %s | [%s](https://readmedium.com/%s) | %s | %s | %s |\n",
+            entry["pubDate"], title, guid, entry["feeds"], entry["isNew"], entry["isToday"])
     }
 }
 
