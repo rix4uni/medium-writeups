@@ -30,7 +30,7 @@ jobs:
 
     - name: Deleting old README.md and rename NEW-README.md
       run: |
-        rm -rf README.md | mv NEW-README.md README.md
+        rm -rf README.md && mv NEW-README.md README.md
 
     - name: Commit and push changes if there are any
       run: |

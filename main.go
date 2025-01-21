@@ -195,14 +195,9 @@ func main() {
         // Sanitize and format the title
         title := sanitizeTitle(entry["title"])
 
-        // Extract the GUID and format it to match the required URL structure
-        guid := entry["guid"]
-        guidParts := strings.Split(guid, "/p/")
-        if len(guidParts) > 1 {
-            guid = guidParts[1]
-        }
+        // Remove 'https://medium.com/p/' from the GUID
+        guid := strings.Replace(entry["guid"], "https://medium.com/p/", "", 1)
 
-        // Print the formatted output with the correct URL
         fmt.Printf("| %s | [%s](https://readmedium.com/%s) | %s | %s | %s |\n",
             entry["pubDate"], title, guid, entry["feeds"], entry["isNew"], entry["isToday"])
     }
