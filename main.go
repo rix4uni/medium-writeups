@@ -195,11 +195,8 @@ func main() {
         // Sanitize and format the title
         title := sanitizeTitle(entry["title"])
 
-        // Remove 'https://medium.com/p/' from the GUID
-        guid := strings.Replace(entry["guid"], "https://medium.com/p/", "", 1)
-
         fmt.Printf("| %s | [%s](https://readmedium.com/%s) | %s | %s | %s |\n",
-            entry["pubDate"], title, guid, entry["feeds"], entry["isNew"], entry["isToday"])
+            entry["pubDate"], title, entry["guid"], entry["feeds"], entry["isNew"], entry["isToday"])
     }
 }
 
