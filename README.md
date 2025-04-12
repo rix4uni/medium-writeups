@@ -5,7 +5,6 @@ Error parsing XML from https://medium.com/feed/tag/cybersecurity: XML syntax err
 Error parsing XML from https://medium.com/feed/tag/penetration-testing: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/hacking: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/information-technology: XML syntax error on line 1: expected element name after <
-Error parsing XML from https://medium.com/feed/tag/infosec: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/web-security: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bug-bounty-tips: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bugs: XML syntax error on line 1: expected element name after <
@@ -64,3 +63,13 @@ Error parsing XML from https://medium.com/feed/tag/api-key: XML syntax error on 
 Error parsing XML from https://medium.com/feed/tag/cyber-sec: XML syntax error on line 1: expected element name after <
 | Time | Title | Feed | IsNew | IsToday |
 |-----------|-----|-----|-----|-----|
+| Sat, 12 Apr 2025 12:12:32 GMT | [I Built a Portfolio Website That’s (Almost) Unhackable — ...](https://freedium.cfd/https://medium.com/p/33351d7d56f7) | [infosec](https://medium.com/feed/tag/infosec) | Yes | Yes |
+| Sat, 12 Apr 2025 05:03:37 GMT | [Subdomain takeover](https://freedium.cfd/https://medium.com/p/6642736285fc) | [infosec](https://medium.com/feed/tag/infosec) | Yes | Yes |
+| Sat, 12 Apr 2025 14:11:50 GMT | [Exposed and Ignored: How a JavaScript API Key Gave Me Full Cloud ...](https://freedium.cfd/https://medium.com/p/e00a7301ffb6) | [infosec](https://medium.com/feed/tag/infosec) | Yes | Yes |
+| Sat, 12 Apr 2025 08:05:54 GMT | [I Used My Android Phone to Scan a Local Network — Here’s ...](https://freedium.cfd/https://medium.com/p/b17f740c9965) | [infosec](https://medium.com/feed/tag/infosec) | Yes | Yes |
+| Sat, 12 Apr 2025 01:12:02 GMT | [Grok’s Gut: My Training Data Is My Truth — Don’t Mess W...](https://freedium.cfd/https://medium.com/p/3e23bfb7dd15) | [infosec](https://medium.com/feed/tag/infosec) | Yes | Yes |
+| Fri, 11 Apr 2025 18:31:14 GMT | [State Backed Cyberattacks and the Shifting Landscape of Digital T...](https://freedium.cfd/https://medium.com/p/4878113ddcb7) | [infosec](https://medium.com/feed/tag/infosec) | Yes |  |
+| Fri, 11 Apr 2025 15:31:50 GMT | [A Hacker’s Instinct: The Power You Unlock When You Stop Looking...](https://freedium.cfd/https://medium.com/p/2715865e13f7) | [infosec](https://medium.com/feed/tag/infosec) | Yes |  |
+| Fri, 11 Apr 2025 17:52:31 GMT | [What CTFs Taught Me That College Didn’t](https://freedium.cfd/https://medium.com/p/93dd9ee86919) | [infosec](https://medium.com/feed/tag/infosec) | Yes |  |
+| Fri, 11 Apr 2025 16:58:06 GMT | [Why Misconfigured Sudo Is a Hacker’s Playground](https://freedium.cfd/https://medium.com/p/3e23ab15c889) | [infosec](https://medium.com/feed/tag/infosec) | Yes |  |
+| Fri, 11 Apr 2025 19:41:10 GMT | [GIAC Security Essentials Study Guide & Practice Test](https://freedium.cfd/https://medium.com/p/0cb2f21ba752) | [infosec](https://medium.com/feed/tag/infosec) | Yes |  |
