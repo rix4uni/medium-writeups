@@ -1,3 +1,4 @@
+Error parsing XML from https://medium.com/feed/tag/bug-bounty: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/security: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/vulnerability: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/cybersecurity: XML syntax error on line 1: expected element name after <
@@ -10,7 +11,7 @@ Error parsing XML from https://medium.com/feed/tag/bug-bounty-tips: XML syntax e
 Error parsing XML from https://medium.com/feed/tag/bugs: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/pentesting: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/xss-attack: XML syntax error on line 1: expected element name after <
-Error parsing XML from https://medium.com/feed/tag/information-security: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/cross-site-scripting: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/hackerone: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bugcrowd: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bugbounty-writeup: XML syntax error on line 1: expected element name after <
@@ -62,20 +63,13 @@ Error parsing XML from https://medium.com/feed/tag/api-key: XML syntax error on 
 Error parsing XML from https://medium.com/feed/tag/cyber-sec: XML syntax error on line 1: expected element name after <
 | Time | Title | Feed | IsNew | IsToday |
 |-----------|-----|-----|-----|-----|
-| Mon, 14 Apr 2025 17:34:55 GMT | [Crafting Engaging Web Application Challenges for Your College CTF](https://freedium.cfd/https://medium.com/p/b712e10b9ed6) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  | Yes |
-| Mon, 14 Apr 2025 15:50:51 GMT | [Outsmarting the Crowd: 7 Unconventional Strategies to Dominate Bu...](https://freedium.cfd/https://medium.com/p/e5432e5fddd2) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  | Yes |
-| Mon, 14 Apr 2025 12:04:41 GMT | [Bug Bounty \| Istifadəçi hesablarının oğurlanmasına səbəb...](https://freedium.cfd/https://medium.com/p/2693a2aa2520) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  | Yes |
-| Mon, 14 Apr 2025 21:05:27 GMT | [Are You Safe? The Terrifying Truth Behind Silent Attacks](https://freedium.cfd/https://medium.com/p/544d63139019) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  | Yes |
-| Mon, 14 Apr 2025 13:39:16 GMT | [Google Gemini iOS Vulnerability: Public Link Sharing Silently Lea...](https://freedium.cfd/https://medium.com/p/e1f80cbea25c) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  | Yes |
-| Mon, 14 Apr 2025 15:26:46 GMT | [HOW I GOT RCE BY THIS ‘ Single quotation Mark](https://freedium.cfd/https://medium.com/p/3a81be69a0d2) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  | Yes |
-| Mon, 14 Apr 2025 15:00:02 GMT | [Account Takeover Based on Deep Understanding of the Target](https://freedium.cfd/https://medium.com/p/9c02b8af88fa) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  | Yes |
-| Mon, 14 Apr 2025 14:48:50 GMT | [Hunting eval() XSS: How I Scored a $10K Bounty from Uber ](https://freedium.cfd/https://medium.com/p/c77aaf93574a) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  | Yes |
-| Wed, 09 Apr 2025 16:39:34 GMT | [Google XSS game challenge](https://freedium.cfd/https://medium.com/p/337cacd9d49a) | [cross-site-scripting](https://medium.com/feed/tag/cross-site-scripting) |  |  |
-| Sun, 23 Mar 2025 08:10:03 GMT | [Cross-Site Scripting (XSS): A Growing Web Security Threat](https://freedium.cfd/https://medium.com/p/d952fc9a52a1) | [cross-site-scripting](https://medium.com/feed/tag/cross-site-scripting) |  |  |
-| Thu, 20 Mar 2025 18:15:44 GMT | [Learn With Me OWASP TOP 10 — DAY(2)](https://freedium.cfd/https://medium.com/p/4542b9ff6396) | [cross-site-scripting](https://medium.com/feed/tag/cross-site-scripting) |  |  |
-| Thu, 27 Mar 2025 02:42:10 GMT | [Hack The Box “alert” Write-Up](https://freedium.cfd/https://medium.com/p/b27107f6c227) | [cross-site-scripting](https://medium.com/feed/tag/cross-site-scripting) |  |  |
-| Sun, 13 Apr 2025 05:52:58 GMT | [Tricky waf bypass for reflected XSS write up](https://freedium.cfd/https://medium.com/p/88da44cdc8c4) | [cross-site-scripting](https://medium.com/feed/tag/cross-site-scripting) |  |  |
-| Tue, 08 Apr 2025 03:49:00 GMT | [Mengenal XSS (Cross-Site Scripting): Kerentanan Website yang Masi...](https://freedium.cfd/https://medium.com/p/8d833119d34e) | [cross-site-scripting](https://medium.com/feed/tag/cross-site-scripting) |  |  |
-| Mon, 31 Mar 2025 13:51:22 GMT | [Understanding Cross-Site Scripting (XSS): A Comprehensive Guide](https://freedium.cfd/https://medium.com/p/056bf7a0fbc0) | [cross-site-scripting](https://medium.com/feed/tag/cross-site-scripting) |  |  |
-| Wed, 19 Mar 2025 08:55:56 GMT | [Learn With Me OWASP TOP 10 — DAY(1)](https://freedium.cfd/https://medium.com/p/9343ec3517f2) | [cross-site-scripting](https://medium.com/feed/tag/cross-site-scripting) |  |  |
-| Thu, 10 Apr 2025 09:38:29 GMT | [Hack the OWASP Juice Shop application and protect it with AWS WAF...](https://freedium.cfd/https://medium.com/p/2d1d34693ee7) | [cross-site-scripting](https://medium.com/feed/tag/cross-site-scripting) |  |  |
+| Mon, 14 Apr 2025 12:19:44 GMT | [The CIA You Should Be Worried About](https://freedium.cfd/https://medium.com/p/c9f0d598d380) | [information-security](https://medium.com/feed/tag/information-security) | Yes | Yes |
+| Mon, 14 Apr 2025 09:14:49 GMT | [ OWASP Top 10 for LLMs in 2025: Security Test Cases You Must Know](https://freedium.cfd/https://medium.com/p/ef2cb6d1bbda) | [information-security](https://medium.com/feed/tag/information-security) | Yes | Yes |
+| Mon, 14 Apr 2025 18:02:36 GMT | [ TLS Versions — Internet Security ගැන දැනගන්�...](https://freedium.cfd/https://medium.com/p/4674e49f3269) | [information-security](https://medium.com/feed/tag/information-security) | Yes | Yes |
+| Mon, 14 Apr 2025 14:24:11 GMT | [PRACTICAL CYBERSECURITY LAB : NETWORK SCANNING,BRUTE FORCE ATTAC...](https://freedium.cfd/https://medium.com/p/2461d0cc5034) | [information-security](https://medium.com/feed/tag/information-security) | Yes | Yes |
+| Mon, 14 Apr 2025 12:13:37 GMT | [ Why Security Is Important on Information](https://freedium.cfd/https://medium.com/p/1ba9252c139c) | [information-security](https://medium.com/feed/tag/information-security) | Yes | Yes |
+| Mon, 14 Apr 2025 12:02:51 GMT | [Security or Chaos? Here’s What You Need to Know About Cybersecu...](https://freedium.cfd/https://medium.com/p/56526a83180c) | [information-security](https://medium.com/feed/tag/information-security) | Yes | Yes |
+| Mon, 14 Apr 2025 11:29:24 GMT | [Risk Management Lessons from Lord Ram](https://freedium.cfd/https://medium.com/p/029833e145f3) | [information-security](https://medium.com/feed/tag/information-security) | Yes | Yes |
+| Mon, 14 Apr 2025 09:06:12 GMT | [LFI in the Shadows: A Bug Bounty Private Program Walkthrough](https://freedium.cfd/https://medium.com/p/a76024d1314f) | [information-security](https://medium.com/feed/tag/information-security) | Yes | Yes |
+| Mon, 14 Apr 2025 18:13:56 GMT | [Inside the Mind of a Scammer: Social Engineering Tricks and How t...](https://freedium.cfd/https://medium.com/p/209b8572a646) | [information-security](https://medium.com/feed/tag/information-security) | Yes | Yes |
+| Mon, 14 Apr 2025 17:42:19 GMT | [Why Your Security Training Is Actually Making You More Vulnerable](https://freedium.cfd/https://medium.com/p/609d26917adf) | [information-security](https://medium.com/feed/tag/information-security) | Yes | Yes |
