@@ -3,6 +3,7 @@ Error parsing XML from https://medium.com/feed/tag/security: XML syntax error on
 Error parsing XML from https://medium.com/feed/tag/vulnerability: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/cybersecurity: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/penetration-testing: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/hacking: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/information-technology: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/infosec: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/web-security: XML syntax error on line 1: expected element name after <
@@ -13,7 +14,6 @@ Error parsing XML from https://medium.com/feed/tag/xss-attack: XML syntax error 
 Error parsing XML from https://medium.com/feed/tag/information-security: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/cross-site-scripting: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/hackerone: XML syntax error on line 1: expected element name after <
-Error parsing XML from https://medium.com/feed/tag/bugcrowd: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bugbounty-writeup: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bug-bounty-writeup: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bug-bounty-hunter: XML syntax error on line 1: expected element name after <
@@ -63,12 +63,12 @@ Error parsing XML from https://medium.com/feed/tag/api-key: XML syntax error on 
 Error parsing XML from https://medium.com/feed/tag/cyber-sec: XML syntax error on line 1: expected element name after <
 | Time | Title | Feed | IsNew | IsToday |
 |-----------|-----|-----|-----|-----|
-| Mon, 14 Apr 2025 12:50:06 GMT | [Protecting Your Digital Identity: The Importance of MAC Address R...](https://freedium.cfd/https://medium.com/p/737ca27c4685) | [hacking](https://medium.com/feed/tag/hacking) |  | Yes |
-| Mon, 14 Apr 2025 12:42:43 GMT | [Useful Linux Commands](https://freedium.cfd/https://medium.com/p/f885aabd5064) | [hacking](https://medium.com/feed/tag/hacking) |  | Yes |
-| Mon, 14 Apr 2025 12:01:23 GMT | [LinkVortex \| HTB Writeup](https://freedium.cfd/https://medium.com/p/45bdbb335898) | [hacking](https://medium.com/feed/tag/hacking) |  | Yes |
-| Mon, 14 Apr 2025 11:08:07 GMT | [Inside the Bybit Hack: Lessons from the Digital Storm](https://freedium.cfd/https://medium.com/p/b531b4af9d5b) | [hacking](https://medium.com/feed/tag/hacking) |  | Yes |
-| Mon, 14 Apr 2025 13:09:48 GMT | [ Criando um servidor Python simples para conectar o Nmap no Kali ...](https://freedium.cfd/https://medium.com/p/eaec3f2f9231) | [hacking](https://medium.com/feed/tag/hacking) |  | Yes |
-| Mon, 14 Apr 2025 12:26:37 GMT | [Gray Hat hacking instructions](https://freedium.cfd/https://medium.com/p/2928e73751bc) | [hacking](https://medium.com/feed/tag/hacking) |  | Yes |
-| Mon, 14 Apr 2025 12:23:54 GMT | [Is LLMjacking Silently Draining Your AI Cloud Budget?](https://freedium.cfd/https://medium.com/p/4efd3caeee6a) | [hacking](https://medium.com/feed/tag/hacking) |  | Yes |
-| Mon, 14 Apr 2025 10:52:50 GMT | [Best Recovery Expert…](https://freedium.cfd/https://medium.com/p/b71483c2f07d) | [hacking](https://medium.com/feed/tag/hacking) |  | Yes |
-| Mon, 14 Apr 2025 09:28:20 GMT | [MANIFESTO ZERO](https://freedium.cfd/https://medium.com/p/52e6b5805b0a) | [hacking](https://medium.com/feed/tag/hacking) |  | Yes |
+| Thu, 03 Apr 2025 12:53:22 GMT | [From Bug Report to HOF: My first valid bug triage from NASA VDP](https://freedium.cfd/https://medium.com/p/36a8a1c65072) | [bugcrowd](https://medium.com/feed/tag/bugcrowd) | Yes |  |
+| Mon, 07 Apr 2025 22:31:17 GMT | [How I Found Session Not Invalidated After Account Deletion](https://freedium.cfd/https://medium.com/p/3fb154fb5172) | [bugcrowd](https://medium.com/feed/tag/bugcrowd) | Yes |  |
+| Sat, 05 Apr 2025 15:24:02 GMT | [From Nap to P4: A Chilled Evening Bug Hunt](https://freedium.cfd/https://medium.com/p/e3478f20022f) | [bugcrowd](https://medium.com/feed/tag/bugcrowd) | Yes |  |
+| Tue, 01 Apr 2025 11:47:49 GMT | [ A to Z বাগ বাউন্টি গাইড (HackerOne &...](https://freedium.cfd/https://medium.com/p/e31e9eb8c8a4) | [bugcrowd](https://medium.com/feed/tag/bugcrowd) | Yes |  |
+| Mon, 24 Mar 2025 12:09:46 GMT | [The Dark Side of Invite Links: A Race Condition Exploit Story (En...](https://freedium.cfd/https://medium.com/p/257d5bd8e9c5) | [bugcrowd](https://medium.com/feed/tag/bugcrowd) | Yes |  |
+| Mon, 17 Mar 2025 01:38:42 GMT | [$100 Bug Bounty: Exposing User Emails via GraphQL on an Earning S...](https://freedium.cfd/https://medium.com/p/ccc22e776fda) | [bugcrowd](https://medium.com/feed/tag/bugcrowd) | Yes |  |
+| Sat, 15 Mar 2025 13:48:19 GMT | [iDOR Vulnerable Via Apple \| Spotify](https://freedium.cfd/https://medium.com/p/05552f319ad2) | [bugcrowd](https://medium.com/feed/tag/bugcrowd) | Yes |  |
+| Fri, 11 Apr 2025 01:54:29 GMT | [How I Pick a Good Bug Bounty Program and Earn $$$](https://freedium.cfd/https://medium.com/p/dc7610bff549) | [bugcrowd](https://medium.com/feed/tag/bugcrowd) | Yes |  |
+| Sun, 06 Apr 2025 07:06:22 GMT | [How I Found a $$$ Account Takeover Bug (And What You Can Learn Fr...](https://freedium.cfd/https://medium.com/p/af0d697f913d) | [bugcrowd](https://medium.com/feed/tag/bugcrowd) | Yes |  |
