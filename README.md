@@ -9,9 +9,9 @@ Error parsing XML from https://medium.com/feed/tag/infosec: XML syntax error on 
 Error parsing XML from https://medium.com/feed/tag/web-security: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bug-bounty-tips: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bugs: XML syntax error on line 1: expected element name after <
-Error parsing XML from https://medium.com/feed/tag/pentesting: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/xss-attack: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/information-security: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/cross-site-scripting: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/hackerone: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bugcrowd: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bugbounty-writeup: XML syntax error on line 1: expected element name after <
@@ -63,13 +63,11 @@ Error parsing XML from https://medium.com/feed/tag/api-key: XML syntax error on 
 Error parsing XML from https://medium.com/feed/tag/cyber-sec: XML syntax error on line 1: expected element name after <
 | Time | Title | Feed | IsNew | IsToday |
 |-----------|-----|-----|-----|-----|
-| Fri, 25 Apr 2025 06:28:04 GMT | [Bypassing CSRF defenses using XSS…and more \| Portswigger XSS P...](https://medium.com/p/b08965e0c039) | [cross-site-scripting](https://medium.com/feed/tag/cross-site-scripting) |  |  |
-| Sun, 20 Apr 2025 18:44:36 GMT | [Escalating Impact: Full Account Takeover in Microsoft via XSS in ...](https://medium.com/p/f160fa79b008) | [cross-site-scripting](https://medium.com/feed/tag/cross-site-scripting) |  |  |
-| Fri, 18 Apr 2025 22:43:20 GMT | [Beyond GET: Unleashing POST‑Based XSS with a CSRF Twist](https://medium.com/p/bacbc68f4236) | [cross-site-scripting](https://medium.com/feed/tag/cross-site-scripting) |  |  |
-| Thu, 10 Apr 2025 09:38:29 GMT | [Hack the OWASP Juice Shop application and protect it with AWS WAF...](https://medium.com/p/2d1d34693ee7) | [cross-site-scripting](https://medium.com/feed/tag/cross-site-scripting) |  |  |
-| Wed, 09 Apr 2025 16:39:34 GMT | [Google XSS game challenge](https://medium.com/p/337cacd9d49a) | [cross-site-scripting](https://medium.com/feed/tag/cross-site-scripting) |  |  |
-| Tue, 08 Apr 2025 03:49:00 GMT | [Mengenal XSS (Cross-Site Scripting): Kerentanan Website yang Masi...](https://medium.com/p/8d833119d34e) | [cross-site-scripting](https://medium.com/feed/tag/cross-site-scripting) |  |  |
-| Wed, 23 Apr 2025 14:34:32 GMT | [Story of Unauthorized user registration via Target.com hidden SOA...](https://medium.com/p/a43ac0ee5d20) | [cross-site-scripting](https://medium.com/feed/tag/cross-site-scripting) |  |  |
-| Tue, 22 Apr 2025 06:44:21 GMT | [An XSS Journey: From Self-XSS to Account Takeover](https://medium.com/p/b7ad8566d5fb) | [cross-site-scripting](https://medium.com/feed/tag/cross-site-scripting) |  |  |
-| Mon, 21 Apr 2025 11:17:00 GMT | [Web Application Vulnerability Assessment ](https://medium.com/p/b454172fc534) | [cross-site-scripting](https://medium.com/feed/tag/cross-site-scripting) |  |  |
-| Sun, 13 Apr 2025 05:52:58 GMT | [Tricky waf bypass for reflected XSS write up](https://medium.com/p/88da44cdc8c4) | [cross-site-scripting](https://medium.com/feed/tag/cross-site-scripting) |  |  |
+| Sat, 26 Apr 2025 07:13:18 GMT | [Metasploitable Exploit Adımları: İlk Sızma Deneyimim](https://medium.com/p/f6f554a1b33c) | [pentesting](https://medium.com/feed/tag/pentesting) | Yes | Yes |
+| Sat, 26 Apr 2025 07:03:42 GMT | [⏱️ There were no visible errors, no hints… only the server�...](https://medium.com/p/7b4987f10444) | [pentesting](https://medium.com/feed/tag/pentesting) | Yes | Yes |
+| Sat, 26 Apr 2025 04:57:32 GMT | [Millions of Records Exposed via SQL Injection in a Tamil Nadu Gov...](https://medium.com/p/0981d3827ed2) | [pentesting](https://medium.com/feed/tag/pentesting) | Yes | Yes |
+| Sat, 26 Apr 2025 14:31:56 GMT | [Vintage](https://medium.com/p/0074003d152c) | [pentesting](https://medium.com/feed/tag/pentesting) | Yes | Yes |
+| Sat, 26 Apr 2025 13:36:20 GMT | [Building a simple Python port scanner](https://medium.com/p/14d3ed050d4d) | [pentesting](https://medium.com/feed/tag/pentesting) | Yes | Yes |
+| Sat, 26 Apr 2025 11:57:27 GMT | [Top Strategies to Tackle Wireless Network Attacks PEN-210](https://medium.com/p/a0a6831ae3a4) | [pentesting](https://medium.com/feed/tag/pentesting) | Yes | Yes |
+| Sat, 26 Apr 2025 10:26:13 GMT | [HTB Timelapse Walkthrough/Explanation](https://medium.com/p/549392c23a25) | [pentesting](https://medium.com/feed/tag/pentesting) | Yes | Yes |
+| Sat, 26 Apr 2025 10:05:16 GMT | [✨ A Deep Dive:Nmap Scanning with Wireshark ](https://medium.com/p/40ea0ecb2eee) | [pentesting](https://medium.com/feed/tag/pentesting) | Yes | Yes |
