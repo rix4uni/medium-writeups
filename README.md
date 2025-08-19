@@ -1,527 +1,90 @@
+Error parsing XML from https://medium.com/feed/tag/bug-bounty: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/security: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/vulnerability: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/cybersecurity: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/penetration-testing: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/hacking: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/information-technology: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/infosec: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/bug-bounty-tips: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/bugs: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/pentesting: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/xss-attack: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/information-security: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/cross-site-scripting: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/hackerone: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/bugcrowd: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/bugbounty-writeup: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/bug-bounty-writeup: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/bug-bounty-hunter: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/application-security: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/google-dorking: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/dorking: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/cyber-security-awareness: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/google-dork: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/web-pentest: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/vdp: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/information-disclosure: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/exploit: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/vulnerability-disclosure: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/web-cache-poisoning: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/rce: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/remote-code-execution: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/local-file-inclusion: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/vapt: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/dorks: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/github-dorking: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/lfi: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/vulnerability-scanning: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/subdomain-enumeration: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/cybersecurity-tools: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/bug-bounty-hunting: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/ssrf: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/idor: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/pentest: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/file-upload: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/file-inclusion: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/security-research: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/directory-listing: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/log-poisoning: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/cve: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/xss-vulnerability: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/shodan: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/censys: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/zoomeye: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/recon: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/xss-bypass: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/bounty-program: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/subdomain-takeover: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/bounties: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/api-key: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/cyber-sec: XML syntax error on line 1: expected element name after <
 | Time | Title | Feed | IsNew | IsToday |
 |-----------|-----|-----|-----|-----|
-| Tue, 19 Aug 2025 05:50:24 GMT | [Why Drosera’s Trap-Based Security Model is the Future of Web3 D...](https://medium.com/p/0bccc06aac46) | [security](https://medium.com/feed/tag/security) | Yes | Yes |
-| Tue, 19 Aug 2025 00:08:58 GMT | [Preparing Your Offensive Security Lab](https://medium.com/p/0f1598fe2be7) | [information-security](https://medium.com/feed/tag/information-security) |  | Yes |
-| Tue, 19 Aug 2025 05:35:16 GMT | [Ensuring the Security of Your Mobile Application](https://medium.com/p/6fe04d04a254) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) |  | Yes |
-| Tue, 19 Aug 2025 05:36:37 GMT | [Why Every Organization Needs Enterprise Content Management Soluti...](https://medium.com/p/56fa0480f6cd) | [information-technology](https://medium.com/feed/tag/information-technology) |  | Yes |
-| Tue, 19 Aug 2025 03:10:08 GMT | [Server-Side Template Injection in a Sandboxed Environment: Escapi...](https://medium.com/p/b704536b5181) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  | Yes |
-| Tue, 19 Aug 2025 04:49:22 GMT | [How to Keep AI Agents Safe: Protecting Their Internal Workings](https://medium.com/p/254237e60ef1) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) |  | Yes |
-| Tue, 19 Aug 2025 03:39:09 GMT | [The Windows Process Journey — rdpsign.exe (Remote Desktop S...](https://medium.com/p/4257be3230ff) | [security](https://medium.com/feed/tag/security), [information-security](https://medium.com/feed/tag/information-security) |  | Yes |
-| Tue, 19 Aug 2025 04:41:25 GMT | [Back Up Your Published Stories!](https://medium.com/p/436b7c65c3bc) | [security](https://medium.com/feed/tag/security) |  | Yes |
-| Tue, 19 Aug 2025 02:27:09 GMT | [When the Interview Fails but the Security Does Too](https://medium.com/p/d871ccc47da8) | [bug-bounty](https://medium.com/feed/tag/bug-bounty), [ethical-hacking](https://medium.com/feed/tag/ethical-hacking) |  | Yes |
-| Tue, 19 Aug 2025 02:52:38 GMT | [TryHackMe — SQL Injection Lab](https://medium.com/p/3deb780f46f5) | [penetration-testing](https://medium.com/feed/tag/penetration-testing), [pentesting](https://medium.com/feed/tag/pentesting) |  | Yes |
-| Tue, 19 Aug 2025 00:01:58 GMT | [Amass:Guía Completa para el Reconocimiento de Subdominios y el M...](https://medium.com/p/401a71021cf2) | [bug-bounty](https://medium.com/feed/tag/bug-bounty), [penetration-testing](https://medium.com/feed/tag/penetration-testing), [infosec](https://medium.com/feed/tag/infosec), [ethical-hacking](https://medium.com/feed/tag/ethical-hacking) |  | Yes |
-| Tue, 19 Aug 2025 05:26:46 GMT | [ Realtime IP Geolocation Dashboard: From Log Monitoring to Intera...](https://medium.com/p/1914127fac1b) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) |  | Yes |
-| Tue, 19 Aug 2025 04:15:40 GMT | [Day 36- Common Network Protocols with Commands & Interview Questi...](https://medium.com/p/c9e387e4140e) | [cyber-security-awareness](https://medium.com/feed/tag/cyber-security-awareness) |  | Yes |
-| Tue, 19 Aug 2025 04:26:04 GMT | [The $127,000 Hosting Bill That Could Have Been $47 (True Story)](https://medium.com/p/add407553482) | [information-technology](https://medium.com/feed/tag/information-technology), [information-security](https://medium.com/feed/tag/information-security) |  | Yes |
-| Tue, 19 Aug 2025 05:17:36 GMT | [CSRF, CORS, and Security Headers in Django Explained](https://medium.com/p/cf438b3ae69c) | [security](https://medium.com/feed/tag/security) |  | Yes |
-| Tue, 19 Aug 2025 00:08:29 GMT | [What can Blockchain bring to your world](https://medium.com/p/5d4382b0ba41) | [security](https://medium.com/feed/tag/security) |  | Yes |
-| Tue, 19 Aug 2025 04:30:39 GMT | [Is SQL Still the King in Modern Web Dev?](https://medium.com/p/b3c23012edf6) | [information-technology](https://medium.com/feed/tag/information-technology) |  | Yes |
-| Tue, 19 Aug 2025 04:34:55 GMT | [Is SQL Still the King in Modern Web Dev?](https://medium.com/p/4a1bb6c73046) | [information-technology](https://medium.com/feed/tag/information-technology) |  | Yes |
-| Tue, 19 Aug 2025 05:20:39 GMT | [HIPAA Compliance Made Simple: A Practical Self-Assessment Checkli...](https://medium.com/p/c483ae8f2797) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) |  | Yes |
-| Tue, 19 Aug 2025 04:55:17 GMT | [ThunderCipher-Lab\[Juggl3r\]](https://medium.com/p/9e8c7bde3739) | [cybersecurity](https://medium.com/feed/tag/cybersecurity), [web-security](https://medium.com/feed/tag/web-security) |  | Yes |
-| Tue, 19 Aug 2025 04:53:35 GMT | [Robot Vacuums, Smart Bulbs, and Hackers: Protecting Your Home Net...](https://medium.com/p/29d0b3627e1b) | [cybersecurity](https://medium.com/feed/tag/cybersecurity), [penetration-testing](https://medium.com/feed/tag/penetration-testing), [pentesting](https://medium.com/feed/tag/pentesting), [information-security](https://medium.com/feed/tag/information-security) |  | Yes |
-| Tue, 19 Aug 2025 05:35:17 GMT | [“Behind the Screen: The Dark Side of Digital Working”](https://medium.com/p/69f96c9d3225) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) |  | Yes |
-| Tue, 19 Aug 2025 02:30:04 GMT | [When Did Every Tech Solution Become ‘AI-Powered’?](https://medium.com/p/0c5c108872ea) | [information-technology](https://medium.com/feed/tag/information-technology) |  | Yes |
-| Tue, 19 Aug 2025 03:22:09 GMT | [Why Everyone is Switching from Windows to Linux in 2025: The Grea...](https://medium.com/p/2570c0efc119) | [security](https://medium.com/feed/tag/security) |  | Yes |
-| Tue, 19 Aug 2025 04:35:16 GMT | [Men Need the Freedom to Cry](https://medium.com/p/ad179d9b0b4a) | [vulnerability](https://medium.com/feed/tag/vulnerability) |  | Yes |
-| Tue, 19 Aug 2025 00:53:38 GMT | [CyberTalents : Can you find me writeup \| by DeveloperHacker](https://medium.com/p/8b535f6cd19d) | [hacking](https://medium.com/feed/tag/hacking) |  | Yes |
-| Tue, 19 Aug 2025 02:32:13 GMT | [AI-Powered Smart Security: How Kompas.ai is Reshaping Urban Safet...](https://medium.com/p/2c755623073f) | [security](https://medium.com/feed/tag/security) |  | Yes |
-| Tue, 19 Aug 2025 04:15:36 GMT | [The Rose Remains](https://medium.com/p/ae84aa61e6f9) | [vulnerability](https://medium.com/feed/tag/vulnerability) |  | Yes |
-| Tue, 19 Aug 2025 02:46:39 GMT | [SMT Program 2025 CTF Journey: From File Inclusion to SQL Injectio...](https://medium.com/p/96e891d3b1d2) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) |  | Yes |
-| Tue, 19 Aug 2025 03:12:47 GMT | [Layered Privacy Notices](https://medium.com/p/5dfbf9115573) | [security](https://medium.com/feed/tag/security) |  | Yes |
-| Tue, 19 Aug 2025 05:05:14 GMT | [RBI’s FREE-AI Framework: What CISOs Should Pay Attention To](https://medium.com/p/ded4fbefaa2e) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) |  | Yes |
-| Tue, 19 Aug 2025 01:58:55 GMT | [AEM as a Cloud Service : Security Vulnerabilities and Defense St...](https://medium.com/p/fc92065cd5bb) | [information-security](https://medium.com/feed/tag/information-security) |  | Yes |
-| Tue, 19 Aug 2025 03:19:52 GMT | [Smartbi RCE Vulnerability — Patch Now Before Attackers Do](https://medium.com/p/37f8d6a2a9f5) | [vulnerability](https://medium.com/feed/tag/vulnerability), [rce](https://medium.com/feed/tag/rce) |  | Yes |
-| Tue, 19 Aug 2025 01:04:36 GMT | [SecurityX (CASP+) Journey](https://medium.com/p/b389771d2e48) | [information-technology](https://medium.com/feed/tag/information-technology), [information-security](https://medium.com/feed/tag/information-security) |  | Yes |
-| Tue, 19 Aug 2025 04:06:52 GMT | [How to Bypass SSL Pinning in Android Apps: Step-by-Step Guide wit...](https://medium.com/p/0a84b5738c1f) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) |  | Yes |
-| Tue, 19 Aug 2025 04:59:43 GMT | [Introduction to software — explained](https://medium.com/p/0df31d8432f1) | [information-technology](https://medium.com/feed/tag/information-technology) |  | Yes |
-| Tue, 19 Aug 2025 01:07:56 GMT | [Unlocking the True Power of JavaScript Closures in 2025](https://medium.com/p/7de897a57b10) | [bugs](https://medium.com/feed/tag/bugs) |  | Yes |
-| Tue, 19 Aug 2025 05:22:59 GMT | [Cortex Cloud Runtime Security: A Comprehensive Guide](https://medium.com/p/59237cf9cf72) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) |  | Yes |
-| Tue, 19 Aug 2025 00:29:29 GMT | [Deepfake Technology and Misinformation: Should AI Companies Be Li...](https://medium.com/p/e5c435c12693) | [information-technology](https://medium.com/feed/tag/information-technology) |  | Yes |
-| Tue, 19 Aug 2025 00:58:00 GMT | [How I Found an IDOR in private Bug hunting program(After a Day of...](https://medium.com/p/5987a72357a6) | [pentesting](https://medium.com/feed/tag/pentesting) |  | Yes |
-| Tue, 19 Aug 2025 05:36:29 GMT | [Alexander the Great and the lesson of leadership in cybersecurity](https://medium.com/p/2c806d583929) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) |  | Yes |
-| Tue, 19 Aug 2025 00:10:21 GMT | [Bashed Hackthebox Writeup](https://medium.com/p/dc86ed5f6971) | [hacking](https://medium.com/feed/tag/hacking), [infosec](https://medium.com/feed/tag/infosec), [pentesting](https://medium.com/feed/tag/pentesting) |  | Yes |
-| Tue, 19 Aug 2025 04:56:08 GMT | [“I Love Him” Isn’t a Reason to Stay When He Hurts You](https://medium.com/p/f34b95357ddf) | [vulnerability](https://medium.com/feed/tag/vulnerability) |  | Yes |
-| Mon, 18 Aug 2025 22:48:48 GMT | [No Logs. No SIEM. No Problem.](https://medium.com/p/c10d92cadbef) | [penetration-testing](https://medium.com/feed/tag/penetration-testing), [hacking](https://medium.com/feed/tag/hacking) |  |  |
-| Sun, 17 Aug 2025 10:38:45 GMT | [Hunting Bugs at IIT Madras: From PDF.js XSS to WordPress DoS](https://medium.com/p/3455ac8e610d) | [xss-attack](https://medium.com/feed/tag/xss-attack) |  |  |
-| Sun, 17 Aug 2025 23:08:52 GMT | [Mastering Reflected Cross-Site Scripting & Bypassing Filters](https://medium.com/p/c59f3095f621) | [cross-site-scripting](https://medium.com/feed/tag/cross-site-scripting) |  |  |
-| Fri, 11 Jul 2025 07:49:47 GMT | [Platform Showdown: The Ultimate Guide to Choosing Your Bug Bounty...](https://medium.com/p/64ea085ae800) | [bug-bounty-program](https://medium.com/feed/tag/bug-bounty-program) |  |  |
-| Fri, 07 Feb 2025 05:12:28 GMT | [Do You Struggle Finding Internal/Hidden Subdomains? Recon part 5](https://medium.com/p/b06c99a11364) | [subdomain-enumeration](https://medium.com/feed/tag/subdomain-enumeration) |  |  |
-| Mon, 18 Aug 2025 18:03:26 GMT | [Vulnerabilities related to Port 21](https://medium.com/p/730e8ad9daf0) | [vulnerability](https://medium.com/feed/tag/vulnerability) |  |  |
-| Mon, 11 Aug 2025 13:42:51 GMT | [\[02\]. How do I create my luck in bug bounty?](https://medium.com/p/2186c426c452) | [hackerone](https://medium.com/feed/tag/hackerone) |  |  |
-| Fri, 15 Aug 2025 13:45:52 GMT | [Hackviser — PostgreSQL COPY TO/FROM PROGRAM Authenticated Remot...](https://medium.com/p/789a682a1bca) | [remote-code-execution](https://medium.com/feed/tag/remote-code-execution) |  |  |
-| Mon, 07 Jul 2025 14:05:53 GMT | [Google Dorking](https://medium.com/p/435f81cbf592) | [dorking](https://medium.com/feed/tag/dorking) |  |  |
-| Fri, 01 Aug 2025 13:00:45 GMT | [SecurityManager Devre Dışıysa, Saldırganın Yolu Açık](https://medium.com/p/0837d79d6064) | [remote-code-execution](https://medium.com/feed/tag/remote-code-execution) |  |  |
-| Wed, 13 Aug 2025 18:20:59 GMT | [Cybersecurity Research and Development: Pushing the Boundaries of...](https://medium.com/p/16ca803f904d) | [security-research](https://medium.com/feed/tag/security-research) |  |  |
-| Sun, 17 Aug 2025 21:01:29 GMT | [I Found a Critical XSS Everyone Missed](https://medium.com/p/16dd284919c9) | [web-security](https://medium.com/feed/tag/web-security), [xss-attack](https://medium.com/feed/tag/xss-attack) |  |  |
-| Tue, 12 Aug 2025 21:02:44 GMT | [Google Cloud Partner API Credentials Found in Public Repo](https://medium.com/p/45517dc54213) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) |  |  |
-| Tue, 12 Aug 2025 17:24:22 GMT | [How I Removed Other User`s Uploaded Images in a Few Clicks](https://medium.com/p/fdeb6355458b) | [bug-bounty-hunter](https://medium.com/feed/tag/bug-bounty-hunter), [bug-bounty-program](https://medium.com/feed/tag/bug-bounty-program) |  |  |
-| Sat, 09 Aug 2025 04:52:10 GMT | [Improper Media Deletion How I Found Publicly Accessible Deleted F...](https://medium.com/p/391c4cdac844) | [bug-bounty-hunter](https://medium.com/feed/tag/bug-bounty-hunter) |  |  |
-| Sun, 03 Aug 2025 09:58:40 GMT | [Competitive intelligence](https://medium.com/p/63986c6f9aaa) | [google-dorking](https://medium.com/feed/tag/google-dorking) |  |  |
-| Wed, 13 Aug 2025 14:59:37 GMT | [ Azure Linux: CVEs & Dashboard: Making Vulnerability Management S...](https://medium.com/p/87f5336ef816) | [cve](https://medium.com/feed/tag/cve) |  |  |
-| Thu, 14 Aug 2025 08:13:28 GMT | [Prevent XSSI in Symfony (Cross-Site Script Inclusion)](https://medium.com/p/0e4f19f13ae7) | [xss-vulnerability](https://medium.com/feed/tag/xss-vulnerability) |  |  |
-| Fri, 27 Jun 2025 12:57:47 GMT | [ Behind the Bugs: Day 4](https://medium.com/p/e70c5cb30d31) | [bug-bounty-hunting](https://medium.com/feed/tag/bug-bounty-hunting) |  |  |
-| Fri, 15 Aug 2025 19:37:05 GMT | [XSS: Um bypass interessante em limite de caracteres](https://medium.com/p/180dbce1b1c3) | [xss-bypass](https://medium.com/feed/tag/xss-bypass) |  |  |
-| Tue, 22 Jul 2025 13:42:20 GMT | [Conflux Developer Bounties Initiative 2025](https://medium.com/p/9f934ed151f7) | [bounty-program](https://medium.com/feed/tag/bounty-program) |  |  |
-| Sun, 17 Aug 2025 17:50:39 GMT | [\[Web Security Academy\] — Server-Side Vulnerabilities / Au...](https://medium.com/p/a6eefdcc58ff) | [web-security](https://medium.com/feed/tag/web-security) |  |  |
-| Mon, 16 Jun 2025 07:31:36 GMT | [$$ Mass Hunting with FOFA Dorking](https://medium.com/p/ad733f90a49e) | [dorking](https://medium.com/feed/tag/dorking) |  |  |
-| Sun, 26 Jan 2025 19:08:11 GMT | [Matrix strike’s back against honesty from a power stance](https://medium.com/p/91645f073f77) | [web-pentest](https://medium.com/feed/tag/web-pentest) |  |  |
-| Wed, 16 Jul 2025 10:29:09 GMT | [Google Dorking My Way Out of Exam Stress (And Into the Hall of Fa...](https://medium.com/p/a01d984f713d) | [vulnerability-disclosure](https://medium.com/feed/tag/vulnerability-disclosure) |  |  |
-| Tue, 05 Dec 2023 07:54:40 GMT | [LFI via SMTP log poisoning](https://medium.com/p/65e02dd21068) | [log-poisoning](https://medium.com/feed/tag/log-poisoning) |  |  |
-| Mon, 18 Aug 2025 01:45:11 GMT | [Web Uygulamalarının Arkasındaki Sessiz Tehditler](https://medium.com/p/a31223bfd9f6) | [web-security](https://medium.com/feed/tag/web-security) |  |  |
-| Fri, 18 Jul 2025 17:55:50 GMT | [Google Dorking Secrets: What You Should Know Before It’s Too La...](https://medium.com/p/925fbdf45715) | [google-dork](https://medium.com/feed/tag/google-dork) |  |  |
-| Mon, 11 Aug 2025 06:22:16 GMT | [Critical RCE Vulnerability Found in IP-guard WebServer — Pa...](https://medium.com/p/78216c2fe7a6) | [rce](https://medium.com/feed/tag/rce) |  |  |
-| Tue, 12 Aug 2025 17:43:05 GMT | [TuesdayTool 32: Google Custom Search Engine (CSE)](https://medium.com/p/8210b78957a7) | [cybersecurity-tools](https://medium.com/feed/tag/cybersecurity-tools) |  |  |
-| Mon, 18 Aug 2025 23:43:45 GMT | [RevengeRAT: The Remote Access Trojan You Don’t Want as a Guest](https://medium.com/p/794f74ce3392) | [information-security](https://medium.com/feed/tag/information-security) |  |  |
-| Mon, 11 Aug 2025 19:31:01 GMT | [Portswigger Server-Side Request Forgery (SSRF) Labs — Appre...](https://medium.com/p/dc4c6a0802d7) | [ssrf](https://medium.com/feed/tag/ssrf) |  |  |
-| Mon, 21 Jul 2025 12:31:23 GMT | [Best Reconciliation Solutions for Banks: Features, Benefits, and ...](https://medium.com/p/1a244404bc7a) | [recon](https://medium.com/feed/tag/recon) |  |  |
-| Sun, 17 Aug 2025 11:19:31 GMT | [ Decrypting EncryptHub: How a Russian Cyber Gang Exploits MSC Evi...](https://medium.com/p/5a825897fe2d) | [exploit](https://medium.com/feed/tag/exploit) |  |  |
-| Fri, 01 Nov 2024 11:29:10 GMT | [Mastering Subfinder for Bug Bounty: Ultimate Guide to Subdomain E...](https://medium.com/p/18c36599c8a8) | [subdomain-enumeration](https://medium.com/feed/tag/subdomain-enumeration) |  |  |
-| Sat, 16 Aug 2025 17:38:04 GMT | [Zero-day exploit in WinRaR (CVE-2025–8088) used by Threat Actor...](https://medium.com/p/8575c4865150) | [cve](https://medium.com/feed/tag/cve) |  |  |
-| Mon, 18 Aug 2025 17:19:10 GMT | [The #1 Mistake That Gets You Hacked (And How to Fix It)](https://medium.com/p/d881cf0eb692) | [cyber-security-awareness](https://medium.com/feed/tag/cyber-security-awareness) |  |  |
-| Sat, 04 Jan 2025 17:20:23 GMT | [GitHub dork](https://medium.com/p/cc890d5d76a0) | [github-dorking](https://medium.com/feed/tag/github-dorking) |  |  |
-| Sat, 19 Jul 2025 05:58:24 GMT | [Protect Your Remote Team With These Cybersecurity Tools](https://medium.com/p/430051784e39) | [cybersecurity-tools](https://medium.com/feed/tag/cybersecurity-tools) |  |  |
-| Tue, 12 Aug 2025 05:21:56 GMT | [Forbidden No More — How Hackers Slip Past 403 & 401 Errors ...](https://medium.com/p/a0fb097c0c7f) | [bug-bounty-hunting](https://medium.com/feed/tag/bug-bounty-hunting) |  |  |
-| Mon, 18 Aug 2025 14:31:15 GMT | [Google allows Putin’s messenger Max to spy on citizens — ...](https://medium.com/p/bee217e2d147) | [infosec](https://medium.com/feed/tag/infosec) |  |  |
-| Mon, 18 Aug 2025 04:44:04 GMT | [Buffer Overflow: The Classic Coding Mistake That Won’t Die](https://medium.com/p/2ca3817fee9e) | [bugs](https://medium.com/feed/tag/bugs) |  |  |
-| Wed, 30 Jul 2025 19:19:16 GMT | [Embarking on the Bug Bounty Journey: A Deep Dive into the Top Bug...](https://medium.com/p/8d62a14cd2a6) | [bugcrowd](https://medium.com/feed/tag/bugcrowd) |  |  |
-| Sun, 10 Aug 2025 05:37:41 GMT | [ $10,000 Google Bug Bounty: How a Deserialization RCE in AppSheet...](https://medium.com/p/955b0a2e840b) | [remote-code-execution](https://medium.com/feed/tag/remote-code-execution), [bug-bounty-hunting](https://medium.com/feed/tag/bug-bounty-hunting) |  |  |
-| Tue, 15 Jul 2025 19:39:12 GMT | [2500$ From Login Bypassed & MFA Using a Race Condition + JWT Leak](https://medium.com/p/6139fcc22573) | [bounty-program](https://medium.com/feed/tag/bounty-program) |  |  |
-| Mon, 18 Aug 2025 07:08:43 GMT | [Guide to Depositing BUG on StakingRewards with MetaMask or Ledger](https://medium.com/p/2fc0c6577631) | [bugs](https://medium.com/feed/tag/bugs) |  |  |
-| Sat, 16 Aug 2025 16:46:34 GMT | [Disclosing Private Group Members via Facebook Rooms](https://medium.com/p/d2e805ac8441) | [bug-bounty-hunter](https://medium.com/feed/tag/bug-bounty-hunter) |  |  |
-| Sat, 05 Jul 2025 02:06:42 GMT | [HOW I FOUND PRE-ACCOUNT TAKE OVER IN A SHOPPING PROGRAM](https://medium.com/p/72fa283641c8) | [bug-bounty-hunting](https://medium.com/feed/tag/bug-bounty-hunting) |  |  |
-| Tue, 06 May 2025 08:09:58 GMT | [Prevent File Inclusion Vulnerability in Symfony](https://medium.com/p/07391072469a) | [file-inclusion](https://medium.com/feed/tag/file-inclusion) |  |  |
-| Mon, 18 Aug 2025 17:27:56 GMT | [CVE-2025–49113 — Roundcube 1.6.10 Remote Code Execution](https://medium.com/p/0598e7944361) | [vulnerability](https://medium.com/feed/tag/vulnerability) |  |  |
-| Mon, 18 Aug 2025 16:36:41 GMT | [Life and how I perceive it](https://medium.com/p/a49f11a71353) | [vulnerability](https://medium.com/feed/tag/vulnerability) |  |  |
-| Wed, 13 Aug 2025 09:13:56 GMT | [CVE-2025–50817: Python-Future Module Arbitrary Code Execution v...](https://medium.com/p/f0818ea93cf4) | [security-research](https://medium.com/feed/tag/security-research), [cve](https://medium.com/feed/tag/cve) |  |  |
-| Sun, 13 Jul 2025 16:21:12 GMT | [Why Listing Your Business in a Tribe-Centered Directory Like Unit...](https://medium.com/p/67c4053e8ac0) | [directory-listing](https://medium.com/feed/tag/directory-listing) |  |  |
-| Thu, 17 Jul 2025 21:25:22 GMT | [Bug Bounty Journey — Valid Report Part 8](https://medium.com/p/0edfa67082b2) | [google-dork](https://medium.com/feed/tag/google-dork) |  |  |
-| Thu, 07 Aug 2025 01:03:15 GMT | [Trend Micro Issues Critical Security Update for Apex One (On-Prem...](https://medium.com/p/036608061174) | [remote-code-execution](https://medium.com/feed/tag/remote-code-execution) |  |  |
-| Mon, 21 Jul 2025 14:39:55 GMT | [$DORK Yield Generation for Maximum Returns on StakingRewards](https://medium.com/p/83d0b0713894) | [dorks](https://medium.com/feed/tag/dorks) |  |  |
-| Tue, 08 Jul 2025 20:49:53 GMT | [UpDown-Linux-Medium](https://medium.com/p/b3dbacf057f8) | [file-inclusion](https://medium.com/feed/tag/file-inclusion) |  |  |
-| Mon, 18 Aug 2025 16:01:22 GMT | [Gitlab XSS Using json:table Markdown — Worth $13,950 —�...](https://medium.com/p/93104473620e) | [bug-bounty](https://medium.com/feed/tag/bug-bounty), [infosec](https://medium.com/feed/tag/infosec), [xss-attack](https://medium.com/feed/tag/xss-attack) |  |  |
-| Mon, 18 Aug 2025 17:54:39 GMT | [The Rise of Cricket Flour: Protein for the Future](https://medium.com/p/2c075ca6765d) | [bugs](https://medium.com/feed/tag/bugs) |  |  |
-| Mon, 18 Aug 2025 18:10:46 GMT | [MD2PDF \| TryHackMe \| Walkthough](https://medium.com/p/c3628292a4af) | [ssrf](https://medium.com/feed/tag/ssrf) |  |  |
-| Fri, 15 Aug 2025 17:39:28 GMT | [Bug Bounty: XSS Exploitation — From Alert Boxes to Full Con...](https://medium.com/p/6530d83cafa6) | [xss-vulnerability](https://medium.com/feed/tag/xss-vulnerability) |  |  |
-| Wed, 13 Aug 2025 04:33:15 GMT | [ Metasploitable 1 — Three Paths to Pwnage](https://medium.com/p/7fe988d66031) | [rce](https://medium.com/feed/tag/rce) |  |  |
-| Wed, 06 Aug 2025 07:15:59 GMT | [Menemukan Nama Domain yang Similar atau Paralel](https://medium.com/p/7f9aae14bd2c) | [pentest](https://medium.com/feed/tag/pentest) |  |  |
-| Mon, 04 Aug 2025 13:36:43 GMT | [CurXecute Vulnerability in Cursor IDE: A Wake-Up Call for Develop...](https://medium.com/p/25b607ba960e) | [remote-code-execution](https://medium.com/feed/tag/remote-code-execution) |  |  |
-| Tue, 22 Jul 2025 19:31:47 GMT | [Your API Keys Are Leaking — And You Don’t Even Know It](https://medium.com/p/109a8c43a38f) | [api-key](https://medium.com/feed/tag/api-key) |  |  |
-| Fri, 08 Aug 2025 04:32:39 GMT | [Exploiting XSS to Bypass CSRF Defenses: Change Victim’s Email](https://medium.com/p/dcdcbfe1d5df) | [cross-site-scripting](https://medium.com/feed/tag/cross-site-scripting) |  |  |
-| Tue, 12 Aug 2025 15:12:33 GMT | [Cybr Academy — \[LAB\]ECS RCE Exploit to Get AWS Credential...](https://medium.com/p/4fbc12bc62bc) | [exploit](https://medium.com/feed/tag/exploit), [rce](https://medium.com/feed/tag/rce) |  |  |
-| Sat, 09 Aug 2025 05:32:30 GMT | [لعبة ONE PIECE Bounty Rush \| نصائح واستراتيجي...](https://medium.com/p/07ab573b1389) | [bounties](https://medium.com/feed/tag/bounties) |  |  |
-| Wed, 29 Jan 2025 17:20:22 GMT | [The $500 Vulnerability: How Censys Search Led Me to a Quick Bug B...](https://medium.com/p/afabeec7a176) | [censys](https://medium.com/feed/tag/censys) |  |  |
-| Mon, 04 Aug 2025 11:25:07 GMT | [️‍♂️ How I Bypassed the “Admin” Name Filter on exampl...](https://medium.com/p/ef653a59da5b) | [recon](https://medium.com/feed/tag/recon) |  |  |
-| Mon, 18 Aug 2025 18:49:24 GMT | [Elastic EDR Zero-Day: Bypass Detection, Execute Malware, and Trig...](https://medium.com/p/363ca11062b9) | [vulnerability](https://medium.com/feed/tag/vulnerability) |  |  |
-| Mon, 18 Aug 2025 13:27:09 GMT | [A Fix for “ERROR kuhl_m_sekurlsa_acquireLSA ; Logon list”](https://medium.com/p/6c599fb6ad39) | [pentesting](https://medium.com/feed/tag/pentesting) |  |  |
-| Mon, 18 Aug 2025 15:29:55 GMT | [Network & Infrastructure Penetration Testing Services \| SecureRo...](https://medium.com/p/9a0c0c1d9123) | [ethical-hacking](https://medium.com/feed/tag/ethical-hacking) |  |  |
-| Wed, 16 Jul 2025 08:57:47 GMT | [Maximize Your Bounty (BNTY) Token Claiming](https://medium.com/p/eb0e7f727b85) | [bounties](https://medium.com/feed/tag/bounties) |  |  |
-| Tue, 12 Aug 2025 13:28:56 GMT | [IDOR in UK Government — Able To Delete Millions Appeal Case...](https://medium.com/p/b1fb51f11a1f) | [hackerone](https://medium.com/feed/tag/hackerone) |  |  |
-| Wed, 12 Feb 2025 22:46:35 GMT | [https://www.express.co.uk/life-style/property/2012927/cleaning-ch...](https://medium.com/p/c86a46f0a6fd) | [web-pentest](https://medium.com/feed/tag/web-pentest) |  |  |
-| Tue, 12 Aug 2025 07:59:14 GMT | [ Exploiting a Mass Assignment API Vulnerability](https://medium.com/p/bca42a818aa2) | [information-disclosure](https://medium.com/feed/tag/information-disclosure) |  |  |
-| Wed, 02 Jul 2025 16:08:53 GMT | [10 Best WordPress Directory and listing Themes in 2025](https://medium.com/p/c0a9079e69c3) | [directory-listing](https://medium.com/feed/tag/directory-listing) |  |  |
-| Mon, 18 Aug 2025 18:52:04 GMT | [Cache Control the P4 Bug](https://medium.com/p/dfe254bb72d3) | [bug-bounty](https://medium.com/feed/tag/bug-bounty), [infosec](https://medium.com/feed/tag/infosec), [bug-bounty-tips](https://medium.com/feed/tag/bug-bounty-tips) |  |  |
-| Tue, 27 May 2025 08:27:52 GMT | [Exploiting Web Cache Poisoning with X-Host Header Using Param Min...](https://medium.com/p/f1b7b06bf5b8) | [web-cache-poisoning](https://medium.com/feed/tag/web-cache-poisoning) |  |  |
-| Wed, 13 Aug 2025 14:19:39 GMT | [ Awesome Hacking & Cybersecurity Learning Path — Your Ultim...](https://medium.com/p/2b5485515a5a) | [bug-bounty-hunting](https://medium.com/feed/tag/bug-bounty-hunting) |  |  |
-| Fri, 25 Jul 2025 12:16:47 GMT | [Recon Solana Announces Token Surge: Get RECON Today](https://medium.com/p/f9e03adf0832) | [recon](https://medium.com/feed/tag/recon) |  |  |
-| Wed, 02 Jul 2025 04:08:53 GMT | [OSINT Combine CTFD — OSINT 101 (Reconnaisance) Write-Up](https://medium.com/p/dbe8a3cfc9f8) | [google-dork](https://medium.com/feed/tag/google-dork) |  |  |
-| Fri, 25 Jul 2025 00:36:13 GMT | [These 10 Burp Extensions Changed the Way I Do Bug Bounties](https://medium.com/p/54daf5b08b15) | [bugcrowd](https://medium.com/feed/tag/bugcrowd) |  |  |
-| Fri, 18 Jul 2025 21:37:08 GMT | [️‍♂️ Google Dorks for Recon & Sensitive Info Disclosure](https://medium.com/p/68f1d8eb6dd2) | [google-dork](https://medium.com/feed/tag/google-dork) |  |  |
-| Tue, 12 Aug 2025 03:31:42 GMT | [Lightning-Fast File Uploads in NestJS with Busboy and Streams](https://medium.com/p/02d933152212) | [file-upload](https://medium.com/feed/tag/file-upload) |  |  |
-| Sat, 03 May 2025 02:06:17 GMT | [Get Proactive on Vulnerability Disclosure: A Comprehensive Guide](https://medium.com/p/da828f8867bb) | [vulnerability-disclosure](https://medium.com/feed/tag/vulnerability-disclosure) |  |  |
-| Sat, 09 Aug 2025 11:08:27 GMT | [Finding Cross-site Scripting (XSS) Vulnerabilities and Mitigation...](https://medium.com/p/536b01700b5b) | [cross-site-scripting](https://medium.com/feed/tag/cross-site-scripting), [xss-vulnerability](https://medium.com/feed/tag/xss-vulnerability) |  |  |
-| Sun, 17 Aug 2025 14:14:01 GMT | [How I Found a Broken Access Control in a Job Application API](https://medium.com/p/72f083b8c113) | [hackerone](https://medium.com/feed/tag/hackerone), [idor](https://medium.com/feed/tag/idor) |  |  |
-| Mon, 18 Aug 2025 13:11:58 GMT | [️ How to Perform a Security Audit on a Web Application](https://medium.com/p/cccb2bbe12a8) | [application-security](https://medium.com/feed/tag/application-security) |  |  |
-| Tue, 05 Aug 2025 17:36:02 GMT | [Portswigger Information disclosure Labs — Practitioner](https://medium.com/p/028794b70321) | [information-disclosure](https://medium.com/feed/tag/information-disclosure) |  |  |
-| Thu, 14 Aug 2025 13:01:44 GMT | [️ Using CVE and Exploit Databases for Vulnerability Detection i...](https://medium.com/p/7e09135a540f) | [exploit](https://medium.com/feed/tag/exploit), [cve](https://medium.com/feed/tag/cve) |  |  |
-| Tue, 22 Jul 2025 18:44:36 GMT | [How I Took Over a Forgotten Google Storage Bucket Used to Distrib...](https://medium.com/p/374ae959179f) | [bugcrowd](https://medium.com/feed/tag/bugcrowd) |  |  |
-| Fri, 06 Jun 2025 15:47:21 GMT | [️‍♂️ GitHub Dorking for Bug Bounty: Hackers' Hidden Playg...](https://medium.com/p/b21732fcc00d) | [github-dorking](https://medium.com/feed/tag/github-dorking) |  |  |
-| Sat, 01 Feb 2025 06:10:16 GMT | [How to Create Advanced Custom Wordlist? Dive into Recon Part 4](https://medium.com/p/78c2d218a35a) | [subdomain-enumeration](https://medium.com/feed/tag/subdomain-enumeration) |  |  |
-| Fri, 04 Jul 2025 09:25:20 GMT | [Lo-Fi — TryHackMe Writeup](https://medium.com/p/185e8145584c) | [file-inclusion](https://medium.com/feed/tag/file-inclusion) |  |  |
-| Thu, 14 Aug 2025 12:46:15 GMT | [☕ Web Cache Poisoning — How to Trick the Internet’s Mem...](https://medium.com/p/eea160e6bb89) | [web-cache-poisoning](https://medium.com/feed/tag/web-cache-poisoning) |  |  |
-| Sat, 09 Aug 2025 17:51:34 GMT | [ Tools of the Trade: For a Cybersecurity Analyst](https://medium.com/p/904a14344732) | [cybersecurity-tools](https://medium.com/feed/tag/cybersecurity-tools) |  |  |
-| Fri, 08 Aug 2025 09:57:38 GMT | [Uploading files in Backstage software templates](https://medium.com/p/74c3963296fc) | [file-upload](https://medium.com/feed/tag/file-upload) |  |  |
-| Sat, 16 Aug 2025 15:48:37 GMT | [The Illusion of Safety: Exploiting XSS Beyond "HttpOnly" Cookies](https://medium.com/p/b81c6493bb76) | [cross-site-scripting](https://medium.com/feed/tag/cross-site-scripting), [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) |  |  |
-| Mon, 04 Aug 2025 17:13:43 GMT | [CVE-2025–24813Apache Tomcat Vulnerability Opens Door to Remote ...](https://medium.com/p/39061e91270f) | [remote-code-execution](https://medium.com/feed/tag/remote-code-execution) |  |  |
-| Fri, 01 Aug 2025 21:44:09 GMT | [PHP Wrappers](https://medium.com/p/3a314ed04e3f) | [local-file-inclusion](https://medium.com/feed/tag/local-file-inclusion), [lfi](https://medium.com/feed/tag/lfi) |  |  |
-| Thu, 14 Aug 2025 06:51:10 GMT | [What I Learned from EWPTX v3: A Journey into Advanced Web App Pen...](https://medium.com/p/c5407820992f) | [vapt](https://medium.com/feed/tag/vapt) |  |  |
-| Mon, 11 Aug 2025 07:19:08 GMT | [The Complete Guide to Backconnect Proxy Services: Revolutionizing...](https://medium.com/p/0a3b1b3dc12a) | [cybersecurity-tools](https://medium.com/feed/tag/cybersecurity-tools) |  |  |
-| Tue, 05 Aug 2025 04:09:45 GMT | [Catatan Belajar: Pembahasan Lain dalam Penetration Testing -Scopi...](https://medium.com/p/47b1d944f596) | [pentest](https://medium.com/feed/tag/pentest) |  |  |
-| Mon, 11 Aug 2025 16:40:57 GMT | [BugBounty Hunting for XSS in 2025](https://medium.com/p/0d8f2fd32291) | [xss-vulnerability](https://medium.com/feed/tag/xss-vulnerability) |  |  |
-| Mon, 18 Aug 2025 15:32:52 GMT | [The 80/20 Rule of Hacking (20% Skills = 80% Results)](https://medium.com/p/8cee2685ccaf) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  |  |
-| Sun, 17 Aug 2025 17:28:32 GMT | [️ KeySentry v2 — Stop API Key Leaks Before They Stop You](https://medium.com/p/9be0dc734932) | [bug-bounty-tips](https://medium.com/feed/tag/bug-bounty-tips), [bug-bounty-writeup](https://medium.com/feed/tag/bug-bounty-writeup), [api-key](https://medium.com/feed/tag/api-key) |  |  |
-| Wed, 06 Aug 2025 18:09:04 GMT | [Making dorks from HTML Comment](https://medium.com/p/b4794b54d596) | [dorking](https://medium.com/feed/tag/dorking) |  |  |
-| Fri, 15 Aug 2025 20:21:45 GMT | [File Inclusion](https://medium.com/p/fcb0e9a5b70d) | [lfi](https://medium.com/feed/tag/lfi) |  |  |
-| Tue, 29 Jul 2025 20:06:54 GMT | [Remote Code Execution on Dutch Site via CVE-2024-36401](https://medium.com/p/7678b19cfa31) | [remote-code-execution](https://medium.com/feed/tag/remote-code-execution) |  |  |
-| Mon, 04 Aug 2025 12:45:22 GMT | [Shodan.io, often dubbed the "search engine for hackers," is a pow...](https://medium.com/p/268fdeeb3fc7) | [shodan](https://medium.com/feed/tag/shodan) |  |  |
-| Tue, 05 Aug 2025 14:50:11 GMT | [Root-Me: XSS — Stored 1](https://medium.com/p/6bcbc1356f5a) | [xss-bypass](https://medium.com/feed/tag/xss-bypass) |  |  |
-| Wed, 30 Jul 2025 13:47:15 GMT | [My First Month in Bug Bounty: 2 Bugs, 1 Bounty, No BS](https://medium.com/p/4bd61fafc3fd) | [bounty-program](https://medium.com/feed/tag/bounty-program) |  |  |
-| Sat, 25 Jan 2025 23:20:10 GMT | [Full GitHub Dorking guide: for OSINT and BugBounty (Reconnaissanc...](https://medium.com/p/27557fb67ee0) | [github-dorking](https://medium.com/feed/tag/github-dorking) |  |  |
-| Sat, 02 Aug 2025 14:53:56 GMT | [️Siber Güvenlik İçin Popüler OSINT Araçları ve Kullanım ...](https://medium.com/p/ce285c486521) | [cybersecurity-tools](https://medium.com/feed/tag/cybersecurity-tools) |  |  |
-| Tue, 05 Aug 2025 17:44:32 GMT | [ DVWA XSS (Reflected) — Exploiting Every Security Level wit...](https://medium.com/p/6685cc78f31e) | [xss-vulnerability](https://medium.com/feed/tag/xss-vulnerability), [xss-bypass](https://medium.com/feed/tag/xss-bypass) |  |  |
-| Mon, 04 Aug 2025 21:44:20 GMT | [The 2025 GitHub Recon Checklist for Bug Bounty Hunters](https://medium.com/p/e626ee1a1012) | [recon](https://medium.com/feed/tag/recon) |  |  |
-| Sat, 09 Aug 2025 11:07:08 GMT | [Prompt Injection → Token Overload → Denial of Service in LLM ...](https://medium.com/p/0f2ef42ff3e3) | [bug-bounty-hunter](https://medium.com/feed/tag/bug-bounty-hunter) |  |  |
-| Mon, 18 Aug 2025 18:51:27 GMT | [The Android App That Stole My Location Data: Spyware Disguised as...](https://medium.com/p/b2fd762c8f72) | [ethical-hacking](https://medium.com/feed/tag/ethical-hacking) |  |  |
-| Fri, 04 Jul 2025 22:03:55 GMT | [How to Reap the Best Rewards from DORK $DORK](https://medium.com/p/a0a3927edfed) | [dorks](https://medium.com/feed/tag/dorks) |  |  |
-| Wed, 02 Jul 2025 06:35:13 GMT | [Easy Penetration Testing: Finding Website Parameters with ParamSp...](https://medium.com/p/a5f15a120845) | [bug-bounty-hunting](https://medium.com/feed/tag/bug-bounty-hunting) |  |  |
-| Sat, 26 Jul 2025 06:11:49 GMT | [Academy: TCM-Security Walkthrough](https://medium.com/p/8a81dda28e75) | [cyber-sec](https://medium.com/feed/tag/cyber-sec) |  |  |
-| Sun, 17 Aug 2025 07:01:59 GMT | [Cada funcionalidad es una promesa: ¿la cumple para todos?](https://medium.com/p/9125ef7b7e92) | [bug-bounty-tips](https://medium.com/feed/tag/bug-bounty-tips), [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup), [bug-bounty-writeup](https://medium.com/feed/tag/bug-bounty-writeup), [bug-bounty-hunter](https://medium.com/feed/tag/bug-bounty-hunter) |  |  |
-| Sun, 23 Feb 2025 11:17:25 GMT | [$1000-$10k worth Leaks via Github Secret Dorks](https://medium.com/p/6e13a2b7617a) | [github-dorking](https://medium.com/feed/tag/github-dorking) |  |  |
-| Sat, 16 Aug 2025 20:21:41 GMT | [My first serious security vulnerability report](https://medium.com/p/2eae7ace537d) | [security-research](https://medium.com/feed/tag/security-research) |  |  |
-| Sun, 20 Jul 2025 18:02:47 GMT | [New in Town and Need a Makeup Artist? Here’s the Easiest Way to...](https://medium.com/p/df1491c6b95f) | [directory-listing](https://medium.com/feed/tag/directory-listing) |  |  |
-| Tue, 22 Apr 2025 10:38:20 GMT | [Trump’s Tariffs Cut Out Censys — ZoomEye Steps In Strong!](https://medium.com/p/f48f3258f2d7) | [zoomeye](https://medium.com/feed/tag/zoomeye) |  |  |
-| Fri, 01 Aug 2025 22:14:03 GMT | [Local File Inclusion Double encoding @ Root-me Walkthrough](https://medium.com/p/61da1808e723) | [local-file-inclusion](https://medium.com/feed/tag/local-file-inclusion) |  |  |
-| Thu, 14 Aug 2025 09:45:57 GMT | [Vulnerability Assessment vs Penetration Testing](https://medium.com/p/3d7340f372f9) | [vapt](https://medium.com/feed/tag/vapt) |  |  |
-| Sat, 09 Aug 2025 14:59:30 GMT | [Server-side request forgery (SSRF)](https://medium.com/p/e8438a1b0f58) | [ssrf](https://medium.com/feed/tag/ssrf) |  |  |
-| Fri, 15 Aug 2025 13:51:08 GMT | [IDOR \| Tryhackme (EN)](https://medium.com/p/76fd1b4df029) | [idor](https://medium.com/feed/tag/idor) |  |  |
-| Mon, 04 Aug 2025 22:03:49 GMT | [Roam Global eSIM Bounty Program](https://medium.com/p/5b2efed8436d) | [bounty-program](https://medium.com/feed/tag/bounty-program) |  |  |
-| Thu, 19 Jun 2025 12:36:37 GMT | [ Introduction:](https://medium.com/p/1d7c65ee51b7) | [directory-listing](https://medium.com/feed/tag/directory-listing) |  |  |
-| Fri, 08 Aug 2025 07:39:10 GMT | [Simple Examples of XSS (Cross-Site Scripting )Attack & How It’s...](https://medium.com/p/64adbb36a3e1) | [cross-site-scripting](https://medium.com/feed/tag/cross-site-scripting) |  |  |
-| Wed, 04 Jun 2025 08:53:53 GMT | [Shodan Dorks to Find PII Data & Leaks](https://medium.com/p/50ab8b101f61) | [dorking](https://medium.com/feed/tag/dorking) |  |  |
-| Thu, 24 Jul 2025 05:17:38 GMT | [Web Cache Poisoning via Ambiguous Requests Lead to XSS](https://medium.com/p/aa9f9f59c079) | [web-cache-poisoning](https://medium.com/feed/tag/web-cache-poisoning) |  |  |
-| Tue, 12 Aug 2025 12:00:18 GMT | [How Often Should Your Business Conduct VAPT?](https://medium.com/p/c0c5772a0b93) | [vapt](https://medium.com/feed/tag/vapt) |  |  |
-| Mon, 28 Apr 2025 18:22:07 GMT | [Local File Inclusion (LFI) vs Remote File Inclusion (RFI)](https://medium.com/p/55c6df7427c5) | [file-inclusion](https://medium.com/feed/tag/file-inclusion) |  |  |
-| Sat, 16 Aug 2025 06:47:31 GMT | [Bug Bounty: Lo que parece innecesario para el usuario, a veces es...](https://medium.com/p/32961185d286) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup), [bug-bounty-hunter](https://medium.com/feed/tag/bug-bounty-hunter) |  |  |
-| Sun, 13 Jul 2025 16:32:21 GMT | [ProConOS Exposed: What ICS Security Teams Need to Know](https://medium.com/p/044ed5ce80a9) | [censys](https://medium.com/feed/tag/censys) |  |  |
-| Mon, 18 Aug 2025 13:51:57 GMT | [️ Signed, Sealed, Exploited: How a JWT Forgery in GraphQL Got M...](https://medium.com/p/e10a40883a3b) | [infosec](https://medium.com/feed/tag/infosec) |  |  |
-| Mon, 18 Aug 2025 14:20:43 GMT | [Server-side Template Injection with Information Disclosure via Us...](https://medium.com/p/b6d67af36b43) | [information-disclosure](https://medium.com/feed/tag/information-disclosure) |  |  |
-| Wed, 13 Aug 2025 03:03:47 GMT | [Cherry Studio Command Injection Vulnerability (CVE-2025–54074)�...](https://medium.com/p/ae85272d4d03) | [rce](https://medium.com/feed/tag/rce) |  |  |
-| Mon, 11 Aug 2025 13:36:32 GMT | [Why Every Business Needs VAPT: EDSPL End-to-End Vulnerability Man...](https://medium.com/p/2294dfbbc3fb) | [vapt](https://medium.com/feed/tag/vapt) |  |  |
-| Mon, 18 Aug 2025 15:12:16 GMT | [Workday Reports Data Exposure Following Third-Party CRM Compromis...](https://medium.com/p/693a5be2ffe0) | [infosec](https://medium.com/feed/tag/infosec) |  |  |
-| Mon, 04 Aug 2025 02:17:48 GMT | [The Public Exposure Of Your AI Conversations: Some Facts](https://medium.com/p/03ca20c1ba53) | [google-dorking](https://medium.com/feed/tag/google-dorking) |  |  |
-| Mon, 18 Aug 2025 20:08:35 GMT | [The Hacker Mindset: Humanity’s Best Defense](https://medium.com/p/a25d3e8b580e) | [hacking](https://medium.com/feed/tag/hacking) |  |  |
-| Mon, 18 Aug 2025 21:28:46 GMT | [The Future of Cybersecurity: AI, Cloud Security, and Mass Surveil...](https://medium.com/p/9c42361ba255) | [cyber-security-awareness](https://medium.com/feed/tag/cyber-security-awareness) |  |  |
-| Wed, 28 May 2025 15:28:17 GMT | [How Web Cache Poisoning via Unkeyed Query Strings Can Lead to Ref...](https://medium.com/p/0c0ce45cb5d9) | [web-cache-poisoning](https://medium.com/feed/tag/web-cache-poisoning) |  |  |
-| Mon, 11 Aug 2025 17:19:27 GMT | [Mastering Python: Built-in Functions, I/O, File Operations, and E...](https://medium.com/p/ecc19b0d3a8a) | [file-upload](https://medium.com/feed/tag/file-upload) |  |  |
-| Sun, 17 Aug 2025 03:44:14 GMT | [Just bought Shodan Lifetime Membership for $5](https://medium.com/p/fef8a9b8de2d) | [bug-bounty-tips](https://medium.com/feed/tag/bug-bounty-tips), [shodan](https://medium.com/feed/tag/shodan) |  |  |
-| Fri, 01 Aug 2025 20:33:57 GMT | [OpenAI Data Leakage: When AI Chats Go Public](https://medium.com/p/d3e07c680a10) | [google-dorking](https://medium.com/feed/tag/google-dorking) |  |  |
-| Mon, 28 Jul 2025 11:34:36 GMT | [Complete Guide to SOC Metrics: Measuring What Matters in Cybersec...](https://medium.com/p/0d67fb37aaaf) | [cyber-sec](https://medium.com/feed/tag/cyber-sec) |  |  |
-| Sat, 16 Aug 2025 17:31:43 GMT | [How I Got Server Side XSS From PDF Previewing](https://medium.com/p/769a1b585e84) | [xss-attack](https://medium.com/feed/tag/xss-attack), [ssrf](https://medium.com/feed/tag/ssrf) |  |  |
-| Mon, 02 Dec 2024 20:19:13 GMT | [Master Advanced Subdomain Enumeration with AlterX: A Bug Bounty H...](https://medium.com/p/d754a29738d9) | [subdomain-enumeration](https://medium.com/feed/tag/subdomain-enumeration) |  |  |
-| Sat, 16 Aug 2025 16:26:04 GMT | [XSS Escape backticks (`) — Strings/Template literals](https://medium.com/p/92b3f31b37a8) | [xss-attack](https://medium.com/feed/tag/xss-attack) |  |  |
-| Tue, 05 Aug 2025 10:07:40 GMT | [ 25 Hidden Google Dorks for 2025 Bug Bounty Hunters: Real Targets...](https://medium.com/p/0bf8dd18d8bb) | [google-dork](https://medium.com/feed/tag/google-dork) |  |  |
-| Thu, 07 Aug 2025 17:07:30 GMT | [Unauthorized Disclosure of Private Emails via WakaTime Private Le...](https://medium.com/p/197361b80476) | [information-disclosure](https://medium.com/feed/tag/information-disclosure), [security-research](https://medium.com/feed/tag/security-research) |  |  |
-| Thu, 14 Aug 2025 20:22:41 GMT | [Reverse engineering Authy: the open source method for exporting y...](https://medium.com/p/65a550c95b32) | [security-research](https://medium.com/feed/tag/security-research) |  |  |
-| Sun, 14 Jul 2024 11:56:11 GMT | [How I Can Get P1 Nasa easily — Dorking](https://medium.com/p/c9c4a4cee251) | [web-pentest](https://medium.com/feed/tag/web-pentest) |  |  |
-| Sat, 09 Aug 2025 19:41:33 GMT | [DVAPI API Penetration Testing: OWASP TOP 10 API vulnerabilities](https://medium.com/p/b3bf82192630) | [vapt](https://medium.com/feed/tag/vapt) |  |  |
-| Sun, 10 Aug 2025 12:50:07 GMT | [Streaming File Uploads and Downloads with FastAPI: A Practical Gu...](https://medium.com/p/ee5be38fdd66) | [file-upload](https://medium.com/feed/tag/file-upload) |  |  |
-| Mon, 28 Jul 2025 17:49:33 GMT | [Part I: Setting Up Python and the OpenAI API](https://medium.com/p/478a2cf72492) | [api-key](https://medium.com/feed/tag/api-key) |  |  |
-| Mon, 18 Aug 2025 18:18:45 GMT | [Exploit the game Blindly : With Blind XSS](https://medium.com/p/1f82479dfbc4) | [bug-bounty](https://medium.com/feed/tag/bug-bounty), [infosec](https://medium.com/feed/tag/infosec), [xss-attack](https://medium.com/feed/tag/xss-attack) |  |  |
-| Mon, 18 Aug 2025 18:24:44 GMT | [Execute and Identify Credential Abuse in AWS -Walkthrough](https://medium.com/p/bc17e894e134) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) |  |  |
-| Mon, 14 Jul 2025 12:12:37 GMT | [Web Cache Poisoning](https://medium.com/p/4936ddecf19d) | [web-cache-poisoning](https://medium.com/feed/tag/web-cache-poisoning) |  |  |
-| Fri, 18 Jul 2025 14:43:59 GMT | [Bug Bounty 101: Step-by-Step Practical Approach to Recon and Disc...](https://medium.com/p/43a4f505e3d3) | [bug-bounty-hunting](https://medium.com/feed/tag/bug-bounty-hunting) |  |  |
-| Sun, 27 Jul 2025 15:56:07 GMT | [A Hands-On Guide to API Key Aliasing & Quota Sharing on AWS Cloud...](https://medium.com/p/4f6b83ffe7dc) | [api-key](https://medium.com/feed/tag/api-key) |  |  |
-| Mon, 18 Aug 2025 07:40:08 GMT | [How I Passed the PJPT \| My Journey, Lessons, and Tips for Aspiri...](https://medium.com/p/e757e91f18d0) | [pentesting](https://medium.com/feed/tag/pentesting) |  |  |
-| Mon, 04 Aug 2025 12:43:31 GMT | [From PNG to XSS: How I Tricked a Web App Into Executing My Payloa...](https://medium.com/p/c66f5a990195) | [cross-site-scripting](https://medium.com/feed/tag/cross-site-scripting) |  |  |
-| Sun, 17 Aug 2025 12:47:35 GMT | [Wiz x Cloud Security Championship: Perimeter Leak \| Walkthrough](https://medium.com/p/e79b1944f4fa) | [ssrf](https://medium.com/feed/tag/ssrf) |  |  |
-| Wed, 19 Mar 2025 23:32:06 GMT | [Unity Mono Build Hacking](https://medium.com/p/2951e2a7f61a) | [cyber-sec](https://medium.com/feed/tag/cyber-sec) |  |  |
-| Mon, 18 Aug 2025 22:32:49 GMT | [Set It and Forget It: How to Kill 80% of Cyber Threats in 1 Hour](https://medium.com/p/4bf40bbe5ec8) | [information-security](https://medium.com/feed/tag/information-security) |  |  |
-| Sat, 19 Jul 2025 16:22:51 GMT | [Cara Root Android Tanpa TWRP: Cukup dengan Fastboot dan Magisk!](https://medium.com/p/6465c44436b0) | [bugcrowd](https://medium.com/feed/tag/bugcrowd) |  |  |
-| Sun, 17 Aug 2025 22:14:42 GMT | [My Taste of the Security Alphabet Soup: CWEE vs CAPenX in the Rea...](https://medium.com/p/fecd8d354988) | [application-security](https://medium.com/feed/tag/application-security) |  |  |
-| Sat, 26 Jul 2025 08:25:41 GMT | [️‍♂️ Beyond XSS: Weaponizing HTML Injection in the Real W...](https://medium.com/p/b78ee16acf5d) | [xss-bypass](https://medium.com/feed/tag/xss-bypass) |  |  |
-| Wed, 13 Aug 2025 09:20:50 GMT | [How to Chain Bugs Like a Pro (From P5 to P1)](https://medium.com/p/0cddd902c8e3) | [hackerone](https://medium.com/feed/tag/hackerone) |  |  |
-| Mon, 04 Aug 2025 14:37:56 GMT | [Hi Researcher!](https://medium.com/p/d57ddfa29ddd) | [bugcrowd](https://medium.com/feed/tag/bugcrowd) |  |  |
-| Sat, 16 Aug 2025 16:12:17 GMT | [Platform-Layer Access-Control Checks](https://medium.com/p/924395c8c3d9) | [application-security](https://medium.com/feed/tag/application-security) |  |  |
-| Mon, 18 Aug 2025 13:25:00 GMT | [Credential Theft in 2025: The Password Problem We Can’t Ignore](https://medium.com/p/0d8119c059a3) | [cyber-security-awareness](https://medium.com/feed/tag/cyber-security-awareness) |  |  |
-| Mon, 04 Aug 2025 18:37:11 GMT | [\[2\] picoCTF 2025 Challenge — n0s4n1ty 1 (Web Exploitation...](https://medium.com/p/05a15a3928ec) | [remote-code-execution](https://medium.com/feed/tag/remote-code-execution) |  |  |
-| Wed, 09 Jul 2025 01:02:19 GMT | [Start with VDPs Before Aiming for Private Bug Bounty Programs](https://medium.com/p/dd6336131231) | [vdp](https://medium.com/feed/tag/vdp) |  |  |
-| Thu, 07 Aug 2025 18:51:01 GMT | [Monitor HTTP Response Headers Like a Pro: Introducing Header Chan...](https://medium.com/p/b1494028b4db) | [cybersecurity-tools](https://medium.com/feed/tag/cybersecurity-tools) |  |  |
-| Sat, 16 Aug 2025 16:53:06 GMT | [$750 Bug Bounty: The Story of a Hidden Discount Code in JS Files.](https://medium.com/p/1a39bbecff27) | [bugs](https://medium.com/feed/tag/bugs) |  |  |
-| Mon, 18 Aug 2025 15:46:03 GMT | [The Hidden Threat in Your Code: How Malicious PyPI and npm Packag...](https://medium.com/p/2a472ec03a02) | [application-security](https://medium.com/feed/tag/application-security) |  |  |
-| Mon, 18 Aug 2025 01:21:35 GMT | [ScriptCTF 2025 — Pwn — Index: PIE-Resilient OOB Read ...](https://medium.com/p/0a264dc4b9c9) | [exploit](https://medium.com/feed/tag/exploit) |  |  |
-| Fri, 01 Aug 2025 16:05:55 GMT | [Local File Inclusion — Double encoding \[Root-Me\] Writeup](https://medium.com/p/68ea03d8c39a) | [lfi](https://medium.com/feed/tag/lfi) |  |  |
-| Fri, 01 Aug 2025 08:47:59 GMT | [ What is Google Dorking / Google Hacking?(Google Dorking කි�...](https://medium.com/p/94ee2ea14178) | [google-dork](https://medium.com/feed/tag/google-dork) |  |  |
-| Sat, 26 Apr 2025 14:25:59 GMT | [How I Found a Critical Security Flaw and Earned a Reward on a VDP](https://medium.com/p/019ebec71a74) | [vulnerability-disclosure](https://medium.com/feed/tag/vulnerability-disclosure) |  |  |
-| Fri, 08 Aug 2025 02:17:01 GMT | [Debugging Agent Interactions in Amazon Bedrock: File Handling & B...](https://medium.com/p/7a4a16faa838) | [file-upload](https://medium.com/feed/tag/file-upload) |  |  |
-| Mon, 18 Aug 2025 16:01:53 GMT | [Vulnerabilities are in the air…](https://medium.com/p/6a2b220c1099) | [vulnerability](https://medium.com/feed/tag/vulnerability) |  |  |
-| Wed, 13 Aug 2025 14:39:45 GMT | [Catching the users session](https://medium.com/p/84278a4c1efe) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) |  |  |
-| Mon, 18 Aug 2025 18:38:45 GMT | [Part 1: Understanding Security in Applications](https://medium.com/p/4d9b7b054f51) | [application-security](https://medium.com/feed/tag/application-security) |  |  |
-| Sat, 16 Aug 2025 19:34:39 GMT | [Android Malware abusing ZIP and XML parameters](https://medium.com/p/e86c11d46e2c) | [application-security](https://medium.com/feed/tag/application-security) |  |  |
-| Wed, 18 Jun 2025 14:01:48 GMT | [FOFA Dorking \| Part 7](https://medium.com/p/cc8a92941838) | [dorking](https://medium.com/feed/tag/dorking) |  |  |
-| Mon, 18 Aug 2025 20:06:06 GMT | [HackTheBox — Windows Event Logs and Finding Evil, Skills As...](https://medium.com/p/f289d9620f4b) | [hacking](https://medium.com/feed/tag/hacking) |  |  |
-| Thu, 07 Aug 2025 03:23:17 GMT | [Exploiting Cross-Site Scripting (XSS) to Capture Passwords](https://medium.com/p/371670c3dc03) | [cross-site-scripting](https://medium.com/feed/tag/cross-site-scripting) |  |  |
-| Mon, 21 Jul 2025 08:59:00 GMT | [How I learned about Subdomain takeover?](https://medium.com/p/e4823366b3f8) | [subdomain-takeover](https://medium.com/feed/tag/subdomain-takeover) |  |  |
-| Sun, 17 Aug 2025 00:34:01 GMT | [Source Code Audit Checklist: Best Practices for Secure Code](https://medium.com/p/a3b1521041e4) | [application-security](https://medium.com/feed/tag/application-security) |  |  |
-| Wed, 16 Jul 2025 20:51:01 GMT | [Unlock Exclusive BNTY Through Bounty's Distribution Fiesta](https://medium.com/p/892ff9726e8d) | [bounties](https://medium.com/feed/tag/bounties) |  |  |
-| Thu, 27 Mar 2025 11:00:27 GMT | [Mastering the Offensive Security Certified Professional (OSCP) Ce...](https://medium.com/p/3578eb0df17b) | [cyber-sec](https://medium.com/feed/tag/cyber-sec) |  |  |
-| Sun, 17 Aug 2025 10:56:08 GMT | [WebSockets](https://medium.com/p/0b4d9fc11da5) | [xss-attack](https://medium.com/feed/tag/xss-attack), [xss-bypass](https://medium.com/feed/tag/xss-bypass) |  |  |
-| Mon, 30 Jun 2025 14:33:38 GMT | [⚔️ TryHackMe — Kenobi Walkthrough](https://medium.com/p/4929670dabe4) | [vulnerability-disclosure](https://medium.com/feed/tag/vulnerability-disclosure) |  |  |
-| Sat, 07 Sep 2024 07:42:54 GMT | [The Easiest Way to Find CVEs at the Moment? GitHub Dorks!](https://medium.com/p/123d0fb20b26) | [github-dorking](https://medium.com/feed/tag/github-dorking) |  |  |
-| Fri, 25 Jul 2025 16:41:01 GMT | [️ SubDNS-UI: Build Your Own Subdomain + DNS Enumerator with a C...](https://medium.com/p/b560724d505a) | [subdomain-enumeration](https://medium.com/feed/tag/subdomain-enumeration) |  |  |
-| Fri, 15 Aug 2025 13:51:05 GMT | [IDOR \| Tryhackme (TR)](https://medium.com/p/5ea62f863a33) | [idor](https://medium.com/feed/tag/idor) |  |  |
-| Sat, 26 Jul 2025 06:55:47 GMT | [Capture Exclusive RECON Through Recon Solana's Bonus Rollout](https://medium.com/p/6acac449fd41) | [recon](https://medium.com/feed/tag/recon) |  |  |
-| Thu, 29 May 2025 12:14:31 GMT | [How I Rebuild a Linux Server After a Suspected Compromise (Step b...](https://medium.com/p/68f79e4a9e52) | [cyber-sec](https://medium.com/feed/tag/cyber-sec) |  |  |
-| Mon, 18 Aug 2025 22:53:22 GMT | [Automating Employee Onboarding in Microsoft Entra with Forms and ...](https://medium.com/p/34cf761e2cd4) | [information-technology](https://medium.com/feed/tag/information-technology) |  |  |
-| Mon, 18 Aug 2025 20:04:24 GMT | [Double-Edged Sword: Securing AI in Enterprises with the Mammoth E...](https://medium.com/p/87202cd90c67) | [information-security](https://medium.com/feed/tag/information-security) |  |  |
-| Wed, 09 Apr 2025 00:45:00 GMT | [Bug Bounty Journey — Valid Report Part 5](https://medium.com/p/7c203bbff96b) | [vdp](https://medium.com/feed/tag/vdp) |  |  |
-| Sat, 05 Jul 2025 10:03:43 GMT | [DORK: A Beginner’s Walkthrough](https://medium.com/p/58a3ce8cdee6) | [dorks](https://medium.com/feed/tag/dorks) |  |  |
-| Wed, 06 Aug 2025 06:56:07 GMT | [Catatan Belajar: OSINT in Penetration Testing](https://medium.com/p/b9ce3c20c1d0) | [pentest](https://medium.com/feed/tag/pentest) |  |  |
-| Sun, 17 Aug 2025 18:33:25 GMT | [Mobile Security](https://medium.com/p/bacce5441b13) | [security-research](https://medium.com/feed/tag/security-research) |  |  |
-| Fri, 10 Nov 2023 03:38:01 GMT | [Apache error.log advanced Log poisoning RCE](https://medium.com/p/5d465568b714) | [log-poisoning](https://medium.com/feed/tag/log-poisoning) |  |  |
-| Sat, 12 Apr 2025 05:03:37 GMT | [Subdomain takeover](https://medium.com/p/6642736285fc) | [subdomain-takeover](https://medium.com/feed/tag/subdomain-takeover) |  |  |
-| Mon, 18 Aug 2025 20:51:28 GMT | [Solar Rooftops an Overlooked Issue in National Security?](https://medium.com/p/66442ff9c08f) | [penetration-testing](https://medium.com/feed/tag/penetration-testing), [hacking](https://medium.com/feed/tag/hacking) |  |  |
-| Mon, 18 Aug 2025 16:40:52 GMT | [Is This the End of High-Paying Tech Jobs?](https://medium.com/p/eac14e9feca8) | [ethical-hacking](https://medium.com/feed/tag/ethical-hacking) |  |  |
-| Fri, 08 Aug 2025 03:05:09 GMT | [Kingdee ERP Zero-Day? ScpSupRegHandler File Upload Exploit Explai...](https://medium.com/p/f19577066df0) | [rce](https://medium.com/feed/tag/rce) |  |  |
-| Tue, 22 Jul 2025 01:24:20 GMT | [Understanding the Difference Between Penetration Testing and Vuln...](https://medium.com/p/666489672bb5) | [vulnerability-scanning](https://medium.com/feed/tag/vulnerability-scanning) |  |  |
-| Tue, 10 Dec 2024 15:26:15 GMT | [Mastering Bug Bounty Recon: Essential Techniques for Ethical Hack...](https://medium.com/p/549c5b472975) | [subdomain-enumeration](https://medium.com/feed/tag/subdomain-enumeration) |  |  |
-| Mon, 18 Aug 2025 21:57:32 GMT | [Hire a hacker](https://medium.com/p/02384ed7ce5e) | [hacking](https://medium.com/feed/tag/hacking) |  |  |
-| Mon, 11 Aug 2025 07:01:28 GMT | [Bugcrowd’s Blackhat USA CTF — Writeup](https://medium.com/p/fc28adef7ea9) | [bugcrowd](https://medium.com/feed/tag/bugcrowd) |  |  |
-| Sun, 09 Feb 2025 06:54:39 GMT | [From Duplicate to Letter of Appreciation: How I Hacked NASA](https://medium.com/p/3f8b5a6c105c) | [vdp](https://medium.com/feed/tag/vdp) |  |  |
-| Thu, 14 Aug 2025 10:38:13 GMT | [How $75K in ZORA Was Claimed Without Hacking the Code](https://medium.com/p/43df4857d0cc) | [exploit](https://medium.com/feed/tag/exploit) |  |  |
-| Mon, 07 Apr 2025 17:11:26 GMT | [Web Cache: The Hidden Speed Booster That Can Become a Security Ri...](https://medium.com/p/8edc3b8cbf8d) | [web-cache-poisoning](https://medium.com/feed/tag/web-cache-poisoning) |  |  |
-| Mon, 11 Aug 2025 19:31:01 GMT | [Portswigger Server-Side Request Forgery (SSRF) Labs — Pract...](https://medium.com/p/1a9782bf775a) | [ssrf](https://medium.com/feed/tag/ssrf) |  |  |
-| Sun, 06 Jul 2025 06:33:18 GMT | [Path Traversal part-1 : File path traversal, simple case](https://medium.com/p/feabd380b997) | [file-inclusion](https://medium.com/feed/tag/file-inclusion) |  |  |
-| Tue, 15 Jul 2025 12:15:58 GMT | [“Secure” OPC UA Setups Are Being Hacked — Here’s Why](https://medium.com/p/fbdb74e70f52) | [censys](https://medium.com/feed/tag/censys) |  |  |
-| Sat, 05 Jul 2025 14:44:33 GMT | [Subdomain Takeover: When Your Own Domain Becomes Your Enemy ️�...](https://medium.com/p/8c80e650aeea) | [subdomain-takeover](https://medium.com/feed/tag/subdomain-takeover) |  |  |
-| Tue, 05 Aug 2025 15:39:37 GMT | [Scanning Web Servers for Vulnerabilities with Nikto: My Hands-On ...](https://medium.com/p/d736c561554b) | [vulnerability-scanning](https://medium.com/feed/tag/vulnerability-scanning) |  |  |
-| Tue, 05 Aug 2025 17:19:44 GMT | [Bug Bounty Hunting — Are Self Hosted Programs Any Better?](https://medium.com/p/797ecf90bc80) | [bug-bounty-hunting](https://medium.com/feed/tag/bug-bounty-hunting) |  |  |
-| Sun, 22 Oct 2023 19:57:30 GMT | [Performing a Log Poisoning Attack](https://medium.com/p/b6df1d075418) | [log-poisoning](https://medium.com/feed/tag/log-poisoning) |  |  |
-| Wed, 06 Aug 2025 06:57:03 GMT | [Catatan Belajar: OSINT Collection Methods: Target Domain Name Inf...](https://medium.com/p/0a737306e228) | [pentest](https://medium.com/feed/tag/pentest) |  |  |
-| Fri, 08 Aug 2025 17:59:47 GMT | [TryHackMe File Inclusion Challenge walkthrough.](https://medium.com/p/9eb39ca9d4eb) | [file-inclusion](https://medium.com/feed/tag/file-inclusion) |  |  |
-| Mon, 14 Jul 2025 09:25:40 GMT | [La importancia de los directorios locales en el SEO](https://medium.com/p/58c038bb9031) | [directory-listing](https://medium.com/feed/tag/directory-listing) |  |  |
-| Sat, 21 Jun 2025 13:44:14 GMT | [Subdomain Takeover Made Easy: How to Detect Vulnerabilities Using...](https://medium.com/p/da8bb98a1dd6) | [subdomain-takeover](https://medium.com/feed/tag/subdomain-takeover) |  |  |
-| Wed, 25 Jun 2025 18:53:38 GMT | [Runescapers Beware Phishing Campaigns that yield no EXP!](https://medium.com/p/9b520eb2c96d) | [cyber-sec](https://medium.com/feed/tag/cyber-sec) |  |  |
-| Mon, 18 Aug 2025 15:47:12 GMT | [Recon](https://medium.com/p/f142ff07001d) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  |  |
-| Mon, 18 Aug 2025 23:15:32 GMT | [SQL injection vulnerability in the AWS Aurora DSQL MCP Server](https://medium.com/p/b00eea7c85d9) | [vulnerability](https://medium.com/feed/tag/vulnerability) |  |  |
-| Sun, 17 Aug 2025 17:52:52 GMT | [\[Web Security Academy\] — Server-Side Vulnerabilities / Au...](https://medium.com/p/50f32c7df27a) | [web-security](https://medium.com/feed/tag/web-security) |  |  |
-| Mon, 11 Aug 2025 07:41:16 GMT | [How I Found an XSS Vulnerability in the KPK Website and Earned a ...](https://medium.com/p/fc59fde71f82) | [vdp](https://medium.com/feed/tag/vdp) |  |  |
-| Sat, 15 Mar 2025 04:45:52 GMT | [Hacking Walkthrough: File Inclusion Assessment on Hack The Box](https://medium.com/p/bd29f5d53ec6) | [file-inclusion](https://medium.com/feed/tag/file-inclusion) |  |  |
-| Fri, 28 Jun 2024 14:51:14 GMT | [X-Forwarded HTTP header-ləri : Qısa izah](https://medium.com/p/871198ef837c) | [log-poisoning](https://medium.com/feed/tag/log-poisoning) |  |  |
-| Fri, 08 Aug 2025 03:46:41 GMT | [Cyber Security Research: Advancing the Field of Security](https://medium.com/p/80afd0ce3d45) | [security-research](https://medium.com/feed/tag/security-research) |  |  |
-| Fri, 24 Jan 2025 00:08:47 GMT | [A majestic temple opportunity of wellbeing and wellness](https://medium.com/p/aa3a367aad46) | [web-pentest](https://medium.com/feed/tag/web-pentest) |  |  |
-| Sun, 10 Aug 2025 14:21:50 GMT | [How to Install and Configure OpenVAS on Kali Linux VM (with Admin...](https://medium.com/p/38b0174f82ee) | [vulnerability-scanning](https://medium.com/feed/tag/vulnerability-scanning) |  |  |
-| Sat, 16 Aug 2025 15:24:50 GMT | [August 2025 CVE Alert: Patch Tuesday’s Most Dangerous Vulnerabi...](https://medium.com/p/6e1fe37d8825) | [ssrf](https://medium.com/feed/tag/ssrf), [cve](https://medium.com/feed/tag/cve) |  |  |
-| Sun, 17 Aug 2025 15:53:29 GMT | [NeoVault — HTB — PT-BR](https://medium.com/p/41078a140616) | [idor](https://medium.com/feed/tag/idor) |  |  |
-| Sat, 09 Aug 2025 16:23:42 GMT | [From Browser to Shell: Hacking the Edex-UI Terminal](https://medium.com/p/7dfe757893fe) | [pentest](https://medium.com/feed/tag/pentest) |  |  |
-| Tue, 20 May 2025 05:36:34 GMT | [From Rate Limiting to Account Takeover: The Bug That Escalated Qu...](https://medium.com/p/87f14bdd6f63) | [vulnerability-disclosure](https://medium.com/feed/tag/vulnerability-disclosure) |  |  |
-| Thu, 07 Aug 2025 12:26:27 GMT | [How to Embed File Uploads with the Google Drive API](https://medium.com/p/a2a27c1885b6) | [file-upload](https://medium.com/feed/tag/file-upload) |  |  |
-| Mon, 18 Aug 2025 03:17:30 GMT | [Active Exploits Detected: Apache ActiveMQ Remote Code Execution (...](https://medium.com/p/cac20e1d405e) | [rce](https://medium.com/feed/tag/rce) |  |  |
-| Mon, 18 Aug 2025 20:06:59 GMT | [Different Ways Of Footprinting :](https://medium.com/p/26fb80bb92f9) | [hacking](https://medium.com/feed/tag/hacking) |  |  |
-| Mon, 21 Jul 2025 13:49:03 GMT | [Why Recon Solana $RECON Growth Strategy Could Be Your Best Invest...](https://medium.com/p/35686a79c5d4) | [recon](https://medium.com/feed/tag/recon) |  |  |
-| Sat, 16 Aug 2025 00:42:40 GMT | [Announcing the NewBitcoin “Drive & Earn” Bounty Campaign �...](https://medium.com/p/e7fe55ceb58c) | [bounty-program](https://medium.com/feed/tag/bounty-program), [bounties](https://medium.com/feed/tag/bounties) |  |  |
-| Thu, 14 Aug 2025 10:42:04 GMT | [How I Found a Sensitive Data Exposure And PII in NASA’s EarthDa...](https://medium.com/p/6980492dcd75) | [hackerone](https://medium.com/feed/tag/hackerone), [bugcrowd](https://medium.com/feed/tag/bugcrowd) |  |  |
-| Wed, 16 Jul 2025 13:50:36 GMT | [Bug Bounties, Broken Promises](https://medium.com/p/a19557db0aaa) | [bug-bounty-program](https://medium.com/feed/tag/bug-bounty-program) |  |  |
-| Sun, 22 Jun 2025 12:31:36 GMT | [️ Day 5/30 Google Dorking: The Hacker’s Open Secret for Findi...](https://medium.com/p/f6d11d586884) | [dorking](https://medium.com/feed/tag/dorking) |  |  |
-| Sat, 26 Apr 2025 20:38:42 GMT | [Subdomain Takeover on VDP](https://medium.com/p/32cac749bf16) | [vdp](https://medium.com/feed/tag/vdp) |  |  |
-| Sat, 19 Jul 2025 16:50:20 GMT | [LunaFi Announces Community Drop: Grab LFI Today](https://medium.com/p/f92de09d42c1) | [lfi](https://medium.com/feed/tag/lfi) |  |  |
-| Fri, 27 Jun 2025 09:58:47 GMT | [Kill Selfhost Program With My Custom Dorks](https://medium.com/p/839f528217df) | [bug-bounty-program](https://medium.com/feed/tag/bug-bounty-program) |  |  |
-| Mon, 04 Aug 2025 20:17:00 GMT | [Session Fixation in Vvveb CMS v1.0.6.1](https://medium.com/p/9784ddb125f1) | [vulnerability-disclosure](https://medium.com/feed/tag/vulnerability-disclosure), [security-research](https://medium.com/feed/tag/security-research) |  |  |
-| Mon, 07 Jul 2025 18:55:00 GMT | [From LFI to RCE — Real Exploitation in Practice](https://medium.com/p/06c29f78b04f) | [local-file-inclusion](https://medium.com/feed/tag/local-file-inclusion) |  |  |
-| Fri, 01 Aug 2025 06:17:06 GMT | [15,000 Critical Systems Are Exposed — Thanks to This Outdat...](https://medium.com/p/6f6f71d40edc) | [censys](https://medium.com/feed/tag/censys) |  |  |
-| Mon, 04 Aug 2025 05:56:23 GMT | [Google dorking/Hacking](https://medium.com/p/b4251a8b7a8f) | [google-dorking](https://medium.com/feed/tag/google-dorking) |  |  |
-| Wed, 13 Aug 2025 19:35:23 GMT | [Zero-Click WinRAR Zero-Day: CVE-2025–8088 (Path Traversal) Expl...](https://medium.com/p/a5a9fe7292ce) | [exploit](https://medium.com/feed/tag/exploit) |  |  |
-| Fri, 27 Jun 2025 08:31:46 GMT | [Sensitive Server Info Disclosure via Public phpinfo()](https://medium.com/p/466f80835c12) | [vulnerability-disclosure](https://medium.com/feed/tag/vulnerability-disclosure) |  |  |
-| Mon, 18 Aug 2025 18:52:10 GMT | [Subdomain Takeover Explained  (And How Hackers Earn $$$ From It)](https://medium.com/p/85bc47553d35) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  |  |
-| Mon, 18 Aug 2025 20:54:11 GMT | [Hiding Payload in PNGs](https://medium.com/p/8c3effeed964) | [hacking](https://medium.com/feed/tag/hacking), [pentesting](https://medium.com/feed/tag/pentesting) |  |  |
-| Tue, 12 Aug 2025 13:58:43 GMT | [\[03\]. I received $200 from Mozilla for a simple bypass](https://medium.com/p/fc5f1e020e9a) | [hackerone](https://medium.com/feed/tag/hackerone) |  |  |
-| Wed, 30 Jul 2025 12:27:54 GMT | [From Path Guessing to Dashboard Takeover: Full Access to Governme...](https://medium.com/p/a4c048fc05bb) | [bugcrowd](https://medium.com/feed/tag/bugcrowd) |  |  |
-| Sun, 17 Aug 2025 16:49:46 GMT | [Mastering Google Dorking: Search Operators for Deep Recon & Bug B...](https://medium.com/p/d399963db955) | [google-dorking](https://medium.com/feed/tag/google-dorking) |  |  |
-| Thu, 20 Mar 2025 12:57:29 GMT | [Tryhackme—File Inclusion&Path Traversal](https://medium.com/p/f5dfa03ea444) | [file-inclusion](https://medium.com/feed/tag/file-inclusion) |  |  |
-| Thu, 28 Sep 2023 23:05:39 GMT | [Archangel — TryHackMe](https://medium.com/p/4dff1f7d1c79) | [log-poisoning](https://medium.com/feed/tag/log-poisoning) |  |  |
-| Sat, 09 Aug 2025 17:10:14 GMT | [Rails .html_safe — The Hidden XSS Trap (With a Full Exampl...](https://medium.com/p/3472a848dce1) | [xss-vulnerability](https://medium.com/feed/tag/xss-vulnerability) |  |  |
-| Fri, 23 May 2025 06:02:53 GMT | [Search Skills](https://medium.com/p/1e56069bb201) | [censys](https://medium.com/feed/tag/censys) |  |  |
-| Fri, 15 Aug 2025 19:02:24 GMT | [The Day a Null Byte Outsmarted an XSS Filter ](https://medium.com/p/af07dbc0902b) | [xss-bypass](https://medium.com/feed/tag/xss-bypass) |  |  |
-| Wed, 13 Aug 2025 13:14:30 GMT | [How to Find Any Information Using Google Dorking in 2025](https://medium.com/p/3e98faaa49f2) | [google-dorking](https://medium.com/feed/tag/google-dorking) |  |  |
-| Tue, 05 Aug 2025 07:25:48 GMT | [CXF Service List Endpoint Recon](https://medium.com/p/de898ff3b03a) | [dorking](https://medium.com/feed/tag/dorking), [shodan](https://medium.com/feed/tag/shodan), [zoomeye](https://medium.com/feed/tag/zoomeye) |  |  |
-| Sat, 21 Jun 2025 19:52:17 GMT | [ Google Dorking: Smart Search or a Digital Superpower?](https://medium.com/p/8ecefd692d0b) | [dorking](https://medium.com/feed/tag/dorking) |  |  |
-| Fri, 25 Jul 2025 09:46:45 GMT | [當 SharePoint 成為破口：從鏈式 RCE 攻擊看企業資安...](https://medium.com/p/a1bf8883359e) | [remote-code-execution](https://medium.com/feed/tag/remote-code-execution) |  |  |
-| Sat, 16 Aug 2025 10:22:32 GMT | [AlertNinja: A Network and Vulnerability Scanning Tool.](https://medium.com/p/50b22aaa30f2) | [vulnerability-scanning](https://medium.com/feed/tag/vulnerability-scanning) |  |  |
-| Mon, 18 Aug 2025 12:02:03 GMT | [The Real Insects of Ferndale](https://medium.com/p/192d03bedcc2) | [bugs](https://medium.com/feed/tag/bugs) |  |  |
-| Sun, 17 Aug 2025 07:50:56 GMT | [Neighbour \| Try Hack Me CTF](https://medium.com/p/a984f1c550ad) | [idor](https://medium.com/feed/tag/idor) |  |  |
-| Thu, 10 Jul 2025 23:04:49 GMT | [Critical IDOR Chain — Edit Any User’s Role, Activate/Deac...](https://medium.com/p/12637b0f2485) | [bounty-program](https://medium.com/feed/tag/bounty-program) |  |  |
-| Mon, 11 Aug 2025 00:43:01 GMT | [The Authentication Evolution: How Bearer Tokens Solve API Keys’...](https://medium.com/p/7017d56fec24) | [api-key](https://medium.com/feed/tag/api-key) |  |  |
-| Sun, 17 Aug 2025 23:38:21 GMT | [4 Counterfeited Valid Certificates Leaked Using Bug Bounty Skills](https://medium.com/p/3ed856006b74) | [bug-bounty-tips](https://medium.com/feed/tag/bug-bounty-tips), [bug-bounty-writeup](https://medium.com/feed/tag/bug-bounty-writeup) |  |  |
-| Tue, 22 Jul 2025 21:32:52 GMT | [Insufficient Access Controls in GraphQL Enables Unauthorized User...](https://medium.com/p/400d24e40208) | [bug-bounty-hunting](https://medium.com/feed/tag/bug-bounty-hunting) |  |  |
-| Sat, 02 Aug 2025 10:58:27 GMT | [Search Engine for Hackers(Shodan)](https://medium.com/p/fab0ea95660d) | [shodan](https://medium.com/feed/tag/shodan) |  |  |
-| Tue, 22 Jul 2025 21:53:55 GMT | [Build your own bug bounty recon tool](https://medium.com/p/aae787e7f56b) | [recon](https://medium.com/feed/tag/recon) |  |  |
-| Fri, 11 Jul 2025 03:48:37 GMT | [Why the FOFA dorking is so important](https://medium.com/p/cdfc510ac976) | [dorking](https://medium.com/feed/tag/dorking) |  |  |
-| Thu, 14 Aug 2025 10:08:18 GMT | [Predictive Analytics and Voice Technology: A Winning Combination ...](https://medium.com/p/114aee74dd28) | [vdp](https://medium.com/feed/tag/vdp) |  |  |
-| Mon, 18 Aug 2025 19:54:39 GMT | [Mastering Nmap (Part 1) in 2025: Host Discovery & Recon for Bug B...](https://medium.com/p/1af4a3e451a1) | [bug-bounty](https://medium.com/feed/tag/bug-bounty), [ethical-hacking](https://medium.com/feed/tag/ethical-hacking) |  |  |
-| Mon, 18 Aug 2025 21:41:42 GMT | [Step-by-Step Guide: Create Your Own Cybersecurity Lab Using Virtu...](https://medium.com/p/511f7a23ff8d) | [ethical-hacking](https://medium.com/feed/tag/ethical-hacking) |  |  |
-| Sun, 17 Aug 2025 18:48:00 GMT | [Baltimore City Water: Leaking Customer Information](https://medium.com/p/9076397c3d50) | [information-disclosure](https://medium.com/feed/tag/information-disclosure) |  |  |
-| Mon, 27 Jan 2025 16:51:28 GMT | [The man who suffered 11 years in hell for freedom has now been fr...](https://medium.com/p/a2cd9579f19d) | [web-pentest](https://medium.com/feed/tag/web-pentest) |  |  |
-| Fri, 18 Jul 2025 19:34:07 GMT | [ I Built an AI-Powered Network Vulnerability Scanner Using Python...](https://medium.com/p/211f261f8625) | [vulnerability-scanning](https://medium.com/feed/tag/vulnerability-scanning) |  |  |
-| Mon, 18 Aug 2025 06:01:59 GMT | [You Actually Need to Patch — and how to roll them out with ...](https://medium.com/p/8a3ff9290364) | [cve](https://medium.com/feed/tag/cve) |  |  |
-| Fri, 25 Jul 2025 17:24:19 GMT | [Advanced XSS Bypass Payloads When <script>, alert(), and prompt()...](https://medium.com/p/6454946f9b6d) | [xss-bypass](https://medium.com/feed/tag/xss-bypass) |  |  |
-| Fri, 25 Jul 2025 12:19:47 GMT | [Building a Secure API Key Management System with Django Ninja and...](https://medium.com/p/f1eee2f203a3) | [api-key](https://medium.com/feed/tag/api-key) |  |  |
-| Tue, 05 Aug 2025 17:31:53 GMT | [Portswigger Information Disclosure Labs — Apprentice](https://medium.com/p/d009714c118a) | [information-disclosure](https://medium.com/feed/tag/information-disclosure) |  |  |
-| Wed, 06 Aug 2025 19:31:03 GMT | [Poisoning the web: Ultimate guide to the web cache poisoning](https://medium.com/p/ade6eb884d39) | [web-cache-poisoning](https://medium.com/feed/tag/web-cache-poisoning) |  |  |
-| Tue, 05 Aug 2025 00:19:11 GMT | [Breaking Recon with AMASS](https://medium.com/p/4f0761125d42) | [subdomain-enumeration](https://medium.com/feed/tag/subdomain-enumeration) |  |  |
-| Mon, 18 Aug 2025 15:50:01 GMT | [The Hidden Nightmare in Your Web Infrastructure: How MadeYouReset...](https://medium.com/p/b681a06dc354) | [web-security](https://medium.com/feed/tag/web-security), [application-security](https://medium.com/feed/tag/application-security) |  |  |
-| Mon, 18 Aug 2025 04:54:22 GMT | [How I Discovered a Critical SQL Injection in a Private Bug Bounty...](https://medium.com/p/d1f4735c0b59) | [bug-bounty-tips](https://medium.com/feed/tag/bug-bounty-tips), [bug-bounty-writeup](https://medium.com/feed/tag/bug-bounty-writeup), [bug-bounty-hunter](https://medium.com/feed/tag/bug-bounty-hunter) |  |  |
-| Mon, 11 Aug 2025 19:31:01 GMT | [Portswigger Server-Side Request Forgery (SSRF) Labs — Exper...](https://medium.com/p/68066b696b0c) | [ssrf](https://medium.com/feed/tag/ssrf) |  |  |
-| Sun, 06 Jul 2025 07:51:30 GMT | [ZoomEye Dorking for API Keys](https://medium.com/p/cf77d61604bc) | [zoomeye](https://medium.com/feed/tag/zoomeye) |  |  |
-| Wed, 09 Apr 2025 21:06:11 GMT | [$100-$1000 Worth Subdomain Takeover \| Easy Bounty Methodology](https://medium.com/p/6daf9beacb31) | [subdomain-takeover](https://medium.com/feed/tag/subdomain-takeover) |  |  |
-| Sat, 16 Aug 2025 21:06:37 GMT | [Episode 3 — Riding the Session Wave: Understanding Session ...](https://medium.com/p/1d94bcba05bf) | [bug-bounty-writeup](https://medium.com/feed/tag/bug-bounty-writeup) |  |  |
-| Thu, 14 Aug 2025 14:58:12 GMT | [Understanding SharePoint Web Parts and IDOR Vulnerabilities](https://medium.com/p/e9ca172d7f2b) | [idor](https://medium.com/feed/tag/idor), [cve](https://medium.com/feed/tag/cve) |  |  |
-| Sun, 20 Jul 2025 20:56:15 GMT | [Mastering Shodan for Bug Bounty and Penetration Testing](https://medium.com/p/f4015f49543c) | [shodan](https://medium.com/feed/tag/shodan) |  |  |
-| Mon, 11 Aug 2025 06:24:30 GMT | [$3,500 Bounty —  Total Failure of Password Protection While...](https://medium.com/p/79723184d46e) | [hackerone](https://medium.com/feed/tag/hackerone) |  |  |
-| Thu, 15 Feb 2024 14:36:19 GMT | [Github Dorking: A Beginner’s Guide to Finding Secrets in Reposi...](https://medium.com/p/2d4d36287913) | [github-dorking](https://medium.com/feed/tag/github-dorking) |  |  |
-| Fri, 01 Aug 2025 17:37:05 GMT | [Local File Inclusion — Wrappers \[Root-me\]](https://medium.com/p/fefa483c30af) | [lfi](https://medium.com/feed/tag/lfi) |  |  |
-| Thu, 14 Aug 2025 17:09:12 GMT | [Mi P3 En la NASA con 16 Años](https://medium.com/p/b6ba79e1e4af) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) |  |  |
-| Tue, 22 Jul 2025 15:20:47 GMT | [DursVulnNSE Database Update Explanation](https://medium.com/p/af80d1c8e713) | [vulnerability-scanning](https://medium.com/feed/tag/vulnerability-scanning) |  |  |
-| Wed, 30 Jul 2025 17:48:18 GMT | [Exploring Interesting Security Research Techniques: Parser differ...](https://medium.com/p/004a146c81cf) | [security-research](https://medium.com/feed/tag/security-research) |  |  |
-| Sun, 20 Jul 2025 18:28:50 GMT | [Security Misconfiguration — Sensitive Data Exposure via Goo...](https://medium.com/p/63da5dc83f67) | [bugcrowd](https://medium.com/feed/tag/bugcrowd), [google-dork](https://medium.com/feed/tag/google-dork) |  |  |
-| Mon, 04 Aug 2025 09:49:15 GMT | [How to Secure Your Google Maps API Key in Flutter (Android & iOS)](https://medium.com/p/bb7f7b96450d) | [api-key](https://medium.com/feed/tag/api-key) |  |  |
-| Mon, 19 May 2025 09:06:01 GMT | [Introducing Profiler: The Best and Most Affordable OSINT Platform](https://medium.com/p/d265e19d7fad) | [cyber-sec](https://medium.com/feed/tag/cyber-sec) |  |  |
-| Mon, 18 Aug 2025 18:51:33 GMT | [Why Your “Strong” Password is Useless in 2025 (And What to Us...](https://medium.com/p/4f2a1fffa45b) | [cyber-security-awareness](https://medium.com/feed/tag/cyber-security-awareness) |  |  |
-| Mon, 21 Nov 2022 22:42:17 GMT | [Explorando XSS no lugar do meu nome.](https://medium.com/p/4a480c474b55) | [web-pentest](https://medium.com/feed/tag/web-pentest) |  |  |
-| Wed, 06 Aug 2025 23:48:51 GMT | [Cyber Security Vulnerability Scanning: Identifying Weak Points](https://medium.com/p/0d940cc70603) | [vulnerability-scanning](https://medium.com/feed/tag/vulnerability-scanning) |  |  |
-| Thu, 31 Jul 2025 11:56:37 GMT | [Where to Find Reliable Penetration Testing Services Today](https://medium.com/p/1bb89427adcd) | [vulnerability-scanning](https://medium.com/feed/tag/vulnerability-scanning) |  |  |
-| Wed, 13 Aug 2025 13:31:57 GMT | [Top Features to Look for in a File Uploading Site](https://medium.com/p/a6b60c2bc368) | [file-upload](https://medium.com/feed/tag/file-upload) |  |  |
-| Mon, 18 Aug 2025 18:06:38 GMT | [The Importance of Legal Directory Listings for Your Practice](https://medium.com/p/fe2711198f74) | [directory-listing](https://medium.com/feed/tag/directory-listing) |  |  |
-| Sun, 08 Jun 2025 15:27:05 GMT | [Smart Systems, Real Threats: What You Need to Know About ICS & SC...](https://medium.com/p/81446e13b024) | [cyber-sec](https://medium.com/feed/tag/cyber-sec) |  |  |
-| Mon, 18 Aug 2025 17:18:13 GMT | [The Future of Identity Protection in a Crowded Cybersecurity Mark...](https://medium.com/p/d082e1a6854e) | [cyber-security-awareness](https://medium.com/feed/tag/cyber-security-awareness) |  |  |
-| Fri, 15 Aug 2025 18:10:18 GMT | [How to Earn from Apple’s ₹17.5 Crore Security Bounty Program](https://medium.com/p/4271b7aed532) | [bounty-program](https://medium.com/feed/tag/bounty-program) |  |  |
-| Fri, 18 Jul 2025 14:19:05 GMT | [Presales On Solana (7): Another tale of lost funds On Solana Pres...](https://medium.com/p/63bc7d6e3340) | [bounty-program](https://medium.com/feed/tag/bounty-program) |  |  |
-| Mon, 21 Jul 2025 14:07:41 GMT | [“403 Forbidden?](https://medium.com/p/a0843052612f) | [vdp](https://medium.com/feed/tag/vdp) |  |  |
-| Fri, 15 Aug 2025 17:33:39 GMT | [Ionic Money Exploit](https://medium.com/p/e2b73b5482c6) | [exploit](https://medium.com/feed/tag/exploit) |  |  |
-| Thu, 31 Jul 2025 09:34:24 GMT | [Path traversal](https://medium.com/p/848c0499197d) | [local-file-inclusion](https://medium.com/feed/tag/local-file-inclusion), [lfi](https://medium.com/feed/tag/lfi) |  |  |
-| Sun, 17 Aug 2025 17:55:11 GMT | [\[Web Security Academy\] — Server-Side Vulnerabilities / Au...](https://medium.com/p/dd023ff17bb4) | [web-security](https://medium.com/feed/tag/web-security) |  |  |
-| Sat, 16 Aug 2025 08:00:03 GMT | [A Beginner’s Guide to Google Dorking: Unlocking Hidden Web Data](https://medium.com/p/57ef6e0325ca) | [bug-bounty-tips](https://medium.com/feed/tag/bug-bounty-tips), [google-dorking](https://medium.com/feed/tag/google-dorking) |  |  |
-| Fri, 08 Aug 2025 16:02:23 GMT | [Cracking Pensive: A Deep Dive into Bugcrowd’s BlackHat USA CTF ...](https://medium.com/p/b23457359562) | [bugcrowd](https://medium.com/feed/tag/bugcrowd) |  |  |
-| Mon, 18 Aug 2025 18:49:12 GMT | [Foundations of Cybersecurity](https://medium.com/p/71b27db4508e) | [cyber-security-awareness](https://medium.com/feed/tag/cyber-security-awareness) |  |  |
-| Tue, 12 Aug 2025 07:59:16 GMT | [JSON Web Token (JWT) Nedir? PORTSWİGGER Temel Seviye Lab Çözü...](https://medium.com/p/84c85b7aa29e) | [pentest](https://medium.com/feed/tag/pentest) |  |  |
-| Wed, 06 Aug 2025 18:34:22 GMT | [Remote Code Execution via Polyglot Web Shell Upload — PortS...](https://medium.com/p/39e885fb48ff) | [file-upload](https://medium.com/feed/tag/file-upload) |  |  |
-| Mon, 18 Aug 2025 19:52:37 GMT | [OWASP Top 10: The Hidden Traps in Every Website (And How to Avoid...](https://medium.com/p/15543a24e348) | [information-security](https://medium.com/feed/tag/information-security), [ethical-hacking](https://medium.com/feed/tag/ethical-hacking) |  |  |
-| Sat, 09 Aug 2025 10:30:07 GMT | [Vault Fault Exposes Critical Logic Flaws in CyberArk and HashiCor...](https://medium.com/p/f2c79c5e65a4) | [remote-code-execution](https://medium.com/feed/tag/remote-code-execution) |  |  |
-| Mon, 18 Aug 2025 14:27:39 GMT | [Cybersecurity Awareness Guide: Phishing, Vishing, and Social Engi...](https://medium.com/p/c19ad0d757fb) | [cyber-security-awareness](https://medium.com/feed/tag/cyber-security-awareness) |  |  |
-| Tue, 05 Aug 2025 03:19:29 GMT | [Catatan Belajar: Menyusun ROE](https://medium.com/p/284c228117d7) | [pentest](https://medium.com/feed/tag/pentest) |  |  |
-| Mon, 21 Jul 2025 11:37:16 GMT | [The Man Behind the Mullet: Wrestling Humanity from the Shadows wi...](https://medium.com/p/b6c261cb2005) | [bounty-program](https://medium.com/feed/tag/bounty-program) |  |  |
-| Sat, 16 Aug 2025 06:31:37 GMT | [TryHackMe \| Corridor \| Walkthough](https://medium.com/p/a101fd29d020) | [idor](https://medium.com/feed/tag/idor) |  |  |
-| Sun, 17 Aug 2025 22:16:40 GMT | [Understanding and Preventing Injection Attacks](https://medium.com/p/9eb4c720d657) | [xss-vulnerability](https://medium.com/feed/tag/xss-vulnerability) |  |  |
-| Fri, 08 Aug 2025 20:39:03 GMT | [Find Leaked Secret Keys (OPENAI, DeepSeek, Ollama , HuggingFace)...](https://medium.com/p/d259d7051a9b) | [api-key](https://medium.com/feed/tag/api-key) |  |  |
-| Mon, 18 Aug 2025 10:04:17 GMT | [Web Application Security Challenges Modern Threats & Solutions](https://medium.com/p/4c6667a8b77d) | [application-security](https://medium.com/feed/tag/application-security) |  |  |
-| Fri, 01 Aug 2025 17:53:23 GMT | [Mass Information Disclosure via Exposed i18n JSON File (internal ...](https://medium.com/p/67d6da79ab68) | [information-disclosure](https://medium.com/feed/tag/information-disclosure) |  |  |
-| Tue, 05 Aug 2025 14:43:56 GMT | [Web Security — SMT Program 2025 Write-up](https://medium.com/p/20c48523dbcc) | [local-file-inclusion](https://medium.com/feed/tag/local-file-inclusion) |  |  |
-| Fri, 18 Jul 2025 01:35:17 GMT | [Lo-Fi TryHackMe Walkthrough/Write-up](https://medium.com/p/4a10377d41f0) | [local-file-inclusion](https://medium.com/feed/tag/local-file-inclusion), [file-inclusion](https://medium.com/feed/tag/file-inclusion) |  |  |
-| Sun, 15 Jun 2025 09:16:26 GMT | [\[TryHackMe\] hacking DVWA (part 2)](https://medium.com/p/8ca83c0639ae) | [local-file-inclusion](https://medium.com/feed/tag/local-file-inclusion) |  |  |
-| Fri, 01 Aug 2025 12:57:55 GMT | [rootme \|Local File Inclusion — Double encoding](https://medium.com/p/f31f7e66bb26) | [lfi](https://medium.com/feed/tag/lfi) |  |  |
-| Wed, 16 Jul 2025 12:07:42 GMT | [Hackers Love This 1979 Protocol (Because It Can’t Defend Itself...](https://medium.com/p/06824a67e8a8) | [censys](https://medium.com/feed/tag/censys) |  |  |
-| Fri, 11 Jul 2025 16:20:24 GMT | [PC WORX: The Hidden Risk in Your Industrial Network](https://medium.com/p/afbb8dc23cff) | [censys](https://medium.com/feed/tag/censys) |  |  |
-| Sun, 13 Jul 2025 08:35:40 GMT | [Subdomain Takeover on mailgun\[.\]org](https://medium.com/p/7d52ee2165e0) | [subdomain-takeover](https://medium.com/feed/tag/subdomain-takeover) |  |  |
-| Sun, 13 Jul 2025 09:23:25 GMT | [Check for Subdomain Takeover in Symfony: Step-by-Step Guide](https://medium.com/p/f7a182c63bfa) | [subdomain-takeover](https://medium.com/feed/tag/subdomain-takeover) |  |  |
-| Wed, 12 Mar 2025 12:19:28 GMT | [Understanding the OSI Model and TCP/IP](https://medium.com/p/369ca2978ab9) | [cyber-sec](https://medium.com/feed/tag/cyber-sec) |  |  |
-| Thu, 14 Aug 2025 17:04:24 GMT | [Mi P1 En la NASA con 16 Años](https://medium.com/p/3eba63256d5b) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup), [bug-bounty-hunter](https://medium.com/feed/tag/bug-bounty-hunter) |  |  |
-| Tue, 15 Jul 2025 08:14:04 GMT | [Level Up Your Bounties: How to Choose the Best Bug Bounty Program...](https://medium.com/p/18cdaf61cdcb) | [bug-bounty-program](https://medium.com/feed/tag/bug-bounty-program) |  |  |
-| Sat, 02 Aug 2025 08:04:04 GMT | [️ I Spent 72 Hours on the Dark Web — Here’s What No One...](https://medium.com/p/9aa5273bce78) | [security-research](https://medium.com/feed/tag/security-research) |  |  |
-| Sun, 22 Jun 2025 10:19:39 GMT | [Directory Listing Vulnerability Explained: How a Simple Misconfig...](https://medium.com/p/2c6a0650925e) | [directory-listing](https://medium.com/feed/tag/directory-listing) |  |  |
-| Sun, 03 Aug 2025 14:19:18 GMT | [Shodan Search Engine: Açık servislerin haritasını çıkaran g...](https://medium.com/p/def5a66fdcbc) | [shodan](https://medium.com/feed/tag/shodan) |  |  |
-| Thu, 07 Aug 2025 18:43:48 GMT | [The Mini File Picker You Actually Need for Compact UIs](https://medium.com/p/03b3af9e0c12) | [file-upload](https://medium.com/feed/tag/file-upload) |  |  |
-| Sat, 16 Aug 2025 21:12:51 GMT | [Unmasking Stored XSS: A Deep Dive into the SMTP Error Message Vul...](https://medium.com/p/1aba61c93a09) | [xss-attack](https://medium.com/feed/tag/xss-attack) |  |  |
-| Fri, 15 Aug 2025 12:37:46 GMT | [El bug no rompe el sistema, revela su verdadera forma](https://medium.com/p/b763831a5398) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) |  |  |
-| Sun, 17 Aug 2025 14:21:33 GMT | [Bug Bounty: Insecure File Upload — The Silent Backdoor You ...](https://medium.com/p/f8627eeb3e1d) | [file-upload](https://medium.com/feed/tag/file-upload) |  |  |
-| Mon, 11 Dec 2023 18:17:01 GMT | [Exploiting a Log Poisoning.](https://medium.com/p/69163cd7bfee) | [log-poisoning](https://medium.com/feed/tag/log-poisoning) |  |  |
-| Mon, 03 Mar 2025 19:57:38 GMT | [Bug Bounty Hunting with Censys: Finding an Unsecured Elasticsearc...](https://medium.com/p/13a619cc0b4e) | [censys](https://medium.com/feed/tag/censys) |  |  |
-| Tue, 20 May 2025 08:43:46 GMT | [Second-Order Takeover: Scoring High Rewards! ](https://medium.com/p/926ff658b76b) | [subdomain-takeover](https://medium.com/feed/tag/subdomain-takeover) |  |  |
-| Tue, 12 Aug 2025 03:52:21 GMT | [\[0day\] Critical RCE Vulnerability in Atlassian Confluence (CVE-...](https://medium.com/p/11022babf31e) | [rce](https://medium.com/feed/tag/rce) |  |  |
-| Mon, 18 Aug 2025 10:49:36 GMT | [Penetration Testing Services: Strengthening Cybersecurity for Bus...](https://medium.com/p/d5ff4aebfbaf) | [vapt](https://medium.com/feed/tag/vapt) |  |  |
-| Thu, 13 Mar 2025 18:09:56 GMT | [How I Found Sensitive Information using Github Dorks in Bug Bount...](https://medium.com/p/2f80c1023592) | [github-dorking](https://medium.com/feed/tag/github-dorking) |  |  |
-| Tue, 05 Aug 2025 17:05:04 GMT | [️ Breaking the Web: Solving All Stages of the XSS Challenge (by...](https://medium.com/p/427c92832981) | [xss-vulnerability](https://medium.com/feed/tag/xss-vulnerability) |  |  |
-| Sun, 17 Aug 2025 09:57:54 GMT | [How to Protect Against Cyber Fraud A Practical Guide for the Digi...](https://medium.com/p/80552b53a554) | [bugs](https://medium.com/feed/tag/bugs) |  |  |
-| Tue, 01 Jul 2025 06:37:01 GMT | [How to Use Google Dorks in PT or Bug Hunting Activities Professio...](https://medium.com/p/a61b88ff7601) | [google-dork](https://medium.com/feed/tag/google-dork) |  |  |
-| Sun, 13 Jul 2025 04:17:45 GMT | [How To Instantly Claim $DORK](https://medium.com/p/12de6d36009a) | [dorks](https://medium.com/feed/tag/dorks) |  |  |
-| Sun, 10 Aug 2025 17:18:43 GMT | [THM — Inclusion Writeup](https://medium.com/p/86cb7d6a7ed0) | [lfi](https://medium.com/feed/tag/lfi) |  |  |
-| Mon, 07 Jul 2025 05:15:45 GMT | [ZoomEye Dorking \| Advanced OSINT](https://medium.com/p/63018aa933d9) | [zoomeye](https://medium.com/feed/tag/zoomeye) |  |  |
-| Mon, 18 Aug 2025 16:48:52 GMT | [CVE-2025–55169: Path Traversal Vulnerability in WeGIA Web Manag...](https://medium.com/p/ab43c1e1c259) | [cve](https://medium.com/feed/tag/cve) |  |  |
-| Sat, 02 Aug 2025 03:17:57 GMT | [How I Hacked Database using AI Powered Assistant](https://medium.com/p/c2471217ff5b) | [shodan](https://medium.com/feed/tag/shodan) |  |  |
-| Sun, 20 Jul 2025 15:31:52 GMT | [$150 — Broken Access Control \| HackerOne Bug Bounty Progra...](https://medium.com/p/239aff71376f) | [bounty-program](https://medium.com/feed/tag/bounty-program) |  |  |
-| Thu, 17 Jul 2025 06:15:20 GMT | [Unlock Exclusive BOUNTY Through ChainBounty's Community Drop](https://medium.com/p/a8a26301f3e3) | [bounties](https://medium.com/feed/tag/bounties) |  |  |
-| Mon, 18 Aug 2025 17:52:11 GMT | [HTB Walkthrough : Reedemer(Redis)](https://medium.com/p/74cbde928a6b) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) |  |  |
-| Mon, 18 Aug 2025 16:23:20 GMT | [ How Hackers Use Tunneling to Bypass Firewalls (Red Team Playbook...](https://medium.com/p/fbecde22976d) | [ethical-hacking](https://medium.com/feed/tag/ethical-hacking) |  |  |
-| Tue, 22 Jul 2025 18:51:36 GMT | [From Zero to Root — Day 11: Breaks, Burnout & Back into the...](https://medium.com/p/6418c24e93d8) | [google-dork](https://medium.com/feed/tag/google-dork) |  |  |
-| Sat, 16 Aug 2025 20:54:21 GMT | [Zero-Click Exploit Nedir? \| What is Zero-Click Exploit?](https://medium.com/p/f945394b1324) | [exploit](https://medium.com/feed/tag/exploit) |  |  |
-| Wed, 09 Jul 2025 05:05:20 GMT | [ZoomEye Dorking with Nuclei](https://medium.com/p/f07c32fa2801) | [zoomeye](https://medium.com/feed/tag/zoomeye) |  |  |
-| Sun, 17 Aug 2025 19:26:05 GMT | [﷽](https://medium.com/p/b3205aa78fbb) | [bug-bounty-tips](https://medium.com/feed/tag/bug-bounty-tips), [bug-bounty-hunter](https://medium.com/feed/tag/bug-bounty-hunter), [bug-bounty-program](https://medium.com/feed/tag/bug-bounty-program) |  |  |
-| Sun, 10 Aug 2025 10:54:11 GMT | [️ CVE-2025–47872: Sensitive Info Leak in EG4 Electronics Prod...](https://medium.com/p/a9389e870a2b) | [information-disclosure](https://medium.com/feed/tag/information-disclosure) |  |  |
-| Tue, 29 Jul 2025 20:48:51 GMT | [How to Analyze Suspicious Email Headers Online (Free Tool)](https://medium.com/p/d872e0bd813d) | [cybersecurity-tools](https://medium.com/feed/tag/cybersecurity-tools) |  |  |
-| Thu, 07 Aug 2025 07:11:13 GMT | [Catatan Belajar: Regional Internet Registries (RIRs)](https://medium.com/p/73362fc26385) | [pentest](https://medium.com/feed/tag/pentest) |  |  |
-| Sun, 17 Aug 2025 05:51:29 GMT | [My First 150 Days Bug Bounty Hunting](https://medium.com/p/034623c89836) | [bug-bounty-tips](https://medium.com/feed/tag/bug-bounty-tips), [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup), [bug-bounty-writeup](https://medium.com/feed/tag/bug-bounty-writeup), [bug-bounty-hunter](https://medium.com/feed/tag/bug-bounty-hunter) |  |  |
-| Thu, 14 Aug 2025 12:22:26 GMT | [Penetrasyon Testi - Servis Tarama ve Açıkların Tespiti](https://medium.com/p/5c06bbb01fa2) | [vulnerability-scanning](https://medium.com/feed/tag/vulnerability-scanning) |  |  |
-| Tue, 03 Jun 2025 17:29:57 GMT | [How Hackers Help NASA Stay Secure: Inside the NASA VDP](https://medium.com/p/07ec255c46f3) | [vdp](https://medium.com/feed/tag/vdp) |  |  |
-| Mon, 24 Feb 2025 21:37:57 GMT | [CÓMO DESCUBRÍ UNA VULNERABILIDAD XSS EN UN PROGRAMA VDP](https://medium.com/p/c9133241cc5b) | [vdp](https://medium.com/feed/tag/vdp) |  |  |
-| Thu, 14 Aug 2025 09:51:58 GMT | [Why StrongBox IT is the Best VAPT Company for Your Business](https://medium.com/p/cee437111aeb) | [vapt](https://medium.com/feed/tag/vapt) |  |  |
-| Sun, 17 Aug 2025 17:58:45 GMT | [$$$ How I Exploited a Business Logic Flaw to Slash Product Prices...](https://medium.com/p/64cd1d445d17) | [web-security](https://medium.com/feed/tag/web-security) |  |  |
-| Sun, 20 Jul 2025 03:20:32 GMT | [ChainBounty Announces Reward Cascade: Bag BOUNTY Today](https://medium.com/p/19849f7cb229) | [bounties](https://medium.com/feed/tag/bounties) |  |  |
-| Thu, 14 Aug 2025 10:33:06 GMT | [Trusted VAPT Testing Services In India \| Net Access India Limite...](https://medium.com/p/9fb179209029) | [vapt](https://medium.com/feed/tag/vapt) |  |  |
-| Fri, 13 Sep 2024 20:07:54 GMT | [Unleashing GitHub Dorks: The Ultimate Hack for Finding Hidden Sec...](https://medium.com/p/125b83fd9c93) | [github-dorking](https://medium.com/feed/tag/github-dorking) |  |  |
-| Wed, 13 Aug 2025 20:31:14 GMT | [IDOR in Invitation Flow Leads to Denial of Signup and Account Man...](https://medium.com/p/98c51e0dd942) | [idor](https://medium.com/feed/tag/idor) |  |  |
-| Sat, 20 Apr 2024 17:20:58 GMT | [TryHackMe — Brute Walkthrough \| TheHiker](https://medium.com/p/9f8bd9a2ce0d) | [log-poisoning](https://medium.com/feed/tag/log-poisoning) |  |  |
-| Sat, 16 Aug 2025 16:57:08 GMT | [Disclose Page Admins via Facebook Appointments](https://medium.com/p/4925b899e79a) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) |  |  |
-| Fri, 24 Jan 2025 09:34:52 GMT | [A new Holistic temple opening InLeeds](https://medium.com/p/13e4933ff712) | [web-pentest](https://medium.com/feed/tag/web-pentest) |  |  |
-| Wed, 13 Aug 2025 11:20:37 GMT | [Lo-Fi \| TryHackMe — Write-Up](https://medium.com/p/66934d0cf342) | [local-file-inclusion](https://medium.com/feed/tag/local-file-inclusion) |  |  |
-| Sun, 13 Jul 2025 03:40:00 GMT | [ChainBounty Announces Launch Event: Win BOUNTY Today](https://medium.com/p/cbd82f9fbc62) | [bounties](https://medium.com/feed/tag/bounties) |  |  |
-| Thu, 24 Jul 2025 04:52:05 GMT | [Setting up the IBM Watsonx API to work with Colab Notebooks](https://medium.com/p/4733a608d3e3) | [api-key](https://medium.com/feed/tag/api-key) |  |  |
-| Wed, 13 Aug 2025 19:54:14 GMT | [Credix, Future Protocol, Rant: $9.3M Lost to Phantom Collateral, ...](https://medium.com/p/f27750b9b262) | [exploit](https://medium.com/feed/tag/exploit) |  |  |
-| Sat, 16 Aug 2025 21:06:57 GMT | [Episode 2: Brute Force Attacks — When Hackers Keep Knocking...](https://medium.com/p/f08d6f386cfc) | [bug-bounty-writeup](https://medium.com/feed/tag/bug-bounty-writeup) |  |  |
-| Tue, 20 May 2025 21:30:26 GMT | [My First CVE: Privilege Escalation & Possible Account Takeover in...](https://medium.com/p/c111469d74b0) | [vulnerability-disclosure](https://medium.com/feed/tag/vulnerability-disclosure) |  |  |
-| Sat, 09 Aug 2025 14:53:44 GMT | [A little something to get you started—Hacker101 CTF Write-Up](https://medium.com/p/64da79a810ac) | [vapt](https://medium.com/feed/tag/vapt) |  |  |
-| Mon, 18 Aug 2025 09:07:48 GMT | [ Broken Access Control: The Gateway to Unauthorized Privilege Esc...](https://medium.com/p/b1cdee656cd2) | [web-security](https://medium.com/feed/tag/web-security) |  |  |
-| Thu, 05 Jun 2025 09:28:49 GMT | [Improper Coupon Validation Allows Unlimited Free Voucher Redempti...](https://medium.com/p/d55bf44df2df) | [vulnerability-disclosure](https://medium.com/feed/tag/vulnerability-disclosure) |  |  |
-| Sat, 16 Aug 2025 17:33:22 GMT | [PDF.JS Viewer Endpoint Dorking](https://medium.com/p/03e3a68e0acf) | [google-dorking](https://medium.com/feed/tag/google-dorking), [dorking](https://medium.com/feed/tag/dorking), [shodan](https://medium.com/feed/tag/shodan), [zoomeye](https://medium.com/feed/tag/zoomeye) |  |  |
-| Wed, 23 Jul 2025 15:15:01 GMT | [TryHackMe Include walkthrough: SSRF, log poisoning & LFI2RCE, wit...](https://medium.com/p/d4c497745631) | [log-poisoning](https://medium.com/feed/tag/log-poisoning) |  |  |
-| Sat, 19 Jul 2025 19:59:42 GMT | [Snag Exclusive BOUNTY Through ChainBounty's Launch Bonus](https://medium.com/p/0b8c6956d0c1) | [bounties](https://medium.com/feed/tag/bounties) |  |  |
-| Mon, 11 Aug 2025 22:05:30 GMT | [Up and Running with GitHound for secret scanning in 5 minutes](https://medium.com/p/e644890e9e16) | [recon](https://medium.com/feed/tag/recon) |  |  |
-| Mon, 18 Aug 2025 11:51:07 GMT | [DockerLabs Writeup — Minecraft (Spanish)](https://medium.com/p/ca2a58a80df4) | [pentesting](https://medium.com/feed/tag/pentesting) |  |  |
-| Tue, 24 Dec 2024 11:36:05 GMT | [Bug Bounty Journey — Valid Report 1](https://medium.com/p/ffc38d6799a4) | [vdp](https://medium.com/feed/tag/vdp) |  |  |
-| Wed, 30 Apr 2025 17:08:29 GMT | [Exploring Subdomains: What They Are and How to Find Them](https://medium.com/p/91db1f16be86) | [subdomain-enumeration](https://medium.com/feed/tag/subdomain-enumeration), [subdomain-takeover](https://medium.com/feed/tag/subdomain-takeover) |  |  |
-| Fri, 08 Aug 2025 19:01:44 GMT | [Is Bitwarden Actually Worth It? 6 Months Later, It’s Essential](https://medium.com/p/881822eaf0ff) | [cybersecurity-tools](https://medium.com/feed/tag/cybersecurity-tools) |  |  |
-| Fri, 15 Aug 2025 17:18:12 GMT | [XSS Demo Lab](https://medium.com/p/6c72c63fd83d) | [xss-vulnerability](https://medium.com/feed/tag/xss-vulnerability) |  |  |
-| Thu, 13 Feb 2025 03:29:37 GMT | [ZoomEye Meets DeepSeek: AI-Powered Cyberspace Intelligence](https://medium.com/p/0e0547217068) | [zoomeye](https://medium.com/feed/tag/zoomeye) |  |  |
-| Thu, 24 Jul 2025 15:42:09 GMT | [# **Advanced XSS Exploitation: Bypassing CSP and DOM Sanitization...](https://medium.com/p/3b8267941574) | [xss-bypass](https://medium.com/feed/tag/xss-bypass) |  |  |
-| Sun, 17 Aug 2025 16:23:23 GMT | [Beyond alert(“XSS”): What I Learned About XSS After Finding I...](https://medium.com/p/9638fb698241) | [xss-attack](https://medium.com/feed/tag/xss-attack) |  |  |
-| Fri, 18 Jul 2025 10:08:45 GMT | [ TryHackMe — Lo-Fi Room Walkthrough](https://medium.com/p/5db280c696ee) | [local-file-inclusion](https://medium.com/feed/tag/local-file-inclusion), [lfi](https://medium.com/feed/tag/lfi) |  |  |
-| Mon, 18 Aug 2025 12:22:17 GMT | [Why Should Businesses Invest in Vulnerability Assessment and Pene...](https://medium.com/p/a838139152ba) | [vapt](https://medium.com/feed/tag/vapt) |  |  |
-| Tue, 05 Aug 2025 03:26:28 GMT | [#Catatan Belajar: Menentukan Proses Penanganan Bukti](https://medium.com/p/966fdc71e802) | [pentest](https://medium.com/feed/tag/pentest) |  |  |
-| Fri, 25 Jul 2025 15:34:20 GMT | [Discover Top Local Businesses Effortlessly with List & Post](https://medium.com/p/f08be13165a2) | [directory-listing](https://medium.com/feed/tag/directory-listing) |  |  |
-| Wed, 16 Jul 2025 02:56:35 GMT | [XSS via Google Maps](https://medium.com/p/98a867479315) | [xss-bypass](https://medium.com/feed/tag/xss-bypass) |  |  |
-| Fri, 01 Aug 2025 13:58:54 GMT | [Top 10 Security Risks Targeting MCP Servers](https://medium.com/p/bbef7404bcb8) | [api-key](https://medium.com/feed/tag/api-key) |  |  |
-| Mon, 18 Aug 2025 20:36:52 GMT | [STRENGTHENING SECURITY AND COMMUNITY CONFIDENCE: THE IBAS STRATEG...](https://medium.com/p/2963665e4ed7) | [security](https://medium.com/feed/tag/security) |  |  |
-| Thu, 14 Aug 2025 03:27:32 GMT | [F5 BIG-IP RCE (CVE-2023–46747): What You Need to Know Right Now](https://medium.com/p/a4283d0c2044) | [rce](https://medium.com/feed/tag/rce) |  |  |
-| Sat, 19 Jul 2025 11:51:56 GMT | [Gain Your Share of LunaFi's Gift Event and Enjoy bonus tokens](https://medium.com/p/229155db8154) | [lfi](https://medium.com/feed/tag/lfi) |  |  |
-| Sun, 17 Aug 2025 00:08:49 GMT | [CORS Bypass in popular opensource library](https://medium.com/p/ad27fb41e16a) | [cve](https://medium.com/feed/tag/cve) |  |  |
-| Sat, 26 Jul 2025 11:23:52 GMT | [Breaking Filter: XSS Bypass using ononmouseovermouseover, ONMOUSE...](https://medium.com/p/e2025486351c) | [xss-bypass](https://medium.com/feed/tag/xss-bypass) |  |  |
-| Mon, 18 Aug 2025 14:53:55 GMT | [How Scary Google Tracks Everyone](https://medium.com/p/4b9d4193693e) | [cyber-security-awareness](https://medium.com/feed/tag/cyber-security-awareness) |  |  |
-| Fri, 08 Aug 2025 16:53:31 GMT | [Blind RCE File Exfiltration via curl](https://medium.com/p/3a8c971a80aa) | [rce](https://medium.com/feed/tag/rce) |  |  |
-| Mon, 18 Aug 2025 21:19:11 GMT | [Cyber colleagues, in the “Google Cybersecurity Professional Cer...](https://medium.com/p/4eb495f9ec8a) | [hacking](https://medium.com/feed/tag/hacking), [infosec](https://medium.com/feed/tag/infosec) |  |  |
-| Tue, 12 Aug 2025 08:51:27 GMT | [Cross-Site Scripting (XSS)](https://medium.com/p/6efe4650448d) | [cross-site-scripting](https://medium.com/feed/tag/cross-site-scripting) |  |  |
-| Mon, 11 Aug 2025 15:10:11 GMT | [My Journey Uncovering The Hidden SSRF Flaw CVE 2020 10770](https://medium.com/p/8394c57ed459) | [ssrf](https://medium.com/feed/tag/ssrf) |  |  |
-| Sun, 20 Jul 2025 20:31:51 GMT | [Subdomain Enumeration: Unleashing the First Strike in Bug Bounty ...](https://medium.com/p/9eee03da3c89) | [recon](https://medium.com/feed/tag/recon) |  |  |
-| Wed, 06 Aug 2025 03:37:18 GMT | [Exploiting Cross-Site Scripting (XSS) to Steal Cookies — Ta...](https://medium.com/p/abd98e0849d2) | [cross-site-scripting](https://medium.com/feed/tag/cross-site-scripting) |  |  |
-| Fri, 01 Aug 2025 12:09:09 GMT | [Advanced Google Dorking \| Part 19](https://medium.com/p/a59ebfb3c775) | [google-dorking](https://medium.com/feed/tag/google-dorking), [google-dork](https://medium.com/feed/tag/google-dork) |  |  |
-| Tue, 12 Aug 2025 12:38:54 GMT | [Burp Suite ile Web Güvenlik Testi: Adım Adım Rehber](https://medium.com/p/c8a27edc43a1) | [idor](https://medium.com/feed/tag/idor) |  |  |
-| Thu, 07 Aug 2025 07:10:51 GMT | [Catatan Belajar: WHOIS Lookup](https://medium.com/p/0b05091ad20a) | [pentest](https://medium.com/feed/tag/pentest) |  |  |
-| Mon, 26 May 2025 15:44:42 GMT | [File Upload Vulnerabilities](https://medium.com/p/adc033241993) | [file-inclusion](https://medium.com/feed/tag/file-inclusion) |  |  |
-| Sun, 17 Aug 2025 13:29:53 GMT | [Stored XSS in episode notes allows for account takeover](https://medium.com/p/c6c333a07575) | [bug-bounty-tips](https://medium.com/feed/tag/bug-bounty-tips), [xss-attack](https://medium.com/feed/tag/xss-attack), [bug-bounty-writeup](https://medium.com/feed/tag/bug-bounty-writeup) |  |  |
-| Thu, 22 May 2025 22:24:42 GMT | [Web Cache Poisoning lead to DoS Attack](https://medium.com/p/bde188e3511d) | [web-cache-poisoning](https://medium.com/feed/tag/web-cache-poisoning) |  |  |
-| Sat, 16 Aug 2025 18:00:46 GMT | [Google Pays $250,000 Bounty for Chrome Sandbox Escape Vulnerabili...](https://medium.com/p/58f79644112f) | [cve](https://medium.com/feed/tag/cve) |  |  |
-| Thu, 14 Aug 2025 10:54:38 GMT | [Unlocking the Hidden Power of Search Engines](https://medium.com/p/dc1fd123674b) | [shodan](https://medium.com/feed/tag/shodan), [censys](https://medium.com/feed/tag/censys) |  |  |
-| Tue, 15 Jul 2025 18:57:57 GMT | [ZoomEye Dorking \| JSON Endpoints](https://medium.com/p/2f4c56b74c97) | [zoomeye](https://medium.com/feed/tag/zoomeye) |  |  |
+| Tue, 19 Aug 2025 00:01:58 GMT | [Amass:Guía Completa para el Reconocimiento de Subdominios y el M...](https://medium.com/p/401a71021cf2) | [ethical-hacking](https://medium.com/feed/tag/ethical-hacking) |  | Yes |
+| Tue, 19 Aug 2025 02:27:09 GMT | [When the Interview Fails but the Security Does Too](https://medium.com/p/d871ccc47da8) | [ethical-hacking](https://medium.com/feed/tag/ethical-hacking) |  | Yes |
+| Tue, 19 Aug 2025 04:55:17 GMT | [ThunderCipher-Lab\[Juggl3r\]](https://medium.com/p/9e8c7bde3739) | [web-security](https://medium.com/feed/tag/web-security) |  | Yes |
+| Mon, 18 Aug 2025 19:52:37 GMT | [OWASP Top 10: The Hidden Traps in Every Website (And How to Avoid...](https://medium.com/p/15543a24e348) | [ethical-hacking](https://medium.com/feed/tag/ethical-hacking) |  |  |
+| Mon, 18 Aug 2025 19:54:39 GMT | [Mastering Nmap (Part 1) in 2025: Host Discovery & Recon for Bug B...](https://medium.com/p/1af4a3e451a1) | [ethical-hacking](https://medium.com/feed/tag/ethical-hacking) |  |  |
 | Mon, 18 Aug 2025 16:54:29 GMT | [Secure Your Node.js App from the Inside Out](https://medium.com/p/01a8c75a9d89) | [web-security](https://medium.com/feed/tag/web-security) |  |  |
-| Mon, 18 Aug 2025 09:20:08 GMT | [Understanding the bufferSeekOverHole Error in HLS Streaming](https://medium.com/p/b293a90c0bd9) | [bugs](https://medium.com/feed/tag/bugs) |  |  |
-| Mon, 18 Aug 2025 12:12:15 GMT | [Cybersecurity in 2025: Protecting Your Digital World from Evolvin...](https://medium.com/p/14c107f95a30) | [cyber-security-awareness](https://medium.com/feed/tag/cyber-security-awareness) |  |  |
-| Thu, 27 Mar 2025 23:46:11 GMT | [Make Break and Betrayal](https://medium.com/p/1692428c222c) | [web-pentest](https://medium.com/feed/tag/web-pentest) |  |  |
-| Fri, 31 May 2024 13:29:16 GMT | [Map of the worlds best URLs 2025](https://medium.com/p/7feef63cf561) | [log-poisoning](https://medium.com/feed/tag/log-poisoning) |  |  |
-| Sat, 02 Aug 2025 14:15:23 GMT | [The Silent Risk in Your ICS: Why S7 Protocol Needs Security Atten...](https://medium.com/p/d30cdad1da43) | [censys](https://medium.com/feed/tag/censys) |  |  |
-| Mon, 18 Aug 2025 14:50:03 GMT | [ShellShock: How Hackers Exploit Bash Vulnerabilities and How to P...](https://medium.com/p/a006c63c1883) | [ethical-hacking](https://medium.com/feed/tag/ethical-hacking) |  |  |
-| Sat, 26 Jul 2025 16:03:24 GMT | [Information Disclosure](https://medium.com/p/5545bfe66054) | [information-disclosure](https://medium.com/feed/tag/information-disclosure) |  |  |
-| Fri, 15 Aug 2025 19:10:32 GMT | [WordPress Plugin LFI Code Review](https://medium.com/p/57f6a2decb37) | [local-file-inclusion](https://medium.com/feed/tag/local-file-inclusion) |  |  |
-| Tue, 19 Nov 2024 17:26:48 GMT | [How to Install and Use dnsx for Subdomain Enumeration and DNS Rec...](https://medium.com/p/4212843764e9) | [subdomain-enumeration](https://medium.com/feed/tag/subdomain-enumeration) |  |  |
-| Tue, 22 Jul 2025 05:33:11 GMT | [️NMAP!!️](https://medium.com/p/667371c87d35) | [cybersecurity-tools](https://medium.com/feed/tag/cybersecurity-tools) |  |  |
-| Sat, 09 Aug 2025 21:07:14 GMT | [My Accidental Bug Bounty from a Random Query](https://medium.com/p/b8ae134158ed) | [shodan](https://medium.com/feed/tag/shodan) |  |  |
-| Sun, 17 Aug 2025 17:17:55 GMT | [From Findings to Fixes: My Experience Creating a Penetration Test...](https://medium.com/p/d3cf308e10cd) | [bugs](https://medium.com/feed/tag/bugs), [bug-bounty-writeup](https://medium.com/feed/tag/bug-bounty-writeup) |  |  |
-| Fri, 08 Aug 2025 17:32:41 GMT | [CVE-2025-4388 HackerOne Duplicate Report](https://medium.com/p/0a1b34444293) | [cross-site-scripting](https://medium.com/feed/tag/cross-site-scripting), [xss-vulnerability](https://medium.com/feed/tag/xss-vulnerability) |  |  |
-| Mon, 11 Aug 2025 16:11:23 GMT | [The Power of Recon: Accessing Target’s Secure Emails Without Lo...](https://medium.com/p/eac2e4f473a2) | [information-disclosure](https://medium.com/feed/tag/information-disclosure) |  |  |
-| Thu, 26 Dec 2024 15:23:03 GMT | [GitHub Dorking List: The Ultimate Guide to Exploring and Securing...](https://medium.com/p/fa86bcb8458a) | [github-dorking](https://medium.com/feed/tag/github-dorking) |  |  |
-| Thu, 24 Jul 2025 19:06:23 GMT | [Is Your Email Safe? Discover How to Use an Email Breach Checker t...](https://medium.com/p/8c7de41ffbd4) | [cybersecurity-tools](https://medium.com/feed/tag/cybersecurity-tools) |  |  |
-| Sat, 26 Jul 2025 02:05:18 GMT | [Claim Exclusive BOUNTY Through ChainBounty's Distribution Wave](https://medium.com/p/de529f8829db) | [bounties](https://medium.com/feed/tag/bounties) |  |  |
-| Mon, 18 Aug 2025 17:53:32 GMT | [The Hidden Art of Steganography: Concealing Secrets in Plain Sigh...](https://medium.com/p/87b352c314a5) | [infosec](https://medium.com/feed/tag/infosec) |  |  |
-| Wed, 13 Aug 2025 19:14:35 GMT | [From Simple Restriction Bypass to Internal Privilege Escalation t...](https://medium.com/p/e7b8366ac70d) | [hackerone](https://medium.com/feed/tag/hackerone), [idor](https://medium.com/feed/tag/idor) |  |  |
-| Sun, 17 Aug 2025 16:46:49 GMT | [Simple 2FA Bypass PortSwigger Writeup: How I Used This Method for...](https://medium.com/p/d18b5e317c3a) | [bug-bounty-writeup](https://medium.com/feed/tag/bug-bounty-writeup) |  |  |
+| Mon, 18 Aug 2025 16:40:52 GMT | [Is This the End of High-Paying Tech Jobs?](https://medium.com/p/eac14e9feca8) | [ethical-hacking](https://medium.com/feed/tag/ethical-hacking) |  |  |
+| Mon, 18 Aug 2025 15:29:55 GMT | [Network & Infrastructure Penetration Testing Services \| SecureRo...](https://medium.com/p/9a0c0c1d9123) | [ethical-hacking](https://medium.com/feed/tag/ethical-hacking) |  |  |
+| Mon, 18 Aug 2025 09:07:48 GMT | [ Broken Access Control: The Gateway to Unauthorized Privilege Esc...](https://medium.com/p/b1cdee656cd2) | [web-security](https://medium.com/feed/tag/web-security) |  |  |
+| Mon, 18 Aug 2025 15:50:01 GMT | [The Hidden Nightmare in Your Web Infrastructure: How MadeYouReset...](https://medium.com/p/b681a06dc354) | [web-security](https://medium.com/feed/tag/web-security) |  |  |
+| Sun, 17 Aug 2025 17:58:45 GMT | [$$$ How I Exploited a Business Logic Flaw to Slash Product Prices...](https://medium.com/p/64cd1d445d17) | [web-security](https://medium.com/feed/tag/web-security) |  |  |
+| Fri, 11 Jul 2025 07:49:47 GMT | [Platform Showdown: The Ultimate Guide to Choosing Your Bug Bounty...](https://medium.com/p/64ea085ae800) | [bug-bounty-program](https://medium.com/feed/tag/bug-bounty-program) |  |  |
+| Mon, 18 Aug 2025 16:23:20 GMT | [ How Hackers Use Tunneling to Bypass Firewalls (Red Team Playbook...](https://medium.com/p/fbecde22976d) | [ethical-hacking](https://medium.com/feed/tag/ethical-hacking) |  |  |
+| Sun, 17 Aug 2025 17:55:11 GMT | [\[Web Security Academy\] — Server-Side Vulnerabilities / Au...](https://medium.com/p/dd023ff17bb4) | [web-security](https://medium.com/feed/tag/web-security) |  |  |
+| Sun, 17 Aug 2025 17:52:52 GMT | [\[Web Security Academy\] — Server-Side Vulnerabilities / Au...](https://medium.com/p/50f32c7df27a) | [web-security](https://medium.com/feed/tag/web-security) |  |  |
+| Fri, 27 Jun 2025 09:58:47 GMT | [Kill Selfhost Program With My Custom Dorks](https://medium.com/p/839f528217df) | [bug-bounty-program](https://medium.com/feed/tag/bug-bounty-program) |  |  |
+| Tue, 12 Aug 2025 17:24:22 GMT | [How I Removed Other User`s Uploaded Images in a Few Clicks](https://medium.com/p/fdeb6355458b) | [bug-bounty-program](https://medium.com/feed/tag/bug-bounty-program) |  |  |
+| Wed, 16 Jul 2025 13:50:36 GMT | [Bug Bounties, Broken Promises](https://medium.com/p/a19557db0aaa) | [bug-bounty-program](https://medium.com/feed/tag/bug-bounty-program) |  |  |
+| Sun, 17 Aug 2025 21:01:29 GMT | [I Found a Critical XSS Everyone Missed](https://medium.com/p/16dd284919c9) | [web-security](https://medium.com/feed/tag/web-security) |  |  |
+| Mon, 18 Aug 2025 21:41:42 GMT | [Step-by-Step Guide: Create Your Own Cybersecurity Lab Using Virtu...](https://medium.com/p/511f7a23ff8d) | [ethical-hacking](https://medium.com/feed/tag/ethical-hacking) |  |  |
+| Mon, 18 Aug 2025 18:51:27 GMT | [The Android App That Stole My Location Data: Spyware Disguised as...](https://medium.com/p/b2fd762c8f72) | [ethical-hacking](https://medium.com/feed/tag/ethical-hacking) |  |  |
+| Tue, 15 Jul 2025 08:14:04 GMT | [Level Up Your Bounties: How to Choose the Best Bug Bounty Program...](https://medium.com/p/18cdaf61cdcb) | [bug-bounty-program](https://medium.com/feed/tag/bug-bounty-program) |  |  |
 | Wed, 25 Jun 2025 11:00:29 GMT | [Bug Bounty Programs: How to Start & Earn as a Beginner](https://medium.com/p/a838cd5caa01) | [bug-bounty-program](https://medium.com/feed/tag/bug-bounty-program) |  |  |
-| Sun, 06 Jul 2025 09:17:36 GMT | [How To Use Reddit for SaaS Marketing](https://medium.com/p/2b0b64fef1e3) | [directory-listing](https://medium.com/feed/tag/directory-listing) |  |  |
-| Sat, 05 Apr 2025 19:43:28 GMT | [Cache Poisoning Attacks: The Silent Saboteur of Web Caching](https://medium.com/p/3df4c9429218) | [web-cache-poisoning](https://medium.com/feed/tag/web-cache-poisoning) |  |  |
-| Sat, 08 Feb 2025 02:50:49 GMT | [Exploiting Web Cache Poisoning with Multiple Headers: A Practical...](https://medium.com/p/aca990356da8) | [web-cache-poisoning](https://medium.com/feed/tag/web-cache-poisoning) |  |  |
-| Mon, 18 Aug 2025 18:28:37 GMT | [Lock, Mint, Hack: The Dark Side of Blockchain Bridges](https://medium.com/p/068185408ba2) | [exploit](https://medium.com/feed/tag/exploit) |  |  |
-| Mon, 18 Aug 2025 22:50:11 GMT | [hujgdd](https://medium.com/p/c3d05c7daa7a) | [ssrf](https://medium.com/feed/tag/ssrf) |  |  |
+| Mon, 18 Aug 2025 14:50:03 GMT | [ShellShock: How Hackers Exploit Bash Vulnerabilities and How to P...](https://medium.com/p/a006c63c1883) | [ethical-hacking](https://medium.com/feed/tag/ethical-hacking) |  |  |
+| Mon, 18 Aug 2025 01:45:11 GMT | [Web Uygulamalarının Arkasındaki Sessiz Tehditler](https://medium.com/p/a31223bfd9f6) | [web-security](https://medium.com/feed/tag/web-security) |  |  |
+| Sun, 17 Aug 2025 17:50:39 GMT | [\[Web Security Academy\] — Server-Side Vulnerabilities / Au...](https://medium.com/p/a6eefdcc58ff) | [web-security](https://medium.com/feed/tag/web-security) |  |  |
+| Sun, 17 Aug 2025 19:26:05 GMT | [﷽](https://medium.com/p/b3205aa78fbb) | [bug-bounty-program](https://medium.com/feed/tag/bug-bounty-program) |  |  |
