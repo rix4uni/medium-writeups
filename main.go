@@ -1,306 +1,4 @@
-// Environment variable helpers
-func getEnvInt(key string, defaultValue int) int {
-	if value := os.Getenv(key); value != "" {
-		if intValue, err := strconv.Atoi(value); err == nil {
-			return intValue
-		}
-	}
-	return defaultValue
-}
-
-func getEnvDuration(key string, defaultSeconds int) time.Duration {
-	if value := os.Getenv(key); value != "" {
-		if intValue, err := strconv.Atoi(value); err == nil {
-			return time.Duration(intValue)
-		}
-	}
-	return time.Duration(defaultSeconds)
-}
-
-func getEnvBool(key string, defaultValue bool) bool {
-	if value := os.Getenv(key); value != "" {
-		return strings.ToLower(value) == "true"
-	}
-	return defaultValue
-}
-
-// ================================================================================
-// ENHANCED DISPLAY FUNCTIONS
-// ================================================================================
-
-func printHeader() {
-	fmt.Println(colorBold + colorCyan + separator + colorReset)
-	fmt.Printf("%s%s🛡️  %s %s%s\n", colorBold, colorCyan, appName, appVersion, colorReset)
-	fmt.Printf("%s%s🔗 Enhanced Medium Cybersecurity RSS Feed Aggregator%s\n", colorBold, colorWhite, colorReset)
-	fmt.Printf("%s%s📊 GitHub Pages Ready • Professional Dashboard • Enhanced Filtering%s\n", colorBold, colorWhite, colorReset)
-	fmt.Println(colorCyan + separator + colorReset)
-}
-
-func printProcessingInfo(currentDate string, feedCount int) {
-	fmt.Printf("📅 Current GMT Date: %s%s%s\n", colorYellow, currentDate, colorReset)
-	fmt.Printf("📊 Processing %s%d%s RSS feeds across %s15%s categories\n", colorBlue, feedCount, colorReset, colorPurple, colorReset)
-	fmt.Printf("⏱️  Request delay: %s%v%s (adaptive rate limiting)\n", colorPurple, requestDelay, colorReset)
-	if maxFeeds > 0 {
-		fmt.Printf("🔢 Feed limit: %s%d%s (testing mode)\n", colorYellow, maxFeeds, colorReset)
-	}
-	if debugMode {
-		fmt.Printf("🔍 Debug mode: %sENABLED%s\n", colorYellow, colorReset)
-	}
-	fmt.Println(subSeparator)
-}
-
-func printSummary(stats *AggregatorStats) {
-	fmt.Println()
-	fmt.Println(colorBold + colorGreen + "📊 PROCESSING SUMMARY" + colorReset)
-	fmt.Println(subSeparator)
-	fmt.Printf("🕒 Processing Time: %s%v%s\n", colorBlue, stats.ProcessingTime.Round(time.Second), colorReset)
-	fmt.Printf("📡 Feeds Processed: %s%d/%d%s (%s%.1f%%%s success rate)\n", 
-		colorGreen, stats.SuccessfulFeeds, stats.TotalFeeds, colorReset,
-		colorYellow, float64(stats.SuccessfulFeeds)/float64(stats.TotalFeeds)*100, colorReset)
-	
-	if stats.RateLimited > 0 {
-		fmt.Printf("⏳ Rate Limited: %s%d%s feeds (%.1f%%)\n", 
-			colorYellow, stats.RateLimited, colorReset,
-			float64(stats.RateLimited)/float64(stats.TotalFeeds)*100)
-	}
-	
-	fmt.Printf("📄 Total Entries: %s%d%s\n", colorBlue, stats.TotalEntries, colorReset)
-	fmt.Printf("🆕 New Entries: %s%d%s (%.1f%%)\n", 
-		colorGreen, stats.NewEntries, colorReset,
-		float64(stats.NewEntries)/float64(stats.TotalEntries)*100)
-	fmt.Printf("📅 Today's Entries: %s%d%s (%.1f%%)\n", 
-		colorYellow, stats.TodayEntries, colorReset,
-		float64(stats.TodayEntries)/float64(stats.TotalEntries)*100)
-	fmt.Printf("📈 This Week's Entries: %s%d%s (%.1f%%)\n", 
-		colorPurple, stats.WeekEntries, colorReset,
-		float64(stats.WeekEntries)/float64(stats.TotalEntries)*100)
-}
-
-func printFooter() {
-	fmt.Println()
-	fmt.Println(colorCyan + separator + colorReset)
-	fmt.Printf("%s%s✅ Processing completed successfully!%s\n", colorBold, colorGreen, colorReset)
-	fmt.Printf("%s%s🌐 GitHub Pages dashboard generated: index.html%s\n", colorBold, colorWhite, colorReset)
-	fmt.Printf("%s%s📱 Mobile-responsive with search and filtering%s\n", colorBold, colorWhite, colorReset)
-	fmt.Printf("%s%s🚀 Ready for deployment to GitHub Pages%s\n", colorBold, colorWhite, colorReset)
-	fmt.Println(colorCyan + separator + colorReset)
-}
-
-func printInfo(message string) {
-	fmt.Printf("%s%sℹ️  %s%s\n", colorBold, colorBlue, message, colorReset)
-}
-
-func printSuccess(message string) {
-	fmt.Printf("%s%s✅ %s%s\n", colorBold, colorGreen, message, colorReset)
-}
-
-func printWarning(message string) {
-	fmt.Printf("%s%s⚠️  %s%s\n", colorBold, colorYellow, message, colorReset)
-}
-
-func printError(message string) {
-	fmt.Printf("%s%s❌ %s%s\n", colorBold, colorRed, message, colorReset)
-}
-
-// ================================================================================
-// UTILITY FUNCTIONS
-// ================================================================================
-
-func sortEntries(entries map[string]*FeedEntry) []*FeedEntry {
-	entryList := make([]*FeedEntry, 0, len(entries))
-	for _, entry := range entries {
-		entryList = append(entryList, entry)
-	}
-
-	// Enhanced sorting: Priority, New posts, Today's posts, then by time (newest first)
-	sort.SliceStable(entryList, func(i, j int) bool {
-		// First sort by priority (lower number = higher priority)
-		if entryList[i].Priority != entryList[j].Priority {
-			return entryList[i].Priority < entryList[j].Priority
-		}
-		
-		// Then by new posts
-		if entryList[i].IsNew != entryList[j].IsNew {
-			return entryList[i].IsNew
-		}
-		
-		// Then by today's posts
-		if entryList[i].IsToday != entryList[j].IsToday {
-			return entryList[i].IsToday
-		}
-		
-		// Finally by time (newest first)
-		return entryList[i].ParsedTime.After(entryList[j].ParsedTime)
-	})
-
-	return entryList
-}
-
-func sanitizeTitle(title string) string {
-	// Clean up the title
-	title = strings.ReplaceAll(title, "\n", " ")
-	title = strings.ReplaceAll(title, "\r", " ")
-	title = strings.ReplaceAll(title, "\t", " ")
-	
-	// Escape markdown characters
-	title = strings.ReplaceAll(title, "|", "\\|")
-	title = strings.ReplaceAll(title, "[", "\\[")
-	title = strings.ReplaceAll(title, "]", "\\]")
-	title = strings.ReplaceAll(title, "*", "\\*")
-	title = strings.ReplaceAll(title, "_", "\\_")
-	title = strings.ReplaceAll(title, "`", "\\`")
-	title = strings.ReplaceAll(title, "#", "\\#")
-	
-	// Remove extra spaces
-	title = strings.Join(strings.Fields(title), " ")
-	
-	// Truncate if too long
-	if len(title) > maxTitleLength {
-		title = title[:maxTitleLength-3] + "..."
-	}
-	
-	return title
-}
-
-func extractFeedName(url string) string {
-	parts := strings.Split(url, "/")
-	tag := parts[len(parts)-1]
-	
-	// Convert tag to readable name with better formatting
-	name := strings.ReplaceAll(tag, "-", " ")
-	
-	// Handle special cases
-	replacements := map[string]string{
-		"xss": "XSS",
-		"sql": "SQL",
-		"api": "API",
-		"aws": "AWS",
-		"gcp": "GCP",
-		"rce": "RCE",
-		"lfi": "LFI",
-		"rfi": "RFI",
-		"csrf": "CSRF",
-		"ssrf": "SSRF",
-		"idor": "IDOR",
-		"osint": "OSINT",
-		"siem": "SIEM",
-		"soc": "SOC",
-		"edr": "EDR",
-		"xdr": "XDR",
-		"iam": "IAM",
-		"mfa": "MFA",
-		"2fa": "2FA",
-		"vpn": "VPN",
-		"tls": "TLS",
-		"ssl": "SSL",
-		"pki": "PKI",
-		"cve": "CVE",
-		"apt": "APT",
-		"ios": "iOS",
-		"gdpr": "GDPR",
-		"hipaa": "HIPAA",
-		"sox": "SOX",
-		"iso": "ISO",
-		"nist": "NIST",
-		"cis": "CIS",
-		"dfir": "DFIR",
-		"jwt": "JWT",
-		"oauth": "OAuth",
-		"defi": "DeFi",
-		"nft": "NFT",
-		"ai": "AI",
-		"ml": "ML",
-		"iot": "IoT",
-	}
-	
-	words := strings.Fields(name)
-	for i, word := range words {
-		lowerWord := strings.ToLower(word)
-		if replacement, exists := replacements[lowerWord]; exists {
-			words[i] = replacement
-		} else {
-			words[i] = strings.Title(word)
-		}
-	}
-	
-	return strings.Join(words, " ")
-}
-
-func parsePublicationDate(pubDate string) (time.Time, error) {
-	// Try different date formats
-	formats := []string{
-		time.RFC1123,
-		time.RFC1123Z,
-		time.RFC822,
-		time.RFC822Z,
-		"2006-01-02T15:04:05Z",
-		"2006-01-02T15:04:05-07:00",
-		"2006-01-02T15:04:05.000Z",
-		"Mon, 2 Jan 2006 15:04:05 MST",
-		"Mon, 2 Jan 2006 15:04:05 -0700",
-		"2006-01-02 15:04:05",
-	}
-	
-	for _, format := range formats {
-		if t, err := time.Parse(format, pubDate); err == nil {
-			return t, nil
-		}
-	}
-	
-	return time.Time{}, fmt.Errorf("unable to parse date: %s", pubDate)
-}
-
-func formatDisplayTime(t time.Time) string {
-	if t.IsZero() {
-		return "Unknown"
-	}
-	
-	now := time.Now()
-	diff := now.Sub(t)
-	
-	// Show relative time for recent posts
-	if diff < time.Hour {
-		minutes := int(diff.Minutes())
-		if minutes < 1 {
-			return "Just now"
-		}
-		return fmt.Sprintf("%dm ago", minutes)
-	} else if diff < 24*time.Hour {
-		hours := int(diff.Hours())
-		return fmt.Sprintf("%dh ago", hours)
-	} else if diff < 7*24*time.Hour {
-		days := int(diff.Hours() / 24)
-		return fmt.Sprintf("%dd ago", days)
-	}
-	
-	return t.Format(displayTimeFormat)
-}
-
-func checkIfToday(pubDate, currentDate string) bool {
-	pubTime, err := parsePublicationDate(pubDate)
-	if err != nil {
-		return false
-	}
-	
-	pubDateFormatted := pubTime.Format(dateFormat)
-	return pubDateFormatted == currentDate
-}
-
-func checkIfThisWeek(pubDate string) bool {
-	pubTime, err := parsePublicationDate(pubDate)
-	if err != nil {
-		return false
-	}
-	
-	now := time.Now()
-	weekAgo := now.AddDate(0, 0, -7)
-	
-	return pubTime.After(weekAgo)
-}
-
-func getCurrentDateGMT() string {
-	return time.Now().In(time.UTC).Format(dateFormat)
-}package main
+package main
 
 import (
 	"encoding/xml"
@@ -320,24 +18,24 @@ import (
 
 const (
 	// Application settings
-	appName           = "Medium Cybersecurity RSS Aggregator"
-	appVersion        = "v3.0.0"
-	maxTitleLength    = 85
-	requestTimeout    = 45 * time.Second
-	
+	appName        = "Medium Cybersecurity RSS Aggregator"
+	appVersion     = "v3.0.0"
+	maxTitleLength = 85
+	requestTimeout = 45 * time.Second
+
 	// Date formats
 	dateFormat        = "Mon, 02 Jan 2006"
 	displayTimeFormat = "02 Jan 15:04"
 	isoDateFormat     = "2006-01-02T15:04:05Z"
-	
+
 	// File settings
-	readmeFilename    = "README.md"
-	indexFilename     = "index.html"
-	
+	readmeFilename = "README.md"
+	indexFilename  = "index.html"
+
 	// Output formatting
-	separator         = "═══════════════════════════════════════════════════════════════════════════════"
-	subSeparator      = "───────────────────────────────────────────────────────────────────────────────"
-	
+	separator    = "═══════════════════════════════════════════════════════════════════════════════"
+	subSeparator = "───────────────────────────────────────────────────────────────────────────────"
+
 	// Colors for terminal output (ANSI codes)
 	colorReset  = "\033[0m"
 	colorRed    = "\033[31m"
@@ -352,9 +50,9 @@ const (
 
 // Environment variables for configuration
 var (
-	maxFeeds      = getEnvInt("MAX_FEEDS", 0)      // 0 means no limit
-	requestDelay  = getEnvDuration("RATE_LIMIT_DELAY", 3) * time.Second
-	debugMode     = getEnvBool("DEBUG_MODE", false)
+	maxFeeds     = getEnvInt("MAX_FEEDS", 0) // 0 means no limit
+	requestDelay = getEnvDuration("RATE_LIMIT_DELAY", 3) * time.Second
+	debugMode    = getEnvBool("DEBUG_MODE", false)
 )
 
 // ================================================================================
@@ -376,12 +74,12 @@ type Channel struct {
 
 // Item represents an individual RSS item
 type Item struct {
-	Title       string `xml:"title"`
-	GUID        string `xml:"guid"`
-	PubDate     string `xml:"pubDate"`
-	Description string `xml:"description"`
-	Link        string `xml:"link"`
-	Author      string `xml:"author"`
+	Title       string   `xml:"title"`
+	GUID        string   `xml:"guid"`
+	PubDate     string   `xml:"pubDate"`
+	Description string   `xml:"description"`
+	Link        string   `xml:"link"`
+	Author      string   `xml:"author"`
 	Categories  []string `xml:"category"`
 }
 
@@ -404,12 +102,12 @@ type FeedEntry struct {
 
 // FeedSource represents an RSS feed source configuration
 type FeedSource struct {
-	URL         string
-	Name        string
-	Category    string
-	Priority    int
-	Active      bool
-	Color       string
+	URL      string
+	Name     string
+	Category string
+	Priority int
+	Active   bool
+	Color    string
 }
 
 // AggregatorStats holds statistics about the aggregation process
@@ -428,11 +126,17 @@ type AggregatorStats struct {
 
 // CategoryStats represents statistics for each category
 type CategoryStats struct {
-	Name        string
-	TotalPosts  int
-	NewPosts    int
-	TodayPosts  int
-	Color       string
+	Name       string
+	TotalPosts int
+	NewPosts   int
+	TodayPosts int
+	Color      string
+}
+
+// TrendingTopic represents a frequently mentioned keyword or category
+type TrendingTopic struct {
+	Name  string
+	Count int
 }
 
 // ================================================================================
@@ -484,10 +188,10 @@ func readREADME() string {
 func extractFeedName(url string) string {
 	parts := strings.Split(url, "/")
 	tag := parts[len(parts)-1]
-	
+
 	// Convert tag to readable name with better formatting
 	name := strings.ReplaceAll(tag, "-", " ")
-	
+
 	// Handle special cases
 	replacements := map[string]string{
 		"xss": "XSS", "sql": "SQL", "api": "API", "aws": "AWS", "gcp": "GCP",
@@ -499,7 +203,7 @@ func extractFeedName(url string) string {
 		"nist": "NIST", "cis": "CIS", "dfir": "DFIR", "jwt": "JWT", "oauth": "OAuth",
 		"defi": "DeFi", "nft": "NFT", "ai": "AI", "ml": "ML", "iot": "IoT",
 	}
-	
+
 	words := strings.Fields(name)
 	for i, word := range words {
 		lowerWord := strings.ToLower(word)
@@ -509,7 +213,7 @@ func extractFeedName(url string) string {
 			words[i] = strings.Title(word)
 		}
 	}
-	
+
 	return strings.Join(words, " ")
 }
 
@@ -520,13 +224,13 @@ func parsePublicationDate(pubDate string) (time.Time, error) {
 		"2006-01-02T15:04:05.000Z", "Mon, 2 Jan 2006 15:04:05 MST",
 		"Mon, 2 Jan 2006 15:04:05 -0700", "2006-01-02 15:04:05",
 	}
-	
+
 	for _, format := range formats {
 		if t, err := time.Parse(format, pubDate); err == nil {
 			return t, nil
 		}
 	}
-	
+
 	return time.Time{}, fmt.Errorf("unable to parse date: %s", pubDate)
 }
 
@@ -534,10 +238,10 @@ func formatDisplayTime(t time.Time) string {
 	if t.IsZero() {
 		return "Unknown"
 	}
-	
+
 	now := time.Now()
 	diff := now.Sub(t)
-	
+
 	if diff < time.Hour {
 		minutes := int(diff.Minutes())
 		if minutes < 1 {
@@ -551,7 +255,7 @@ func formatDisplayTime(t time.Time) string {
 		days := int(diff.Hours() / 24)
 		return fmt.Sprintf("%dd ago", days)
 	}
-	
+
 	return t.Format(displayTimeFormat)
 }
 
@@ -560,7 +264,7 @@ func checkIfToday(pubDate, currentDate string) bool {
 	if err != nil {
 		return false
 	}
-	
+
 	pubDateFormatted := pubTime.Format(dateFormat)
 	return pubDateFormatted == currentDate
 }
@@ -570,10 +274,10 @@ func checkIfThisWeek(pubDate string) bool {
 	if err != nil {
 		return false
 	}
-	
+
 	now := time.Now()
 	weekAgo := now.AddDate(0, 0, -7)
-	
+
 	return pubTime.After(weekAgo)
 }
 
@@ -581,7 +285,7 @@ func sanitizeTitle(title string) string {
 	title = strings.ReplaceAll(title, "\n", " ")
 	title = strings.ReplaceAll(title, "\r", " ")
 	title = strings.ReplaceAll(title, "\t", " ")
-	
+
 	title = strings.ReplaceAll(title, "|", "\\|")
 	title = strings.ReplaceAll(title, "[", "\\[")
 	title = strings.ReplaceAll(title, "]", "\\]")
@@ -589,13 +293,13 @@ func sanitizeTitle(title string) string {
 	title = strings.ReplaceAll(title, "_", "\\_")
 	title = strings.ReplaceAll(title, "`", "\\`")
 	title = strings.ReplaceAll(title, "#", "\\#")
-	
+
 	title = strings.Join(strings.Fields(title), " ")
-	
+
 	if len(title) > maxTitleLength {
 		title = title[:maxTitleLength-3] + "..."
 	}
-	
+
 	return title
 }
 
@@ -605,11 +309,11 @@ func sanitizeHTMLTitle(title string) string {
 	title = strings.ReplaceAll(title, ">", "&gt;")
 	title = strings.ReplaceAll(title, "\"", "&quot;")
 	title = strings.ReplaceAll(title, "'", "&#39;")
-	
+
 	if len(title) > maxTitleLength {
 		title = title[:maxTitleLength-3] + "..."
 	}
-	
+
 	return title
 }
 
@@ -681,24 +385,24 @@ func printSummary(stats *AggregatorStats) {
 	fmt.Println(colorBold + colorGreen + "📊 PROCESSING SUMMARY" + colorReset)
 	fmt.Println(subSeparator)
 	fmt.Printf("🕒 Processing Time: %s%v%s\n", colorBlue, stats.ProcessingTime.Round(time.Second), colorReset)
-	fmt.Printf("📡 Feeds Processed: %s%d/%d%s (%s%.1f%%%s success rate)\n", 
+	fmt.Printf("📡 Feeds Processed: %s%d/%d%s (%s%.1f%%%s success rate)\n",
 		colorGreen, stats.SuccessfulFeeds, stats.TotalFeeds, colorReset,
 		colorYellow, float64(stats.SuccessfulFeeds)/float64(stats.TotalFeeds)*100, colorReset)
-	
+
 	if stats.RateLimited > 0 {
-		fmt.Printf("⏳ Rate Limited: %s%d%s feeds (%.1f%%)\n", 
+		fmt.Printf("⏳ Rate Limited: %s%d%s feeds (%.1f%%)\n",
 			colorYellow, stats.RateLimited, colorReset,
 			float64(stats.RateLimited)/float64(stats.TotalFeeds)*100)
 	}
-	
+
 	fmt.Printf("📄 Total Entries: %s%d%s\n", colorBlue, stats.TotalEntries, colorReset)
-	fmt.Printf("🆕 New Entries: %s%d%s (%.1f%%)\n", 
+	fmt.Printf("🆕 New Entries: %s%d%s (%.1f%%)\n",
 		colorGreen, stats.NewEntries, colorReset,
 		float64(stats.NewEntries)/float64(stats.TotalEntries)*100)
-	fmt.Printf("📅 Today's Entries: %s%d%s (%.1f%%)\n", 
+	fmt.Printf("📅 Today's Entries: %s%d%s (%.1f%%)\n",
 		colorYellow, stats.TodayEntries, colorReset,
 		float64(stats.TodayEntries)/float64(stats.TotalEntries)*100)
-	fmt.Printf("📈 This Week's Entries: %s%d%s (%.1f%%)\n", 
+	fmt.Printf("📈 This Week's Entries: %s%d%s (%.1f%%)\n",
 		colorPurple, stats.WeekEntries, colorReset,
 		float64(stats.WeekEntries)/float64(stats.TotalEntries)*100)
 }
@@ -720,7 +424,7 @@ func printFooter() {
 func updateStats(stats *AggregatorStats, entries []*FeedEntry, duration time.Duration) {
 	stats.TotalEntries = len(entries)
 	stats.ProcessingTime = duration
-	
+
 	for _, entry := range entries {
 		if entry.IsNew {
 			stats.NewEntries++
@@ -770,44 +474,44 @@ func countWeekEntries(entries []*FeedEntry) int {
 
 func main() {
 	startTime := time.Now()
-	
+
 	printHeader()
-	
+
 	// Initialize components
 	feedSources := getFeedSources()
 	readmeContent := readREADME()
 	currentDate := getCurrentDateGMT()
-	
+
 	// Apply feed limit if set
 	if maxFeeds > 0 && len(feedSources) > maxFeeds {
 		feedSources = feedSources[:maxFeeds]
 		printInfo(fmt.Sprintf("🔢 Limited to %d feeds for testing", maxFeeds))
 	}
-	
+
 	stats := &AggregatorStats{
 		TotalFeeds: len(feedSources),
 		StartTime:  startTime,
 	}
-	
+
 	printProcessingInfo(currentDate, len(feedSources))
-	
+
 	// Process feeds
 	entries := processFeeds(feedSources, readmeContent, currentDate, stats)
-	
+
 	if len(entries) == 0 {
 		printError("No entries found or all feeds failed to fetch")
 		return
 	}
-	
+
 	// Sort and generate output
 	sortedEntries := sortEntries(entries)
 	updateStats(stats, sortedEntries, time.Since(startTime))
-	
+
 	// Generate both markdown and HTML outputs
 	generateMarkdownOutput(sortedEntries, stats, feedSources)
 	generateHTMLOutput(sortedEntries, stats, feedSources)
 	printSummary(stats)
-	
+
 	printFooter()
 }
 
@@ -817,7 +521,7 @@ func main() {
 
 func getFeedSources() []FeedSource {
 	var sources []FeedSource
-	
+
 	// Core cybersecurity feeds (Priority 1)
 	coreFeeds := []string{
 		"https://medium.com/feed/tag/cybersecurity",
@@ -830,7 +534,7 @@ func getFeedSources() []FeedSource {
 		"https://medium.com/feed/tag/security-awareness",
 	}
 	addFeedsWithCategory(&sources, coreFeeds, "Core Security", 1, "#FF6B6B")
-	
+
 	// Bug bounty and ethical hacking (Priority 2)
 	bugBountyFeeds := []string{
 		"https://medium.com/feed/tag/bug-bounty",
@@ -848,7 +552,7 @@ func getFeedSources() []FeedSource {
 		"https://medium.com/feed/tag/vulnerability-disclosure",
 	}
 	addFeedsWithCategory(&sources, bugBountyFeeds, "Bug Bounty", 2, "#4ECDC4")
-	
+
 	// Penetration testing and red team (Priority 3)
 	penTestFeeds := []string{
 		"https://medium.com/feed/tag/penetration-testing",
@@ -863,7 +567,7 @@ func getFeedSources() []FeedSource {
 		"https://medium.com/feed/tag/security-testing",
 	}
 	addFeedsWithCategory(&sources, penTestFeeds, "Penetration Testing", 3, "#45B7D1")
-	
+
 	// Web application security (Priority 4)
 	webSecFeeds := []string{
 		"https://medium.com/feed/tag/web-security",
@@ -887,7 +591,7 @@ func getFeedSources() []FeedSource {
 		"https://medium.com/feed/tag/command-injection",
 	}
 	addFeedsWithCategory(&sources, webSecFeeds, "Web Security", 4, "#96CEB4")
-	
+
 	// API and mobile security (Priority 5)
 	apiMobileFeeds := []string{
 		"https://medium.com/feed/tag/api-security",
@@ -903,7 +607,7 @@ func getFeedSources() []FeedSource {
 		"https://medium.com/feed/tag/authorization",
 	}
 	addFeedsWithCategory(&sources, apiMobileFeeds, "API & Mobile", 5, "#FFEAA7")
-	
+
 	// Cloud security (Priority 6)
 	cloudFeeds := []string{
 		"https://medium.com/feed/tag/cloud-security",
@@ -919,7 +623,7 @@ func getFeedSources() []FeedSource {
 		"https://medium.com/feed/tag/infrastructure-security",
 	}
 	addFeedsWithCategory(&sources, cloudFeeds, "Cloud Security", 6, "#DDA0DD")
-	
+
 	// Tools and reconnaissance (Priority 7)
 	toolsFeeds := []string{
 		"https://medium.com/feed/tag/cybersecurity-tools",
@@ -938,7 +642,7 @@ func getFeedSources() []FeedSource {
 		"https://medium.com/feed/tag/vulnerability-scanning",
 	}
 	addFeedsWithCategory(&sources, toolsFeeds, "Tools & OSINT", 7, "#74B9FF")
-	
+
 	// Specific security tools (Priority 8)
 	specificToolsFeeds := []string{
 		"https://medium.com/feed/tag/burp-suite",
@@ -957,7 +661,7 @@ func getFeedSources() []FeedSource {
 		"https://medium.com/feed/tag/nuclei",
 	}
 	addFeedsWithCategory(&sources, specificToolsFeeds, "Security Tools", 8, "#A29BFE")
-	
+
 	// Malware and threat analysis (Priority 9)
 	malwareFeeds := []string{
 		"https://medium.com/feed/tag/malware-analysis",
@@ -973,7 +677,7 @@ func getFeedSources() []FeedSource {
 		"https://medium.com/feed/tag/threat-analysis",
 	}
 	addFeedsWithCategory(&sources, malwareFeeds, "Malware & Threats", 9, "#FD79A8")
-	
+
 	// Digital forensics and incident response (Priority 10)
 	forensicsFeeds := []string{
 		"https://medium.com/feed/tag/digital-forensics",
@@ -988,7 +692,7 @@ func getFeedSources() []FeedSource {
 		"https://medium.com/feed/tag/volatility",
 	}
 	addFeedsWithCategory(&sources, forensicsFeeds, "Forensics & IR", 10, "#FDCB6E")
-	
+
 	// Cryptography and privacy (Priority 11)
 	cryptoFeeds := []string{
 		"https://medium.com/feed/tag/cryptography",
@@ -1004,7 +708,7 @@ func getFeedSources() []FeedSource {
 		"https://medium.com/feed/tag/ssl",
 	}
 	addFeedsWithCategory(&sources, cryptoFeeds, "Crypto & Privacy", 11, "#E17055")
-	
+
 	// Network security (Priority 12)
 	networkFeeds := []string{
 		"https://medium.com/feed/tag/network-security",
@@ -1018,7 +722,7 @@ func getFeedSources() []FeedSource {
 		"https://medium.com/feed/tag/network-forensics",
 	}
 	addFeedsWithCategory(&sources, networkFeeds, "Network Security", 12, "#00B894")
-	
+
 	// Vulnerability research (Priority 13)
 	vulnResearchFeeds := []string{
 		"https://medium.com/feed/tag/vulnerability",
@@ -1035,7 +739,7 @@ func getFeedSources() []FeedSource {
 		"https://medium.com/feed/tag/fuzzing",
 	}
 	addFeedsWithCategory(&sources, vulnResearchFeeds, "Vuln Research", 13, "#6C5CE7")
-	
+
 	// Security operations and blue team (Priority 14)
 	blueTeamFeeds := []string{
 		"https://medium.com/feed/tag/blue-team",
@@ -1050,7 +754,7 @@ func getFeedSources() []FeedSource {
 		"https://medium.com/feed/tag/soar",
 	}
 	addFeedsWithCategory(&sources, blueTeamFeeds, "Blue Team & SOC", 14, "#00CEC9")
-	
+
 	// Compliance and governance (Priority 15)
 	complianceFeeds := []string{
 		"https://medium.com/feed/tag/compliance",
@@ -1066,7 +770,7 @@ func getFeedSources() []FeedSource {
 		"https://medium.com/feed/tag/cis-controls",
 	}
 	addFeedsWithCategory(&sources, complianceFeeds, "Compliance & Governance", 15, "#FD79A8")
-	
+
 	return sources
 }
 
@@ -1089,18 +793,18 @@ func addFeedsWithCategory(sources *[]FeedSource, urls []string, category string,
 
 func processFeeds(sources []FeedSource, readmeContent, currentDate string, stats *AggregatorStats) map[string]*FeedEntry {
 	entries := make(map[string]*FeedEntry)
-	
+
 	printInfo(fmt.Sprintf("🔄 Processing %d RSS feeds...", len(sources)))
 	fmt.Println(subSeparator)
-	
+
 	for i, source := range sources {
 		if !source.Active {
 			continue
 		}
-		
+
 		progress := fmt.Sprintf("[%d/%d]", i+1, len(sources))
 		fmt.Printf("%-8s %-20s %s", progress, source.Category, source.Name)
-		
+
 		rss, err := fetchRSSFeed(source.URL)
 		if err != nil {
 			if strings.Contains(err.Error(), "429") {
@@ -1110,18 +814,18 @@ func processFeeds(sources []FeedSource, readmeContent, currentDate string, stats
 				fmt.Printf(" %s❌ Failed: %s%s\n", colorRed, err.Error(), colorReset)
 			}
 			stats.FailedFeeds++
-			
+
 			// Longer delay for rate limited requests
 			if strings.Contains(err.Error(), "429") {
 				time.Sleep(requestDelay * 2)
 			}
 			continue
 		}
-		
+
 		itemsProcessed := processFeedItems(rss, source, entries, readmeContent, currentDate)
 		fmt.Printf(" %s✅ %d items%s\n", colorGreen, itemsProcessed, colorReset)
 		stats.SuccessfulFeeds++
-		
+
 		// Rate limiting with jitter
 		if i < len(sources)-1 {
 			delay := requestDelay
@@ -1131,26 +835,26 @@ func processFeeds(sources []FeedSource, readmeContent, currentDate string, stats
 			time.Sleep(delay)
 		}
 	}
-	
+
 	fmt.Println(subSeparator)
-	printSuccess(fmt.Sprintf("Successfully processed %d/%d feeds (%d rate limited)", 
+	printSuccess(fmt.Sprintf("Successfully processed %d/%d feeds (%d rate limited)",
 		stats.SuccessfulFeeds, len(sources), stats.RateLimited))
-	
+
 	return entries
 }
 
 func fetchRSSFeed(url string) (*RSS, error) {
 	client := &http.Client{Timeout: requestTimeout}
-	
+
 	// Add user agent to appear more legitimate
 	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {
 		return nil, fmt.Errorf("request creation error")
 	}
-	
+
 	req.Header.Set("User-Agent", "Mozilla/5.0 (compatible; CybersecurityBot/3.0; +https://github.com/cybersecurity-aggregator)")
 	req.Header.Set("Accept", "application/rss+xml, application/xml, text/xml")
-	
+
 	resp, err := client.Do(req)
 	if err != nil {
 		return nil, fmt.Errorf("network error")
@@ -1179,7 +883,7 @@ func fetchRSSFeed(url string) (*RSS, error) {
 
 func processFeedItems(rss *RSS, source FeedSource, entries map[string]*FeedEntry, readmeContent, currentDate string) int {
 	itemsProcessed := 0
-	
+
 	for _, item := range rss.Channel.Items {
 		if entry, exists := entries[item.GUID]; exists {
 			// Append to existing entry
@@ -1191,7 +895,7 @@ func processFeedItems(rss *RSS, source FeedSource, entries map[string]*FeedEntry
 		} else {
 			// Parse publication date
 			parsedTime, _ := parsePublicationDate(item.PubDate)
-			
+
 			// Create new entry
 			entries[item.GUID] = &FeedEntry{
 				Title:       item.Title,
@@ -1211,8 +915,102 @@ func processFeedItems(rss *RSS, source FeedSource, entries map[string]*FeedEntry
 		}
 		itemsProcessed++
 	}
-	
+
 	return itemsProcessed
+}
+
+// generateCategoryStats calculates post statistics grouped by category
+func generateCategoryStats(entries []*FeedEntry, sources []FeedSource) []CategoryStats {
+	statsMap := make(map[string]*CategoryStats)
+
+	for _, entry := range entries {
+		category := getCategoryFromFeeds(entry.FeedNames, sources)
+		color := getCategoryColor(entry.FeedNames, sources)
+
+		catStat, exists := statsMap[category]
+		if !exists {
+			catStat = &CategoryStats{Name: category, Color: color}
+			statsMap[category] = catStat
+		}
+
+		catStat.TotalPosts++
+		if entry.IsNew {
+			catStat.NewPosts++
+		}
+		if entry.IsToday {
+			catStat.TodayPosts++
+		}
+	}
+
+	result := make([]CategoryStats, 0, len(statsMap))
+	for _, v := range statsMap {
+		result = append(result, *v)
+	}
+
+	sort.Slice(result, func(i, j int) bool {
+		return result[i].TotalPosts > result[j].TotalPosts
+	})
+
+	return result
+}
+
+// getCategoryFromFeeds returns the category name for given feed names
+func getCategoryFromFeeds(feedNames []string, sources []FeedSource) string {
+	for _, name := range feedNames {
+		for _, src := range sources {
+			if src.Name == name {
+				return src.Category
+			}
+		}
+	}
+	return "Uncategorized"
+}
+
+// getCategoryColor returns the color associated with the entry's category
+func getCategoryColor(feedNames []string, sources []FeedSource) string {
+	for _, name := range feedNames {
+		for _, src := range sources {
+			if src.Name == name && src.Color != "" {
+				return src.Color
+			}
+		}
+	}
+	return "#FFFFFF"
+}
+
+// extractTrendingTopics returns trending topics based on entry categories
+func extractTrendingTopics(entries []*FeedEntry) []TrendingTopic {
+	counts := make(map[string]int)
+	for _, entry := range entries {
+		for _, cat := range entry.Categories {
+			key := strings.ToLower(cat)
+			counts[key]++
+		}
+	}
+
+	topics := make([]TrendingTopic, 0, len(counts))
+	for name, count := range counts {
+		topics = append(topics, TrendingTopic{Name: name, Count: count})
+	}
+
+	sort.Slice(topics, func(i, j int) bool {
+		return topics[i].Count > topics[j].Count
+	})
+
+	return topics
+}
+
+// generateCategoryOptions returns HTML option elements for category filter
+func generateCategoryOptions(sources []FeedSource) string {
+	seen := make(map[string]bool)
+	var builder strings.Builder
+	for _, src := range sources {
+		if !seen[src.Category] {
+			seen[src.Category] = true
+			builder.WriteString(fmt.Sprintf("<option value=\"%s\">%s</option>", src.Category, src.Category))
+		}
+	}
+	return builder.String()
 }
 
 // ================================================================================
@@ -1222,34 +1020,34 @@ func processFeedItems(rss *RSS, source FeedSource, entries map[string]*FeedEntry
 func generateMarkdownOutput(entries []*FeedEntry, stats *AggregatorStats, sources []FeedSource) {
 	printInfo("📋 Generating GitHub Pages compatible markdown...")
 	fmt.Println()
-	
+
 	// Enhanced GitHub Pages README with better styling
 	fmt.Printf("# 🛡️ %s\n\n", appName)
-	
+
 	// Status and stats section
 	fmt.Printf("[![Status](https://img.shields.io/badge/Status-🟢_Active-success?style=for-the-badge)](#) ")
 	fmt.Printf("[![Posts](https://img.shields.io/badge/Posts-%d-blue?style=for-the-badge)](#) ", len(entries))
 	fmt.Printf("[![New](https://img.shields.io/badge/New-%d-orange?style=for-the-badge)](#) ", countNewEntries(entries))
 	fmt.Printf("[![Today](https://img.shields.io/badge/Today-%d-red?style=for-the-badge)](#)\n\n", countTodayEntries(entries))
-	
+
 	// Quick stats table
 	fmt.Printf("## 📊 Quick Stats\n\n")
 	fmt.Printf("| Metric | Count | Percentage |\n")
 	fmt.Printf("|--------|-------|------------|\n")
 	fmt.Printf("| 📰 **Total Posts** | **%d** | 100%% |\n", len(entries))
-	fmt.Printf("| 🆕 **New Posts** | **%d** | %.1f%% |\n", 
-		countNewEntries(entries), 
+	fmt.Printf("| 🆕 **New Posts** | **%d** | %.1f%% |\n",
+		countNewEntries(entries),
 		float64(countNewEntries(entries))/float64(len(entries))*100)
-	fmt.Printf("| 📅 **Today's Posts** | **%d** | %.1f%% |\n", 
-		countTodayEntries(entries), 
+	fmt.Printf("| 📅 **Today's Posts** | **%d** | %.1f%% |\n",
+		countTodayEntries(entries),
 		float64(countTodayEntries(entries))/float64(len(entries))*100)
-	fmt.Printf("| 📈 **This Week** | **%d** | %.1f%% |\n", 
-		countWeekEntries(entries), 
+	fmt.Printf("| 📈 **This Week** | **%d** | %.1f%% |\n",
+		countWeekEntries(entries),
 		float64(countWeekEntries(entries))/float64(len(entries))*100)
-	fmt.Printf("| 🔄 **Success Rate** | **%d/%d** | %.1f%% |\n\n", 
+	fmt.Printf("| 🔄 **Success Rate** | **%d/%d** | %.1f%% |\n\n",
 		stats.SuccessfulFeeds, stats.TotalFeeds,
 		float64(stats.SuccessfulFeeds)/float64(stats.TotalFeeds)*100)
-	
+
 	// Category breakdown
 	categoryStats := generateCategoryStats(entries, sources)
 	fmt.Printf("## 🏷️ Categories Overview\n\n")
@@ -1262,44 +1060,44 @@ func generateMarkdownOutput(entries []*FeedEntry, stats *AggregatorStats, source
 		} else if cat.NewPosts > 5 {
 			trend = "🚀"
 		}
-		fmt.Printf("| **%s** | %d | %d | %d | %s |\n", 
+		fmt.Printf("| **%s** | %d | %d | %d | %s |\n",
 			cat.Name, cat.TotalPosts, cat.NewPosts, cat.TodayPosts, trend)
 	}
 	fmt.Printf("\n")
-	
+
 	// Update information
 	fmt.Printf("## ℹ️ Update Information\n\n")
 	fmt.Printf("- **Last Updated**: %s GMT\n", getCurrentDateGMT())
 	fmt.Printf("- **Processing Time**: %v\n", stats.ProcessingTime.Round(time.Second))
-	fmt.Printf("- **Feeds Processed**: %d/%d (%.1f%% success rate)\n", 
+	fmt.Printf("- **Feeds Processed**: %d/%d (%.1f%% success rate)\n",
 		stats.SuccessfulFeeds, stats.TotalFeeds,
 		float64(stats.SuccessfulFeeds)/float64(stats.TotalFeeds)*100)
 	fmt.Printf("- **Rate Limited**: %d feeds\n", stats.RateLimited)
 	fmt.Printf("- **Next Update**: Automatically every 2 hours\n\n")
-	
+
 	// Main posts table with enhanced formatting
 	fmt.Printf("## 📰 Latest Cybersecurity Posts\n\n")
 	fmt.Printf("> 🔍 **Pro Tip**: Use `Ctrl+F` to search for specific topics, CVEs, or tools!\n\n")
-	
+
 	fmt.Printf("| 🕒 Time | 📄 Title | 📂 Category | 🆕 | 📅 | 📊 |\n")
 	fmt.Printf("|---------|----------|-------------|----|----|----|\n")
-	
+
 	// Group entries by priority and date
 	for _, entry := range entries {
 		timeStr := formatDisplayTime(entry.ParsedTime)
 		title := sanitizeTitle(entry.Title)
 		category := getCategoryFromFeeds(entry.FeedNames, sources)
-		
+
 		newBadge := ""
 		if entry.IsNew {
 			newBadge = "🆕"
 		}
-		
+
 		todayBadge := ""
 		if entry.IsToday {
 			todayBadge = "📅"
 		}
-		
+
 		priorityBadge := ""
 		if entry.Priority <= 3 {
 			priorityBadge = "🔥"
@@ -1308,11 +1106,11 @@ func generateMarkdownOutput(entries []*FeedEntry, stats *AggregatorStats, source
 		} else {
 			priorityBadge = "📝"
 		}
-		
+
 		fmt.Printf("| %s | [%s](%s) | %s | %s | %s | %s |\n",
 			timeStr, title, entry.GUID, category, newBadge, todayBadge, priorityBadge)
 	}
-	
+
 	// Footer with enhanced information
 	fmt.Printf("\n---\n\n")
 	fmt.Printf("## 🔗 Useful Links\n\n")
@@ -1320,36 +1118,38 @@ func generateMarkdownOutput(entries []*FeedEntry, stats *AggregatorStats, source
 	fmt.Printf("- 📱 **[Mobile View](https://your-username.github.io/medium-writeups/mobile)** - Optimized for mobile\n")
 	fmt.Printf("- 📊 **[Analytics](https://your-username.github.io/medium-writeups/stats)** - Detailed statistics\n")
 	fmt.Printf("- 🔄 **[API](https://your-username.github.io/medium-writeups/api/posts.json)** - JSON feed\n\n")
-	
+
 	fmt.Printf("## 🛠️ Technical Details\n\n")
 	fmt.Printf("- **Generator**: %s %s\n", appName, appVersion)
 	fmt.Printf("- **Sources**: %d Medium RSS feeds across %d categories\n", len(sources), len(categoryStats))
 	fmt.Printf("- **Update Frequency**: Every 2 hours via GitHub Actions\n")
 	fmt.Printf("- **Repository**: [GitHub](https://github.com/your-username/medium-writeups)\n")
 	fmt.Printf("- **License**: MIT License\n\n")
-	
+
 	fmt.Printf("## 📈 Trending Topics\n\n")
 	trendingTopics := extractTrendingTopics(entries)
 	for i, topic := range trendingTopics {
-		if i >= 10 { break } // Top 10 only
+		if i >= 10 {
+			break
+		} // Top 10 only
 		fmt.Printf("- **%s** (%d posts)\n", topic.Name, topic.Count)
 	}
 	fmt.Printf("\n")
-	
+
 	fmt.Printf("## 🤝 Contributing\n\n")
 	fmt.Printf("Want to add more RSS feeds or improve the aggregator?\n\n")
 	fmt.Printf("1. 🍴 Fork the repository\n")
 	fmt.Printf("2. ➕ Add new feeds in `main.go`\n")
 	fmt.Printf("3. 🧪 Test your changes\n")
 	fmt.Printf("4. 📬 Submit a pull request\n\n")
-	
+
 	fmt.Printf("---\n")
 	fmt.Printf("*⚡ Powered by GitHub Actions | 🔄 Auto-updated | ⭐ Star if useful!*\n")
 }
 
 func generateHTMLOutput(entries []*FeedEntry, stats *AggregatorStats, sources []FeedSource) {
 	printInfo("🌐 Generating HTML dashboard for GitHub Pages...")
-	
+
 	// Create index.html for GitHub Pages
 	htmlContent := `<!DOCTYPE html>
 <html lang="en">
@@ -1502,10 +1302,10 @@ func generateHTMLOutput(entries []*FeedEntry, stats *AggregatorStats, sources []
 		} else if entry.Priority <= 6 {
 			priorityClass = "priority-medium"
 		}
-		
+
 		categoryColor := getCategoryColor(entry.FeedNames, sources)
 		timeStr := formatDisplayTime(entry.ParsedTime)
-		
+
 		htmlContent += fmt.Sprintf(`
                 <div class="post-card bg-white rounded-lg shadow-md card-hover %s" 
                      data-category="%s" 
@@ -1550,12 +1350,27 @@ func generateHTMLOutput(entries []*FeedEntry, stats *AggregatorStats, sources []
 			entry.IsToday,
 			categoryColor,
 			getCategoryFromFeeds(entry.FeedNames, sources),
-			func() string { if entry.IsNew { return `<span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">New</span>` }; return "" }(),
-			func() string { if entry.IsToday { return `<span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">Today</span>` }; return "" }(),
+			func() string {
+				if entry.IsNew {
+					return `<span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">New</span>`
+				}
+				return ""
+			}(),
+			func() string {
+				if entry.IsToday {
+					return `<span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">Today</span>`
+				}
+				return ""
+			}(),
 			entry.GUID,
 			sanitizeHTMLTitle(entry.Title),
 			timeStr,
-			func() string { if entry.Author != "" { return fmt.Sprintf(` • <i class="fas fa-user mr-1"></i>%s`, entry.Author) }; return "" }(),
+			func() string {
+				if entry.Author != "" {
+					return fmt.Sprintf(` • <i class="fas fa-user mr-1"></i>%s`, entry.Author)
+				}
+				return ""
+			}(),
 			len(entry.Feeds),
 			entry.GUID,
 		)
@@ -1704,4 +1519,3 @@ func generateHTMLOutput(entries []*FeedEntry, stats *AggregatorStats, sources []
 		printSuccess(fmt.Sprintf("Generated %s for GitHub Pages", indexFilename))
 	}
 }
-
