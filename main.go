@@ -771,6 +771,176 @@ func getFeedSources() []FeedSource {
 	}
 	addFeedsWithCategory(&sources, complianceFeeds, "Compliance & Governance", 15, "#FD79A8")
 
+	// AI/ML Security and Emerging Technologies (Priority 16)
+	aiSecurityFeeds := []string{
+		"https://medium.com/feed/tag/ai-security",
+		"https://medium.com/feed/tag/machine-learning-security",
+		"https://medium.com/feed/tag/ml-security",
+		"https://medium.com/feed/tag/artificial-intelligence-security",
+		"https://medium.com/feed/tag/adversarial-attacks",
+		"https://medium.com/feed/tag/model-poisoning",
+		"https://medium.com/feed/tag/ai-privacy",
+		"https://medium.com/feed/tag/federated-learning-security",
+		"https://medium.com/feed/tag/deepfake-detection",
+		"https://medium.com/feed/tag/ai-ethics",
+		"https://medium.com/feed/tag/llm-security",
+		"https://medium.com/feed/tag/chatgpt-security",
+	}
+	addFeedsWithCategory(&sources, aiSecurityFeeds, "AI/ML Security", 16, "#FF6B9D")
+
+	// IoT and Hardware Security (Priority 17)
+	iotSecurityFeeds := []string{
+		"https://medium.com/feed/tag/iot-security",
+		"https://medium.com/feed/tag/internet-of-things-security",
+		"https://medium.com/feed/tag/hardware-security",
+		"https://medium.com/feed/tag/embedded-security",
+		"https://medium.com/feed/tag/firmware-security",
+		"https://medium.com/feed/tag/hardware-hacking",
+		"https://medium.com/feed/tag/pcb-security",
+		"https://medium.com/feed/tag/side-channel-attacks",
+		"https://medium.com/feed/tag/automotive-security",
+		"https://medium.com/feed/tag/industrial-security",
+		"https://medium.com/feed/tag/scada-security",
+		"https://medium.com/feed/tag/smart-home-security",
+	}
+	addFeedsWithCategory(&sources, iotSecurityFeeds, "IoT & Hardware", 17, "#4ECDC4")
+
+	// DevSecOps and CI/CD Security (Priority 18)
+	devSecOpsFeeds := []string{
+		"https://medium.com/feed/tag/devsecops",
+		"https://medium.com/feed/tag/cicd-security",
+		"https://medium.com/feed/tag/pipeline-security",
+		"https://medium.com/feed/tag/secure-coding",
+		"https://medium.com/feed/tag/sast",
+		"https://medium.com/feed/tag/dast",
+		"https://medium.com/feed/tag/iast",
+		"https://medium.com/feed/tag/software-composition-analysis",
+		"https://medium.com/feed/tag/container-scanning",
+		"https://medium.com/feed/tag/secrets-management",
+		"https://medium.com/feed/tag/secure-software-development",
+		"https://medium.com/feed/tag/shift-left-security",
+	}
+	addFeedsWithCategory(&sources, devSecOpsFeeds, "DevSecOps & CI/CD", 18, "#96CEB4")
+
+	// Social Engineering and Human Security (Priority 19)
+	socialEngFeeds := []string{
+		"https://medium.com/feed/tag/social-engineering",
+		"https://medium.com/feed/tag/phishing",
+		"https://medium.com/feed/tag/pretexting",
+		"https://medium.com/feed/tag/baiting",
+		"https://medium.com/feed/tag/quid-pro-quo",
+		"https://medium.com/feed/tag/tailgating",
+		"https://medium.com/feed/tag/vishing",
+		"https://medium.com/feed/tag/smishing",
+		"https://medium.com/feed/tag/spear-phishing",
+		"https://medium.com/feed/tag/whaling",
+		"https://medium.com/feed/tag/business-email-compromise",
+		"https://medium.com/feed/tag/security-awareness-training",
+	}
+	addFeedsWithCategory(&sources, socialEngFeeds, "Social Engineering", 19, "#FF9F43")
+
+	// Zero Trust and Modern Architecture (Priority 20)
+	zeroTrustFeeds := []string{
+		"https://medium.com/feed/tag/zero-trust",
+		"https://medium.com/feed/tag/zero-trust-architecture",
+		"https://medium.com/feed/tag/zero-trust-security",
+		"https://medium.com/feed/tag/microsegmentation",
+		"https://medium.com/feed/tag/software-defined-perimeter",
+		"https://medium.com/feed/tag/conditional-access",
+		"https://medium.com/feed/tag/identity-verification",
+		"https://medium.com/feed/tag/device-trust",
+		"https://medium.com/feed/tag/network-segmentation",
+		"https://medium.com/feed/tag/secure-access-service-edge",
+		"https://medium.com/feed/tag/sase",
+		"https://medium.com/feed/tag/ztna",
+	}
+	addFeedsWithCategory(&sources, zeroTrustFeeds, "Zero Trust & Modern Architecture", 20, "#A55EEA")
+
+	// Threat Intelligence and Hunting (Priority 21)
+	threatIntelFeeds := []string{
+		"https://medium.com/feed/tag/threat-intelligence",
+		"https://medium.com/feed/tag/threat-hunting",
+		"https://medium.com/feed/tag/cyber-threat-intelligence",
+		"https://medium.com/feed/tag/indicators-of-compromise",
+		"https://medium.com/feed/tag/ioc",
+		"https://medium.com/feed/tag/tactics-techniques-procedures",
+		"https://medium.com/feed/tag/ttp",
+		"https://medium.com/feed/tag/mitre-attack",
+		"https://medium.com/feed/tag/mitre-att-ck",
+		"https://medium.com/feed/tag/cyber-kill-chain",
+		"https://medium.com/feed/tag/diamond-model",
+		"https://medium.com/feed/tag/threat-modeling",
+	}
+	addFeedsWithCategory(&sources, threatIntelFeeds, "Threat Intelligence", 21, "#26D0CE")
+
+	// Privacy and Data Protection (Priority 22)
+	privacyFeeds := []string{
+		"https://medium.com/feed/tag/data-privacy",
+		"https://medium.com/feed/tag/privacy",
+		"https://medium.com/feed/tag/gdpr",
+		"https://medium.com/feed/tag/ccpa",
+		"https://medium.com/feed/tag/data-protection",
+		"https://medium.com/feed/tag/privacy-by-design",
+		"https://medium.com/feed/tag/data-minimization",
+		"https://medium.com/feed/tag/consent-management",
+		"https://medium.com/feed/tag/right-to-be-forgotten",
+		"https://medium.com/feed/tag/privacy-impact-assessment",
+		"https://medium.com/feed/tag/data-subject-rights",
+		"https://medium.com/feed/tag/privacy-engineering",
+	}
+	addFeedsWithCategory(&sources, privacyFeeds, "Privacy & Data Protection", 22, "#FD79A8")
+
+	// Quantum Computing and Post-Quantum Cryptography (Priority 23)
+	quantumSecurityFeeds := []string{
+		"https://medium.com/feed/tag/quantum-computing-security",
+		"https://medium.com/feed/tag/post-quantum-cryptography",
+		"https://medium.com/feed/tag/quantum-cryptography",
+		"https://medium.com/feed/tag/quantum-key-distribution",
+		"https://medium.com/feed/tag/quantum-resistant-algorithms",
+		"https://medium.com/feed/tag/quantum-supremacy",
+		"https://medium.com/feed/tag/quantum-attacks",
+		"https://medium.com/feed/tag/lattice-cryptography",
+		"https://medium.com/feed/tag/nist-pqc",
+		"https://medium.com/feed/tag/quantum-safe",
+		"https://medium.com/feed/tag/quantum-threat",
+		"https://medium.com/feed/tag/cryptographic-agility",
+	}
+	addFeedsWithCategory(&sources, quantumSecurityFeeds, "Quantum & Post-Quantum", 23, "#6C5CE7")
+
+	// Additional Specialized Security Areas (Priority 24)
+	specializedFeeds := []string{
+		"https://medium.com/feed/tag/satellite-security",
+		"https://medium.com/feed/tag/space-security",
+		"https://medium.com/feed/tag/supply-chain-security",
+		"https://medium.com/feed/tag/third-party-risk",
+		"https://medium.com/feed/tag/vendor-risk-management",
+		"https://medium.com/feed/tag/critical-infrastructure",
+		"https://medium.com/feed/tag/operational-technology",
+		"https://medium.com/feed/tag/ot-security",
+		"https://medium.com/feed/tag/maritime-security",
+		"https://medium.com/feed/tag/aviation-security",
+		"https://medium.com/feed/tag/healthcare-security",
+		"https://medium.com/feed/tag/financial-security",
+	}
+	addFeedsWithCategory(&sources, specializedFeeds, "Specialized Security", 24, "#00B894")
+
+	// Bug Bounty Platforms and Programs (Priority 25) 
+	bugBountyPlatformFeeds := []string{
+		"https://medium.com/feed/tag/hackerone",
+		"https://medium.com/feed/tag/bugcrowd",
+		"https://medium.com/feed/tag/intigriti",
+		"https://medium.com/feed/tag/yeswehack",
+		"https://medium.com/feed/tag/synack",
+		"https://medium.com/feed/tag/cobalt",
+		"https://medium.com/feed/tag/zerocopter",
+		"https://medium.com/feed/tag/federacy",
+		"https://medium.com/feed/tag/open-bug-bounty",
+		"https://medium.com/feed/tag/google-vrp",
+		"https://medium.com/feed/tag/microsoft-bounty",
+		"https://medium.com/feed/tag/facebook-bounty",
+	}
+	addFeedsWithCategory(&sources, bugBountyPlatformFeeds, "Bug Bounty Platforms", 25, "#E17055")
+
 	return sources
 }
 
@@ -1169,19 +1339,237 @@ func generateHTMLOutput(entries []*FeedEntry, stats *AggregatorStats, sources []
     <!-- Styles -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
     
     <style>
-        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
-        .card-hover { transition: all 0.3s ease; }
-        .card-hover:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(0,0,0,0.15); }
-        .category-badge { font-size: 0.75rem; padding: 0.25rem 0.5rem; border-radius: 9999px; }
-        .search-highlight { background-color: #fef3c7; }
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --success-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --warning-gradient: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+            --danger-gradient: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+        }
+        
+        .gradient-bg { background: var(--primary-gradient); }
+        .gradient-secondary { background: var(--secondary-gradient); }
+        .gradient-success { background: var(--success-gradient); }
+        .gradient-warning { background: var(--warning-gradient); }
+        .gradient-danger { background: var(--danger-gradient); }
+        
+        .card-hover { 
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
+            cursor: pointer;
+        }
+        .card-hover:hover { 
+            transform: translateY(-4px) scale(1.02); 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1); 
+        }
+        
+        .category-badge { 
+            font-size: 0.75rem; 
+            padding: 0.25rem 0.75rem; 
+            border-radius: 9999px; 
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .search-highlight { 
+            background: linear-gradient(90deg, #fef3c7, #fde68a);
+            padding: 0.1rem 0.2rem;
+            border-radius: 0.25rem;
+        }
+        
         .loading { animation: spin 1s linear infinite; }
         @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-        .stats-card { background: linear-gradient(145deg, #f8fafc, #e2e8f0); }
-        .priority-high { border-left: 4px solid #ef4444; }
-        .priority-medium { border-left: 4px solid #f59e0b; }
-        .priority-low { border-left: 4px solid #10b981; }
+        
+        .stats-card { 
+            background: linear-gradient(145deg, #ffffff, #f8fafc);
+            border: 1px solid rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+        }
+        
+        .priority-high { 
+            border-left: 4px solid #ef4444; 
+            background: linear-gradient(90deg, rgba(239,68,68,0.05), transparent);
+        }
+        .priority-medium { 
+            border-left: 4px solid #f59e0b; 
+            background: linear-gradient(90deg, rgba(245,158,11,0.05), transparent);
+        }
+        .priority-low { 
+            border-left: 4px solid #10b981; 
+            background: linear-gradient(90deg, rgba(16,185,129,0.05), transparent);
+        }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .floating-action {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 1000;
+            background: var(--primary-gradient);
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .floating-action:hover {
+            transform: scale(1.1);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.6s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .category-filter-active {
+            background: var(--primary-gradient) !important;
+            color: white !important;
+            transform: scale(1.05);
+        }
+        
+        .trending-badge {
+            background: linear-gradient(45deg, #ff6b6b, #feca57);
+            color: white;
+            font-size: 0.7rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            box-shadow: 0 2px 8px rgba(255,107,107,0.3);
+        }
+        
+        .new-badge {
+            background: linear-gradient(45deg, #48cae4, #023e8a);
+            color: white;
+            font-size: 0.7rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            box-shadow: 0 2px 8px rgba(72,202,228,0.3);
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes glow {
+            from { box-shadow: 0 2px 8px rgba(72,202,228,0.3); }
+            to { box-shadow: 0 4px 16px rgba(72,202,228,0.6); }
+        }
+        
+        .today-badge {
+            background: linear-gradient(45deg, #06ffa5, #00d4aa);
+            color: white;
+            font-size: 0.7rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            box-shadow: 0 2px 8px rgba(6,255,165,0.3);
+        }
+        
+        .post-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border-radius: 16px;
+            overflow: hidden;
+        }
+        
+        .post-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+        }
+        
+        .dark-mode {
+            background-color: #1a202c;
+            color: #e2e8f0;
+        }
+        
+        .dark-mode .stats-card {
+            background: linear-gradient(145deg, #2d3748, #4a5568);
+            color: #e2e8f0;
+        }
+        
+        .dark-mode .glass-card {
+            background: rgba(45, 55, 72, 0.95);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .scroll-to-top {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .scroll-to-top.visible {
+            opacity: 1;
+        }
+        
+        @media (max-width: 768px) {
+            .floating-action {
+                bottom: 1rem;
+                right: 1rem;
+                width: 50px;
+                height: 50px;
+                font-size: 1.2rem;
+            }
+        }
+        
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 160px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 0.8rem;
+        }
+        
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
     </style>
 </head>
 <body class="bg-gray-50 min-h-screen">

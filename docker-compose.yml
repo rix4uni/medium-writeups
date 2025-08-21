@@ -1,0 +1,97 @@
+version: '3.8'
+
+services:
+  # Main aggregator service
+  aggregator:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: medium-writeups-aggregator
+    restart: unless-stopped
+    environment:
+      - RATE_LIMIT_DELAY=5
+      - DEBUG_MODE=false
+      - MAX_FEEDS=0
+      - TZ=UTC
+    volumes:
+      - ./output:/home/aggregator/output:rw
+      - ./logs:/home/aggregator/logs:rw
+    networks:
+      - aggregator-network
+    healthcheck:
+      test: ["CMD", "./aggregator", "--health-check"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Optional: Web server for serving the generated files
+  web-server:
+    image: nginx:alpine
+    container_name: medium-writeups-web
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    volumes:
+      - ./output:/usr/share/nginx/html:ro
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - aggregator
+    networks:
+      - aggregator-network
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  # Optional: Monitoring with Prometheus (for advanced users)
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: medium-writeups-prometheus
+    restart: unless-stopped
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus-data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--storage.tsdb.retention.time=200h'
+      - '--web.enable-lifecycle'
+    networks:
+      - aggregator-network
+    profiles:
+      - monitoring
+
+  # Optional: Grafana for visualization
+  grafana:
+    image: grafana/grafana:latest
+    container_name: medium-writeups-grafana
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_USERS_ALLOW_SIGN_UP=false
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./monitoring/grafana/dashboards:/etc/grafana/provisioning/dashboards:ro
+      - ./monitoring/grafana/datasources:/etc/grafana/provisioning/datasources:ro
+    depends_on:
+      - prometheus
+    networks:
+      - aggregator-network
+    profiles:
+      - monitoring
+
+networks:
+  aggregator-network:
+    driver: bridge
+
+volumes:
+  prometheus-data:
+  grafana-data:

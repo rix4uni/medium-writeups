@@ -1,0 +1,113 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependency directories (remove the comment below to include it)
+# vendor/
+
+# Go workspace file
+go.work
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Backup files
+*.backup
+*.bak
+README.md.backup
+index.html.backup
+
+# Build artifacts
+/dist/
+/build/
+aggregator
+medium-writeups-aggregator
+
+# Security scan results
+*.sarif
+security-reports/
+SECURITY-REPORT.md
+
+# Development artifacts
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Test artifacts
+test-output/
+benchmark-results.txt
+
+# Generated documentation
+/docs/generated/
+
+# Package files
+*.tar.gz
+*.zip
+
+# Performance profiling
+*.prof
+*.pprof
+
+# Dependency management
+go.sum.backup
+
+# Editor specific
+*.sublime-*
+.vimrc.local
+
+# GitHub Actions logs (local)
+actions-logs/
+
+# Local development overrides
+config.local.json
+feeds.local.json
+
+# Artifacts from security tools
+licenses.csv
+dependency-report.md
+license-report.md
+actions-security-report.md
+
+# Local server artifacts
+server.log
+access.log
