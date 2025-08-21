@@ -1,4 +1,306 @@
-package main
+// Environment variable helpers
+func getEnvInt(key string, defaultValue int) int {
+	if value := os.Getenv(key); value != "" {
+		if intValue, err := strconv.Atoi(value); err == nil {
+			return intValue
+		}
+	}
+	return defaultValue
+}
+
+func getEnvDuration(key string, defaultSeconds int) time.Duration {
+	if value := os.Getenv(key); value != "" {
+		if intValue, err := strconv.Atoi(value); err == nil {
+			return time.Duration(intValue)
+		}
+	}
+	return time.Duration(defaultSeconds)
+}
+
+func getEnvBool(key string, defaultValue bool) bool {
+	if value := os.Getenv(key); value != "" {
+		return strings.ToLower(value) == "true"
+	}
+	return defaultValue
+}
+
+// ================================================================================
+// ENHANCED DISPLAY FUNCTIONS
+// ================================================================================
+
+func printHeader() {
+	fmt.Println(colorBold + colorCyan + separator + colorReset)
+	fmt.Printf("%s%s🛡️  %s %s%s\n", colorBold, colorCyan, appName, appVersion, colorReset)
+	fmt.Printf("%s%s🔗 Enhanced Medium Cybersecurity RSS Feed Aggregator%s\n", colorBold, colorWhite, colorReset)
+	fmt.Printf("%s%s📊 GitHub Pages Ready • Professional Dashboard • Enhanced Filtering%s\n", colorBold, colorWhite, colorReset)
+	fmt.Println(colorCyan + separator + colorReset)
+}
+
+func printProcessingInfo(currentDate string, feedCount int) {
+	fmt.Printf("📅 Current GMT Date: %s%s%s\n", colorYellow, currentDate, colorReset)
+	fmt.Printf("📊 Processing %s%d%s RSS feeds across %s15%s categories\n", colorBlue, feedCount, colorReset, colorPurple, colorReset)
+	fmt.Printf("⏱️  Request delay: %s%v%s (adaptive rate limiting)\n", colorPurple, requestDelay, colorReset)
+	if maxFeeds > 0 {
+		fmt.Printf("🔢 Feed limit: %s%d%s (testing mode)\n", colorYellow, maxFeeds, colorReset)
+	}
+	if debugMode {
+		fmt.Printf("🔍 Debug mode: %sENABLED%s\n", colorYellow, colorReset)
+	}
+	fmt.Println(subSeparator)
+}
+
+func printSummary(stats *AggregatorStats) {
+	fmt.Println()
+	fmt.Println(colorBold + colorGreen + "📊 PROCESSING SUMMARY" + colorReset)
+	fmt.Println(subSeparator)
+	fmt.Printf("🕒 Processing Time: %s%v%s\n", colorBlue, stats.ProcessingTime.Round(time.Second), colorReset)
+	fmt.Printf("📡 Feeds Processed: %s%d/%d%s (%s%.1f%%%s success rate)\n", 
+		colorGreen, stats.SuccessfulFeeds, stats.TotalFeeds, colorReset,
+		colorYellow, float64(stats.SuccessfulFeeds)/float64(stats.TotalFeeds)*100, colorReset)
+	
+	if stats.RateLimited > 0 {
+		fmt.Printf("⏳ Rate Limited: %s%d%s feeds (%.1f%%)\n", 
+			colorYellow, stats.RateLimited, colorReset,
+			float64(stats.RateLimited)/float64(stats.TotalFeeds)*100)
+	}
+	
+	fmt.Printf("📄 Total Entries: %s%d%s\n", colorBlue, stats.TotalEntries, colorReset)
+	fmt.Printf("🆕 New Entries: %s%d%s (%.1f%%)\n", 
+		colorGreen, stats.NewEntries, colorReset,
+		float64(stats.NewEntries)/float64(stats.TotalEntries)*100)
+	fmt.Printf("📅 Today's Entries: %s%d%s (%.1f%%)\n", 
+		colorYellow, stats.TodayEntries, colorReset,
+		float64(stats.TodayEntries)/float64(stats.TotalEntries)*100)
+	fmt.Printf("📈 This Week's Entries: %s%d%s (%.1f%%)\n", 
+		colorPurple, stats.WeekEntries, colorReset,
+		float64(stats.WeekEntries)/float64(stats.TotalEntries)*100)
+}
+
+func printFooter() {
+	fmt.Println()
+	fmt.Println(colorCyan + separator + colorReset)
+	fmt.Printf("%s%s✅ Processing completed successfully!%s\n", colorBold, colorGreen, colorReset)
+	fmt.Printf("%s%s🌐 GitHub Pages dashboard generated: index.html%s\n", colorBold, colorWhite, colorReset)
+	fmt.Printf("%s%s📱 Mobile-responsive with search and filtering%s\n", colorBold, colorWhite, colorReset)
+	fmt.Printf("%s%s🚀 Ready for deployment to GitHub Pages%s\n", colorBold, colorWhite, colorReset)
+	fmt.Println(colorCyan + separator + colorReset)
+}
+
+func printInfo(message string) {
+	fmt.Printf("%s%sℹ️  %s%s\n", colorBold, colorBlue, message, colorReset)
+}
+
+func printSuccess(message string) {
+	fmt.Printf("%s%s✅ %s%s\n", colorBold, colorGreen, message, colorReset)
+}
+
+func printWarning(message string) {
+	fmt.Printf("%s%s⚠️  %s%s\n", colorBold, colorYellow, message, colorReset)
+}
+
+func printError(message string) {
+	fmt.Printf("%s%s❌ %s%s\n", colorBold, colorRed, message, colorReset)
+}
+
+// ================================================================================
+// UTILITY FUNCTIONS
+// ================================================================================
+
+func sortEntries(entries map[string]*FeedEntry) []*FeedEntry {
+	entryList := make([]*FeedEntry, 0, len(entries))
+	for _, entry := range entries {
+		entryList = append(entryList, entry)
+	}
+
+	// Enhanced sorting: Priority, New posts, Today's posts, then by time (newest first)
+	sort.SliceStable(entryList, func(i, j int) bool {
+		// First sort by priority (lower number = higher priority)
+		if entryList[i].Priority != entryList[j].Priority {
+			return entryList[i].Priority < entryList[j].Priority
+		}
+		
+		// Then by new posts
+		if entryList[i].IsNew != entryList[j].IsNew {
+			return entryList[i].IsNew
+		}
+		
+		// Then by today's posts
+		if entryList[i].IsToday != entryList[j].IsToday {
+			return entryList[i].IsToday
+		}
+		
+		// Finally by time (newest first)
+		return entryList[i].ParsedTime.After(entryList[j].ParsedTime)
+	})
+
+	return entryList
+}
+
+func sanitizeTitle(title string) string {
+	// Clean up the title
+	title = strings.ReplaceAll(title, "\n", " ")
+	title = strings.ReplaceAll(title, "\r", " ")
+	title = strings.ReplaceAll(title, "\t", " ")
+	
+	// Escape markdown characters
+	title = strings.ReplaceAll(title, "|", "\\|")
+	title = strings.ReplaceAll(title, "[", "\\[")
+	title = strings.ReplaceAll(title, "]", "\\]")
+	title = strings.ReplaceAll(title, "*", "\\*")
+	title = strings.ReplaceAll(title, "_", "\\_")
+	title = strings.ReplaceAll(title, "`", "\\`")
+	title = strings.ReplaceAll(title, "#", "\\#")
+	
+	// Remove extra spaces
+	title = strings.Join(strings.Fields(title), " ")
+	
+	// Truncate if too long
+	if len(title) > maxTitleLength {
+		title = title[:maxTitleLength-3] + "..."
+	}
+	
+	return title
+}
+
+func extractFeedName(url string) string {
+	parts := strings.Split(url, "/")
+	tag := parts[len(parts)-1]
+	
+	// Convert tag to readable name with better formatting
+	name := strings.ReplaceAll(tag, "-", " ")
+	
+	// Handle special cases
+	replacements := map[string]string{
+		"xss": "XSS",
+		"sql": "SQL",
+		"api": "API",
+		"aws": "AWS",
+		"gcp": "GCP",
+		"rce": "RCE",
+		"lfi": "LFI",
+		"rfi": "RFI",
+		"csrf": "CSRF",
+		"ssrf": "SSRF",
+		"idor": "IDOR",
+		"osint": "OSINT",
+		"siem": "SIEM",
+		"soc": "SOC",
+		"edr": "EDR",
+		"xdr": "XDR",
+		"iam": "IAM",
+		"mfa": "MFA",
+		"2fa": "2FA",
+		"vpn": "VPN",
+		"tls": "TLS",
+		"ssl": "SSL",
+		"pki": "PKI",
+		"cve": "CVE",
+		"apt": "APT",
+		"ios": "iOS",
+		"gdpr": "GDPR",
+		"hipaa": "HIPAA",
+		"sox": "SOX",
+		"iso": "ISO",
+		"nist": "NIST",
+		"cis": "CIS",
+		"dfir": "DFIR",
+		"jwt": "JWT",
+		"oauth": "OAuth",
+		"defi": "DeFi",
+		"nft": "NFT",
+		"ai": "AI",
+		"ml": "ML",
+		"iot": "IoT",
+	}
+	
+	words := strings.Fields(name)
+	for i, word := range words {
+		lowerWord := strings.ToLower(word)
+		if replacement, exists := replacements[lowerWord]; exists {
+			words[i] = replacement
+		} else {
+			words[i] = strings.Title(word)
+		}
+	}
+	
+	return strings.Join(words, " ")
+}
+
+func parsePublicationDate(pubDate string) (time.Time, error) {
+	// Try different date formats
+	formats := []string{
+		time.RFC1123,
+		time.RFC1123Z,
+		time.RFC822,
+		time.RFC822Z,
+		"2006-01-02T15:04:05Z",
+		"2006-01-02T15:04:05-07:00",
+		"2006-01-02T15:04:05.000Z",
+		"Mon, 2 Jan 2006 15:04:05 MST",
+		"Mon, 2 Jan 2006 15:04:05 -0700",
+		"2006-01-02 15:04:05",
+	}
+	
+	for _, format := range formats {
+		if t, err := time.Parse(format, pubDate); err == nil {
+			return t, nil
+		}
+	}
+	
+	return time.Time{}, fmt.Errorf("unable to parse date: %s", pubDate)
+}
+
+func formatDisplayTime(t time.Time) string {
+	if t.IsZero() {
+		return "Unknown"
+	}
+	
+	now := time.Now()
+	diff := now.Sub(t)
+	
+	// Show relative time for recent posts
+	if diff < time.Hour {
+		minutes := int(diff.Minutes())
+		if minutes < 1 {
+			return "Just now"
+		}
+		return fmt.Sprintf("%dm ago", minutes)
+	} else if diff < 24*time.Hour {
+		hours := int(diff.Hours())
+		return fmt.Sprintf("%dh ago", hours)
+	} else if diff < 7*24*time.Hour {
+		days := int(diff.Hours() / 24)
+		return fmt.Sprintf("%dd ago", days)
+	}
+	
+	return t.Format(displayTimeFormat)
+}
+
+func checkIfToday(pubDate, currentDate string) bool {
+	pubTime, err := parsePublicationDate(pubDate)
+	if err != nil {
+		return false
+	}
+	
+	pubDateFormatted := pubTime.Format(dateFormat)
+	return pubDateFormatted == currentDate
+}
+
+func checkIfThisWeek(pubDate string) bool {
+	pubTime, err := parsePublicationDate(pubDate)
+	if err != nil {
+		return false
+	}
+	
+	now := time.Now()
+	weekAgo := now.AddDate(0, 0, -7)
+	
+	return pubTime.After(weekAgo)
+}
+
+func getCurrentDateGMT() string {
+	return time.Now().In(time.UTC).Format(dateFormat)
+}package main
 
 import (
 	"encoding/xml"
@@ -131,6 +433,335 @@ type CategoryStats struct {
 	NewPosts    int
 	TodayPosts  int
 	Color       string
+}
+
+// ================================================================================
+// ENVIRONMENT VARIABLE HELPERS
+// ================================================================================
+
+func getEnvInt(key string, defaultValue int) int {
+	if value := os.Getenv(key); value != "" {
+		if intValue, err := strconv.Atoi(value); err == nil {
+			return intValue
+		}
+	}
+	return defaultValue
+}
+
+func getEnvDuration(key string, defaultSeconds int) time.Duration {
+	if value := os.Getenv(key); value != "" {
+		if intValue, err := strconv.Atoi(value); err == nil {
+			return time.Duration(intValue)
+		}
+	}
+	return time.Duration(defaultSeconds)
+}
+
+func getEnvBool(key string, defaultValue bool) bool {
+	if value := os.Getenv(key); value != "" {
+		return strings.ToLower(value) == "true"
+	}
+	return defaultValue
+}
+
+// ================================================================================
+// UTILITY FUNCTIONS
+// ================================================================================
+
+func getCurrentDateGMT() string {
+	return time.Now().In(time.UTC).Format(dateFormat)
+}
+
+func readREADME() string {
+	content, err := ioutil.ReadFile(readmeFilename)
+	if err != nil && !os.IsNotExist(err) {
+		printWarning(fmt.Sprintf("Error reading %s: %v", readmeFilename, err))
+		return ""
+	}
+	return string(content)
+}
+
+func extractFeedName(url string) string {
+	parts := strings.Split(url, "/")
+	tag := parts[len(parts)-1]
+	
+	// Convert tag to readable name with better formatting
+	name := strings.ReplaceAll(tag, "-", " ")
+	
+	// Handle special cases
+	replacements := map[string]string{
+		"xss": "XSS", "sql": "SQL", "api": "API", "aws": "AWS", "gcp": "GCP",
+		"rce": "RCE", "lfi": "LFI", "rfi": "RFI", "csrf": "CSRF", "ssrf": "SSRF",
+		"idor": "IDOR", "osint": "OSINT", "siem": "SIEM", "soc": "SOC", "edr": "EDR",
+		"xdr": "XDR", "iam": "IAM", "mfa": "MFA", "2fa": "2FA", "vpn": "VPN",
+		"tls": "TLS", "ssl": "SSL", "pki": "PKI", "cve": "CVE", "apt": "APT",
+		"ios": "iOS", "gdpr": "GDPR", "hipaa": "HIPAA", "sox": "SOX", "iso": "ISO",
+		"nist": "NIST", "cis": "CIS", "dfir": "DFIR", "jwt": "JWT", "oauth": "OAuth",
+		"defi": "DeFi", "nft": "NFT", "ai": "AI", "ml": "ML", "iot": "IoT",
+	}
+	
+	words := strings.Fields(name)
+	for i, word := range words {
+		lowerWord := strings.ToLower(word)
+		if replacement, exists := replacements[lowerWord]; exists {
+			words[i] = replacement
+		} else {
+			words[i] = strings.Title(word)
+		}
+	}
+	
+	return strings.Join(words, " ")
+}
+
+func parsePublicationDate(pubDate string) (time.Time, error) {
+	formats := []string{
+		time.RFC1123, time.RFC1123Z, time.RFC822, time.RFC822Z,
+		"2006-01-02T15:04:05Z", "2006-01-02T15:04:05-07:00",
+		"2006-01-02T15:04:05.000Z", "Mon, 2 Jan 2006 15:04:05 MST",
+		"Mon, 2 Jan 2006 15:04:05 -0700", "2006-01-02 15:04:05",
+	}
+	
+	for _, format := range formats {
+		if t, err := time.Parse(format, pubDate); err == nil {
+			return t, nil
+		}
+	}
+	
+	return time.Time{}, fmt.Errorf("unable to parse date: %s", pubDate)
+}
+
+func formatDisplayTime(t time.Time) string {
+	if t.IsZero() {
+		return "Unknown"
+	}
+	
+	now := time.Now()
+	diff := now.Sub(t)
+	
+	if diff < time.Hour {
+		minutes := int(diff.Minutes())
+		if minutes < 1 {
+			return "Just now"
+		}
+		return fmt.Sprintf("%dm ago", minutes)
+	} else if diff < 24*time.Hour {
+		hours := int(diff.Hours())
+		return fmt.Sprintf("%dh ago", hours)
+	} else if diff < 7*24*time.Hour {
+		days := int(diff.Hours() / 24)
+		return fmt.Sprintf("%dd ago", days)
+	}
+	
+	return t.Format(displayTimeFormat)
+}
+
+func checkIfToday(pubDate, currentDate string) bool {
+	pubTime, err := parsePublicationDate(pubDate)
+	if err != nil {
+		return false
+	}
+	
+	pubDateFormatted := pubTime.Format(dateFormat)
+	return pubDateFormatted == currentDate
+}
+
+func checkIfThisWeek(pubDate string) bool {
+	pubTime, err := parsePublicationDate(pubDate)
+	if err != nil {
+		return false
+	}
+	
+	now := time.Now()
+	weekAgo := now.AddDate(0, 0, -7)
+	
+	return pubTime.After(weekAgo)
+}
+
+func sanitizeTitle(title string) string {
+	title = strings.ReplaceAll(title, "\n", " ")
+	title = strings.ReplaceAll(title, "\r", " ")
+	title = strings.ReplaceAll(title, "\t", " ")
+	
+	title = strings.ReplaceAll(title, "|", "\\|")
+	title = strings.ReplaceAll(title, "[", "\\[")
+	title = strings.ReplaceAll(title, "]", "\\]")
+	title = strings.ReplaceAll(title, "*", "\\*")
+	title = strings.ReplaceAll(title, "_", "\\_")
+	title = strings.ReplaceAll(title, "`", "\\`")
+	title = strings.ReplaceAll(title, "#", "\\#")
+	
+	title = strings.Join(strings.Fields(title), " ")
+	
+	if len(title) > maxTitleLength {
+		title = title[:maxTitleLength-3] + "..."
+	}
+	
+	return title
+}
+
+func sanitizeHTMLTitle(title string) string {
+	title = strings.ReplaceAll(title, "&", "&amp;")
+	title = strings.ReplaceAll(title, "<", "&lt;")
+	title = strings.ReplaceAll(title, ">", "&gt;")
+	title = strings.ReplaceAll(title, "\"", "&quot;")
+	title = strings.ReplaceAll(title, "'", "&#39;")
+	
+	if len(title) > maxTitleLength {
+		title = title[:maxTitleLength-3] + "..."
+	}
+	
+	return title
+}
+
+func sortEntries(entries map[string]*FeedEntry) []*FeedEntry {
+	entryList := make([]*FeedEntry, 0, len(entries))
+	for _, entry := range entries {
+		entryList = append(entryList, entry)
+	}
+
+	sort.SliceStable(entryList, func(i, j int) bool {
+		if entryList[i].Priority != entryList[j].Priority {
+			return entryList[i].Priority < entryList[j].Priority
+		}
+		if entryList[i].IsNew != entryList[j].IsNew {
+			return entryList[i].IsNew
+		}
+		if entryList[i].IsToday != entryList[j].IsToday {
+			return entryList[i].IsToday
+		}
+		return entryList[i].ParsedTime.After(entryList[j].ParsedTime)
+	})
+
+	return entryList
+}
+
+// ================================================================================
+// DISPLAY FUNCTIONS
+// ================================================================================
+
+func printHeader() {
+	fmt.Println(colorBold + colorCyan + separator + colorReset)
+	fmt.Printf("%s%s🛡️  %s %s%s\n", colorBold, colorCyan, appName, appVersion, colorReset)
+	fmt.Printf("%s%s🔗 Enhanced Medium Cybersecurity RSS Feed Aggregator%s\n", colorBold, colorWhite, colorReset)
+	fmt.Printf("%s%s📊 GitHub Pages Ready • Professional Dashboard • Enhanced Filtering%s\n", colorBold, colorWhite, colorReset)
+	fmt.Println(colorCyan + separator + colorReset)
+}
+
+func printProcessingInfo(currentDate string, feedCount int) {
+	fmt.Printf("📅 Current GMT Date: %s%s%s\n", colorYellow, currentDate, colorReset)
+	fmt.Printf("📊 Processing %s%d%s RSS feeds across %s15%s categories\n", colorBlue, feedCount, colorReset, colorPurple, colorReset)
+	fmt.Printf("⏱️  Request delay: %s%v%s (adaptive rate limiting)\n", colorPurple, requestDelay, colorReset)
+	if maxFeeds > 0 {
+		fmt.Printf("🔢 Feed limit: %s%d%s (testing mode)\n", colorYellow, maxFeeds, colorReset)
+	}
+	if debugMode {
+		fmt.Printf("🔍 Debug mode: %sENABLED%s\n", colorYellow, colorReset)
+	}
+	fmt.Println(subSeparator)
+}
+
+func printInfo(message string) {
+	fmt.Printf("%s%sℹ️  %s%s\n", colorBold, colorBlue, message, colorReset)
+}
+
+func printSuccess(message string) {
+	fmt.Printf("%s%s✅ %s%s\n", colorBold, colorGreen, message, colorReset)
+}
+
+func printWarning(message string) {
+	fmt.Printf("%s%s⚠️  %s%s\n", colorBold, colorYellow, message, colorReset)
+}
+
+func printError(message string) {
+	fmt.Printf("%s%s❌ %s%s\n", colorBold, colorRed, message, colorReset)
+}
+
+func printSummary(stats *AggregatorStats) {
+	fmt.Println()
+	fmt.Println(colorBold + colorGreen + "📊 PROCESSING SUMMARY" + colorReset)
+	fmt.Println(subSeparator)
+	fmt.Printf("🕒 Processing Time: %s%v%s\n", colorBlue, stats.ProcessingTime.Round(time.Second), colorReset)
+	fmt.Printf("📡 Feeds Processed: %s%d/%d%s (%s%.1f%%%s success rate)\n", 
+		colorGreen, stats.SuccessfulFeeds, stats.TotalFeeds, colorReset,
+		colorYellow, float64(stats.SuccessfulFeeds)/float64(stats.TotalFeeds)*100, colorReset)
+	
+	if stats.RateLimited > 0 {
+		fmt.Printf("⏳ Rate Limited: %s%d%s feeds (%.1f%%)\n", 
+			colorYellow, stats.RateLimited, colorReset,
+			float64(stats.RateLimited)/float64(stats.TotalFeeds)*100)
+	}
+	
+	fmt.Printf("📄 Total Entries: %s%d%s\n", colorBlue, stats.TotalEntries, colorReset)
+	fmt.Printf("🆕 New Entries: %s%d%s (%.1f%%)\n", 
+		colorGreen, stats.NewEntries, colorReset,
+		float64(stats.NewEntries)/float64(stats.TotalEntries)*100)
+	fmt.Printf("📅 Today's Entries: %s%d%s (%.1f%%)\n", 
+		colorYellow, stats.TodayEntries, colorReset,
+		float64(stats.TodayEntries)/float64(stats.TotalEntries)*100)
+	fmt.Printf("📈 This Week's Entries: %s%d%s (%.1f%%)\n", 
+		colorPurple, stats.WeekEntries, colorReset,
+		float64(stats.WeekEntries)/float64(stats.TotalEntries)*100)
+}
+
+func printFooter() {
+	fmt.Println()
+	fmt.Println(colorCyan + separator + colorReset)
+	fmt.Printf("%s%s✅ Processing completed successfully!%s\n", colorBold, colorGreen, colorReset)
+	fmt.Printf("%s%s🌐 GitHub Pages dashboard generated: index.html%s\n", colorBold, colorWhite, colorReset)
+	fmt.Printf("%s%s📱 Mobile-responsive with search and filtering%s\n", colorBold, colorWhite, colorReset)
+	fmt.Printf("%s%s🚀 Ready for deployment to GitHub Pages%s\n", colorBold, colorWhite, colorReset)
+	fmt.Println(colorCyan + separator + colorReset)
+}
+
+// ================================================================================
+// STATISTICS FUNCTIONS
+// ================================================================================
+
+func updateStats(stats *AggregatorStats, entries []*FeedEntry, duration time.Duration) {
+	stats.TotalEntries = len(entries)
+	stats.ProcessingTime = duration
+	
+	for _, entry := range entries {
+		if entry.IsNew {
+			stats.NewEntries++
+		}
+		if entry.IsToday {
+			stats.TodayEntries++
+		}
+		if entry.IsThisWeek {
+			stats.WeekEntries++
+		}
+	}
+}
+
+func countNewEntries(entries []*FeedEntry) int {
+	count := 0
+	for _, entry := range entries {
+		if entry.IsNew {
+			count++
+		}
+	}
+	return count
+}
+
+func countTodayEntries(entries []*FeedEntry) int {
+	count := 0
+	for _, entry := range entries {
+		if entry.IsToday {
+			count++
+		}
+	}
+	return count
+}
+
+func countWeekEntries(entries []*FeedEntry) int {
+	count := 0
+	for _, entry := range entries {
+		if entry.IsThisWeek {
+			count++
+		}
+	}
+	return count
 }
 
 // ================================================================================
