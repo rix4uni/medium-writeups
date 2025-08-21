@@ -2,13 +2,15 @@ module medium-writeups-aggregator
 
 go 1.23.4
 
-// No external dependencies required - using only standard library
-// The main.go file uses:
-// - encoding/xml (standard library)
-// - fmt (standard library)
-// - io/ioutil (standard library, deprecated but still works)
-// - net/http (standard library)
-// - os (standard library)
-// - sort (standard library)
-// - strings (standard library)
-// - time (standard library)
+// This module uses only Go standard library packages:
+// - encoding/xml: For parsing RSS/XML feeds
+// - fmt: For formatted I/O operations
+// - io/ioutil: For file I/O operations
+// - net/http: For HTTP client functionality
+// - os: For operating system interface
+// - sort: For sorting operations
+// - strconv: For string conversions
+// - strings: For string manipulation
+// - time: For time operations
+
+// No external dependencies required - keeping it lightweight and secure
