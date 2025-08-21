@@ -1,1706 +1,1085 @@
-// Environment variable helpers
-func getEnvInt(key string, defaultValue int) int {
-	if value := os.Getenv(key); value != "" {
-		if intValue, err := strconv.Atoi(value); err == nil {
-			return intValue
-		}
-	}
-	return defaultValue
-}
-
-func getEnvDuration(key string, defaultSeconds int) time.Duration {
-	if value := os.Getenv(key); value != "" {
-		if intValue, err := strconv.Atoi(value); err == nil {
-			return time.Duration(intValue)
-		}
-	}
-	return time.Duration(defaultSeconds)
-}
-
-func getEnvBool(key string, defaultValue bool) bool {
-	if value := os.Getenv(key); value != "" {
-		return strings.ToLower(value) == "true"
-	}
-	return defaultValue
-}
-
-// ================================================================================
-// ENHANCED DISPLAY FUNCTIONS
-// ================================================================================
-
-func printHeader() {
-	fmt.Println(colorBold + colorCyan + separator + colorReset)
-	fmt.Printf("%s%s🛡️  %s %s%s\n", colorBold, colorCyan, appName, appVersion, colorReset)
-	fmt.Printf("%s%s🔗 Enhanced Medium Cybersecurity RSS Feed Aggregator%s\n", colorBold, colorWhite, colorReset)
-	fmt.Printf("%s%s📊 GitHub Pages Ready • Professional Dashboard • Enhanced Filtering%s\n", colorBold, colorWhite, colorReset)
-	fmt.Println(colorCyan + separator + colorReset)
-}
-
-func printProcessingInfo(currentDate string, feedCount int) {
-	fmt.Printf("📅 Current GMT Date: %s%s%s\n", colorYellow, currentDate, colorReset)
-	fmt.Printf("📊 Processing %s%d%s RSS feeds across %s15%s categories\n", colorBlue, feedCount, colorReset, colorPurple, colorReset)
-	fmt.Printf("⏱️  Request delay: %s%v%s (adaptive rate limiting)\n", colorPurple, requestDelay, colorReset)
-	if maxFeeds > 0 {
-		fmt.Printf("🔢 Feed limit: %s%d%s (testing mode)\n", colorYellow, maxFeeds, colorReset)
-	}
-	if debugMode {
-		fmt.Printf("🔍 Debug mode: %sENABLED%s\n", colorYellow, colorReset)
-	}
-	fmt.Println(subSeparator)
-}
-
-func printSummary(stats *AggregatorStats) {
-	fmt.Println()
-	fmt.Println(colorBold + colorGreen + "📊 PROCESSING SUMMARY" + colorReset)
-	fmt.Println(subSeparator)
-	fmt.Printf("🕒 Processing Time: %s%v%s\n", colorBlue, stats.ProcessingTime.Round(time.Second), colorReset)
-	fmt.Printf("📡 Feeds Processed: %s%d/%d%s (%s%.1f%%%s success rate)\n", 
-		colorGreen, stats.SuccessfulFeeds, stats.TotalFeeds, colorReset,
-		colorYellow, float64(stats.SuccessfulFeeds)/float64(stats.TotalFeeds)*100, colorReset)
-	
-	if stats.RateLimited > 0 {
-		fmt.Printf("⏳ Rate Limited: %s%d%s feeds (%.1f%%)\n", 
-			colorYellow, stats.RateLimited, colorReset,
-			float64(stats.RateLimited)/float64(stats.TotalFeeds)*100)
-	}
-	
-	fmt.Printf("📄 Total Entries: %s%d%s\n", colorBlue, stats.TotalEntries, colorReset)
-	fmt.Printf("🆕 New Entries: %s%d%s (%.1f%%)\n", 
-		colorGreen, stats.NewEntries, colorReset,
-		float64(stats.NewEntries)/float64(stats.TotalEntries)*100)
-	fmt.Printf("📅 Today's Entries: %s%d%s (%.1f%%)\n", 
-		colorYellow, stats.TodayEntries, colorReset,
-		float64(stats.TodayEntries)/float64(stats.TotalEntries)*100)
-	fmt.Printf("📈 This Week's Entries: %s%d%s (%.1f%%)\n", 
-		colorPurple, stats.WeekEntries, colorReset,
-		float64(stats.WeekEntries)/float64(stats.TotalEntries)*100)
-}
-
-func printFooter() {
-	fmt.Println()
-	fmt.Println(colorCyan + separator + colorReset)
-	fmt.Printf("%s%s✅ Processing completed successfully!%s\n", colorBold, colorGreen, colorReset)
-	fmt.Printf("%s%s🌐 GitHub Pages dashboard generated: index.html%s\n", colorBold, colorWhite, colorReset)
-	fmt.Printf("%s%s📱 Mobile-responsive with search and filtering%s\n", colorBold, colorWhite, colorReset)
-	fmt.Printf("%s%s🚀 Ready for deployment to GitHub Pages%s\n", colorBold, colorWhite, colorReset)
-	fmt.Println(colorCyan + separator + colorReset)
-}
-
-func printInfo(message string) {
-	fmt.Printf("%s%sℹ️  %s%s\n", colorBold, colorBlue, message, colorReset)
-}
-
-func printSuccess(message string) {
-	fmt.Printf("%s%s✅ %s%s\n", colorBold, colorGreen, message, colorReset)
-}
-
-func printWarning(message string) {
-	fmt.Printf("%s%s⚠️  %s%s\n", colorBold, colorYellow, message, colorReset)
-}
-
-func printError(message string) {
-	fmt.Printf("%s%s❌ %s%s\n", colorBold, colorRed, message, colorReset)
-}
-
-// ================================================================================
-// UTILITY FUNCTIONS
-// ================================================================================
-
-func sortEntries(entries map[string]*FeedEntry) []*FeedEntry {
-	entryList := make([]*FeedEntry, 0, len(entries))
-	for _, entry := range entries {
-		entryList = append(entryList, entry)
-	}
-
-	// Enhanced sorting: Priority, New posts, Today's posts, then by time (newest first)
-	sort.SliceStable(entryList, func(i, j int) bool {
-		// First sort by priority (lower number = higher priority)
-		if entryList[i].Priority != entryList[j].Priority {
-			return entryList[i].Priority < entryList[j].Priority
-		}
-		
-		// Then by new posts
-		if entryList[i].IsNew != entryList[j].IsNew {
-			return entryList[i].IsNew
-		}
-		
-		// Then by today's posts
-		if entryList[i].IsToday != entryList[j].IsToday {
-			return entryList[i].IsToday
-		}
-		
-		// Finally by time (newest first)
-		return entryList[i].ParsedTime.After(entryList[j].ParsedTime)
-	})
-
-	return entryList
-}
-
-func sanitizeTitle(title string) string {
-	// Clean up the title
-	title = strings.ReplaceAll(title, "\n", " ")
-	title = strings.ReplaceAll(title, "\r", " ")
-	title = strings.ReplaceAll(title, "\t", " ")
-	
-	// Escape markdown characters
-	title = strings.ReplaceAll(title, "|", "\\|")
-	title = strings.ReplaceAll(title, "[", "\\[")
-	title = strings.ReplaceAll(title, "]", "\\]")
-	title = strings.ReplaceAll(title, "*", "\\*")
-	title = strings.ReplaceAll(title, "_", "\\_")
-	title = strings.ReplaceAll(title, "`", "\\`")
-	title = strings.ReplaceAll(title, "#", "\\#")
-	
-	// Remove extra spaces
-	title = strings.Join(strings.Fields(title), " ")
-	
-	// Truncate if too long
-	if len(title) > maxTitleLength {
-		title = title[:maxTitleLength-3] + "..."
-	}
-	
-	return title
-}
-
-func extractFeedName(url string) string {
-	parts := strings.Split(url, "/")
-	tag := parts[len(parts)-1]
-	
-	// Convert tag to readable name with better formatting
-	name := strings.ReplaceAll(tag, "-", " ")
-	
-	// Handle special cases
-	replacements := map[string]string{
-		"xss": "XSS",
-		"sql": "SQL",
-		"api": "API",
-		"aws": "AWS",
-		"gcp": "GCP",
-		"rce": "RCE",
-		"lfi": "LFI",
-		"rfi": "RFI",
-		"csrf": "CSRF",
-		"ssrf": "SSRF",
-		"idor": "IDOR",
-		"osint": "OSINT",
-		"siem": "SIEM",
-		"soc": "SOC",
-		"edr": "EDR",
-		"xdr": "XDR",
-		"iam": "IAM",
-		"mfa": "MFA",
-		"2fa": "2FA",
-		"vpn": "VPN",
-		"tls": "TLS",
-		"ssl": "SSL",
-		"pki": "PKI",
-		"cve": "CVE",
-		"apt": "APT",
-		"ios": "iOS",
-		"gdpr": "GDPR",
-		"hipaa": "HIPAA",
-		"sox": "SOX",
-		"iso": "ISO",
-		"nist": "NIST",
-		"cis": "CIS",
-		"dfir": "DFIR",
-		"jwt": "JWT",
-		"oauth": "OAuth",
-		"defi": "DeFi",
-		"nft": "NFT",
-		"ai": "AI",
-		"ml": "ML",
-		"iot": "IoT",
-	}
-	
-	words := strings.Fields(name)
-	for i, word := range words {
-		lowerWord := strings.ToLower(word)
-		if replacement, exists := replacements[lowerWord]; exists {
-			words[i] = replacement
-		} else {
-			words[i] = strings.Title(word)
-		}
-	}
-	
-	return strings.Join(words, " ")
-}
-
-func parsePublicationDate(pubDate string) (time.Time, error) {
-	// Try different date formats
-	formats := []string{
-		time.RFC1123,
-		time.RFC1123Z,
-		time.RFC822,
-		time.RFC822Z,
-		"2006-01-02T15:04:05Z",
-		"2006-01-02T15:04:05-07:00",
-		"2006-01-02T15:04:05.000Z",
-		"Mon, 2 Jan 2006 15:04:05 MST",
-		"Mon, 2 Jan 2006 15:04:05 -0700",
-		"2006-01-02 15:04:05",
-	}
-	
-	for _, format := range formats {
-		if t, err := time.Parse(format, pubDate); err == nil {
-			return t, nil
-		}
-	}
-	
-	return time.Time{}, fmt.Errorf("unable to parse date: %s", pubDate)
-}
-
-func formatDisplayTime(t time.Time) string {
-	if t.IsZero() {
-		return "Unknown"
-	}
-	
-	now := time.Now()
-	diff := now.Sub(t)
-	
-	// Show relative time for recent posts
-	if diff < time.Hour {
-		minutes := int(diff.Minutes())
-		if minutes < 1 {
-			return "Just now"
-		}
-		return fmt.Sprintf("%dm ago", minutes)
-	} else if diff < 24*time.Hour {
-		hours := int(diff.Hours())
-		return fmt.Sprintf("%dh ago", hours)
-	} else if diff < 7*24*time.Hour {
-		days := int(diff.Hours() / 24)
-		return fmt.Sprintf("%dd ago", days)
-	}
-	
-	return t.Format(displayTimeFormat)
-}
-
-func checkIfToday(pubDate, currentDate string) bool {
-	pubTime, err := parsePublicationDate(pubDate)
-	if err != nil {
-		return false
-	}
-	
-	pubDateFormatted := pubTime.Format(dateFormat)
-	return pubDateFormatted == currentDate
-}
-
-func checkIfThisWeek(pubDate string) bool {
-	pubTime, err := parsePublicationDate(pubDate)
-	if err != nil {
-		return false
-	}
-	
-	now := time.Now()
-	weekAgo := now.AddDate(0, 0, -7)
-	
-	return pubTime.After(weekAgo)
-}
-
-func getCurrentDateGMT() string {
-	return time.Now().In(time.UTC).Format(dateFormat)
-}package main
-
-import (
-	"encoding/xml"
-	"fmt"
-	"io/ioutil"
-	"net/http"
-	"os"
-	"sort"
-	"strconv"
-	"strings"
-	"time"
-)
-
-// ================================================================================
-// CONSTANTS & CONFIGURATION
-// ================================================================================
-
-const (
-	// Application settings
-	appName           = "Medium Cybersecurity RSS Aggregator"
-	appVersion        = "v3.0.0"
-	maxTitleLength    = 85
-	requestTimeout    = 45 * time.Second
-	
-	// Date formats
-	dateFormat        = "Mon, 02 Jan 2006"
-	displayTimeFormat = "02 Jan 15:04"
-	isoDateFormat     = "2006-01-02T15:04:05Z"
-	
-	// File settings
-	readmeFilename    = "README.md"
-	indexFilename     = "index.html"
-	
-	// Output formatting
-	separator         = "═══════════════════════════════════════════════════════════════════════════════"
-	subSeparator      = "───────────────────────────────────────────────────────────────────────────────"
-	
-	// Colors for terminal output (ANSI codes)
-	colorReset  = "\033[0m"
-	colorRed    = "\033[31m"
-	colorGreen  = "\033[32m"
-	colorYellow = "\033[33m"
-	colorBlue   = "\033[34m"
-	colorPurple = "\033[35m"
-	colorCyan   = "\033[36m"
-	colorWhite  = "\033[37m"
-	colorBold   = "\033[1m"
-)
-
-// Environment variables for configuration
-var (
-	maxFeeds      = getEnvInt("MAX_FEEDS", 0)      // 0 means no limit
-	requestDelay  = getEnvDuration("RATE_LIMIT_DELAY", 3) * time.Second
-	debugMode     = getEnvBool("DEBUG_MODE", false)
-)
-
-// ================================================================================
-// DATA STRUCTURES
-// ================================================================================
-
-// RSS represents the root RSS structure
-type RSS struct {
-	XMLName xml.Name `xml:"rss"`
-	Channel Channel  `xml:"channel"`
-}
-
-// Channel represents the RSS channel
-type Channel struct {
-	Title       string `xml:"title"`
-	Description string `xml:"description"`
-	Items       []Item `xml:"item"`
-}
-
-// Item represents an individual RSS item
-type Item struct {
-	Title       string `xml:"title"`
-	GUID        string `xml:"guid"`
-	PubDate     string `xml:"pubDate"`
-	Description string `xml:"description"`
-	Link        string `xml:"link"`
-	Author      string `xml:"author"`
-	Categories  []string `xml:"category"`
-}
-
-// FeedEntry represents a processed RSS entry with metadata
-type FeedEntry struct {
-	Title       string
-	GUID        string
-	PubDate     string
-	ParsedTime  time.Time
-	Feeds       []string
-	FeedNames   []string
-	Categories  []string
-	IsNew       bool
-	IsToday     bool
-	IsThisWeek  bool
-	Description string
-	Author      string
-	Priority    int
-}
-
-// FeedSource represents an RSS feed source configuration
-type FeedSource struct {
-	URL         string
-	Name        string
-	Category    string
-	Priority    int
-	Active      bool
-	Color       string
-}
-
-// AggregatorStats holds statistics about the aggregation process
-type AggregatorStats struct {
-	TotalFeeds      int
-	SuccessfulFeeds int
-	FailedFeeds     int
-	TotalEntries    int
-	NewEntries      int
-	TodayEntries    int
-	WeekEntries     int
-	ProcessingTime  time.Duration
-	StartTime       time.Time
-	RateLimited     int
-}
-
-// CategoryStats represents statistics for each category
-type CategoryStats struct {
-	Name        string
-	TotalPosts  int
-	NewPosts    int
-	TodayPosts  int
-	Color       string
-}
-
-// ================================================================================
-// ENVIRONMENT VARIABLE HELPERS
-// ================================================================================
-
-func getEnvInt(key string, defaultValue int) int {
-	if value := os.Getenv(key); value != "" {
-		if intValue, err := strconv.Atoi(value); err == nil {
-			return intValue
-		}
-	}
-	return defaultValue
-}
-
-func getEnvDuration(key string, defaultSeconds int) time.Duration {
-	if value := os.Getenv(key); value != "" {
-		if intValue, err := strconv.Atoi(value); err == nil {
-			return time.Duration(intValue)
-		}
-	}
-	return time.Duration(defaultSeconds)
-}
-
-func getEnvBool(key string, defaultValue bool) bool {
-	if value := os.Getenv(key); value != "" {
-		return strings.ToLower(value) == "true"
-	}
-	return defaultValue
-}
-
-// ================================================================================
-// UTILITY FUNCTIONS
-// ================================================================================
-
-func getCurrentDateGMT() string {
-	return time.Now().In(time.UTC).Format(dateFormat)
-}
-
-func readREADME() string {
-	content, err := ioutil.ReadFile(readmeFilename)
-	if err != nil && !os.IsNotExist(err) {
-		printWarning(fmt.Sprintf("Error reading %s: %v", readmeFilename, err))
-		return ""
-	}
-	return string(content)
-}
-
-func extractFeedName(url string) string {
-	parts := strings.Split(url, "/")
-	tag := parts[len(parts)-1]
-	
-	// Convert tag to readable name with better formatting
-	name := strings.ReplaceAll(tag, "-", " ")
-	
-	// Handle special cases
-	replacements := map[string]string{
-		"xss": "XSS", "sql": "SQL", "api": "API", "aws": "AWS", "gcp": "GCP",
-		"rce": "RCE", "lfi": "LFI", "rfi": "RFI", "csrf": "CSRF", "ssrf": "SSRF",
-		"idor": "IDOR", "osint": "OSINT", "siem": "SIEM", "soc": "SOC", "edr": "EDR",
-		"xdr": "XDR", "iam": "IAM", "mfa": "MFA", "2fa": "2FA", "vpn": "VPN",
-		"tls": "TLS", "ssl": "SSL", "pki": "PKI", "cve": "CVE", "apt": "APT",
-		"ios": "iOS", "gdpr": "GDPR", "hipaa": "HIPAA", "sox": "SOX", "iso": "ISO",
-		"nist": "NIST", "cis": "CIS", "dfir": "DFIR", "jwt": "JWT", "oauth": "OAuth",
-		"defi": "DeFi", "nft": "NFT", "ai": "AI", "ml": "ML", "iot": "IoT",
-	}
-	
-	words := strings.Fields(name)
-	for i, word := range words {
-		lowerWord := strings.ToLower(word)
-		if replacement, exists := replacements[lowerWord]; exists {
-			words[i] = replacement
-		} else {
-			words[i] = strings.Title(word)
-		}
-	}
-	
-	return strings.Join(words, " ")
-}
-
-func parsePublicationDate(pubDate string) (time.Time, error) {
-	formats := []string{
-		time.RFC1123, time.RFC1123Z, time.RFC822, time.RFC822Z,
-		"2006-01-02T15:04:05Z", "2006-01-02T15:04:05-07:00",
-		"2006-01-02T15:04:05.000Z", "Mon, 2 Jan 2006 15:04:05 MST",
-		"Mon, 2 Jan 2006 15:04:05 -0700", "2006-01-02 15:04:05",
-	}
-	
-	for _, format := range formats {
-		if t, err := time.Parse(format, pubDate); err == nil {
-			return t, nil
-		}
-	}
-	
-	return time.Time{}, fmt.Errorf("unable to parse date: %s", pubDate)
-}
-
-func formatDisplayTime(t time.Time) string {
-	if t.IsZero() {
-		return "Unknown"
-	}
-	
-	now := time.Now()
-	diff := now.Sub(t)
-	
-	if diff < time.Hour {
-		minutes := int(diff.Minutes())
-		if minutes < 1 {
-			return "Just now"
-		}
-		return fmt.Sprintf("%dm ago", minutes)
-	} else if diff < 24*time.Hour {
-		hours := int(diff.Hours())
-		return fmt.Sprintf("%dh ago", hours)
-	} else if diff < 7*24*time.Hour {
-		days := int(diff.Hours() / 24)
-		return fmt.Sprintf("%dd ago", days)
-	}
-	
-	return t.Format(displayTimeFormat)
-}
-
-func checkIfToday(pubDate, currentDate string) bool {
-	pubTime, err := parsePublicationDate(pubDate)
-	if err != nil {
-		return false
-	}
-	
-	pubDateFormatted := pubTime.Format(dateFormat)
-	return pubDateFormatted == currentDate
-}
-
-func checkIfThisWeek(pubDate string) bool {
-	pubTime, err := parsePublicationDate(pubDate)
-	if err != nil {
-		return false
-	}
-	
-	now := time.Now()
-	weekAgo := now.AddDate(0, 0, -7)
-	
-	return pubTime.After(weekAgo)
-}
-
-func sanitizeTitle(title string) string {
-	title = strings.ReplaceAll(title, "\n", " ")
-	title = strings.ReplaceAll(title, "\r", " ")
-	title = strings.ReplaceAll(title, "\t", " ")
-	
-	title = strings.ReplaceAll(title, "|", "\\|")
-	title = strings.ReplaceAll(title, "[", "\\[")
-	title = strings.ReplaceAll(title, "]", "\\]")
-	title = strings.ReplaceAll(title, "*", "\\*")
-	title = strings.ReplaceAll(title, "_", "\\_")
-	title = strings.ReplaceAll(title, "`", "\\`")
-	title = strings.ReplaceAll(title, "#", "\\#")
-	
-	title = strings.Join(strings.Fields(title), " ")
-	
-	if len(title) > maxTitleLength {
-		title = title[:maxTitleLength-3] + "..."
-	}
-	
-	return title
-}
-
-func sanitizeHTMLTitle(title string) string {
-	title = strings.ReplaceAll(title, "&", "&amp;")
-	title = strings.ReplaceAll(title, "<", "&lt;")
-	title = strings.ReplaceAll(title, ">", "&gt;")
-	title = strings.ReplaceAll(title, "\"", "&quot;")
-	title = strings.ReplaceAll(title, "'", "&#39;")
-	
-	if len(title) > maxTitleLength {
-		title = title[:maxTitleLength-3] + "..."
-	}
-	
-	return title
-}
-
-func sortEntries(entries map[string]*FeedEntry) []*FeedEntry {
-	entryList := make([]*FeedEntry, 0, len(entries))
-	for _, entry := range entries {
-		entryList = append(entryList, entry)
-	}
-
-	sort.SliceStable(entryList, func(i, j int) bool {
-		if entryList[i].Priority != entryList[j].Priority {
-			return entryList[i].Priority < entryList[j].Priority
-		}
-		if entryList[i].IsNew != entryList[j].IsNew {
-			return entryList[i].IsNew
-		}
-		if entryList[i].IsToday != entryList[j].IsToday {
-			return entryList[i].IsToday
-		}
-		return entryList[i].ParsedTime.After(entryList[j].ParsedTime)
-	})
-
-	return entryList
-}
-
-// ================================================================================
-// DISPLAY FUNCTIONS
-// ================================================================================
-
-func printHeader() {
-	fmt.Println(colorBold + colorCyan + separator + colorReset)
-	fmt.Printf("%s%s🛡️  %s %s%s\n", colorBold, colorCyan, appName, appVersion, colorReset)
-	fmt.Printf("%s%s🔗 Enhanced Medium Cybersecurity RSS Feed Aggregator%s\n", colorBold, colorWhite, colorReset)
-	fmt.Printf("%s%s📊 GitHub Pages Ready • Professional Dashboard • Enhanced Filtering%s\n", colorBold, colorWhite, colorReset)
-	fmt.Println(colorCyan + separator + colorReset)
-}
-
-func printProcessingInfo(currentDate string, feedCount int) {
-	fmt.Printf("📅 Current GMT Date: %s%s%s\n", colorYellow, currentDate, colorReset)
-	fmt.Printf("📊 Processing %s%d%s RSS feeds across %s15%s categories\n", colorBlue, feedCount, colorReset, colorPurple, colorReset)
-	fmt.Printf("⏱️  Request delay: %s%v%s (adaptive rate limiting)\n", colorPurple, requestDelay, colorReset)
-	if maxFeeds > 0 {
-		fmt.Printf("🔢 Feed limit: %s%d%s (testing mode)\n", colorYellow, maxFeeds, colorReset)
-	}
-	if debugMode {
-		fmt.Printf("🔍 Debug mode: %sENABLED%s\n", colorYellow, colorReset)
-	}
-	fmt.Println(subSeparator)
-}
-
-func printInfo(message string) {
-	fmt.Printf("%s%sℹ️  %s%s\n", colorBold, colorBlue, message, colorReset)
-}
-
-func printSuccess(message string) {
-	fmt.Printf("%s%s✅ %s%s\n", colorBold, colorGreen, message, colorReset)
-}
-
-func printWarning(message string) {
-	fmt.Printf("%s%s⚠️  %s%s\n", colorBold, colorYellow, message, colorReset)
-}
-
-func printError(message string) {
-	fmt.Printf("%s%s❌ %s%s\n", colorBold, colorRed, message, colorReset)
-}
-
-func printSummary(stats *AggregatorStats) {
-	fmt.Println()
-	fmt.Println(colorBold + colorGreen + "📊 PROCESSING SUMMARY" + colorReset)
-	fmt.Println(subSeparator)
-	fmt.Printf("🕒 Processing Time: %s%v%s\n", colorBlue, stats.ProcessingTime.Round(time.Second), colorReset)
-	fmt.Printf("📡 Feeds Processed: %s%d/%d%s (%s%.1f%%%s success rate)\n", 
-		colorGreen, stats.SuccessfulFeeds, stats.TotalFeeds, colorReset,
-		colorYellow, float64(stats.SuccessfulFeeds)/float64(stats.TotalFeeds)*100, colorReset)
-	
-	if stats.RateLimited > 0 {
-		fmt.Printf("⏳ Rate Limited: %s%d%s feeds (%.1f%%)\n", 
-			colorYellow, stats.RateLimited, colorReset,
-			float64(stats.RateLimited)/float64(stats.TotalFeeds)*100)
-	}
-	
-	fmt.Printf("📄 Total Entries: %s%d%s\n", colorBlue, stats.TotalEntries, colorReset)
-	fmt.Printf("🆕 New Entries: %s%d%s (%.1f%%)\n", 
-		colorGreen, stats.NewEntries, colorReset,
-		float64(stats.NewEntries)/float64(stats.TotalEntries)*100)
-	fmt.Printf("📅 Today's Entries: %s%d%s (%.1f%%)\n", 
-		colorYellow, stats.TodayEntries, colorReset,
-		float64(stats.TodayEntries)/float64(stats.TotalEntries)*100)
-	fmt.Printf("📈 This Week's Entries: %s%d%s (%.1f%%)\n", 
-		colorPurple, stats.WeekEntries, colorReset,
-		float64(stats.WeekEntries)/float64(stats.TotalEntries)*100)
-}
-
-func printFooter() {
-	fmt.Println()
-	fmt.Println(colorCyan + separator + colorReset)
-	fmt.Printf("%s%s✅ Processing completed successfully!%s\n", colorBold, colorGreen, colorReset)
-	fmt.Printf("%s%s🌐 GitHub Pages dashboard generated: index.html%s\n", colorBold, colorWhite, colorReset)
-	fmt.Printf("%s%s📱 Mobile-responsive with search and filtering%s\n", colorBold, colorWhite, colorReset)
-	fmt.Printf("%s%s🚀 Ready for deployment to GitHub Pages%s\n", colorBold, colorWhite, colorReset)
-	fmt.Println(colorCyan + separator + colorReset)
-}
-
-// ================================================================================
-// STATISTICS FUNCTIONS
-// ================================================================================
-
-func updateStats(stats *AggregatorStats, entries []*FeedEntry, duration time.Duration) {
-	stats.TotalEntries = len(entries)
-	stats.ProcessingTime = duration
-	
-	for _, entry := range entries {
-		if entry.IsNew {
-			stats.NewEntries++
-		}
-		if entry.IsToday {
-			stats.TodayEntries++
-		}
-		if entry.IsThisWeek {
-			stats.WeekEntries++
-		}
-	}
-}
-
-func countNewEntries(entries []*FeedEntry) int {
-	count := 0
-	for _, entry := range entries {
-		if entry.IsNew {
-			count++
-		}
-	}
-	return count
-}
-
-func countTodayEntries(entries []*FeedEntry) int {
-	count := 0
-	for _, entry := range entries {
-		if entry.IsToday {
-			count++
-		}
-	}
-	return count
-}
-
-func countWeekEntries(entries []*FeedEntry) int {
-	count := 0
-	for _, entry := range entries {
-		if entry.IsThisWeek {
-			count++
-		}
-	}
-	return count
-}
-
-// ================================================================================
-// MAIN APPLICATION
-// ================================================================================
-
-func main() {
-	startTime := time.Now()
-	
-	printHeader()
-	
-	// Initialize components
-	feedSources := getFeedSources()
-	readmeContent := readREADME()
-	currentDate := getCurrentDateGMT()
-	
-	// Apply feed limit if set
-	if maxFeeds > 0 && len(feedSources) > maxFeeds {
-		feedSources = feedSources[:maxFeeds]
-		printInfo(fmt.Sprintf("🔢 Limited to %d feeds for testing", maxFeeds))
-	}
-	
-	stats := &AggregatorStats{
-		TotalFeeds: len(feedSources),
-		StartTime:  startTime,
-	}
-	
-	printProcessingInfo(currentDate, len(feedSources))
-	
-	// Process feeds
-	entries := processFeeds(feedSources, readmeContent, currentDate, stats)
-	
-	if len(entries) == 0 {
-		printError("No entries found or all feeds failed to fetch")
-		return
-	}
-	
-	// Sort and generate output
-	sortedEntries := sortEntries(entries)
-	updateStats(stats, sortedEntries, time.Since(startTime))
-	
-	// Generate both markdown and HTML outputs
-	generateMarkdownOutput(sortedEntries, stats, feedSources)
-	generateHTMLOutput(sortedEntries, stats, feedSources)
-	printSummary(stats)
-	
-	printFooter()
-}
-
-// ================================================================================
-// ENHANCED FEED SOURCES CONFIGURATION
-// ================================================================================
-
-func getFeedSources() []FeedSource {
-	var sources []FeedSource
-	
-	// Core cybersecurity feeds (Priority 1)
-	coreFeeds := []string{
-		"https://medium.com/feed/tag/cybersecurity",
-		"https://medium.com/feed/tag/information-security",
-		"https://medium.com/feed/tag/infosec",
-		"https://medium.com/feed/tag/security",
-		"https://medium.com/feed/tag/cyber-security",
-		"https://medium.com/feed/tag/security-research",
-		"https://medium.com/feed/tag/cyber-threat",
-		"https://medium.com/feed/tag/security-awareness",
-	}
-	addFeedsWithCategory(&sources, coreFeeds, "Core Security", 1, "#FF6B6B")
-	
-	// Bug bounty and ethical hacking (Priority 2)
-	bugBountyFeeds := []string{
-		"https://medium.com/feed/tag/bug-bounty",
-		"https://medium.com/feed/tag/bug-bounty-tips",
-		"https://medium.com/feed/tag/bug-bounty-writeup",
-		"https://medium.com/feed/tag/bugbounty-writeup",
-		"https://medium.com/feed/tag/bug-bounty-hunter",
-		"https://medium.com/feed/tag/bug-bounty-program",
-		"https://medium.com/feed/tag/ethical-hacking",
-		"https://medium.com/feed/tag/hackerone",
-		"https://medium.com/feed/tag/bugcrowd",
-		"https://medium.com/feed/tag/bounty-program",
-		"https://medium.com/feed/tag/bounties",
-		"https://medium.com/feed/tag/responsible-disclosure",
-		"https://medium.com/feed/tag/vulnerability-disclosure",
-	}
-	addFeedsWithCategory(&sources, bugBountyFeeds, "Bug Bounty", 2, "#4ECDC4")
-	
-	// Penetration testing and red team (Priority 3)
-	penTestFeeds := []string{
-		"https://medium.com/feed/tag/penetration-testing",
-		"https://medium.com/feed/tag/pentesting",
-		"https://medium.com/feed/tag/pentest",
-		"https://medium.com/feed/tag/red-team",
-		"https://medium.com/feed/tag/red-teaming",
-		"https://medium.com/feed/tag/hacking",
-		"https://medium.com/feed/tag/exploitation",
-		"https://medium.com/feed/tag/exploit",
-		"https://medium.com/feed/tag/offensive-security",
-		"https://medium.com/feed/tag/security-testing",
-	}
-	addFeedsWithCategory(&sources, penTestFeeds, "Penetration Testing", 3, "#45B7D1")
-	
-	// Web application security (Priority 4)
-	webSecFeeds := []string{
-		"https://medium.com/feed/tag/web-security",
-		"https://medium.com/feed/tag/application-security",
-		"https://medium.com/feed/tag/web-application-security",
-		"https://medium.com/feed/tag/xss",
-		"https://medium.com/feed/tag/xss-attack",
-		"https://medium.com/feed/tag/cross-site-scripting",
-		"https://medium.com/feed/tag/sql-injection",
-		"https://medium.com/feed/tag/sqli",
-		"https://medium.com/feed/tag/ssrf",
-		"https://medium.com/feed/tag/idor",
-		"https://medium.com/feed/tag/csrf",
-		"https://medium.com/feed/tag/rce",
-		"https://medium.com/feed/tag/remote-code-execution",
-		"https://medium.com/feed/tag/lfi",
-		"https://medium.com/feed/tag/local-file-inclusion",
-		"https://medium.com/feed/tag/rfi",
-		"https://medium.com/feed/tag/file-upload",
-		"https://medium.com/feed/tag/path-traversal",
-		"https://medium.com/feed/tag/command-injection",
-	}
-	addFeedsWithCategory(&sources, webSecFeeds, "Web Security", 4, "#96CEB4")
-	
-	// API and mobile security (Priority 5)
-	apiMobileFeeds := []string{
-		"https://medium.com/feed/tag/api-security",
-		"https://medium.com/feed/tag/rest-api-security",
-		"https://medium.com/feed/tag/graphql-security",
-		"https://medium.com/feed/tag/mobile-security",
-		"https://medium.com/feed/tag/android-security",
-		"https://medium.com/feed/tag/ios-security",
-		"https://medium.com/feed/tag/mobile-app-security",
-		"https://medium.com/feed/tag/oauth",
-		"https://medium.com/feed/tag/jwt",
-		"https://medium.com/feed/tag/authentication",
-		"https://medium.com/feed/tag/authorization",
-	}
-	addFeedsWithCategory(&sources, apiMobileFeeds, "API & Mobile", 5, "#FFEAA7")
-	
-	// Cloud security (Priority 6)
-	cloudFeeds := []string{
-		"https://medium.com/feed/tag/cloud-security",
-		"https://medium.com/feed/tag/aws-security",
-		"https://medium.com/feed/tag/azure-security",
-		"https://medium.com/feed/tag/gcp-security",
-		"https://medium.com/feed/tag/google-cloud-security",
-		"https://medium.com/feed/tag/kubernetes-security",
-		"https://medium.com/feed/tag/docker-security",
-		"https://medium.com/feed/tag/container-security",
-		"https://medium.com/feed/tag/serverless-security",
-		"https://medium.com/feed/tag/devsecops",
-		"https://medium.com/feed/tag/infrastructure-security",
-	}
-	addFeedsWithCategory(&sources, cloudFeeds, "Cloud Security", 6, "#DDA0DD")
-	
-	// Tools and reconnaissance (Priority 7)
-	toolsFeeds := []string{
-		"https://medium.com/feed/tag/cybersecurity-tools",
-		"https://medium.com/feed/tag/security-tools",
-		"https://medium.com/feed/tag/recon",
-		"https://medium.com/feed/tag/reconnaissance",
-		"https://medium.com/feed/tag/osint",
-		"https://medium.com/feed/tag/dorking",
-		"https://medium.com/feed/tag/google-dorking",
-		"https://medium.com/feed/tag/google-dork",
-		"https://medium.com/feed/tag/dorks",
-		"https://medium.com/feed/tag/github-dorking",
-		"https://medium.com/feed/tag/subdomain-enumeration",
-		"https://medium.com/feed/tag/subdomain-takeover",
-		"https://medium.com/feed/tag/port-scanning",
-		"https://medium.com/feed/tag/vulnerability-scanning",
-	}
-	addFeedsWithCategory(&sources, toolsFeeds, "Tools & OSINT", 7, "#74B9FF")
-	
-	// Specific security tools (Priority 8)
-	specificToolsFeeds := []string{
-		"https://medium.com/feed/tag/burp-suite",
-		"https://medium.com/feed/tag/nmap",
-		"https://medium.com/feed/tag/metasploit",
-		"https://medium.com/feed/tag/wireshark",
-		"https://medium.com/feed/tag/nessus",
-		"https://medium.com/feed/tag/shodan",
-		"https://medium.com/feed/tag/censys",
-		"https://medium.com/feed/tag/masscan",
-		"https://medium.com/feed/tag/sqlmap",
-		"https://medium.com/feed/tag/nikto",
-		"https://medium.com/feed/tag/gobuster",
-		"https://medium.com/feed/tag/dirb",
-		"https://medium.com/feed/tag/ffuf",
-		"https://medium.com/feed/tag/nuclei",
-	}
-	addFeedsWithCategory(&sources, specificToolsFeeds, "Security Tools", 8, "#A29BFE")
-	
-	// Malware and threat analysis (Priority 9)
-	malwareFeeds := []string{
-		"https://medium.com/feed/tag/malware-analysis",
-		"https://medium.com/feed/tag/malware",
-		"https://medium.com/feed/tag/reverse-engineering",
-		"https://medium.com/feed/tag/threat-intelligence",
-		"https://medium.com/feed/tag/threat-hunting",
-		"https://medium.com/feed/tag/apt",
-		"https://medium.com/feed/tag/advanced-persistent-threat",
-		"https://medium.com/feed/tag/ransomware",
-		"https://medium.com/feed/tag/phishing",
-		"https://medium.com/feed/tag/social-engineering",
-		"https://medium.com/feed/tag/threat-analysis",
-	}
-	addFeedsWithCategory(&sources, malwareFeeds, "Malware & Threats", 9, "#FD79A8")
-	
-	// Digital forensics and incident response (Priority 10)
-	forensicsFeeds := []string{
-		"https://medium.com/feed/tag/digital-forensics",
-		"https://medium.com/feed/tag/forensics",
-		"https://medium.com/feed/tag/incident-response",
-		"https://medium.com/feed/tag/dfir",
-		"https://medium.com/feed/tag/memory-forensics",
-		"https://medium.com/feed/tag/disk-forensics",
-		"https://medium.com/feed/tag/network-forensics",
-		"https://medium.com/feed/tag/mobile-forensics",
-		"https://medium.com/feed/tag/cloud-forensics",
-		"https://medium.com/feed/tag/volatility",
-	}
-	addFeedsWithCategory(&sources, forensicsFeeds, "Forensics & IR", 10, "#FDCB6E")
-	
-	// Cryptography and privacy (Priority 11)
-	cryptoFeeds := []string{
-		"https://medium.com/feed/tag/cryptography",
-		"https://medium.com/feed/tag/encryption",
-		"https://medium.com/feed/tag/cryptocurrency-security",
-		"https://medium.com/feed/tag/blockchain-security",
-		"https://medium.com/feed/tag/smart-contract-security",
-		"https://medium.com/feed/tag/defi-security",
-		"https://medium.com/feed/tag/privacy",
-		"https://medium.com/feed/tag/data-privacy",
-		"https://medium.com/feed/tag/gdpr",
-		"https://medium.com/feed/tag/tls",
-		"https://medium.com/feed/tag/ssl",
-	}
-	addFeedsWithCategory(&sources, cryptoFeeds, "Crypto & Privacy", 11, "#E17055")
-	
-	// Network security (Priority 12)
-	networkFeeds := []string{
-		"https://medium.com/feed/tag/network-security",
-		"https://medium.com/feed/tag/firewall",
-		"https://medium.com/feed/tag/ids",
-		"https://medium.com/feed/tag/ips",
-		"https://medium.com/feed/tag/vpn",
-		"https://medium.com/feed/tag/zero-trust",
-		"https://medium.com/feed/tag/network-monitoring",
-		"https://medium.com/feed/tag/packet-analysis",
-		"https://medium.com/feed/tag/network-forensics",
-	}
-	addFeedsWithCategory(&sources, networkFeeds, "Network Security", 12, "#00B894")
-	
-	// Vulnerability research (Priority 13)
-	vulnResearchFeeds := []string{
-		"https://medium.com/feed/tag/vulnerability",
-		"https://medium.com/feed/tag/vulnerability-research",
-		"https://medium.com/feed/tag/cve",
-		"https://medium.com/feed/tag/zero-day",
-		"https://medium.com/feed/tag/zeroday",
-		"https://medium.com/feed/tag/exploit-development",
-		"https://medium.com/feed/tag/buffer-overflow",
-		"https://medium.com/feed/tag/heap-exploitation",
-		"https://medium.com/feed/tag/rop",
-		"https://medium.com/feed/tag/return-oriented-programming",
-		"https://medium.com/feed/tag/shellcode",
-		"https://medium.com/feed/tag/fuzzing",
-	}
-	addFeedsWithCategory(&sources, vulnResearchFeeds, "Vuln Research", 13, "#6C5CE7")
-	
-	// Security operations and blue team (Priority 14)
-	blueTeamFeeds := []string{
-		"https://medium.com/feed/tag/blue-team",
-		"https://medium.com/feed/tag/soc",
-		"https://medium.com/feed/tag/security-operations",
-		"https://medium.com/feed/tag/siem",
-		"https://medium.com/feed/tag/security-monitoring",
-		"https://medium.com/feed/tag/endpoint-security",
-		"https://medium.com/feed/tag/edr",
-		"https://medium.com/feed/tag/xdr",
-		"https://medium.com/feed/tag/security-orchestration",
-		"https://medium.com/feed/tag/soar",
-	}
-	addFeedsWithCategory(&sources, blueTeamFeeds, "Blue Team & SOC", 14, "#00CEC9")
-	
-	// Compliance and governance (Priority 15)
-	complianceFeeds := []string{
-		"https://medium.com/feed/tag/compliance",
-		"https://medium.com/feed/tag/security-governance",
-		"https://medium.com/feed/tag/risk-management",
-		"https://medium.com/feed/tag/security-audit",
-		"https://medium.com/feed/tag/security-assessment",
-		"https://medium.com/feed/tag/pci-dss",
-		"https://medium.com/feed/tag/hipaa",
-		"https://medium.com/feed/tag/sox",
-		"https://medium.com/feed/tag/iso-27001",
-		"https://medium.com/feed/tag/nist",
-		"https://medium.com/feed/tag/cis-controls",
-	}
-	addFeedsWithCategory(&sources, complianceFeeds, "Compliance & Governance", 15, "#FD79A8")
-	
-	return sources
-}
-
-func addFeedsWithCategory(sources *[]FeedSource, urls []string, category string, priority int, color string) {
-	for _, url := range urls {
-		*sources = append(*sources, FeedSource{
-			URL:      url,
-			Name:     extractFeedName(url),
-			Category: category,
-			Priority: priority,
-			Active:   true,
-			Color:    color,
-		})
-	}
-}
-
-// ================================================================================
-// CORE PROCESSING FUNCTIONS
-// ================================================================================
-
-func processFeeds(sources []FeedSource, readmeContent, currentDate string, stats *AggregatorStats) map[string]*FeedEntry {
-	entries := make(map[string]*FeedEntry)
-	
-	printInfo(fmt.Sprintf("🔄 Processing %d RSS feeds...", len(sources)))
-	fmt.Println(subSeparator)
-	
-	for i, source := range sources {
-		if !source.Active {
-			continue
-		}
-		
-		progress := fmt.Sprintf("[%d/%d]", i+1, len(sources))
-		fmt.Printf("%-8s %-20s %s", progress, source.Category, source.Name)
-		
-		rss, err := fetchRSSFeed(source.URL)
-		if err != nil {
-			if strings.Contains(err.Error(), "429") {
-				fmt.Printf(" %s⏳ Rate limited%s\n", colorYellow, colorReset)
-				stats.RateLimited++
-			} else {
-				fmt.Printf(" %s❌ Failed: %s%s\n", colorRed, err.Error(), colorReset)
-			}
-			stats.FailedFeeds++
-			
-			// Longer delay for rate limited requests
-			if strings.Contains(err.Error(), "429") {
-				time.Sleep(requestDelay * 2)
-			}
-			continue
-		}
-		
-		itemsProcessed := processFeedItems(rss, source, entries, readmeContent, currentDate)
-		fmt.Printf(" %s✅ %d items%s\n", colorGreen, itemsProcessed, colorReset)
-		stats.SuccessfulFeeds++
-		
-		// Rate limiting with jitter
-		if i < len(sources)-1 {
-			delay := requestDelay
-			if stats.RateLimited > 0 {
-				delay = requestDelay * 2 // Slower when we've been rate limited
-			}
-			time.Sleep(delay)
-		}
-	}
-	
-	fmt.Println(subSeparator)
-	printSuccess(fmt.Sprintf("Successfully processed %d/%d feeds (%d rate limited)", 
-		stats.SuccessfulFeeds, len(sources), stats.RateLimited))
-	
-	return entries
-}
-
-func fetchRSSFeed(url string) (*RSS, error) {
-	client := &http.Client{Timeout: requestTimeout}
-	
-	// Add user agent to appear more legitimate
-	req, err := http.NewRequest("GET", url, nil)
-	if err != nil {
-		return nil, fmt.Errorf("request creation error")
-	}
-	
-	req.Header.Set("User-Agent", "Mozilla/5.0 (compatible; CybersecurityBot/3.0; +https://github.com/cybersecurity-aggregator)")
-	req.Header.Set("Accept", "application/rss+xml, application/xml, text/xml")
-	
-	resp, err := client.Do(req)
-	if err != nil {
-		return nil, fmt.Errorf("network error")
-	}
-	defer resp.Body.Close()
-
-	if resp.StatusCode == 429 {
-		return nil, fmt.Errorf("HTTP 429 - Rate limited")
-	} else if resp.StatusCode != http.StatusOK {
-		return nil, fmt.Errorf("HTTP %d", resp.StatusCode)
-	}
-
-	data, err := ioutil.ReadAll(resp.Body)
-	if err != nil {
-		return nil, fmt.Errorf("read error")
-	}
-
-	var rss RSS
-	err = xml.Unmarshal(data, &rss)
-	if err != nil {
-		return nil, fmt.Errorf("parse error")
-	}
-
-	return &rss, nil
-}
-
-func processFeedItems(rss *RSS, source FeedSource, entries map[string]*FeedEntry, readmeContent, currentDate string) int {
-	itemsProcessed := 0
-	
-	for _, item := range rss.Channel.Items {
-		if entry, exists := entries[item.GUID]; exists {
-			// Append to existing entry
-			entry.Feeds = append(entry.Feeds, source.URL)
-			entry.FeedNames = append(entry.FeedNames, source.Name)
-			if source.Priority < entry.Priority {
-				entry.Priority = source.Priority // Keep highest priority
-			}
-		} else {
-			// Parse publication date
-			parsedTime, _ := parsePublicationDate(item.PubDate)
-			
-			// Create new entry
-			entries[item.GUID] = &FeedEntry{
-				Title:       item.Title,
-				GUID:        item.GUID,
-				PubDate:     item.PubDate,
-				ParsedTime:  parsedTime,
-				Feeds:       []string{source.URL},
-				FeedNames:   []string{source.Name},
-				Categories:  item.Categories,
-				IsNew:       !strings.Contains(readmeContent, item.GUID),
-				IsToday:     checkIfToday(item.PubDate, currentDate),
-				IsThisWeek:  checkIfThisWeek(item.PubDate),
-				Description: item.Description,
-				Author:      item.Author,
-				Priority:    source.Priority,
-			}
-		}
-		itemsProcessed++
-	}
-	
-	return itemsProcessed
-}
-
-// ================================================================================
-// ENHANCED OUTPUT GENERATION
-// ================================================================================
-
-func generateMarkdownOutput(entries []*FeedEntry, stats *AggregatorStats, sources []FeedSource) {
-	printInfo("📋 Generating GitHub Pages compatible markdown...")
-	fmt.Println()
-	
-	// Enhanced GitHub Pages README with better styling
-	fmt.Printf("# 🛡️ %s\n\n", appName)
-	
-	// Status and stats section
-	fmt.Printf("[![Status](https://img.shields.io/badge/Status-🟢_Active-success?style=for-the-badge)](#) ")
-	fmt.Printf("[![Posts](https://img.shields.io/badge/Posts-%d-blue?style=for-the-badge)](#) ", len(entries))
-	fmt.Printf("[![New](https://img.shields.io/badge/New-%d-orange?style=for-the-badge)](#) ", countNewEntries(entries))
-	fmt.Printf("[![Today](https://img.shields.io/badge/Today-%d-red?style=for-the-badge)](#)\n\n", countTodayEntries(entries))
-	
-	// Quick stats table
-	fmt.Printf("## 📊 Quick Stats\n\n")
-	fmt.Printf("| Metric | Count | Percentage |\n")
-	fmt.Printf("|--------|-------|------------|\n")
-	fmt.Printf("| 📰 **Total Posts** | **%d** | 100%% |\n", len(entries))
-	fmt.Printf("| 🆕 **New Posts** | **%d** | %.1f%% |\n", 
-		countNewEntries(entries), 
-		float64(countNewEntries(entries))/float64(len(entries))*100)
-	fmt.Printf("| 📅 **Today's Posts** | **%d** | %.1f%% |\n", 
-		countTodayEntries(entries), 
-		float64(countTodayEntries(entries))/float64(len(entries))*100)
-	fmt.Printf("| 📈 **This Week** | **%d** | %.1f%% |\n", 
-		countWeekEntries(entries), 
-		float64(countWeekEntries(entries))/float64(len(entries))*100)
-	fmt.Printf("| 🔄 **Success Rate** | **%d/%d** | %.1f%% |\n\n", 
-		stats.SuccessfulFeeds, stats.TotalFeeds,
-		float64(stats.SuccessfulFeeds)/float64(stats.TotalFeeds)*100)
-	
-	// Category breakdown
-	categoryStats := generateCategoryStats(entries, sources)
-	fmt.Printf("## 🏷️ Categories Overview\n\n")
-	fmt.Printf("| Category | Posts | New | Today | Trend |\n")
-	fmt.Printf("|----------|--------|-----|-------|-------|\n")
-	for _, cat := range categoryStats {
-		trend := "📈"
-		if cat.NewPosts == 0 {
-			trend = "📊"
-		} else if cat.NewPosts > 5 {
-			trend = "🚀"
-		}
-		fmt.Printf("| **%s** | %d | %d | %d | %s |\n", 
-			cat.Name, cat.TotalPosts, cat.NewPosts, cat.TodayPosts, trend)
-	}
-	fmt.Printf("\n")
-	
-	// Update information
-	fmt.Printf("## ℹ️ Update Information\n\n")
-	fmt.Printf("- **Last Updated**: %s GMT\n", getCurrentDateGMT())
-	fmt.Printf("- **Processing Time**: %v\n", stats.ProcessingTime.Round(time.Second))
-	fmt.Printf("- **Feeds Processed**: %d/%d (%.1f%% success rate)\n", 
-		stats.SuccessfulFeeds, stats.TotalFeeds,
-		float64(stats.SuccessfulFeeds)/float64(stats.TotalFeeds)*100)
-	fmt.Printf("- **Rate Limited**: %d feeds\n", stats.RateLimited)
-	fmt.Printf("- **Next Update**: Automatically every 2 hours\n\n")
-	
-	// Main posts table with enhanced formatting
-	fmt.Printf("## 📰 Latest Cybersecurity Posts\n\n")
-	fmt.Printf("> 🔍 **Pro Tip**: Use `Ctrl+F` to search for specific topics, CVEs, or tools!\n\n")
-	
-	fmt.Printf("| 🕒 Time | 📄 Title | 📂 Category | 🆕 | 📅 | 📊 |\n")
-	fmt.Printf("|---------|----------|-------------|----|----|----|\n")
-	
-	// Group entries by priority and date
-	for _, entry := range entries {
-		timeStr := formatDisplayTime(entry.ParsedTime)
-		title := sanitizeTitle(entry.Title)
-		category := getCategoryFromFeeds(entry.FeedNames, sources)
-		
-		newBadge := ""
-		if entry.IsNew {
-			newBadge = "🆕"
-		}
-		
-		todayBadge := ""
-		if entry.IsToday {
-			todayBadge = "📅"
-		}
-		
-		priorityBadge := ""
-		if entry.Priority <= 3 {
-			priorityBadge = "🔥"
-		} else if entry.Priority <= 6 {
-			priorityBadge = "⭐"
-		} else {
-			priorityBadge = "📝"
-		}
-		
-		fmt.Printf("| %s | [%s](%s) | %s | %s | %s | %s |\n",
-			timeStr, title, entry.GUID, category, newBadge, todayBadge, priorityBadge)
-	}
-	
-	// Footer with enhanced information
-	fmt.Printf("\n---\n\n")
-	fmt.Printf("## 🔗 Useful Links\n\n")
-	fmt.Printf("- 🌐 **[Live Dashboard](https://your-username.github.io/medium-writeups/)** - Interactive view\n")
-	fmt.Printf("- 📱 **[Mobile View](https://your-username.github.io/medium-writeups/mobile)** - Optimized for mobile\n")
-	fmt.Printf("- 📊 **[Analytics](https://your-username.github.io/medium-writeups/stats)** - Detailed statistics\n")
-	fmt.Printf("- 🔄 **[API](https://your-username.github.io/medium-writeups/api/posts.json)** - JSON feed\n\n")
-	
-	fmt.Printf("## 🛠️ Technical Details\n\n")
-	fmt.Printf("- **Generator**: %s %s\n", appName, appVersion)
-	fmt.Printf("- **Sources**: %d Medium RSS feeds across %d categories\n", len(sources), len(categoryStats))
-	fmt.Printf("- **Update Frequency**: Every 2 hours via GitHub Actions\n")
-	fmt.Printf("- **Repository**: [GitHub](https://github.com/your-username/medium-writeups)\n")
-	fmt.Printf("- **License**: MIT License\n\n")
-	
-	fmt.Printf("## 📈 Trending Topics\n\n")
-	trendingTopics := extractTrendingTopics(entries)
-	for i, topic := range trendingTopics {
-		if i >= 10 { break } // Top 10 only
-		fmt.Printf("- **%s** (%d posts)\n", topic.Name, topic.Count)
-	}
-	fmt.Printf("\n")
-	
-	fmt.Printf("## 🤝 Contributing\n\n")
-	fmt.Printf("Want to add more RSS feeds or improve the aggregator?\n\n")
-	fmt.Printf("1. 🍴 Fork the repository\n")
-	fmt.Printf("2. ➕ Add new feeds in `main.go`\n")
-	fmt.Printf("3. 🧪 Test your changes\n")
-	fmt.Printf("4. 📬 Submit a pull request\n\n")
-	
-	fmt.Printf("---\n")
-	fmt.Printf("*⚡ Powered by GitHub Actions | 🔄 Auto-updated | ⭐ Star if useful!*\n")
-}
-
-func generateHTMLOutput(entries []*FeedEntry, stats *AggregatorStats, sources []FeedSource) {
-	printInfo("🌐 Generating HTML dashboard for GitHub Pages...")
-	
-	// Create index.html for GitHub Pages
-	htmlContent := `<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🛡️ Medium Cybersecurity Posts Dashboard</title>
-    <meta name="description" content="Real-time aggregation of cybersecurity posts from Medium - Bug bounty, penetration testing, malware analysis, and more">
-    <meta name="keywords" content="cybersecurity, medium, blog posts, bug bounty, penetration testing, hacking, security research">
+name: 🛡️ Medium Cybersecurity Writeups Aggregator
+
+on:
+  # Reduced frequency to avoid rate limiting
+  schedule:
+    - cron: '0 */4 * * *'        # Every 4 hours
+  
+  # Manual trigger for testing and on-demand updates
+  workflow_dispatch:
+    inputs:
+      force_update:
+        description: 'Force update even if no new content'
+        required: false
+        default: 'false'
+        type: boolean
+      debug_mode:
+        description: 'Enable debug output'
+        required: false
+        default: 'false'
+        type: boolean
+      max_feeds:
+        description: 'Maximum number of feeds to process (for testing)'
+        required: false
+        default: '50'
+        type: number
+  
+  # Trigger on main branch changes
+  push:
+    branches:
+      - main
+    paths:
+      - 'main.go'
+      - '.github/workflows/*.yml'
+      - 'go.mod'
+      - 'go.sum'
+
+# Enhanced permissions for security and functionality
+permissions:
+  contents: write
+  issues: write
+  pull-requests: read
+  actions: read
+  pages: write
+  id-token: write
+
+# Global environment variables
+env:
+  GO_VERSION: '1.23.4'
+  TIMEZONE: 'UTC'
+  MAX_RETRIES: 2
+  RATE_LIMIT_DELAY: 8
+  REQUEST_TIMEOUT: 30
+
+jobs:
+  # Job 1: Setup and validate environment
+  setup:
+    name: 🔧 Setup Environment
+    runs-on: ubuntu-latest
+    outputs:
+      should_proceed: ${{ steps.validate.outputs.should_proceed }}
+      go_mod_exists: ${{ steps.check_files.outputs.go_mod_exists }}
+      
+    steps:
+      - name: 📋 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      
+      - name: 🔍 Check required files
+        id: check_files
+        run: |
+          echo "🔍 Checking for required files..."
+          
+          # Check if main.go exists
+          if [ ! -f "main.go" ]; then
+            echo "❌ main.go not found!"
+            echo "should_proceed=false" >> $GITHUB_OUTPUT
+            exit 1
+          fi
+          echo "✅ main.go found"
+          
+          # Check if go.mod exists
+          if [ -f "go.mod" ]; then
+            echo "✅ go.mod found"
+            echo "go_mod_exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "⚠️ go.mod not found - will create it"
+            echo "go_mod_exists=false" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: ✅ Validate setup
+        id: validate
+        run: |
+          echo "✅ All checks passed"
+          echo "should_proceed=true" >> $GITHUB_OUTPUT
+          echo "📅 Workflow triggered at: $(date -u)"
+          echo "🔄 Trigger event: ${{ github.event_name }}"
+
+  # Job 2: Initialize Go module if needed
+  init-go-module:
+    name: 📦 Initialize Go Module
+    runs-on: ubuntu-latest
+    needs: setup
+    if: needs.setup.outputs.should_proceed == 'true' && needs.setup.outputs.go_mod_exists == 'false'
     
-    <!-- Open Graph -->
-    <meta property="og:title" content="Medium Cybersecurity Posts Dashboard">
-    <meta property="og:description" content="Real-time aggregation of cybersecurity posts from Medium">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://your-username.github.io/medium-writeups/">
-    
-    <!-- Styles -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    
-    <style>
-        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
-        .card-hover { transition: all 0.3s ease; }
-        .card-hover:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(0,0,0,0.15); }
-        .category-badge { font-size: 0.75rem; padding: 0.25rem 0.5rem; border-radius: 9999px; }
-        .search-highlight { background-color: #fef3c7; }
-        .loading { animation: spin 1s linear infinite; }
-        @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-        .stats-card { background: linear-gradient(145deg, #f8fafc, #e2e8f0); }
-        .priority-high { border-left: 4px solid #ef4444; }
-        .priority-medium { border-left: 4px solid #f59e0b; }
-        .priority-low { border-left: 4px solid #10b981; }
-    </style>
-</head>
-<body class="bg-gray-50 min-h-screen">
-    <!-- Header -->
-    <header class="gradient-bg text-white py-8">
-        <div class="container mx-auto px-4">
-            <div class="text-center">
-                <h1 class="text-4xl font-bold mb-2">🛡️ Medium Cybersecurity Dashboard</h1>
-                <p class="text-lg opacity-90">Real-time aggregation of cybersecurity posts and research</p>
-                <div class="mt-4 flex justify-center space-x-4">
-                    <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm">
-                        <i class="fas fa-clock mr-1"></i>
-                        Last updated: ` + getCurrentDateGMT() + `
-                    </span>
-                    <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm">
-                        <i class="fas fa-rss mr-1"></i>
-                        ` + strconv.Itoa(len(sources)) + ` feeds monitored
-                    </span>
-                </div>
-            </div>
-        </div>
-    </header>
+    steps:
+      - name: 📋 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: 🔧 Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: ${{ env.GO_VERSION }}
+      
+      - name: 📦 Initialize Go module
+        run: |
+          echo "📦 Initializing Go module..."
+          go mod init medium-writeups-aggregator
+          echo "✅ Go module initialized"
+          
+          # Add any required dependencies based on main.go imports
+          echo "📥 Adding dependencies..."
+          go mod tidy
+          echo "✅ Dependencies resolved"
+      
+      - name: 📤 Commit go.mod files
+        run: |
+          git config --global user.name 'GitHub Actions Bot'
+          git config --global user.email 'actions@users.noreply.github.com'
+          
+          git add go.mod
+          if [ -f "go.sum" ]; then
+            git add go.sum
+          fi
+          
+          if ! git diff --cached --exit-code > /dev/null; then
+            git commit -m "📦 Initialize Go module
 
-    <!-- Stats Dashboard -->
-    <section class="py-8">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-                <div class="stats-card p-6 rounded-lg shadow-md card-hover">
-                    <div class="flex items-center">
-                        <div class="flex-shrink-0">
-                            <i class="fas fa-newspaper text-3xl text-blue-500"></i>
-                        </div>
-                        <div class="ml-4">
-                            <p class="text-sm font-medium text-gray-500">Total Posts</p>
-                            <p class="text-2xl font-semibold text-gray-900">` + strconv.Itoa(len(entries)) + `</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="stats-card p-6 rounded-lg shadow-md card-hover">
-                    <div class="flex items-center">
-                        <div class="flex-shrink-0">
-                            <i class="fas fa-plus-circle text-3xl text-green-500"></i>
-                        </div>
-                        <div class="ml-4">
-                            <p class="text-sm font-medium text-gray-500">New Posts</p>
-                            <p class="text-2xl font-semibold text-gray-900">` + strconv.Itoa(countNewEntries(entries)) + `</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="stats-card p-6 rounded-lg shadow-md card-hover">
-                    <div class="flex items-center">
-                        <div class="flex-shrink-0">
-                            <i class="fas fa-calendar-day text-3xl text-orange-500"></i>
-                        </div>
-                        <div class="ml-4">
-                            <p class="text-sm font-medium text-gray-500">Today's Posts</p>
-                            <p class="text-2xl font-semibold text-gray-900">` + strconv.Itoa(countTodayEntries(entries)) + `</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="stats-card p-6 rounded-lg shadow-md card-hover">
-                    <div class="flex items-center">
-                        <div class="flex-shrink-0">
-                            <i class="fas fa-chart-line text-3xl text-purple-500"></i>
-                        </div>
-                        <div class="ml-4">
-                            <p class="text-sm font-medium text-gray-500">Success Rate</p>
-                            <p class="text-2xl font-semibold text-gray-900">` + fmt.Sprintf("%.1f%%", float64(stats.SuccessfulFeeds)/float64(stats.TotalFeeds)*100) + `</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Search and Filters -->
-    <section class="py-4 bg-white border-b">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row gap-4 items-center">
-                <div class="flex-1 relative">
-                    <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
-                    <input 
-                        type="text" 
-                        id="searchInput" 
-                        placeholder="Search posts by title, category, or keywords..." 
-                        class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                    >
-                </div>
-                <div class="flex gap-2">
-                    <select id="categoryFilter" class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500">
-                        <option value="">All Categories</option>` + generateCategoryOptions(sources) + `
-                    </select>
-                    <select id="timeFilter" class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500">
-                        <option value="">All Time</option>
-                        <option value="today">Today</option>
-                        <option value="week">This Week</option>
-                        <option value="new">New Posts</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Posts Grid -->
-    <section class="py-8">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6" id="postsContainer">
-`
-
-	// Generate HTML cards for each post
-	for _, entry := range entries {
-		priorityClass := "priority-low"
-		if entry.Priority <= 3 {
-			priorityClass = "priority-high"
-		} else if entry.Priority <= 6 {
-			priorityClass = "priority-medium"
-		}
-		
-		categoryColor := getCategoryColor(entry.FeedNames, sources)
-		timeStr := formatDisplayTime(entry.ParsedTime)
-		
-		htmlContent += fmt.Sprintf(`
-                <div class="post-card bg-white rounded-lg shadow-md card-hover %s" 
-                     data-category="%s" 
-                     data-time="%s" 
-                     data-new="%t" 
-                     data-today="%t">
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <span class="category-badge text-white font-medium" style="background-color: %s">
-                                %s
-                            </span>
-                            <div class="flex space-x-1">
-                                %s
-                                %s
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="%s" target="_blank" class="hover:text-blue-600 transition-colors">
-                                %s
-                            </a>
-                        </h3>
-                        <div class="flex items-center text-sm text-gray-500 mb-3">
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>%s</span>
-                            %s
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-400">
-                                %d source(s)
-                            </span>
-                            <a href="%s" target="_blank" 
-                               class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-                                Read More <i class="fas fa-external-link-alt ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>`,
-			priorityClass,
-			getCategoryFromFeeds(entry.FeedNames, sources),
-			timeStr,
-			entry.IsNew,
-			entry.IsToday,
-			categoryColor,
-			getCategoryFromFeeds(entry.FeedNames, sources),
-			func() string { if entry.IsNew { return `<span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">New</span>` }; return "" }(),
-			func() string { if entry.IsToday { return `<span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">Today</span>` }; return "" }(),
-			entry.GUID,
-			sanitizeHTMLTitle(entry.Title),
-			timeStr,
-			func() string { if entry.Author != "" { return fmt.Sprintf(` • <i class="fas fa-user mr-1"></i>%s`, entry.Author) }; return "" }(),
-			len(entry.Feeds),
-			entry.GUID,
-		)
-	}
-
-	htmlContent += `
-            </div>
+            - Add go.mod file
+            - Set up proper dependency management
+            - Auto-generated by GitHub Actions"
             
-            <!-- Load More Button -->
-            <div class="text-center mt-8">
-                <button id="loadMoreBtn" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors">
-                    <i class="fas fa-chevron-down mr-2"></i>
-                    Load More Posts
-                </button>
-            </div>
-        </div>
-    </section>
+            git push origin main
+            echo "✅ Go module files committed and pushed"
+          else
+            echo "ℹ️ No changes to commit"
+          fi
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">🛡️ Cybersecurity Dashboard</h3>
-                    <p class="text-gray-300">
-                        Automated aggregation of cybersecurity content from Medium. 
-                        Stay updated with the latest security research, bug bounty writeups, and threat intelligence.
-                    </p>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">📊 Statistics</h3>
-                    <ul class="text-gray-300 space-y-2">
-                        <li>📰 Total Posts: ` + strconv.Itoa(len(entries)) + `</li>
-                        <li>🔄 Feeds Monitored: ` + strconv.Itoa(len(sources)) + `</li>
-                        <li>⚡ Update Frequency: Every 2 hours</li>
-                        <li>🎯 Success Rate: ` + fmt.Sprintf("%.1f%%", float64(stats.SuccessfulFeeds)/float64(stats.TotalFeeds)*100) + `</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">🔗 Links</h3>
-                    <ul class="text-gray-300 space-y-2">
-                        <li><a href="https://github.com/your-username/medium-writeups" class="hover:text-white transition-colors">
-                            <i class="fab fa-github mr-2"></i>GitHub Repository
-                        </a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">
-                            <i class="fas fa-download mr-2"></i>JSON API
-                        </a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">
-                            <i class="fas fa-rss mr-2"></i>RSS Feed
-                        </a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-                <p>Generated by ` + appName + ` ` + appVersion + ` • Last updated: ` + getCurrentDateGMT() + ` GMT</p>
-                <p class="mt-2">⭐ Star the repository if you find this useful!</p>
-            </div>
-        </div>
-    </footer>
+  # Job 3: Build and test
+  build-test:
+    name: 🏗️ Build & Test
+    runs-on: ubuntu-latest
+    needs: [setup, init-go-module]
+    if: always() && needs.setup.outputs.should_proceed == 'true'
+    
+    steps:
+      - name: 📋 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main  # Ensure we get latest changes including go.mod
+      
+      - name: 🔧 Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: ${{ env.GO_VERSION }}
+          cache: true
+      
+      - name: 📦 Ensure Go module exists
+        run: |
+          if [ ! -f "go.mod" ]; then
+            echo "📦 Creating go.mod..."
+            go mod init medium-writeups-aggregator
+          fi
+          
+          echo "📥 Downloading dependencies..."
+          go mod tidy
+          go mod download
+          echo "✅ Dependencies ready"
+      
+      - name: 🧪 Build application
+        run: |
+          echo "🔨 Building application..."
+          go build -v -o aggregator ./main.go
+          echo "✅ Build successful"
+          
+          # Test if the binary works
+          echo "🧪 Testing binary..."
+          ls -la aggregator
+          echo "✅ Binary test completed"
+      
+      - name: 🔍 Run code analysis
+        run: |
+          echo "🔍 Running go vet..."
+          go vet ./...
+          echo "✅ Code analysis passed"
 
-    <!-- JavaScript for interactivity -->
-    <script>
-        // Search functionality
-        const searchInput = document.getElementById('searchInput');
-        const categoryFilter = document.getElementById('categoryFilter');
-        const timeFilter = document.getElementById('timeFilter');
-        const postsContainer = document.getElementById('postsContainer');
-        const loadMoreBtn = document.getElementById('loadMoreBtn');
-        
-        let visiblePosts = 12;
-        let allPosts = Array.from(document.querySelectorAll('.post-card'));
-        
-        function filterPosts() {
-            const searchTerm = searchInput.value.toLowerCase();
-            const selectedCategory = categoryFilter.value;
-            const selectedTime = timeFilter.value;
+  # Job 4: Main aggregation job with enhanced rate limiting
+  aggregate:
+    name: 📰 Aggregate Posts
+    runs-on: ubuntu-latest
+    needs: [setup, build-test]
+    if: needs.setup.outputs.should_proceed == 'true'
+    timeout-minutes: 60
+    
+    steps:
+      - name: 📋 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: main  # Get latest version with go.mod
+      
+      - name: 🔧 Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: ${{ env.GO_VERSION }}
+          cache: true
+      
+      - name: 🌍 Configure environment
+        run: |
+          sudo timedatectl set-timezone ${{ env.TIMEZONE }}
+          echo "🌍 Timezone: $(timedatectl show --property=Timezone --value)"
+          echo "📅 Current time: $(date)"
+          echo "🔄 Max retries: ${{ env.MAX_RETRIES }}"
+          echo "⏱️ Rate limit delay: ${{ env.RATE_LIMIT_DELAY }}s"
+      
+      - name: 📦 Prepare Go module
+        run: |
+          if [ ! -f "go.mod" ]; then
+            echo "📦 Creating go.mod..."
+            go mod init medium-writeups-aggregator
+          fi
+          go mod tidy
+          echo "✅ Go module ready"
+      
+      - name: 💾 Backup current files
+        run: |
+          if [ -f README.md ]; then
+            cp README.md README.md.backup
+            echo "✅ Current README backed up"
+          else
+            echo "ℹ️ No existing README to backup"
+            touch README.md.backup
+          fi
+          
+          if [ -f index.html ]; then
+            cp index.html index.html.backup
+            echo "✅ Current index.html backed up"
+          else
+            echo "ℹ️ No existing index.html to backup"
+          fi
+      
+      - name: 🚀 Run aggregator with enhanced error handling
+        id: aggregate
+        run: |
+          echo "🚀 Starting Medium cybersecurity posts aggregation..."
+          
+          # Set environment variables for the Go program
+          export RATE_LIMIT_DELAY="${{ env.RATE_LIMIT_DELAY }}"
+          export DEBUG_MODE="${{ github.event.inputs.debug_mode || 'false' }}"
+          export MAX_FEEDS="${{ github.event.inputs.max_feeds || '0' }}"
+          
+          echo "🔧 Configuration:"
+          echo "  - Rate limit delay: $RATE_LIMIT_DELAY seconds"
+          echo "  - Debug mode: $DEBUG_MODE"
+          echo "  - Max feeds: $MAX_FEEDS"
+          
+          # Run with timeout and capture both stdout and stderr
+          if timeout 3000 go run main.go 2>&1 | tee aggregator.log; then
+            echo "✅ Aggregation completed successfully"
             
-            allPosts.forEach(post => {
-                const title = post.querySelector('h3').textContent.toLowerCase();
-                const category = post.dataset.category;
-                const isNew = post.dataset.new === 'true';
-                const isToday = post.dataset.today === 'true';
-                
-                let matches = true;
-                
-                // Search filter
-                if (searchTerm && !title.includes(searchTerm)) {
-                    matches = false;
-                }
-                
-                // Category filter
-                if (selectedCategory && category !== selectedCategory) {
-                    matches = false;
-                }
-                
-                // Time filter
-                if (selectedTime === 'today' && !isToday) {
-                    matches = false;
-                } else if (selectedTime === 'new' && !isNew) {
-                    matches = false;
-                }
-                
-                post.style.display = matches ? 'block' : 'none';
+            # Check if files were generated
+            if [ -f README.md ] && [ -s README.md ]; then
+              WORD_COUNT=$(wc -w < README.md)
+              echo "✅ README.md generated ($WORD_COUNT words)"
+              echo "success=true" >> $GITHUB_OUTPUT
+            else
+              echo "❌ README.md not generated or empty"
+              echo "success=false" >> $GITHUB_OUTPUT
+              exit 1
+            fi
+          else
+            echo "❌ Aggregation failed"
+            echo "📊 Last 50 lines of output:"
+            tail -50 aggregator.log || echo "No log available"
+            echo "success=false" >> $GITHUB_OUTPUT
+            exit 1
+          fi
+      
+      - name: 📊 Analyze results
+        id: analyze
+        if: steps.aggregate.outputs.success == 'true'
+        run: |
+          echo "📊 Analyzing aggregation results..."
+          
+          # Extract statistics from README
+          TOTAL_POSTS=$(grep -o "Total Posts.*[0-9]\+" README.md | grep -o "[0-9]\+" | head -1 || echo "0")
+          NEW_POSTS=$(grep -o "New Posts.*[0-9]\+" README.md | grep -o "[0-9]\+" | head -1 || echo "0")
+          TODAY_POSTS=$(grep -o "Today's Posts.*[0-9]\+" README.md | grep -o "[0-9]\+" | head -1 || echo "0")
+          WORD_COUNT=$(wc -w < README.md)
+          
+          echo "📈 Content statistics:"
+          echo "  - Total posts: $TOTAL_POSTS"
+          echo "  - New posts: $NEW_POSTS"
+          echo "  - Today's posts: $TODAY_POSTS"
+          echo "  - Word count: $WORD_COUNT"
+          
+          # Validate minimum content
+          if [ $TOTAL_POSTS -eq 0 ] || [ $WORD_COUNT -lt 100 ]; then
+            echo "⚠️ Content validation failed (posts: $TOTAL_POSTS, words: $WORD_COUNT)"
+            echo "has_content=false" >> $GITHUB_OUTPUT
+          else
+            echo "✅ Content validation passed"
+            echo "has_content=true" >> $GITHUB_OUTPUT
+          fi
+          
+          # Save statistics
+          echo "total_posts=$TOTAL_POSTS" >> $GITHUB_OUTPUT
+          echo "new_posts=$NEW_POSTS" >> $GITHUB_OUTPUT
+          echo "today_posts=$TODAY_POSTS" >> $GITHUB_OUTPUT
+          echo "word_count=$WORD_COUNT" >> $GITHUB_OUTPUT
+      
+      - name: 🔍 Compare with previous version
+        id: compare
+        if: steps.analyze.outputs.has_content == 'true'
+        run: |
+          echo "🔍 Comparing with previous version..."
+          
+          FORCE_UPDATE="${{ github.event.inputs.force_update }}"
+          HAS_CHANGES=false
+          
+          if [ ! -s README.md.backup ]; then
+            echo "ℹ️ No previous content - treating as new"
+            HAS_CHANGES=true
+          elif [ "$FORCE_UPDATE" = "true" ]; then
+            echo "🔄 Force update requested"
+            HAS_CHANGES=true
+          else
+            # Simple comparison - check if content differs significantly
+            NEW_COUNT="${{ steps.analyze.outputs.new_posts }}"
+            TOTAL_COUNT="${{ steps.analyze.outputs.total_posts }}"
+            
+            if [ "$NEW_COUNT" -gt 0 ] || [ "$TOTAL_COUNT" -gt 0 ]; then
+              echo "📝 New content detected ($NEW_COUNT new posts, $TOTAL_COUNT total)"
+              HAS_CHANGES=true
+            else
+              echo "📋 No significant changes"
+              HAS_CHANGES=false
+            fi
+          fi
+          
+          echo "has_changes=$HAS_CHANGES" >> $GITHUB_OUTPUT
+          echo "📊 Change detection result: $HAS_CHANGES"
+      
+      - name: 🧹 Clean output files
+        if: steps.compare.outputs.has_changes == 'true'
+        run: |
+          echo "🧹 Cleaning ANSI color codes from output files..."
+          
+          # Clean README.md
+          if [ -f README.md ]; then
+            sed -i 's/\x1b\[[0-9;]*m//g' README.md
+            echo "✅ README.md cleaned"
+          fi
+          
+          # Clean index.html if it exists
+          if [ -f index.html ]; then
+            sed -i 's/\x1b\[[0-9;]*m//g' index.html
+            echo "✅ index.html cleaned"
+          fi
+      
+      - name: 📤 Commit and push changes
+        if: steps.compare.outputs.has_changes == 'true'
+        id: commit
+        run: |
+          echo "📤 Preparing to commit changes..."
+          
+          # Configure Git
+          git config --global user.name 'Medium Writeups Bot'
+          git config --global user.email 'actions+medium-bot@users.noreply.github.com'
+          
+          # Add changes
+          git add README.md
+          if [ -f index.html ]; then
+            git add index.html
+          fi
+          
+          # Check for changes
+          if git diff --cached --exit-code > /dev/null; then
+            echo "ℹ️ No changes to commit"
+            echo "committed=false" >> $GITHUB_OUTPUT
+          else
+            # Create commit message
+            UTC_DATE=$(date -u +'%a %b %d %H:%M:%S UTC %Y')
+            IST_DATE=$(TZ='Asia/Kolkata' date +'%a %b %d %H:%M:%S IST %Y')
+            
+            COMMIT_MSG="🔄 Updated Medium Cybersecurity Posts - $IST_DATE
+
+            📊 Statistics:
+            • Total Posts: ${{ steps.analyze.outputs.total_posts }}
+            • New Posts: ${{ steps.analyze.outputs.new_posts }}
+            • Today's Posts: ${{ steps.analyze.outputs.today_posts }}
+            • Content Size: ${{ steps.analyze.outputs.word_count }} words
+            
+            🤖 Auto-generated by GitHub Actions
+            📅 UTC: $UTC_DATE
+            🏃 Run: ${{ github.run_number }}"
+            
+            # Commit and push with retry
+            git commit -m "$COMMIT_MSG"
+            
+            PUSH_ATTEMPTS=0
+            while [ $PUSH_ATTEMPTS -lt 3 ]; do
+              if git push origin main; then
+                echo "✅ Successfully pushed changes"
+                echo "committed=true" >> $GITHUB_OUTPUT
+                break
+              else
+                PUSH_ATTEMPTS=$((PUSH_ATTEMPTS + 1))
+                echo "⚠️ Push attempt $PUSH_ATTEMPTS failed"
+                if [ $PUSH_ATTEMPTS -lt 3 ]; then
+                  sleep 10
+                  git pull --rebase origin main || true
+                fi
+              fi
+            done
+            
+            if [ $PUSH_ATTEMPTS -eq 3 ]; then
+              echo "❌ Failed to push after 3 attempts"
+              exit 1
+            fi
+          fi
+      
+      - name: 🧹 Cleanup
+        if: always()
+        run: |
+          echo "🧹 Cleaning up temporary files..."
+          rm -f README.md.backup index.html.backup aggregator.log aggregator
+          echo "✅ Cleanup completed"
+      
+      - name: 📋 Generate summary
+        if: always()
+        run: |
+          echo "# 🛡️ Medium Cybersecurity Aggregation Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "## 📊 Execution Details" >> $GITHUB_STEP_SUMMARY
+          echo "- **Timestamp**: $(date -u)" >> $GITHUB_STEP_SUMMARY
+          echo "- **Trigger**: ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Run**: #${{ github.run_number }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if [ "${{ steps.analyze.outputs.has_content }}" = "true" ]; then
+            echo "## 📈 Content Statistics" >> $GITHUB_STEP_SUMMARY
+            echo "- **Total Posts**: ${{ steps.analyze.outputs.total_posts }}" >> $GITHUB_STEP_SUMMARY
+            echo "- **New Posts**: ${{ steps.analyze.outputs.new_posts }}" >> $GITHUB_STEP_SUMMARY
+            echo "- **Today's Posts**: ${{ steps.analyze.outputs.today_posts }}" >> $GITHUB_STEP_SUMMARY
+            echo "- **Content Size**: ${{ steps.analyze.outputs.word_count }} words" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARYname: 🛡️ Medium Cybersecurity Writeups Aggregator
+
+on:
+  # Scheduled runs - optimized for different time periods
+  schedule:
+    - cron: '0 */2 * * *'        # Every 2 hours
+    - cron: '*/30 9-17 * * 1-5'  # Every 30 minutes during business hours
+  
+  # Manual trigger for testing and on-demand updates
+  workflow_dispatch:
+    inputs:
+      force_update:
+        description: 'Force update even if no new content'
+        required: false
+        default: 'false'
+        type: boolean
+      debug_mode:
+        description: 'Enable debug output'
+        required: false
+        default: 'false'
+        type: boolean
+      max_feeds:
+        description: 'Maximum number of feeds to process (for testing)'
+        required: false
+        default: '0'
+        type: number
+  
+  # Trigger on main branch changes
+  push:
+    branches:
+      - main
+    paths:
+      - 'main.go'
+      - '.github/workflows/*.yml'
+      - 'go.mod'
+      - 'go.sum'
+
+# Enhanced permissions for security and functionality
+permissions:
+  contents: write
+  issues: write
+  pull-requests: read
+  actions: read
+
+# Global environment variables
+env:
+  GO_VERSION: '1.23.4'
+  TIMEZONE: 'UTC'
+  MAX_RETRIES: 3
+  RATE_LIMIT_DELAY: 5
+  REQUEST_TIMEOUT: 30
+
+jobs:
+  # Job 1: Setup and validate environment
+  setup:
+    name: 🔧 Setup Environment
+    runs-on: ubuntu-latest
+    outputs:
+      should_proceed: ${{ steps.validate.outputs.should_proceed }}
+      go_mod_exists: ${{ steps.check_files.outputs.go_mod_exists }}
+      
+    steps:
+      - name: 📋 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      
+      - name: 🔍 Check required files
+        id: check_files
+        run: |
+          echo "🔍 Checking for required files..."
+          
+          # Check if main.go exists
+          if [ ! -f "main.go" ]; then
+            echo "❌ main.go not found!"
+            echo "should_proceed=false" >> $GITHUB_OUTPUT
+            exit 1
+          fi
+          echo "✅ main.go found"
+          
+          # Check if go.mod exists
+          if [ -f "go.mod" ]; then
+            echo "✅ go.mod found"
+            echo "go_mod_exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "⚠️ go.mod not found - will create it"
+            echo "go_mod_exists=false" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: ✅ Validate setup
+        id: validate
+        run: |
+          echo "✅ All checks passed"
+          echo "should_proceed=true" >> $GITHUB_OUTPUT
+          echo "📅 Workflow triggered at: $(date -u)"
+          echo "🔄 Trigger event: ${{ github.event_name }}"
+
+  # Job 2: Initialize Go module if needed
+  init-go-module:
+    name: 📦 Initialize Go Module
+    runs-on: ubuntu-latest
+    needs: setup
+    if: needs.setup.outputs.should_proceed == 'true' && needs.setup.outputs.go_mod_exists == 'false'
+    
+    steps:
+      - name: 📋 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: 🔧 Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: ${{ env.GO_VERSION }}
+      
+      - name: 📦 Initialize Go module
+        run: |
+          echo "📦 Initializing Go module..."
+          go mod init medium-writeups-aggregator
+          echo "✅ Go module initialized"
+          
+          # Add any required dependencies based on main.go imports
+          echo "📥 Adding dependencies..."
+          go mod tidy
+          echo "✅ Dependencies resolved"
+      
+      - name: 📤 Commit go.mod files
+        run: |
+          git config --global user.name 'GitHub Actions Bot'
+          git config --global user.email 'actions@users.noreply.github.com'
+          
+          git add go.mod go.sum
+          
+          if ! git diff --cached --exit-code > /dev/null; then
+            git commit -m "📦 Initialize Go module
+
+            - Add go.mod and go.sum files
+            - Set up proper dependency management
+            - Auto-generated by GitHub Actions"
+            
+            git push origin main
+            echo "✅ Go module files committed and pushed"
+          else
+            echo "ℹ️ No changes to commit"
+          fi
+
+  # Job 3: Build and test
+  build-test:
+    name: 🏗️ Build & Test
+    runs-on: ubuntu-latest
+    needs: [setup, init-go-module]
+    if: always() && needs.setup.outputs.should_proceed == 'true'
+    
+    steps:
+      - name: 📋 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main  # Ensure we get latest changes including go.mod
+      
+      - name: 🔧 Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: ${{ env.GO_VERSION }}
+          cache: true
+      
+      - name: 📦 Ensure Go module exists
+        run: |
+          if [ ! -f "go.mod" ]; then
+            echo "📦 Creating go.mod..."
+            go mod init medium-writeups-aggregator
+          fi
+          
+          echo "📥 Downloading dependencies..."
+          go mod tidy
+          go mod download
+          echo "✅ Dependencies ready"
+      
+      - name: 🧪 Build application
+        run: |
+          echo "🔨 Building application..."
+          go build -v -o aggregator ./main.go
+          echo "✅ Build successful"
+          
+          # Test if the binary works
+          echo "🧪 Testing binary..."
+          ./aggregator --help 2>/dev/null || echo "ℹ️ Binary created (help flag not implemented)"
+          echo "✅ Binary test completed"
+      
+      - name: 🔍 Run code analysis
+        run: |
+          echo "🔍 Running go vet..."
+          go vet ./...
+          echo "✅ Code analysis passed"
+
+  # Job 4: Main aggregation job with enhanced rate limiting
+  aggregate:
+    name: 📰 Aggregate Posts
+    runs-on: ubuntu-latest
+    needs: [setup, build-test]
+    if: needs.setup.outputs.should_proceed == 'true'
+    timeout-minutes: 45
+    
+    steps:
+      - name: 📋 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: main  # Get latest version with go.mod
+      
+      - name: 🔧 Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: ${{ env.GO_VERSION }}
+          cache: true
+      
+      - name: 🌍 Configure environment
+        run: |
+          sudo timedatectl set-timezone ${{ env.TIMEZONE }}
+          echo "🌍 Timezone: $(timedatectl show --property=Timezone --value)"
+          echo "📅 Current time: $(date)"
+          echo "🔄 Max retries: ${{ env.MAX_RETRIES }}"
+          echo "⏱️ Rate limit delay: ${{ env.RATE_LIMIT_DELAY }}s"
+      
+      - name: 📦 Prepare Go module
+        run: |
+          if [ ! -f "go.mod" ]; then
+            echo "📦 Creating go.mod..."
+            go mod init medium-writeups-aggregator
+          fi
+          go mod tidy
+          echo "✅ Go module ready"
+      
+      - name: 💾 Backup current README
+        run: |
+          if [ -f README.md ]; then
+            cp README.md README.md.backup
+            echo "✅ Current README backed up"
+          else
+            echo "ℹ️ No existing README to backup"
+            touch README.md.backup
+          fi
+      
+      - name: 🚀 Run aggregator with enhanced error handling
+        id: aggregate
+        run: |
+          echo "🚀 Starting Medium cybersecurity posts aggregation..."
+          
+          # Create a wrapper script for better error handling
+          cat > run_aggregator.sh << 'EOF'
+          #!/bin/bash
+          set -euo pipefail
+          
+          RETRY_COUNT=0
+          MAX_RETRIES=$1
+          RATE_LIMIT_DELAY=$2
+          DEBUG_MODE=$3
+          MAX_FEEDS=$4
+          
+          while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
+            echo "🔄 Attempt $((RETRY_COUNT + 1))/$MAX_RETRIES"
+            
+            # Set environment variables for the Go program
+            export RATE_LIMIT_DELAY="$RATE_LIMIT_DELAY"
+            export DEBUG_MODE="$DEBUG_MODE"
+            export MAX_FEEDS="$MAX_FEEDS"
+            
+            if timeout 2400 go run main.go > NEW-README.md 2>&1; then
+              echo "✅ Aggregation completed successfully"
+              
+              # Validate output
+              if [ -s NEW-README.md ]; then
+                WORD_COUNT=$(wc -w < NEW-README.md)
+                if [ $WORD_COUNT -gt 50 ]; then
+                  echo "✅ Output validation passed ($WORD_COUNT words)"
+                  exit 0
+                else
+                  echo "⚠️ Output seems too small ($WORD_COUNT words)"
+                fi
+              else
+                echo "❌ Output file is empty"
+              fi
+            fi
+            
+            RETRY_COUNT=$((RETRY_COUNT + 1))
+            if [ $RETRY_COUNT -lt $MAX_RETRIES ]; then
+              DELAY=$((RATE_LIMIT_DELAY * RETRY_COUNT * 2))  # Exponential backoff
+              echo "⏳ Rate limited - waiting ${DELAY}s before retry..."
+              sleep $DELAY
+            fi
+          done
+          
+          echo "❌ All retry attempts failed"
+          exit 1
+          EOF
+          
+          chmod +x run_aggregator.sh
+          
+          # Run with parameters
+          DEBUG_MODE="${{ github.event.inputs.debug_mode || 'false' }}"
+          MAX_FEEDS="${{ github.event.inputs.max_feeds || '0' }}"
+          
+          if ./run_aggregator.sh "${{ env.MAX_RETRIES }}" "${{ env.RATE_LIMIT_DELAY }}" "$DEBUG_MODE" "$MAX_FEEDS"; then
+            echo "success=true" >> $GITHUB_OUTPUT
+          else
+            echo "success=false" >> $GITHUB_OUTPUT
+            echo "❌ Aggregation failed after all retries"
+            
+            # Show some debug info
+            echo "📊 Debug information:"
+            echo "- Go version: $(go version)"
+            echo "- Available memory: $(free -h)"
+            echo "- Disk space: $(df -h .)"
+            
+            exit 1
+          fi
+      
+      - name: 📊 Analyze results
+        id: analyze
+        if: steps.aggregate.outputs.success == 'true'
+        run: |
+          echo "📊 Analyzing aggregation results..."
+          
+          if [ ! -f NEW-README.md ] || [ ! -s NEW-README.md ]; then
+            echo "❌ Output file missing or empty"
+            echo "has_content=false" >> $GITHUB_OUTPUT
+            exit 1
+          fi
+          
+          # Extract statistics
+          WORD_COUNT=$(wc -w < NEW-README.md)
+          LINE_COUNT=$(wc -l < NEW-README.md)
+          SIZE=$(du -h NEW-README.md | cut -f1)
+          
+          echo "📄 Generated file stats:"
+          echo "  - Lines: $LINE_COUNT"
+          echo "  - Words: $WORD_COUNT"
+          echo "  - Size: $SIZE"
+          
+          # Extract post statistics
+          TOTAL_POSTS=$(grep -o "Total Posts.*[0-9]\+" NEW-README.md | grep -o "[0-9]\+" | head -1 || echo "0")
+          NEW_POSTS=$(grep -o "New Posts.*[0-9]\+" NEW-README.md | grep -o "[0-9]\+" | head -1 || echo "0")
+          TODAY_POSTS=$(grep -o "Today's Posts.*[0-9]\+" NEW-README.md | grep -o "[0-9]\+" | head -1 || echo "0")
+          
+          echo "📈 Content statistics:"
+          echo "  - Total posts: $TOTAL_POSTS"
+          echo "  - New posts: $NEW_POSTS"
+          echo "  - Today's posts: $TODAY_POSTS"
+          
+          # Validate minimum content
+          if [ $WORD_COUNT -lt 100 ] || [ $TOTAL_POSTS -eq 0 ]; then
+            echo "⚠️ Content validation failed"
+            echo "has_content=false" >> $GITHUB_OUTPUT
+          else
+            echo "✅ Content validation passed"
+            echo "has_content=true" >> $GITHUB_OUTPUT
+          fi
+          
+          # Save statistics
+          echo "total_posts=$TOTAL_POSTS" >> $GITHUB_OUTPUT
+          echo "new_posts=$NEW_POSTS" >> $GITHUB_OUTPUT
+          echo "today_posts=$TODAY_POSTS" >> $GITHUB_OUTPUT
+          echo "word_count=$WORD_COUNT" >> $GITHUB_OUTPUT
+      
+      - name: 🔍 Compare with previous version
+        id: compare
+        if: steps.analyze.outputs.has_content == 'true'
+        run: |
+          echo "🔍 Comparing with previous version..."
+          
+          FORCE_UPDATE="${{ github.event.inputs.force_update }}"
+          HAS_CHANGES=false
+          
+          if [ ! -s README.md.backup ]; then
+            echo "ℹ️ No previous content - treating as new"
+            HAS_CHANGES=true
+          elif [ "$FORCE_UPDATE" = "true" ]; then
+            echo "🔄 Force update requested"
+            HAS_CHANGES=true
+          else
+            # Compare significant content (exclude timestamps and small changes)
+            if ! diff -q \
+              <(grep -v -E "(Last Updated|Updated List|Generated by|Auto-updated)" README.md.backup | head -20) \
+              <(grep -v -E "(Last Updated|Updated List|Generated by|Auto-updated)" NEW-README.md | head -20) \
+              > /dev/null 2>&1; then
+              echo "📝 Significant content changes detected"
+              HAS_CHANGES=true
+            else
+              # Check if we have new posts
+              NEW_COUNT="${{ steps.analyze.outputs.new_posts }}"
+              if [ "$NEW_COUNT" -gt 0 ]; then
+                echo "📝 New posts detected ($NEW_COUNT new posts)"
+                HAS_CHANGES=true
+              else
+                echo "📋 No significant changes"
+                HAS_CHANGES=false
+              fi
+            fi
+          fi
+          
+          echo "has_changes=$HAS_CHANGES" >> $GITHUB_OUTPUT
+          echo "📊 Change detection result: $HAS_CHANGES"
+      
+      - name: 📝 Update README
+        if: steps.compare.outputs.has_changes == 'true'
+        run: |
+          echo "📝 Updating README.md..."
+          
+          # Clean up ANSI color codes from the output
+          sed -i 's/\x1b\[[0-9;]*m//g' NEW-README.md
+          
+          # Replace README
+          rm -f README.md
+          mv NEW-README.md README.md
+          echo "✅ README.md updated successfully"
+      
+      - name: 📤 Commit and push changes
+        if: steps.compare.outputs.has_changes == 'true'
+        id: commit
+        run: |
+          echo "📤 Preparing to commit changes..."
+          
+          # Configure Git
+          git config --global user.name 'Medium Writeups Bot'
+          git config --global user.email 'actions+medium-bot@users.noreply.github.com'
+          
+          # Add changes
+          git add README.md
+          
+          # Check for changes
+          if git diff --cached --exit-code > /dev/null; then
+            echo "ℹ️ No changes to commit"
+            echo "committed=false" >> $GITHUB_OUTPUT
+          else
+            # Create commit message
+            UTC_DATE=$(date -u +'%a %b %d %H:%M:%S UTC %Y')
+            IST_DATE=$(TZ='Asia/Kolkata' date +'%a %b %d %H:%M:%S IST %Y')
+            
+            COMMIT_MSG="🔄 Updated Medium Cybersecurity Posts - $IST_DATE
+
+            📊 Statistics:
+            • Total Posts: ${{ steps.analyze.outputs.total_posts }}
+            • New Posts: ${{ steps.analyze.outputs.new_posts }}
+            • Today's Posts: ${{ steps.analyze.outputs.today_posts }}
+            • Content Size: ${{ steps.analyze.outputs.word_count }} words
+            
+            🤖 Auto-generated by GitHub Actions
+            📅 UTC: $UTC_DATE
+            🏃 Run: ${{ github.run_number }}"
+            
+            # Commit and push with retry
+            git commit -m "$COMMIT_MSG"
+            
+            PUSH_ATTEMPTS=0
+            while [ $PUSH_ATTEMPTS -lt 3 ]; do
+              if git push origin main; then
+                echo "✅ Successfully pushed changes"
+                echo "committed=true" >> $GITHUB_OUTPUT
+                break
+              else
+                PUSH_ATTEMPTS=$((PUSH_ATTEMPTS + 1))
+                echo "⚠️ Push attempt $PUSH_ATTEMPTS failed"
+                if [ $PUSH_ATTEMPTS -lt 3 ]; then
+                  sleep 10
+                  git pull --rebase origin main || true
+                fi
+              fi
+            done
+            
+            if [ $PUSH_ATTEMPTS -eq 3 ]; then
+              echo "❌ Failed to push after 3 attempts"
+              exit 1
+            fi
+          fi
+      
+      - name: 🧹 Cleanup
+        if: always()
+        run: |
+          echo "🧹 Cleaning up temporary files..."
+          rm -f NEW-README.md README.md.backup run_aggregator.sh
+          echo "✅ Cleanup completed"
+      
+      - name: 📋 Generate summary
+        if: always()
+        run: |
+          echo "# 🛡️ Medium Cybersecurity Aggregation Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "## 📊 Execution Details" >> $GITHUB_STEP_SUMMARY
+          echo "- **Timestamp**: $(date -u)" >> $GITHUB_STEP_SUMMARY
+          echo "- **Trigger**: ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Run**: #${{ github.run_number }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if [ "${{ steps.analyze.outputs.has_content }}" = "true" ]; then
+            echo "## 📈 Content Statistics" >> $GITHUB_STEP_SUMMARY
+            echo "- **Total Posts**: ${{ steps.analyze.outputs.total_posts }}" >> $GITHUB_STEP_SUMMARY
+            echo "- **New Posts**: ${{ steps.analyze.outputs.new_posts }}" >> $GITHUB_STEP_SUMMARY
+            echo "- **Today's Posts**: ${{ steps.analyze.outputs.today_posts }}" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          echo "## ✅ Results" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.compare.outputs.has_changes }}" = "true" ]; then
+            echo "- 🔄 **README Updated**: Yes" >> $GITHUB_STEP_SUMMARY
+            echo "- 📝 **Committed**: ${{ steps.commit.outputs.committed || 'false' }}" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "- ⏭️ **README Updated**: No significant changes" >> $GITHUB_STEP_SUMMARY
+          fi
+
+  # Job 5: Deploy to GitHub Pages (if index.html exists)
+  deploy-pages:
+    name: 🌐 Deploy to GitHub Pages
+    runs-on: ubuntu-latest
+    needs: [aggregate]
+    if: needs.aggregate.result == 'success'
+    
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+    
+    # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    
+    steps:
+      - name: 📋 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      
+      - name: 🔍 Check for GitHub Pages files
+        id: check_pages
+        run: |
+          if [ -f "index.html" ]; then
+            echo "✅ index.html found - deploying to GitHub Pages"
+            echo "has_pages=true" >> $GITHUB_OUTPUT
+          else
+            echo "ℹ️ No index.html found - skipping Pages deployment"
+            echo "has_pages=false" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: 🔧 Setup Pages
+        if: steps.check_pages.outputs.has_pages == 'true'
+        uses: actions/configure-pages@v4
+      
+      - name: 📦 Upload Pages artifact
+        if: steps.check_pages.outputs.has_pages == 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+      
+      - name: 🚀 Deploy to GitHub Pages
+        if: steps.check_pages.outputs.has_pages == 'true'
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  # Job 6: Handle failures and notifications
+  handle-failure:
+    name: 🚨 Handle Failures
+    runs-on: ubuntu-latest
+    needs: [aggregate]
+    if: always() && needs.aggregate.result == 'failure'
+    
+    steps:
+      - name: 📊 Failure analysis
+        run: |
+          echo "🚨 Workflow failed - analyzing..."
+          echo "- Aggregate job result: ${{ needs.aggregate.result }}"
+          echo "- Failure time: $(date -u)"
+      
+      - name: 📝 Create failure issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = `🚨 Aggregation Failed - ${new Date().toISOString().split('T')[0]}`;
+            const body = `
+            ## 🚨 Medium Writeups Aggregation Failed
+            
+            **Failure Details:**
+            - **Time**: ${new Date().toISOString()}
+            - **Run**: [${{ github.run_number }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+            - **Trigger**: ${{ github.event_name }}
+            - **Branch**: ${{ github.ref_name }}
+            
+            **Possible Causes:**
+            - Rate limiting from Medium RSS feeds (HTTP 429)
+            - Network connectivity issues
+            - Go module or dependency problems
+            - Application logic errors
+            - Compilation errors in main.go
+            
+            **Debugging Steps:**
+            1. 🔍 [Check the workflow logs](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+            2. ⏳ Wait for rate limits to reset (usually 2-4 hours)
+            3. 🔄 Try manually triggering the workflow with reduced max_feeds (e.g., 20)
+            4. 🔧 Check if main.go compiles locally
+            5. 📝 Review recent changes to main.go or workflow files
+            
+            **Quick Fixes:**
+            - If it's a rate limiting issue, the next scheduled run should work
+            - If it's a compilation error, check the main.go file structure
+            - If it's a dependency issue, the go.mod file may need updating
+            
+            ---
+            *Auto-generated by GitHub Actions*
+            `;
+            
+            // Check if a similar issue already exists
+            const existingIssues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: 'workflow-failure',
+              state: 'open'
             });
             
-            // Reset visible posts count when filtering
-            visiblePosts = 12;
-            showPosts();
-        }
-        
-        function showPosts() {
-            const visiblePostsArray = allPosts.filter(post => post.style.display !== 'none');
-            visiblePostsArray.forEach((post, index) => {
-                post.style.display = index < visiblePosts ? 'block' : 'none';
-            });
-            
-            loadMoreBtn.style.display = visiblePostsArray.length > visiblePosts ? 'block' : 'none';
-        }
-        
-        // Event listeners
-        searchInput.addEventListener('input', filterPosts);
-        categoryFilter.addEventListener('change', filterPosts);
-        timeFilter.addEventListener('change', filterPosts);
-        
-        loadMoreBtn.addEventListener('click', () => {
-            visiblePosts += 12;
-            showPosts();
-        });
-        
-        // Initial load
-        showPosts();
-        
-        // Auto-refresh every 2 hours
-        setTimeout(() => {
-            location.reload();
-        }, 2 * 60 * 60 * 1000);
-    </script>
-</body>
-</html>`
-
-	// Write HTML file
-	err := ioutil.WriteFile(indexFilename, []byte(htmlContent), 0644)
-	if err != nil {
-		printWarning(fmt.Sprintf("Failed to write %s: %v", indexFilename, err))
-	} else {
-		printSuccess(fmt.Sprintf("Generated %s for GitHub Pages", indexFilename))
-	}
-}
+            if (existingIssues.data.length === 0) {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: title,
+                body: body,
+                labels: ['bug', 'workflow-failure', 'automated']
+              });
+              console.log('📝 Failure issue created');
+            } else {
+              console.log('ℹ️ Existing failure issue found - not creating duplicate');
+            }
