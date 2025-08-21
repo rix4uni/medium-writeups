@@ -1,18 +1,26 @@
 package main
 
 import (
-	"bytes"
 	"encoding/xml"
 	"fmt"
-	"io"
+	"io/ioutil"
 	"net/http"
 	"os"
 	"sort"
 	"strings"
 	"time"
-	"unicode/utf8"
 )
 
+// Constants
+const (
+	maxTitleLength    = 65
+	requestDelay      = 3 * time.Second
+	dateFormat        = "Mon, 02 Jan 2006"
+	readmeFilename    = "README.md"
+	outputTableHeader = "| Time | Title | Feed | IsNew | IsToday |\n|-----------|-----|-----|-----|-----|"
+)
+
+// RSS structs for XML parsing
 type RSS struct {
 	Channel Channel `xml:"channel"`
 }
@@ -24,61 +32,49 @@ type Channel struct {
 type Item struct {
 	Title   string `xml:"title"`
 	GUID    string `xml:"guid"`
-	Link    string `xml:"link"`
 	PubDate string `xml:"pubDate"`
 }
 
-type Entry struct {
+// FeedEntry represents a processed RSS entry
+type FeedEntry struct {
 	Title   string
-	URL     string
-	Pub     time.Time
-	Feeds   []string
-	IsNew   bool
-	IsToday bool
+	GUID    string
+	PubDate string
+	Feeds   string
+	IsNew   string
+	IsToday string
 }
 
-const (
-	maxTitleLength   = 65
-	userAgent        = "MediumSecFeedBot/1.0"
-	httpTimeout      = 20 * time.Second
-	maxConcurrency   = 10
-	dateLineFormat   = "Mon, 02 Jan 2006"
-	markdownTimeFmt  = time.RFC1123 // “Mon, 02 Jan 2006 15:04:05 MST”
-)
-
-var httpClient = &http.Client{Timeout: httpTimeout}
-
-func fetchRSSFeed(url string) (*RSS, error) {
-	req, err := http.NewRequest(http.MethodGet, url, nil)
-	if err != nil {
-		return nil, fmt.Errorf("build request %s: %w", url, err)
-	}
-	req.Header.Set("User-Agent", userAgent)
-
-	resp, err := httpClient.Do(req)
-	if err != nil {
-		return nil, fmt.Errorf("fetch %s: %w", url, err)
-	}
-	defer resp.Body.Close()
-
-	if resp.StatusCode < 200 || resp.StatusCode >= 300 {
-		return nil, fmt.Errorf("fetch %s: HTTP %d", url, resp.StatusCode)
-	}
-
-	data, err := io.ReadAll(resp.Body)
-	if err != nil {
-		return nil, fmt.Errorf("read %s: %w", url, err)
-	}
-
-	var rss RSS
-	if err := xml.Unmarshal(data, &rss); err != nil {
-		return nil, fmt.Errorf("parse %s: %w", url, err)
-	}
-	return &rss, nil
+// FeedSource represents an RSS feed source
+type FeedSource struct {
+	URL  string
+	Name string
 }
 
 func main() {
-	// List of RSS feed URLs (unchanged list, kept complete)
+	fmt.Println("🚀 Starting Medium Cybersecurity Posts Aggregator")
+	fmt.Println("📅 Current GMT Date:", getCurrentDateGMT())
+	fmt.Println("----------------------------------------")
+	
+	feedSources := getFeedSources()
+	readmeContent := readREADME()
+	currentDate := getCurrentDateGMT()
+	
+	entries := processFeeds(feedSources, readmeContent, currentDate)
+	
+	if len(entries) == 0 {
+		fmt.Println("❌ No entries found or all feeds failed to fetch")
+		return
+	}
+	
+	sortedEntries := sortEntries(entries)
+	generateOutput(sortedEntries)
+	
+	fmt.Printf("\n✅ Processed %d entries from %d feeds\n", len(sortedEntries), len(feedSources))
+}
+
+// getFeedSources returns the list of Medium RSS feeds to monitor
+func getFeedSources() []FeedSource {
 	urls := []string{
 		"https://medium.com/feed/tag/bug-bounty",
 		"https://medium.com/feed/tag/security",
@@ -144,229 +140,361 @@ func main() {
 		"https://medium.com/feed/tag/bounties",
 		"https://medium.com/feed/tag/api-key",
 		"https://medium.com/feed/tag/cyber-sec",
+		// Additional security-related tags
+		"https://medium.com/feed/tag/network-security",
+		"https://medium.com/feed/tag/cloud-security",
+		"https://medium.com/feed/tag/aws-security",
+		"https://medium.com/feed/tag/azure-security",
+		"https://medium.com/feed/tag/gcp-security",
+		"https://medium.com/feed/tag/kubernetes-security",
+		"https://medium.com/feed/tag/docker-security",
+		"https://medium.com/feed/tag/container-security",
+		"https://medium.com/feed/tag/devsecops",
+		"https://medium.com/feed/tag/secure-coding",
+		"https://medium.com/feed/tag/owasp",
+		"https://medium.com/feed/tag/owasp-top-10",
+		"https://medium.com/feed/tag/mitre-attack",
+		"https://medium.com/feed/tag/malware-analysis",
+		"https://medium.com/feed/tag/reverse-engineering",
+		"https://medium.com/feed/tag/digital-forensics",
+		"https://medium.com/feed/tag/incident-response",
+		"https://medium.com/feed/tag/soc",
+		"https://medium.com/feed/tag/siem",
+		"https://medium.com/feed/tag/threat-intelligence",
+		"https://medium.com/feed/tag/threat-hunting",
+		"https://medium.com/feed/tag/ransomware",
+		"https://medium.com/feed/tag/phishing",
+		"https://medium.com/feed/tag/social-engineering",
+		"https://medium.com/feed/tag/zero-trust",
+		"https://medium.com/feed/tag/vpn",
+		"https://medium.com/feed/tag/firewall",
+		"https://medium.com/feed/tag/ids",
+		"https://medium.com/feed/tag/ips",
+		"https://medium.com/feed/tag/endpoint-security",
+		"https://medium.com/feed/tag/edr",
+		"https://medium.com/feed/tag/xdr",
+		"https://medium.com/feed/tag/sast",
+		"https://medium.com/feed/tag/dast",
+		"https://medium.com/feed/tag/iam",
+		"https://medium.com/feed/tag/privileged-access-management",
+		"https://medium.com/feed/tag/mfa",
+		"https://medium.com/feed/tag/2fa",
+		"https://medium.com/feed/tag/password-security",
+		"https://medium.com/feed/tag/cryptography",
+		"https://medium.com/feed/tag/encryption",
+		"https://medium.com/feed/tag/tls",
+		"https://medium.com/feed/tag/ssl",
+		"https://medium.com/feed/tag/pki",
+		"https://medium.com/feed/tag/data-protection",
+		"https://medium.com/feed/tag/gdpr",
+		"https://medium.com/feed/tag/hipaa",
+		"https://medium.com/feed/tag/pci-dss",
+		"https://medium.com/feed/tag/compliance",
+		"https://medium.com/feed/tag/risk-management",
+		"https://medium.com/feed/tag/security-audit",
+		"https://medium.com/feed/tag/security-assessment",
+		"https://medium.com/feed/tag/red-team",
+		"https://medium.com/feed/tag/blue-team",
+		"https://medium.com/feed/tag/purple-team",
+		"https://medium.com/feed/tag/threat-modeling",
+		"https://medium.com/feed/tag/security-architecture",
+		"https://medium.com/feed/tag/api-security",
+		"https://medium.com/feed/tag/mobile-security",
+		"https://medium.com/feed/tag/android-security",
+		"https://medium.com/feed/tag/ios-security",
+		"https://medium.com/feed/tag/iot-security",
+		"https://medium.com/feed/tag/industrial-control-systems",
+		"https://medium.com/feed/tag/scada-security",
+		"https://medium.com/feed/tag/critical-infrastructure",
+		"https://medium.com/feed/tag/supply-chain-security",
+		"https://medium.com/feed/tag/software-bill-of-materials",
+		"https://medium.com/feed/tag/sbom",
+		"https://medium.com/feed/tag/zeroday",
+		"https://medium.com/feed/tag/zero-day",
+		"https://medium.com/feed/tag/nist",
+		"https://medium.com/feed/tag/iso-27001",
+		"https://medium.com/feed/tag/soc2",
+		"https://medium.com/feed/tag/cis-controls",
+		"https://medium.com/feed/tag/security-awareness",
+		"https://medium.com/feed/tag/security-training",
+		"https://medium.com/feed/tag/cyber-threat",
+		"https://medium.com/feed/tag/cyber-attack",
+		"https://medium.com/feed/tag/cyber-crime",
+		"https://medium.com/feed/tag/dark-web",
+		"https://medium.com/feed/tag/tor",
+		"https://medium.com/feed/tag/blockchain-security",
+		"https://medium.com/feed/tag/smart-contract-security",
+		"https://medium.com/feed/tag/defi-security",
+		"https://medium.com/feed/tag/nft-security",
+		"https://medium.com/feed/tag/metaverse-security",
+		"https://medium.com/feed/tag/ai-security",
+		"https://medium.com/feed/tag/machine-learning-security",
+		"https://medium.com/feed/tag/adversarial-machine-learning",
+		"https://medium.com/feed/tag/data-privacy",
+		"https://medium.com/feed/tag/privacy-by-design",
+		"https://medium.com/feed/tag/secure-development",
+		"https://medium.com/feed/tag/secure-sdlc",
+		"https://medium.com/feed/tag/security-testing",
+		"https://medium.com/feed/tag/fuzzing",
+		"https://medium.com/feed/tag/binary-exploitation",
+		"https://medium.com/feed/tag/buffer-overflow",
+		"https://medium.com/feed/tag/format-string",
+		"https://medium.com/feed/tag/heap-exploitation",
+		"https://medium.com/feed/tag/return-oriented-programming",
+		"https://medium.com/feed/tag/rop",
+		"https://medium.com/feed/tag/shellcode",
+		"https://medium.com/feed/tag/metasploit",
+		"https://medium.com/feed/tag/burp-suite",
+		"https://medium.com/feed/tag/nmap",
+		"https://medium.com/feed/tag/wireshark",
+		"https://medium.com/feed/tag/nessus",
+		"https://medium.com/feed/tag/openvas",
+		"https://medium.com/feed/tag/security-onion",
+		"https://medium.com/feed/tag/elastic-security",
+		"https://medium.com/feed/tag/splunk",
+		"https://medium.com/feed/tag/security-operations",
+		"https://medium.com/feed/tag/dfir",
+		"https://medium.com/feed/tag/memory-forensics",
+		"https://medium.com/feed/tag/disk-forensics",
+		"https://medium.com/feed/tag/network-forensics",
+		"https://medium.com/feed/tag/mobile-forensics",
+		"https://medium.com/feed/tag/cloud-forensics",
+		"https://medium.com/feed/tag/malware-research",
+		"https://medium.com/feed/tag/apt",
+		"https://medium.com/feed/tag/advanced-persistent-threat",
+		"https://medium.com/feed/tag/cyber-espionage",
+		"https://medium.com/feed/tag/cyber-warfare",
+		"https://medium.com/feed/tag/nation-state",
+		"https://medium.com/feed/tag/hacktivism",
+		"https://medium.com/feed/tag/cyber-insurance",
+		"https://medium.com/feed/tag/security-governance",
+		"https://medium.com/feed/tag/security-leadership",
+		"https://medium.com/feed/tag/security-strategy",
+		"https://medium.com/feed/tag/security-metrics",
+		"https://medium.com/feed/tag/security-roi",
+		"https://medium.com/feed/tag/security-budget",
+		"https://medium.com/feed/tag/security-career",
+		"https://medium.com/feed/tag/cybersecurity-jobs",
+		"https://medium.com/feed/tag/security-certifications",
+		"https://medium.com/feed/tag/cissp",
+		"https://medium.com/feed/tag/ceh",
+		"https://medium.com/feed/tag/oscp",
+		"https://medium.com/feed/tag/security-plus",
+		"https://medium.com/feed/tag/cybersecurity-education",
+		"https://medium.com/feed/tag/cyber-range",
+		"https://medium.com/feed/tag/capture-the-flag",
+		"https://medium.com/feed/tag/ctf",
+		"https://medium.com/feed/tag/security-competitions",
+		"https://medium.com/feed/tag/cyber-drills",
+		"https://medium.com/feed/tag/tabletop-exercises",
+		"https://medium.com/feed/tag/security-conferences",
+		"https://medium.com/feed/tag/black-hat",
+		"https://medium.com/feed/tag/defcon",
+		"https://medium.com/feed/tag/rsaconference",
 	}
-
-	// Read README for "IsNew" detection (graceful if missing)
-	readmeText := ""
-	if b, err := os.ReadFile("README.md"); err == nil {
-		readmeText = string(b)
+	
+	var sources []FeedSource
+	for _, url := range urls {
+		sources = append(sources, FeedSource{
+			URL:  url,
+			Name: extractFeedName(url),
+		})
 	}
-
-	nowUTC := time.Now().UTC()
-	currentDateLine := nowUTC.Format(dateLineFormat)
-
-	// Concurrent fetch
-	type res struct {
-		url  string
-		rss  *RSS
-		err  error
-	}
-	jobs := make(chan string)
-	results := make(chan res)
-
-	// Workers
-	for w := 0; w < maxConcurrency; w++ {
-		go func() {
-			for u := range jobs {
-				rss, err := fetchRSSFeed(u)
-				results <- res{url: u, rss: rss, err: err}
-			}
-		}()
-	}
-
-	go func() {
-		for _, u := range urls {
-			jobs <- u
-		}
-		close(jobs)
-	}()
-
-	// Collect
-	entries := make(map[string]*Entry) // key by URL (or GUID fallback)
-	seen := 0
-	done := 0
-	expected := len(urls)
-	for done < expected {
-		r := <-results
-		done++
-		if r.err != nil {
-			fmt.Fprintf(os.Stderr, "[WARN] %s\n", r.err)
-			continue
-		}
-		tag := extractFeedName(r.url)
-
-		for _, it := range r.rss.Channel.Items {
-			seen++
-
-			// Prefer link; fallback to guid
-			url := firstNonEmpty(strings.TrimSpace(it.Link), strings.TrimSpace(it.GUID))
-			if url == "" {
-				// skip malformed
-				continue
-			}
-
-			pub, ok := parseAnyDate(it.PubDate)
-			if !ok {
-				// skip if we can’t parse date to keep table clean
-				continue
-			}
-
-			key := url // stable dedupe key
-			e, exists := entries[key]
-			if !exists {
-				e = &Entry{
-					Title: it.Title,
-					URL:   url,
-					Pub:   pub.UTC(),
-					Feeds: []string{tag},
-				}
-				// "IsNew" if README doesn't contain URL or GUID (when present)
-				if readmeText != "" {
-					if !(strings.Contains(readmeText, url) || (it.GUID != "" && strings.Contains(readmeText, it.GUID))) {
-						e.IsNew = true
-					}
-				}
-				// Today?
-				e.IsToday = isToday(pub.UTC(), currentDateLine)
-				entries[key] = e
-			} else {
-				// merge tag
-				if !contains(e.Feeds, tag) {
-					e.Feeds = append(e.Feeds, tag)
-				}
-			}
-		}
-	}
-
-	// To slice
-	list := make([]*Entry, 0, len(entries))
-	for _, e := range entries {
-		list = append(list, e)
-	}
-
-	// Sort: IsNew desc, IsToday desc, Pub desc
-	sort.SliceStable(list, func(i, j int) bool {
-		if list[i].IsNew != list[j].IsNew {
-			return list[i].IsNew && !list[j].IsNew
-		}
-		if list[i].IsToday != list[j].IsToday {
-			return list[i].IsToday && !list[j].IsToday
-		}
-		return list[i].Pub.After(list[j].Pub)
-	})
-
-	// Output
-	var buf bytes.Buffer
-	fmt.Fprintf(&buf, "| Time | Title | Feed | IsNew | IsToday |\n")
-	fmt.Fprintf(&buf, "|-----------|-----|-----|:----:|:------:|\n")
-	for _, e := range list {
-		title := sanitizeTitle(e.Title)
-		title = truncateRunes(title, maxTitleLength)
-		feeds := linksForFeeds(e.Feeds)
-		isNew := ""
-		if e.IsNew {
-			isNew = "Yes"
-		}
-		isToday := ""
-		if e.IsToday {
-			isToday = "Yes"
-		}
-		fmt.Fprintf(&buf, "| %s | [%s](%s) | %s | %s | %s |\n",
-			e.Pub.Format(markdownTimeFmt), title, e.URL, feeds, isNew, isToday)
-	}
-
-	// Print final table to stdout
-	fmt.Print(buf.String())
+	
+	return sources
 }
 
-/* ---------------------- Helpers ---------------------- */
-
-func extractFeedName(url string) string {
-	parts := strings.Split(strings.TrimSuffix(url, "/"), "/")
-	if len(parts) == 0 {
-		return url
+// readREADME reads the existing README.md file
+func readREADME() string {
+	content, err := ioutil.ReadFile(readmeFilename)
+	if err != nil && !os.IsNotExist(err) {
+		fmt.Printf("⚠️ Error reading %s: %v\n", readmeFilename, err)
+		return ""
 	}
+	return string(content)
+}
+
+// getCurrentDateGMT returns the current date in GMT format
+func getCurrentDateGMT() string {
+	return time.Now().In(time.UTC).Format(dateFormat)
+}
+
+// processFeeds fetches and processes all RSS feeds
+func processFeeds(sources []FeedSource, readmeContent, currentDate string) map[string]*FeedEntry {
+	entries := make(map[string]*FeedEntry)
+	successCount := 0
+	
+	for i, source := range sources {
+		fmt.Printf("[%d/%d] Fetching %s...", i+1, len(sources), source.Name)
+		
+		rss, err := fetchRSSFeed(source.URL)
+		if err != nil {
+			fmt.Printf(" ❌ Error: %v\n", err)
+			continue
+		}
+		
+		itemsProcessed := processFeedItems(rss, source, entries, readmeContent, currentDate)
+		fmt.Printf(" ✅ (%d items)\n", itemsProcessed)
+		successCount++
+		
+		if i < len(sources)-1 {
+			time.Sleep(requestDelay)
+		}
+	}
+	
+	fmt.Printf("✅ Successfully processed %d/%d feeds\n", successCount, len(sources))
+	return entries
+}
+
+// fetchRSSFeed retrieves and parses an RSS feed
+func fetchRSSFeed(url string) (*RSS, error) {
+	client := &http.Client{Timeout: 30 * time.Second}
+	resp, err := client.Get(url)
+	if err != nil {
+		return nil, fmt.Errorf("error fetching URL %s: %v", url, err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != http.StatusOK {
+		return nil, fmt.Errorf("received non-200 status code: %d", resp.StatusCode)
+	}
+
+	data, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+		return nil, fmt.Errorf("error reading response body from %s: %v", url, err)
+	}
+
+	var rss RSS
+	err = xml.Unmarshal(data, &rss)
+	if err != nil {
+		return nil, fmt.Errorf("error parsing XML from %s: %v", url, err)
+	}
+
+	return &rss, nil
+}
+
+// processFeedItems processes items from a single RSS feed
+func processFeedItems(rss *RSS, source FeedSource, entries map[string]*FeedEntry, readmeContent, currentDate string) int {
+	itemsProcessed := 0
+	
+	for _, item := range rss.Channel.Items {
+		if entry, exists := entries[item.GUID]; exists {
+			// Append to existing entry
+			entry.Feeds += fmt.Sprintf(", [%s](%s)", source.Name, source.URL)
+		} else {
+			// Create new entry
+			isNew := "Yes"
+			if strings.Contains(readmeContent, item.GUID) {
+				isNew = ""
+			}
+			
+			entries[item.GUID] = &FeedEntry{
+				Title:   item.Title,
+				GUID:    item.GUID,
+				PubDate: item.PubDate,
+				Feeds:   fmt.Sprintf("[%s](%s)", source.Name, source.URL),
+				IsNew:   isNew,
+				IsToday: checkIfToday(item.PubDate, currentDate),
+			}
+		}
+		itemsProcessed++
+	}
+	
+	return itemsProcessed
+}
+
+// sortEntries sorts entries by IsNew and IsToday status
+func sortEntries(entries map[string]*FeedEntry) []*FeedEntry {
+	entryList := make([]*FeedEntry, 0, len(entries))
+	for _, entry := range entries {
+		entryList = append(entryList, entry)
+	}
+
+	sort.SliceStable(entryList, func(i, j int) bool {
+		if entryList[i].IsNew == entryList[j].IsNew {
+			return entryList[i].IsToday > entryList[j].IsToday
+		}
+		return entryList[i].IsNew > entryList[j].IsNew
+	})
+
+	return entryList
+}
+
+// generateOutput prints the formatted table of entries
+func generateOutput(entries []*FeedEntry) {
+	fmt.Println("\n📋 Results:")
+	fmt.Println(outputTableHeader)
+	
+	newCount, todayCount := 0, 0
+	for _, entry := range entries {
+		if entry.IsNew == "Yes" {
+			newCount++
+		}
+		if entry.IsToday == "Yes" {
+			todayCount++
+		}
+		
+		sanitizedTitle := sanitizeTitle(entry.Title)
+		fmt.Printf("| %s | [%s](%s) | %s | %s | %s |\n",
+			formatPubDate(entry.PubDate), sanitizedTitle, entry.GUID, entry.Feeds, entry.IsNew, entry.IsToday)
+	}
+	
+	fmt.Printf("\n📊 Summary: %d new posts, %d posts from today\n", newCount, todayCount)
+}
+
+// Helper function to extract the feed name from the URL
+func extractFeedName(url string) string {
+	parts := strings.Split(url, "/")
 	return parts[len(parts)-1]
 }
 
+// Helper function to sanitize the title
 func sanitizeTitle(title string) string {
-	// Remove newlines
+	// Remove newline characters
 	title = strings.ReplaceAll(title, "\n", " ")
 	title = strings.ReplaceAll(title, "\r", " ")
-	// Escape table/link breakers
+
+	// Escape special Markdown characters
 	title = strings.ReplaceAll(title, "|", "\\|")
 	title = strings.ReplaceAll(title, "[", "\\[")
 	title = strings.ReplaceAll(title, "]", "\\]")
-	return strings.TrimSpace(title)
+
+	// Trim if too long
+	if len(title) > maxTitleLength {
+		title = title[:maxTitleLength] + "..."
+	}
+
+	return title
 }
 
-func truncateRunes(s string, max int) string {
-	if max <= 0 {
-		return ""
-	}
-	if utf8.RuneCountInString(s) <= max {
-		return s
-	}
-	rs := []rune(s)
-	return string(rs[:max]) + "..."
-}
-
-func isToday(pub time.Time, currentDateLine string) bool {
-	// Compare on yyyy-mm-dd via formatted line for safety with your existing style
-	return pub.Format(dateLineFormat) == currentDateLine
-}
-
-func parseAnyDate(s string) (time.Time, bool) {
-	s = strings.TrimSpace(s)
-	layouts := []string{
-		time.RFC1123Z,               // "Mon, 02 Jan 2006 15:04:05 -0700"
-		time.RFC1123,                // "Mon, 02 Jan 2006 15:04:05 MST"
-		time.RFC822Z,                // "02 Jan 06 15:04 -0700"
-		time.RFC822,                 // "02 Jan 06 15:04 MST"
-		time.RFC3339,                // ISO 8601
-		"Mon, 02 Jan 2006 15:04:05 -0700",
-		"Mon, 02 Jan 2006 15:04:05 MST",
-	}
-	for _, l := range layouts {
-		if t, err := time.Parse(l, s); err == nil {
-			return t, true
+// Helper function to check if the PubDate matches the current date
+func checkIfToday(pubDate, currentDate string) string {
+	pubTime, err := time.Parse(time.RFC1123, pubDate)
+	if err != nil {
+		// Try alternative date format
+		pubTime, err = time.Parse(time.RFC1123Z, pubDate)
+		if err != nil {
+			return ""
 		}
 	}
-	return time.Time{}, false
-}
 
-func contains(sl []string, s string) bool {
-	for _, v := range sl {
-		if v == s {
-			return true
-		}
-	}
-	return false
-}
-
-func linksForFeeds(tags []string) string {
-	// Render "tag" list as markdown links, comma-separated
-	if len(tags) == 0 {
-		return ""
-	}
-	// de-dupe defensively
-	seen := map[string]struct{}{}
-	out := make([]string, 0, len(tags))
-	for _, t := range tags {
-		if _, ok := seen[t]; ok {
-			continue
-		}
-		seen[t] = struct{}{}
-		out = append(out, fmt.Sprintf("[%s](https://medium.com/feed/tag/%s)", t, t))
-	}
-	return strings.Join(out, ", ")
-}
-
-func firstNonEmpty(ss ...string) string {
-	for _, s := range ss {
-		if strings.TrimSpace(s) != "" {
-			return s
-		}
+	pubDateFormatted := pubTime.Format(dateFormat)
+	if pubDateFormatted == currentDate {
+		return "Yes"
 	}
 	return ""
+}
+
+// Helper function to format publication date for better readability
+func formatPubDate(pubDate string) string {
+	pubTime, err := time.Parse(time.RFC1123, pubDate)
+	if err != nil {
+		// Try alternative date format
+		pubTime, err = time.Parse(time.RFC1123Z, pubDate)
+		if err != nil {
+			return pubDate // Return original if can't parse
+		}
+	}
+	
+	return pubTime.Format("02 Jan 15:04")
 }
