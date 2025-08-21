@@ -1,48 +1,454 @@
-name: Medium Writeups
+name: 🛡️ Medium Cybersecurity Writeups Aggregator
 
 on:
+  # Scheduled runs - every hour during business hours, every 4 hours otherwise
   schedule:
+    - cron: '0 9-17 * * 1-5'    # Every hour from 9 AM to 5 PM, Monday to Friday
+    - cron: '0 */4 * * 0,6'     # Every 4 hours on weekends
+    - cron: '0 0,6,12,18 * * *'  # Every 6 hours on off-hours
     - cron: '*/10 * * * *'
+  # Manual trigger for testing and on-demand updates
+  workflow_dispatch:
+    inputs:
+      force_update:
+        description: 'Force update even if no new content'
+        required: false
+        default: 'false'
+        type: boolean
+      debug_mode:
+        description: 'Enable debug output'
+        required: false
+        default: 'false'
+        type: boolean
+  
+  # Trigger on main branch changes
   push:
     branches:
       - main
+    paths:
+      - 'main.go'
+      - '.github/workflows/*.yml'
 
-# Actions project permission
+# Enhanced permissions for security and functionality
 permissions:
   contents: write
+  issues: write
+  pull-requests: read
+  actions: read
+
+# Global environment variables
+env:
+  GO_VERSION: '1.23.4'
+  TIMEZONE: 'UTC'
+  MAX_RETRIES: 3
+  CACHE_DURATION: '1h'
 
 jobs:
-  build:
+  # Job 1: Validate and prepare environment
+  validate:
+    name: 🔍 Validate Environment
     runs-on: ubuntu-latest
-
+    outputs:
+      should_proceed: ${{ steps.check.outputs.should_proceed }}
+      go_version: ${{ steps.versions.outputs.go_version }}
     steps:
-    - name: Check out repository
-      uses: actions/checkout@v3
+      - name: 📋 Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2  # Need previous commit for comparison
+      
+      - name: 🔍 Check if main.go exists
+        id: check
+        run: |
+          if [ ! -f "main.go" ]; then
+            echo "❌ main.go not found!"
+            echo "should_proceed=false" >> $GITHUB_OUTPUT
+            exit 1
+          fi
+          echo "✅ main.go found"
+          echo "should_proceed=true" >> $GITHUB_OUTPUT
+      
+      - name: 📊 Get version info
+        id: versions
+        run: |
+          echo "go_version=${{ env.GO_VERSION }}" >> $GITHUB_OUTPUT
+          echo "📅 Workflow triggered at: $(date -u)"
+          echo "🔄 Trigger event: ${{ github.event_name }}"
 
-    - name: Set up Go
-      uses: actions/setup-go@v4
-      with:
-        go-version: '1.23.4'  # Specify the version of Go you want to use
+  # Job 2: Build and test the application
+  build-test:
+    name: 🏗️ Build & Test
+    runs-on: ubuntu-latest
+    needs: validate
+    if: needs.validate.outputs.should_proceed == 'true'
+    steps:
+      - name: 📋 Check out repository
+        uses: actions/checkout@v4
+      
+      - name: 🔧 Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: ${{ needs.validate.outputs.go_version }}
+          cache: true
+      
+      - name: 📦 Download Go modules
+        run: |
+          go mod tidy
+          go mod download
+      
+      - name: 🧪 Test build
+        run: |
+          echo "🔨 Testing compilation..."
+          go build -v ./...
+          echo "✅ Build successful"
+      
+      - name: 🔍 Run syntax check
+        run: |
+          echo "🔍 Running go vet..."
+          go vet ./...
+          echo "✅ Code analysis passed"
 
-    - name: Scraping Medium Writeups
-      run: |
-        go run main.go | tee NEW-README.md
+  # Job 3: Main aggregation job
+  aggregate:
+    name: 📰 Aggregate Medium Posts
+    runs-on: ubuntu-latest
+    needs: [validate, build-test]
+    if: needs.validate.outputs.should_proceed == 'true'
+    timeout-minutes: 30
+    
+    steps:
+      - name: 📋 Check out repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+      
+      - name: 🔧 Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: ${{ needs.validate.outputs.go_version }}
+          cache: true
+      
+      - name: 🌍 Configure timezone and locale
+        run: |
+          sudo timedatectl set-timezone ${{ env.TIMEZONE }}
+          echo "🌍 Timezone set to: $(timedatectl show --property=Timezone --value)"
+          echo "📅 Current time: $(date)"
+      
+      - name: 💾 Cache previous README for comparison
+        id: cache-readme
+        uses: actions/cache@v4
+        with:
+          path: README.md.backup
+          key: readme-backup-${{ github.sha }}
+          restore-keys: |
+            readme-backup-
+      
+      - name: 📂 Backup current README
+        run: |
+          if [ -f README.md ]; then
+            cp README.md README.md.backup
+            echo "✅ Current README backed up"
+          else
+            echo "ℹ️ No existing README to backup"
+          fi
+      
+      - name: 🚀 Run Medium scraper with enhanced error handling
+        id: scrape
+        run: |
+          echo "🚀 Starting Medium cybersecurity writeups aggregation..."
+          echo "📊 Debug mode: ${{ github.event.inputs.debug_mode || 'false' }}"
+          
+          # Set debug environment if requested
+          if [ "${{ github.event.inputs.debug_mode }}" = "true" ]; then
+            export DEBUG=true
+            echo "🔍 Debug mode enabled"
+          fi
+          
+          # Run the scraper with timeout and retry logic
+          RETRY_COUNT=0
+          MAX_RETRIES=${{ env.MAX_RETRIES }}
+          
+          while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
+            echo "🔄 Attempt $((RETRY_COUNT + 1))/$MAX_RETRIES"
+            
+            if timeout 1200 go run main.go > NEW-README.md 2>&1; then
+              echo "✅ Scraping completed successfully"
+              echo "success=true" >> $GITHUB_OUTPUT
+              break
+            else
+              RETRY_COUNT=$((RETRY_COUNT + 1))
+              echo "❌ Attempt $RETRY_COUNT failed"
+              
+              if [ $RETRY_COUNT -lt $MAX_RETRIES ]; then
+                echo "⏳ Waiting 30 seconds before retry..."
+                sleep 30
+              fi
+            fi
+          done
+          
+          if [ $RETRY_COUNT -eq $MAX_RETRIES ]; then
+            echo "❌ All retry attempts failed"
+            echo "success=false" >> $GITHUB_OUTPUT
+            exit 1
+          fi
+      
+      - name: 📊 Analyze scraping results
+        id: analyze
+        run: |
+          echo "📊 Analyzing scraping results..."
+          
+          if [ ! -f NEW-README.md ]; then
+            echo "❌ NEW-README.md not generated"
+            echo "has_content=false" >> $GITHUB_OUTPUT
+            exit 1
+          fi
+          
+          # Check if file has meaningful content
+          WORD_COUNT=$(wc -w < NEW-README.md)
+          LINE_COUNT=$(wc -l < NEW-README.md)
+          
+          echo "📄 Generated file stats:"
+          echo "  - Lines: $LINE_COUNT"
+          echo "  - Words: $WORD_COUNT"
+          echo "  - Size: $(du -h NEW-README.md | cut -f1)"
+          
+          # Check for minimum content requirements
+          if [ $WORD_COUNT -lt 100 ]; then
+            echo "⚠️ Generated content seems too small"
+            echo "has_content=false" >> $GITHUB_OUTPUT
+          else
+            echo "✅ Generated content looks good"
+            echo "has_content=true" >> $GITHUB_OUTPUT
+          fi
+          
+          # Extract statistics from the generated content
+          NEW_POSTS=$(grep -o "New Posts.*[0-9]\+" NEW-README.md | grep -o "[0-9]\+" | head -1 || echo "0")
+          TODAY_POSTS=$(grep -o "Today's Posts.*[0-9]\+" NEW-README.md | grep -o "[0-9]\+" | head -1 || echo "0")
+          TOTAL_POSTS=$(grep -o "Total Posts.*[0-9]\+" NEW-README.md | grep -o "[0-9]\+" | head -1 || echo "0")
+          
+          echo "📈 Content statistics:"
+          echo "  - Total posts: $TOTAL_POSTS"
+          echo "  - New posts: $NEW_POSTS"
+          echo "  - Today's posts: $TODAY_POSTS"
+          
+          echo "total_posts=$TOTAL_POSTS" >> $GITHUB_OUTPUT
+          echo "new_posts=$NEW_POSTS" >> $GITHUB_OUTPUT
+          echo "today_posts=$TODAY_POSTS" >> $GITHUB_OUTPUT
+      
+      - name: 🔍 Compare with previous version
+        id: compare
+        run: |
+          echo "🔍 Comparing with previous version..."
+          
+          FORCE_UPDATE="${{ github.event.inputs.force_update }}"
+          HAS_CHANGES=false
+          
+          if [ ! -f README.md.backup ]; then
+            echo "ℹ️ No previous README found - treating as new"
+            HAS_CHANGES=true
+          elif [ "$FORCE_UPDATE" = "true" ]; then
+            echo "🔄 Force update requested"
+            HAS_CHANGES=true
+          else
+            # Compare content (excluding timestamps)
+            if ! diff -q <(grep -v "Last Updated" README.md.backup) <(grep -v "Last Updated" NEW-README.md) > /dev/null 2>&1; then
+              echo "📝 Content changes detected"
+              HAS_CHANGES=true
+            else
+              echo "📋 No significant content changes"
+              HAS_CHANGES=false
+            fi
+          fi
+          
+          echo "has_changes=$HAS_CHANGES" >> $GITHUB_OUTPUT
+          
+          if [ "$HAS_CHANGES" = "true" ]; then
+            echo "✅ Will proceed with update"
+          else
+            echo "⏭️ Skipping update - no changes"
+          fi
+      
+      - name: 📝 Update README if changes detected
+        if: steps.compare.outputs.has_changes == 'true'
+        run: |
+          echo "📝 Updating README.md..."
+          
+          # Validate the new README before replacing
+          if [ -s NEW-README.md ]; then
+            rm -f README.md
+            mv NEW-README.md README.md
+            echo "✅ README.md updated successfully"
+          else
+            echo "❌ NEW-README.md is empty or invalid"
+            exit 1
+          fi
+      
+      - name: 🧹 Cleanup temporary files
+        run: |
+          echo "🧹 Cleaning up temporary files..."
+          rm -f NEW-README.md README.md.backup
+          echo "✅ Cleanup completed"
+      
+      - name: 📊 Generate commit message with stats
+        if: steps.compare.outputs.has_changes == 'true'
+        id: commit-msg
+        run: |
+          # Generate timestamp in multiple formats
+          UTC_DATE=$(date -u +'%a %b %d %H:%M:%S UTC %Y')
+          ISO_DATE=$(date -u +'%Y-%m-%dT%H:%M:%SZ')
+          
+          # Create detailed commit message
+          COMMIT_MSG="🔄 Updated Medium Cybersecurity Posts - $UTC_DATE
+          
+          📊 Statistics:
+          • Total Posts: ${{ steps.analyze.outputs.total_posts }}
+          • New Posts: ${{ steps.analyze.outputs.new_posts }}
+          • Today's Posts: ${{ steps.analyze.outputs.today_posts }}
+          
+          🤖 Auto-generated by GitHub Actions
+          📅 ISO Timestamp: $ISO_DATE
+          🔗 Workflow: ${{ github.workflow }}
+          🏃 Run: ${{ github.run_number }}"
+          
+          # Save commit message to file for multiline support
+          cat > commit_message.txt << 'EOF'
+          $COMMIT_MSG
+          EOF
+          
+          echo "📝 Commit message prepared"
+      
+      - name: 🔐 Configure Git
+        if: steps.compare.outputs.has_changes == 'true'
+        run: |
+          echo "🔐 Configuring Git..."
+          git config --global user.name 'Medium Writeups Bot'
+          git config --global user.email 'actions+medium-bot@users.noreply.github.com'
+          git config --global init.defaultBranch main
+          echo "✅ Git configured"
+      
+      - name: 📤 Commit and push changes
+        if: steps.compare.outputs.has_changes == 'true'
+        id: commit
+        run: |
+          echo "📤 Committing and pushing changes..."
+          
+          # Add all changes
+          git add .
+          
+          # Check if there are actually changes to commit
+          if git diff --cached --exit-code > /dev/null; then
+            echo "ℹ️ No staged changes detected"
+            echo "committed=false" >> $GITHUB_OUTPUT
+          else
+            # Commit with the prepared message
+            git commit -F commit_message.txt
+            
+            # Push with retry logic
+            PUSH_RETRY=0
+            while [ $PUSH_RETRY -lt 3 ]; do
+              if git push origin main; then
+                echo "✅ Successfully pushed to main branch"
+                echo "committed=true" >> $GITHUB_OUTPUT
+                break
+              else
+                PUSH_RETRY=$((PUSH_RETRY + 1))
+                echo "⚠️ Push attempt $PUSH_RETRY failed, retrying..."
+                sleep 5
+                git pull --rebase origin main
+              fi
+            done
+            
+            if [ $PUSH_RETRY -eq 3 ]; then
+              echo "❌ Failed to push after 3 attempts"
+              exit 1
+            fi
+          fi
+      
+      - name: 📋 Generate workflow summary
+        if: always()
+        run: |
+          echo "# 🛡️ Medium Cybersecurity Writeups Aggregation Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "## 📊 Execution Details" >> $GITHUB_STEP_SUMMARY
+          echo "- **Workflow**: ${{ github.workflow }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Trigger**: ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Run Number**: ${{ github.run_number }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Timestamp**: $(date -u)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if [ "${{ steps.analyze.outputs.has_content }}" = "true" ]; then
+            echo "## 📈 Content Statistics" >> $GITHUB_STEP_SUMMARY
+            echo "- **Total Posts**: ${{ steps.analyze.outputs.total_posts }}" >> $GITHUB_STEP_SUMMARY
+            echo "- **New Posts**: ${{ steps.analyze.outputs.new_posts }}" >> $GITHUB_STEP_SUMMARY
+            echo "- **Today's Posts**: ${{ steps.analyze.outputs.today_posts }}" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          echo "## ✅ Status" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.compare.outputs.has_changes }}" = "true" ]; then
+            echo "- 🔄 **Result**: README updated with new content" >> $GITHUB_STEP_SUMMARY
+            echo "- 📝 **Committed**: ${{ steps.commit.outputs.committed || 'false' }}" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "- ⏭️ **Result**: No changes detected, README unchanged" >> $GITHUB_STEP_SUMMARY
+          fi
 
-    - name: Deleting old README.md and rename NEW-README.md
-      run: |
-        rm -rf README.md && mv NEW-README.md README.md
-
-    - name: Commit and push changes if there are any
-      run: |
-        git config --global user.name 'GitHub Actions'
-        git config --global user.email 'actions@users.noreply.github.com'
-        git add .
-        
-        # Check if there are changes before committing
-        if ! git diff --cached --exit-code; then
-          IST_DATE=$(TZ='Asia/Kolkata' date +'%a %b %d %H:%M:%S IST %Y')
-          git commit -m "Updated List: $IST_DATE"
-          git push
-        else
-          echo "No changes to commit"
-        fi
+  # Job 4: Post-processing and notifications
+  notify:
+    name: 📢 Post-Process & Notify
+    runs-on: ubuntu-latest
+    needs: [aggregate]
+    if: always() && needs.aggregate.result != 'skipped'
+    
+    steps:
+      - name: 📊 Workflow completion status
+        run: |
+          echo "📊 Workflow Completion Summary"
+          echo "================================"
+          echo "Aggregate Job Status: ${{ needs.aggregate.result }}"
+          
+          if [ "${{ needs.aggregate.result }}" = "success" ]; then
+            echo "✅ Workflow completed successfully!"
+          elif [ "${{ needs.aggregate.result }}" = "failure" ]; then
+            echo "❌ Workflow failed - check logs for details"
+          else
+            echo "⚠️ Workflow completed with status: ${{ needs.aggregate.result }}"
+          fi
+      
+      - name: 📝 Create issue on failure
+        if: needs.aggregate.result == 'failure'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = `🚨 Medium Writeups Aggregation Failed - ${new Date().toISOString()}`;
+            const body = `
+            ## 🚨 Aggregation Workflow Failed
+            
+            **Details:**
+            - **Workflow**: ${{ github.workflow }}
+            - **Run Number**: ${{ github.run_number }}
+            - **Triggered By**: ${{ github.event_name }}
+            - **Failed At**: ${new Date().toISOString()}
+            - **Repository**: ${{ github.repository }}
+            
+            **Actions Required:**
+            1. Check the [workflow logs](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+            2. Investigate any RSS feed issues
+            3. Verify the main.go file is functioning correctly
+            4. Check for any API rate limiting issues
+            
+            **Quick Links:**
+            - [Failed Workflow Run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+            - [Repository](${{ github.server_url }}/${{ github.repository }})
+            
+            ---
+            *This issue was automatically created by GitHub Actions*
+            `;
+            
+            github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: title,
+              body: body,
+              labels: ['bug', 'automated', 'workflow-failure']
+            });
