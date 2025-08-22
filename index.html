@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🛡️ Cybersecurity Intelligence Hub | Medium Writeups</title>
-    <meta name="description" content="Real-time cybersecurity intelligence dashboard aggregating security research, bug bounty writeups, and threat analysis from Medium. Updated every 2 hours.">
+    <meta name="description" content="Real-time cybersecurity intelligence dashboard aggregating security research, bug bounty writeups, and threat analysis from Medium. Updated every 10 minutes.">
     <meta name="keywords" content="cybersecurity, bug bounty, penetration testing, security research, threat intelligence, medium, dashboard, vulnerability research, XSS, SQL injection, OSINT">
     
     <!-- PWA Manifest -->
@@ -307,7 +307,7 @@
                     <div class="mt-2 text-sm opacity-80 animate-fade-in-up" style="animation-delay: 0.4s">
                         <span class="inline-flex items-center">
                             <i class="fas fa-sync-alt mr-1"></i>
-                            Auto-updated every 2 hours • 25+ security categories • 245+ RSS feeds
+                            Auto-updated every 10 minutes • 25+ security categories • 245+ RSS feeds
                         </span>
                     </div>
                 </div>
@@ -604,7 +604,7 @@
                             </div>
                             
                             <!-- Footer -->
-                            <div class="flex items-center justify-between text-sm text-gray-500 dark:text-gray-400">
+                            <div class="flex items-center justify-between text-sm text-gray-500 dark:text-gray-400 mb-3">
                                 <div class="flex items-center">
                                     <i class="fas fa-clock mr-1"></i>
                                     <span x-text="formatTimeAgo(post.publishedTime)"></span>
@@ -618,6 +618,28 @@
                                    class="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium">
                                     Read <i class="fas fa-external-link-alt ml-1 text-xs"></i>
                                 </a>
+                            </div>
+                            
+                            <!-- Alternative Reading Options for Grid View -->
+                            <div class="flex gap-1 text-xs">
+                                <button @click="openAlternativeReader(post.link, 'readmedium')"
+                                        class="flex-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-2 py-1 rounded hover:scale-105 transition-transform"
+                                        title="Read via ReadMedium (Free)">
+                                    <i class="fas fa-book-open mr-1"></i>
+                                    ReadMedium
+                                </button>
+                                <button @click="openAlternativeReader(post.link, 'archive')"
+                                        class="flex-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-2 py-1 rounded hover:scale-105 transition-transform"
+                                        title="Read via Archive.ph">
+                                    <i class="fas fa-archive mr-1"></i>
+                                    Archive
+                                </button>
+                                <button @click="openAlternativeReader(post.link, 'freedium')"
+                                        class="flex-1 bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 px-2 py-1 rounded hover:scale-105 transition-transform"
+                                        title="Read via Freedium (Free)">
+                                    <i class="fas fa-unlock mr-1"></i>
+                                    Freedium
+                                </button>
                             </div>
                         </div>
                     </article>
@@ -668,13 +690,36 @@
                             </div>
                             
                             <!-- Actions -->
-                            <div class="flex items-center gap-3">
+                            <div class="flex flex-col gap-2">
+                                <!-- Primary Read Button -->
                                 <a :href="post.link" 
                                    target="_blank" 
-                                   class="glass px-4 py-2 rounded-lg hover:scale-105 transition-transform inline-flex items-center">
+                                   class="glass px-4 py-2 rounded-lg hover:scale-105 transition-transform inline-flex items-center justify-center">
                                     <i class="fas fa-external-link-alt mr-2"></i>
-                                    Read More
+                                    Read on Medium
                                 </a>
+                                
+                                <!-- Alternative Reading Options -->
+                                <div class="flex gap-1">
+                                    <button @click="openAlternativeReader(post.link, 'readmedium')"
+                                            class="flex-1 glass px-2 py-1 rounded text-xs hover:scale-105 transition-transform"
+                                            title="Read via ReadMedium (Free)">
+                                        <i class="fas fa-book-open mr-1"></i>
+                                        ReadMedium
+                                    </button>
+                                    <button @click="openAlternativeReader(post.link, 'archive')"
+                                            class="flex-1 glass px-2 py-1 rounded text-xs hover:scale-105 transition-transform"
+                                            title="Read via Archive.ph">
+                                        <i class="fas fa-archive mr-1"></i>
+                                        Archive
+                                    </button>
+                                    <button @click="openAlternativeReader(post.link, 'freedium')"
+                                            class="flex-1 glass px-2 py-1 rounded text-xs hover:scale-105 transition-transform"
+                                            title="Read via Freedium (Free)">
+                                        <i class="fas fa-unlock mr-1"></i>
+                                        Freedium
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </article>
@@ -773,7 +818,7 @@
                                    @change="toggleAutoRefresh()"
                                    class="form-checkbox h-4 w-4 text-blue-600">
                         </label>
-                        <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Automatically refresh data every 2 hours</p>
+                        <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Automatically refresh data every 10 minutes</p>
                     </div>
                     
                     <!-- Posts per page -->
@@ -1223,7 +1268,7 @@
                 
                 // Auto-refresh
                 setupAutoRefresh() {
-                    // Refresh every 2 hours
+                    // Refresh every 10 minutes
                     setInterval(() => {
                         if (this.autoRefresh) {
                             console.log('🔄 Auto-refreshing data...');
@@ -1237,6 +1282,45 @@
                     if (this.autoRefresh) {
                         this.setupAutoRefresh();
                     }
+                },
+                
+                // Alternative reader functionality
+                openAlternativeReader(mediumUrl, readerType) {
+                    let alternativeUrl = '';
+                    
+                    switch (readerType) {
+                        case 'readmedium':
+                            alternativeUrl = `https://readmedium.com/${mediumUrl}`;
+                            break;
+                        case 'archive':
+                            // For archive.ph, we need to create an archive first, then open it
+                            alternativeUrl = `https://archive.ph/${mediumUrl}`;
+                            break;
+                        case 'freedium':
+                            alternativeUrl = `https://freedium.cfd/${mediumUrl}`;
+                            break;
+                        default:
+                            alternativeUrl = mediumUrl;
+                    }
+                    
+                    // Open in new tab with additional safety checks
+                    if (alternativeUrl) {
+                        const newWindow = window.open(alternativeUrl, '_blank', 'noopener,noreferrer');
+                        if (!newWindow) {
+                            // Fallback if popup blocked
+                            window.location.href = alternativeUrl;
+                        }
+                    }
+                },
+                
+                // Bulk open all alternative readers for a post (useful for research)
+                openAllReaders(mediumUrl) {
+                    const readers = ['readmedium', 'archive', 'freedium'];
+                    readers.forEach((reader, index) => {
+                        setTimeout(() => {
+                            this.openAlternativeReader(mediumUrl, reader);
+                        }, index * 1000); // Stagger opens by 1 second to avoid being flagged
+                    });
                 }
             };
         }

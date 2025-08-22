@@ -1409,7 +1409,7 @@ func generateMarkdownOutput(entries []*FeedEntry, stats *AggregatorStats, source
 		stats.SuccessfulFeeds, stats.TotalFeeds,
 		float64(stats.SuccessfulFeeds)/float64(stats.TotalFeeds)*100)
 	fmt.Printf("- **Rate Limited**: %d feeds\n", stats.RateLimited)
-	fmt.Printf("- **Next Update**: Automatically every 2 hours\n\n")
+	fmt.Printf("- **Next Update**: Automatically every 10 minutes\n\n")
 
 	// Main posts table with enhanced formatting
 	fmt.Printf("## 📰 Latest Cybersecurity Posts\n\n")
@@ -1480,7 +1480,7 @@ func generateMarkdownOutput(entries []*FeedEntry, stats *AggregatorStats, source
 	fmt.Printf("4. 📬 Submit a pull request\n\n")
 
 	fmt.Printf("---\n")
-	fmt.Printf("*⚡ Powered by GitHub Actions | 🔄 Auto-updated every 2 hours | ⭐ Star if useful!*\n")
+	fmt.Printf("*⚡ Powered by GitHub Actions | 🔄 Auto-updated every 10 minutes | ⭐ Star if useful!*\n")
 }
 
 func generateHTMLOutput(entries []*FeedEntry, stats *AggregatorStats, sources []FeedSource) {
