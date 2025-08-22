@@ -1,0 +1,18 @@
+Contact: security@example.com
+Expires: 2025-12-31T23:59:59.000Z
+Encryption: https://keys.openpgp.org/
+Preferred-Languages: en
+Canonical: https://kdairatchi.github.io/medium-writeups/.well-known/security.txt
+Policy: https://kdairatchi.github.io/medium-writeups/security-policy.html
+
+# Security Contact Information
+# This cybersecurity dashboard follows responsible disclosure practices.
+# Please report security vulnerabilities through the contact above.
+
+# Additional Security Measures
+# - Content Security Policy (CSP) implemented
+# - Subresource Integrity (SRI) for all external resources  
+# - DOMPurify sanitization for all user content
+# - Service Worker with secure caching strategies
+# - Progressive Web App with offline capabilities
+# - Regular dependency updates and security scanning

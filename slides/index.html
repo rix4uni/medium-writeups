@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🛡️ Cybersecurity Intelligence - Presentation Mode</title>
+    <meta name="description" content="Interactive presentation of trending cybersecurity posts and threat intelligence">
+    
+    <!-- Reveal.js CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reveal.min.css" 
+          integrity="sha512-6OOowvyM6Wl3NXfUTUn/mriLicQy0TaZnwhF1PLwmTz6QS7dBTr4BuGfrwa2xiGkQp5ysoH4u0O8ZCUKFRh/HQ==" 
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/theme/black.min.css" 
+          integrity="sha512-lgdlaIPzWs5y8QCwgNaXlEtl8PSUBFGnQqLhXHnFN/Pek9Eb7P9S0ib7DYWBk7JF6mhF4TCnA7Z4nfEQz7W7iQ==" 
+          crossorigin="anonymous">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+          crossorigin="anonymous">
+    
+    <!-- Chart.js for data visualization -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js" 
+            integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQQOTStFIGdlSlYq0DM/gCa7e7yQ2uJZsj8qCCEfBz3iFwb5KKML/L1dg==" 
+            crossorigin="anonymous" defer></script>
+    
+    <!-- Custom Presentation Styles -->
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --danger-gradient: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            --success-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --cyber-green: #00ff88;
+            --cyber-blue: #00d4ff;
+            --cyber-red: #ff0040;
+            --cyber-purple: #8040ff;
+        }
+
+        /* Custom reveal.js theme overrides */
+        .reveal {
+            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .reveal .slides section {
+            text-align: left;
+        }
+
+        .reveal h1, .reveal h2, .reveal h3 {
+            color: #ffffff;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .reveal h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .reveal h2 {
+            font-size: 1.8em;
+            color: var(--cyber-blue);
+        }
+
+        .reveal h3 {
+            font-size: 1.4em;
+            color: var(--cyber-green);
+        }
+
+        /* Slide backgrounds */
+        .reveal .slide-background {
+            background: linear-gradient(135deg, #0c0c0c 0%, #1a1a1a 50%, #0c0c0c 100%);
+        }
+
+        .slide-background.title-slide {
+            background: var(--primary-gradient);
+        }
+
+        .slide-background.stats-slide {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+        }
+
+        .slide-background.posts-slide {
+            background: linear-gradient(135deg, #2d1b69 0%, #11998e 100%);
+        }
+
+        .slide-background.cve-slide {
+            background: var(--danger-gradient);
+        }
+
+        /* Card styles */
+        .cyber-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 15px 0;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .cyber-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+            border-color: var(--cyber-blue);
+        }
+
+        /* Badge styles */
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.7em;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin: 2px;
+        }
+
+        .badge-new {
+            background: var(--success-gradient);
+            color: white;
+            animation: pulse 2s infinite;
+        }
+
+        .badge-cve {
+            background: var(--danger-gradient);
+            color: white;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        .badge-priority-high {
+            background: linear-gradient(45deg, #ff4757, #ff3838);
+            color: white;
+        }
+
+        .badge-priority-medium {
+            background: linear-gradient(45deg, #ffa502, #ff6348);
+            color: white;
+        }
+
+        .badge-category {
+            background: rgba(255, 255, 255, 0.2);
+            color: var(--cyber-blue);
+            border: 1px solid var(--cyber-blue);
+        }
+
+        /* Animations */
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        @keyframes glow {
+            from { box-shadow: 0 0 10px rgba(255, 0, 64, 0.5); }
+            to { box-shadow: 0 0 20px rgba(255, 0, 64, 0.8); }
+        }
+
+        @keyframes typewriter {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink {
+            0%, 50% { border-color: transparent; }
+            51%, 100% { border-color: var(--cyber-green); }
+        }
+
+        /* Stats grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: var(--cyber-green);
+            text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+        }
+
+        .stat-label {
+            font-size: 0.9em;
+            color: #cccccc;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Post list styles */
+        .post-list {
+            max-height: 500px;
+            overflow-y: auto;
+            padding-right: 15px;
+        }
+
+        .post-item {
+            background: rgba(0, 0, 0, 0.3);
+            border-left: 4px solid var(--cyber-blue);
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 0 8px 8px 0;
+            transition: all 0.3s ease;
+        }
+
+        .post-item:hover {
+            background: rgba(0, 212, 255, 0.1);
+            border-left-color: var(--cyber-green);
+        }
+
+        .post-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+
+        .post-meta {
+            font-size: 0.8em;
+            color: #999999;
+            margin-bottom: 8px;
+        }
+
+        .post-description {
+            font-size: 0.9em;
+            color: #cccccc;
+            line-height: 1.4;
+        }
+
+        /* Chart container */
+        .chart-container {
+            position: relative;
+            height: 400px;
+            margin: 20px 0;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        /* Terminal effect */
+        .terminal {
+            background: #000000;
+            color: var(--cyber-green);
+            font-family: 'Courier New', monospace;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--cyber-green);
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+            margin: 20px 0;
+        }
+
+        .terminal-line {
+            margin: 5px 0;
+        }
+
+        .terminal-prompt::before {
+            content: "$ ";
+            color: var(--cyber-blue);
+        }
+
+        /* Presenter notes styling */
+        .reveal aside.notes {
+            background: rgba(0, 0, 0, 0.9);
+            color: #ffffff;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Custom scrollbar */
+        .post-list::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .post-list::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+        }
+
+        .post-list::-webkit-scrollbar-thumb {
+            background: var(--cyber-blue);
+            border-radius: 4px;
+        }
+
+        .post-list::-webkit-scrollbar-thumb:hover {
+            background: var(--cyber-green);
+        }
+
+        /* Progress indicator */
+        .reveal .progress {
+            color: var(--cyber-blue);
+        }
+
+        /* Navigation arrows */
+        .reveal .controls {
+            color: var(--cyber-blue);
+        }
+
+        .reveal .controls:hover {
+            color: var(--cyber-green);
+        }
+
+        /* Loading animation */
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: var(--cyber-green);
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Print styles for PDF export */
+        @media print {
+            .reveal .slides section {
+                page-break-inside: avoid;
+                break-inside: avoid;
+            }
+            
+            .cyber-card {
+                border: 1px solid #333;
+                box-shadow: none;
+            }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .stat-number {
+                font-size: 2em;
+            }
+            
+            .reveal h1 {
+                font-size: 2em;
+            }
+            
+            .post-list {
+                max-height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Title Slide -->
+            <section data-background-gradient="linear-gradient(135deg, #667eea 0%, #764ba2 100%)" 
+                     data-background-opacity="0.9">
+                <div style="text-align: center;">
+                    <h1>🛡️ Cybersecurity Intelligence</h1>
+                    <h2 style="color: rgba(255,255,255,0.9);">Real-time Threat Landscape Analysis</h2>
+                    <div style="margin-top: 50px;">
+                        <div class="badge badge-new">Live Data</div>
+                        <div class="badge badge-category">Medium Aggregation</div>
+                        <div class="badge" style="background: rgba(255,255,255,0.2);">Auto-Generated</div>
+                    </div>
+                </div>
+                
+                <div style="position: absolute; bottom: 50px; left: 50%; transform: translateX(-50%); text-align: center;">
+                    <p style="color: rgba(255,255,255,0.8); font-size: 0.9em;">
+                        <i class="fas fa-calendar-alt"></i> <span id="presentation-date"></span> |
+                        <i class="fas fa-database"></i> <span id="total-posts-count">Loading...</span> Posts |
+                        <i class="fas fa-chart-line"></i> Auto-refreshed
+                    </p>
+                </div>
+
+                <aside class="notes">
+                    Welcome to the Cybersecurity Intelligence presentation. This is an auto-generated overview of the latest cybersecurity threats, vulnerabilities, and research from Medium's cybersecurity community. The data is refreshed every 2 hours to provide the most current threat landscape.
+                </aside>
+            </section>
+
+            <!-- Executive Summary -->
+            <section data-background-gradient="linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)">
+                <h2><i class="fas fa-chart-line"></i> Executive Summary</h2>
+                
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number" id="stat-total">-</div>
+                        <div class="stat-label">Total Posts</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="stat-new" style="color: var(--cyber-green);">-</div>
+                        <div class="stat-label">New Today</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="stat-cves" style="color: var(--cyber-red);">-</div>
+                        <div class="stat-label">CVE Mentions</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="stat-categories">-</div>
+                        <div class="stat-label">Categories</div>
+                    </div>
+                </div>
+
+                <div class="cyber-card">
+                    <h3>🎯 Key Insights</h3>
+                    <ul id="key-insights" style="color: #cccccc; font-size: 0.9em;">
+                        <li><i class="loading"></i> Analyzing threat landscape...</li>
+                    </ul>
+                </div>
+
+                <aside class="notes">
+                    This executive summary provides a high-level overview of the current cybersecurity landscape based on our real-time analysis of Medium posts. Pay attention to the CVE mentions count - this indicates active vulnerability discussions in the community.
+                </aside>
+            </section>
+
+            <!-- Category Breakdown -->
+            <section data-background-gradient="linear-gradient(135deg, #2d1b69 0%, #11998e 100%)">
+                <h2><i class="fas fa-pie-chart"></i> Threat Category Analysis</h2>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: center;">
+                    <div>
+                        <div class="chart-container">
+                            <canvas id="category-chart" width="400" height="300"></canvas>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3>🏷️ Category Insights</h3>
+                        <div id="category-list" style="color: #cccccc;">
+                            <div class="loading"></div> Loading category data...
+                        </div>
+                        
+                        <div style="margin-top: 30px;">
+                            <h4 style="color: var(--cyber-blue);">🔥 Trending Topics</h4>
+                            <div id="trending-topics" style="margin-top: 15px;">
+                                <div class="loading"></div> Analyzing trends...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="notes">
+                    This slide shows the distribution of cybersecurity topics being discussed. Bug bounty and penetration testing posts often dominate, followed by web security vulnerabilities. Watch for spikes in specific categories that might indicate emerging threats.
+                </aside>
+            </section>
+
+            <!-- Recent CVEs -->
+            <section data-background-gradient="linear-gradient(135deg, #fa709a 0%, #fee140 100%)">
+                <h2 style="color: #ffffff;"><i class="fas fa-exclamation-triangle"></i> Critical Vulnerability Alerts</h2>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+                    <div>
+                        <div class="cyber-card" style="background: rgba(0,0,0,0.3);">
+                            <h3 style="color: var(--cyber-red);">🚨 Recent CVEs</h3>
+                            <div id="recent-cves" class="post-list" style="max-height: 350px;">
+                                <div class="loading"></div> Scanning for CVE mentions...
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="cyber-card" style="background: rgba(0,0,0,0.3);">
+                            <h3 style="color: var(--cyber-blue);">⚡ High Priority Posts</h3>
+                            <div id="high-priority-posts" class="post-list" style="max-height: 350px;">
+                                <div class="loading"></div> Loading priority content...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="terminal" style="margin-top: 20px;">
+                    <div class="terminal-line terminal-prompt">threat_scan --critical --realtime</div>
+                    <div class="terminal-line" id="terminal-output">Monitoring threat intelligence feeds...</div>
+                </div>
+
+                <aside class="notes">
+                    This is our threat alert dashboard. CVEs mentioned in recent posts indicate active vulnerability research and potential exploitation attempts. High priority posts are determined by category importance, recency, and engagement metrics.
+                </aside>
+            </section>
+
+            <!-- Timeline Analysis -->
+            <section data-background-gradient="linear-gradient(135deg, #2c5aa0 0%, #f5af19 100%)">
+                <h2><i class="fas fa-clock"></i> Temporal Threat Analysis</h2>
+                
+                <div class="chart-container">
+                    <canvas id="timeline-chart" width="800" height="400"></canvas>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px;">
+                    <div class="cyber-card">
+                        <h3>📈 Activity Patterns</h3>
+                        <div id="activity-patterns" style="color: #cccccc;">
+                            <div class="loading"></div> Analyzing posting patterns...
+                        </div>
+                    </div>
+                    
+                    <div class="cyber-card">
+                        <h3>🎯 Peak Threat Windows</h3>
+                        <div id="peak-windows" style="color: #cccccc;">
+                            <div class="loading"></div> Calculating threat peaks...
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="notes">
+                    This timeline shows posting frequency over the past week. Spikes often correlate with major security incidents, vulnerability disclosures, or significant security research publications. The activity patterns help identify optimal times for security team alertness.
+                </aside>
+            </section>
+
+            <!-- Latest Intelligence -->
+            <section data-background-gradient="linear-gradient(135deg, #667eea 0%, #764ba2 100%)">
+                <h2><i class="fas fa-newspaper"></i> Latest Threat Intelligence</h2>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+                    <div>
+                        <h3>🆕 Breaking Research</h3>
+                        <div id="latest-posts" class="post-list">
+                            <div class="loading"></div> Loading latest intelligence...
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3>🏆 Top Bug Bounty Findings</h3>
+                        <div id="bug-bounty-posts" class="post-list">
+                            <div class="loading"></div> Scanning bug bounty reports...
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 30px; text-align: center;">
+                    <div class="cyber-card" style="display: inline-block; padding: 20px 40px;">
+                        <h4 style="color: var(--cyber-green); margin: 0;">🔄 Live Feed Status</h4>
+                        <p style="margin: 10px 0 0 0; color: #cccccc;">
+                            <i class="fas fa-wifi"></i> Connected | 
+                            <i class="fas fa-sync-alt"></i> Auto-refresh: 2h | 
+                            <span id="last-update">Loading...</span>
+                        </p>
+                    </div>
+                </div>
+
+                <aside class="notes">
+                    This final slide showcases the most recent and impactful cybersecurity research. Bug bounty findings often represent novel attack vectors that organizations should be aware of. The live feed status confirms our data freshness.
+                </aside>
+            </section>
+
+            <!-- Conclusion & Action Items -->
+            <section data-background-gradient="linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)">
+                <h2><i class="fas fa-tasks"></i> Recommended Actions</h2>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+                    <div class="cyber-card">
+                        <h3 style="color: var(--cyber-red);">🚨 Immediate</h3>
+                        <ul id="immediate-actions" style="color: #cccccc;">
+                            <li>Review CVE patches for mentioned vulnerabilities</li>
+                            <li>Update threat intelligence feeds</li>
+                            <li>Brief security team on new attack vectors</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="cyber-card">
+                        <h3 style="color: var(--cyber-blue);">📋 Strategic</h3>
+                        <ul id="strategic-actions" style="color: #cccccc;">
+                            <li>Enhance monitoring for trending threat categories</li>
+                            <li>Review security controls against new techniques</li>
+                            <li>Update incident response playbooks</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 50px;">
+                    <div class="badge" style="background: var(--success-gradient); font-size: 1em; padding: 10px 20px;">
+                        <i class="fas fa-shield-alt"></i> Stay Vigilant, Stay Secure
+                    </div>
+                </div>
+                
+                <div style="position: absolute; bottom: 30px; right: 30px;">
+                    <p style="color: rgba(255,255,255,0.6); font-size: 0.8em;">
+                        Generated by Cybersecurity Dashboard v4.0
+                    </p>
+                </div>
+
+                <aside class="notes">
+                    Based on our analysis, these are the recommended immediate and strategic actions. Immediate actions should be completed within 24-48 hours, while strategic actions should be integrated into longer-term security planning. This presentation will auto-update with fresh data every 2 hours.
+                </aside>
+            </section>
+        </div>
+    </div>
+
+    <!-- Reveal.js JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reveal.min.js" 
+            integrity="sha512-7SiPaRAte6a+nOKIgZKJSJDhGy72PoHWa2JV2gfvYhQaHXa0l7HYLBFrAL6GQPD8WzjSPDEjVCTJjTkuQJzrLQ=="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/notes/notes.min.js" 
+            integrity="sha512-eOdIhyJuOhk3xvLKWC8A7J3g8K4CqgqKQdlN2Rb0yL2FNBEYf6zHh8C7DUtJIDGFSvABbBGDU59EEUrZ3RhgvA=="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/markdown/markdown.min.js" 
+            integrity="sha512-LiM1iMYK7W2kYhBnwPeX6WtOtfwPJN8NJuBh+6tgWMoAaL+bgW2eJ4OAY3BKTa6OOSn5R3Gw+p5M7tJD4sGMg=="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/highlight/highlight.min.js" 
+            integrity="sha512-C8gHhP4zrR7h7OQ2X7SXD/rJ0dSJC9gYuFy9Xx6d8pnO8rYh9YC1d7qBbcBkXKu7C6BinA3WklgIGFJPVaUTg=="
+            crossorigin="anonymous"></script>
+
+    <!-- Presentation JavaScript -->
+    <script src="./slides.js" type="module"></script>
+</body>
+</html>

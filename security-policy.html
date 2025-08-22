@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Policy - Cybersecurity Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/3.4.1/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen py-8">
+    <div class="max-w-4xl mx-auto px-4">
+        <div class="bg-white rounded-lg shadow-lg p-8">
+            <h1 class="text-3xl font-bold text-gray-900 mb-6">🛡️ Security Policy</h1>
+            
+            <div class="prose max-w-none">
+                <h2 class="text-xl font-semibold text-gray-800 mb-4">Cybersecurity Dashboard Security Policy</h2>
+                
+                <p class="mb-4">This security policy outlines the security measures implemented in the Cybersecurity Dashboard application and provides guidance for responsible disclosure of security vulnerabilities.</p>
+                
+                <h3 class="text-lg font-semibold text-gray-700 mb-3">Security Measures Implemented</h3>
+                
+                <h4 class="font-medium text-gray-600 mb-2">Content Security Policy (CSP)</h4>
+                <ul class="list-disc pl-6 mb-4">
+                    <li>Strict CSP headers prevent XSS attacks</li>
+                    <li>Script sources limited to trusted CDNs and self</li>
+                    <li>Nonce-based script execution for additional security</li>
+                    <li>Object, frame, and child sources blocked</li>
+                    <li>Mixed content blocked with HTTPS enforcement</li>
+                </ul>
+                
+                <h4 class="font-medium text-gray-600 mb-2">Subresource Integrity (SRI)</h4>
+                <ul class="list-disc pl-6 mb-4">
+                    <li>All external scripts and stylesheets use SRI hashes</li>
+                    <li>Prevents tampering with third-party resources</li>
+                    <li>Ensures authenticity of external dependencies</li>
+                </ul>
+                
+                <h4 class="font-medium text-gray-600 mb-2">Content Sanitization</h4>
+                <ul class="list-disc pl-6 mb-4">
+                    <li>DOMPurify library sanitizes all user-generated content</li>
+                    <li>HTML sanitization prevents code injection</li>
+                    <li>Safe rendering of RSS feed content</li>
+                </ul>
+                
+                <h4 class="font-medium text-gray-600 mb-2">Progressive Web App Security</h4>
+                <ul class="list-disc pl-6 mb-4">
+                    <li>Service Worker with secure caching strategies</li>
+                    <li>Offline support with content validation</li>
+                    <li>Secure storage using IndexedDB and localStorage</li>
+                </ul>
+                
+                <h4 class="font-medium text-gray-600 mb-2">Additional Headers</h4>
+                <ul class="list-disc pl-6 mb-4">
+                    <li>X-Frame-Options: DENY prevents clickjacking</li>
+                    <li>X-Content-Type-Options: nosniff prevents MIME confusion</li>
+                    <li>Strict-Transport-Security enforces HTTPS</li>
+                    <li>Referrer-Policy controls referrer information</li>
+                </ul>
+                
+                <h3 class="text-lg font-semibold text-gray-700 mb-3">Data Privacy</h3>
+                <ul class="list-disc pl-6 mb-4">
+                    <li>No personal data collection or tracking</li>
+                    <li>Local storage only for user preferences</li>
+                    <li>No third-party analytics or tracking scripts</li>
+                    <li>RSS feeds processed client-side only</li>
+                </ul>
+                
+                <h3 class="text-lg font-semibold text-gray-700 mb-3">Responsible Disclosure</h3>
+                <p class="mb-4">If you discover a security vulnerability in this application, please report it responsibly:</p>
+                
+                <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-4">
+                    <h4 class="font-medium text-blue-800 mb-2">Contact Information</h4>
+                    <p class="text-blue-700 mb-1"><strong>Email:</strong> security@example.com</p>
+                    <p class="text-blue-700 mb-1"><strong>Security.txt:</strong> <a href="/.well-known/security.txt" class="underline">/.well-known/security.txt</a></p>
+                    <p class="text-blue-700"><strong>PGP:</strong> Available at <a href="https://keys.openpgp.org/" class="underline">OpenPGP Keyserver</a></p>
+                </div>
+                
+                <h4 class="font-medium text-gray-600 mb-2">What to Include</h4>
+                <ul class="list-disc pl-6 mb-4">
+                    <li>Detailed description of the vulnerability</li>
+                    <li>Steps to reproduce the issue</li>
+                    <li>Potential impact assessment</li>
+                    <li>Suggested remediation if available</li>
+                </ul>
+                
+                <h4 class="font-medium text-gray-600 mb-2">Response Timeline</h4>
+                <ul class="list-disc pl-6 mb-4">
+                    <li>Acknowledgment within 48 hours</li>
+                    <li>Initial assessment within 1 week</li>
+                    <li>Resolution timeline based on severity</li>
+                    <li>Public disclosure after fix deployment</li>
+                </ul>
+                
+                <h3 class="text-lg font-semibold text-gray-700 mb-3">Security Updates</h3>
+                <p class="mb-4">This application follows security best practices:</p>
+                <ul class="list-disc pl-6 mb-4">
+                    <li>Regular dependency updates and vulnerability scans</li>
+                    <li>Automated security testing in CI/CD pipeline</li>
+                    <li>Security-focused code reviews</li>
+                    <li>Monitoring of security advisories for dependencies</li>
+                </ul>
+                
+                <div class="bg-gray-50 border border-gray-200 rounded-lg p-4 mt-6">
+                    <p class="text-sm text-gray-600">
+                        <strong>Last Updated:</strong> January 2025<br>
+                        <strong>Policy Version:</strong> 1.0<br>
+                        <strong>Contact:</strong> <a href="mailto:security@example.com" class="text-blue-600 underline">security@example.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-6">
+            <a href="/" class="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                <i class="fas fa-arrow-left mr-2"></i>
+                Back to Dashboard
+            </a>
+        </div>
+    </div>
+</body>
+</html>

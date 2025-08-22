@@ -1,0 +1,111 @@
+{
+  "name": "Cybersecurity Dashboard - Medium RSS Aggregator",
+  "short_name": "CyberDash",
+  "description": "Real-time cybersecurity intelligence dashboard aggregating Medium publications",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#667eea",
+  "background_color": "#0f172a",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-US",
+  "dir": "ltr",
+  "categories": ["security", "news", "productivity"],
+  "screenshots": [
+    {
+      "src": "assets/screenshot-desktop.png",
+      "type": "image/png",
+      "sizes": "1280x720",
+      "form_factor": "wide",
+      "label": "Desktop dashboard view"
+    },
+    {
+      "src": "assets/screenshot-mobile.png", 
+      "type": "image/png",
+      "sizes": "414x896",
+      "form_factor": "narrow",
+      "label": "Mobile dashboard view"
+    }
+  ],
+  "icons": [
+    {
+      "src": "assets/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icon-96x96.png", 
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icon-128x128.png",
+      "sizes": "128x128", 
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png", 
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Latest Threats",
+      "short_name": "Threats",
+      "description": "View latest cybersecurity threats",
+      "url": "/?filter=threats",
+      "icons": [{ "src": "assets/icon-96x96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Analytics Dashboard",
+      "short_name": "Analytics", 
+      "description": "View analytics and trends",
+      "url": "/?view=analytics",
+      "icons": [{ "src": "assets/icon-96x96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Presentation Mode",
+      "short_name": "Slides",
+      "description": "Open presentation slides",
+      "url": "/slides/",
+      "icons": [{ "src": "assets/icon-96x96.png", "sizes": "96x96" }]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "name": "medium-cybersecurity-dashboard",
+  "version": "4.0.0",
+  "description": "Modern, interactive cybersecurity RSS aggregator with dashboard and slides mode",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "dev": "node scripts/dev.js",
+    "fetch": "node scripts/fetch-rss.js",
+    "serve": "python3 -m http.server 8000",
+    "test": "node scripts/test.js",
+    "deploy": "node scripts/deploy.js",
+    "lint": "eslint src/ --ext .js,.mjs",
+    "format": "prettier --write 'src/**/*.{js,mjs,css,html}'",
+    "check-deps": "node scripts/check-deps.js"
+  },
+  "keywords": [
+    "cybersecurity",
+    "rss",
+    "medium",
+    "dashboard",
+    "bug-bounty",
+    "security-research",
+    "github-pages",
+    "vanilla-js",
+    "reveal.js"
+  ],
+  "author": "kdairatchi",
+  "license": "MIT",
+  "dependencies": {
+    "dompurify": "^3.0.9",
+    "chart.js": "^4.4.1",
+    "reveal.js": "^5.0.4",
+    "alpine": "github:alpinejs/alpine",
+    "date-fns": "^3.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "node-fetch": "^3.3.2",
+    "cheerio": "^1.0.0-rc.12",
+    "fast-xml-parser": "^4.3.5",
+    "feed": "^4.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kdairatchi/medium-writeups.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kdairatchi/medium-writeups/issues"
+  },
+  "homepage": "https://kdairatchi.github.io/medium-writeups/"
+}

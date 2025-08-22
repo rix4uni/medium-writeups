@@ -1,161 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🛡️ Medium Cybersecurity Posts Dashboard</title>
-    <meta name="description" content="Real-time aggregation of cybersecurity posts from Medium - Bug bounty, penetration testing, malware analysis, and more">
-    <meta name="keywords" content="cybersecurity, medium, blog posts, bug bounty, penetration testing, hacking, security research">
+    <title>🛡️ Medium Cybersecurity Dashboard</title>
+    <meta name="description" content="Modern interactive dashboard for cybersecurity research, bug bounty writeups, and threat intelligence from Medium">
+    <meta name="keywords" content="cybersecurity, bug bounty, penetration testing, security research, threat intelligence, medium, dashboard">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="CyberSec Dashboard">
+    
+    <!-- Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="Medium Cybersecurity Posts Dashboard">
-    <meta property="og:description" content="Real-time aggregation of cybersecurity posts from Medium">
+    <meta property="og:title" content="Medium Cybersecurity Dashboard">
+    <meta property="og:description" content="Modern interactive dashboard for cybersecurity research and threat intelligence">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://your-username.github.io/medium-writeups/">
+    <meta property="og:url" content="https://kdairatchi.github.io/medium-writeups/">
+    <meta property="og:image" content="https://kdairatchi.github.io/medium-writeups/assets/og-image.png">
     
-    <!-- Styles -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self' 'nonce-dashboard-js' https://cdnjs.cloudflare.com https://unpkg.com;
+        style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com;
+        img-src 'self' data: https: blob:;
+        connect-src 'self' https: wss: ws:;
+        media-src 'self';
+        object-src 'none';
+        child-src 'none';
+        frame-src 'none';
+        worker-src 'self';
+        manifest-src 'self';
+        base-uri 'self';
+        form-action 'self';
+        frame-ancestors 'none';
+        block-all-mixed-content;
+        upgrade-insecure-requests;
+        require-trusted-types-for 'script';
+    ">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
     
+    <!-- External Resources with SRI -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" 
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+          crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js" 
+            integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQQOTStFIGdlSlYq0DM/gCa7e7yQ2uJZsj8qCCEfBz3iFwb5KKML/L1dg==" 
+            crossorigin="anonymous" defer nonce="dashboard-js"></script>
+    <script src="https://unpkg.com/alpinejs@3.13.5/dist/cdn.min.js" 
+            integrity="sha384-j7/8gSrB3D75OPnDOCN8ioLDDkEL5Q8QZKZm1iQzl8b7sRHhsv+a5DlPdO5u3l8w" 
+            crossorigin="anonymous" defer nonce="dashboard-js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.9/purify.min.js" 
+            integrity="sha512-jB0TkTBeQC9ZSkBqKMML7bUhLYjNqPFrT1XZXbj0I3f8l0dHhYrBv6lNhIRNS5R2xhlg8N5iXBD0KKhDglQW/A==" 
+            crossorigin="anonymous" defer nonce="dashboard-js"></script>
+    
+    <!-- Critical Resource Preloading -->
+    <link rel="preload" href="./src/js/app.js" as="script">
+    <link rel="preload" href="./src/js/cache.js" as="script">
+    <link rel="preload" href="./src/js/performance.js" as="script">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="dns-prefetch" href="//unpkg.com">
+    
+    <!-- Modern CSS Framework -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/3.4.1/tailwind.min.css" rel="stylesheet"
+          integrity="sha512-qAUVn+9854rwf2QAdjQ2LWMvhLNsSDjt3QvPKa4P6vnrW5P6Xf2F7IvF9m4SPY8F3Xd4W4O2W8YQXgB3b8xzgw=="
+          crossorigin="anonymous">
+    
+    <!-- Critical CSS for above-the-fold content -->
     <style>
+        /* Critical styles for initial render */
+        body { font-family: system-ui, -apple-system, sans-serif; margin: 0; background: #f8fafc; }
+        .header { display: block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .loading { animation: spin 1s linear infinite; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .gradient-primary { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        
         :root {
             --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
             --success-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-            --warning-gradient: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
             --danger-gradient: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            --dark-gradient: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+            --glass-bg: rgba(255, 255, 255, 0.95);
+            --glass-border: rgba(255, 255, 255, 0.2);
+            --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            --shadow-xl: 0 35px 60px -12px rgba(0, 0, 0, 0.35);
         }
         
-        .gradient-bg { background: var(--primary-gradient); }
+        [data-theme="dark"] {
+            --glass-bg: rgba(45, 55, 72, 0.95);
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Glass Morphism */
+        .glass {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+        }
+        
+        /* Gradient Backgrounds */
+        .gradient-primary { background: var(--primary-gradient); }
         .gradient-secondary { background: var(--secondary-gradient); }
         .gradient-success { background: var(--success-gradient); }
-        .gradient-warning { background: var(--warning-gradient); }
         .gradient-danger { background: var(--danger-gradient); }
+        .gradient-dark { background: var(--dark-gradient); }
         
-        .card-hover { 
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
-            cursor: pointer;
+        /* Hover Effects */
+        .hover-lift {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
-        .card-hover:hover { 
-            transform: translateY(-4px) scale(1.02); 
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1); 
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
         }
         
-        .category-badge { 
-            font-size: 0.75rem; 
-            padding: 0.25rem 0.75rem; 
-            border-radius: 9999px; 
+        /* Animations */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .animate-fade-in-up { animation: fadeInUp 0.6s ease-out; }
+        .animate-slide-in-right { animation: slideInRight 0.6s ease-out; }
+        .animate-pulse-slow { animation: pulse 3s ease-in-out infinite; }
+        
+        /* Typography */
+        .text-gradient {
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        /* Badges */
+        .badge {
+            font-size: 0.75rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.05em;
         }
         
-        .search-highlight { 
-            background: linear-gradient(90deg, #fef3c7, #fde68a);
-            padding: 0.1rem 0.2rem;
-            border-radius: 0.25rem;
-        }
-        
-        .loading { animation: spin 1s linear infinite; }
-        @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-        
-        .stats-card { 
-            background: linear-gradient(145deg, #ffffff, #f8fafc);
-            border: 1px solid rgba(255,255,255,0.2);
-            backdrop-filter: blur(10px);
-        }
-        
-        .priority-high { 
-            border-left: 4px solid #ef4444; 
-            background: linear-gradient(90deg, rgba(239,68,68,0.05), transparent);
-        }
-        .priority-medium { 
-            border-left: 4px solid #f59e0b; 
-            background: linear-gradient(90deg, rgba(245,158,11,0.05), transparent);
-        }
-        .priority-low { 
-            border-left: 4px solid #10b981; 
-            background: linear-gradient(90deg, rgba(16,185,129,0.05), transparent);
-        }
-        
-        .glass-card {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        
-        .floating-action {
-            position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            z-index: 1000;
-            background: var(--primary-gradient);
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.5rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: all 0.3s ease;
-        }
-        
-        .floating-action:hover {
-            transform: scale(1.1);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
-        }
-        
-        .pulse-animation {
-            animation: pulse 2s infinite;
-        }
-        
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
-        
-        .fade-in {
-            animation: fadeIn 0.6s ease-in;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        .category-filter-active {
-            background: var(--primary-gradient) !important;
-            color: white !important;
-            transform: scale(1.05);
-        }
-        
-        .trending-badge {
-            background: linear-gradient(45deg, #ff6b6b, #feca57);
-            color: white;
-            font-size: 0.7rem;
-            padding: 0.2rem 0.5rem;
-            border-radius: 12px;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            box-shadow: 0 2px 8px rgba(255,107,107,0.3);
-        }
-        
-        .new-badge {
+        .badge-new {
             background: linear-gradient(45deg, #48cae4, #023e8a);
             color: white;
-            font-size: 0.7rem;
-            padding: 0.2rem 0.5rem;
-            border-radius: 12px;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            box-shadow: 0 2px 8px rgba(72,202,228,0.3);
             animation: glow 2s ease-in-out infinite alternate;
+        }
+        
+        .badge-today {
+            background: linear-gradient(45deg, #06ffa5, #00d4aa);
+            color: white;
+        }
+        
+        .badge-trending {
+            background: linear-gradient(45deg, #ff6b6b, #feca57);
+            color: white;
         }
         
         @keyframes glow {
@@ -163,1663 +185,648 @@
             to { box-shadow: 0 4px 16px rgba(72,202,228,0.6); }
         }
         
-        .today-badge {
-            background: linear-gradient(45deg, #06ffa5, #00d4aa);
-            color: white;
-            font-size: 0.7rem;
-            padding: 0.2rem 0.5rem;
-            border-radius: 12px;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            box-shadow: 0 2px 8px rgba(6,255,165,0.3);
+        /* Search & Filters */
+        .search-highlight {
+            background: linear-gradient(90deg, #fef3c7, #fde68a);
+            padding: 0.1rem 0.2rem;
+            border-radius: 0.25rem;
         }
         
-        .post-card {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            border-radius: 16px;
-            overflow: hidden;
+        /* Priority Indicators */
+        .priority-high {
+            border-left: 4px solid #ef4444;
+            background: linear-gradient(90deg, rgba(239,68,68,0.05), transparent);
         }
         
-        .post-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+        .priority-medium {
+            border-left: 4px solid #f59e0b;
+            background: linear-gradient(90deg, rgba(245,158,11,0.05), transparent);
         }
         
-        .dark-mode {
+        .priority-low {
+            border-left: 4px solid #10b981;
+            background: linear-gradient(90deg, rgba(16,185,129,0.05), transparent);
+        }
+        
+        /* Dark Mode Styles */
+        [data-theme="dark"] {
             background-color: #1a202c;
             color: #e2e8f0;
         }
         
-        .dark-mode .stats-card {
-            background: linear-gradient(145deg, #2d3748, #4a5568);
-            color: #e2e8f0;
-        }
-        
-        .dark-mode .glass-card {
+        [data-theme="dark"] .glass {
             background: rgba(45, 55, 72, 0.95);
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
         
-        .scroll-to-top {
-            opacity: 0;
-            transition: opacity 0.3s ease;
+        [data-theme="dark"] .bg-white {
+            background-color: #2d3748 !important;
+            color: #e2e8f0;
         }
         
-        .scroll-to-top.visible {
-            opacity: 1;
+        [data-theme="dark"] .text-gray-900 {
+            color: #e2e8f0 !important;
         }
         
+        [data-theme="dark"] .text-gray-600 {
+            color: #a0aec0 !important;
+        }
+        
+        [data-theme="dark"] .border-gray-200 {
+            border-color: #4a5568 !important;
+        }
+        
+        /* Responsive Design */
         @media (max-width: 768px) {
-            .floating-action {
-                bottom: 1rem;
-                right: 1rem;
-                width: 50px;
-                height: 50px;
-                font-size: 1.2rem;
+            .container-mobile {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+            
+            .text-mobile-sm {
+                font-size: 0.875rem;
+            }
+            
+            .card-mobile {
+                margin-bottom: 1rem;
             }
         }
         
-        .tooltip {
-            position: relative;
-            display: inline-block;
+        /* Loading States */
+        .skeleton {
+            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+            background-size: 200% 100%;
+            animation: loading 1.5s infinite;
         }
         
-        .tooltip .tooltiptext {
-            visibility: hidden;
-            width: 160px;
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            border-radius: 6px;
-            padding: 8px;
-            position: absolute;
-            z-index: 1;
-            bottom: 125%;
-            left: 50%;
-            margin-left: -80px;
-            opacity: 0;
-            transition: opacity 0.3s;
-            font-size: 0.8rem;
+        @keyframes loading {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
         }
         
-        .tooltip:hover .tooltiptext {
-            visibility: visible;
-            opacity: 1;
+        /* Scroll Behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        
+        [data-theme="dark"] ::-webkit-scrollbar-track {
+            background: #2d3748;
+        }
+        
+        [data-theme="dark"] ::-webkit-scrollbar-thumb {
+            background: #4a5568;
         }
     </style>
 </head>
-<body class="bg-gray-50 min-h-screen">
+
+<body class="bg-gray-50 transition-colors duration-300" x-data="dashboardApp()">
     <!-- Header -->
-    <header class="gradient-bg text-white py-8">
-        <div class="container mx-auto px-4">
-            <div class="text-center">
-                <h1 class="text-4xl font-bold mb-2">🛡️ Medium Cybersecurity Dashboard</h1>
-                <p class="text-lg opacity-90">Real-time aggregation of cybersecurity posts and research</p>
-                <div class="mt-4 flex justify-center space-x-4">
-                    <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm">
-                        <i class="fas fa-clock mr-1"></i>
-                        Last updated: Fri, 22 Aug 2025
-                    </span>
-                    <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm">
-                        <i class="fas fa-rss mr-1"></i>
-                        5 feeds monitored
-                    </span>
+    <header class="gradient-primary text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-10"></div>
+        <div class="container mx-auto px-4 py-8 relative z-10">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="text-center md:text-left mb-4 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-2 animate-fade-in-up">
+                        🛡️ Cybersecurity Dashboard
+                    </h1>
+                    <p class="text-lg md:text-xl opacity-90 animate-fade-in-up" style="animation-delay: 0.2s">
+                        Real-time threat intelligence & security research from Medium
+                    </p>
+                </div>
+                
+                <div class="flex items-center space-x-4 animate-slide-in-right">
+                    <!-- Theme Toggle -->
+                    <button @click="toggleTheme()" 
+                            class="glass p-3 rounded-full hover:scale-110 transition-transform">
+                        <i :class="darkMode ? 'fas fa-sun' : 'fas fa-moon'" class="text-lg"></i>
+                    </button>
+                    
+                    <!-- Slides Mode Button -->
+                    <a href="./slides/" 
+                       class="glass px-4 py-2 rounded-full hover:scale-105 transition-transform inline-flex items-center">
+                        <i class="fas fa-presentation mr-2"></i>
+                        Slides Mode
+                    </a>
+                    
+                    <!-- Auto-refresh indicator -->
+                    <div class="glass px-3 py-2 rounded-full text-sm">
+                        <i class="fas fa-sync-alt mr-1" :class="{ 'animate-spin': isLoading }"></i>
+                        <span x-text="lastUpdated"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Quick Stats -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8 animate-fade-in-up" style="animation-delay: 0.4s">
+                <div class="glass p-4 rounded-lg text-center">
+                    <div class="text-2xl font-bold" x-text="stats.totalPosts">-</div>
+                    <div class="text-sm opacity-80">Total Posts</div>
+                </div>
+                <div class="glass p-4 rounded-lg text-center">
+                    <div class="text-2xl font-bold text-green-300" x-text="stats.newPosts">-</div>
+                    <div class="text-sm opacity-80">New Posts</div>
+                </div>
+                <div class="glass p-4 rounded-lg text-center">
+                    <div class="text-2xl font-bold text-blue-300" x-text="stats.todayPosts">-</div>
+                    <div class="text-sm opacity-80">Today</div>
+                </div>
+                <div class="glass p-4 rounded-lg text-center">
+                    <div class="text-2xl font-bold text-purple-300" x-text="stats.successRate + '%'">-</div>
+                    <div class="text-sm opacity-80">Success Rate</div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Stats Dashboard -->
-    <section class="py-8">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-                <div class="stats-card p-6 rounded-lg shadow-md card-hover">
-                    <div class="flex items-center">
-                        <div class="flex-shrink-0">
-                            <i class="fas fa-newspaper text-3xl text-blue-500"></i>
-                        </div>
-                        <div class="ml-4">
-                            <p class="text-sm font-medium text-gray-500">Total Posts</p>
-                            <p class="text-2xl font-semibold text-gray-900">37</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="stats-card p-6 rounded-lg shadow-md card-hover">
-                    <div class="flex items-center">
-                        <div class="flex-shrink-0">
-                            <i class="fas fa-plus-circle text-3xl text-green-500"></i>
-                        </div>
-                        <div class="ml-4">
-                            <p class="text-sm font-medium text-gray-500">New Posts</p>
-                            <p class="text-2xl font-semibold text-gray-900">33</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="stats-card p-6 rounded-lg shadow-md card-hover">
-                    <div class="flex items-center">
-                        <div class="flex-shrink-0">
-                            <i class="fas fa-calendar-day text-3xl text-orange-500"></i>
-                        </div>
-                        <div class="ml-4">
-                            <p class="text-sm font-medium text-gray-500">Today's Posts</p>
-                            <p class="text-2xl font-semibold text-gray-900">9</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="stats-card p-6 rounded-lg shadow-md card-hover">
-                    <div class="flex items-center">
-                        <div class="flex-shrink-0">
-                            <i class="fas fa-chart-line text-3xl text-purple-500"></i>
-                        </div>
-                        <div class="ml-4">
-                            <p class="text-sm font-medium text-gray-500">Success Rate</p>
-                            <p class="text-2xl font-semibold text-gray-900">100.0%</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Search and Filters -->
-    <section class="py-4 bg-white border-b">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row gap-4 items-center">
+    <!-- Navigation & Filters -->
+    <nav class="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 sticky top-0 z-40 transition-colors duration-300">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex flex-col lg:flex-row gap-4 items-center">
+                <!-- Search -->
                 <div class="flex-1 relative">
                     <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
                     <input 
                         type="text" 
-                        id="searchInput" 
-                        placeholder="Search posts by title, category, or keywords..." 
-                        class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        x-model="searchQuery"
+                        @input="debounceSearch()"
+                        placeholder="Search by title, CVE, vulnerability type..." 
+                        class="w-full pl-10 pr-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg 
+                               focus:ring-2 focus:ring-blue-500 focus:border-transparent
+                               bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100
+                               transition-colors duration-300"
                     >
                 </div>
-                <div class="flex gap-2">
-                    <select id="categoryFilter" class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500">
-                        <option value="">All Categories</option><option value="Core Security">Core Security</option>
+                
+                <!-- Filters -->
+                <div class="flex flex-wrap gap-2">
+                    <select x-model="selectedCategory" 
+                            @change="filterPosts()"
+                            class="px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg 
+                                   focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-700 
+                                   text-gray-900 dark:text-gray-100 transition-colors duration-300">
+                        <option value="">All Categories</option>
+                        <template x-for="category in categories" :key="category.name">
+                            <option :value="category.name" x-text="category.name + ' (' + category.total + ')'"></option>
+                        </template>
                     </select>
-                    <select id="timeFilter" class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500">
+                    
+                    <select x-model="timeFilter" 
+                            @change="filterPosts()"
+                            class="px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg 
+                                   focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-700 
+                                   text-gray-900 dark:text-gray-100 transition-colors duration-300">
                         <option value="">All Time</option>
                         <option value="today">Today</option>
                         <option value="week">This Week</option>
                         <option value="new">New Posts</option>
                     </select>
+                    
+                    <select x-model="priorityFilter" 
+                            @change="filterPosts()"
+                            class="px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg 
+                                   focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-700 
+                                   text-gray-900 dark:text-gray-100 transition-colors duration-300">
+                        <option value="">All Priorities</option>
+                        <option value="high">High Priority</option>
+                        <option value="medium">Medium Priority</option>
+                        <option value="low">Low Priority</option>
+                    </select>
+                </div>
+                
+                <!-- View Toggle -->
+                <div class="flex bg-gray-100 dark:bg-gray-700 rounded-lg p-1 transition-colors duration-300">
+                    <button @click="viewMode = 'grid'" 
+                            :class="viewMode === 'grid' ? 'bg-white dark:bg-gray-600 shadow' : ''"
+                            class="px-3 py-2 rounded text-sm transition-all duration-200">
+                        <i class="fas fa-th-large mr-1"></i> Grid
+                    </button>
+                    <button @click="viewMode = 'list'" 
+                            :class="viewMode === 'list' ? 'bg-white dark:bg-gray-600 shadow' : ''"
+                            class="px-3 py-2 rounded text-sm transition-all duration-200">
+                        <i class="fas fa-list mr-1"></i> List
+                    </button>
                 </div>
             </div>
+            
+            <!-- Active Filters Display -->
+            <div x-show="hasActiveFilters()" class="flex flex-wrap gap-2 mt-3">
+                <template x-for="filter in getActiveFilters()" :key="filter.type">
+                    <span class="inline-flex items-center px-2 py-1 rounded-full text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200">
+                        <span x-text="filter.label"></span>
+                        <button @click="clearFilter(filter.type)" class="ml-1 hover:text-blue-600">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </span>
+                </template>
+                <button @click="clearAllFilters()" 
+                        class="text-xs text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
+                    Clear all
+                </button>
+            </div>
         </div>
-    </section>
+    </nav>
 
-    <!-- Posts Grid -->
-    <section class="py-8">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6" id="postsContainer">
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Analytics Dashboard -->
+        <section x-show="showAnalytics" class="mb-8 space-y-6">
+            <div class="flex items-center justify-between">
+                <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100">📊 Analytics Dashboard</h2>
+                <button @click="showAnalytics = !showAnalytics" 
+                        class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- Category Distribution Chart -->
+                <div class="glass rounded-lg p-6">
+                    <h3 class="text-lg font-semibold mb-4 text-gray-900 dark:text-gray-100">Category Distribution</h3>
+                    <canvas id="categoryChart" width="400" height="200"></canvas>
+                </div>
+                
+                <!-- Timeline Chart -->
+                <div class="glass rounded-lg p-6">
+                    <h3 class="text-lg font-semibold mb-4 text-gray-900 dark:text-gray-100">Posts Timeline</h3>
+                    <canvas id="timelineChart" width="400" height="200"></canvas>
+                </div>
+                
+                <!-- Trending Topics -->
+                <div class="glass rounded-lg p-6">
+                    <h3 class="text-lg font-semibold mb-4 text-gray-900 dark:text-gray-100">🔥 Trending Topics</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <template x-for="topic in trendingTopics.slice(0, 15)" :key="topic.name">
+                            <span class="badge badge-trending cursor-pointer hover:scale-105 transition-transform"
+                                  @click="searchQuery = topic.name; filterPosts()"
+                                  x-text="topic.name + ' (' + topic.count + ')'">
+                            </span>
+                        </template>
+                    </div>
+                </div>
+                
+                <!-- Recent CVEs -->
+                <div class="glass rounded-lg p-6">
+                    <h3 class="text-lg font-semibold mb-4 text-gray-900 dark:text-gray-100">🚨 Recent CVEs</h3>
+                    <div class="space-y-2 max-h-48 overflow-y-auto">
+                        <template x-for="cve in recentCVEs.slice(0, 10)" :key="cve">
+                            <div class="flex items-center justify-between p-2 bg-red-50 dark:bg-red-900/20 rounded">
+                                <span class="font-mono text-sm" x-text="cve"></span>
+                                <button @click="searchQuery = cve; filterPosts()" 
+                                        class="text-red-600 dark:text-red-400 hover:text-red-800 dark:hover:text-red-300">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                <div class="post-card bg-white rounded-lg shadow-md card-hover priority-high" 
-                     data-category="Core Security" 
-                     data-time="27m ago" 
-                     data-new="true" 
-                     data-today="true">
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <span class="category-badge text-white font-medium" style="background-color: #FF6B6B">
-                                Core Security
-                            </span>
-                            <div class="flex space-x-1">
-                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">New</span>
-                                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">Today</span>
+        <!-- Posts Grid/List -->
+        <section>
+            <div class="flex items-center justify-between mb-6">
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100">
+                        🔍 Latest Posts
+                        <span class="text-lg font-normal text-gray-600 dark:text-gray-400">
+                            (<span x-text="filteredPosts.length"></span> of <span x-text="allPosts.length"></span>)
+                        </span>
+                    </h2>
+                    <p class="text-gray-600 dark:text-gray-400 mt-1">
+                        Last updated: <span x-text="lastUpdated"></span>
+                    </p>
+                </div>
+                
+                <button @click="showAnalytics = !showAnalytics" 
+                        class="glass px-4 py-2 rounded-lg hover:scale-105 transition-transform">
+                    <i class="fas fa-chart-bar mr-2"></i>
+                    Analytics
+                </button>
+            </div>
+            
+            <!-- Loading State -->
+            <div x-show="isLoading" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <template x-for="i in 6" :key="i">
+                    <div class="glass rounded-lg p-6 animate-pulse">
+                        <div class="skeleton h-4 w-1/4 mb-3 rounded"></div>
+                        <div class="skeleton h-6 w-full mb-2 rounded"></div>
+                        <div class="skeleton h-4 w-3/4 mb-4 rounded"></div>
+                        <div class="skeleton h-3 w-1/2 rounded"></div>
+                    </div>
+                </template>
+            </div>
+            
+            <!-- Posts Grid -->
+            <div x-show="!isLoading && viewMode === 'grid'" 
+                 class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <template x-for="(post, index) in paginatedPosts" :key="post.guid">
+                    <article class="glass rounded-lg overflow-hidden hover-lift"
+                             :class="getPriorityClass(post.priority)"
+                             x-intersect.once="animateCard($el, index)">
+                        <div class="p-6">
+                            <!-- Header -->
+                            <div class="flex items-start justify-between mb-3">
+                                <span class="badge text-white text-xs"
+                                      :style="'background-color: ' + getCategoryColor(post.sourceCategory)"
+                                      x-text="post.sourceCategory">
+                                </span>
+                                <div class="flex space-x-1">
+                                    <span x-show="post.isNew" class="badge badge-new">New</span>
+                                    <span x-show="post.isToday" class="badge badge-today">Today</span>
+                                    <span x-show="post.cveIds && post.cveIds.length > 0" class="badge bg-red-500 text-white">
+                                        CVE
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <!-- Title -->
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3 line-clamp-2 leading-snug">
+                                <a :href="post.link" 
+                                   target="_blank" 
+                                   class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                                   x-html="highlightSearchTerm(post.title)">
+                                </a>
+                            </h3>
+                            
+                            <!-- Description -->
+                            <p class="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-3"
+                               x-html="highlightSearchTerm(post.description)">
+                            </p>
+                            
+                            <!-- CVEs -->
+                            <div x-show="post.cveIds && post.cveIds.length > 0" class="mb-3">
+                                <div class="flex flex-wrap gap-1">
+                                    <template x-for="cve in post.cveIds.slice(0, 3)" :key="cve">
+                                        <span class="badge bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 text-xs cursor-pointer"
+                                              @click="searchQuery = cve; filterPosts()"
+                                              x-text="cve">
+                                        </span>
+                                    </template>
+                                    <span x-show="post.cveIds.length > 3" 
+                                          class="badge bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-xs"
+                                          x-text="'+' + (post.cveIds.length - 3) + ' more'">
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <!-- Categories -->
+                            <div class="mb-4">
+                                <div class="flex flex-wrap gap-1">
+                                    <template x-for="category in post.categories.slice(0, 4)" :key="category">
+                                        <span class="badge bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs cursor-pointer"
+                                              @click="searchQuery = category; filterPosts()"
+                                              x-text="category">
+                                        </span>
+                                    </template>
+                                    <span x-show="post.categories.length > 4" 
+                                          class="badge bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-xs"
+                                          x-text="'+' + (post.categories.length - 4) + ' more'">
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <!-- Footer -->
+                            <div class="flex items-center justify-between text-sm text-gray-500 dark:text-gray-400">
+                                <div class="flex items-center">
+                                    <i class="fas fa-clock mr-1"></i>
+                                    <span x-text="formatTimeAgo(post.publishedTime)"></span>
+                                    <span x-show="post.author" class="ml-2">
+                                        • <i class="fas fa-user mr-1"></i>
+                                        <span x-text="post.author"></span>
+                                    </span>
+                                </div>
+                                <a :href="post.link" 
+                                   target="_blank" 
+                                   class="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium">
+                                    Read <i class="fas fa-external-link-alt ml-1 text-xs"></i>
+                                </a>
                             </div>
                         </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="https://medium.com/p/6c304b742361" target="_blank" class="hover:text-blue-600 transition-colors">
-                                Cybersecurity Expert Reveals Dark Secrets of Hacking History
-                            </a>
-                        </h3>
-                        <div class="flex items-center text-sm text-gray-500 mb-3">
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>27m ago</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-400">
-                                2 source(s)
-                            </span>
-                            <a href="https://medium.com/p/6c304b742361" target="_blank" 
-                               class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-                                Read More <i class="fas fa-external-link-alt ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-card bg-white rounded-lg shadow-md card-hover priority-high" 
-                     data-category="Core Security" 
-                     data-time="54m ago" 
-                     data-new="true" 
-                     data-today="true">
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <span class="category-badge text-white font-medium" style="background-color: #FF6B6B">
-                                Core Security
-                            </span>
-                            <div class="flex space-x-1">
-                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">New</span>
-                                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">Today</span>
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="https://medium.com/p/5e72610675af" target="_blank" class="hover:text-blue-600 transition-colors">
-                                The Day Your AI Agent Got Rejected: Why Digital Identity is About to Break (And Ho...
-                            </a>
-                        </h3>
-                        <div class="flex items-center text-sm text-gray-500 mb-3">
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>54m ago</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-400">
-                                1 source(s)
-                            </span>
-                            <a href="https://medium.com/p/5e72610675af" target="_blank" 
-                               class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-                                Read More <i class="fas fa-external-link-alt ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-card bg-white rounded-lg shadow-md card-hover priority-high" 
-                     data-category="Core Security" 
-                     data-time="58m ago" 
-                     data-new="true" 
-                     data-today="true">
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <span class="category-badge text-white font-medium" style="background-color: #FF6B6B">
-                                Core Security
-                            </span>
-                            <div class="flex space-x-1">
-                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">New</span>
-                                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">Today</span>
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="https://medium.com/p/43c821e07664" target="_blank" class="hover:text-blue-600 transition-colors">
-                                Criminal IP Whitepaper: 7 Ways to Leverage Threat Intelligence in Security Operations
-                            </a>
-                        </h3>
-                        <div class="flex items-center text-sm text-gray-500 mb-3">
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>58m ago</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-400">
-                                3 source(s)
-                            </span>
-                            <a href="https://medium.com/p/43c821e07664" target="_blank" 
-                               class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-                                Read More <i class="fas fa-external-link-alt ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-card bg-white rounded-lg shadow-md card-hover priority-high" 
-                     data-category="Core Security" 
-                     data-time="1h ago" 
-                     data-new="true" 
-                     data-today="true">
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <span class="category-badge text-white font-medium" style="background-color: #FF6B6B">
-                                Core Security
-                            </span>
-                            <div class="flex space-x-1">
-                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">New</span>
-                                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">Today</span>
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="https://medium.com/p/667728ed1e73" target="_blank" class="hover:text-blue-600 transition-colors">
-                                Planning a HomeLab for Cybersecurity and AI
-                            </a>
-                        </h3>
-                        <div class="flex items-center text-sm text-gray-500 mb-3">
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>1h ago</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-400">
-                                2 source(s)
-                            </span>
-                            <a href="https://medium.com/p/667728ed1e73" target="_blank" 
-                               class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-                                Read More <i class="fas fa-external-link-alt ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-card bg-white rounded-lg shadow-md card-hover priority-high" 
-                     data-category="Core Security" 
-                     data-time="1h ago" 
-                     data-new="true" 
-                     data-today="true">
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <span class="category-badge text-white font-medium" style="background-color: #FF6B6B">
-                                Core Security
-                            </span>
-                            <div class="flex space-x-1">
-                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">New</span>
-                                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">Today</span>
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="https://medium.com/p/b296e51e70a3" target="_blank" class="hover:text-blue-600 transition-colors">
-                                When Scammers Get Scammed: The Dark World of Fake Fraud Listings
-                            </a>
-                        </h3>
-                        <div class="flex items-center text-sm text-gray-500 mb-3">
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>1h ago</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-400">
-                                2 source(s)
-                            </span>
-                            <a href="https://medium.com/p/b296e51e70a3" target="_blank" 
-                               class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-                                Read More <i class="fas fa-external-link-alt ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-card bg-white rounded-lg shadow-md card-hover priority-high" 
-                     data-category="Core Security" 
-                     data-time="1h ago" 
-                     data-new="true" 
-                     data-today="true">
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <span class="category-badge text-white font-medium" style="background-color: #FF6B6B">
-                                Core Security
-                            </span>
-                            <div class="flex space-x-1">
-                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">New</span>
-                                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">Today</span>
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="https://medium.com/p/8818ea947281" target="_blank" class="hover:text-blue-600 transition-colors">
-                                CPTS: THE HARDEST EXAM I’VE EVER FACED
-                            </a>
-                        </h3>
-                        <div class="flex items-center text-sm text-gray-500 mb-3">
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>1h ago</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-400">
-                                2 source(s)
-                            </span>
-                            <a href="https://medium.com/p/8818ea947281" target="_blank" 
-                               class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-                                Read More <i class="fas fa-external-link-alt ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-card bg-white rounded-lg shadow-md card-hover priority-high" 
-                     data-category="Core Security" 
-                     data-time="1h ago" 
-                     data-new="true" 
-                     data-today="true">
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <span class="category-badge text-white font-medium" style="background-color: #FF6B6B">
-                                Core Security
-                            </span>
-                            <div class="flex space-x-1">
-                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">New</span>
-                                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">Today</span>
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="https://medium.com/p/73e9bad305cb" target="_blank" class="hover:text-blue-600 transition-colors">
-                                Cybersecurity guide blog
-                            </a>
-                        </h3>
-                        <div class="flex items-center text-sm text-gray-500 mb-3">
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>1h ago</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-400">
-                                2 source(s)
-                            </span>
-                            <a href="https://medium.com/p/73e9bad305cb" target="_blank" 
-                               class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-                                Read More <i class="fas fa-external-link-alt ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-card bg-white rounded-lg shadow-md card-hover priority-high" 
-                     data-category="Core Security" 
-                     data-time="1h ago" 
-                     data-new="true" 
-                     data-today="true">
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <span class="category-badge text-white font-medium" style="background-color: #FF6B6B">
-                                Core Security
-                            </span>
-                            <div class="flex space-x-1">
-                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">New</span>
-                                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">Today</span>
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="https://medium.com/p/948bcae4fe5b" target="_blank" class="hover:text-blue-600 transition-colors">
-                                FOFA: La Guía Definitiva para el Reconocimiento de Activos en Bug Bounty y OSINT
-                            </a>
-                        </h3>
-                        <div class="flex items-center text-sm text-gray-500 mb-3">
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>1h ago</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-400">
-                                2 source(s)
-                            </span>
-                            <a href="https://medium.com/p/948bcae4fe5b" target="_blank" 
-                               class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-                                Read More <i class="fas fa-external-link-alt ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-card bg-white rounded-lg shadow-md card-hover priority-high" 
-                     data-category="Core Security" 
-                     data-time="1h ago" 
-                     data-new="true" 
-                     data-today="true">
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <span class="category-badge text-white font-medium" style="background-color: #FF6B6B">
-                                Core Security
-                            </span>
-                            <div class="flex space-x-1">
-                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">New</span>
-                                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">Today</span>
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="https://medium.com/p/9604216afb28" target="_blank" class="hover:text-blue-600 transition-colors">
-                                CPTS: EL EXAMEN MÁS DIFÍCIL AL QUE ME HE ENFRENTADO
-                            </a>
-                        </h3>
-                        <div class="flex items-center text-sm text-gray-500 mb-3">
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>1h ago</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-400">
-                                2 source(s)
-                            </span>
-                            <a href="https://medium.com/p/9604216afb28" target="_blank" 
-                               class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-                                Read More <i class="fas fa-external-link-alt ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-card bg-white rounded-lg shadow-md card-hover priority-high" 
-                     data-category="Core Security" 
-                     data-time="1h ago" 
-                     data-new="true" 
-                     data-today="false">
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <span class="category-badge text-white font-medium" style="background-color: #FF6B6B">
-                                Core Security
-                            </span>
-                            <div class="flex space-x-1">
-                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">New</span>
+                    </article>
+                </template>
+            </div>
+            
+            <!-- Posts List -->
+            <div x-show="!isLoading && viewMode === 'list'" class="space-y-4">
+                <template x-for="(post, index) in paginatedPosts" :key="post.guid">
+                    <article class="glass rounded-lg p-6 hover-lift"
+                             :class="getPriorityClass(post.priority)"
+                             x-intersect.once="animateCard($el, index)">
+                        <div class="flex flex-col lg:flex-row lg:items-center gap-4">
+                            <!-- Content -->
+                            <div class="flex-1">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span class="badge text-white text-xs"
+                                          :style="'background-color: ' + getCategoryColor(post.sourceCategory)"
+                                          x-text="post.sourceCategory">
+                                    </span>
+                                    <span x-show="post.isNew" class="badge badge-new">New</span>
+                                    <span x-show="post.isToday" class="badge badge-today">Today</span>
+                                    <span x-show="post.cveIds && post.cveIds.length > 0" class="badge bg-red-500 text-white">
+                                        <span x-text="post.cveIds.length"></span> CVE<span x-show="post.cveIds.length > 1">s</span>
+                                    </span>
+                                </div>
                                 
+                                <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">
+                                    <a :href="post.link" 
+                                       target="_blank" 
+                                       class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                                       x-html="highlightSearchTerm(post.title)">
+                                    </a>
+                                </h3>
+                                
+                                <p class="text-gray-600 dark:text-gray-400 mb-3 line-clamp-2"
+                                   x-html="highlightSearchTerm(post.description)">
+                                </p>
+                                
+                                <div class="flex items-center text-sm text-gray-500 dark:text-gray-400">
+                                    <i class="fas fa-clock mr-1"></i>
+                                    <span x-text="formatTimeAgo(post.publishedTime)"></span>
+                                    <span x-show="post.author" class="ml-3">
+                                        <i class="fas fa-user mr-1"></i>
+                                        <span x-text="post.author"></span>
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <!-- Actions -->
+                            <div class="flex items-center gap-3">
+                                <a :href="post.link" 
+                                   target="_blank" 
+                                   class="glass px-4 py-2 rounded-lg hover:scale-105 transition-transform inline-flex items-center">
+                                    <i class="fas fa-external-link-alt mr-2"></i>
+                                    Read More
+                                </a>
                             </div>
                         </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="https://medium.com/p/c64f26d2ed3a" target="_blank" class="hover:text-blue-600 transition-colors">
-                                CAT Reloaded CTF — CATF 2025–DFIR Challenges
-                            </a>
-                        </h3>
-                        <div class="flex items-center text-sm text-gray-500 mb-3">
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>1h ago</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-400">
-                                2 source(s)
-                            </span>
-                            <a href="https://medium.com/p/c64f26d2ed3a" target="_blank" 
-                               class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-                                Read More <i class="fas fa-external-link-alt ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-card bg-white rounded-lg shadow-md card-hover priority-high" 
-                     data-category="Core Security" 
-                     data-time="1h ago" 
-                     data-new="true" 
-                     data-today="false">
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <span class="category-badge text-white font-medium" style="background-color: #FF6B6B">
-                                Core Security
-                            </span>
-                            <div class="flex space-x-1">
-                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">New</span>
-                                
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="https://medium.com/p/80f4ebce1b0f" target="_blank" class="hover:text-blue-600 transition-colors">
-                                The Hybrid Future of GRC Engineering — Part 2: Building the Layer
-                            </a>
-                        </h3>
-                        <div class="flex items-center text-sm text-gray-500 mb-3">
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>1h ago</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-400">
-                                2 source(s)
-                            </span>
-                            <a href="https://medium.com/p/80f4ebce1b0f" target="_blank" 
-                               class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-                                Read More <i class="fas fa-external-link-alt ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-card bg-white rounded-lg shadow-md card-hover priority-high" 
-                     data-category="Core Security" 
-                     data-time="1h ago" 
-                     data-new="true" 
-                     data-today="false">
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <span class="category-badge text-white font-medium" style="background-color: #FF6B6B">
-                                Core Security
-                            </span>
-                            <div class="flex space-x-1">
-                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">New</span>
-                                
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="https://medium.com/p/918b054a8462" target="_blank" class="hover:text-blue-600 transition-colors">
-                                AWS CLI v2 by Examples: Enhancing Security with AWS Systems Manager Parameter Store
-                            </a>
-                        </h3>
-                        <div class="flex items-center text-sm text-gray-500 mb-3">
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>1h ago</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-400">
-                                1 source(s)
-                            </span>
-                            <a href="https://medium.com/p/918b054a8462" target="_blank" 
-                               class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-                                Read More <i class="fas fa-external-link-alt ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-card bg-white rounded-lg shadow-md card-hover priority-high" 
-                     data-category="Core Security" 
-                     data-time="1h ago" 
-                     data-new="true" 
-                     data-today="false">
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <span class="category-badge text-white font-medium" style="background-color: #FF6B6B">
-                                Core Security
-                            </span>
-                            <div class="flex space-x-1">
-                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">New</span>
-                                
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="https://medium.com/p/b68815292f4f" target="_blank" class="hover:text-blue-600 transition-colors">
-                                CAT CTF 2025 web challenges writeup
-                            </a>
-                        </h3>
-                        <div class="flex items-center text-sm text-gray-500 mb-3">
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>1h ago</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-400">
-                                2 source(s)
-                            </span>
-                            <a href="https://medium.com/p/b68815292f4f" target="_blank" 
-                               class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-                                Read More <i class="fas fa-external-link-alt ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-card bg-white rounded-lg shadow-md card-hover priority-high" 
-                     data-category="Core Security" 
-                     data-time="1h ago" 
-                     data-new="true" 
-                     data-today="false">
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <span class="category-badge text-white font-medium" style="background-color: #FF6B6B">
-                                Core Security
-                            </span>
-                            <div class="flex space-x-1">
-                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">New</span>
-                                
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="https://medium.com/p/afd003ed8e70" target="_blank" class="hover:text-blue-600 transition-colors">
-                                Deep Dive Project NANDA: Building the Agentic Web : Part 6 — Security Model
-                            </a>
-                        </h3>
-                        <div class="flex items-center text-sm text-gray-500 mb-3">
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>1h ago</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-400">
-                                1 source(s)
-                            </span>
-                            <a href="https://medium.com/p/afd003ed8e70" target="_blank" 
-                               class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-                                Read More <i class="fas fa-external-link-alt ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-card bg-white rounded-lg shadow-md card-hover priority-high" 
-                     data-category="Core Security" 
-                     data-time="1h ago" 
-                     data-new="true" 
-                     data-today="false">
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <span class="category-badge text-white font-medium" style="background-color: #FF6B6B">
-                                Core Security
-                            </span>
-                            <div class="flex space-x-1">
-                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">New</span>
-                                
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="https://medium.com/p/cf96b1a8a878" target="_blank" class="hover:text-blue-600 transition-colors">
-                                Why Enterprise AI Browser is the Key to Connecting AI with Business Operations
-                            </a>
-                        </h3>
-                        <div class="flex items-center text-sm text-gray-500 mb-3">
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>1h ago</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-400">
-                                1 source(s)
-                            </span>
-                            <a href="https://medium.com/p/cf96b1a8a878" target="_blank" 
-                               class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-                                Read More <i class="fas fa-external-link-alt ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-card bg-white rounded-lg shadow-md card-hover priority-high" 
-                     data-category="Core Security" 
-                     data-time="2h ago" 
-                     data-new="true" 
-                     data-today="false">
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <span class="category-badge text-white font-medium" style="background-color: #FF6B6B">
-                                Core Security
-                            </span>
-                            <div class="flex space-x-1">
-                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">New</span>
-                                
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="https://medium.com/p/2eea6b34e98a" target="_blank" class="hover:text-blue-600 transition-colors">
-                                K2-SUMMIT WALKTHROUGH : TRYHACKME
-                            </a>
-                        </h3>
-                        <div class="flex items-center text-sm text-gray-500 mb-3">
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>2h ago</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-400">
-                                1 source(s)
-                            </span>
-                            <a href="https://medium.com/p/2eea6b34e98a" target="_blank" 
-                               class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-                                Read More <i class="fas fa-external-link-alt ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-card bg-white rounded-lg shadow-md card-hover priority-high" 
-                     data-category="Core Security" 
-                     data-time="2h ago" 
-                     data-new="true" 
-                     data-today="false">
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <span class="category-badge text-white font-medium" style="background-color: #FF6B6B">
-                                Core Security
-                            </span>
-                            <div class="flex space-x-1">
-                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">New</span>
-                                
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="https://medium.com/p/aa23b08c3cff" target="_blank" class="hover:text-blue-600 transition-colors">
-                                K2-MIDDLE CAMP WALKTHROUGH : TRYHACKME
-                            </a>
-                        </h3>
-                        <div class="flex items-center text-sm text-gray-500 mb-3">
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>2h ago</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-400">
-                                1 source(s)
-                            </span>
-                            <a href="https://medium.com/p/aa23b08c3cff" target="_blank" 
-                               class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-                                Read More <i class="fas fa-external-link-alt ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-card bg-white rounded-lg shadow-md card-hover priority-high" 
-                     data-category="Core Security" 
-                     data-time="2h ago" 
-                     data-new="true" 
-                     data-today="false">
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <span class="category-badge text-white font-medium" style="background-color: #FF6B6B">
-                                Core Security
-                            </span>
-                            <div class="flex space-x-1">
-                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">New</span>
-                                
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="https://medium.com/p/0e62b5c8c4de" target="_blank" class="hover:text-blue-600 transition-colors">
-                                K2-BASE CAMP WALKTHROUGH : TRYHACKME
-                            </a>
-                        </h3>
-                        <div class="flex items-center text-sm text-gray-500 mb-3">
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>2h ago</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-400">
-                                1 source(s)
-                            </span>
-                            <a href="https://medium.com/p/0e62b5c8c4de" target="_blank" 
-                               class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-                                Read More <i class="fas fa-external-link-alt ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-card bg-white rounded-lg shadow-md card-hover priority-high" 
-                     data-category="Core Security" 
-                     data-time="3h ago" 
-                     data-new="true" 
-                     data-today="false">
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <span class="category-badge text-white font-medium" style="background-color: #FF6B6B">
-                                Core Security
-                            </span>
-                            <div class="flex space-x-1">
-                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">New</span>
-                                
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="https://medium.com/p/2ea2dfecd08a" target="_blank" class="hover:text-blue-600 transition-colors">
-                                The 1% of Security Settings That Block 99% of Attacks
-                            </a>
-                        </h3>
-                        <div class="flex items-center text-sm text-gray-500 mb-3">
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>3h ago</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-400">
-                                1 source(s)
-                            </span>
-                            <a href="https://medium.com/p/2ea2dfecd08a" target="_blank" 
-                               class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-                                Read More <i class="fas fa-external-link-alt ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-card bg-white rounded-lg shadow-md card-hover priority-high" 
-                     data-category="Core Security" 
-                     data-time="3h ago" 
-                     data-new="true" 
-                     data-today="false">
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <span class="category-badge text-white font-medium" style="background-color: #FF6B6B">
-                                Core Security
-                            </span>
-                            <div class="flex space-x-1">
-                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">New</span>
-                                
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="https://medium.com/p/7dbb790ea5af" target="_blank" class="hover:text-blue-600 transition-colors">
-                                Advancing Vulnerability Assessment for Beginners
-                            </a>
-                        </h3>
-                        <div class="flex items-center text-sm text-gray-500 mb-3">
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>3h ago</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-400">
-                                1 source(s)
-                            </span>
-                            <a href="https://medium.com/p/7dbb790ea5af" target="_blank" 
-                               class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-                                Read More <i class="fas fa-external-link-alt ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-card bg-white rounded-lg shadow-md card-hover priority-high" 
-                     data-category="Core Security" 
-                     data-time="3h ago" 
-                     data-new="true" 
-                     data-today="false">
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <span class="category-badge text-white font-medium" style="background-color: #FF6B6B">
-                                Core Security
-                            </span>
-                            <div class="flex space-x-1">
-                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">New</span>
-                                
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="https://medium.com/p/daac301e1119" target="_blank" class="hover:text-blue-600 transition-colors">
-                                Advancing Vulnerability Assessment and Ethical Challenges
-                            </a>
-                        </h3>
-                        <div class="flex items-center text-sm text-gray-500 mb-3">
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>3h ago</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-400">
-                                1 source(s)
-                            </span>
-                            <a href="https://medium.com/p/daac301e1119" target="_blank" 
-                               class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-                                Read More <i class="fas fa-external-link-alt ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-card bg-white rounded-lg shadow-md card-hover priority-high" 
-                     data-category="Core Security" 
-                     data-time="4h ago" 
-                     data-new="true" 
-                     data-today="false">
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <span class="category-badge text-white font-medium" style="background-color: #FF6B6B">
-                                Core Security
-                            </span>
-                            <div class="flex space-x-1">
-                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">New</span>
-                                
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="https://medium.com/p/89f67ea5d4b1" target="_blank" class="hover:text-blue-600 transition-colors">
-                                What is a CSRF attack?
-                            </a>
-                        </h3>
-                        <div class="flex items-center text-sm text-gray-500 mb-3">
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>4h ago</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-400">
-                                2 source(s)
-                            </span>
-                            <a href="https://medium.com/p/89f67ea5d4b1" target="_blank" 
-                               class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-                                Read More <i class="fas fa-external-link-alt ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-card bg-white rounded-lg shadow-md card-hover priority-high" 
-                     data-category="Core Security" 
-                     data-time="4h ago" 
-                     data-new="true" 
-                     data-today="false">
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <span class="category-badge text-white font-medium" style="background-color: #FF6B6B">
-                                Core Security
-                            </span>
-                            <div class="flex space-x-1">
-                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">New</span>
-                                
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="https://medium.com/p/c90399dfe9d0" target="_blank" class="hover:text-blue-600 transition-colors">
-                                 Spring Security’s SecurityFilterChain Explained Like You’re Hiring Bouncers f...
-                            </a>
-                        </h3>
-                        <div class="flex items-center text-sm text-gray-500 mb-3">
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>4h ago</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-400">
-                                1 source(s)
-                            </span>
-                            <a href="https://medium.com/p/c90399dfe9d0" target="_blank" 
-                               class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-                                Read More <i class="fas fa-external-link-alt ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-card bg-white rounded-lg shadow-md card-hover priority-high" 
-                     data-category="Core Security" 
-                     data-time="4h ago" 
-                     data-new="true" 
-                     data-today="false">
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <span class="category-badge text-white font-medium" style="background-color: #FF6B6B">
-                                Core Security
-                            </span>
-                            <div class="flex space-x-1">
-                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">New</span>
-                                
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="https://medium.com/p/412a5ccb6879" target="_blank" class="hover:text-blue-600 transition-colors">
-                                Wait While I Wipe Your Wheels
-                            </a>
-                        </h3>
-                        <div class="flex items-center text-sm text-gray-500 mb-3">
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>4h ago</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-400">
-                                1 source(s)
-                            </span>
-                            <a href="https://medium.com/p/412a5ccb6879" target="_blank" 
-                               class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-                                Read More <i class="fas fa-external-link-alt ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-card bg-white rounded-lg shadow-md card-hover priority-high" 
-                     data-category="Core Security" 
-                     data-time="4h ago" 
-                     data-new="true" 
-                     data-today="false">
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <span class="category-badge text-white font-medium" style="background-color: #FF6B6B">
-                                Core Security
-                            </span>
-                            <div class="flex space-x-1">
-                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">New</span>
-                                
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="https://medium.com/p/2e209ecf4191" target="_blank" class="hover:text-blue-600 transition-colors">
-                                Nimbus SOC: an end-to-end, evidence-backed detection lab on AWS
-                            </a>
-                        </h3>
-                        <div class="flex items-center text-sm text-gray-500 mb-3">
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>4h ago</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-400">
-                                1 source(s)
-                            </span>
-                            <a href="https://medium.com/p/2e209ecf4191" target="_blank" 
-                               class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-                                Read More <i class="fas fa-external-link-alt ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-card bg-white rounded-lg shadow-md card-hover priority-high" 
-                     data-category="Core Security" 
-                     data-time="5h ago" 
-                     data-new="true" 
-                     data-today="false">
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <span class="category-badge text-white font-medium" style="background-color: #FF6B6B">
-                                Core Security
-                            </span>
-                            <div class="flex space-x-1">
-                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">New</span>
-                                
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="https://medium.com/p/1d2857417e37" target="_blank" class="hover:text-blue-600 transition-colors">
-                                Move is not perfect #2: The Upgrade Trap
-                            </a>
-                        </h3>
-                        <div class="flex items-center text-sm text-gray-500 mb-3">
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>5h ago</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-400">
-                                1 source(s)
-                            </span>
-                            <a href="https://medium.com/p/1d2857417e37" target="_blank" 
-                               class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-                                Read More <i class="fas fa-external-link-alt ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-card bg-white rounded-lg shadow-md card-hover priority-high" 
-                     data-category="Core Security" 
-                     data-time="5h ago" 
-                     data-new="true" 
-                     data-today="false">
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <span class="category-badge text-white font-medium" style="background-color: #FF6B6B">
-                                Core Security
-                            </span>
-                            <div class="flex space-x-1">
-                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">New</span>
-                                
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="https://medium.com/p/b2c69856d11d" target="_blank" class="hover:text-blue-600 transition-colors">
-                                Information Security Fundamentals and The CIA Triad
-                            </a>
-                        </h3>
-                        <div class="flex items-center text-sm text-gray-500 mb-3">
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>5h ago</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-400">
-                                1 source(s)
-                            </span>
-                            <a href="https://medium.com/p/b2c69856d11d" target="_blank" 
-                               class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-                                Read More <i class="fas fa-external-link-alt ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-card bg-white rounded-lg shadow-md card-hover priority-high" 
-                     data-category="Core Security" 
-                     data-time="6h ago" 
-                     data-new="true" 
-                     data-today="false">
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <span class="category-badge text-white font-medium" style="background-color: #FF6B6B">
-                                Core Security
-                            </span>
-                            <div class="flex space-x-1">
-                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">New</span>
-                                
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="https://medium.com/p/b3af0fcdf579" target="_blank" class="hover:text-blue-600 transition-colors">
-                                Know Your Enemy
-                            </a>
-                        </h3>
-                        <div class="flex items-center text-sm text-gray-500 mb-3">
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>6h ago</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-400">
-                                1 source(s)
-                            </span>
-                            <a href="https://medium.com/p/b3af0fcdf579" target="_blank" 
-                               class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-                                Read More <i class="fas fa-external-link-alt ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-card bg-white rounded-lg shadow-md card-hover priority-high" 
-                     data-category="Core Security" 
-                     data-time="6h ago" 
-                     data-new="true" 
-                     data-today="false">
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <span class="category-badge text-white font-medium" style="background-color: #FF6B6B">
-                                Core Security
-                            </span>
-                            <div class="flex space-x-1">
-                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">New</span>
-                                
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="https://medium.com/p/905f190d79cd" target="_blank" class="hover:text-blue-600 transition-colors">
-                                Digital Amnesia: How Forgotten Cloud Accounts Become Hacker Goldmines
-                            </a>
-                        </h3>
-                        <div class="flex items-center text-sm text-gray-500 mb-3">
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>6h ago</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-400">
-                                1 source(s)
-                            </span>
-                            <a href="https://medium.com/p/905f190d79cd" target="_blank" 
-                               class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-                                Read More <i class="fas fa-external-link-alt ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-card bg-white rounded-lg shadow-md card-hover priority-high" 
-                     data-category="Core Security" 
-                     data-time="6h ago" 
-                     data-new="true" 
-                     data-today="false">
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <span class="category-badge text-white font-medium" style="background-color: #FF6B6B">
-                                Core Security
-                            </span>
-                            <div class="flex space-x-1">
-                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">New</span>
-                                
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="https://medium.com/p/b92a8870600f" target="_blank" class="hover:text-blue-600 transition-colors">
-                                Magnolia Write-up — SWU CTF 2025
-                            </a>
-                        </h3>
-                        <div class="flex items-center text-sm text-gray-500 mb-3">
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>6h ago</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-400">
-                                1 source(s)
-                            </span>
-                            <a href="https://medium.com/p/b92a8870600f" target="_blank" 
-                               class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-                                Read More <i class="fas fa-external-link-alt ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-card bg-white rounded-lg shadow-md card-hover priority-high" 
-                     data-category="Core Security" 
-                     data-time="8h ago" 
-                     data-new="true" 
-                     data-today="false">
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <span class="category-badge text-white font-medium" style="background-color: #FF6B6B">
-                                Core Security
-                            </span>
-                            <div class="flex space-x-1">
-                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">New</span>
-                                
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="https://medium.com/p/b48e72b42668" target="_blank" class="hover:text-blue-600 transition-colors">
-                                My ISO 27001 Learning Journey
-                            </a>
-                        </h3>
-                        <div class="flex items-center text-sm text-gray-500 mb-3">
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>8h ago</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-400">
-                                1 source(s)
-                            </span>
-                            <a href="https://medium.com/p/b48e72b42668" target="_blank" 
-                               class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-                                Read More <i class="fas fa-external-link-alt ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-card bg-white rounded-lg shadow-md card-hover priority-high" 
-                     data-category="Core Security" 
-                     data-time="8h ago" 
-                     data-new="true" 
-                     data-today="false">
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <span class="category-badge text-white font-medium" style="background-color: #FF6B6B">
-                                Core Security
-                            </span>
-                            <div class="flex space-x-1">
-                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">New</span>
-                                
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="https://medium.com/p/eb595256b7b8" target="_blank" class="hover:text-blue-600 transition-colors">
-                                When Your Tools Say “It Can’t Be Done”
-                            </a>
-                        </h3>
-                        <div class="flex items-center text-sm text-gray-500 mb-3">
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>8h ago</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-400">
-                                1 source(s)
-                            </span>
-                            <a href="https://medium.com/p/eb595256b7b8" target="_blank" 
-                               class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-                                Read More <i class="fas fa-external-link-alt ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-card bg-white rounded-lg shadow-md card-hover priority-high" 
-                     data-category="Core Security" 
-                     data-time="11h ago" 
-                     data-new="true" 
-                     data-today="false">
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <span class="category-badge text-white font-medium" style="background-color: #FF6B6B">
-                                Core Security
-                            </span>
-                            <div class="flex space-x-1">
-                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">New</span>
-                                
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="https://medium.com/p/541532c335a2" target="_blank" class="hover:text-blue-600 transition-colors">
-                                Stealer Logs: Check If Your Domain Is Exposed Right Now
-                            </a>
-                        </h3>
-                        <div class="flex items-center text-sm text-gray-500 mb-3">
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>11h ago</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-400">
-                                1 source(s)
-                            </span>
-                            <a href="https://medium.com/p/541532c335a2" target="_blank" 
-                               class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-                                Read More <i class="fas fa-external-link-alt ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-card bg-white rounded-lg shadow-md card-hover priority-high" 
-                     data-category="Core Security" 
-                     data-time="16h ago" 
-                     data-new="false" 
-                     data-today="false">
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <span class="category-badge text-white font-medium" style="background-color: #FF6B6B">
-                                Core Security
-                            </span>
-                            <div class="flex space-x-1">
-                                
-                                
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="https://medium.com/p/cfbd740ac28c" target="_blank" class="hover:text-blue-600 transition-colors">
-                                IAM vs PAM — Made Simple
-                            </a>
-                        </h3>
-                        <div class="flex items-center text-sm text-gray-500 mb-3">
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>16h ago</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-400">
-                                1 source(s)
-                            </span>
-                            <a href="https://medium.com/p/cfbd740ac28c" target="_blank" 
-                               class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-                                Read More <i class="fas fa-external-link-alt ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-card bg-white rounded-lg shadow-md card-hover priority-high" 
-                     data-category="Core Security" 
-                     data-time="17h ago" 
-                     data-new="false" 
-                     data-today="false">
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <span class="category-badge text-white font-medium" style="background-color: #FF6B6B">
-                                Core Security
-                            </span>
-                            <div class="flex space-x-1">
-                                
-                                
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="https://medium.com/p/4bf325a51f31" target="_blank" class="hover:text-blue-600 transition-colors">
-                                 Buried Treasures in Backups: How .bak Files Handed Me the Keys to Production ️
-                            </a>
-                        </h3>
-                        <div class="flex items-center text-sm text-gray-500 mb-3">
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>17h ago</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-400">
-                                1 source(s)
-                            </span>
-                            <a href="https://medium.com/p/4bf325a51f31" target="_blank" 
-                               class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-                                Read More <i class="fas fa-external-link-alt ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-card bg-white rounded-lg shadow-md card-hover priority-high" 
-                     data-category="Core Security" 
-                     data-time="17h ago" 
-                     data-new="false" 
-                     data-today="false">
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <span class="category-badge text-white font-medium" style="background-color: #FF6B6B">
-                                Core Security
-                            </span>
-                            <div class="flex space-x-1">
-                                
-                                
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="https://medium.com/p/e499f6fe0710" target="_blank" class="hover:text-blue-600 transition-colors">
-                                 DGA: The Algorithmic Backbone of Modern Malware C2 Infrastructure
-                            </a>
-                        </h3>
-                        <div class="flex items-center text-sm text-gray-500 mb-3">
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>17h ago</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-400">
-                                1 source(s)
-                            </span>
-                            <a href="https://medium.com/p/e499f6fe0710" target="_blank" 
-                               class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-                                Read More <i class="fas fa-external-link-alt ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-card bg-white rounded-lg shadow-md card-hover priority-high" 
-                     data-category="Core Security" 
-                     data-time="19h ago" 
-                     data-new="false" 
-                     data-today="false">
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <span class="category-badge text-white font-medium" style="background-color: #FF6B6B">
-                                Core Security
-                            </span>
-                            <div class="flex space-x-1">
-                                
-                                
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="https://medium.com/p/8070dea2e90d" target="_blank" class="hover:text-blue-600 transition-colors">
-                                Hackers’ Digital Camouflage: How Deep Does the Rabbit Hole Go?
-                            </a>
-                        </h3>
-                        <div class="flex items-center text-sm text-gray-500 mb-3">
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>19h ago</span>
-                            
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-400">
-                                1 source(s)
-                            </span>
-                            <a href="https://medium.com/p/8070dea2e90d" target="_blank" 
-                               class="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-                                Read More <i class="fas fa-external-link-alt ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
+                    </article>
+                </template>
+            </div>
+            
+            <!-- No Results -->
+            <div x-show="!isLoading && filteredPosts.length === 0" 
+                 class="text-center py-12">
+                <div class="glass rounded-lg p-8 max-w-md mx-auto">
+                    <i class="fas fa-search text-4xl text-gray-400 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">No posts found</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">Try adjusting your search criteria or filters.</p>
+                    <button @click="clearAllFilters()" 
+                            class="gradient-primary text-white px-4 py-2 rounded-lg hover:scale-105 transition-transform">
+                        Clear Filters
+                    </button>
                 </div>
             </div>
             
             <!-- Load More Button -->
-            <div class="text-center mt-8">
-                <button id="loadMoreBtn" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors">
+            <div x-show="!isLoading && hasMorePosts()" class="text-center mt-8">
+                <button @click="loadMore()" 
+                        class="gradient-primary text-white px-6 py-3 rounded-lg hover:scale-105 transition-transform inline-flex items-center">
                     <i class="fas fa-chevron-down mr-2"></i>
                     Load More Posts
+                    <span class="ml-2 text-sm opacity-80">
+                        (<span x-text="Math.min(currentPage * postsPerPage, filteredPosts.length)"></span> of <span x-text="filteredPosts.length"></span>)
+                    </span>
                 </button>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">🛡️ Cybersecurity Dashboard</h3>
-                    <p class="text-gray-300">
-                        Automated aggregation of cybersecurity content from Medium. 
-                        Stay updated with the latest security research, bug bounty writeups, and threat intelligence.
-                    </p>
+    <!-- Floating Action Button -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        <!-- Scroll to Top -->
+        <button x-show="showScrollTop" 
+                @click="scrollToTop()"
+                x-transition:enter="transition ease-out duration-300"
+                x-transition:enter-start="opacity-0 transform translate-y-2"
+                x-transition:enter-end="opacity-100 transform translate-y-0"
+                class="glass w-12 h-12 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <!-- Settings -->
+        <button @click="showSettings = !showSettings"
+                class="gradient-primary w-12 h-12 rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform animate-pulse-slow">
+            <i class="fas fa-cog"></i>
+        </button>
+    </div>
+
+    <!-- Settings Modal -->
+    <div x-show="showSettings" 
+         x-transition:enter="transition ease-out duration-300"
+         x-transition:enter-start="opacity-0"
+         x-transition:enter-end="opacity-100"
+         class="fixed inset-0 z-50 overflow-y-auto">
+        <div class="flex items-center justify-center min-h-screen px-4">
+            <div class="fixed inset-0 bg-black opacity-50" @click="showSettings = false"></div>
+            <div class="glass rounded-lg p-6 w-full max-w-md relative z-10">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">⚙️ Settings</h3>
+                    <button @click="showSettings = false" class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
+                        <i class="fas fa-times"></i>
+                    </button>
                 </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">📊 Statistics</h3>
-                    <ul class="text-gray-300 space-y-2">
-                        <li>📰 Total Posts: 37</li>
-                        <li>🔄 Feeds Monitored: 5</li>
-                        <li>⚡ Update Frequency: Every 2 hours</li>
-                        <li>🎯 Success Rate: 100.0%</li>
-                    </ul>
+                
+                <div class="space-y-4">
+                    <!-- Theme Selection -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Theme</label>
+                        <div class="flex gap-2">
+                            <button @click="setTheme('light')" 
+                                    :class="!darkMode ? 'ring-2 ring-blue-500' : ''"
+                                    class="flex-1 p-3 rounded-lg border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                                <i class="fas fa-sun text-yellow-500 mb-1"></i>
+                                <div class="text-sm">Light</div>
+                            </button>
+                            <button @click="setTheme('dark')" 
+                                    :class="darkMode ? 'ring-2 ring-blue-500' : ''"
+                                    class="flex-1 p-3 rounded-lg border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                                <i class="fas fa-moon text-blue-500 mb-1"></i>
+                                <div class="text-sm">Dark</div>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Auto-refresh -->
+                    <div>
+                        <label class="flex items-center justify-between">
+                            <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Auto-refresh</span>
+                            <input type="checkbox" 
+                                   x-model="autoRefresh" 
+                                   @change="toggleAutoRefresh()"
+                                   class="form-checkbox h-4 w-4 text-blue-600">
+                        </label>
+                        <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Automatically refresh data every 2 hours</p>
+                    </div>
+                    
+                    <!-- Posts per page -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Posts per page</label>
+                        <select x-model="postsPerPage" 
+                                @change="currentPage = 1; filterPosts()"
+                                class="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg 
+                                       focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-700 
+                                       text-gray-900 dark:text-gray-100">
+                            <option value="12">12 posts</option>
+                            <option value="24">24 posts</option>
+                            <option value="48">48 posts</option>
+                            <option value="96">96 posts</option>
+                        </select>
+                    </div>
                 </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">🔗 Links</h3>
-                    <ul class="text-gray-300 space-y-2">
-                        <li><a href="https://github.com/your-username/medium-writeups" class="hover:text-white transition-colors">
-                            <i class="fab fa-github mr-2"></i>GitHub Repository
-                        </a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">
-                            <i class="fas fa-download mr-2"></i>JSON API
-                        </a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">
-                            <i class="fas fa-rss mr-2"></i>RSS Feed
-                        </a></li>
-                    </ul>
+                
+                <div class="mt-6 pt-4 border-t border-gray-200 dark:border-gray-700">
+                    <div class="text-xs text-gray-500 dark:text-gray-400 text-center">
+                        Version 4.0.0 • 
+                        <a href="https://github.com/kdairatchi/medium-writeups" 
+                           target="_blank" 
+                           class="text-blue-600 dark:text-blue-400 hover:underline">
+                            View on GitHub
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-                <p>Generated by Medium Cybersecurity RSS Aggregator v3.0.0 • Last updated: Fri, 22 Aug 2025 GMT</p>
-                <p class="mt-2">⭐ Star the repository if you find this useful!</p>
-            </div>
         </div>
-    </footer>
+    </div>
 
-    <!-- JavaScript for interactivity -->
-    <script>
-        // Search functionality
-        const searchInput = document.getElementById('searchInput');
-        const categoryFilter = document.getElementById('categoryFilter');
-        const timeFilter = document.getElementById('timeFilter');
-        const postsContainer = document.getElementById('postsContainer');
-        const loadMoreBtn = document.getElementById('loadMoreBtn');
-        
-        let visiblePosts = 12;
-        let allPosts = Array.from(document.querySelectorAll('.post-card'));
-        
-        function filterPosts() {
-            const searchTerm = searchInput.value.toLowerCase();
-            const selectedCategory = categoryFilter.value;
-            const selectedTime = timeFilter.value;
-            
-            allPosts.forEach(post => {
-                const title = post.querySelector('h3').textContent.toLowerCase();
-                const category = post.dataset.category;
-                const isNew = post.dataset.new === 'true';
-                const isToday = post.dataset.today === 'true';
-                
-                let matches = true;
-                
-                // Search filter
-                if (searchTerm && !title.includes(searchTerm)) {
-                    matches = false;
-                }
-                
-                // Category filter
-                if (selectedCategory && category !== selectedCategory) {
-                    matches = false;
-                }
-                
-                // Time filter
-                if (selectedTime === 'today' && !isToday) {
-                    matches = false;
-                } else if (selectedTime === 'new' && !isNew) {
-                    matches = false;
-                }
-                
-                post.style.display = matches ? 'block' : 'none';
-            });
-            
-            // Reset visible posts count when filtering
-            visiblePosts = 12;
-            showPosts();
+    <!-- Service Worker Registration -->
+    <script nonce="dashboard-js">
+        // Register Service Worker with performance tracking
+        if ('serviceWorker' in navigator) {
+            // Register immediately for better performance
+            navigator.serviceWorker.register('./sw.js')
+                .then((registration) => {
+                    console.log('✅ SW registered: ', registration);
+                    
+                    // Listen for updates
+                    registration.addEventListener('updatefound', () => {
+                        console.log('🔄 SW update found');
+                    });
+                })
+                .catch((registrationError) => {
+                    console.error('❌ SW registration failed: ', registrationError);
+                });
         }
-        
-        function showPosts() {
-            const visiblePostsArray = allPosts.filter(post => post.style.display !== 'none');
-            visiblePostsArray.forEach((post, index) => {
-                post.style.display = index < visiblePosts ? 'block' : 'none';
-            });
-            
-            loadMoreBtn.style.display = visiblePostsArray.length > visiblePosts ? 'block' : 'none';
-        }
-        
-        // Event listeners
-        searchInput.addEventListener('input', filterPosts);
-        categoryFilter.addEventListener('change', filterPosts);
-        timeFilter.addEventListener('change', filterPosts);
-        
-        loadMoreBtn.addEventListener('click', () => {
-            visiblePosts += 12;
-            showPosts();
-        });
-        
-        // Initial load
-        showPosts();
-        
-        // Auto-refresh every 2 hours
-        setTimeout(() => {
-            location.reload();
-        }, 2 * 60 * 60 * 1000);
     </script>
+
+    <!-- Main Application Script -->
+    <script src="./src/js/app.js" type="module" nonce="dashboard-js"></script>
 </body>
 </html>

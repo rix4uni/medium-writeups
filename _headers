@@ -1,0 +1,32 @@
+# Security Headers for Netlify/GitHub Pages
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'nonce-dashboard-js' https://cdnjs.cloudflare.com https://unpkg.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https: blob:; connect-src 'self' https: wss: ws:; media-src 'self'; object-src 'none'; child-src 'none'; frame-src 'none'; worker-src 'self'; manifest-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; block-all-mixed-content; upgrade-insecure-requests; require-trusted-types-for 'script';
+
+# Cache Control for Static Assets
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/src/js/*
+  Cache-Control: public, max-age=86400
+
+/src/css/*
+  Cache-Control: public, max-age=86400
+
+# Service Worker
+/sw.js
+  Cache-Control: public, max-age=0, must-revalidate
+
+# PWA Manifest
+/manifest.json
+  Content-Type: application/manifest+json
+  Cache-Control: public, max-age=86400
+
+# Security Files
+/.well-known/*
+  Cache-Control: public, max-age=86400
