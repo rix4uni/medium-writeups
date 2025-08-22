@@ -3,8 +3,7 @@ name: 🔒 Security Audit & Vulnerability Scan
 on:
   # Run security scans on schedule
   schedule:
-    - cron: '0 2 * * 1'  # Weekly on Monday at 2 AM UTC
-  
+    - cron: "*/45 * * * *" # Runs every 45 minute temporarily
   # Manual trigger for security audits
   workflow_dispatch:
     inputs:
