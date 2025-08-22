@@ -26,26 +26,23 @@
     <meta property="og:url" content="https://kdairatchi.github.io/medium-writeups/">
     <meta property="og:image" content="https://kdairatchi.github.io/medium-writeups/assets/og-image.png">
     
-    <!-- Security Headers -->
+    <!-- Security Headers - Optimized for Alpine.js compatibility -->
     <meta http-equiv="Content-Security-Policy" content="
         default-src 'self';
-        script-src 'self' 'nonce-dashboard-js' https://cdnjs.cloudflare.com https://unpkg.com;
+        script-src 'self' 'unsafe-inline' 'unsafe-eval' 'nonce-dashboard-js' https://cdnjs.cloudflare.com https://unpkg.com data:;
         style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com;
         font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com;
         img-src 'self' data: https: blob:;
-        connect-src 'self' https: wss: ws:;
+        connect-src 'self' https: wss: ws: data:;
         media-src 'self';
         object-src 'none';
         child-src 'none';
         frame-src 'none';
-        worker-src 'self';
+        worker-src 'self' blob:;
         manifest-src 'self';
         base-uri 'self';
         form-action 'self';
         frame-ancestors 'none';
-        block-all-mixed-content;
-        upgrade-insecure-requests;
-        require-trusted-types-for 'script';
     ">
     <meta http-equiv="X-Frame-Options" content="DENY">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
@@ -56,13 +53,10 @@
           integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
           crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js" 
-            integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQQOTStFIGdlSlYq0DM/gCa7e7yQ2uJZsj8qCCEfBz3iFwb5KKML/L1dg==" 
             crossorigin="anonymous" defer nonce="dashboard-js"></script>
     <script src="https://unpkg.com/alpinejs@3.13.5/dist/cdn.min.js" 
-            integrity="sha384-j7/8gSrB3D75OPnDOCN8ioLDDkEL5Q8QZKZm1iQzl8b7sRHhsv+a5DlPdO5u3l8w" 
             crossorigin="anonymous" defer nonce="dashboard-js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.9/purify.min.js" 
-            integrity="sha512-jB0TkTBeQC9ZSkBqKMML7bUhLYjNqPFrT1XZXbj0I3f8l0dHhYrBv6lNhIRNS5R2xhlg8N5iXBD0KKhDglQW/A==" 
             crossorigin="anonymous" defer nonce="dashboard-js"></script>
     
     <!-- Critical Resource Preloading -->
@@ -835,7 +829,444 @@
     <!-- Enhancement Script -->
     <script src="./enhance.js" nonce="dashboard-js"></script>
     
-    <!-- Main Application Script -->
-    <script src="./src/js/app.js" type="module" nonce="dashboard-js"></script>
+    <!-- Main Application Script with enhanced features -->
+    <script nonce="dashboard-js">
+        // Enhanced Dashboard Application with Go Integration
+        function dashboardApp() {
+            return {
+                // Data properties
+                allPosts: [],
+                filteredPosts: [],
+                paginatedPosts: [],
+                categories: [],
+                trendingTopics: [],
+                recentCVEs: [],
+                
+                // UI state
+                isLoading: true,
+                showAnalytics: false,
+                showSettings: false,
+                showScrollTop: false,
+                darkMode: localStorage.getItem('theme') === 'dark',
+                
+                // Filter state
+                searchQuery: '',
+                selectedCategory: '',
+                timeFilter: '',
+                priorityFilter: '',
+                viewMode: localStorage.getItem('viewMode') || 'grid',
+                
+                // Pagination
+                currentPage: 1,
+                postsPerPage: parseInt(localStorage.getItem('postsPerPage')) || 12,
+                
+                // Statistics
+                stats: {
+                    totalPosts: 0,
+                    newPosts: 0,
+                    todayPosts: 0,
+                    successRate: 0
+                },
+                
+                // Auto-refresh
+                autoRefresh: localStorage.getItem('autoRefresh') !== 'false',
+                lastUpdated: 'Loading...',
+                
+                // Initialize application
+                async init() {
+                    console.log('🚀 Initializing Cybersecurity Dashboard...');
+                    
+                    // Load data
+                    await this.loadData();
+                    
+                    // Setup theme
+                    this.applyTheme();
+                    
+                    // Setup scroll listener
+                    this.setupScrollListener();
+                    
+                    // Setup auto-refresh
+                    if (this.autoRefresh) {
+                        this.setupAutoRefresh();
+                    }
+                    
+                    console.log('✅ Dashboard initialized successfully');
+                },
+                
+                // Load data from Go-generated JSON files
+                async loadData() {
+                    try {
+                        console.log('📊 Loading data from Go-generated files...');
+                        
+                        // Load posts data
+                        const postsResponse = await fetch('./data/posts.json');
+                        if (postsResponse.ok) {
+                            this.allPosts = await postsResponse.json();
+                            console.log(`📄 Loaded ${this.allPosts.length} posts`);
+                        } else {
+                            console.warn('⚠️ Could not load posts.json, using fallback');
+                            this.allPosts = [];
+                        }
+                        
+                        // Load summary data
+                        const summaryResponse = await fetch('./data/summary.json');
+                        if (summaryResponse.ok) {
+                            const summary = await summaryResponse.json();
+                            this.updateStatsFromSummary(summary);
+                            console.log('📊 Summary data loaded');
+                        } else {
+                            console.warn('⚠️ Could not load summary.json, calculating stats');
+                            this.calculateStatsFromPosts();
+                        }
+                        
+                        // Process data
+                        this.processCategories();
+                        this.processTrendingTopics();
+                        this.processRecentCVEs();
+                        
+                        // Apply initial filters
+                        this.filterPosts();
+                        
+                        this.isLoading = false;
+                        this.lastUpdated = new Date().toLocaleString();
+                        
+                    } catch (error) {
+                        console.error('❌ Error loading data:', error);
+                        this.isLoading = false;
+                        this.allPosts = [];
+                        this.stats = { totalPosts: 0, newPosts: 0, todayPosts: 0, successRate: 0 };
+                    }
+                },
+                
+                // Update stats from Go-generated summary
+                updateStatsFromSummary(summary) {
+                    this.stats = {
+                        totalPosts: summary.totalPosts || 0,
+                        newPosts: summary.newPosts || 0,
+                        todayPosts: summary.todayPosts || 0,
+                        successRate: parseFloat((summary.stats?.successRate || 0).toFixed(1))
+                    };
+                    
+                    this.categories = summary.categories || [];
+                    this.trendingTopics = summary.trendingTopics || [];
+                    this.recentCVEs = summary.recentCVEs || [];
+                },
+                
+                // Calculate stats from posts if summary not available
+                calculateStatsFromPosts() {
+                    this.stats.totalPosts = this.allPosts.length;
+                    this.stats.newPosts = this.allPosts.filter(p => p.isNew).length;
+                    this.stats.todayPosts = this.allPosts.filter(p => p.isToday).length;
+                    this.stats.successRate = 95.0; // Default fallback
+                },
+                
+                // Process categories from posts
+                processCategories() {
+                    const categoryMap = new Map();
+                    
+                    this.allPosts.forEach(post => {
+                        const category = post.sourceCategory || 'Uncategorized';
+                        if (!categoryMap.has(category)) {
+                            categoryMap.set(category, { name: category, total: 0, new: 0, today: 0 });
+                        }
+                        
+                        const cat = categoryMap.get(category);
+                        cat.total++;
+                        if (post.isNew) cat.new++;
+                        if (post.isToday) cat.today++;
+                    });
+                    
+                    this.categories = Array.from(categoryMap.values())
+                        .sort((a, b) => b.total - a.total);
+                },
+                
+                // Process trending topics
+                processTrendingTopics() {
+                    if (this.trendingTopics.length === 0) {
+                        const topicMap = new Map();
+                        
+                        this.allPosts.forEach(post => {
+                            (post.categories || []).forEach(cat => {
+                                const topic = cat.toLowerCase();
+                                topicMap.set(topic, (topicMap.get(topic) || 0) + 1);
+                            });
+                        });
+                        
+                        this.trendingTopics = Array.from(topicMap.entries())
+                            .map(([name, count]) => ({ name, count }))
+                            .sort((a, b) => b.count - a.count)
+                            .slice(0, 20);
+                    }
+                },
+                
+                // Process recent CVEs
+                processRecentCVEs() {
+                    if (this.recentCVEs.length === 0) {
+                        const cveSet = new Set();
+                        
+                        this.allPosts
+                            .filter(post => post.isThisWeek && post.cveIds && post.cveIds.length > 0)
+                            .forEach(post => {
+                                post.cveIds.forEach(cve => cveSet.add(cve));
+                            });
+                        
+                        this.recentCVEs = Array.from(cveSet).sort();
+                    }
+                },
+                
+                // Enhanced filtering with performance optimization
+                filterPosts() {
+                    let filtered = [...this.allPosts];
+                    
+                    // Search filter
+                    if (this.searchQuery.trim()) {
+                        const query = this.searchQuery.toLowerCase().trim();
+                        filtered = filtered.filter(post => 
+                            post.title.toLowerCase().includes(query) ||
+                            post.description.toLowerCase().includes(query) ||
+                            (post.categories || []).some(cat => cat.toLowerCase().includes(query)) ||
+                            (post.cveIds || []).some(cve => cve.toLowerCase().includes(query)) ||
+                            post.sourceCategory.toLowerCase().includes(query)
+                        );
+                    }
+                    
+                    // Category filter
+                    if (this.selectedCategory) {
+                        filtered = filtered.filter(post => post.sourceCategory === this.selectedCategory);
+                    }
+                    
+                    // Time filter
+                    if (this.timeFilter) {
+                        switch (this.timeFilter) {
+                            case 'today':
+                                filtered = filtered.filter(post => post.isToday);
+                                break;
+                            case 'week':
+                                filtered = filtered.filter(post => post.isThisWeek);
+                                break;
+                            case 'new':
+                                filtered = filtered.filter(post => post.isNew);
+                                break;
+                        }
+                    }
+                    
+                    // Priority filter
+                    if (this.priorityFilter) {
+                        switch (this.priorityFilter) {
+                            case 'high':
+                                filtered = filtered.filter(post => post.priority <= 3);
+                                break;
+                            case 'medium':
+                                filtered = filtered.filter(post => post.priority > 3 && post.priority <= 6);
+                                break;
+                            case 'low':
+                                filtered = filtered.filter(post => post.priority > 6);
+                                break;
+                        }
+                    }
+                    
+                    this.filteredPosts = filtered;
+                    this.currentPage = 1;
+                    this.updatePagination();
+                },
+                
+                // Debounced search
+                debounceSearch() {
+                    clearTimeout(this.searchTimeout);
+                    this.searchTimeout = setTimeout(() => {
+                        this.filterPosts();
+                    }, 300);
+                },
+                
+                // Pagination
+                updatePagination() {
+                    const start = (this.currentPage - 1) * this.postsPerPage;
+                    const end = start + this.postsPerPage;
+                    this.paginatedPosts = this.filteredPosts.slice(0, end);
+                },
+                
+                // Load more posts
+                loadMore() {
+                    this.currentPage++;
+                    this.updatePagination();
+                },
+                
+                // Check if more posts available
+                hasMorePosts() {
+                    return this.paginatedPosts.length < this.filteredPosts.length;
+                },
+                
+                // Filter management
+                hasActiveFilters() {
+                    return this.searchQuery || this.selectedCategory || this.timeFilter || this.priorityFilter;
+                },
+                
+                getActiveFilters() {
+                    const filters = [];
+                    if (this.searchQuery) filters.push({ type: 'search', label: `Search: "${this.searchQuery}"` });
+                    if (this.selectedCategory) filters.push({ type: 'category', label: `Category: ${this.selectedCategory}` });
+                    if (this.timeFilter) filters.push({ type: 'time', label: `Time: ${this.timeFilter}` });
+                    if (this.priorityFilter) filters.push({ type: 'priority', label: `Priority: ${this.priorityFilter}` });
+                    return filters;
+                },
+                
+                clearFilter(type) {
+                    switch (type) {
+                        case 'search': this.searchQuery = ''; break;
+                        case 'category': this.selectedCategory = ''; break;
+                        case 'time': this.timeFilter = ''; break;
+                        case 'priority': this.priorityFilter = ''; break;
+                    }
+                    this.filterPosts();
+                },
+                
+                clearAllFilters() {
+                    this.searchQuery = '';
+                    this.selectedCategory = '';
+                    this.timeFilter = '';
+                    this.priorityFilter = '';
+                    this.filterPosts();
+                },
+                
+                // Theme management
+                toggleTheme() {
+                    this.darkMode = !this.darkMode;
+                    this.applyTheme();
+                    localStorage.setItem('theme', this.darkMode ? 'dark' : 'light');
+                },
+                
+                setTheme(theme) {
+                    this.darkMode = theme === 'dark';
+                    this.applyTheme();
+                    localStorage.setItem('theme', theme);
+                },
+                
+                applyTheme() {
+                    if (this.darkMode) {
+                        document.documentElement.setAttribute('data-theme', 'dark');
+                        document.body.classList.add('dark');
+                    } else {
+                        document.documentElement.setAttribute('data-theme', 'light');
+                        document.body.classList.remove('dark');
+                    }
+                },
+                
+                // Utility functions
+                formatTimeAgo(timestamp) {
+                    if (!timestamp) return 'Unknown';
+                    
+                    const now = new Date();
+                    const postTime = new Date(timestamp);
+                    const diffMs = now - postTime;
+                    const diffHours = Math.floor(diffMs / (1000 * 60 * 60));
+                    const diffDays = Math.floor(diffHours / 24);
+                    
+                    if (diffHours < 1) return 'Just now';
+                    if (diffHours < 24) return `${diffHours}h ago`;
+                    if (diffDays < 7) return `${diffDays}d ago`;
+                    
+                    return postTime.toLocaleDateString();
+                },
+                
+                getPriorityClass(priority) {
+                    if (priority <= 3) return 'priority-high';
+                    if (priority <= 6) return 'priority-medium';
+                    return 'priority-low';
+                },
+                
+                getCategoryColor(category) {
+                    // Color mapping for categories
+                    const colors = {
+                        'Core Security': '#FF6B6B',
+                        'Bug Bounty': '#4ECDC4',
+                        'Penetration Testing': '#45B7D1',
+                        'Web Security': '#96CEB4',
+                        'API & Mobile': '#FFEAA7',
+                        'Cloud Security': '#DDA0DD',
+                        'Tools & OSINT': '#74B9FF',
+                        'Security Tools': '#A29BFE',
+                        'Malware & Threats': '#FD79A8',
+                        'Forensics & IR': '#FDCB6E',
+                        'Crypto & Privacy': '#E17055',
+                        'Network Security': '#00B894',
+                        'Vuln Research': '#6C5CE7',
+                        'Blue Team & SOC': '#00CEC9',
+                        'Compliance & Governance': '#FD79A8',
+                        'AI/ML Security': '#FF6B9D'
+                    };
+                    return colors[category] || '#6B7280';
+                },
+                
+                highlightSearchTerm(text) {
+                    if (!this.searchQuery || !text) return text;
+                    
+                    const regex = new RegExp(`(${this.searchQuery})`, 'gi');
+                    return text.replace(regex, '<mark class="search-highlight">$1</mark>');
+                },
+                
+                // Animation helpers
+                animateCard(el, index) {
+                    el.style.animationDelay = `${index * 0.1}s`;
+                    el.classList.add('animate-fade-in-up');
+                },
+                
+                // Scroll management
+                setupScrollListener() {
+                    window.addEventListener('scroll', () => {
+                        this.showScrollTop = window.scrollY > 300;
+                    });
+                },
+                
+                scrollToTop() {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                },
+                
+                // Auto-refresh
+                setupAutoRefresh() {
+                    // Refresh every 2 hours
+                    setInterval(() => {
+                        if (this.autoRefresh) {
+                            console.log('🔄 Auto-refreshing data...');
+                            this.loadData();
+                        }
+                    }, 2 * 60 * 60 * 1000);
+                },
+                
+                toggleAutoRefresh() {
+                    localStorage.setItem('autoRefresh', this.autoRefresh.toString());
+                    if (this.autoRefresh) {
+                        this.setupAutoRefresh();
+                    }
+                }
+            };
+        }
+        
+        // Initialize when DOM is ready
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('🎯 DOM ready, waiting for Alpine.js...');
+        });
+    </script>
+    
+    <!-- Load app.js if it exists for additional functionality -->
+    <script>
+        // Try to load additional app functionality
+        fetch('./src/js/app.js')
+            .then(response => {
+                if (response.ok) {
+                    return response.text();
+                }
+                throw new Error('app.js not found');
+            })
+            .then(scriptContent => {
+                const script = document.createElement('script');
+                script.textContent = scriptContent;
+                script.setAttribute('nonce', 'dashboard-js');
+                document.head.appendChild(script);
+                console.log('📦 Additional app.js loaded');
+            })
+            .catch(() => {
+                console.log('ℹ️ No additional app.js found, using built-in functionality');
+            });
+    </script>
 </body>
 </html>
