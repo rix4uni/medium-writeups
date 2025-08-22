@@ -90,6 +90,7 @@ benchmark-results.txt
 
 # Dependency management
 go.sum.backup
+*.claude
 
 # Editor specific
 *.sublime-*
