@@ -1,15 +1,35 @@
-# 🛡️ Medium Cybersecurity RSS Aggregator
+# 🛡️ Cybersecurity Intelligence Hub
 
-[![Status](https://img.shields.io/badge/Status-🟢_Active-success?style=for-the-badge)](#) [![Posts](https://img.shields.io/badge/Posts-309-blue?style=for-the-badge)](#) [![New](https://img.shields.io/badge/New-3-orange?style=for-the-badge)](#) [![Today](https://img.shields.io/badge/Today-64-red?style=for-the-badge)](#)
+[![Status](https://img.shields.io/badge/Status-🟢_Active-success?style=for-the-badge)](#) [![Posts](https://img.shields.io/badge/Posts-Live-blue?style=for-the-badge)](#) [![Categories](https://img.shields.io/badge/Categories-25+-orange?style=for-the-badge)](#) [![Feeds](https://img.shields.io/badge/RSS_Feeds-245+-red?style=for-the-badge)](#)
 
-> 🔗 **Real-time cybersecurity intelligence aggregation from Medium** | 🤖 **Automated updates every 2 hours** | 📱 **Mobile-responsive dashboard**
+> 🔗 **Real-time cybersecurity intelligence aggregation from Medium** | 🤖 **Automated updates every 2 hours** | 📱 **Interactive dashboard with advanced filtering** | 🎯 **CVE tracking & threat intelligence**
 
-**Last Updated:** Thu, 21 Aug 2025 GMT  
-**Total Posts:** 309  
-**New Posts:** 3  
-**Today's Posts:** 64  
+## 🚀 Quick Start
 
-## 📊 Quick Stats
+```bash
+# Clone the repository
+git clone https://github.com/your-username/medium-writeups.git
+cd medium-writeups
+
+# Run the aggregator (requires Go)
+./run.sh
+
+# Open index.html in your browser
+open index.html
+```
+
+## ✨ Features
+
+- 🔄 **Real-time Updates**: Automated RSS aggregation every 2 hours
+- 🎯 **25+ Categories**: Bug Bounty, Web Security, Malware Analysis, OSINT, and more
+- 🔍 **Advanced Search**: Filter by keywords, CVEs, categories, and time periods  
+- 📊 **Analytics Dashboard**: Interactive charts and trending topics
+- 🌙 **Dark/Light Mode**: Seamless theme switching with system preference detection
+- 📱 **Mobile Responsive**: Optimized for all devices
+- ⚡ **Performance**: PWA-ready with service worker caching
+- 🛡️ **CVE Tracking**: Automatic detection and tracking of security vulnerabilities
+
+## 📊 Live Stats
 
 | Metric | Count | Percentage |
 |--------|-------|------------|

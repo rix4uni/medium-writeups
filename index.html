@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🛡️ Medium Cybersecurity Dashboard</title>
-    <meta name="description" content="Modern interactive dashboard for cybersecurity research, bug bounty writeups, and threat intelligence from Medium">
-    <meta name="keywords" content="cybersecurity, bug bounty, penetration testing, security research, threat intelligence, medium, dashboard">
+    <title>🛡️ Cybersecurity Intelligence Hub | Medium Writeups</title>
+    <meta name="description" content="Real-time cybersecurity intelligence dashboard aggregating security research, bug bounty writeups, and threat analysis from Medium. Updated every 2 hours.">
+    <meta name="keywords" content="cybersecurity, bug bounty, penetration testing, security research, threat intelligence, medium, dashboard, vulnerability research, XSS, SQL injection, OSINT">
     
     <!-- PWA Manifest -->
     <link rel="manifest" href="./manifest.json">
@@ -305,11 +305,17 @@
             <div class="flex flex-col md:flex-row items-center justify-between">
                 <div class="text-center md:text-left mb-4 md:mb-0">
                     <h1 class="text-4xl md:text-5xl font-bold mb-2 animate-fade-in-up">
-                        🛡️ Cybersecurity Dashboard
+                        🛡️ Cybersecurity Intelligence Hub
                     </h1>
                     <p class="text-lg md:text-xl opacity-90 animate-fade-in-up" style="animation-delay: 0.2s">
-                        Real-time threat intelligence & security research from Medium
+                        Real-time threat intelligence, bug bounty research & security analysis from Medium
                     </p>
+                    <div class="mt-2 text-sm opacity-80 animate-fade-in-up" style="animation-delay: 0.4s">
+                        <span class="inline-flex items-center">
+                            <i class="fas fa-sync-alt mr-1"></i>
+                            Auto-updated every 2 hours • 25+ security categories • 245+ RSS feeds
+                        </span>
+                    </div>
                 </div>
                 
                 <div class="flex items-center space-x-4 animate-slide-in-right">
@@ -826,6 +832,9 @@
         }
     </script>
 
+    <!-- Enhancement Script -->
+    <script src="./enhance.js" nonce="dashboard-js"></script>
+    
     <!-- Main Application Script -->
     <script src="./src/js/app.js" type="module" nonce="dashboard-js"></script>
 </body>

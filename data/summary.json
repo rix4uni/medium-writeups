@@ -1,0 +1,118 @@
+{
+  "totalPosts": 10,
+  "newPosts": 2,
+  "todayPosts": 10,
+  "thisWeekPosts": 10,
+  "categories": [
+    {
+      "name": "Web Security",
+      "total": 3,
+      "new": 0,
+      "today": 3,
+      "color": "#96CEB4"
+    },
+    {
+      "name": "Bug Bounty",
+      "total": 2,
+      "new": 0,
+      "today": 2,
+      "color": "#4ECDC4"
+    },
+    {
+      "name": "Crypto & Privacy",
+      "total": 1,
+      "new": 1,
+      "today": 1,
+      "color": "#E17055"
+    },
+    {
+      "name": "AI/ML Security",
+      "total": 1,
+      "new": 1,
+      "today": 1,
+      "color": "#FF6B9D"
+    },
+    {
+      "name": "Compliance & Governance",
+      "total": 1,
+      "new": 0,
+      "today": 1,
+      "color": "#FD79A8"
+    },
+    {
+      "name": "Tools & OSINT",
+      "total": 1,
+      "new": 0,
+      "today": 1,
+      "color": "#74B9FF"
+    },
+    {
+      "name": "Malware & Threats",
+      "total": 1,
+      "new": 0,
+      "today": 1,
+      "color": "#FD79A8"
+    },
+    {
+      "name": "Vuln Research",
+      "total": 1,
+      "new": 0,
+      "today": 1,
+      "color": "#6C5CE7"
+    }
+  ],
+  "trendingTopics": [
+    {
+      "name": "web-security",
+      "count": 4
+    },
+    {
+      "name": "bug-bounty",
+      "count": 3
+    },
+    {
+      "name": "xss",
+      "count": 2
+    },
+    {
+      "name": "vulnerability-disclosure",
+      "count": 2
+    },
+    {
+      "name": "encryption",
+      "count": 1
+    },
+    {
+      "name": "ai-security",
+      "count": 1
+    },
+    {
+      "name": "compliance",
+      "count": 1
+    },
+    {
+      "name": "osint",
+      "count": 1
+    },
+    {
+      "name": "zero-day",
+      "count": 1
+    },
+    {
+      "name": "sql-injection",
+      "count": 1
+    }
+  ],
+  "recentCVEs": [
+    "CVE-2024-44207",
+    "CVE-2024-8765"
+  ],
+  "stats": {
+    "totalFeeds": 245,
+    "successfulFeeds": 198,
+    "successRate": 80.8,
+    "rateLimited": 12,
+    "processingTime": "2m15s"
+  },
+  "lastUpdated": "Thu, 22 Aug 2024"
+}

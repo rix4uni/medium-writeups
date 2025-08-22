@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/json"
 	"encoding/xml"
 	"fmt"
 	"io/ioutil"
@@ -35,6 +36,9 @@ const (
 	// Output formatting
 	separator    = "═══════════════════════════════════════════════════════════════════════════════"
 	subSeparator = "───────────────────────────────────────────────────────────────────────────────"
+
+	// Data directory
+	dataDirectory = "data"
 
 	// Colors for terminal output (ANSI codes)
 	colorReset  = "\033[0m"
@@ -507,7 +511,8 @@ func main() {
 	sortedEntries := sortEntries(entries)
 	updateStats(stats, sortedEntries, time.Since(startTime))
 
-	// Generate both markdown and HTML outputs
+	// Generate all outputs
+	generateJSONOutput(sortedEntries, stats, feedSources)
 	generateMarkdownOutput(sortedEntries, stats, feedSources)
 	generateHTMLOutput(sortedEntries, stats, feedSources)
 	printSummary(stats)
@@ -1187,6 +1192,163 @@ func generateCategoryOptions(sources []FeedSource) string {
 // ENHANCED OUTPUT GENERATION
 // ================================================================================
 
+// JSONPost represents a post in JSON format for the dashboard
+type JSONPost struct {
+	GUID            string    `json:"guid"`
+	Title           string    `json:"title"`
+	Link            string    `json:"link"`
+	Description     string    `json:"description"`
+	PublishedTime   string    `json:"publishedTime"`
+	Author          string    `json:"author"`
+	Categories      []string  `json:"categories"`
+	SourceCategory  string    `json:"sourceCategory"`
+	Priority        int       `json:"priority"`
+	AgeHours        float64   `json:"ageHours"`
+	IsNew           bool      `json:"isNew"`
+	IsToday         bool      `json:"isToday"`
+	IsThisWeek      bool      `json:"isThisWeek"`
+	CVEIds          []string  `json:"cveIds"`
+}
+
+// JSONSummary represents summary data for the dashboard
+type JSONSummary struct {
+	TotalPosts     int                    `json:"totalPosts"`
+	NewPosts       int                    `json:"newPosts"`
+	TodayPosts     int                    `json:"todayPosts"`
+	ThisWeekPosts  int                    `json:"thisWeekPosts"`
+	Categories     []CategoryStats        `json:"categories"`
+	TrendingTopics []TrendingTopic        `json:"trendingTopics"`
+	RecentCVEs     []string               `json:"recentCVEs"`
+	Stats          map[string]interface{} `json:"stats"`
+	LastUpdated    string                 `json:"lastUpdated"`
+}
+
+func generateJSONOutput(entries []*FeedEntry, stats *AggregatorStats, sources []FeedSource) {
+	printInfo("📊 Generating JSON data for dashboard...")
+	
+	// Create data directory if it doesn't exist
+	err := os.MkdirAll(dataDirectory, 0755)
+	if err != nil {
+		printWarning(fmt.Sprintf("Failed to create data directory: %v", err))
+		return
+	}
+	
+	// Convert entries to JSON format
+	jsonPosts := make([]JSONPost, len(entries))
+	for i, entry := range entries {
+		// Extract CVE IDs from title and description
+		cveIds := extractCVEIds(entry.Title + " " + entry.Description)
+		
+		// Calculate age in hours
+		ageHours := 0.0
+		if !entry.ParsedTime.IsZero() {
+			ageHours = time.Since(entry.ParsedTime).Hours()
+		}
+		
+		jsonPosts[i] = JSONPost{
+			GUID:           entry.GUID,
+			Title:          entry.Title,
+			Link:           entry.GUID, // Use GUID as link since it's the Medium URL
+			Description:    entry.Description,
+			PublishedTime:  entry.ParsedTime.Format(time.RFC3339),
+			Author:         entry.Author,
+			Categories:     entry.Categories,
+			SourceCategory: getCategoryFromFeeds(entry.FeedNames, sources),
+			Priority:       entry.Priority,
+			AgeHours:       ageHours,
+			IsNew:          entry.IsNew,
+			IsToday:        entry.IsToday,
+			IsThisWeek:     entry.IsThisWeek,
+			CVEIds:         cveIds,
+		}
+	}
+	
+	// Generate summary data
+	categoryStats := generateCategoryStats(entries, sources)
+	trendingTopics := extractTrendingTopics(entries)
+	recentCVEs := extractRecentCVEs(entries)
+	
+	summary := JSONSummary{
+		TotalPosts:     len(entries),
+		NewPosts:       countNewEntries(entries),
+		TodayPosts:     countTodayEntries(entries),
+		ThisWeekPosts:  countWeekEntries(entries),
+		Categories:     categoryStats,
+		TrendingTopics: trendingTopics,
+		RecentCVEs:     recentCVEs,
+		Stats: map[string]interface{}{
+			"totalFeeds":      stats.TotalFeeds,
+			"successfulFeeds": stats.SuccessfulFeeds,
+			"successRate":     float64(stats.SuccessfulFeeds) / float64(stats.TotalFeeds) * 100,
+			"rateLimited":     stats.RateLimited,
+			"processingTime":  stats.ProcessingTime.String(),
+		},
+		LastUpdated: getCurrentDateGMT(),
+	}
+	
+	// Write posts JSON
+	postsJSON, err := json.MarshalIndent(jsonPosts, "", "  ")
+	if err != nil {
+		printWarning(fmt.Sprintf("Failed to marshal posts JSON: %v", err))
+		return
+	}
+	
+	err = ioutil.WriteFile(dataDirectory+"/posts.json", postsJSON, 0644)
+	if err != nil {
+		printWarning(fmt.Sprintf("Failed to write posts.json: %v", err))
+	} else {
+		printSuccess(fmt.Sprintf("Generated %s/posts.json (%d posts)", dataDirectory, len(jsonPosts)))
+	}
+	
+	// Write summary JSON
+	summaryJSON, err := json.MarshalIndent(summary, "", "  ")
+	if err != nil {
+		printWarning(fmt.Sprintf("Failed to marshal summary JSON: %v", err))
+		return
+	}
+	
+	err = ioutil.WriteFile(dataDirectory+"/summary.json", summaryJSON, 0644)
+	if err != nil {
+		printWarning(fmt.Sprintf("Failed to write summary.json: %v", err))
+	} else {
+		printSuccess(fmt.Sprintf("Generated %s/summary.json", dataDirectory))
+	}
+}
+
+// extractCVEIds extracts CVE IDs from text using regex
+func extractCVEIds(text string) []string {
+	// Simple regex to match CVE-YYYY-NNNN format
+	var cveIds []string
+	lines := strings.Split(text, " ")
+	for _, word := range lines {
+		word = strings.ToUpper(strings.TrimSpace(word))
+		if strings.HasPrefix(word, "CVE-") && len(word) >= 9 {
+			cveIds = append(cveIds, word)
+		}
+	}
+	return cveIds
+}
+
+// extractRecentCVEs returns CVE IDs from recent entries
+func extractRecentCVEs(entries []*FeedEntry) []string {
+	cveSet := make(map[string]bool)
+	for _, entry := range entries {
+		if entry.IsThisWeek {
+			cves := extractCVEIds(entry.Title + " " + entry.Description)
+			for _, cve := range cves {
+				cveSet[cve] = true
+			}
+		}
+	}
+	
+	cves := make([]string, 0, len(cveSet))
+	for cve := range cveSet {
+		cves = append(cves, cve)
+	}
+	sort.Strings(cves)
+	return cves
+}
+
 func generateMarkdownOutput(entries []*FeedEntry, stats *AggregatorStats, sources []FeedSource) {
 	printInfo("📋 Generating GitHub Pages compatible markdown...")
 	fmt.Println()
@@ -1314,7 +1476,7 @@ func generateMarkdownOutput(entries []*FeedEntry, stats *AggregatorStats, source
 	fmt.Printf("4. 📬 Submit a pull request\n\n")
 
 	fmt.Printf("---\n")
-	fmt.Printf("*⚡ Powered by GitHub Actions | 🔄 Auto-updated | ⭐ Star if useful!*\n")
+	fmt.Printf("*⚡ Powered by GitHub Actions | 🔄 Auto-updated every 2 hours | ⭐ Star if useful!*\n")
 }
 
 func generateHTMLOutput(entries []*FeedEntry, stats *AggregatorStats, sources []FeedSource) {
