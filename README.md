@@ -1,79 +1,3 @@
-[1m[36m═══════════════════════════════════════════════════════════════════════════════[0m
-[1m[36m🛡️  Medium Cybersecurity RSS Aggregator v2.0.0[0m
-[1m[37m🔗 Medium Cybersecurity RSS Feed Aggregator[0m
-[36m═══════════════════════════════════════════════════════════════════════════════[0m
-📅 Current GMT Date: [33mThu, 21 Aug 2025[0m
-📊 Processing [34m61[0m RSS feeds
-⏱️  Request delay: [35m2s[0m
-───────────────────────────────────────────────────────────────────────────────
-[1m[34mℹ️  🔄 Processing 61 RSS feeds...[0m
-───────────────────────────────────────────────────────────────────────────────
-[1/61]   Core Security   Cybersecurity [32m✅ 10 items[0m
-[2/61]   Core Security   Bug Bounty [32m✅ 10 items[0m
-[3/61]   Core Security   Security [32m✅ 10 items[0m
-[4/61]   Core Security   Ethical Hacking [32m✅ 10 items[0m
-[5/61]   Core Security   Penetration Testing [32m✅ 10 items[0m
-[6/61]   Core Security   Vulnerability [32m✅ 10 items[0m
-[7/61]   Core Security   Infosec [32m✅ 10 items[0m
-[8/61]   Core Security   Hacking [32m✅ 10 items[0m
-[9/61]   Bug Bounty      Bug Bounty Tips [32m✅ 10 items[0m
-[10/61]  Bug Bounty      Bug Bounty Writeup [32m✅ 9 items[0m
-[11/61]  Bug Bounty      Bugbounty Writeup [32m✅ 10 items[0m
-[12/61]  Bug Bounty      Bug Bounty Hunter [32m✅ 10 items[0m
-[13/61]  Bug Bounty      Bug Bounty Program [32m✅ 7 items[0m
-[14/61]  Bug Bounty      Hackerone [32m✅ 8 items[0m
-[15/61]  Bug Bounty      Bugcrowd [32m✅ 10 items[0m
-[16/61]  Bug Bounty      Bounty Program [32m✅ 10 items[0m
-[17/61]  Bug Bounty      Bounties [32m✅ 9 items[0m
-[18/61]  Technical       Web Security [32m✅ 10 items[0m
-[19/61]  Technical       Application Security [32m✅ 10 items[0m
-[20/61]  Technical       Api Security [32m✅ 10 items[0m
-[21/61]  Technical       Xss Attack [32m✅ 10 items[0m
-[22/61]  Technical       Cross Site Scripting [32m✅ 10 items[0m
-[23/61]  Technical       Ssrf [32m✅ 10 items[0m
-[24/61]  Technical       Idor [32m✅ 9 items[0m
-[25/61]  Technical       Rce [32m✅ 9 items[0m
-[26/61]  Technical       Remote Code Execution [32m✅ 10 items[0m
-[27/61]  Technical       Local File Inclusion [32m✅ 10 items[0m
-[28/61]  Technical       Lfi [32m✅ 10 items[0m
-[29/61]  Technical       File Upload [32m✅ 10 items[0m
-[30/61]  Technical       Subdomain Takeover [32m✅ 9 items[0m
-[31/61]  Technical       Subdomain Enumeration [32m✅ 9 items[0m
-[32/61]  Tools & Methods Cybersecurity Tools [32m✅ 10 items[0m
-[33/61]  Tools & Methods Recon [32m✅ 9 items[0m
-[34/61]  Tools & Methods Dorking [32m✅ 10 items[0m
-[35/61]  Tools & Methods Google Dorking [32m✅ 9 items[0m
-[36/61]  Tools & Methods Google Dork [32m✅ 10 items[0m
-[37/61]  Tools & Methods Dorks [32m✅ 4 items[0m
-[38/61]  Tools & Methods Github Dorking [32m✅ 9 items[0m
-[39/61]  Tools & Methods Shodan [31m❌ Failed: HTTP 429[0m
-[40/61]  Tools & Methods Censys [31m❌ Failed: HTTP 429[0m
-[41/61]  Tools & Methods Nmap [31m❌ Failed: HTTP 429[0m
-[42/61]  Tools & Methods Burp Suite [31m❌ Failed: HTTP 429[0m
-[43/61]  Tools & Methods Metasploit [31m❌ Failed: HTTP 429[0m
-[44/61]  Cloud Security  Cloud Security [31m❌ Failed: HTTP 429[0m
-[45/61]  Cloud Security  Aws Security [31m❌ Failed: HTTP 429[0m
-[46/61]  Cloud Security  Azure Security [31m❌ Failed: HTTP 429[0m
-[47/61]  Cloud Security  Gcp Security [31m❌ Failed: HTTP 429[0m
-[48/61]  Cloud Security  Kubernetes Security [31m❌ Failed: HTTP 429[0m
-[49/61]  Cloud Security  Docker Security [31m❌ Failed: HTTP 429[0m
-[50/61]  Cloud Security  Container Security [31m❌ Failed: HTTP 429[0m
-[51/61]  Cloud Security  Devsecops [31m❌ Failed: HTTP 429[0m
-[52/61]  Research        Security Research [31m❌ Failed: HTTP 429[0m
-[53/61]  Research        Malware Analysis [31m❌ Failed: HTTP 429[0m
-[54/61]  Research        Reverse Engineering [31m❌ Failed: HTTP 429[0m
-[55/61]  Research        Threat Intelligence [31m❌ Failed: HTTP 429[0m
-[56/61]  Research        Threat Hunting [31m❌ Failed: HTTP 429[0m
-[57/61]  Research        Digital Forensics [31m❌ Failed: HTTP 429[0m
-[58/61]  Research        Incident Response [31m❌ Failed: HTTP 429[0m
-[59/61]  Research        Cve [31m❌ Failed: HTTP 429[0m
-[60/61]  Research        Zero Day [31m❌ Failed: HTTP 429[0m
-[61/61]  Research        Apt [31m❌ Failed: HTTP 429[0m
-───────────────────────────────────────────────────────────────────────────────
-[1m[32m✅ Successfully processed 38/61 feeds[0m
-
-[1m[34mℹ️  📋 Generating markdown output...[0m
-
 # Medium Cybersecurity RSS Aggregator
 
 **Last Updated:** Thu, 21 Aug 2025 GMT  
@@ -276,7 +200,7 @@
 | 09 Aug 17:51 | [Tools of the Trade: For a Cybersecurity Analyst](https://medium.com/p/904a14344732) | [Cybersecurity Tools](https://medium.com/feed/tag/cybersecurity-tools) |  |  |
 | 09 Aug 11:08 | [Finding Cross-site Scripting (XSS) Vulnerabilities and Mitigation Process](https://medium.com/p/536b01700b5b) | [Cross Site Scripting](https://medium.com/feed/tag/cross-site-scripting) |  |  |
 | 09 Aug 10:30 | [Vault Fault Exposes Critical Logic Flaws in CyberArk and HashiCorp Secrets Ma...](https://medium.com/p/f2c79c5e65a4) | [Remote Code Execution](https://medium.com/feed/tag/remote-code-execution) |  |  |
-| 09 Aug 05:32 | [لعبة ONE PIECE Bounty Rush \| نصائح واستراتيجيات للع�...](https://medium.com/p/07ab573b1389) | [Bounties](https://medium.com/feed/tag/bounties) |  |  |
+| 09 Aug 05:32 | [لعبة ONE PIECE Bounty Rush \| نصائح واستراتيجيات للع�...](https://medium.com/p/07ab573b1389) | [Bounties](https://medium.com/feed/tag/bounties) |  |  |
 | 08 Aug 19:01 | [Is Bitwarden Actually Worth It? 6 Months Later, It’s Essential](https://medium.com/p/881822eaf0ff) | [Cybersecurity Tools](https://medium.com/feed/tag/cybersecurity-tools) |  |  |
 | 08 Aug 17:32 | [CVE-2025-4388 HackerOne Duplicate Report](https://medium.com/p/0a1b34444293) | [Cross Site Scripting](https://medium.com/feed/tag/cross-site-scripting) |  |  |
 | 08 Aug 16:02 | [Cracking Pensive: A Deep Dive into Bugcrowd’s BlackHat USA CTF 25 RE Challenge](https://medium.com/p/b23457359562) | [Bugcrowd](https://medium.com/feed/tag/bugcrowd) |  |  |
@@ -340,7 +264,7 @@
 | 21 Jul 11:37 | [The Man Behind the Mullet: Wrestling Humanity from the Shadows with Dog the B...](https://medium.com/p/b6c261cb2005) | [Bounty Program](https://medium.com/feed/tag/bounty-program) |  |  |
 | 21 Jul 08:59 | [How I learned about Subdomain takeover?](https://medium.com/p/e4823366b3f8) | [Subdomain Takeover](https://medium.com/feed/tag/subdomain-takeover) |  |  |
 | 20 Jul 20:31 | [Subdomain Enumeration: Unleashing the First Strike in Bug Bounty Recon](https://medium.com/p/9eee03da3c89) | [Recon](https://medium.com/feed/tag/recon) |  |  |
-| 20 Jul 18:28 | [Security Misconfiguration — Sensitive Data Exposure via Google Dorks ($25 �...](https://medium.com/p/63da5dc83f67) | [Bugcrowd](https://medium.com/feed/tag/bugcrowd) +1 |  |  |
+| 20 Jul 18:28 | [Security Misconfiguration — Sensitive Data Exposure via Google Dorks ($25 �...](https://medium.com/p/63da5dc83f67) | [Bugcrowd](https://medium.com/feed/tag/bugcrowd) +1 |  |  |
 | 20 Jul 15:31 | [$150 — Broken Access Control \| HackerOne Bug Bounty Program — My First B...](https://medium.com/p/239aff71376f) | [Bounty Program](https://medium.com/feed/tag/bounty-program) |  |  |
 | 20 Jul 03:20 | [ChainBounty Announces Reward Cascade: Bag BOUNTY Today](https://medium.com/p/19849f7cb229) | [Bounties](https://medium.com/feed/tag/bounties) |  |  |
 | 19 Jul 19:59 | [Snag Exclusive BOUNTY Through ChainBounty's Launch Bonus](https://medium.com/p/0b8c6956d0c1) | [Bounties](https://medium.com/feed/tag/bounties) |  |  |
