@@ -8,9 +8,9 @@ Error parsing XML from https://medium.com/feed/tag/information-technology: XML s
 Error parsing XML from https://medium.com/feed/tag/infosec: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/web-security: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bug-bounty-tips: XML syntax error on line 1: expected element name after <
-Error parsing XML from https://medium.com/feed/tag/bugs: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/pentesting: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/xss-attack: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/information-security: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/cross-site-scripting: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/hackerone: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bugcrowd: XML syntax error on line 1: expected element name after <
@@ -63,13 +63,10 @@ Error parsing XML from https://medium.com/feed/tag/api-key: XML syntax error on 
 Error parsing XML from https://medium.com/feed/tag/cyber-sec: XML syntax error on line 1: expected element name after <
 | Time | Title | Feed | IsNew | IsToday |
 |-----------|-----|-----|-----|-----|
-| Wed, 10 Sep 2025 10:00:00 GMT | [Trusted CCTV Installation Company in Bangladesh — Optimatio...](https://freedium.cfd/https://medium.com/p/7521545236e9) | [information-security](https://medium.com/feed/tag/information-security) |  | Yes |
-| Wed, 10 Sep 2025 17:31:01 GMT | [Beyond Tools: The Human Side of Incident Response](https://freedium.cfd/https://medium.com/p/d0cf50eb1b68) | [information-security](https://medium.com/feed/tag/information-security) |  | Yes |
-| Wed, 10 Sep 2025 16:50:29 GMT | [How Hackers Hide: Using Tor on Linux Explained](https://freedium.cfd/https://medium.com/p/a0963f37773c) | [information-security](https://medium.com/feed/tag/information-security) |  | Yes |
-| Wed, 10 Sep 2025 11:26:16 GMT | [Why Employee Cyber Training Matters](https://freedium.cfd/https://medium.com/p/0d1304641c3b) | [information-security](https://medium.com/feed/tag/information-security) |  | Yes |
-| Wed, 10 Sep 2025 10:16:00 GMT | [Cyber Security in the Age of AI Threats](https://freedium.cfd/https://medium.com/p/c32ba45710a2) | [information-security](https://medium.com/feed/tag/information-security) |  | Yes |
-| Wed, 10 Sep 2025 09:54:03 GMT | [Writing Effective Bug Reports: Tips from a Pro Bug Bounty Hunter](https://freedium.cfd/https://medium.com/p/b2d2842129ed) | [information-security](https://medium.com/feed/tag/information-security) |  | Yes |
-| Wed, 10 Sep 2025 16:43:35 GMT | [Why SIEM Rules Sometimes Fail… and How to Fix the Game.](https://freedium.cfd/https://medium.com/p/91975f6ac763) | [information-security](https://medium.com/feed/tag/information-security) |  | Yes |
-| Wed, 10 Sep 2025 15:44:58 GMT | [The Rise of Cloud Forensics: Uncovering Evidence in the Cloud Era](https://freedium.cfd/https://medium.com/p/e26daa1f3866) | [information-security](https://medium.com/feed/tag/information-security) |  | Yes |
-| Wed, 10 Sep 2025 14:55:15 GMT | [Security-by-5D: A New Holistic Secure Model Approach](https://freedium.cfd/https://medium.com/p/bdb677708892) | [information-security](https://medium.com/feed/tag/information-security) |  | Yes |
-| Wed, 10 Sep 2025 10:58:35 GMT | [“Verdammt, schon wieder IT-Sicherheit!”](https://freedium.cfd/https://medium.com/p/b45251cc4414) | [information-security](https://medium.com/feed/tag/information-security) |  | Yes |
+| Tue, 09 Sep 2025 18:16:01 GMT | [Debugging Nightmares: How I Solved My First Real Bug](https://freedium.cfd/https://medium.com/p/8b751abe9191) | [bugs](https://medium.com/feed/tag/bugs) | Yes |  |
+| Tue, 09 Sep 2025 10:42:28 GMT | [Finding the Culprit with git bisect](https://freedium.cfd/https://medium.com/p/a1b896a8fd0c) | [bugs](https://medium.com/feed/tag/bugs) | Yes |  |
+| Tue, 09 Sep 2025 10:30:45 GMT | [What if your elephant thinks it is bug?](https://freedium.cfd/https://medium.com/p/3364e074532c) | [bugs](https://medium.com/feed/tag/bugs) | Yes |  |
+| Mon, 08 Sep 2025 12:15:24 GMT | [Not so Scary: Aotearoa’s Littlest Locals](https://freedium.cfd/https://medium.com/p/5dde968171c7) | [bugs](https://medium.com/feed/tag/bugs) | Yes |  |
+| Mon, 08 Sep 2025 08:45:49 GMT | [Why I Made a 30 Minute poc video for Mercedes Benz](https://freedium.cfd/https://medium.com/p/fc27195a1717) | [bugs](https://medium.com/feed/tag/bugs) | Yes |  |
+| Sun, 07 Sep 2025 21:44:15 GMT | [Hunting Bugs, Learning Fast](https://freedium.cfd/https://medium.com/p/484feb15d4d3) | [bugs](https://medium.com/feed/tag/bugs) | Yes |  |
+| Tue, 09 Sep 2025 19:33:31 GMT | [Feliz Dia do Bug: Como a arte de “quebrar coisas” pode mudar ...](https://freedium.cfd/https://medium.com/p/a9af4beeff21) | [bugs](https://medium.com/feed/tag/bugs) | Yes |  |
