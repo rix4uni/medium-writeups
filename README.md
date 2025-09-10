@@ -1,4 +1,3 @@
-Error parsing XML from https://medium.com/feed/tag/bug-bounty: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/security: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/vulnerability: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/cybersecurity: XML syntax error on line 1: expected element name after <
@@ -7,6 +6,7 @@ Error parsing XML from https://medium.com/feed/tag/hacking: XML syntax error on 
 Error parsing XML from https://medium.com/feed/tag/information-technology: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/infosec: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/web-security: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/bug-bounty-tips: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bugs: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/pentesting: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/xss-attack: XML syntax error on line 1: expected element name after <
@@ -63,12 +63,13 @@ Error parsing XML from https://medium.com/feed/tag/api-key: XML syntax error on 
 Error parsing XML from https://medium.com/feed/tag/cyber-sec: XML syntax error on line 1: expected element name after <
 | Time | Title | Feed | IsNew | IsToday |
 |-----------|-----|-----|-----|-----|
-| Wed, 10 Sep 2025 02:15:11 GMT | [URL Normalization Turns a Harmless Request into a Cache-Poisoned ...](https://freedium.cfd/https://medium.com/p/57d1a68f08d2) | [bug-bounty-tips](https://medium.com/feed/tag/bug-bounty-tips) |  | Yes |
-| Wed, 10 Sep 2025 06:46:26 GMT | [Regular User Can Invite Admin — Resulting in Full Organizat...](https://freedium.cfd/https://medium.com/p/050dd57f9e01) | [bug-bounty-tips](https://medium.com/feed/tag/bug-bounty-tips) |  | Yes |
-| Wed, 10 Sep 2025 02:18:54 GMT | [Mastering Bug Bounty: The Secrets of hunting bugs by Devansh Chau...](https://freedium.cfd/https://medium.com/p/8d8932a5089a) | [bug-bounty-tips](https://medium.com/feed/tag/bug-bounty-tips) |  | Yes |
-| Tue, 09 Sep 2025 18:15:58 GMT | [Understanding NoSQL Injection: Exploit Techniques, Examples, and ...](https://freedium.cfd/https://medium.com/p/1d99dba79a58) | [bug-bounty-tips](https://medium.com/feed/tag/bug-bounty-tips) |  |  |
-| Tue, 09 Sep 2025 18:01:42 GMT | [Nuevo Video Bug Bounty: Hackeando Reddit Sin Filtros](https://freedium.cfd/https://medium.com/p/df82b7338145) | [bug-bounty-tips](https://medium.com/feed/tag/bug-bounty-tips) |  |  |
-| Tue, 09 Sep 2025 06:36:57 GMT | [How a Failed Payment on a Train Platform Earned Me $400](https://freedium.cfd/https://medium.com/p/23241d204550) | [bug-bounty-tips](https://medium.com/feed/tag/bug-bounty-tips) |  |  |
-| Tue, 09 Sep 2025 05:42:59 GMT | [Reflected XSS Vulnerability Bypassing Amazon CloudFront via Safar...](https://freedium.cfd/https://medium.com/p/5416b5b64be2) | [bug-bounty-tips](https://medium.com/feed/tag/bug-bounty-tips) |  |  |
-| Tue, 09 Sep 2025 10:01:30 GMT | [How I Accidentally Stumbled Upon a Critical Vulnerability (Expose...](https://freedium.cfd/https://medium.com/p/420f17004062) | [bug-bounty-tips](https://medium.com/feed/tag/bug-bounty-tips) |  |  |
-| Tue, 09 Sep 2025 07:32:08 GMT | [ Bug Bounty: No hay payload que sustituya a una buena intuición](https://freedium.cfd/https://medium.com/p/e7f12dce0253) | [bug-bounty-tips](https://medium.com/feed/tag/bug-bounty-tips) |  |  |
+| Wed, 10 Sep 2025 12:43:06 GMT | [How I Discovered Hidden JSON & GraphQL Requests and Won a Bug Bou...](https://freedium.cfd/https://medium.com/p/dc0d72b4aba4) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) | Yes | Yes |
+| Wed, 10 Sep 2025 11:04:11 GMT | [Small type of Classic idor i find](https://freedium.cfd/https://medium.com/p/416a11b1fe59) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) | Yes | Yes |
+| Wed, 10 Sep 2025 09:54:03 GMT | [Writing Effective Bug Reports: Tips from a Pro Bug Bounty Hunter](https://freedium.cfd/https://medium.com/p/b2d2842129ed) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) | Yes | Yes |
+| Wed, 10 Sep 2025 09:33:58 GMT | [Exploiting Business Logic Flaws: How I Bought Products for $1 (Et...](https://freedium.cfd/https://medium.com/p/6f21f883cd7a) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) | Yes | Yes |
+| Wed, 10 Sep 2025 08:23:57 GMT | [Advanced Paid Resources for Experienced Bug Bounty Hunters](https://freedium.cfd/https://medium.com/p/3c900060bf8e) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) | Yes | Yes |
+| Wed, 10 Sep 2025 07:34:36 GMT | [ Silent Sniper: How I Turned a Blind SSRF into a Critical AWS Inf...](https://freedium.cfd/https://medium.com/p/ae40614de53b) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) | Yes | Yes |
+| Wed, 10 Sep 2025 13:10:51 GMT | [I Found My First Critical Bug Using SQL Injection Recon](https://freedium.cfd/https://medium.com/p/6a3e2f9d89f5) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) | Yes | Yes |
+| Wed, 10 Sep 2025 12:15:45 GMT | [The Ultimate Hacker’s Bash Cheat Sheet (20+ Advanced One-Liners...](https://freedium.cfd/https://medium.com/p/418385ed1e35) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) | Yes | Yes |
+| Wed, 10 Sep 2025 11:36:11 GMT | [Bughuntig is going somewhere else direction](https://freedium.cfd/https://medium.com/p/9852b3b72e4d) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) | Yes | Yes |
+| Wed, 10 Sep 2025 08:04:20 GMT | [Hacking Into India’s Largest Payment Network Through a Single A...](https://freedium.cfd/https://medium.com/p/d42d115afa25) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) | Yes | Yes |
