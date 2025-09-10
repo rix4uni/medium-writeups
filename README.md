@@ -2,6 +2,7 @@ Error parsing XML from https://medium.com/feed/tag/bug-bounty: XML syntax error 
 Error parsing XML from https://medium.com/feed/tag/security: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/vulnerability: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/cybersecurity: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/penetration-testing: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/hacking: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/information-technology: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/infosec: XML syntax error on line 1: expected element name after <
@@ -63,13 +64,3 @@ Error parsing XML from https://medium.com/feed/tag/api-key: XML syntax error on 
 Error parsing XML from https://medium.com/feed/tag/cyber-sec: XML syntax error on line 1: expected element name after <
 | Time | Title | Feed | IsNew | IsToday |
 |-----------|-----|-----|-----|-----|
-| Wed, 10 Sep 2025 00:22:09 GMT | [Daily Pentest Labs — Day 01 — Basic Pentesting 1 �...](https://freedium.cfd/https://medium.com/p/2f012f978529) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) |  | Yes |
-| Wed, 10 Sep 2025 15:41:01 GMT | [A Web Application Security Assessment of Vuln-Bank (Part 1)](https://freedium.cfd/https://medium.com/p/28b3e5b0fa5b) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) |  | Yes |
-| Wed, 10 Sep 2025 12:55:05 GMT | [PG Practice — BullyBox (Linux)](https://freedium.cfd/https://medium.com/p/ccf059e0b3ac) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) |  | Yes |
-| Wed, 10 Sep 2025 12:43:06 GMT | [How I Discovered Hidden JSON & GraphQL Requests and Won a Bug Bou...](https://freedium.cfd/https://medium.com/p/dc0d72b4aba4) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) |  | Yes |
-| Wed, 10 Sep 2025 09:33:58 GMT | [Exploiting Business Logic Flaws: How I Bought Products for $1 (Et...](https://freedium.cfd/https://medium.com/p/6f21f883cd7a) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) |  | Yes |
-| Wed, 10 Sep 2025 09:22:45 GMT | [Why Every Business Needs a Trusted PT Services Provider](https://freedium.cfd/https://medium.com/p/3b152b90b46d) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) |  | Yes |
-| Wed, 10 Sep 2025 08:23:57 GMT | [Advanced Paid Resources for Experienced Bug Bounty Hunters](https://freedium.cfd/https://medium.com/p/3c900060bf8e) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) |  | Yes |
-| Wed, 10 Sep 2025 07:47:41 GMT | [Injection Attacks: The Old but Deadly Threat That Still Haunts th...](https://freedium.cfd/https://medium.com/p/df49370ff407) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) |  | Yes |
-| Wed, 10 Sep 2025 07:34:39 GMT | [Day 88: Privilege Escalation Fundamentals](https://freedium.cfd/https://medium.com/p/2173f84d48d2) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) |  | Yes |
-| Wed, 10 Sep 2025 06:01:49 GMT | [IDOR: How I Could Delete Any Product Image on an E-Commerce Platf...](https://freedium.cfd/https://medium.com/p/8998453a50ea) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) |  | Yes |
