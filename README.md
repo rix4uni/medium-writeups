@@ -1,5 +1,4 @@
 Error parsing XML from https://medium.com/feed/tag/bug-bounty: XML syntax error on line 1: expected element name after <
-Error parsing XML from https://medium.com/feed/tag/security: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/vulnerability: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/cybersecurity: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/penetration-testing: XML syntax error on line 1: expected element name after <
@@ -64,3 +63,13 @@ Error parsing XML from https://medium.com/feed/tag/api-key: XML syntax error on 
 Error parsing XML from https://medium.com/feed/tag/cyber-sec: XML syntax error on line 1: expected element name after <
 | Time | Title | Feed | IsNew | IsToday |
 |-----------|-----|-----|-----|-----|
+| Tue, 16 Sep 2025 07:21:58 GMT | [E-commerce Security Best Practices: Protecting Your Store from Cy...](https://freedium.cfd/https://medium.com/p/69d455d458a2) | [security](https://medium.com/feed/tag/security) | Yes | Yes |
+| Tue, 16 Sep 2025 07:21:02 GMT | [ADK Agents with Agentspace Authenticated Datastores](https://freedium.cfd/https://medium.com/p/64a49466074d) | [security](https://medium.com/feed/tag/security) | Yes | Yes |
+| Tue, 16 Sep 2025 08:22:06 GMT | [The Simple Device That’s Revolutionizing Vehicle Security](https://freedium.cfd/https://medium.com/p/c248aee2f5ab) | [security](https://medium.com/feed/tag/security) | Yes | Yes |
+| Tue, 16 Sep 2025 08:08:14 GMT | [GitHub Actions Security & Permissions — A Beginner’s Guid...](https://freedium.cfd/https://medium.com/p/4b5f1f86a321) | [security](https://medium.com/feed/tag/security) | Yes | Yes |
+| Tue, 16 Sep 2025 07:27:55 GMT | [Mastering AWS IAM: Best Practices for Secure Cloud Access(Beginne...](https://freedium.cfd/https://medium.com/p/ef9050a4629a) | [security](https://medium.com/feed/tag/security) | Yes | Yes |
+| Tue, 16 Sep 2025 07:17:46 GMT | [AI security and data science: Why data scientists are the first l...](https://freedium.cfd/https://medium.com/p/50655e5348f5) | [security](https://medium.com/feed/tag/security) | Yes | Yes |
+| Tue, 16 Sep 2025 07:14:04 GMT | [The Growing Importance of Security Guard Services and Security Se...](https://freedium.cfd/https://medium.com/p/a28b332fd475) | [security](https://medium.com/feed/tag/security) | Yes | Yes |
+| Tue, 16 Sep 2025 06:49:12 GMT | [OWASP Top 10 — DevOps & Cloud Security 2025](https://freedium.cfd/https://medium.com/p/86c97678fcb9) | [security](https://medium.com/feed/tag/security) | Yes | Yes |
+| Tue, 16 Sep 2025 08:07:18 GMT | [Security in PostgreSQL](https://freedium.cfd/https://medium.com/p/ffe75ec677e7) | [security](https://medium.com/feed/tag/security) | Yes | Yes |
+| Tue, 16 Sep 2025 08:01:47 GMT | [Why Smart Developers Never Check 50 Servers Manually — Bash...](https://freedium.cfd/https://medium.com/p/532d09805f5c) | [security](https://medium.com/feed/tag/security) | Yes | Yes |
