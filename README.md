@@ -1,10 +1,10 @@
+Error parsing XML from https://medium.com/feed/tag/bug-bounty: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/security: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/vulnerability: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/cybersecurity: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/penetration-testing: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/hacking: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/information-technology: XML syntax error on line 1: expected element name after <
-Error parsing XML from https://medium.com/feed/tag/infosec: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/web-security: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bug-bounty-tips: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bugs: XML syntax error on line 1: expected element name after <
@@ -63,13 +63,13 @@ Error parsing XML from https://medium.com/feed/tag/api-key: XML syntax error on 
 Error parsing XML from https://medium.com/feed/tag/cyber-sec: XML syntax error on line 1: expected element name after <
 | Time | Title | Feed | IsNew | IsToday |
 |-----------|-----|-----|-----|-----|
-| Sat, 20 Sep 2025 16:07:19 GMT | [The Silent Killer of App Security: Broken Access Controls:An Adva...](https://freedium.cfd/https://medium.com/p/faabdb8ba36b) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  | Yes |
-| Sat, 20 Sep 2025 07:54:23 GMT | [Cheapest VPS for Bug Bounty & Pentesting](https://freedium.cfd/https://medium.com/p/fc6686572ee3) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  | Yes |
-| Sat, 20 Sep 2025 07:41:26 GMT | [How i Bypass Subscription Limits by race condition vulnerability](https://freedium.cfd/https://medium.com/p/cecfaacd07e7) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  | Yes |
-| Sat, 20 Sep 2025 00:01:47 GMT | [Master WPScan in Bug Bounty: Essential Guide to Vulnerability Sca...](https://freedium.cfd/https://medium.com/p/6c68a4a19b3a) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  | Yes |
-| Sat, 20 Sep 2025 14:23:58 GMT | [Kerentanan Information Sensitive/disclosure (git exposure) pada W...](https://freedium.cfd/https://medium.com/p/479ca4d067e3) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  | Yes |
-| Sat, 20 Sep 2025 10:04:13 GMT | [CVE-2023–29489 in Much Marcle Parish Council GOV.UK Website: A ...](https://freedium.cfd/https://medium.com/p/45830b223c13) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  | Yes |
-| Fri, 19 Sep 2025 21:46:02 GMT | [How I Turned Forgotten Internet Archives into a Critical Account ...](https://freedium.cfd/https://medium.com/p/9cfc846f0685) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  |  |
-| Fri, 19 Sep 2025 18:49:20 GMT | [Advanced Bug Hunting: Tips, Tricks and Methodology](https://freedium.cfd/https://medium.com/p/9962b05ee740) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  |  |
-| Fri, 19 Sep 2025 21:50:08 GMT | [Weaponizing Burp Intruder: Credential Stuffing done Right](https://freedium.cfd/https://medium.com/p/f91fa3121bb9) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  |  |
-| Fri, 19 Sep 2025 18:49:36 GMT | [HOW TO START BUG BOUNTY? ‍ A ROADMAP FOR ETHICAL HACKERS](https://freedium.cfd/https://medium.com/p/f26363317205) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  |  |
+| Sat, 20 Sep 2025 00:24:02 GMT | [How I got access into National Testing Agency(NTA) and Achieved F...](https://freedium.cfd/https://medium.com/p/86f8695f61c6) | [infosec](https://medium.com/feed/tag/infosec) | Yes | Yes |
+| Sat, 20 Sep 2025 12:22:10 GMT | [The Role of CISOs in Modern Enterprises](https://freedium.cfd/https://medium.com/p/6bdac6e94ac4) | [infosec](https://medium.com/feed/tag/infosec) | Yes | Yes |
+| Sat, 20 Sep 2025 06:24:01 GMT | [What Is Hacking Really? Breaking the Myths and Movies](https://freedium.cfd/https://medium.com/p/198ca6b8c7b7) | [infosec](https://medium.com/feed/tag/infosec) | Yes | Yes |
+| Fri, 19 Sep 2025 16:42:00 GMT | [Assessment Methodologies: Enumeration CTF 1](https://freedium.cfd/https://medium.com/p/7fb372c84055) | [infosec](https://medium.com/feed/tag/infosec) | Yes |  |
+| Fri, 19 Sep 2025 09:11:03 GMT | [Cyber Threat Intelligence: How to Investigate IPs and Domains \| ...](https://freedium.cfd/https://medium.com/p/f5747bc05734) | [infosec](https://medium.com/feed/tag/infosec) | Yes |  |
+| Fri, 19 Sep 2025 08:32:36 GMT | [Cybersecurity in Financial Services](https://freedium.cfd/https://medium.com/p/f3d5c0a9114f) | [infosec](https://medium.com/feed/tag/infosec) | Yes |  |
+| Fri, 19 Sep 2025 18:43:31 GMT | [SOC Role in Blue Team \| TryHackMe Room Walkthrough](https://freedium.cfd/https://medium.com/p/cc5e83f521e7) | [infosec](https://medium.com/feed/tag/infosec) | Yes |  |
+| Fri, 19 Sep 2025 14:02:52 GMT | [Open Source Security Management](https://freedium.cfd/https://medium.com/p/b7b9bd6b2e76) | [infosec](https://medium.com/feed/tag/infosec) | Yes |  |
+| Fri, 19 Sep 2025 13:17:45 GMT | [Bypassing Complicated WiFi Security In Minutes](https://freedium.cfd/https://medium.com/p/4d412dc77bd9) | [infosec](https://medium.com/feed/tag/infosec) | Yes |  |
+| Fri, 19 Sep 2025 09:42:05 GMT | [Hackerman or Code Wizard? Skillset for Pen Testing Success](https://freedium.cfd/https://medium.com/p/fa6a0a0c30f5) | [infosec](https://medium.com/feed/tag/infosec) | Yes |  |
