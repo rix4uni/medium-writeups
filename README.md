@@ -2,7 +2,6 @@ Error parsing XML from https://medium.com/feed/tag/bug-bounty: XML syntax error 
 Error parsing XML from https://medium.com/feed/tag/security: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/vulnerability: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/cybersecurity: XML syntax error on line 1: expected element name after <
-Error parsing XML from https://medium.com/feed/tag/penetration-testing: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/hacking: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/information-technology: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/infosec: XML syntax error on line 1: expected element name after <
@@ -64,3 +63,13 @@ Error parsing XML from https://medium.com/feed/tag/api-key: XML syntax error on 
 Error parsing XML from https://medium.com/feed/tag/cyber-sec: XML syntax error on line 1: expected element name after <
 | Time | Title | Feed | IsNew | IsToday |
 |-----------|-----|-----|-----|-----|
+| Mon, 22 Sep 2025 18:24:15 GMT | [Recon Like a Pro: Manual + Automated for the Best of Both Worlds](https://freedium.cfd/https://medium.com/p/2e3845f1b661) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) | Yes | Yes |
+| Mon, 22 Sep 2025 16:15:17 GMT | [1 + 1 != 2](https://freedium.cfd/https://medium.com/p/8ea3079d48ee) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) | Yes | Yes |
+| Mon, 22 Sep 2025 12:43:33 GMT | [PG Practice — Billyboss (Windows)](https://freedium.cfd/https://medium.com/p/b3df60d2885b) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) | Yes | Yes |
+| Mon, 22 Sep 2025 09:57:26 GMT | [Top 10 Benefits of Regular VAPT Services for Businesses](https://freedium.cfd/https://medium.com/p/b6840b199d8d) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) | Yes | Yes |
+| Mon, 22 Sep 2025 10:08:11 GMT | [Path Traversal – PortSwigger Walk through](https://freedium.cfd/https://medium.com/p/abb95887e1bc) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) | Yes | Yes |
+| Mon, 22 Sep 2025 18:29:48 GMT | [ How I Hacked My Friends Portfolio (Clickjacking Exploit)](https://freedium.cfd/https://medium.com/p/7b5b2c5936e5) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) | Yes | Yes |
+| Mon, 22 Sep 2025 17:14:44 GMT | [Necromancer VM Walkthrough](https://freedium.cfd/https://medium.com/p/67034e8c28b3) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) | Yes | Yes |
+| Mon, 22 Sep 2025 15:41:20 GMT | [How ChatGPT is Changing Cybersecurity: Red Team, Blue Team, and B...](https://freedium.cfd/https://medium.com/p/19ce0a7bf9c2) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) | Yes | Yes |
+| Mon, 22 Sep 2025 13:06:02 GMT | [Security Review of the Orb](https://freedium.cfd/https://medium.com/p/6e0402e4d6bd) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) | Yes | Yes |
+| Mon, 22 Sep 2025 12:23:22 GMT | [️The dark art of homoglyph attacks. ️‍♂️](https://freedium.cfd/https://medium.com/p/48cbb6e19409) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) | Yes | Yes |
