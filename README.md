@@ -1,13 +1,13 @@
 Error parsing XML from https://medium.com/feed/tag/bug-bounty: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/security: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/vulnerability: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/cybersecurity: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/penetration-testing: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/hacking: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/information-technology: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/infosec: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/web-security: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bug-bounty-tips: XML syntax error on line 1: expected element name after <
-Error parsing XML from https://medium.com/feed/tag/bugs: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/pentesting: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/xss-attack: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/information-security: XML syntax error on line 1: expected element name after <
@@ -63,13 +63,13 @@ Error parsing XML from https://medium.com/feed/tag/api-key: XML syntax error on 
 Error parsing XML from https://medium.com/feed/tag/cyber-sec: XML syntax error on line 1: expected element name after <
 | Time | Title | Feed | IsNew | IsToday |
 |-----------|-----|-----|-----|-----|
-| Mon, 13 Oct 2025 15:12:13 GMT | [Available Tools in DFiR Galaxy Workstation](https://freedium.cfd/https://medium.com/p/b92112a05577) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
-| Mon, 13 Oct 2025 15:02:19 GMT | [Beyond the Mistakes: The ‘Human’ Glitch in Your Digital Secur...](https://freedium.cfd/https://medium.com/p/7d8b57b414ca) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
-| Mon, 13 Oct 2025 15:15:05 GMT | [GZR Observer — Global Daily — Oct 13, 2025](https://freedium.cfd/https://medium.com/p/815f29c55569) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
-| Mon, 13 Oct 2025 15:12:14 GMT | [Getting Started with The DFiR Galaxy Workstation](https://freedium.cfd/https://medium.com/p/7f4b56bfbe1e) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
-| Mon, 13 Oct 2025 15:12:14 GMT | [DFiR Galaxy Workstation: A Swiss army knife for DFIR Investigatio...](https://freedium.cfd/https://medium.com/p/979d888d024b) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
-| Mon, 13 Oct 2025 14:59:36 GMT | [SpamGPT: The AI-Powered Toolkit Turning Phishing into a Service](https://freedium.cfd/https://medium.com/p/7e92887537ce) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) | Yes | Yes |
-| Mon, 13 Oct 2025 14:17:56 GMT | [Microsoft ends supports for Windows 10](https://freedium.cfd/https://medium.com/p/75705b4ffb33) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) |  | Yes |
-| Mon, 13 Oct 2025 14:16:01 GMT | [Industrial IoT (IIoT) Security: Protecting the Smart Factory](https://freedium.cfd/https://medium.com/p/cc8890c172ea) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) |  | Yes |
-| Mon, 13 Oct 2025 14:45:10 GMT | [Vibe Coding: How AI Is Reshaping Software — and Creating a ...](https://freedium.cfd/https://medium.com/p/9496edc7271a) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) |  | Yes |
-| Mon, 13 Oct 2025 14:33:08 GMT | [RetailBreach Lab/CyberDefenders](https://freedium.cfd/https://medium.com/p/0279df1539a8) | [cybersecurity](https://medium.com/feed/tag/cybersecurity) |  | Yes |
+| Mon, 13 Oct 2025 10:41:49 GMT | [Beyond Bugs: How Modern QA is Powering Business Growth and Digita...](https://freedium.cfd/https://medium.com/p/2e6a98f35991) | [bugs](https://medium.com/feed/tag/bugs) | Yes | Yes |
+| Mon, 13 Oct 2025 06:48:07 GMT | [ Bug Life Cycle (Defect Life Cycle) Explained for QA Beginners](https://freedium.cfd/https://medium.com/p/4f6b3e35d071) | [bugs](https://medium.com/feed/tag/bugs) | Yes | Yes |
+| Sun, 12 Oct 2025 18:22:34 GMT | [The 2025.03 Bugfix update is now available](https://freedium.cfd/https://medium.com/p/847a1c20dd53) | [bugs](https://medium.com/feed/tag/bugs) | Yes |  |
+| Sun, 12 Oct 2025 14:52:33 GMT | [The weirdest bug:When Reflected XSS Won’t Let a Page Breathe](https://freedium.cfd/https://medium.com/p/58be5cdfb569) | [bugs](https://medium.com/feed/tag/bugs) | Yes |  |
+| Sun, 12 Oct 2025 13:17:02 GMT | [Instagram “View-Once” Images — A Privacy Concern Worth ...](https://freedium.cfd/https://medium.com/p/0614e508005e) | [bugs](https://medium.com/feed/tag/bugs) | Yes |  |
+| Sat, 11 Oct 2025 14:37:30 GMT | [Famous Software Bugs Since 2000: Simple Lessons for Beginner Deve...](https://freedium.cfd/https://medium.com/p/9787fd569528) | [bugs](https://medium.com/feed/tag/bugs) | Yes |  |
+| Sat, 11 Oct 2025 05:47:04 GMT | [The New Era of QA: Less Testing, More Intelligence](https://freedium.cfd/https://medium.com/p/2beaf615b80c) | [bugs](https://medium.com/feed/tag/bugs) | Yes |  |
+| Sat, 11 Oct 2025 04:55:27 GMT | [Fake Bug That Made Me Question Myself](https://freedium.cfd/https://medium.com/p/e5c076fb8e27) | [bugs](https://medium.com/feed/tag/bugs) | Yes |  |
+| Sat, 11 Oct 2025 22:07:03 GMT | [RAUL’S A LITTLE STINKER](https://freedium.cfd/https://medium.com/p/6ccec57a72de) | [bugs](https://medium.com/feed/tag/bugs) | Yes |  |
+| Sat, 11 Oct 2025 21:32:41 GMT | [Defensive Programming: Build for the Worst, Not the Best](https://freedium.cfd/https://medium.com/p/a2c19baaa9cd) | [bugs](https://medium.com/feed/tag/bugs) | Yes |  |
