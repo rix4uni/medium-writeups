@@ -21,7 +21,6 @@ Error parsing XML from https://medium.com/feed/tag/bug-bounty-hunter: XML syntax
 Error parsing XML from https://medium.com/feed/tag/bug-bounty-program: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/ethical-hacking: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/application-security: XML syntax error on line 1: expected element name after <
-Error parsing XML from https://medium.com/feed/tag/google-dorking: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/dorking: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/cyber-security-awareness: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/google-dork: XML syntax error on line 1: expected element name after <
@@ -64,3 +63,13 @@ Error parsing XML from https://medium.com/feed/tag/api-key: XML syntax error on 
 Error parsing XML from https://medium.com/feed/tag/cyber-sec: XML syntax error on line 1: expected element name after <
 | Time | Title | Feed | IsNew | IsToday |
 |-----------|-----|-----|-----|-----|
+| Tue, 07 Oct 2025 17:19:31 GMT | [Hidden Secrets: Advanced Google Dorking on GitHub’s raw.githubu...](https://freedium.cfd/https://medium.com/p/675374870756) | [google-dorking](https://medium.com/feed/tag/google-dorking) | Yes |  |
+| Mon, 29 Sep 2025 11:49:06 GMT | [Tools for Penetration Testing](https://freedium.cfd/https://medium.com/p/4f06fb343116) | [google-dorking](https://medium.com/feed/tag/google-dorking) | Yes |  |
+| Sun, 28 Sep 2025 12:30:54 GMT | [Google Dorking — Tryhackme Walkthrough](https://freedium.cfd/https://medium.com/p/bca77f989256) | [google-dorking](https://medium.com/feed/tag/google-dorking) | Yes |  |
+| Thu, 11 Sep 2025 19:28:19 GMT | [Google Dorking Tricks: Uncovering Hidden Risks on the Web](https://freedium.cfd/https://medium.com/p/71d8f140ba29) | [google-dorking](https://medium.com/feed/tag/google-dorking) | Yes |  |
+| Tue, 02 Sep 2025 15:53:08 GMT | [ Google Dorking: The Hidden Side of Search Engines](https://freedium.cfd/https://medium.com/p/75d8d1153d17) | [google-dorking](https://medium.com/feed/tag/google-dorking) | Yes |  |
+| Sat, 11 Oct 2025 00:28:47 GMT | [Google Dorking for Beginners: The Search Tricks Investigators Act...](https://freedium.cfd/https://medium.com/p/0fa98cfef5f4) | [google-dorking](https://medium.com/feed/tag/google-dorking) | Yes |  |
+| Fri, 10 Oct 2025 03:37:16 GMT | [3rd party PII Leak OSINT](https://freedium.cfd/https://medium.com/p/75b5f236e3e5) | [google-dorking](https://medium.com/feed/tag/google-dorking) | Yes |  |
+| Wed, 10 Sep 2025 21:14:45 GMT | [Kittens and Code: Google Dorks for Ethical Hackers](https://freedium.cfd/https://medium.com/p/732dcb742d57) | [google-dorking](https://medium.com/feed/tag/google-dorking) | Yes |  |
+| Wed, 08 Oct 2025 14:02:06 GMT | [Part 9: Google Hacking Database Explained: Dorking Your Way to Sm...](https://freedium.cfd/https://medium.com/p/5f31a862fd65) | [google-dorking](https://medium.com/feed/tag/google-dorking) | Yes |  |
+| Mon, 06 Oct 2025 06:58:34 GMT | [OSINT: Google Dorking Hacks: The X-Ray Vision for Google Search](https://freedium.cfd/https://medium.com/p/8c6cd8335ff2) | [google-dorking](https://medium.com/feed/tag/google-dorking) | Yes |  |
