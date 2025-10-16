@@ -3,6 +3,7 @@ Error parsing XML from https://medium.com/feed/tag/security: XML syntax error on
 Error parsing XML from https://medium.com/feed/tag/vulnerability: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/cybersecurity: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/penetration-testing: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/hacking: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/information-technology: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/infosec: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/web-security: XML syntax error on line 1: expected element name after <
@@ -63,13 +64,3 @@ Error parsing XML from https://medium.com/feed/tag/api-key: XML syntax error on 
 Error parsing XML from https://medium.com/feed/tag/cyber-sec: XML syntax error on line 1: expected element name after <
 | Time | Title | Feed | IsNew | IsToday |
 |-----------|-----|-----|-----|-----|
-| Thu, 16 Oct 2025 11:31:46 GMT | [25. Monetizing Your Skills Beyond Bug Bounty](https://freedium.cfd/https://medium.com/p/a6b503d6b6dc) | [hacking](https://medium.com/feed/tag/hacking) |  | Yes |
-| Thu, 16 Oct 2025 08:33:11 GMT | [Byte_Eagle-4 Walkthrough](https://freedium.cfd/https://medium.com/p/f784ea639d20) | [hacking](https://medium.com/feed/tag/hacking) |  | Yes |
-| Thu, 16 Oct 2025 08:12:19 GMT | [Slayer {HackSmarter} — EN version](https://freedium.cfd/https://medium.com/p/9ab3e7b97a34) | [hacking](https://medium.com/feed/tag/hacking) |  | Yes |
-| Thu, 16 Oct 2025 08:20:56 GMT | [Academy-walkthrough](https://freedium.cfd/https://medium.com/p/e804d83f64fa) | [hacking](https://medium.com/feed/tag/hacking) |  | Yes |
-| Thu, 16 Oct 2025 12:26:54 GMT | [ The DIRB Command That Found Me 47 Hidden Admin Panels](https://freedium.cfd/https://medium.com/p/8ff7f523aa24) | [hacking](https://medium.com/feed/tag/hacking) |  | Yes |
-| Thu, 16 Oct 2025 11:06:38 GMT | [From User to Domain Admin Explained \| HackTheBox TombWatcher Wri...](https://freedium.cfd/https://medium.com/p/d19dd11bcc52) | [hacking](https://medium.com/feed/tag/hacking) |  | Yes |
-| Thu, 16 Oct 2025 10:56:46 GMT | [Top 10 Universities Offering Cyber Security Degrees](https://freedium.cfd/https://medium.com/p/9d387dabfc49) | [hacking](https://medium.com/feed/tag/hacking) |  | Yes |
-| Thu, 16 Oct 2025 10:23:51 GMT | [Silver Ticket Attack in kerberos for beginners](https://freedium.cfd/https://medium.com/p/9b7ec171bef6) | [hacking](https://medium.com/feed/tag/hacking) |  | Yes |
-| Thu, 16 Oct 2025 10:09:40 GMT | [I Met One of India’s Best Hackers. Here’s What He Told Me.](https://freedium.cfd/https://medium.com/p/91f98828b14c) | [hacking](https://medium.com/feed/tag/hacking) |  | Yes |
-| Thu, 16 Oct 2025 09:18:33 GMT | [LazySysAdmin(VulnHub)Write-up](https://freedium.cfd/https://medium.com/p/1a38e8fc508f) | [hacking](https://medium.com/feed/tag/hacking) |  | Yes |
