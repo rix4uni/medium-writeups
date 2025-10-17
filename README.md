@@ -1,4 +1,3 @@
-Error parsing XML from https://medium.com/feed/tag/bug-bounty: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/security: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/vulnerability: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/cybersecurity: XML syntax error on line 1: expected element name after <
@@ -64,3 +63,13 @@ Error parsing XML from https://medium.com/feed/tag/api-key: XML syntax error on 
 Error parsing XML from https://medium.com/feed/tag/cyber-sec: XML syntax error on line 1: expected element name after <
 | Time | Title | Feed | IsNew | IsToday |
 |-----------|-----|-----|-----|-----|
+| Fri, 17 Oct 2025 04:50:56 GMT | [Recon Methodology For Bug Bounty Hunting](https://freedium.cfd/https://medium.com/p/f466fce74709) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) | Yes | Yes |
+| Fri, 17 Oct 2025 08:02:22 GMT | [Account Takeover via IDOR: From UserID to Full Access](https://freedium.cfd/https://medium.com/p/ade4f980cfb4) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) | Yes | Yes |
+| Fri, 17 Oct 2025 04:57:55 GMT | [ Menyelami Dunia Bug Hunting: Perjalanan Awal Seorang Mahasiswa I...](https://freedium.cfd/https://medium.com/p/bc83fcdabe3d) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) | Yes | Yes |
+| Fri, 17 Oct 2025 05:16:02 GMT | [One Link, One Report, One Four-Digit Bounty](https://freedium.cfd/https://medium.com/p/a4a682a9b612) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) | Yes | Yes |
+| Fri, 17 Oct 2025 00:01:49 GMT | [Guía Completa de Dnsx para la Resolución Masiva de DNS y Bug Bo...](https://freedium.cfd/https://medium.com/p/20714c2dbc01) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) | Yes | Yes |
+| Fri, 17 Oct 2025 06:30:22 GMT | [From €1500 to €0.50: A Bug Bounty Story of Payment Flow Manip...](https://freedium.cfd/https://medium.com/p/d845cc2c903d) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) | Yes | Yes |
+| Fri, 17 Oct 2025 05:23:22 GMT | [Email Verification OTP Bypass €€ — How I verified any ema...](https://freedium.cfd/https://medium.com/p/470cec0dbca5) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) | Yes | Yes |
+| Thu, 16 Oct 2025 20:10:52 GMT | [When dev‑server whispers: a bug hunter’s journey discovering ...](https://freedium.cfd/https://medium.com/p/6e7509854acc) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) | Yes |  |
+| Thu, 16 Oct 2025 20:38:09 GMT | [Freelancer Scienario \| Hackviser CWSExpert](https://freedium.cfd/https://medium.com/p/6bd72c96a9ad) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) | Yes |  |
+| Thu, 16 Oct 2025 18:31:14 GMT | [️ Charla + laboratorio: cómo se encontró un IDOR real (Hacker...](https://freedium.cfd/https://medium.com/p/5ebbe8868a37) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) | Yes |  |
