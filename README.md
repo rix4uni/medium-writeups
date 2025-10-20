@@ -23,8 +23,8 @@ Error parsing XML from https://medium.com/feed/tag/ethical-hacking: XML syntax e
 Error parsing XML from https://medium.com/feed/tag/application-security: XML syntax error on line 1: invalid character entity & (no semicolon)
 Error parsing XML from https://medium.com/feed/tag/google-dorking: XML syntax error on line 1: invalid character entity & (no semicolon)
 Error parsing XML from https://medium.com/feed/tag/dorking: XML syntax error on line 1: invalid character entity & (no semicolon)
-Error parsing XML from https://medium.com/feed/tag/cyber-security-awareness: XML syntax error on line 1: invalid character entity & (no semicolon)
-Error parsing XML from https://medium.com/feed/tag/google-dork: XML syntax error on line 1: invalid character entity & (no semicolon)
+Error parsing XML from https://medium.com/feed/tag/cyber-security-awareness: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/google-dork: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/web-pentest: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/vdp: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/information-disclosure: XML syntax error on line 1: expected element name after <
