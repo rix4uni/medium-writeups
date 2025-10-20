@@ -1,25 +1,25 @@
-Error parsing XML from https://medium.com/feed/tag/bug-bounty: XML syntax error on line 1: invalid character entity & (no semicolon)
-Error parsing XML from https://medium.com/feed/tag/security: XML syntax error on line 1: invalid character entity & (no semicolon)
-Error parsing XML from https://medium.com/feed/tag/vulnerability: XML syntax error on line 1: invalid character entity & (no semicolon)
-Error parsing XML from https://medium.com/feed/tag/cybersecurity: XML syntax error on line 1: invalid character entity & (no semicolon)
-Error parsing XML from https://medium.com/feed/tag/penetration-testing: XML syntax error on line 1: invalid character entity & (no semicolon)
-Error parsing XML from https://medium.com/feed/tag/hacking: XML syntax error on line 1: invalid character entity & (no semicolon)
-Error parsing XML from https://medium.com/feed/tag/information-technology: XML syntax error on line 1: invalid character entity & (no semicolon)
-Error parsing XML from https://medium.com/feed/tag/infosec: XML syntax error on line 1: invalid character entity & (no semicolon)
-Error parsing XML from https://medium.com/feed/tag/web-security: XML syntax error on line 1: invalid character entity & (no semicolon)
-Error parsing XML from https://medium.com/feed/tag/bug-bounty-tips: XML syntax error on line 1: invalid character entity & (no semicolon)
-Error parsing XML from https://medium.com/feed/tag/bugs: XML syntax error on line 1: invalid character entity & (no semicolon)
-Error parsing XML from https://medium.com/feed/tag/pentesting: XML syntax error on line 1: invalid character entity & (no semicolon)
-Error parsing XML from https://medium.com/feed/tag/xss-attack: XML syntax error on line 1: invalid character entity & (no semicolon)
-Error parsing XML from https://medium.com/feed/tag/information-security: XML syntax error on line 1: invalid character entity & (no semicolon)
-Error parsing XML from https://medium.com/feed/tag/cross-site-scripting: XML syntax error on line 1: invalid character entity & (no semicolon)
-Error parsing XML from https://medium.com/feed/tag/hackerone: XML syntax error on line 1: invalid character entity & (no semicolon)
-Error parsing XML from https://medium.com/feed/tag/bugcrowd: XML syntax error on line 1: invalid character entity & (no semicolon)
-Error parsing XML from https://medium.com/feed/tag/bugbounty-writeup: XML syntax error on line 1: invalid character entity & (no semicolon)
+Error parsing XML from https://medium.com/feed/tag/bug-bounty: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/security: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/vulnerability: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/cybersecurity: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/penetration-testing: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/hacking: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/information-technology: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/infosec: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/web-security: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/bug-bounty-tips: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/bugs: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/pentesting: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/xss-attack: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/information-security: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/cross-site-scripting: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/hackerone: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/bugcrowd: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/bugbounty-writeup: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bug-bounty-writeup: XML syntax error on line 1: invalid character entity & (no semicolon)
-Error parsing XML from https://medium.com/feed/tag/bug-bounty-hunter: XML syntax error on line 1: invalid character entity & (no semicolon)
-Error parsing XML from https://medium.com/feed/tag/bug-bounty-program: XML syntax error on line 1: invalid character entity & (no semicolon)
-Error parsing XML from https://medium.com/feed/tag/ethical-hacking: XML syntax error on line 1: invalid character entity & (no semicolon)
+Error parsing XML from https://medium.com/feed/tag/bug-bounty-hunter: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/bug-bounty-program: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/ethical-hacking: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/application-security: XML syntax error on line 1: invalid character entity & (no semicolon)
 Error parsing XML from https://medium.com/feed/tag/google-dorking: XML syntax error on line 1: invalid character entity & (no semicolon)
 Error parsing XML from https://medium.com/feed/tag/dorking: XML syntax error on line 1: invalid character entity & (no semicolon)
