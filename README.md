@@ -5,6 +5,7 @@ Error parsing XML from https://medium.com/feed/tag/cybersecurity: XML syntax err
 Error parsing XML from https://medium.com/feed/tag/penetration-testing: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/hacking: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/information-technology: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/infosec: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/web-security: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bug-bounty-tips: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bugs: XML syntax error on line 1: expected element name after <
@@ -63,12 +64,3 @@ Error parsing XML from https://medium.com/feed/tag/api-key: XML syntax error on 
 Error parsing XML from https://medium.com/feed/tag/cyber-sec: XML syntax error on line 1: expected element name after <
 | Time | Title | Feed | IsNew | IsToday |
 |-----------|-----|-----|-----|-----|
-| Fri, 24 Oct 2025 08:01:51 GMT | [Bug Bounty Edge: Find Exposed Credentials Before Recon](https://freedium.cfd/https://medium.com/p/b2852a0db53c) | [infosec](https://medium.com/feed/tag/infosec) |  | Yes |
-| Fri, 24 Oct 2025 03:35:49 GMT | [How I Accidentally Became the Company’s Unofficial File Clerk (...](https://freedium.cfd/https://medium.com/p/816e09bca109) | [infosec](https://medium.com/feed/tag/infosec) |  | Yes |
-| Fri, 24 Oct 2025 00:24:40 GMT | [Weekly Threat Intelligece Report 20 Oct 2025](https://freedium.cfd/https://medium.com/p/10ef92e9a3f1) | [infosec](https://medium.com/feed/tag/infosec) |  | Yes |
-| Fri, 24 Oct 2025 20:03:36 GMT | [Breaking Down the Pyramid of Pain: My Journey Through SOC Level 1...](https://freedium.cfd/https://medium.com/p/b844a143d4d9) | [infosec](https://medium.com/feed/tag/infosec) |  | Yes |
-| Fri, 24 Oct 2025 11:39:23 GMT | [CCSP vs AWS Security Specialty \| Full Breakdown: Difficulty, Job...](https://freedium.cfd/https://medium.com/p/20e910330af2) | [infosec](https://medium.com/feed/tag/infosec) |  | Yes |
-| Fri, 24 Oct 2025 10:01:53 GMT | [Debugging the Human Firewall: Why People Are Always the Weakest L...](https://freedium.cfd/https://medium.com/p/20a38eeb5891) | [infosec](https://medium.com/feed/tag/infosec) |  | Yes |
-| Fri, 24 Oct 2025 16:14:07 GMT | [Real-Time Cowrie Honeypot Alerts via Telegram — Track SSH A...](https://freedium.cfd/https://medium.com/p/58b95c61a56b) | [infosec](https://medium.com/feed/tag/infosec) |  | Yes |
-| Fri, 24 Oct 2025 13:32:04 GMT | [Cyber Security Forensics: Unraveling Digital Crimes](https://freedium.cfd/https://medium.com/p/90487deadf84) | [infosec](https://medium.com/feed/tag/infosec) |  | Yes |
-| Fri, 24 Oct 2025 05:19:32 GMT | [Linguistic Trojan Horse: Why LLM Steganography Just Broke AI Safe...](https://freedium.cfd/https://medium.com/p/d6b9979a19eb) | [infosec](https://medium.com/feed/tag/infosec) |  | Yes |
