@@ -2,10 +2,10 @@ Error parsing XML from https://medium.com/feed/tag/bug-bounty: XML syntax error 
 Error parsing XML from https://medium.com/feed/tag/security: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/vulnerability: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/cybersecurity: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/penetration-testing: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/hacking: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/information-technology: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/infosec: XML syntax error on line 1: expected element name after <
-Error parsing XML from https://medium.com/feed/tag/web-security: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bug-bounty-tips: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bugs: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/pentesting: XML syntax error on line 1: expected element name after <
@@ -63,13 +63,13 @@ Error parsing XML from https://medium.com/feed/tag/api-key: XML syntax error on 
 Error parsing XML from https://medium.com/feed/tag/cyber-sec: XML syntax error on line 1: expected element name after <
 | Time | Title | Feed | IsNew | IsToday |
 |-----------|-----|-----|-----|-----|
-| Sat, 25 Oct 2025 00:42:42 GMT | [PenTesting](https://freedium.cfd/https://medium.com/p/2013cf75023c) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) | Yes | Yes |
-| Fri, 24 Oct 2025 21:32:56 GMT | [Step-by-Step Guide: Automating Recon with Bash — Build Your...](https://freedium.cfd/https://medium.com/p/3692c145cc77) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) | Yes |  |
-| Fri, 24 Oct 2025 20:06:30 GMT | [\[HackTheBox x VulnLab Write-up\] Data (Grafana exploitation and ...](https://freedium.cfd/https://medium.com/p/c412bbddfc2e) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) | Yes |  |
-| Fri, 24 Oct 2025 16:01:51 GMT | [Siber Güvenlikte Networkun Temelleri ve Linux](https://freedium.cfd/https://medium.com/p/e035c4dc2198) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) | Yes |  |
-| Fri, 24 Oct 2025 15:10:03 GMT | [From No-Wi-Fi As a Kid to Launching My Own Cybersecurity Firm](https://freedium.cfd/https://medium.com/p/630674bd1d47) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) | Yes |  |
-| Fri, 24 Oct 2025 20:07:20 GMT | [\[HackTheBox x VulnLab Write-up\] Retro (Pre2K compter and ADCS E...](https://freedium.cfd/https://medium.com/p/79f4eb386cfd) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) | Yes |  |
-| Fri, 24 Oct 2025 18:23:51 GMT | [eJPT — 3.5 CTF 2 Post-Exploitation](https://freedium.cfd/https://medium.com/p/545b111dd3e3) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) | Yes |  |
-| Fri, 24 Oct 2025 15:00:30 GMT | [Mastering the C\|EH v13: Journey Through the Theory and Practical...](https://freedium.cfd/https://medium.com/p/6391c95b14fb) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) | Yes |  |
-| Fri, 24 Oct 2025 13:41:21 GMT | [Small Team Kubernetes Security: Applying DevSecOps in Practice](https://freedium.cfd/https://medium.com/p/7eebecf9e9fa) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) | Yes |  |
-| Fri, 24 Oct 2025 12:11:57 GMT | [eJPT — 3.5 CTF 1: Post-Exploitation](https://freedium.cfd/https://medium.com/p/640bb66c0dc0) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) | Yes |  |
+| Thu, 23 Oct 2025 23:24:57 GMT | [Hackviser — Rivalry Scenario Walkthrough](https://freedium.cfd/https://medium.com/p/2bb6a23adcfd) | [web-security](https://medium.com/feed/tag/web-security) | Yes |  |
+| Thu, 23 Oct 2025 21:52:18 GMT | [Mastering Burp Intruder: Sniper, Battering Ram, Pitchfork & Clust...](https://freedium.cfd/https://medium.com/p/58c6db3950b0) | [web-security](https://medium.com/feed/tag/web-security) | Yes |  |
+| Thu, 23 Oct 2025 09:21:20 GMT | [Stop Hackers Before They Strike: Angular 21 Basics for XSS Protec...](https://freedium.cfd/https://medium.com/p/930d307d7d59) | [web-security](https://medium.com/feed/tag/web-security) | Yes |  |
+| Thu, 23 Oct 2025 06:33:24 GMT | [The Complete Guide to Server-Side Request Forgery (SSRF) for Begi...](https://freedium.cfd/https://medium.com/p/b305056f1b71) | [web-security](https://medium.com/feed/tag/web-security) | Yes |  |
+| Fri, 24 Oct 2025 17:34:21 GMT | [เข้าใจ CORS ง่ายๆ สำหรับสา�...](https://freedium.cfd/https://medium.com/p/b0b5f3f2d592) | [web-security](https://medium.com/feed/tag/web-security) | Yes |  |
+| Fri, 24 Oct 2025 15:37:35 GMT | [My First Bug Bounty: Critical Account Deletion Vulnerability ](https://freedium.cfd/https://medium.com/p/cdfcedaea344) | [web-security](https://medium.com/feed/tag/web-security) | Yes |  |
+| Fri, 24 Oct 2025 14:45:15 GMT | [Corridor & Neighbour TryHackme Write-up](https://freedium.cfd/https://medium.com/p/a1873b375dad) | [web-security](https://medium.com/feed/tag/web-security) | Yes |  |
+| Fri, 24 Oct 2025 13:32:49 GMT | [How I Bypassed a Security Lockout to Protect User Accounts](https://freedium.cfd/https://medium.com/p/0d2bfde94ffa) | [web-security](https://medium.com/feed/tag/web-security) | Yes |  |
+| Thu, 23 Oct 2025 09:31:22 GMT | [ Frontend Security: The Most Ignored Skill Every Developer Needs ...](https://freedium.cfd/https://medium.com/p/f94316dc178a) | [web-security](https://medium.com/feed/tag/web-security) | Yes |  |
+| Thu, 23 Oct 2025 08:46:01 GMT | [PCI DSS 4.0 Remediation 2025: 7 Rapid Fixes](https://freedium.cfd/https://medium.com/p/550ae2ec4d3c) | [web-security](https://medium.com/feed/tag/web-security) | Yes |  |
