@@ -5,7 +5,6 @@ Error parsing XML from https://medium.com/feed/tag/cybersecurity: XML syntax err
 Error parsing XML from https://medium.com/feed/tag/penetration-testing: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/hacking: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/information-technology: XML syntax error on line 1: expected element name after <
-Error parsing XML from https://medium.com/feed/tag/infosec: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/web-security: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bug-bounty-tips: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bugs: XML syntax error on line 1: expected element name after <
@@ -20,6 +19,7 @@ Error parsing XML from https://medium.com/feed/tag/bug-bounty-writeup: XML synta
 Error parsing XML from https://medium.com/feed/tag/bug-bounty-hunter: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bug-bounty-program: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/ethical-hacking: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/application-security: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/google-dorking: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/dorking: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/cyber-security-awareness: XML syntax error on line 1: expected element name after <
@@ -63,12 +63,13 @@ Error parsing XML from https://medium.com/feed/tag/api-key: XML syntax error on 
 Error parsing XML from https://medium.com/feed/tag/cyber-sec: XML syntax error on line 1: expected element name after <
 | Time | Title | Feed | IsNew | IsToday |
 |-----------|-----|-----|-----|-----|
-| Sat, 25 Oct 2025 09:44:08 GMT | [How to Get Engineering to Care About AppSec (Without Being the Vi...](https://freedium.cfd/https://medium.com/p/b90c1e25304d) | [application-security](https://medium.com/feed/tag/application-security) |  | Yes |
-| Tue, 21 Oct 2025 14:43:29 GMT | [Apache Syncope Groovy RCE Vulnerability Lets Attackers Inject Mal...](https://freedium.cfd/https://medium.com/p/2ebd8896e567) | [application-security](https://medium.com/feed/tag/application-security) |  |  |
-| Fri, 24 Oct 2025 10:43:45 GMT | [JWT Security: Complete Enterprise Implementation Guide for Modern...](https://freedium.cfd/https://medium.com/p/ac055e68ad89) | [application-security](https://medium.com/feed/tag/application-security) |  |  |
-| Tue, 21 Oct 2025 17:39:59 GMT | [Robust Authentication in Spring Boot with Keycloak](https://freedium.cfd/https://medium.com/p/0d2c220210ad) | [application-security](https://medium.com/feed/tag/application-security) |  |  |
-| Thu, 23 Oct 2025 21:49:15 GMT | [When an Email Field Outsmarted Its Own Validator](https://freedium.cfd/https://medium.com/p/9f39acd38afa) | [application-security](https://medium.com/feed/tag/application-security) |  |  |
-| Thu, 23 Oct 2025 15:19:37 GMT | [What exactly do we own on the internet right now ?](https://freedium.cfd/https://medium.com/p/263562bc6115) | [application-security](https://medium.com/feed/tag/application-security) |  |  |
-| Thu, 23 Oct 2025 12:53:28 GMT | [From Threat to Ticket: How to Threat Model a Microservice with th...](https://freedium.cfd/https://medium.com/p/4be4a45344a6) | [application-security](https://medium.com/feed/tag/application-security) |  |  |
-| Tue, 21 Oct 2025 15:22:24 GMT | [Broken Access Controls — Protect The Fortress!](https://freedium.cfd/https://medium.com/p/62400f4d9f43) | [application-security](https://medium.com/feed/tag/application-security) |  |  |
-| Fri, 24 Oct 2025 23:51:17 GMT | [How I Used Threat Modeling to Secure a To-Do List App (and What I...](https://freedium.cfd/https://medium.com/p/98609dba8c61) | [application-security](https://medium.com/feed/tag/application-security) |  |  |
+| Sat, 25 Oct 2025 15:01:17 GMT | [Cyber Security in the Digital Age: Challenges and Solutions](https://freedium.cfd/https://medium.com/p/0d909580d11d) | [infosec](https://medium.com/feed/tag/infosec) | Yes | Yes |
+| Sat, 25 Oct 2025 14:14:24 GMT | [Why Beginners Fail in Cyber Security](https://freedium.cfd/https://medium.com/p/0a6b540f3201) | [infosec](https://medium.com/feed/tag/infosec) | Yes | Yes |
+| Sat, 25 Oct 2025 13:50:56 GMT | [Inside the Evil twin attack: How hackers trick you on public Wi-F...](https://freedium.cfd/https://medium.com/p/4366d3a91d71) | [infosec](https://medium.com/feed/tag/infosec) | Yes | Yes |
+| Sat, 25 Oct 2025 08:02:26 GMT | [Free Domain Leak Check: Run It in 60 Seconds](https://freedium.cfd/https://medium.com/p/fcc4bccee73d) | [infosec](https://medium.com/feed/tag/infosec) | Yes | Yes |
+| Sat, 25 Oct 2025 07:18:26 GMT | [Demystifying Zero Trust: Your Ultimate Guide to Next-Gen Cybersec...](https://freedium.cfd/https://medium.com/p/9504265572bc) | [infosec](https://medium.com/feed/tag/infosec) | Yes | Yes |
+| Sat, 25 Oct 2025 13:40:18 GMT | [Historia de una recompensa por $.$$$, Metodología aplicada y byp...](https://freedium.cfd/https://medium.com/p/746a6f7a0dbf) | [infosec](https://medium.com/feed/tag/infosec) | Yes | Yes |
+| Sat, 25 Oct 2025 13:31:13 GMT | [$500 Bounty: Unauthorized Folder Creation with Null Name](https://freedium.cfd/https://medium.com/p/67064bb18e4a) | [infosec](https://medium.com/feed/tag/infosec) | Yes | Yes |
+| Sat, 25 Oct 2025 10:04:49 GMT | [How I Made ChatGPT My Bug Hunting Intern (And It Found Stuff I’...](https://freedium.cfd/https://medium.com/p/e86a44c1f2ba) | [infosec](https://medium.com/feed/tag/infosec) | Yes | Yes |
+| Sat, 25 Oct 2025 03:14:20 GMT | [\[ SOC Alert => Phishing Mail Detected — Excel 4.0 Macros \...](https://freedium.cfd/https://medium.com/p/86d5185abee6) | [infosec](https://medium.com/feed/tag/infosec) | Yes | Yes |
+| Fri, 24 Oct 2025 23:33:34 GMT | [The Three Receipts — What counts as proof?](https://freedium.cfd/https://medium.com/p/68b154566600) | [infosec](https://medium.com/feed/tag/infosec) | Yes |  |
