@@ -1,6 +1,5 @@
 Error parsing XML from https://medium.com/feed/tag/bug-bounty: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/security: XML syntax error on line 1: expected element name after <
-Error parsing XML from https://medium.com/feed/tag/vulnerability: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/cybersecurity: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/penetration-testing: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/hacking: XML syntax error on line 1: expected element name after <
@@ -15,6 +14,7 @@ Error parsing XML from https://medium.com/feed/tag/information-security: XML syn
 Error parsing XML from https://medium.com/feed/tag/cross-site-scripting: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/hackerone: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bugcrowd: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/bugbounty-writeup: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bug-bounty-writeup: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bug-bounty-hunter: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bug-bounty-program: XML syntax error on line 1: expected element name after <
@@ -63,13 +63,13 @@ Error parsing XML from https://medium.com/feed/tag/api-key: XML syntax error on 
 Error parsing XML from https://medium.com/feed/tag/cyber-sec: XML syntax error on line 1: expected element name after <
 | Time | Title | Feed | IsNew | IsToday |
 |-----------|-----|-----|-----|-----|
-| Sat, 25 Oct 2025 11:49:34 GMT | [How a Late Night Hunting Turned Into a Critical ‘Email-Only’ ...](https://freedium.cfd/https://medium.com/p/62393bb12cb8) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) | Yes |  |
-| Sun, 19 Oct 2025 19:26:36 GMT | [Cracking the Lock: How I Discovered Amazon KDP’s Missing Accoun...](https://freedium.cfd/https://medium.com/p/d504bef5adc0) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) | Yes |  |
-| Fri, 17 Oct 2025 05:23:22 GMT | [Email Verification OTP Bypass €€ — How I verified any ema...](https://freedium.cfd/https://medium.com/p/470cec0dbca5) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) | Yes |  |
-| Tue, 14 Oct 2025 04:24:09 GMT | [Secret Bug Bounty Platform that made me 11000$](https://freedium.cfd/https://medium.com/p/8f6c268bc501) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) | Yes |  |
-| Fri, 17 Oct 2025 12:56:58 GMT | [Küçük bir hatanın doğurduğu sonuçlar \| Bugbounty Bounty W...](https://freedium.cfd/https://medium.com/p/6dc82dc38b41) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) | Yes |  |
-| Sun, 19 Oct 2025 07:25:24 GMT | [Exploiting an Insecure Android Activity for Arbitrary File Theft ...](https://freedium.cfd/https://medium.com/p/07b360520a0e) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) | Yes |  |
-| Sat, 18 Oct 2025 15:16:44 GMT | [Sneaking the Fence — Part 1](https://freedium.cfd/https://medium.com/p/a2ad740ca261) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) | Yes |  |
-| Sun, 26 Oct 2025 04:06:10 GMT | [Tesla.com patched Exposed Damage Disclosure Files leaking VIN num...](https://freedium.cfd/https://medium.com/p/d6cafcaec98e) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) |  | Yes |
-| Sun, 26 Oct 2025 10:24:09 GMT | [CTF Writeup — MarkdownSmartPreview (EJS SSTI) — Steps & PoC](https://freedium.cfd/https://medium.com/p/4eb2670c8db7) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) |  | Yes |
-| Sun, 26 Oct 2025 04:36:01 GMT | [Privilege Escalation Turned a Regular User Into an Admin \[part-1...](https://freedium.cfd/https://medium.com/p/fbe3d82440ca) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) |  | Yes |
+| Sun, 26 Oct 2025 10:49:00 GMT | [The Double Life I Think I’m Living](https://freedium.cfd/https://medium.com/p/88f47a873ec9) | [vulnerability](https://medium.com/feed/tag/vulnerability) | Yes | Yes |
+| Sun, 26 Oct 2025 03:42:08 GMT | [JSON ResponseDisclosure: From Recon to Advanced Detection](https://freedium.cfd/https://medium.com/p/3413df37461c) | [vulnerability](https://medium.com/feed/tag/vulnerability) | Yes | Yes |
+| Sun, 26 Oct 2025 07:13:33 GMT | [The Things We Don’t Say](https://freedium.cfd/https://medium.com/p/49705e37118f) | [vulnerability](https://medium.com/feed/tag/vulnerability) | Yes | Yes |
+| Sun, 26 Oct 2025 05:31:17 GMT | [What does it mean to be authentic?](https://freedium.cfd/https://medium.com/p/9ee7d9f1168e) | [vulnerability](https://medium.com/feed/tag/vulnerability) | Yes | Yes |
+| Sat, 25 Oct 2025 18:33:24 GMT | [I whispered my truth into your silence](https://freedium.cfd/https://medium.com/p/49f75c924b78) | [vulnerability](https://medium.com/feed/tag/vulnerability) | Yes |  |
+| Sat, 25 Oct 2025 16:48:36 GMT | [A Crybaby’s Confession](https://freedium.cfd/https://medium.com/p/093f648ff8a1) | [vulnerability](https://medium.com/feed/tag/vulnerability) | Yes |  |
+| Sat, 25 Oct 2025 13:28:01 GMT | [What Happened When I Stopped Hiding](https://freedium.cfd/https://medium.com/p/c0e927db648b) | [vulnerability](https://medium.com/feed/tag/vulnerability) | Yes |  |
+| Sat, 25 Oct 2025 10:20:14 GMT | [You should see me in a shell.](https://freedium.cfd/https://medium.com/p/b6e58c810e5c) | [vulnerability](https://medium.com/feed/tag/vulnerability) | Yes |  |
+| Sat, 25 Oct 2025 22:08:32 GMT | [I Don’t Need the Ending to Be Kind](https://freedium.cfd/https://medium.com/p/cd20f0f7da54) | [vulnerability](https://medium.com/feed/tag/vulnerability) | Yes |  |
+| Sat, 25 Oct 2025 16:09:32 GMT | [Yes, I Have Allowed Myself to Drink Alcohol](https://freedium.cfd/https://medium.com/p/1fcc56256d56) | [vulnerability](https://medium.com/feed/tag/vulnerability) | Yes |  |
