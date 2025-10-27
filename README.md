@@ -8,8 +8,8 @@ Error parsing XML from https://medium.com/feed/tag/information-technology: XML s
 Error parsing XML from https://medium.com/feed/tag/infosec: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/web-security: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bug-bounty-tips: XML syntax error on line 1: expected element name after <
-Error parsing XML from https://medium.com/feed/tag/bugs: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/pentesting: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/xss-attack: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/information-security: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/cross-site-scripting: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/hackerone: XML syntax error on line 1: expected element name after <
@@ -63,13 +63,13 @@ Error parsing XML from https://medium.com/feed/tag/api-key: XML syntax error on 
 Error parsing XML from https://medium.com/feed/tag/cyber-sec: XML syntax error on line 1: expected element name after <
 | Time | Title | Feed | IsNew | IsToday |
 |-----------|-----|-----|-----|-----|
-| Sat, 25 Oct 2025 17:43:42 GMT | [Lab 3: DOM XSS in `document.write` Sink Using Source `location.se...](https://freedium.cfd/https://medium.com/p/cef1d073d9b4) | [xss-attack](https://medium.com/feed/tag/xss-attack) | Yes |  |
-| Sat, 25 Oct 2025 17:15:13 GMT | [Lab 2: Stored XSS into HTML Context with Nothing Encoded](https://freedium.cfd/https://medium.com/p/a1b2f0d8e890) | [xss-attack](https://medium.com/feed/tag/xss-attack) | Yes |  |
-| Fri, 24 Oct 2025 15:04:10 GMT | [ Mastering XSS on a Bug Bounty Platform: Finding, Understanding &...](https://freedium.cfd/https://medium.com/p/7a6693284091) | [xss-attack](https://medium.com/feed/tag/xss-attack) | Yes |  |
-| Fri, 24 Oct 2025 10:28:37 GMT | [Portswigger Academy — Exploiting cross-site scripting to ca...](https://freedium.cfd/https://medium.com/p/c5750cde22f5) | [xss-attack](https://medium.com/feed/tag/xss-attack) | Yes |  |
-| Sun, 26 Oct 2025 22:26:48 GMT | [Global Input Sanitization in Angular: A Centralized Security Appr...](https://freedium.cfd/https://medium.com/p/1902cfdfcc65) | [xss-attack](https://medium.com/feed/tag/xss-attack) | Yes |  |
-| Sun, 26 Oct 2025 13:42:29 GMT | [Portswigger Academy — Reflected XSS protected by CSP, with ...](https://freedium.cfd/https://medium.com/p/5954a67dbdea) | [xss-attack](https://medium.com/feed/tag/xss-attack) | Yes |  |
-| Sat, 25 Oct 2025 18:08:57 GMT | [Web Cache Poisoning : Ancaman di Balik Kecepatan](https://freedium.cfd/https://medium.com/p/67da01a9a8f4) | [xss-attack](https://medium.com/feed/tag/xss-attack) | Yes |  |
-| Sat, 25 Oct 2025 19:14:29 GMT | [Reflected XSS with Base64 — Breaching Obscurity in Seconds](https://freedium.cfd/https://medium.com/p/38e3ca07b085) | [xss-attack](https://medium.com/feed/tag/xss-attack) | Yes |  |
-| Sat, 25 Oct 2025 17:03:04 GMT | [Lab 1: Reflected XSS into HTML Context with Nothing Encoded](https://freedium.cfd/https://medium.com/p/7ba4fe35d78c) | [xss-attack](https://medium.com/feed/tag/xss-attack) | Yes |  |
-| Fri, 24 Oct 2025 11:33:53 GMT | [Portswigger Academy — Exploiting XSS to bypass CSRF defense...](https://freedium.cfd/https://medium.com/p/6dc3820de560) | [xss-attack](https://medium.com/feed/tag/xss-attack) | Yes |  |
+| Mon, 27 Oct 2025 05:51:41 GMT | [ “Invalid use of argument matchers!”](https://freedium.cfd/https://medium.com/p/9adc9f45ec30) | [bugs](https://medium.com/feed/tag/bugs) | Yes | Yes |
+| Fri, 24 Oct 2025 10:09:54 GMT | [Avoid \Illuminate\Support\Collection::unique() until further noti...](https://freedium.cfd/https://medium.com/p/2488824799ea) | [bugs](https://medium.com/feed/tag/bugs) | Yes |  |
+| Thu, 23 Oct 2025 12:11:39 GMT | [Why Spotify Keeps Crashing on Flagship Phones (2025) and What It ...](https://freedium.cfd/https://medium.com/p/d1925c088202) | [bugs](https://medium.com/feed/tag/bugs) | Yes |  |
+| Thu, 23 Oct 2025 07:14:56 GMT | [“It’s Not Just You — The iOS Keyboard is Broken” — “N...](https://freedium.cfd/https://medium.com/p/7aa25dcb4781) | [bugs](https://medium.com/feed/tag/bugs) | Yes |  |
+| Sun, 26 Oct 2025 23:04:49 GMT | [Exclusive BUG Bonuses & Rewards — October 2025](https://freedium.cfd/https://medium.com/p/ef1a8e17b453) | [bugs](https://medium.com/feed/tag/bugs) | Yes |  |
+| Fri, 24 Oct 2025 11:02:16 GMT | [How Did I Hack a Website Just by Reading JS Files](https://freedium.cfd/https://medium.com/p/6d6a6a90aac1) | [bugs](https://medium.com/feed/tag/bugs) | Yes |  |
+| Wed, 22 Oct 2025 04:44:02 GMT | [The Different Levels of Broken Stats](https://freedium.cfd/https://medium.com/p/30e90958f479) | [bugs](https://medium.com/feed/tag/bugs) | Yes |  |
+| Sat, 25 Oct 2025 09:47:50 GMT | [GitHub Contribution bug? Here’s Why And How to Fix It.](https://freedium.cfd/https://medium.com/p/098f7eebf2cf) | [bugs](https://medium.com/feed/tag/bugs) | Yes |  |
+| Thu, 23 Oct 2025 15:51:25 GMT | [How to Get Rid of Box Elder Bugs: Your Comprehensive Guide](https://freedium.cfd/https://medium.com/p/c9a3a2adc198) | [bugs](https://medium.com/feed/tag/bugs) | Yes |  |
+| Wed, 22 Oct 2025 16:19:46 GMT | [The AWS US-EAST-1 Outage of October 20, 2025: A DNS Glitch That E...](https://freedium.cfd/https://medium.com/p/6ef09782272c) | [bugs](https://medium.com/feed/tag/bugs) | Yes |  |
