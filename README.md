@@ -1,3 +1,5 @@
+Error parsing XML from https://medium.com/feed/tag/bug-bounty: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/security: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/vulnerability: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/cybersecurity: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/penetration-testing: XML syntax error on line 1: expected element name after <
@@ -16,7 +18,6 @@ Error parsing XML from https://medium.com/feed/tag/bugcrowd: XML syntax error on
 Error parsing XML from https://medium.com/feed/tag/bugbounty-writeup: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bug-bounty-writeup: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bug-bounty-hunter: XML syntax error on line 1: expected element name after <
-Error parsing XML from https://medium.com/feed/tag/bug-bounty-program: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/ethical-hacking: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/application-security: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/google-dorking: XML syntax error on line 1: expected element name after <
@@ -62,22 +63,13 @@ Error parsing XML from https://medium.com/feed/tag/api-key: XML syntax error on 
 Error parsing XML from https://medium.com/feed/tag/cyber-sec: XML syntax error on line 1: expected element name after <
 | Time | Title | Feed | IsNew | IsToday |
 |-----------|-----|-----|-----|-----|
-| Tue, 28 Oct 2025 21:09:07 GMT | [Hacking APIs: Exploiting Batch and Mass Assignment](https://freedium.cfd/https://medium.com/p/3b67a56dbd01) | [bug-bounty](https://medium.com/feed/tag/bug-bounty), [security](https://medium.com/feed/tag/security) | Yes | Yes |
-| Tue, 28 Oct 2025 20:36:33 GMT | [No More AWS Keys on Servers: The Zero-Credential Way to Access AW...](https://freedium.cfd/https://medium.com/p/2227a88f28e5) | [security](https://medium.com/feed/tag/security) |  | Yes |
-| Tue, 28 Oct 2025 17:20:29 GMT | [AresGPT: Red Teaming Strategies](https://freedium.cfd/https://medium.com/p/afb01cd3568e) | [security](https://medium.com/feed/tag/security) |  | Yes |
-| Tue, 28 Oct 2025 19:11:01 GMT | [Infrastructure Collapse: How a Forgotten Folder in Coca-Cola’s ...](https://freedium.cfd/https://medium.com/p/a4d9dc1ab8a6) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  | Yes |
-| Tue, 28 Oct 2025 15:42:46 GMT | [How a Single Message Could Take Down Discourse Instances (Bagging...](https://freedium.cfd/https://medium.com/p/fc0d4adfde84) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  | Yes |
-| Tue, 28 Oct 2025 16:23:49 GMT | [How a Small Chain Turned Duplicates into a Valid Bug with Post-Re...](https://freedium.cfd/https://medium.com/p/f2829526595f) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  | Yes |
-| Tue, 28 Oct 2025 13:14:13 GMT | [Hardening Against Path Traversal: Breaking the Cyber Chain from D...](https://freedium.cfd/https://medium.com/p/d91bbe0abd3b) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  | Yes |
-| Tue, 28 Oct 2025 20:52:06 GMT | [PowerShell Code Signing Introduction for Security-Conscious Profe...](https://freedium.cfd/https://medium.com/p/27d2583682fd) | [security](https://medium.com/feed/tag/security) |  | Yes |
-| Tue, 28 Oct 2025 20:06:28 GMT | [Phase 0: Laying the Blueprint — How Project Jupiter Begins ...](https://freedium.cfd/https://medium.com/p/12d6d61b3d82) | [security](https://medium.com/feed/tag/security) |  | Yes |
-| Tue, 28 Oct 2025 18:56:49 GMT | [Event Security in the UK — Protecting People, Brands, and E...](https://freedium.cfd/https://medium.com/p/8fd55259c262) | [security](https://medium.com/feed/tag/security) |  | Yes |
-| Tue, 28 Oct 2025 17:52:09 GMT | [The Silent Threat: Why Zero-Day Vulnerabilities Keep Security Exp...](https://freedium.cfd/https://medium.com/p/3345653e454b) | [security](https://medium.com/feed/tag/security) |  | Yes |
-| Tue, 28 Oct 2025 19:33:47 GMT | [Reverse Engineering API Security: How I Broke and bypass “Reque...](https://freedium.cfd/https://medium.com/p/7c4f64276661) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  | Yes |
-| Tue, 28 Oct 2025 16:54:51 GMT | [The Day I Became Everyone: How User Swapping Turned Me into a Dig...](https://freedium.cfd/https://medium.com/p/91358848a593) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  | Yes |
-| Tue, 28 Oct 2025 13:16:54 GMT | [How a Simple Logic Flaw Can Unlock Private User Data](https://freedium.cfd/https://medium.com/p/19788156c270) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  | Yes |
-| Tue, 28 Oct 2025 20:15:54 GMT | [180 Days Till I Write My SSCP Exam](https://freedium.cfd/https://medium.com/p/34de2bb53a3b) | [security](https://medium.com/feed/tag/security) |  | Yes |
-| Tue, 28 Oct 2025 17:25:10 GMT | [Deep Dive into Security Hardening on Linux Systems](https://freedium.cfd/https://medium.com/p/41494de607fb) | [security](https://medium.com/feed/tag/security) |  | Yes |
-| Tue, 28 Oct 2025 14:27:51 GMT | [Getting Started with Bug Bounties: A Complete Beginner’s Guide](https://freedium.cfd/https://medium.com/p/81e90945c581) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  | Yes |
-| Tue, 28 Oct 2025 12:23:26 GMT | [C{api}tal walkthrough.](https://freedium.cfd/https://medium.com/p/999f4ce8597e) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  | Yes |
-| Tue, 28 Oct 2025 20:20:59 GMT | [imToken Activity Report : October 2025](https://freedium.cfd/https://medium.com/p/52262285ec38) | [security](https://medium.com/feed/tag/security) |  | Yes |
+| Sun, 24 Aug 2025 20:18:55 GMT | [How I found an Account Lockout Vulnerability Without Any Tools](https://freedium.cfd/https://medium.com/p/f52cbcd58730) | [bug-bounty-program](https://medium.com/feed/tag/bug-bounty-program) | Yes |  |
+| Sun, 17 Aug 2025 19:26:05 GMT | [﷽](https://freedium.cfd/https://medium.com/p/b3205aa78fbb) | [bug-bounty-program](https://medium.com/feed/tag/bug-bounty-program) | Yes |  |
+| Sun, 17 Aug 2025 17:58:45 GMT | [$$$ How I Exploited a Business Logic Flaw to Slash Product Prices...](https://freedium.cfd/https://medium.com/p/64cd1d445d17) | [bug-bounty-program](https://medium.com/feed/tag/bug-bounty-program) | Yes |  |
+| Tue, 12 Aug 2025 17:24:22 GMT | [How I Removed Other User`s Uploaded Images in a Few Clicks](https://freedium.cfd/https://medium.com/p/fdeb6355458b) | [bug-bounty-program](https://medium.com/feed/tag/bug-bounty-program) | Yes |  |
+| Fri, 11 Jul 2025 07:49:47 GMT | [Platform Showdown: The Ultimate Guide to Choosing Your Bug Bounty...](https://freedium.cfd/https://medium.com/p/64ea085ae800) | [bug-bounty-program](https://medium.com/feed/tag/bug-bounty-program) | Yes |  |
+| Fri, 10 Oct 2025 14:21:53 GMT | [Finding XSS on a Real-World Bug Bounty Program](https://freedium.cfd/https://medium.com/p/d718335bcb30) | [bug-bounty-program](https://medium.com/feed/tag/bug-bounty-program) | Yes |  |
+| Thu, 09 Oct 2025 18:33:05 GMT | [0-click Account Takeover via Punycode](https://freedium.cfd/https://medium.com/p/39b9a5cfbfb1) | [bug-bounty-program](https://medium.com/feed/tag/bug-bounty-program) | Yes |  |
+| Thu, 02 Oct 2025 06:59:46 GMT | [Endless Cashback Glitch:How I Unlocked Unlimited Free Orders with...](https://freedium.cfd/https://medium.com/p/d150c5db0a92) | [bug-bounty-program](https://medium.com/feed/tag/bug-bounty-program) | Yes |  |
+| Wed, 16 Jul 2025 13:50:36 GMT | [Bug Bounties, Broken Promises](https://freedium.cfd/https://medium.com/p/a19557db0aaa) | [bug-bounty-program](https://medium.com/feed/tag/bug-bounty-program) | Yes |  |
+| Tue, 15 Jul 2025 08:14:04 GMT | [Level Up Your Bounties: How to Choose the Best Bug Bounty Program...](https://freedium.cfd/https://medium.com/p/18cdaf61cdcb) | [bug-bounty-program](https://medium.com/feed/tag/bug-bounty-program) | Yes |  |
