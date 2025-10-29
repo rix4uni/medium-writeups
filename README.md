@@ -15,6 +15,7 @@ Error parsing XML from https://medium.com/feed/tag/information-security: XML syn
 Error parsing XML from https://medium.com/feed/tag/cross-site-scripting: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/hackerone: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bugcrowd: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/bugbounty-writeup: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bug-bounty-writeup: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bug-bounty-hunter: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bug-bounty-program: XML syntax error on line 1: expected element name after <
@@ -63,12 +64,3 @@ Error parsing XML from https://medium.com/feed/tag/api-key: XML syntax error on 
 Error parsing XML from https://medium.com/feed/tag/cyber-sec: XML syntax error on line 1: expected element name after <
 | Time | Title | Feed | IsNew | IsToday |
 |-----------|-----|-----|-----|-----|
-| Sun, 26 Oct 2025 12:31:08 GMT | [How I Hacked NASA](https://freedium.cfd/https://medium.com/p/09c33a813c48) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) |  |  |
-| Sun, 26 Oct 2025 04:36:01 GMT | [Privilege Escalation Turned a Regular User Into an Admin \[part-1...](https://freedium.cfd/https://medium.com/p/fbe3d82440ca) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) |  |  |
-| Sun, 19 Oct 2025 07:25:24 GMT | [Exploiting an Insecure Android Activity for Arbitrary File Theft ...](https://freedium.cfd/https://medium.com/p/07b360520a0e) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) |  |  |
-| Sat, 18 Oct 2025 15:16:44 GMT | [Sneaking the Fence — Part 1](https://freedium.cfd/https://medium.com/p/a2ad740ca261) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) |  |  |
-| Fri, 17 Oct 2025 12:56:58 GMT | [Küçük bir hatanın doğurduğu sonuçlar \| Bugbounty Bounty W...](https://freedium.cfd/https://medium.com/p/6dc82dc38b41) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) |  |  |
-| Mon, 27 Oct 2025 08:44:26 GMT | [Sonatype Nexus Path Trevarsal Zafiyeti ve Canlı Örnek Üzerinde...](https://freedium.cfd/https://medium.com/p/c5d651c2c739) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) |  |  |
-| Sun, 26 Oct 2025 10:24:09 GMT | [CTF Writeup — MarkdownSmartPreview (EJS SSTI) — Steps & PoC](https://freedium.cfd/https://medium.com/p/4eb2670c8db7) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) |  |  |
-| Sat, 25 Oct 2025 11:49:34 GMT | [How a Late Night Hunting Turned Into a Critical ‘Email-Only’ ...](https://freedium.cfd/https://medium.com/p/62393bb12cb8) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) |  |  |
-| Sun, 19 Oct 2025 19:26:36 GMT | [Cracking the Lock: How I Discovered Amazon KDP’s Missing Accoun...](https://freedium.cfd/https://medium.com/p/d504bef5adc0) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) |  |  |
