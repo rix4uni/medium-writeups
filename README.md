@@ -2,6 +2,7 @@ Error parsing XML from https://medium.com/feed/tag/bug-bounty: XML syntax error 
 Error parsing XML from https://medium.com/feed/tag/security: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/vulnerability: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/cybersecurity: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/penetration-testing: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/hacking: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/information-technology: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/infosec: XML syntax error on line 1: expected element name after <
@@ -63,13 +64,3 @@ Error parsing XML from https://medium.com/feed/tag/api-key: XML syntax error on 
 Error parsing XML from https://medium.com/feed/tag/cyber-sec: XML syntax error on line 1: expected element name after <
 | Time | Title | Feed | IsNew | IsToday |
 |-----------|-----|-----|-----|-----|
-| Thu, 30 Oct 2025 09:18:37 GMT | [Mastering Subdomain Takeover: Step-by-Step Guide with Real Tools ...](https://freedium.cfd/https://medium.com/p/8f1c8a4583ca) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) |  | Yes |
-| Thu, 30 Oct 2025 08:18:18 GMT | [ENISA Threat Landscape 2025: 10 Powerful Dev Fixes](https://freedium.cfd/https://medium.com/p/ddb3fd111477) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) |  | Yes |
-| Thu, 30 Oct 2025 06:31:58 GMT | [DC-2 — Full walkthrough (VulnHub)](https://freedium.cfd/https://medium.com/p/c2f0f19243be) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) |  | Yes |
-| Thu, 30 Oct 2025 04:11:52 GMT | [SQL Injection: A Comprehensive Guide to Types,Impacts and Prevent...](https://freedium.cfd/https://medium.com/p/3ee552217d34) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) |  | Yes |
-| Wed, 29 Oct 2025 23:36:51 GMT | [DC-1 — Full walkthrough](https://freedium.cfd/https://medium.com/p/a24c7e4bd046) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) |  |  |
-| Wed, 29 Oct 2025 20:38:01 GMT | [Escalating to Domain Admin via Misconfigured Certificate Template...](https://freedium.cfd/https://medium.com/p/7b2f60cef58a) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) |  |  |
-| Wed, 29 Oct 2025 17:46:23 GMT | [Privilege Escalation — From Member to Organization Takeover](https://freedium.cfd/https://medium.com/p/4fb603817196) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) |  |  |
-| Wed, 29 Oct 2025 14:50:43 GMT | [“The $12,500 DNS Trick That Hacked Snapchat’s Cloud Servers�...](https://freedium.cfd/https://medium.com/p/0cb299ec1d37) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) |  |  |
-| Wed, 29 Oct 2025 19:46:10 GMT | [TombWatcher](https://freedium.cfd/https://medium.com/p/a4f15dd3236e) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) |  |  |
-| Wed, 29 Oct 2025 18:57:14 GMT | [Automation Will Fail You: The Harsh Truth Every Bug Bounty Hunter...](https://freedium.cfd/https://medium.com/p/ad02cbfc7bda) | [penetration-testing](https://medium.com/feed/tag/penetration-testing) |  |  |
