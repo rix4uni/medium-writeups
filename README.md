@@ -8,12 +8,13 @@ Error parsing XML from https://medium.com/feed/tag/information-technology: XML s
 Error parsing XML from https://medium.com/feed/tag/infosec: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/web-security: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bug-bounty-tips: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/bugs: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/pentesting: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/xss-attack: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/information-security: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/cross-site-scripting: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/hackerone: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bugcrowd: XML syntax error on line 1: expected element name after <
-Error parsing XML from https://medium.com/feed/tag/bugbounty-writeup: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bug-bounty-writeup: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bug-bounty-hunter: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bug-bounty-program: XML syntax error on line 1: expected element name after <
@@ -62,23 +63,12 @@ Error parsing XML from https://medium.com/feed/tag/api-key: XML syntax error on 
 Error parsing XML from https://medium.com/feed/tag/cyber-sec: XML syntax error on line 1: expected element name after <
 | Time | Title | Feed | IsNew | IsToday |
 |-----------|-----|-----|-----|-----|
-| Fri, 31 Oct 2025 16:05:01 GMT | [Pentesting Wi-Fi and Bluetooth Devices: A Defensive Playbook, Not...](https://freedium.cfd/https://medium.com/p/8c4ea89694c4) | [pentesting](https://medium.com/feed/tag/pentesting) |  | Yes |
-| Fri, 31 Oct 2025 11:32:05 GMT | [HTML Injection - Return of the P2 Elevator](https://freedium.cfd/https://medium.com/p/0cccf93d8c98) | [pentesting](https://medium.com/feed/tag/pentesting) |  | Yes |
-| Fri, 31 Oct 2025 04:13:56 GMT | [Mr Robot CTF \| TryHackMe CTF WriteUp](https://freedium.cfd/https://medium.com/p/ea078204aa46) | [pentesting](https://medium.com/feed/tag/pentesting) |  | Yes |
-| Fri, 31 Oct 2025 10:57:13 GMT | [DockerLabs Writeup — Walking Dead (Spanish)](https://freedium.cfd/https://medium.com/p/c386fddcd4be) | [pentesting](https://medium.com/feed/tag/pentesting) |  | Yes |
-| Fri, 31 Oct 2025 04:49:05 GMT | [Retro \| TryHackMe CTF WriteUp](https://freedium.cfd/https://medium.com/p/c89069584782) | [pentesting](https://medium.com/feed/tag/pentesting) |  | Yes |
-| Fri, 31 Oct 2025 15:44:05 GMT | [Google Dorking for Test Environments](https://freedium.cfd/https://medium.com/p/ae70958fa112) | [pentesting](https://medium.com/feed/tag/pentesting) |  | Yes |
-| Fri, 31 Oct 2025 11:00:09 GMT | [Mobile App Pen Testing: Protecting Sensitive Data on User Devices](https://freedium.cfd/https://medium.com/p/40ca67ee373a) | [pentesting](https://medium.com/feed/tag/pentesting) |  | Yes |
-| Fri, 31 Oct 2025 03:53:38 GMT | [Song Onstage Foul-up! Cause — English Word Order!](https://freedium.cfd/https://medium.com/p/3a156d3e4d7d) | [bugs](https://medium.com/feed/tag/bugs) |  | Yes |
-| Fri, 31 Oct 2025 11:30:46 GMT | [Top 10 Password Cracking Tools Used by Pen Testers](https://freedium.cfd/https://medium.com/p/b62240ec28d1) | [pentesting](https://medium.com/feed/tag/pentesting) |  | Yes |
-| Wed, 29 Oct 2025 10:55:10 GMT | [ The Backslash Bug: How a Tiny Path Glitch in Vite Could Leak You...](https://freedium.cfd/https://medium.com/p/9641de420f5e) | [bugs](https://medium.com/feed/tag/bugs) |  |  |
-| Wed, 29 Oct 2025 08:05:54 GMT | [A Hidden Android 13 Bug That Bit Me: Lessons from a Parcelable Cr...](https://freedium.cfd/https://medium.com/p/df31ba1eeb92) | [bugs](https://medium.com/feed/tag/bugs) |  |  |
-| Wed, 29 Oct 2025 21:34:01 GMT | [Happy Halloween Everyone! And .. to Bugs?!](https://freedium.cfd/https://medium.com/p/f6577ec8c060) | [bugs](https://medium.com/feed/tag/bugs) |  |  |
-| Thu, 30 Oct 2025 21:52:05 GMT | [Building a DNS Command Execution](https://freedium.cfd/https://medium.com/p/8df7a4ab5b43) | [pentesting](https://medium.com/feed/tag/pentesting) |  |  |
-| Wed, 29 Oct 2025 16:01:37 GMT | [ When a Bug Takes Days to Fix… and Still Refuses to Die](https://freedium.cfd/https://medium.com/p/356993327143) | [bugs](https://medium.com/feed/tag/bugs) |  |  |
-| Wed, 29 Oct 2025 12:27:52 GMT | [9 Lombok Traps That Cost Me 100+ Bugs (And the Bulletproof Fixes)](https://freedium.cfd/https://medium.com/p/8defd05dd2a5) | [bugs](https://medium.com/feed/tag/bugs) |  |  |
-| Wed, 29 Oct 2025 09:02:10 GMT | [Dorks For Sensitive Information Disclosure Part-4](https://freedium.cfd/https://medium.com/p/5bc360ce551e) | [bugs](https://medium.com/feed/tag/bugs) |  |  |
-| Thu, 30 Oct 2025 23:50:58 GMT | [Modern Penetration Testing in 2025: A Complete Technical and Ethi...](https://freedium.cfd/https://medium.com/p/7dec7285e023) | [pentesting](https://medium.com/feed/tag/pentesting) |  |  |
-| Thu, 30 Oct 2025 15:15:40 GMT | [Email Verification Bypass — A Simple Yet Overlooked Busines...](https://freedium.cfd/https://medium.com/p/5a9c5980f2aa) | [bugs](https://medium.com/feed/tag/bugs) |  |  |
-| Wed, 29 Oct 2025 22:42:12 GMT | [Your tests break every week. Not because of bugs](https://freedium.cfd/https://medium.com/p/b34b6658447d) | [bugs](https://medium.com/feed/tag/bugs) |  |  |
-| Tue, 28 Oct 2025 14:18:47 GMT | [Fix SwiftUI onAppear Firing infinity— The Fast iOS 17 + iOS ≤...](https://freedium.cfd/https://medium.com/p/4e0758223333) | [bugs](https://medium.com/feed/tag/bugs) |  |  |
+| Sun, 26 Oct 2025 10:24:09 GMT | [CTF Writeup — MarkdownSmartPreview (EJS SSTI) — Steps & PoC](https://freedium.cfd/https://medium.com/p/4eb2670c8db7) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) | Yes |  |
+| Sun, 26 Oct 2025 04:36:01 GMT | [Privilege Escalation Turned a Regular User Into an Admin \[part-1...](https://freedium.cfd/https://medium.com/p/fbe3d82440ca) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) | Yes |  |
+| Sat, 25 Oct 2025 11:49:34 GMT | [How a Late Night Hunting Turned Into a Critical ‘Email-Only’ ...](https://freedium.cfd/https://medium.com/p/62393bb12cb8) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) | Yes |  |
+| Thu, 30 Oct 2025 12:47:33 GMT | [IDOR : Very simple IDOR resulted in $500](https://freedium.cfd/https://medium.com/p/1d0c3b725631) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) | Yes |  |
+| Mon, 27 Oct 2025 08:44:26 GMT | [Sonatype Nexus Path Trevarsal Zafiyeti ve Canlı Örnek Üzerinde...](https://freedium.cfd/https://medium.com/p/c5d651c2c739) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) | Yes |  |
+| Sun, 19 Oct 2025 19:26:36 GMT | [Cracking the Lock: How I Discovered Amazon KDP’s Missing Accoun...](https://freedium.cfd/https://medium.com/p/d504bef5adc0) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) | Yes |  |
+| Sun, 19 Oct 2025 07:25:24 GMT | [Exploiting an Insecure Android Activity for Arbitrary File Theft ...](https://freedium.cfd/https://medium.com/p/07b360520a0e) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) | Yes |  |
+| Thu, 30 Oct 2025 07:20:24 GMT | [When a feature Becomes a Backdoor $$](https://freedium.cfd/https://medium.com/p/6fa83e6497fd) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) | Yes |  |
+| Sun, 26 Oct 2025 12:31:08 GMT | [How I Hacked NASA](https://freedium.cfd/https://medium.com/p/09c33a813c48) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) | Yes |  |
