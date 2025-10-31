@@ -1,3 +1,4 @@
+Error parsing XML from https://medium.com/feed/tag/bug-bounty: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/security: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/vulnerability: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/cybersecurity: XML syntax error on line 1: expected element name after <
@@ -63,13 +64,3 @@ Error parsing XML from https://medium.com/feed/tag/api-key: XML syntax error on 
 Error parsing XML from https://medium.com/feed/tag/cyber-sec: XML syntax error on line 1: expected element name after <
 | Time | Title | Feed | IsNew | IsToday |
 |-----------|-----|-----|-----|-----|
-| Fri, 31 Oct 2025 20:03:32 GMT | [LLM Invisible Prompt Smuggling & How YOU Can Earn A Quick $10k (T...](https://freedium.cfd/https://medium.com/p/2df2de834f81) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  | Yes |
-| Fri, 31 Oct 2025 18:39:11 GMT | [How I Found a Hidden Data Leak and Won a Bounty — The Pract...](https://freedium.cfd/https://medium.com/p/fafba9fc6266) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  | Yes |
-| Fri, 31 Oct 2025 11:32:05 GMT | [HTML Injection - Return of the P2 Elevator](https://freedium.cfd/https://medium.com/p/0cccf93d8c98) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  | Yes |
-| Fri, 31 Oct 2025 10:37:24 GMT | [HTML injection in snapshat email form$$$](https://freedium.cfd/https://medium.com/p/318fc1ac0a9c) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  | Yes |
-| Fri, 31 Oct 2025 12:11:57 GMT | [How I Uncover Hidden Vulnerabilities With Simple Recon](https://freedium.cfd/https://medium.com/p/f3cd5a2a91f2) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  | Yes |
-| Fri, 31 Oct 2025 10:18:34 GMT | [Zen7 Vanguard Program — Unite the pioneers building the nex...](https://freedium.cfd/https://medium.com/p/998a01082669) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  | Yes |
-| Fri, 31 Oct 2025 20:41:32 GMT | [How I Got a Four-Digit Bug Bounty From Grammarly](https://freedium.cfd/https://medium.com/p/187038396843) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  | Yes |
-| Fri, 31 Oct 2025 16:40:31 GMT | [The Ultimate Bug Hunter’s Recon workflow: From Subdomains to Cr...](https://freedium.cfd/https://medium.com/p/befcef19307f) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  | Yes |
-| Fri, 31 Oct 2025 15:44:05 GMT | [Google Dorking for Test Environments](https://freedium.cfd/https://medium.com/p/ae70958fa112) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  | Yes |
-| Fri, 31 Oct 2025 14:18:34 GMT | [HTTP Methods: The Core of Web Communication](https://freedium.cfd/https://medium.com/p/33c28c826850) | [bug-bounty](https://medium.com/feed/tag/bug-bounty) |  | Yes |
