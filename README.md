@@ -59,8 +59,16 @@ Error parsing XML from https://medium.com/feed/tag/recon: XML syntax error on li
 Error parsing XML from https://medium.com/feed/tag/xss-bypass: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bounty-program: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/subdomain-takeover: XML syntax error on line 1: expected element name after <
-Error parsing XML from https://medium.com/feed/tag/bounties: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/api-key: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/cyber-sec: XML syntax error on line 1: expected element name after <
 | Time | Title | Feed | IsNew | IsToday |
 |-----------|-----|-----|-----|-----|
+| Fri, 31 Oct 2025 21:30:34 GMT | [Simple BOUNTY Bonus Guide — October 2025](https://freedium.cfd/https://medium.com/p/fd376abab55d) | [bounties](https://medium.com/feed/tag/bounties) | Yes |  |
+| Sat, 18 Oct 2025 17:37:57 GMT | [Maximize Your Benefits with ChainBounty Rewards](https://freedium.cfd/https://medium.com/p/4d5af47548d5) | [bounties](https://medium.com/feed/tag/bounties) | Yes |  |
+| Sat, 18 Oct 2025 17:37:48 GMT | [Your Complete Guide to ChainBounty Rewards & Eligibility](https://freedium.cfd/https://medium.com/p/91d564ddda96) | [bounties](https://medium.com/feed/tag/bounties) | Yes |  |
+| Sat, 06 Sep 2025 15:01:04 GMT | [SQL Injection Vulnerability Scanner Tools](https://freedium.cfd/https://medium.com/p/3fe93a6c9eda) | [bounties](https://medium.com/feed/tag/bounties) | Yes |  |
+| Sun, 09 Nov 2025 14:49:19 GMT | [Beginner’s BOUNTY Rewards Guide — November 2025](https://freedium.cfd/https://medium.com/p/41dc4a275da6) | [bounties](https://medium.com/feed/tag/bounties) | Yes |  |
+| Sun, 14 Sep 2025 13:46:26 GMT | [Day 2 — The Token Bugs Nobody Talks About](https://freedium.cfd/https://medium.com/p/8c411e30c452) | [bounties](https://medium.com/feed/tag/bounties) | Yes |  |
+| Wed, 03 Sep 2025 12:50:12 GMT | [The Problem with Web3 Rewards and How ORYX Solves It](https://freedium.cfd/https://medium.com/p/077116a1a052) | [bounties](https://medium.com/feed/tag/bounties) | Yes |  |
+| Sat, 16 Aug 2025 00:42:40 GMT | [Announcing the NewBitcoin “Drive & Earn” Bounty Campaign �...](https://freedium.cfd/https://medium.com/p/e7fe55ceb58c) | [bounties](https://medium.com/feed/tag/bounties) | Yes |  |
+| Sat, 09 Aug 2025 05:32:30 GMT | [لعبة ONE PIECE Bounty Rush \| نصائح واستراتيجي...](https://freedium.cfd/https://medium.com/p/07ab573b1389) | [bounties](https://medium.com/feed/tag/bounties) | Yes |  |
