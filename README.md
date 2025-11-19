@@ -15,7 +15,6 @@ Error parsing XML from https://medium.com/feed/tag/information-security: XML syn
 Error parsing XML from https://medium.com/feed/tag/cross-site-scripting: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/hackerone: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bugcrowd: XML syntax error on line 1: expected element name after <
-Error parsing XML from https://medium.com/feed/tag/bugbounty-writeup: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bug-bounty-writeup: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bug-bounty-hunter: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bug-bounty-program: XML syntax error on line 1: expected element name after <
@@ -64,3 +63,11 @@ Error parsing XML from https://medium.com/feed/tag/api-key: XML syntax error on 
 Error parsing XML from https://medium.com/feed/tag/cyber-sec: XML syntax error on line 1: expected element name after <
 | Time | Title | Feed | IsNew | IsToday |
 |-----------|-----|-----|-----|-----|
+| Mon, 10 Nov 2025 23:02:59 GMT | [Information Disclosure: Hardcoded Encryption Keys](https://freedium.cfd/https://medium.com/p/fc375abf68a3) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) | Yes |  |
+| Mon, 10 Nov 2025 17:20:03 GMT | [ How I Unlocked Enterprise Features with One Parameter — an...](https://freedium.cfd/https://medium.com/p/7a0fef6b2ad0) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) | Yes |  |
+| Mon, 10 Nov 2025 14:19:23 GMT | [The Cache Poisoning Bible: Part 1 — Advanced Fundamentals](https://freedium.cfd/https://medium.com/p/2c8e9d7be2e9) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) | Yes |  |
+| Mon, 10 Nov 2025 11:01:27 GMT | [2FA Bypass Methods for Bug Bounty Hunters and Developers](https://freedium.cfd/https://medium.com/p/8f2e83118bdd) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) | Yes |  |
+| Tue, 18 Nov 2025 14:36:41 GMT | [How i was able to find my first 3 bugs in bugcrowd](https://freedium.cfd/https://medium.com/p/77a1b673ed90) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) | Yes |  |
+| Sun, 16 Nov 2025 20:19:23 GMT | [IDOR Part 3 — Automation & Bug Bounty Mastery](https://freedium.cfd/https://medium.com/p/e3524b9a8a34) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) | Yes |  |
+| Sat, 15 Nov 2025 13:00:52 GMT | [New Bug Hunters: This Is How You Land a Critical Find](https://freedium.cfd/https://medium.com/p/eaaf71fae5f4) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) | Yes |  |
+| Wed, 12 Nov 2025 11:53:58 GMT | [Be careful — I could steal your identity \| Business logic ...](https://freedium.cfd/https://medium.com/p/76c1d83868dc) | [bugbounty-writeup](https://medium.com/feed/tag/bugbounty-writeup) | Yes |  |
