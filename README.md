@@ -59,7 +59,7 @@ Error parsing XML from https://medium.com/feed/tag/recon: XML syntax error on li
 Error parsing XML from https://medium.com/feed/tag/xss-bypass: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/bounty-program: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/subdomain-takeover: XML syntax error on line 1: expected element name after <
-Error parsing XML from https://medium.com/feed/tag/bounties: XML syntax error on line 1: expected element name after <
+Error parsing XML from https://medium.com/feed/tag/bounties: XML syntax error on line 6: invalid character entity & (no semicolon)
 Error parsing XML from https://medium.com/feed/tag/api-key: XML syntax error on line 1: expected element name after <
 Error parsing XML from https://medium.com/feed/tag/cyber-sec: XML syntax error on line 1: expected element name after <
 | Time | Title | Feed | IsNew | IsToday |
