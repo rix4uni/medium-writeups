@@ -195,7 +195,7 @@ func main() {
         // Sanitize and format the title
         title := sanitizeTitle(entry["title"])
 
-        fmt.Printf("| %s | [%s](https://freedium.cfd/%s) | %s | %s | %s |\n",
+        fmt.Printf("| %s | [%s](https://freedium-mirror.cfd/%s) | %s | %s | %s |\n",
             entry["pubDate"], title, entry["guid"], entry["feeds"], entry["isNew"], entry["isToday"])
     }
 }
@@ -243,3 +243,4 @@ func isToday(pubDate, currentDate string) string {
     }
     return ""
 }
+
